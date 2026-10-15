@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dillema-rag-benchmark"
+version = "0.1.0"
+description = "Standalone DiLLeMa conventional RAG benchmark for ITS and UniQA"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+  "langchain-text-splitters>=0.3.7,<1",
+  "numpy>=1.26,<3",
+  "openai>=1.66,<3",
+  "qdrant-client>=1.15,<2",
+  "sacrebleu>=2.5,<3",
+  "sentence-transformers>=3.4,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+rag-benchmark = "rag_benchmark.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
