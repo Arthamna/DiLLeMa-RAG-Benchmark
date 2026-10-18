@@ -27,6 +27,7 @@ from rag_benchmark_rankify.worker import (  # noqa: E402
     _generation_kwargs,
     _generator,
     _reranker,
+    _retrievers,
 )
 
 
@@ -41,7 +42,8 @@ def _fake_rankify(monkeypatch):
     transformer_module = ModuleType("rankify.models.transformer_ranker")
     retrievers_package = ModuleType("rankify.retrievers")
     retrievers_package.__path__ = []
-    retriever_module = ModuleType("rankify.retrievers.retriever")
+    bge_module = ModuleType("rankify.retrievers.bge_retriever")
+    bm25_module = ModuleType("rankify.retrievers.bm25_retriever")
     prompt_module = ModuleType("rankify.generator.prompt_template")
 
     class Generator:
@@ -56,14 +58,22 @@ def _fake_rankify(monkeypatch):
         def __init__(self, **kwargs):
             type(self).last_kwargs = kwargs
 
-    class Retriever:
-        @staticmethod
-        def supported_methods():
-            return ("bm25", "bge")
+    class BGERetriever:
+        last_kwargs = None
+
+        def __init__(self, **kwargs):
+            type(self).last_kwargs = kwargs
+
+    class BM25Retriever:
+        last_kwargs = None
+
+        def __init__(self, **kwargs):
+            type(self).last_kwargs = kwargs
 
     generator_module.Generator = Generator
     transformer_module.TransformerRanker = TransformerRanker
-    retriever_module.Retriever = Retriever
+    bge_module.BGERetriever = BGERetriever
+    bm25_module.BM25Retriever = BM25Retriever
     prompt_module.DEFAULT_PROMPTS = {"in-context-ralm": "native RALM prompt"}
     prompt_module.PromptTemplate = SimpleNamespace(IN_CONTEXT_RALM="in-context-ralm")
     for name, module in {
@@ -74,7 +84,8 @@ def _fake_rankify(monkeypatch):
         "rankify.models": models_package,
         "rankify.models.transformer_ranker": transformer_module,
         "rankify.retrievers": retrievers_package,
-        "rankify.retrievers.retriever": retriever_module,
+        "rankify.retrievers.bge_retriever": bge_module,
+        "rankify.retrievers.bm25_retriever": bm25_module,
     }.items():
         monkeypatch.setitem(sys.modules, name, module)
     monkeypatch.setitem(sys.modules, "numpy", SimpleNamespace(__version__="1.26.4"))
@@ -84,7 +95,7 @@ def _fake_rankify(monkeypatch):
         cuda=SimpleNamespace(is_available=lambda: True, get_device_name=lambda index: "Mock GPU"),
     ))
     monkeypatch.setattr("importlib.metadata.version", lambda name: "0.1.4")
-    return Generator, TransformerRanker
+    return Generator, TransformerRanker, BM25Retriever, BGERetriever
 
 
 def test_rrag_is_absent_from_registry_and_cli():
@@ -179,7 +190,7 @@ def test_rankify_generation_is_greedy_and_bounded():
 
 
 def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatch):
-    generator_class, reranker_class = _fake_rankify(monkeypatch)
+    generator_class, reranker_class, bm25_class, bge_class = _fake_rankify(monkeypatch)
     capabilities = _capabilities()
     assert capabilities["rankify_version"] == "0.1.4"
     assert capabilities["reranker_import"] == "TransformerRanker"
@@ -187,6 +198,8 @@ def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatc
     assert capabilities["pyarrow_version"] == "17.0.0"
     assert capabilities["cuda_available"] is True
     assert "rankify.models.reranking" not in sys.modules
+    assert "rankify.retrievers.retriever" not in sys.modules
+    assert capabilities["retriever_imports"] == ["BM25Retriever", "BGERetriever"]
     monkeypatch.setenv("LLM_API_KEY", "runtime-only-secret")
     _generator({"generator": {
         "backend": "openai-compatible",
@@ -213,6 +226,18 @@ def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatc
         "method": "transformer_ranker",
         "model_name": "BAAI/bge-reranker-v2-m3",
         "device": "cuda",
+    }
+    retrievers = _retrievers(
+        {"candidates": 40, "dense_model": "BAAI/bge-m3"},
+        {"index_dir": "/tmp/index"}, "hybrid", "cuda",
+    )
+    assert set(retrievers) == {"bm25", "bge"}
+    assert bm25_class.last_kwargs == {
+        "n_docs": 40, "index_folder": str(Path("/tmp/index/bm25/bm25_index_custom")),
+    }
+    assert bge_class.last_kwargs == {
+        "n_docs": 40, "index_folder": str(Path("/tmp/index/bge/bge_index_custom")),
+        "model": "BAAI/bge-m3", "device": "cuda",
     }
 
 

@@ -56,6 +56,8 @@ dipin pada `rankify==0.1.4`. `uv sync` membuat atau memperbarui lockfile project
 
 Worker memanggil `TransformerRanker` secara langsung agar registry reranker
 Rankify tidak memuat dependency LiT5/RankLLM seperti `fastchat` yang tidak dipakai.
+Retriever BM25 dan BGE juga diimpor langsung agar registry retriever tidak
+memuat `OnlineRetriever` dan dependency web-search yang tidak digunakan.
 Compatibility worker dikunci pada PyArrow 17 dan Chardet 5.x.
 
 Jika `.venv-rankify` sudah dibuat oleh versi setup lama, cukup sinkronkan ulang:

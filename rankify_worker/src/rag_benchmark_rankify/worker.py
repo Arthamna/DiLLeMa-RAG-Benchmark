@@ -68,15 +68,12 @@ def _capabilities() -> dict:
     import torch
     from rankify.generator.generator import Generator
     from rankify.models.transformer_ranker import TransformerRanker
-    from rankify.retrievers.retriever import Retriever
+    from rankify.retrievers.bge_retriever import BGERetriever
+    from rankify.retrievers.bm25_retriever import BM25Retriever
 
     version = importlib.metadata.version("rankify")
-    retrievers = list(Retriever.supported_methods())
-    missing = {"bm25", "bge"} - set(retrievers)
     if version != "0.1.4":
         raise RuntimeError(f"Expected rankify==0.1.4, found {version}")
-    if missing:
-        raise RuntimeError(f"Rankify is missing required retrievers: {sorted(missing)}")
     return {
         "status": "ok",
         "python_version": sys.version.split()[0],
@@ -86,7 +83,8 @@ def _capabilities() -> dict:
         "torch_version": torch.__version__,
         "cuda_available": bool(torch.cuda.is_available()),
         "cuda_device": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
-        "retrievers": retrievers,
+        "retrievers": ["bm25", "bge"],
+        "retriever_imports": [BM25Retriever.__name__, BGERetriever.__name__],
         "reranker_import": TransformerRanker.__name__,
         "generator_import": Generator.__name__,
         "presets": list(PRESETS),
@@ -132,20 +130,21 @@ def _document(question: str):
 
 
 def _retrievers(request: dict, batch: dict, mode: str, device: str):
-    from rankify.retrievers.retriever import Retriever
+    from rankify.retrievers.bge_retriever import BGERetriever
+    from rankify.retrievers.bm25_retriever import BM25Retriever
 
     root = Path(batch["index_dir"])
     values = {}
     if mode in {"bm25", "hybrid"}:
-        values["bm25"] = Retriever(
-            method="bm25", n_docs=int(request["candidates"]),
+        values["bm25"] = BM25Retriever(
+            n_docs=int(request["candidates"]),
             index_folder=str(root / "bm25" / "bm25_index_custom"),
         )
     if mode in {"bge", "hybrid"}:
-        values["bge"] = Retriever(
-            method="bge", n_docs=int(request["candidates"]),
+        values["bge"] = BGERetriever(
+            n_docs=int(request["candidates"]),
             index_folder=str(root / "bge" / "bge_index_custom"),
-            encoder_name=str(request["dense_model"]), model=str(request["dense_model"]), device=device,
+            model=str(request["dense_model"]), device=device,
         )
     return values
 
