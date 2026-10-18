@@ -235,13 +235,19 @@ class RankifyWorkerClient:
             raise FileNotFoundError(
                 f"Rankify worker Python not found: {self.python}. Run scripts/setup_rankify_ubuntu.sh"
             )
+        worker_env = os.environ.copy()
+        worker_env["PATH"] = os.pathsep.join([
+            str(self.python.parent),
+            worker_env.get("PATH", ""),
+        ])
+
         completed = subprocess.run(
             [str(self.python), "-m", "rag_benchmark_rankify.worker"],
             input=json.dumps(request, ensure_ascii=False) + "\n",
             text=True,
             capture_output=True,
             check=False,
-            env=os.environ.copy(),
+            env=worker_env,
         )
         if completed.returncode:
             raise RuntimeError(
