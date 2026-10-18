@@ -138,7 +138,8 @@ def _retrievers(request: dict, batch: dict, mode: str, device: str):
     if mode in {"bm25", "hybrid"}:
         values["bm25"] = BM25Retriever(
             n_docs=int(request["candidates"]),
-            index_folder=str(root / "bm25" / "bm25_index_custom"),
+            index_type="custom",
+            index_folder=str(root / "bm25"),
         )
     if mode in {"bge", "hybrid"}:
         values["bge"] = BGERetriever(
