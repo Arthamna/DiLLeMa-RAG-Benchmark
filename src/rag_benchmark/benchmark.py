@@ -141,12 +141,24 @@ class ExperimentSpec:
             raise ValueError("dataset must be its or uniqa")
         base = path.resolve().parent
 
-        def resolved(name: str, default: str | None = None) -> Path:
+        def resolved(
+            name: str,
+            default: str | None = None,
+            *,
+            follow_symlinks: bool = True,
+        ) -> Path:
             value = raw.get(name, default)
             if not value:
                 raise ValueError(f"Missing required configuration: {name}")
+
             candidate = Path(str(value)).expanduser()
-            return candidate.resolve() if candidate.is_absolute() else (base / candidate).resolve()
+            path = candidate if candidate.is_absolute() else base / candidate
+
+            if follow_symlinks:
+                return path.resolve()
+
+            # Jadikan absolut tanpa mengikuti symlink virtualenv.
+            return Path(os.path.abspath(path))
 
         models = raw.get("models") or {}
         retrieval = raw.get("retrieval") or {}
@@ -157,7 +169,11 @@ class ExperimentSpec:
             dataset=dataset,
             source=resolved("source"),
             index_root=resolved("index_root", "../../artifacts/indexes"),
-            rankify_python=resolved("rankify_python", "../../.venv-rankify/bin/python"),
+            rankify_python=resolved(
+                "rankify_python",
+                "../../.venv-rankify/bin/python",
+                follow_symlinks=False,
+            ),
             dense_model=str(models.get("dense_multilingual") or "").strip(),
             reranker_model=str(models.get("reranker_multilingual") or "").strip(),
             candidates=int(retrieval.get("candidates", 40)),
