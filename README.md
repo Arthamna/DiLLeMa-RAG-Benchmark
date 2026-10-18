@@ -25,14 +25,17 @@ di diagnostics.
 ## Persyaratan Ubuntu
 
 - Ubuntu 22.04 atau lebih baru.
-- Python 3.10–3.12 dan `python3-venv`.
+- `uv` dan `curl` untuk mengelola Python serta dependency project.
 - Java yang kompatibel dengan Pyserini untuk index BM25 Rankify.
 - NVIDIA driver/CUDA opsional tetapi sangat disarankan.
 - Ruang disk untuk model Hugging Face dan index.
 
 ```bash
 sudo apt update
-sudo apt install -y python3 python3-venv python3-pip openjdk-21-jre-headless
+sudo apt install -y curl ca-certificates openjdk-21-jre-headless
+curl -LsSf https://astral.sh/uv/0.12.19/install.sh | sh
+exec "$SHELL" -l
+uv --version
 ```
 
 ## Setup environment lokal
@@ -44,12 +47,12 @@ beberapa dependency model.
 cd /path/to/DiLLeMa-RAG-Benchmark
 bash scripts/setup_ubuntu.sh
 bash scripts/setup_rankify_ubuntu.sh
-source .venv/bin/activate
 cp .env.example .env
 ```
 
-Kedua environment berada di repository lokal dan diabaikan Git. Worker dipin
-pada `rankify==0.1.4`.
+Kedua environment dibuat oleh `uv` di `.venv` dan `.venv-rankify`, tetap lokal
+di repository, dan diabaikan Git. Python mengikuti `.python-version`; worker
+dipin pada `rankify==0.1.4`. `uv sync` membuat atau memperbarui lockfile project.
 
 ## Konfigurasi generator
 
@@ -119,8 +122,7 @@ serta `gpu_fallback` pada diagnostics. Tujuh preset Rankify dijalankan berurutan
 agar penggunaan VRAM tetap sesuai untuk GPU sekitar 6 GB.
 
 ```bash
-source .venv/bin/activate
-python -c 'import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU fallback")'
+uv run --no-sync python -c 'import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU fallback")'
 ```
 
 ## Dataset
@@ -146,7 +148,6 @@ dikirim ke Rankify worker, retriever, prompt, atau generator.
 ## Menjalankan benchmark
 
 ```bash
-source .venv/bin/activate
 set -a
 source .env
 set +a
@@ -155,7 +156,7 @@ set +a
 Index saja:
 
 ```bash
-python -m rag_benchmark benchmark \
+uv run --no-sync python -m rag_benchmark benchmark \
   --config configs/experiments/rankify-multilingual.yaml \
   --stage index \
   --output artifacts/benchmarks/its-index
@@ -164,7 +165,7 @@ python -m rag_benchmark benchmark \
 Evaluasi index yang sudah ada:
 
 ```bash
-python -m rag_benchmark benchmark \
+uv run --no-sync python -m rag_benchmark benchmark \
   --config configs/experiments/rankify-multilingual.yaml \
   --stage evaluate \
   --output artifacts/benchmarks/its-run
@@ -173,7 +174,7 @@ python -m rag_benchmark benchmark \
 Index lalu evaluasi:
 
 ```bash
-python -m rag_benchmark benchmark \
+uv run --no-sync python -m rag_benchmark benchmark \
   --config configs/experiments/rankify-multilingual.yaml \
   --stage all \
   --output artifacts/benchmarks/its-run
@@ -182,12 +183,12 @@ python -m rag_benchmark benchmark \
 CLI DiLLeMa lama tetap tersedia:
 
 ```bash
-python -m rag_benchmark index \
+uv run --no-sync python -m rag_benchmark index \
   --technique dillema --dataset its \
   --source ../langchain-chatbot-main/dataset \
   --index-root artifacts/indexes
 
-python -m rag_benchmark evaluate \
+uv run --no-sync python -m rag_benchmark evaluate \
   --technique dillema --dataset its \
   --index-root artifacts/indexes \
   --output artifacts/runs/dillema-its
@@ -221,7 +222,7 @@ Perbandingan dua run hanya diterima bila dataset, split, QA IDs, model/corpus
 fingerprint, dan decoding identik:
 
 ```bash
-python -m rag_benchmark compare-techniques \
+uv run --no-sync python -m rag_benchmark compare-techniques \
   --baseline-run artifacts/benchmarks/its-run/dillema/predictions.jsonl \
   --candidate-run artifacts/benchmarks/its-run/rankify_hybrid_bge_rerank_basic/predictions.jsonl \
   --output artifacts/benchmarks/its-run/comparison
@@ -230,9 +231,8 @@ python -m rag_benchmark compare-techniques \
 ## Test
 
 ```bash
-source .venv/bin/activate
-python -m pytest
-python -m rag_benchmark --help
+uv run --no-sync pytest
+uv run --no-sync python -m rag_benchmark --help
 ```
 
 Test unit tidak mengunduh model atau memerlukan Rankify. Full benchmark pertama
@@ -245,3 +245,5 @@ memerlukan jaringan untuk dependency/model, kemudian dapat memakai cache lokal.
 - [Rankify custom indexing](https://rankify.readthedocs.io/en/latest/tutorials/retrieval/custom_datasets/)
 - [Rankify transformer reranker](https://rankify.readthedocs.io/en/latest/api/rerankings/transformer_reranker/)
 - [SacreBLEU](https://github.com/mjpost/sacreBLEU)
+- [uv installation](https://docs.astral.sh/uv/getting-started/installation/)
+- [uv locking and syncing](https://docs.astral.sh/uv/concepts/projects/sync/)

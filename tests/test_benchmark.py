@@ -86,6 +86,17 @@ def test_rrag_is_absent_from_registry_and_cli():
         parser.parse_args(["evaluate", "--technique", "rrag"])
 
 
+def test_setup_scripts_use_uv_only():
+    root = Path(__file__).resolve().parents[1]
+    scripts = [
+        (root / "scripts" / "setup_ubuntu.sh").read_text(encoding="utf-8"),
+        (root / "scripts" / "setup_rankify_ubuntu.sh").read_text(encoding="utf-8"),
+    ]
+    assert all("uv sync" in script for script in scripts)
+    assert all("pip install" not in script for script in scripts)
+    assert all("python3 -m venv" not in script for script in scripts)
+
+
 def test_generation_and_experiment_models_are_configuration_driven(tmp_path, monkeypatch):
     source = tmp_path / "dataset"
     source.mkdir()
