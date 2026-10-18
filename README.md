@@ -8,9 +8,11 @@ Standalone benchmark for two RAG techniques over the ITS and UniQA corpora:
   features, a trainable R²-Former, retrieval-aware prompting, and retrieval-embedding
   injection into a frozen local causal LLM.
 
-Both techniques use the same Hugging Face base LLM and deterministic decoding. The
-project excludes frontend, web API, authentication, conversation memory, adaptive
-routing, query augmentation, scope gates, and knowledge graphs.
+By default both techniques use the same Hugging Face base LLM and deterministic
+decoding. DiLLeMa can optionally generate through an OpenAI-compatible API; R²AG
+still requires the local model because it injects retrieval embeddings into the LLM.
+The project excludes frontend, web API, authentication, conversation memory,
+adaptive routing, query augmentation, scope gates, and knowledge graphs.
 
 ## Architecture
 
@@ -22,9 +24,9 @@ src/rag_benchmark/
     └── rrag/               features, R²-Former, trainer, and RRAG pipeline
 ```
 
-The base-model loader, tokenizer, quantization, prompt decoding, and generation live
-only in `shared/local_llm.py`. R²-Former is technique-specific and remains under
-`techniques/rrag/`.
+The local base-model loader, tokenizer, quantization, prompt decoding, and generation
+live in `shared/local_llm.py`; the optional API runtime lives in `shared/api_llm.py`.
+R²-Former is technique-specific and remains under `techniques/rrag/`.
 
 ## Setup di Ubuntu Linux
 
@@ -53,11 +55,11 @@ Gunakan `INSTALL_QUANTIZED=0 ./scripts/setup_ubuntu.sh` jika tidak ingin memasan
 test -d .venv || python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
-python -m pip install -e ".[dev,rrag,quantized]"
+python -m pip install -e ".[api,dev,rrag,quantized]"
 ```
 
-Salin konfigurasi, ubah `HF_MODEL_NAME`, lalu ekspor isinya. CLI tidak memuat `.env`
-secara otomatis.
+Salin konfigurasi, pilih generator lokal atau API, lalu ekspor isinya. CLI tidak
+memuat `.env` secara otomatis.
 
 ```bash
 cp -n .env.example .env
@@ -67,7 +69,7 @@ source .env
 set +a
 ```
 
-Konfigurasi minimal:
+Untuk generator Hugging Face lokal, konfigurasi minimalnya:
 
 ```dotenv
 HF_MODEL_NAME=your-huggingface-causal-lm
@@ -75,12 +77,30 @@ HF_QUANTIZATION=4bit
 RAG_DEVICE=auto
 ```
 
+Untuk menggunakan OpenRouter atau endpoint OpenAI-compatible lain pada evaluasi
+DiLLeMa, isi konfigurasi berikut. `LLM_API_KEY` yang tidak kosong otomatis memilih
+generator API dan `HF_MODEL_NAME` tidak diperlukan untuk evaluasi DiLLeMa tersebut.
+
+```dotenv
+LLM_BASE_URL=https://openrouter.ai/api/v1
+LLM_API_KEY=your-api-key
+LLM_MODEL=openrouter/free
+LLM_MODEL_SOURCE=openrouter/free
+LLM_MAX_TOKENS=768
+```
+
+R²AG tetap memerlukan `HF_MODEL_NAME` untuk training dan evaluasi karena retrieval
+embedding disisipkan langsung ke hidden state model lokal. Kosongkan `LLM_API_KEY`
+untuk kembali memakai Hugging Face lokal pada DiLLeMa. Jangan commit file `.env`.
+
 There is deliberately no default LLM. Optional settings are:
 
 - `HF_QUANTIZATION=4bit|8bit|none` (default `4bit`)
 - `HF_TRUST_REMOTE_CODE=false`
 - `HF_MAX_INPUT_TOKENS=4096`
 - `HF_MAX_NEW_TOKENS=768`
+- `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL`, `LLM_MODEL_SOURCE`, dan
+  `LLM_MAX_TOKENS` untuk generator API opsional DiLLeMa
 - `RAG_DEVICE=auto|cuda|cuda:0|cpu` (default `auto`)
 - `EMBED_BATCH_SIZE=32`
 - `RERANK_BATCH_SIZE=16`
@@ -231,6 +251,8 @@ extra is installed, BLEU edge cases, and in-memory end-to-end smoke paths.
 - [Python `venv` documentation](https://docs.python.org/3/library/venv.html)
 - [PyTorch CUDA availability](https://docs.pytorch.org/docs/stable/generated/torch.cuda.is_available.html)
 - [Sentence Transformers `CrossEncoder`](https://sbert.net/docs/package_reference/cross_encoder/cross_encoder.html)
+- [OpenAI Python client](https://github.com/openai/openai-python)
+- [OpenRouter API quickstart](https://openrouter.ai/docs/quickstart)
 
 See `THIRD_PARTY_NOTICES.md` for RRAG attribution.
 

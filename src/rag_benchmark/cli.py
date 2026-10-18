@@ -15,12 +15,15 @@ from .shared.config import PipelineConfig, collection_name
 from .shared.datasets import load_dataset
 from .shared.device import resolve_torch_device
 from .shared.evaluation import evaluate_questions
+from .shared.api_llm import APIModelConfig, OpenAICompatibleLLM
 from .shared.local_llm import HFModelConfig, LocalLLM
 from .shared.retrieval import CrossEncoderReranker, E5Embedding, QdrantStore
 from .techniques import TECHNIQUES, get_technique
 from .techniques.dillema.pipeline import RAGPipeline
 from .techniques.rrag.config import RRAGConfig
 from .techniques.rrag.pipeline import RRAGTechnique
+
+LOGGER = logging.getLogger(__name__)
 
 
 def _now() -> str:
@@ -154,6 +157,15 @@ def _checkpoint_file(root: Path, language: str) -> Path:
     return root / language / "checkpoint.pt"
 
 
+def _evaluation_runtime(technique: str):
+    if technique == "dillema" and APIModelConfig.is_configured():
+        config = APIModelConfig.from_env()
+        LOGGER.info("Using OpenAI-compatible generator %s at %s", config.model, config.base_url)
+        return OpenAICompatibleLLM(config)
+    LOGGER.info("Using local Hugging Face generator")
+    return LocalLLM(HFModelConfig.from_env())
+
+
 def run_evaluate(
     technique: str,
     dataset: str,
@@ -169,7 +181,7 @@ def run_evaluate(
     pipeline_config = PipelineConfig.from_env()
     rrag_config = RRAGConfig.from_env()
     device = resolve_torch_device("RAG evaluation")
-    runtime = LocalLLM(HFModelConfig.from_env())
+    runtime = _evaluation_runtime(technique)
     store = QdrantStore(_technique_root(index_root, technique, dataset))
     prediction_records = []
     try:
@@ -219,7 +231,14 @@ def run_evaluate(
         "technique": technique,
         "pipeline": asdict(pipeline_config),
         "rrag": asdict(rrag_config) if technique == "rrag" else None,
-        "hf_model": asdict(runtime.config),
+        "generator": {
+            "kind": runtime.kind,
+            "config": (
+                runtime.config.public_dict()
+                if isinstance(runtime, OpenAICompatibleLLM)
+                else asdict(runtime.config)
+            ),
+        },
         "pipeline_fingerprint": pipeline_config.fingerprint(),
         "model_fingerprint": runtime.fingerprint,
     }

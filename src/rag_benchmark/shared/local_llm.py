@@ -63,6 +63,8 @@ def rrag_prompt(question: str, evidence) -> str:
 class LocalLLM:
     """The only base-model loader/tokenizer/decoder used by every technique."""
 
+    kind = "huggingface-local"
+
     def __init__(self, config: HFModelConfig, model=None, tokenizer=None):
         self.config = config
         if model is None or tokenizer is None:
