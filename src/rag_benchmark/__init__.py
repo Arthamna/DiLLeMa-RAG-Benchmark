@@ -1,4 +1,4 @@
-"""Standalone DiLLeMa conventional RAG benchmark."""
+"""Multi-technique DiLLeMa and R²AG benchmark."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 

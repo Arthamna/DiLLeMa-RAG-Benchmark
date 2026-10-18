@@ -56,11 +56,22 @@ def bleu_variant(records: list[dict], content_only: bool = False) -> dict:
 
 
 def score_group(records: list[dict]) -> dict:
+    recalls = [
+        float(row.get("diagnostics", {}).get("source_recall_at_10"))
+        for row in records
+        if row.get("diagnostics", {}).get("source_recall_at_10") is not None
+    ]
+    latencies = [float(row.get("latency_ms", 0.0)) for row in records]
     return {
         "count": len(records),
         "status_counts": dict(sorted(Counter(str(row.get("status", "")) for row in records).items())),
         "BLEU_raw": bleu_variant(records, content_only=False),
         "BLEU_content": bleu_variant(records, content_only=True),
+        "retrieval": {
+            "labeled_count": len(recalls),
+            "recall_at_10": (sum(recalls) / len(recalls)) if recalls else None,
+        },
+        "average_latency_ms": (sum(latencies) / len(latencies)) if latencies else 0.0,
     }
 
 

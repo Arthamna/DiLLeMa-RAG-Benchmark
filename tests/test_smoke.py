@@ -1,11 +1,11 @@
 import numpy as np
 from qdrant_client import QdrantClient
 
-from rag_benchmark.cli import evaluate_questions
 from rag_benchmark.config import PipelineConfig
 from rag_benchmark.metrics import summarize
 from rag_benchmark.models import DocumentRecord, QARecord
 from rag_benchmark.pipeline import RAGPipeline
+from rag_benchmark.shared.evaluation import evaluate_questions
 from rag_benchmark.store import QdrantStore
 
 
@@ -32,7 +32,7 @@ class SmokeReranker:
         return [0.9 if token in passage.casefold() else 0.1 for passage in passages]
 
 
-class MockOpenAICompatibleGenerator:
+class MockLocalGenerator:
     def generate(self, question, context):
         language = question.casefold().split()[0]
         return {
@@ -45,7 +45,8 @@ class MockOpenAICompatibleGenerator:
 def test_two_qa_per_dataset_language_from_index_to_bleu(tmp_path):
     store = QdrantStore(tmp_path, client=QdrantClient(location=":memory:"))
     config = PipelineConfig(min_chunk_chars=1, rerank_min_score=0.05)
-    pipeline = RAGPipeline(store, SmokeEmbedder(), SmokeReranker(), config)
+    generator = MockLocalGenerator()
+    pipeline = RAGPipeline(store, SmokeEmbedder(), SmokeReranker(), config, generator=generator)
     answers = {
         "id": "jawaban benar terdiri dari empat kata",
         "en": "the correct answer has five words",
@@ -58,15 +59,14 @@ def test_two_qa_per_dataset_language_from_index_to_bleu(tmp_path):
             for index in range(2)
         ]
         pipeline.index(collection, documents)
-    generator = MockOpenAICompatibleGenerator()
-    its_questions = [QARecord(f"i{n}", "its", "id", f"its question {n}", [answers["id"]], "all") for n in range(2)]
+    its_questions = [QARecord(f"i{n}", "its", "id", f"its question {n}", [answers["id"]], "test") for n in range(2)]
     uniqa_questions = [
         QARecord(f"{language}{n}", "uniqa", language, f"{prefix} question {n}", [answers[language]], "test")
         for language, prefix in (("en", "english"), ("it", "italiano"))
         for n in range(2)
     ]
-    its_rows = [item.to_dict() for item in evaluate_questions(its_questions, pipeline, generator, "its")]
-    uniqa_rows = [item.to_dict() for item in evaluate_questions(uniqa_questions, pipeline, generator, "uniqa")]
+    its_rows = [item.to_dict() for item in evaluate_questions(its_questions, pipeline, "its", "dillema", "model")]
+    uniqa_rows = [item.to_dict() for item in evaluate_questions(uniqa_questions, pipeline, "uniqa", "dillema", "model")]
     assert len(its_rows) == 2 and len(uniqa_rows) == 4
     assert summarize(its_rows)["its"]["BLEU_raw"]["score"] == 100.0
     assert summarize(uniqa_rows)["strict"]["macro_average"]["BLEU_raw"] == 100.0

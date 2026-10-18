@@ -1,25 +1,18 @@
-from types import SimpleNamespace
+import pytest
 
-from rag_benchmark.config import LLMConfig, PipelineConfig
-from rag_benchmark.generation import OpenAIGenerator
+from rag_benchmark.generation import HFModelConfig, base_prompt
 
 
-def test_openai_compatible_generation_request_is_deterministic():
-    captured = {}
-
-    def create(**kwargs):
-        captured.update(kwargs)
-        return SimpleNamespace(
-            choices=[SimpleNamespace(message=SimpleNamespace(content="  deterministic answer  "))]
-        )
-
-    generator = object.__new__(OpenAIGenerator)
-    generator.llm = LLMConfig("http://mock.test/v1", "not-a-real-key", "mock-model")
-    generator.pipeline = PipelineConfig()
-    generator.client = SimpleNamespace(
-        chat=SimpleNamespace(completions=SimpleNamespace(create=create))
-    )
-    assert generator.generate("question", "evidence") == "deterministic answer"
-    assert captured["temperature"] == 0.0
-    assert captured["max_tokens"] == 768
-    assert "references" not in captured["messages"][1]["content"].casefold()
+def test_hf_model_configuration_is_explicit_and_deterministic(monkeypatch):
+    monkeypatch.delenv("HF_MODEL_NAME", raising=False)
+    with pytest.raises(ValueError, match="HF_MODEL_NAME"):
+        HFModelConfig.from_env()
+    monkeypatch.setenv("HF_MODEL_NAME", "local/test-model")
+    monkeypatch.setenv("HF_QUANTIZATION", "none")
+    config = HFModelConfig.from_env()
+    assert config.model_name == "local/test-model"
+    assert config.max_new_tokens == 768
+    assert config.fingerprint() == HFModelConfig.from_env().fingerprint()
+    prompt = base_prompt("question", "evidence")
+    assert "references" not in prompt.casefold()
+    assert "temperature" not in prompt.casefold()

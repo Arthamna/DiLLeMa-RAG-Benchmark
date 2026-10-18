@@ -40,7 +40,9 @@ def test_its_schema_deduplication_and_multireference(tmp_path):
     assert "Alias" in bundle.documents[0].aliases
     assert len(bundle.questions) == 1
     assert len(bundle.questions[0].references) == 2
-    assert bundle.questions[0].split == "all"
+    assert bundle.questions[0].split == "train"
+    assert bundle.questions[0].source_ids == [bundle.documents[0].id]
+    assert bundle.questions[0].metadata["relevance_label"] == "weak_category"
 
 
 def test_its_rejects_missing_schema_columns(tmp_path):
@@ -83,8 +85,15 @@ def test_canonical_dataset_counts():
     its = load_its(its_root)
     assert (len(its.documents), len(its.questions)) == (53, 340)
     assert sum(len(question.references) for question in its.questions) == 345
+    assert Counter(question.split for question in its.questions) == {"train": 271, "test": 69}
+    assert not ({q.id for q in its.questions_for_split("train")} & {q.id for q in its.questions_for_split("test")})
     uniqa = load_uniqa(uniqa_root)
     assert Counter(document.language for document in uniqa.documents) == {"en": 522, "it": 521}
-    assert Counter(question.language for question in uniqa.questions) == {"en": 1573, "it": 1573}
-    assert Counter(question.language for question in uniqa.missing_questions) == {"en": 42, "it": 14}
+    assert Counter((question.language, question.split) for question in uniqa.questions) == {
+        ("en", "train"): 5298,
+        ("it", "train"): 5298,
+        ("en", "test"): 1573,
+        ("it", "test"): 1573,
+    }
+    assert Counter(question.language for question in uniqa.questions_for_split("test") if not question.available) == {"en": 42, "it": 14}
 

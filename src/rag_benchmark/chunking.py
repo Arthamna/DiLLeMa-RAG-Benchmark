@@ -47,6 +47,7 @@ def split_structure(text: str) -> list[tuple[str, str]]:
         blocks.append((match.group(0).strip(), text[match.start() : end].strip()))
     return blocks
 
+# https://github.com/robbypambudi/DiLLeMa/blob/main/apps/rag/nlp/doc_chunking.py
 
 class DocumentChunker:
     """DiLLeMa-style structure-first chunking with canonical parent windows."""
