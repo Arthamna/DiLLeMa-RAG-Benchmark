@@ -1,0 +1,48 @@
+Anno Accademico 2024/2025
+Laurea magistrale in DATA, ALGORITHMS, AND MACHINE INTELLIGENCE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2249
+---------
+Classe di Laurea magistrale in Informatica (LM-18)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Matematica e Informatica
+Doppio titolo con Université Paris Est Marne-La-Vallée, Paris (FRANCE)
+Codice corso 2270
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22452	KNOWLEDGE REPRESENTATION AND REASONING (in inglese)	FICI	6	1° semestre	INF/01
+22453	DATA ENCRYPTION AND CODES (in inglese)	FALCONE	6	1° semestre	MAT/03
+22454	PATTERN DISCOVERY FOR LIFE SCIENCES (in inglese)	EPIFANIO	6	1° semestre	INF/01
+17393	BIG DATA MANAGEMENT (in inglese)	ROMBO	6	2° semestre	INF/01
+22450	INFORMATION THEORY AND DATA COMPRESSION (in inglese)	SCIORTINO	6	2° semestre	INF/01
+23616	COMBINATORIAL AND PROBABILISTIC ALGORITHMS (in inglese)	GIANCARLO	6	2° semestre	INF/01
+24091	LANGUAGES AND COMPILERS DESIGN (in inglese)	MANTACI	6	2° semestre	INF/01
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello studente (consigliate)		12		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		6	1° semestre	
+18182	STAGES E TIROCINI		6	1° semestre	
+21958	COMPLEX NETWORKS (in inglese)	MICCICHE'	6	1° semestre	FIS/07
+22451	CLOUD AND HIGH PERFORMANCE COMPUTING (in inglese)	REALE	6	1° semestre	FIS/05
+05917	PROVA FINALE		24	2° semestre	
+19272	ARTIFICIAL INTELLIGENCE AND DEEP LEARNING (in inglese)	LO BOSCO	6	2° semestre	INF/01
+	Gruppo di attiv. form. opzionali II		6		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24082	NATURE INSPIRED ALGORITHMS FOR OPTIMIZATION (in inglese)	RIZZO	6	1° semestre	INF/01
+22449	INFORMATION RETRIEVAL AND NATURAL LANGUAGE PROCESSING (in inglese)	PILATO	6	2° semestre	INF/01
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15082	LINGUA ITALIANA PER STRANIERI		6	1° semestre	
+22630	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO C1	PINELLO	6	1° semestre	
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22956	IOT AND CLOUD SECURITY (in inglese)		6	2° semestre	ING-INF/03
+

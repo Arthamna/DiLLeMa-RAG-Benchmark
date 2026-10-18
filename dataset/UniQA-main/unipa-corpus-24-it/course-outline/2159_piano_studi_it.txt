@@ -1,0 +1,72 @@
+Anno Accademico 2024/2025
+Laurea magistrale in CHIMICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=766
+---------
+Classe di Laurea magistrale in Scienze chimiche (LM-54)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Fisica e Chimica - Emilio Segrè
+Codice corso 2159
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19814	SPETTROSCOPIA ORGANICA	LO MEO	7	1° semestre	CHIM/06
+20691	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2		3	1° semestre	
+01925	CHIMICA INORGANICA SUPERIORE	DUCA	8	2° semestre	CHIM/03
+16181	VALIDAZIONE DEL DATO ANALITICO E CHEMIOMETRIA		6	2° semestre	CHIM/01
+16581	CHIMICA TEORICA E COMPUTAZIONALE	FERRANTE	8	2° semestre	CHIM/02
+19966	CHIMICA SUPRAMOLECOLARE	D'ANNA	7	2° semestre	CHIM/06
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		6		
+	Gruppo di attiv. form. opzionali III		6		
+	Attiv. form. a scelta dello studente (consigliate)		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		4	1° semestre	
+18182	STAGES E TIROCINI		3	1° semestre	
+05917	PROVA FINALE		30	2° semestre	
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		2	2° semestre	
+	Gruppo di attiv. form. opzionali IV		6		
+	Gruppo di attiv. form. opzionali V		6		
+	Attiv. form. a scelta dello studente II		6		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15343	CHIMICA DELLO STATO SOLIDO E DEI MATERIALI INORGANICI	GIANNICI	6	1° semestre	CHIM/03
+16492	CHIMICA DI COORDINAZIONE E BIOINORGANICA	PELLERITO	6	1° semestre	CHIM/03
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16499	METODOLOGIE INNOVATIVE IN CHIMICA ORGANICA	CAMPISCIANO	6	1° semestre	CHIM/06
+16503	SINTESI SPECIALI ORGANICHE E LABORATORIO	GIACALONE	6	1° semestre	CHIM/06
+16527	CHIMICA DEI MATERIALI ORGANICI	PIBIRI	6	1° semestre	CHIM/06
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16494	PREPARAZIONE E CARATTERIZZAZIONE DEI MATERIALI	SALADINO	6	1° semestre	CHIM/02
+19826	GREEN CHEMISTRY	D'ANNA	6	1° semestre	CHIM/06
+19829	FONDAMENTI DI DIDATTICA DELLA CHIMICA	MAGGIO	6	1° semestre	
+	CONCETTI FONDANTI DELLA CHIMICA E LORO TRASPOSIZIONE DIDATTICA	MAGGIO	3		CHIM/06
+	METODI PER L'INSEGNAMENTO E PER L'APPRENDIMENTO DELLA CHIMICA	LOMBARDO	3		CHIM/02
+22520	BIOSENSORI E METODI ANALITICI AVANZATI CON LABORATORIO	ARRABITO	6	1° semestre	CHIM/01
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01889	CHIMICA FISICA DELLE INTERFASI	CAVALLARO	6	1° semestre	CHIM/02
+15346	CHIMICA FISICA DEI MATERIALI	PIGNATARO	6	1° semestre	CHIM/02
+19827	METODOLOGIE E STRUMENTI IN DIDATTICA DELLA CHIMICA	CHILLURA MARTINO	6	2° semestre	CHIM/02
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+08443	CHIMICA DELL' AMBIENTE E DEI BENI CULTURALI	ORECCHIO	6	1° semestre	CHIM/12
+17197	SOSTANZE NATURALI	MAGGIO	6	1° semestre	CHIM/06
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24007	METODI COMPUTAZIONALI IN CHIMICA BIOINORGANICA	SPINELLO	6	2° semestre	CHIM/03
+24009	SINTESI AVANZATA IN CHIMICA INORGANICA C.I.	TERENZI	6	2° semestre	
+	SINTESI E CARATTERIZZAZIONE DI COMPOSTI ORGANOMETALLICI	BONSIGNORE	3		CHIM/03
+	SINTESI E CARATTERIZZAZIONE DI COMPLESSI DI COORDINAZIONE	TERENZI	3		CHIM/03
+

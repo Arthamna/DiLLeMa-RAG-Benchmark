@@ -1,0 +1,73 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on DIGITAL TECHNOLOGIES FOR ARCHITECTURE
+Curriculum: DIGIITAL TECHNOLOGIES FOR ARCHITECTURE
+For more information visit http://www.unipa.it/struttura.html?id=2283
+---------
+
+Duration 3 years
+Location PALERMO
+Number of seats in local planning: 40
+Department of Architecture
+Course Code 2276
+---------
+Educational objectives
+The course complies line with Ministerial Decree 446/2020, supplemented by subsequent Ministerial Decrees 682/223 and 685/2023, and provides for training activities in basic, class-specific and related/supplementary disciplines. These activities are integrated with laboratory and internship training activities (TPV) aimed at preparing graduates to solve practical problems of basic architecture that they may face in future professional experience.
+The course provides the acquisition of qualitative and quantitative knowledge in the following fields:
+Basic educational activities
+Basic computer science, mathematics and statistics training and Basic chemistry and physics training
+i) Basic mathematical, physical and IT issues, enabling an approach to more specialized subjects and the use of modern technologies.
+Class-specific educational activities
+Representation
+ii) In the field of representation, the issues of survey, analysis and graphic rendering of architecture and the territory will be dealt with with particular reference to digital survey and including the topics of parametric modelling and BIM for architecture.
+Building
+iii) digital methodologies to support architectural design both in CAD and with computer-aided design applications, elements of construction systems and BIM and issues relating to the digital visualization of.
+iv) Furthermore, the topics of digital representation and reconstruction of historical architectural artefacts and historical investigation in architecture will be addressed, also in an integrated way with respect to the virtual reconstruction techniques of architecture as well as with reference to the topics of digital twins and conservation.
+Territory
+v) Activities based on the use of digital methodologies to support urban planning and design will be addressed, through the analysis of the territory and infrastructures with GIS applications.
+Monitoring, diagnostics, and plant engineering
+vi) Particular attention will be given to the aspects of the construction site, to the organisation, management, and accounting of works, to the monitoring and maintenance of the buildings and to the degradation of the structures with reference to the digitized building maintenance and the accounting of the works.
+Estimate and administrative legal management.
+vii) The economic-administrative evaluation methods of the projects are dealt with through the themes of estimate, professional practice, in relation to the aspects of feasibility and economic sustainability, as well as the administrative and procedural aspects concerning the construction works and those of accounting and job management.
+In the context of related and supplementary activities, the theme of virtual reconstruction of architecture for heritage conservation is addressed, offering specific skills in the field of new technologies related to digital twins enabling the planning of maintenance and conservation interventions applied to valuable architectural assets .
+Large space is given to laboratories dedicated to activities connected to the themes of digital representation of the architectural project, knowledge of construction systems, reconstruction and virtual visualization of architecture, parametric architecture, BIM, and also accounting and the management of the works and, therefore, of the building with attention to the maintenance aspects.
+Finally, students choose elective training activities and deepen their knowledge of the English language.
+The practical-evaluative internship in the second year (24 credits) is oriented towards the application and consolidation of the acquired digital techniques and in the third year (24 credits) is oriented towards the simulation of professional experience and the final exam.
+---------
+Professional opportunities
+Profile:
+Graduate technician
+Functions:
+Graduate Technicians are multi-skills professional in the architecture and building process sector, able to use the most innovative digital technologies available today and to carry out support activities for design and consultancy activities carried out by more specialized professionals or autonomously; in detail, they will be able to deal with:
+-	architectural surveys using digital photogrammetric and laser scanning techniques. 
+-	rendering of the architectural project using CAD and the application of the principles of parametric architectural modelling. 
+-	Application of BIM methodology and information modelling and use of the technical documentation and dedicated software for object modelling and the production of documents.
+-	virtual reconstruction of historical and contemporary architectural artefacts and the digital visualization of architecture. 
+-	Digital rendering of data relating to the territory through the use of GIS.
+-	Carry out, contributing to others, or independently, the accounting procedures for the management of the works and the construction site using specific software for the production of bills of quantities, technical specifications, measurement booklets, progress reports, maintenance plans, etc.
+-	contribution to the verification of the correct application of the safety procedures in the management of the construction sites, and of the aspects relating to the technical and economic feasibility of the production process and realization of the architectural works.
+-	correct application of the legislation on public works and in the private sphere, of urban planning instruments and building permits.
+-	Drafting building practices, technical specifications, maintenance plans, technical drawings forensic technical advice. 
+-	planning, yard management and supervision of the construction and distribution aspects relating to modest constructions.
+-	accounting procedures for the management of works.
+The continuation of studies in 2nd cycle degrees is not a natural outlet for the courses of this class, but can be carried out after fulfilling the necessary educational duties.
+Skills:
+Adequate preparation in the relevant application disciplines as well as an adequate baggage of operational knowledge essential to operate independently in areas such as:
+-	topographic, cartographic, and architectural surveying, including the subsequent rendering, also cartographic and georeferenced, through the use of advanced technologies for surveying and rendering. 
+-	BIM modelling and analysis, digital representation techniques for architecture with CAD.
+-	activities based on the use of digital methodologies to support urban/architectural planning and design through GIS
+-	support to the monitoring and diagnostics of structures, infrastructures, and the territory.
+-	activities related to the management and updating of cadastral, state-owned and of local agencies databases.
+-	Drafting of building practices, technical specifications, plans of maintenance, technical drawings and forensic technical advice.
+-	design, construction management and supervision of the structural, distributive and plant engineering aspects relating to modest buildings (meaning buildings with a simple structure, construction techniques and spatial articulation). 
+Furthermore, graduates have adequate knowledge of the issues related to technical and economic feasibility, calculation of costs as well as of the production and construction process of building works, ancillary systems, and territorial transformations with the relative functional elements.
+Professional opportunities:
+Graduate technicians possess adequate knowledge to carry out technical roles in the public and private sectors. The main employment opportunities are: 
+i)	freelance activity. 
+ii)	employment in the technical roles of engineering or architecture companies, legal or economic-commercial firms, construction companies or real estate management companies, agencies for the management and control of the territory. 
+iii)	Employment as technicians of public administrations.
+With respect to professional practice, the Course allows enrolment in the College of Surveyors and Graduate Surveyors in accordance with the provisions in force and to also practice in European countries because it complies with the EU directive (DIRECTIVE 2005/36/EC).
+---------
+Final examination features
+The final exam has the objective of verifying the level of maturity and the critical skills with reference to the learning and knowledge acquired, upon completion of the activities of the Degree Course and qualifies to practice the profession of graduated surveyor.
+The final test, consisting of the preparation and exposure of a short written paper, is intended to verify the candidate's maturity in relation to the ability to identify and address concrete issues, applying the knowledge and skills acquired during the course.
+---------

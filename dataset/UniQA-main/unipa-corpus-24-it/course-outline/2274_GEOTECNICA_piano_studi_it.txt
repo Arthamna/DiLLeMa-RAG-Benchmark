@@ -1,0 +1,50 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA CIVILE
+Curriculum: GEOTECNICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2257
+---------
+Classe di Laurea magistrale in Ingegneria civile (LM-23)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con Gdansk University of Technology, Gdansk (POLAND)
+Codice corso 2274
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01122	ACQUEDOTTI E FOGNATURE	NASELLO	9	1° semestre	ICAR/02
+18633	PIANIFICAZIONE URBANISTICA	BONAFEDE	6	1° semestre	ICAR/20
+21621	VIBRATIONS (in inglese)	PIRROTTA	9	1° semestre	ICAR/08
+13465	TECNICA STRADALE, FERROVIARIA E AEROPORTUALE	CELAURO	9	2° semestre	ICAR/04
+21620	DESIGN OF STEEL AND CONCRETE STRUCTURES (in inglese)	CAMPIONE	9	2° semestre	ICAR/09
+21866	SANITARY AND ENVIRONMENTAL ENGINEERING (in inglese)	MANNINA	6	2° semestre	ICAR/03
+22245	ADVANCED GEOMECHANICS (in inglese)	FERRARI	9	2° semestre	ICAR/07
+	Attiv. form. a scelta dello studente (consigliate)		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+09141	FONDAZIONI E OPERE DI SOSTEGNO	ZICCARELLI	9	1° semestre	ICAR/07
+22279	SPERIMENTAZIONE GEOTECNICA	ZICCARELLI	6	1° semestre	ICAR/07
+05917	PROVA FINALE		9	2° semestre	
+06633	STABILITA' DEI PENDII	ROSONE	9	2° semestre	ICAR/07
+	Stage, Tirocini, Altro		6		
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello stud. (consigliate) II		12		
+
+Attiv. form. a scelta dello stud. (consigliate) II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19653	IMPIANTI GEOTERMICI E A BIOMASSA	CURTO	6	1° semestre	ING-IND/10
+22319	SOSTENIBILITA' AMBIENTALE DELLE OPERE E DELLE INFRASTRUTTURE	DI TRAPANI	6	2° semestre	ICAR/03
+
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22240	RIABILITAZIONE STRUTTURALE CON TECNICHE TRADIZIONALI E INNOVATIVE	CAMPIONE	6	1° semestre	ICAR/09
+09136	MECCANICA COMPUTAZIONALE DELLE STRUTTURE	PARRINELLO	6	2° semestre	ICAR/08
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22316	BIM PER LE STRUTTURE E PER LE INFRASTRUTTURE	INZERILLO	6	1° semestre	ICAR/17
+22315	ELEM. DI ECONOMIA CIRCOLARE CON APPLIC. ALL'ING. DELLE COSTRUZ. CIVILI	DI MINO	6	2° semestre	ICAR/04
+

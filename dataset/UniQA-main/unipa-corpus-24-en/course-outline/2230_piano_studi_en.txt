@@ -1,0 +1,43 @@
+Academic year 2024/2025
+Master's Degree (MSc) on TRANSNATIONAL GERMAN STUDIES
+For more information visit http://www.unipa.it/struttura.html?id=1886
+---------
+Class of Master's Degree (MSc) on Modern American and European languages and literatures (LM-37)
+Duration 2 years
+Location PALERMO
+Number of seats in local planning: 25
+Department of Humanities
+Course Code 2230
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20062	EMPLOYABILITY AND AND SKILLS ENHANCEMENT II (in german)		3	1° semestre	
+20076	GERMANISTIK, EMPLOYABILITY UND KOMPETENZFÖRDERUNG (in german)		3	1° semestre	
+20254	LITERATUR (in german)	AUTERI	15	1° semestre	
+	MATTERS AND THEMES OF GERMAN LITERATURE IN THE EUROPEAN CONTEXT I (in german)	DI BELLA	6		L-LIN/13
+	ISSUES AND METHODS OF LITERARY AND CULTURAL STUDIES (in german)	GREENFIELD	3		L-FIL-LET/14
+	GERMAN LITERATURE (in german)	AUTERI	6		L-LIN/13
+20066	MATTERS AND THEMES OF GERMAN LITERATURE IN THE EUROPEAN CONTEXT II (in german)	SIEGBURG	7	2° semestre	L-LIN/13
+20068	CULTURE AND LANGUAGE II (in german)		17	2° semestre	
+	MULTILINGUALISM (in german)		7		L-LIN/01
+	INTERCULTURALISM (PRE-MODERN PERIOD) (in german)		7		L-ART/01
+	INTRODUCTION TO PHILOSOPHY (TAUGHT IN ENGLISH) (in english)	PUGLIESE	3		M-FIL/03
+20088	WISSENSCHAFTLICHES SCHREIBEN (in german)		3	2° semestre	
+	Optional subjects		12		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20061	INTERTEXTUALITY AND GERMAN LITERATURE (in german)		9	1° semestre	L-FIL-LET/14
+20069	CULTURE AND LANGUAGE III (in german)	FUCHS-JOLIE	10	1° semestre	L-FIL-LET/15
+20289	MASTERARBEIT (in german)		30	2° semestre	
+	Free subjects		11		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20064	CULTURE AND LANGUAGE I (in german)	HOFFMANN	12	1° semestre	
+	DEUTSCH C 1 (in german)	HOFFMANN	6		L-LIN/14
+	INTRODUCTION TO GERMAN LITERATURE IN THE EUROPEAN CONTEXT (in german)	BARRALE	6		L-LIN/13
+20089	KULTUR UN SPRACHE 1 (in german)		12	1° semestre	
+	EINFHRUNG IN DIE DEUTSCHE KULTUR IM EUROPISCHEN KONTEXT 1 (in german)	BARRALE	6		L-LIN/13
+	PORTUGUESE LANGUAGE - A1 (in german)		6		L-LIN/09
+

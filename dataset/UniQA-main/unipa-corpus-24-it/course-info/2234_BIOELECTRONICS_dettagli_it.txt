@@ -1,0 +1,149 @@
+Anno Accademico 2024/2025
+Laurea magistrale in ELECTRONICS ENGINEERING
+Curriculum: BIOELECTRONICS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1874
+---------
+Classe di Laurea magistrale in Ingegneria elettronica (LM-29)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con UNIVERZITA PARDUBICE, Pardubice (CZECH REPUBLIC)
+Codice corso 2234
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il corso di Laurea Magistrale in Electronics Engineering e' caratterizzato da una impostazione ad ampio spettro, in grado di offrire una formazione completa nei diversi settori di interesse per l'elettronica, con approfondimenti nell'ambito delle misure elettriche ed elettroniche, delle telecomunicazioni e dell'automazione.
+Il percorso formativo e' caratterizzato da alcuni insegnamenti comuni obbligatori che permettono di fornire allo studente conoscenze nei tre settori complementari dell'Elettronica, delle Misure elettriche ed elettroniche e delle Telecomunicazioni,
+atti a coprire la pluralita' di opportunita' di impieghi, sia per ambiti puramente elettronici, che per l'integrazione del mondo di Internet e delle tecnologie di trasporto ed elaborazione dell'informazione con i moderni sistemi e le moderne tecnologie elettroniche. Particolare enfasi viene posta all'elettronica applicata, all'optoelettronica e alle misure per le telecomunicazioni e l'automazione, approfondendo infine lo studio di circuiti e sistemi che sfruttano la propagazione delle onde elettromagnetiche nei campi di frequenza che vanno dalla radiofrequenza alle microonde.
+Dopo tali insegnamenti comuni, il corso di Laurea Magistrale si articola in diversi percorsi, ciascuno dei quali permette allo studente di approfondire gli aspetti dell'Elettronica moderna, delle Telecomunicazioni, della Bioelettronica o della Robotica e Meccatronica e di scegliere il profilo piu' adatto alle proprie inclinazioni e piu' rispondente al contesto lavorativo e al mercato.
+Il percorso in "Modern Electronics" forma studenti con un elevato livello di conoscenza nel campo dei micro/nano sistemi elettronici, dei dispositivi ad eterostruttura, della strumentazione e delle misure a microonde, nonchE' degli aspetti legati all'implementazione di sistemi elettronici basati su processori ed interfacce elettroniche ad alta velocita.
+Il percorso in "Telecommunications" si propone di formare esperti di sistemi di Telecomunicazioni e infrastrutture digitali, con particolare riferimento agli scenari emergenti di sistemi di Internet delle cose e accesso a larga banda in mobilita. Il corso fornira' una solida preparazione sulla modellizzazione e sulle tecniche di interfacciamento al mezzo trasmissivo elettromagnetico, sulle principali tecniche di modulazione e codifica per la protezione dell'informazione dai disturbi e dalle interferenze, sulle tecniche di accesso al mezzo impiegate nei sistemi di comunicazione radio, sulle moderne architetture di rete di trasmissione, con particolare attenzione agli aspetti di sicurezza e confidenzialita' delle informazioni, e sulla progettazione e gestione di servizi su internet delle cose.
+Il percorso in "Bioelectronics" si propone di formare figure professionali con una solida formazione di base nel settore dell'elettronica, con competenze altamente specializzate nei seguenti campi: sensori e strumentazione diagnostica, elettronica e Internet of Things (IoT) per applicazioni biomediche (acquisizione, memorizzazione, trattamento e trasferimento di dati e segnali biomedici) e per l'analisi, la modellizzazione e il post-processing di segnali, immagini e dati medico-biologici.
+Infine, il percorso in "Electronics for Robotics and Mechatronics" si propone di formare una figura professionale trasversale rispetto a quelle ingegneristiche tradizionali che sia in grado di procedere all'analisi di sistemi di varia natura fisica, alla pianificazione degli obiettivi da conseguire, alla formulazione matematica di un problema di controllo che tenga conto dei succitati obiettivi, alla soluzione di tale problema utilizzando anche gli strumenti software disponibili e, infine, alla sua realizzazione pratica.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere Elettronico: specializzazione in Elettronica Moderna
+Funzioni:
+La Laurea magistrale in Electronics Engineering consente di formare professionisti in grado di ricoprire una grande varieta' di ruoli in diversi contesti lavorativi, grazie alla preparazione teorica ricevuta durante il corso, coadiuvata anche da conoscenze piu' generali e interdisciplinari e da esperienze di laboratorio.
+Il laureato magistrale sapra' proficuamente applicare le specifiche competenze acquisite non soltanto in ambito strettamente elettronico, ma anche legate agli aspetti metodologico-operativi delle scienze di base e dell'Ingegneria, in vari settori che spaziano dalla micro/nano elettronica alla progettazione elettronica anche a radiofrequenza, sino all'elettronica per l'industria, l'energia e l'automobile, fino ancora all'ICT in genere.
+Andando piu' nello specifico, il profilo formativo consente al laureato magistrale in Electronics Engineering di operare, oltre che in ambiti tecnico-organizzativi, anche in contesti lavorativi di tipo progettuale e di ricerca. In dettaglio, il laureato conosce i metodi e le tecniche per il progetto di dispositivi, componenti, apparati sistemi elettronici, dei laser, dei sistemi di comunicazione, dei circuiti integrati submicrometrici e dei relativi processi di fabbricazione e applicazioni. Pertanto, potra' essere impiegato nei settori della progettazione, sviluppo, ingegnerizzazione, produzione, esercizio e manutenzione dei sistemi elettronici, ma anche in ambito ICT, nonchE' in settori che utilizzano attivamente l'elettronica, quali l'industria, l'automotive, l'energia, la bioelettronica.
+Grazie alle succitate competenze, il laureato magistrale in Electronics Engineering potra' inoltre assumere incarichi di responsabilita' in ambiti scientifici e industriali di alta tecnologia, e potra' anche proseguire gli studi in un contesto di elevata specializzazione e ricerca (master, dottorato).
+La Laurea Magistrale in Electronics Engineering, infine, consente l'accesso - previo il superamento di un esame di Stato - alla Sezione A dell'Albo degli Ingegneri - settore dell'informazione.
+Competenze:
+Le competenze di un laureato magistrale in Electronics Engineering (percorso Modern Electronics) sono ad ampio spettro e spaziano dalla fisica dei semiconduttori e dei materiali utilizzati nella microelettronica, alle tecnologie di fabbricazione di dispositivi e circuiti integrati, alle tecniche di progettazione degli stessi, fino ancora alle metodologie di caratterizzazione per mezzo di strumentazione elettronica di misura e collaudo.
+In dettaglio, il profilo formativo della Laurea Magistrale in Electronics Engineering consente di maturare competenze ad alto contenuto tecnologico in tutti i campi tipici dell'elettronica, ed in particolare nella:
+- Progettazione e produzione di dispositivi micro e nanoelettronici, di sensori e attuatori;
+- progettazione e produzione di circuiti analogici, digitali o misti (A/D), anche per applicazioni a radiofrequenza;
+- progettazione di circuiti e sistemi integrati (system on chip): questa attivita' comprende il progetto della scheda e il suo layout, l'organizzazione della produzione, e il collaudo finale;
+- progettazione e produzione di componenti, sottosistemi e sistemi elettronici;
+- progettazione, gestione e manutenzione di sistemi elettronici per applicazioni in campi diversificati, come l'automotive, l'energia, l'ambiente, la bioingegneria e nel campo medico (diagnostica per immagini, diagnostica genetica e medicina molecolare)
+- valutazione ed installazione di apparati e componenti elettronici per reti di comunicazioni;
+- controllo elettronico di apparati, macchine, catene di produzione in ambito industriale;
+- gestione di sistemi di misura, di laboratori e di linee di produzione.
+Sbocchi:
+Gli ambiti occupazionali tipici del laureato magistrale in Electronics Engineering (percorso Modern Electronics) sono numerosi, ad esempio:
+- industrie per la progettazione o sviluppo di semiconduttori, di circuiti integrati, di componenti, apparati e sistemi elettronici, di strumentazione elettronica per applicazioni in ambito consumer (come audio, video, telefonia, informatica) oppure per ambito biomedico, industrie di automazione e robotica, di telecomunicazioni, trasporti, aeronautica, energia;
+- aziende di produzione, commercializzazione e distribuzione di prodotti ed apparati elettronici, informatici, biomedicali;
+- imprese manifatturiere e di servizi che utilizzano tecnologie e infrastrutture elettroniche per l'automazione e il controllo;
+- realta' produttive e operative che impiegano tecnologie e infrastrutture elettroniche per il trattamento di segnali in ambito civile, industriale e dell'informazione;
+- amministrazioni pubbliche;
+- societa' di consulenza per la progettazione elettronica;
+- enti di ricerca scientifica e tecnologica nazionali ed internazionali;
+- laboratori di ricerca e sviluppo;
+- enti normativi e di controllo;
+- attivita' di libero professionista per progettazione e realizzazione di sistemi elettronici.
+Va precisato, infine, che il laureato magistrale, grazie alla preparazione molto piu' approfondita, e' in grado di accedere a posizioni e incarichi di maggiore responsabilita' rispetto al laureato di primo livello, e quindi procede in maniera piu' spedita verso una carriera di alto profilo tecnico-direttivo.
+Profilo:
+Ingegnere Elettronico: specializzazione in Telecomunicazioni
+Funzioni:
+Il profilo formativo del Laureato Magistrale in Electronics Engineering indirizzo Telecommunications consente di operare, anche autonomamente, nei settori della progettazione, ingegnerizzazione, produzione, esercizio e manutenzione dei sistemi di telecomunicazione, nonchE' in settori adiacenti dell'Ingegneria dell'informazione. Il laureato magistrale approfondisce inoltre lo studio di sistemi di telecomunicazione e codifica dell'informazione. La preparazione e' completata e integrata da esperienze di laboratorio ed elementi di cultura interdisciplinare che spaziano dal settore delle Telecomunicazioni e dell'Automotive a quello dell'Energia e dell'Optoelettronica.
+Gli ambiti professionali tipici per i Laureati sono le imprese pubbliche e private, non solo quelle del settore della Information and Communications Technology, ma anche del manifatturiero, dei servizi e tecnico-commerciale.
+Competenze:
+E' opportuno sottolineare che l'organizzazione del percorso formativo e i singoli moduli didattici sono stati concepiti per fornire al laureato magistrale adeguata ed aggiornata preparazione nei diversi ambiti delle telecomunicazioni: sistemi di comunicazione a larga banda, tecniche avanzate di modulazione, elaborazione dei segnali, tecnologie di networking e inter-networking, gestione dei sistemi.
+La formazione acquisita fornisce, infine, gli strumenti e le competenze per svolgere anche attivita' professionali di "supporto" tecnico e di gestione di strutture di rete in tutti quei settori (per esempio: aeroporti, enti per il controllo del traffico aereo, gruppi bancari o assicurativi, aziende di distribuzione, pubblica amministrazione) la cui produttivita' e' ormai fortemente connessa alla capacita' e all'efficienza delle reti di telecomunicazione.
+Le competenze fornite dal corso includono:
+- progettazione di infrastruttura, sistemi e servizi ICT;
+- gestione di infrastrutture, sistemi e servizi ICT;
+- progettazione di tecnologie e piattaforme di acquisizione, trasporto, distribuzione e analisi dei dati e segnali;
+- analisi e dimensionamento di apparati, sistemi o reti di telecomunicazioni;
+- capacita' di sperimentazione e sviluppo di nuove tecnologie in materia di telecomunicazioni;
+- capacita' di studio ed aggiornamento su apparati, sistemi o reti di telecomunicazioni;
+- capacita' di creare, modificare o verificare software e altri applicativi legati alla gestione ed operazione delle reti di telecomunicazioni;
+- capacita' di redigere rapporti o documenti tecnici.
+Conseguita l'abilitazione all'esercizio della professione di Ingegnere, il laureato potra' anche occuparsi di aspetti di Normativa, Sicurezza e Collaudo di opere nel campo dell'ICT.
+Sbocchi:
+I principali sbocchi occupazionali dei laureati magistrali in Electronics Engineering indirizzo Telecommunications comprendono:
+- Imprese di progettazione, produzione ed esercizio di apparati, sistemi e infrastrutture riguardanti l'acquisizione, l'elaborazione e il trasporto dell' informazione (dati, voce e immagini) su reti fisse e mobili, l'osservazione e la sorveglianza a distanza, il monitoraggio delle prestazioni delle reti di telecomunicazione ed, in particolare, della qualita' del servizio;
+- Aziende sanitarie, per la gestione della strumentazione biomedica e la progettazione, realizzazione e gestione di servizi innovativi per la sanita;
+- Aziende manifatturiere operanti nei settori della telematica e della multimedialita' in rete, quali ad esempio commercio ed editoria elettronica, servizi Internet, telemedicina e telesorveglianza;
+- Aziende pubbliche e private fornitrici di servizi di telecomunicazione terrestri o spaziali;
+- Aziende pubbliche e private fornitrici di servizi di aggregazione e di distribuzione di contenuti mono e multimediali sia a scopo informativo che di intrattenimento, anche personalizzati;
+- Aziende fornitrici di servizi telematici;
+- Enti normativi ed Enti di controllo pubblico con compiti, ad esempio, di regolamentazione del mercato o di controllo dei traffici aereo, terrestre e navale;
+- Enti pubblici interessati al monitoraggio e alla protezione ambientale;
+- Aziende pubbliche e private di settori diversi, che necessitano di competenze per lo sviluppo e l'utilizzo di sistemi e servizi di telecomunicazioni negli ambiti dell'organizzazione interna, della produzione e della commercializzazione, come liberi professionisti nei campi dell'analisi, progettazione e gestione di sistemi per le telecomunicazioni, la sanita, la sicurezza delle telecomunicazioni;
+- Imprese appositamente costituite destinate alla realizzazione di reti wireless per colmare il 'Digital Divide'.
+Il naturale sbocco professionale del laureato magistrale in Electronics Engineering con specializzazione in Telecommunications e' presso le aziende che progettano e/o producono sistemi ed apparati per le telecomunicazioni e presso operatori di rete che gestiscono complessi sistemi di telecomunicazioni, presso aziende ed enti, pubblici e privati, che forniscono servizi di telecomunicazione, telerilevamento e controllo del traffico. Tale impostazione corrisponde infatti all'obiettivo di fornire al laureato le piu' ampie prospettive occupazionali sul territorio nazionale e della UE.
+Profilo:
+Ingegnere Elettronico: specializzazione in Robotica e Meccatronica
+Funzioni:
+Il Laureato in Electronics Engineering, indirizzo "Electronics for Robotics and Mechatronics", ha un profilo culturale e professionale focalizzato su conoscenze scientifiche e tecnologiche dell'ingegneria Meccatronica ed e' capace di identificare, formulare e risolvere, anche in modo innovativo, problemi complessi o che richiedono un approccio interdisciplinare. Con le competenze acquisite, si pone come elemento catalizzatore nel management e nella logistica di grandi sistemi produttivi ed e' in grado di ideare, pianificare, progettare e gestire sistemi, processi e servizi complessi e/o innovativi, sfruttando le conoscenze di contesto e capacita' trasversali delle quali e' dotato.
+Egli possiede conoscenze approfondite delle metodologie di analisi e di progettazione proprie dell'Automatica, che gli consentono di introdurre all'interno di un sistema complesso "l'intelligenza" necessaria per gestire il suo funzionamento senza l'intervento dell'uomo (controllo automatico), ottimizzando in qualche senso il suo funzionamento e dominando l'interazione sia fra i vari componenti del sistema che quella fra il sistema e l'ambiente circostante.
+Il Laureato in Electronics Engineering, indirizzo "Electronics for Robotics and Mechatronics", e' altresi' in grado di affrontare problemi complessi in contesti intrinsecamente multidisciplinari ed e' perciU' capace di interfacciarsi con gli specialisti dei processi e dei sistemi da automatizzare, per suggerire soluzioni operative e di progetto piu' efficaci in termini tecnici ed economici.
+L'ingegnere elettronico, indirizzo "Electronics for Robotics and Mechatronics", e' dotato quindi di specifiche capacita' che gli consentono di inserirsi prontamente in ambiti lavorativi anche molto differenziati, operando in qualita' di sistemista e/o progettista e/o tecnico in ogni contesto applicativo in cui le tecnologie e i principi dell'automazione rivestono un ruolo di rilievo.
+Le funzioni svolte in un contesto di lavoro possono sintetizzarsi come segue:
+1) analista di processi e sistemi;
+2) progettista di sistemi di controllo;
+3) tecnico per la pianificazione, programmazione, monitoraggio, gestione, manutenzione e automazione di processi e sistemi complessi.
+Competenze:
+Le competenze fornite dal corso di Laurea in Electronics Engineering, indirizzo "Electronics for Robotics and Mechatronics", includono:
+- identificazione di modelli descrittivi di processi e sistemi reali;
+- studio delle proprieta' dei modelli finalizzate allo studio del comportamento dei processi e sistemi reali (limiti di funzionamento e potenzialita);
+- individuazione di metodologie di controllo a partire dai modelli;
+- definizione delle specifiche di progetto per il controllo di processi e sistemi;
+- progettazione e valutazione di leggi e strategie di controllo, basate sul modello del processo o sistema reale, in accordo con le specifiche di progetto;
+- simulazione di processi e sistemi, per la loro analisi e la validazione delle relative leggi e strategie di controllo;
+- implementazione su sistemi digitali di prototipazione rapida e capacita' di condurre esperimenti su tali sistemi;
+- sviluppo teorico e sperimentale di metodologie e strategie di controllo di tipo innovativo;
+- progettazione, gestione e realizzazione di sistemi automatici di acquisizione ed elaborazione dati, misura e controllo in tempo reale, tipici dei sistemi di controllo digitale;
+- monitoraggio, gestione, manutenzione e automazione di processi e sistemi complessi.
+Sbocchi:
+I principali sbocchi occupazionali dei laureati in indirizzo "Electronics for Robotics and Mechatronics" comprendono:
+- aziende elettroniche, meccaniche, automobilistiche, elettromeccaniche, aerospaziali, chimiche e di robotica industriale, mobile e sottomarina;
+- aziende produttrici di servizi (impianti di depurazione, trasporti, energia, automazione civile e industriale);
+- centri e laboratori di ricerca e sviluppo per il settore dell'automazione;
+- pubblica amministrazione;
+- libera professione.
+Profilo:
+Ingegnere Elettronico: specializzazione in Bioelettronica
+Funzioni:
+Il profilo formativo del Laureato Magistrale in Electronics Engineering indirizzo Bioelectronics consente di operare, anche autonomamente, nei settori della progettazione, ingegnerizzazione, produzione, impiego, testing e manutenzione di sensori, strumentazione e software biomedicale per supporto diagnostico o terapeutico, per il monitoraggio di soggetti sani o affetti da patologie (anche direttamente nella loro abitazione, ambienti di vita assistiti), ma anche per telemedicina. Il laureato magistrale delliindirizzo Bioelectronics approfondisce inoltre lianalisi e la modellizzazione di dati e segnali biomedici, ed i sistemi di elaborazione ed archiviazione delle immagini. La preparazione e' completata e integrata da esperienze di laboratorio.
+Competenze:
+Il Laureato magistrale in Electronics Engineering indirizzo Bioelectronics possiede una solida formazione di base nelle discipline riguardanti lielettronica e liICT, con competenze altamente specializzate nel campo dei sensori e della strumentazione diagnostica, di elettronica e Internet of Things (IoT) per applicazioni biomediche (per l'acquisizione, memorizzazione, trattamento e trasferimento di dati e segnali biomedici), e per l'analisi, modellizzazione, elaborazione ed archiviazione di segnali, immagini e dati medico-biologici.
+Le conoscenze e competenze fornite nel percorso includono:
+- solida formazione di base (comune) nel settore elettronico;
+- capacita' di analizzare ed elaborare segnali, immagini e dati medico-biologici;
+- capacita' di applicare le tecniche di progetto di circuiti elettronici, gli strumenti metodologici ed i metodi quantitativi per lo studio di sistemi fisiologici;
+- capacita' di estrarre, mediante opportuni algoritmi, indici fisiologici a partire da biosegnali acquisiti su vari distretti (es. cardiovascolare, cerebrale)
+- capacita' di sperimentazione e sviluppo di nuovi algoritmi per la modellizzazione e descrizione di fenomeni fisiologici;
+- progettazione, ingegnerizzazione, produzione, utilizzo e manutenzione di sensori biomedici;
+- progettazione, ingegnerizzazione, produzione, utilizzo e manutenzione di strumentazione biomedicale per supporto diagnostico o terapeutico, ma anche per telemedicina,
+- capacita' di progettazione, sviluppo e realizzazione di software biomedicale;
+- capacita' di redigere rapporti o documenti tecnici riguardanti strumentazione biomedicale.
+Sbocchi:
+I principali sbocchi occupazionali dei laureati magistrali in Electronics Engineering indirizzo Bioelectronics sono i seguenti:
+- Aziende, strutture sanitarie e laboratori clinici specializzati per la gestione della strumentazione biomedica e la progettazione, realizzazione e gestione di servizi innovativi per la sanita;
+- Imprese di progettazione, produzione ed esercizio di sensori, strumentazione o software biomedicale;
+- Imprese di progettazione, sviluppo e produzione di sistemi e infrastrutture riguardanti l'acquisizione, l'elaborazione e il trasporto di dati e segnali biomedici;
+- Istituti di ricovero e cura a carattere scientifico, per svolgere attivita' di ricerca clinica, nonchE' di gestione dei servizi sanitari;
+- enti di ricerca scientifica e tecnologica nazionali ed internazionali;
+- laboratori di ricerca e sviluppo;
+- enti normativi e di controllo;
+- attivita' di libero professionista per progettazione e realizzazione di sistemi elettronici per applicazioni biomediche.
+---------
+Caratteristiche della Prova Finale
+La Prova Finale del Corso di Laurea Magistrale in Electronics Engineering consiste nella discussione di una relazione scritta (Tesi di Laurea), elaborata dallo studente sotto la guida di un relatore accademico.
+La tesi, il cui argomento e' approvato preventivamente dal Consiglio di Corso di Laurea, approfondisce tematiche di rilevante contenuto scientifico ed affronta preferibilmente studi e realizzazioni che pongano l'accento su aspetti innovativi dei settori di ricerca tipici dell'Elettronica.
+---------

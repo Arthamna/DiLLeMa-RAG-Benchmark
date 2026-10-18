@@ -1,0 +1,48 @@
+Academic year 2024/2025
+Master's Degree (MSc) on AEROSPACE ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=710
+---------
+Class of Master's Degree (MSc) on Aerospace and aeronautical engineering (LM-20)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2024
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+03549	GAS DYNAMICS (in english)	GULIZZI	9	1° semestre	ING-IND/06
+07141	AEROSPACE STRUCTURES	MILAZZO	12	1° semestre	ING-IND/04
+14427	AERONAUTICAL PRODUCTION TECHNOLOGIES	FRATINI	9	1° semestre	ING-IND/16
+02190	AUTOMATIC CONTROL		9	2° semestre	ING-INF/04
+22202	AIRCRAFT CONCEPTUAL DESIGN (in english)	BENEDETTI	9	2° semestre	ING-IND/04
+22205	AEROSPACE PROPULSION (in english)	LOMBARDO	12	2° semestre	ING-IND/07
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02374	FLIGHT DYNAMICS	MONTANO	12	1° semestre	ING-IND/03
+22203	AEROELASTICITY (in english)	LO CASCIO	6	1° semestre	ING-IND/04
+05917	FINAL EXAMINATION		15	2° semestre	
+	Stage and others		12		
+	Optional subjects		6		
+	Free subjects (suggested)		9		
+
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01258	EXPERIMENTAL STRESS ANALYSIS	PITARRESI	6	1° semestre	ING-IND/14
+10069	PROCESS DESIGN	BUFFA	6	1° semestre	ING-IND/16
+21526	 MOBILE AND DISTRIBUTED ROBOTICS (in english)	FAGIOLINI	6	1° semestre	ING-INF/04
+22341	ADDITIVE MANUFACTURING (in english)	PALMERI	6	1° semestre	ING-IND/16
+18053	CORROSION AND PROTECTION OF AEROSPACE MATERIALS	SANTAMARIA	6	2° semestre	ING-IND/23
+18552	SCIENCE AND TECHNOLOGY OF COMPOSITE MATERIALS FOR AEROSPACE ENGINEERING	VALENZA	6	2° semestre	ING-IND/22
+22204	MACHINE LEARNING FOR AEROSPACE ENGINEERING - INTEGRATED COURSE (in english)	TINNIRELLO	6	2° semestre	
+	DATA ANALYTICS (in english)	LO PRESTI	3		ING-INF/05
+	MACHINE LEARNING (in english)	TINNIRELLO	3		ING-INF/03
+22905	COMPUTATIONAL FLUID DYNAMICS (in english)	MARRETTA	6	2° semestre	ING-IND/06
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21516	ESTIMATION, FILTERING AND SYSTEM IDENTIFICATION (in english)	SFERLAZZA	9	1° semestre	ING-INF/04
+01746	NUMERICAL ANALYSIS	FRANCOMANO	9	2° semestre	MAT/08
+

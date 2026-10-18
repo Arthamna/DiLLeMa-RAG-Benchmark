@@ -1,0 +1,57 @@
+Anno Accademico 2024/2025
+Laurea magistrale in MANAGEMENT DELLO SPORT E DELLE ATTIVITA' MOTORIE
+Curriculum: MANAGEMENT DELLO SPORT E DELLE ATTIVITÀ MOTORIE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=759
+---------
+Classe di Laurea magistrale in Organizzazione e gestione dei servizi per lo sport e le attività motorie (LM-47)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Politiche e delle Relazioni Internazionali
+Codice corso 2040
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02526	DIRITTO PRIVATO	AGRIFOGLIO	6	1° semestre	IUS/01
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		3	1° semestre	
+16968	DIRITTO SPORTIVO - CORSO INTEGRATO	VALENTI	14	Annuale	
+	DIRITTO SPORTIVO I		6		IUS/01
+	DIRITTO SPORTIVO II	VALENTI	8		IUS/01
+19349	ORGANIZZAZIONE E GESTIONE DELLE ATTIVITÀ  MOTORIE		8	1° semestre	M-EDF/01
+19350	ORGANIZZAZIONE E GESTIONE DELLE ATTIVITÀ SPORTIVE		8	2° semestre	M-EDF/02
+23388	ECONOMICS OF SPORT (in inglese)	AUCI	6	2° semestre	SECS-P/01
+89615	ECONOMIA AZIENDALE	SCIRE'	8	2° semestre	SECS-P/07
+	Attiv. form. a scelta dello studente (consigliate)		4		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04639	LINGUA E TRADUZIONE INGLESE		3	1° semestre	L-LIN/12
+07553	TIROCINIO		12	Annuale	
+24099	IMPIANTISTICA SPORTIVA C.I.	FERRARA	14	Annuale	
+	LEGISLAZIONE DELLA DISABILITÀ	RICCOBENE	4		IUS/01
+	DIRITTO DELLA PRIVACY E DELLA SICUREZZA	VALENTI	4		IUS/01
+	DIRITTO AMMINISTRATIVO SPORTIVO	FERRARA	6		IUS/10
+24101	MANAGEMENT DELLE IMPRESE SPORTIVE C.I.	VALENTI	8	1° semestre	
+	DIRITTO DELLE SOCIETÀ E DELLE ASSOCIAZIONI SPORTIVE	VALENTI	4		IUS/01
+	FINANCIAL AND STATEMENT ANALYSIS (in inglese)	SCIRE'	4		SECS-P/07
+05917	PROVA FINALE		7	2° semestre	
+24103	INFORMAZIONE E MARKETING SPORTIVO C.I.	RICCOBENE	9	2° semestre	
+	MARKETING SPORTIVO		5		SECS-P/08
+	DIRITTO DELL'INFORMAZIONE	RICCOBENE	4		IUS/01
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello stud. (consigliate) II		4		
+
+Attiv. form. a scelta dello stud. (consigliate) II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19749	SPORT A VIOLENZA REGOLATA E RESPONSABILITÀ CIVILE	AGRIFOGLIO	4	1° semestre	IUS/01
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16967	DIRITTO TRIBUTARIO SPORTIVO	PERRONE	4	2° semestre	IUS/12
+19290	DIRITTO EUROPEO DELLO SPORT	RICCOBENE	4	2° semestre	IUS/01
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16620	SOCIOLOGIA DELLO SPORT	PEPE	6	1° semestre	SPS/07
+22673	SPORTS PSYCOLOGY (in inglese)	MISURACA	6	2° semestre	M-PSI/01
+

@@ -1,0 +1,44 @@
+Academic year 2024/2025
+Master's Degree (MSc) on CHEMICAL ENGINEERING
+Curriculum: FOOD PROCESS ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=711
+---------
+Class of Master's Degree (MSc) on Chemicl Engineering (LM-22)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2025
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21893	PHYSICAL CHEMISTRY OF DISPERSED SYSTEMS (in english)	DI FRANCO	6	1° semestre	ING-IND/23
+21894	PACKAGING AND RHEOLOGY FOR THE FOOD INDUSTRY	BOTTA	9	1° semestre	ING-IND/22
+21897	INDUSTRIAL CHEMICAL AND BIOCHEMICAL PROCESSES (in english)	GALIA	9	1° semestre	ING-IND/27
+22870	BIOCHEMICAL PLANT DESIGN - INTEGRATED COURSE (in english)	LI PUMA	9	1° semestre	
+	REACTOR DESIGN (in english)	LI PUMA	6		ING-IND/25
+	BIOCHEMICAL PLANT AND OPERATIONS (in english)	LIMA	3		ING-IND/25
+07871	MACHINES	BECCARI	9	2° semestre	ING-IND/08
+21900	CHEMICAL AND BIOCHEMICAL PROCESS CONTROL (in english)	CIPOLLINA	9	2° semestre	ING-IND/26
+21903	FOOD INDUSTRY PROCESSES - INTEGRATED COURSE (in english)	DISPENZA	9	2° semestre	
+	PRINCIPLES OF FOOD CHEMISTRY	DISPENZA	3		CHIM/07
+	FOOD INDUSTRY PROCESSES (in english)		6		ING-IND/27
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21898	CONCEPTUAL DESIGN OF CHEMICAL AND BIOCHEMICAL PROCESSES (in english)	MICALE	9	1° semestre	ING-IND/26
+05917	FINAL EXAMINATION		21	2° semestre	
+16079	SAFETY MANAGEMENT	GRISAFI	9	2° semestre	ING-IND/25
+	Stage and others		3		
+	Optional subjects		6		
+	Free subjects		12		
+
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07177	COOLING SYSTEMS	PANNO	6	1° semestre	ING-IND/10
+17583	CORROSION AND PROTECTION OF METALS (in english)	INGUANTA	6	1° semestre	ING-IND/23
+19692	TRANSFORMATION PROCESSES OF AGRI-FOOD PRODUCTS	CRUPI	6	1° semestre	AGR/15
+21883	CONSTRUCTION OF EQUIPMENT FOR THE PROCESSING INDUSTRY	PANTANO	6	1° semestre	ING-IND/14
+23970	ADVANCED REACTOR DESIGN (in english)	LI PUMA	6	2° semestre	ING-IND/25
+

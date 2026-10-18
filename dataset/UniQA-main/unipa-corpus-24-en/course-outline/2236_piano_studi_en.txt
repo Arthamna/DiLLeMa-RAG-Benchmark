@@ -1,0 +1,50 @@
+Academic year 2024/2025
+Master's Degree (MSc) on BIOMEDICAL ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=1876
+---------
+
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with Ecole Nationale Superieure D’Architecture de Saint Etienne ENSASE, Saint - Etienne (FRANCE)
+Course Code 2236
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20270	ADVANCED BIOMECHANICAL MODELLING (in english)	BORINO	6	1° semestre	ICAR/08
+20275	MECHANICAL AND THERMAL MEASUREMENTS FOR BIOMEDICS	SCARDULLA	6	1° semestre	ING-IND/12
+21904	HEALTHCARE OPERATIONS MANAGEMENT (in english)	MAZZOLA	6	1° semestre	ING-IND/35
+22190	MECHANOBIOLOGY OF LIVING TISSUES (in english)	PASTA	9	1° semestre	ING-IND/34
+18415	TISSUE ENGINEERING (in english)	LA CARRUBBA	12	2° semestre	ING-IND/34
+21234	STATISTICAL ANALYSIS OF BIOMEDICAL SIGNALS (in english)	FAES	9	2° semestre	ING-INF/06
+21905	ADVANCED TECHNOLOGIES OF REGENERATIVE MEDICINE (in english)		6	2° semestre	ING-IND/34
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+05917	FINAL EXAMINATION		18	2° semestre	
+20280	IMAGE DIAGNOSTICS EQUIPMENT	CONTINO	9	2° semestre	ING-INF/06
+	Stage and others		12		
+	Optional subjects		9		
+	Optional subjects II		6		
+	Free subjects		12		
+
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20252	INTELLIGENT DATA ANALYSIS	GAMBINO	9	1° semestre	ING-INF/05
+20274	COMPUTATIONAL AND EXPERIMENTAL PROSTHESIS AND ORTHOSES BIOMECHANICS	PITARRESI	9	1° semestre	ING-IND/14
+17371	BIOMATERIALS	SCAFFARO	9	2° semestre	ING-IND/22
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20276	TRASNSPORTATION PHOENOMENA IN BIOLOGICAL SYSTEMS	BRUCATO	6	1° semestre	ING-IND/24
+20510	INDUSTRIAL ROBOTICS	D'IPPOLITO	6	1° semestre	ING-INF/04
+23230	BIOMEDICAL ELECTRONICS (in english)	CURCIO	6	1° semestre	ING-INF/01
+23231	NUMERICAL BIO-FLUID DYNAMICS	NAPOLI	6	1° semestre	ICAR/01
+23232	BIOCOMPATIBILITY AND BIODEGRADATION OF POLYMERIC MATERIALS	DINTCHEVA	6	1° semestre	ING-IND/22
+23233	BIOCOMPATIBILITY AND BIODEGRADATION OF METALLIC AND CERAMIC MATERIALS	DI FRANCO	6	1° semestre	ING-IND/23
+23234	TISSUE BIODYNAMICS	ZINGALES	6	1° semestre	ICAR/08
+23235	PERSONAL AREA NETWORK (in english)	CROCE	6	1° semestre	ING-INF/03
+20269	MEDICAL ROBOTICS	CHELLA	6	2° semestre	ING-INF/05
+

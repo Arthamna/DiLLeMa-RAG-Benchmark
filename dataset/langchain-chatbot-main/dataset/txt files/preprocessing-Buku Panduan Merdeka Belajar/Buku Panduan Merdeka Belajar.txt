@@ -1,0 +1,1239 @@
+Buku Panduan
+Merdeka Belajar - Kampus Merdeka
+Direktorat Jenderal Pendidikan Tinggi
+Kementerian Pendidikan dan Kebudayaan
+2020Buku Panduan Merdeka Belajar - Kampus Merdeka
+Hak Cipta: © 2020 pada Direktorat Jenderal Pendidikan Tinggi
+Dilindungi Undang-Undang
+Diterbitkan oleh: Direktorat Jenderal Pendidikan Tinggi Kemdikbud RI
+Edisi ke satu
+Cetakan ke-1: 2020MILIK NEGARA
+TIDAK DIPERDAGANGKANDisclaimer
+Buku ini diterbitkan dengan tujuan sebagai Panduan Penyelenggaraaan Merdeka 
+Belajar - Kampus Merdeka. Melalui panduan ini diharapkan Perguruan Tinggi 
+dapat mengembangkan program secara optimal, efektif, efisien, dan bermutu 
+sesuai dengan Standar Nasional Pendidikan Tinggi. Panduan ini diharapkan dapat 
+bermanfaat bagi pengelola atau pimpinan Perguruan Tinggi, dosen, mahasiswa, 
+mitra industri, dan pihak terkait lainnya. 
+Buku panduan ini disusun dan ditelaah oleh berbagai pihak di bawah koordinasi 
+Direktorat Jenderal Pendidikan Tinggi, Kementerian Pendidikan dan Kebudayaan  
+RI, dan dipergunakan dalam tahap perancangan, pelaksanaan, penilaian hingga 
+evaluasi pelaksanaan kebijakan Merdeka Belajar - Kampus Merdeka. 
+Buku Panduan ini merupakan “panduan dinamis” yang senantiasa dapat 
+diperbaiki, diperbaharui, dan dimutakhirkan sesuai dengan dinamika kebutuhan 
+dan perubahan zaman. Masukan dari berbagai kalangan diharapkan dapat 
+meningkatkan kualitas buku panduan ini.Daftar Isi
+Kata Sambutan Direktur Jenderal Pendidikan Tinggi  ...................................................... i
+Kata Pengantar Direktur Pembelajaran dan Kemahasiswaan  ...................................... ii
+BAB I
+PENDAHULUAN  ........................................................................................................................... 2
+A. Landasan Hukum ................................................................................................................. 2
+B. Latar Belakang  ...................................................................................................................... 2
+C. Tujuan  ..................................................................................................................................... 3
+BAB II
+MERDEKA BELAJAR – KAMPUS MERDEKA
+“HAK BELAJAR TIGA SEMESTER DI LUAR PROGRAM STUDI”  ......................................... 4
+A. Persyaratan Umum  ............................................................................................................. 4
+B. Pelaksanaan  .......................................................................................................................... 4
+1. Peran Pihak-Pihak Terkait  .......................................................................................... 4
+2. Bentuk Kegiatan Pembelajaran  ............................................................................... 5
+a. Pertukaran Pelajar  ................................................................................................. 6
+b. Magang/Praktik Kerja  ....................................................................................... 11
+c. Asistensi Mengajar di Satuan Pendidikan  .................................................. 14
+d. Penelitian/Riset  ................................................................................................... 16
+e. Proyek Kemanusiaan  ......................................................................................... 17
+f. Kegiatan Wirausaha  ........................................................................................... 19
+g. Studi/Proyek Independen  ............................................................................... 21
+h. Membangun Desa/Kuliah Kerja Nyata Tematik  ........................................ 22
+BAB III
+PENJAMINAN MUTU  ............................................................................................................... 30
+A. Menyusun Kebijakan dan Manual Mutu  ................................................................... 30
+B. Menetapkan Mutu  ........................................................................................................... 30
+C. Melaksanakan Monitoring dan Evaluasi  ................................................................... 32
+1. Prinsip Penilaian  ........................................................................................................ 32
+2. Aspek – aspek Penilaian  ......................................................................................... 32
+3. Prosedur Penilaian  .................................................................................................... 32
+BAB IV  .......................................................................................................................................... 33
+PENUTUP  .................................................................................................................................... 33i       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Kata Sambutan Plt. Direktur Jenderal Pendidikan Tinggi
+Perkembangan ilmu pengetahuan dan teknologi yang sangat pesat saat ini, telah membawa 
+perubahan yang sangat pesat pula dalam berbagai aspek kehidupan. Pekerjaan dan cara kita 
+bekerja berubah, banyak lapangan pekerjaan hilang, sementara berbagai jenis pekerjaan 
+baru bermunculan. Perubahan ekonomi, sosial, dan budaya juga terjadi dengan laju yang 
+tinggi. Dalam masa yang sangat dinamis ini, perguruan tinggi harus meresponse secara cepat 
+dan tepat. Diperlukan transformasi pembelajaran untuk bisa membekali dan menyiapkan 
+lulusan Pendidikan tinggi agar menjadi generasi yang uggul. Generasi yang tanggap dan 
+siap menghadapi tantangan zamannya, tanpa tercerabut dari akar budaya bangsanya. 
+Saat ini kreativitas dan inovasi menjadi kata kunci penting untuk memastikan pembangunan 
+Indonesia yang berkelanjutan. Para mahasiswa yang saat ini belajar di Perguruan Tinggi, 
+harus disiapkan menjadi pembelajar sejati yang terampil, lentur dan ulet ( agile learner) . 
+Kebijakan Merdeka Belajar – Kampus Merdeka yang diluncurkan oleh Menteri Pendidikan 
+dan Kebudayaan merupakan kerangka untuk menyiapkan mahasiswa menjadi sarjana yang 
+tangguh, relevan dengan kebutuhan zaman, dan siap menjadi pemimpin dengan semangat 
+kebangsaan yang tinggi. Permendikbud No 3 Tahun 2020 memberikan hak kepada mahasiswa 
+untuk 3 semester belajar di luar program studinya. Melalui program ini, terbuka kesempatan 
+luas bagi mahasiswa untuk memperkaya dan meningkatkan wawasan serta kompetensinya 
+di dunia nyata sesuai dengan passion dan cita-citanya. Kita meyakini, pembelajaran dapat 
+terjadi di manapun, semesta belajar tak berbatas, tidak hanya di ruang kelas, perpustakaan 
+dan laboratorium, tetapi juga di desa, industri, tempat-tempat kerja, tempat-tempat 
+pengabdian, pusat riset, maupun di masyarakat. Melalui interaksi yang erat antara perguruan 
+tinggi dengan dunia kerja, dengan dunia nyata, maka perguruan tinggi akan hadir sebagai 
+mata air bagi kemajuan dan pembangunan bangsa, turut mewarnai budaya dan peradaban 
+bangsa secara langsung.
+Saya menyampaikan apresiasi dan terima kasih kepada Tim Penyusun buku panduan ini yang 
+telah berkerja keras dengan penuh dedikasi untuk mewujudkannya. Saya juga mengucapkan 
+terimakasih kepada semua pihak yang telah memberikan masukan yang berharga, sehingga 
+memperkaya isi buku panduan ini. Semoga buku ini bermanfaat bagi perguruan tinggi 
+dan dapat digunakan sebagai inspirasi pelaksanaan Merdeka Belajar – Kampus Merdeka, 
+dan pada akhirnya, perguruan tinggi dapat menghasilkan insan Indonesia yang unggul, 
+bertakwa, beradab, berilmu, profesional dan kompetitif, serta berkontribusi positif terhadap 
+kesejahteraan kehidupan bangsa.
+Jakarta,          April 2020
+Plt. Direktur Jenderal Pendidikan Tinggi,
+NizamBuku Panduan Merdeka Belajar - Kampus Merdeka       ii
+Kata Pengantar Direktur Pembelajaran dan Kemahasiswaan
+Merdeka Belajar – Kampus Merdeka, merupakan kebijakan Menteri Pendidikan dan 
+Kebudayaan, yang bertujuan mendorong mahasiswa untuk menguasai berbagai keilmuan 
+yang berguna untuk memasuki dunia kerja. Kampus Merdeka memberikan kesempatan bagi 
+mahasiswa untuk memilih mata kuliah yang akan mereka ambil. 
+Kebijakan Merdeka Belajar - Kampus Merdeka ini sesuai dengan Permendikbud Nomor 3 
+Tahun 2020 tentang Standar Nasional Pendidikan Tinggi, pada  Pasal 18 disebutkan bahwa 
+pemenuhan masa dan beban belajar bagi mahasiswa program sarjana atau sarjana terapan 
+dapat dilaksanakan: 1) mengikuti seluruh proses pembelajaran dalam program studi pada 
+perguruan tinggi sesuai masa dan beban belajar; dan 2) mengikuti proses pembelajaran 
+di dalam program studi untuk memenuhi sebagian masa dan beban belajar dan sisanya 
+mengikuti proses pembelajaran di luar program studi.
+Melalui Merdeka Belajar – Kampus Merdeka, mahasiswa memiliki kesempatan untuk 1 (satu) 
+semester atau setara dengan 20 (dua puluh) sks menempuh pembelajaran di luar program 
+studi pada Perguruan Tinggi yang sama; dan paling lama 2 (dua) semester atau setara dengan 
+40 (empat puluh) sks menempuh pembelajaran pada program studi yang sama di Perguruan 
+Tinggi yang berbeda, pembelajaran pada program studi yang berbeda di Perguruan Tinggi 
+yang berbeda; dan/atau pembelajaran di luar Perguruan Tinggi.
+Pembelajaran dalam Kampus Merdeka memberikan tantangan dan kesempatan untuk 
+pengembangan kreativitas, kapasitas, kepribadian, dan kebutuhan mahasiswa, serta 
+mengembangkan kemandirian dalam mencari dan menemukan pengetahuan melalui 
+kenyataan dan dinamika lapangan seperti persyaratan kemampuan, permasalahan riil, 
+interaksi sosial, kolaborasi, manajemen diri, tuntutan kinerja, target dan pencapaiannya.
+Kami menyampaikan ucapan terima kasih dan penghargaan kepada tim penulis buku Panduan 
+Merdeka Belajar - Kampus Merdeka ini serta pada semua pihak yang telah memberikan 
+sumbang saran dan pikiran yang penuh dedikasi hingga buku panduan ini dapat diterbitkan. 
+Buku panduan edisi ke-1 ini tentunya masih jauh dari kesempurnaan, oleh karena itu kami 
+sangat mengharapkan masukan, kritik dan saran dari berbagai pihak, khususnya dari para 
+pengelola perguruan tinggi. Semoga buku panduan ini bermanfaat bagi perguruan tinggi, 
+mahasiswa, dan pihak-pihak terkait lainnya dalam rangka pengelolaan dan peningkatan 
+Kampus Merdeka secara berkesinambungan.
+Jakarta,          April 2020
+Direktur Pembelajaran dan Kemahasiswaan
+Direktorat Jenderal Pendidikan Tinggi
+Aris Junaidi1       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Buku Panduan Merdeka Belajar - Kampus Merdeka       2
+BAB I
+PENDAHULUAN
+Merdeka Belajar – Kampus Merdeka merupakan salah satu kebijakan dari Menteri Pendidikan 
+dan Kebudayaan, Nadiem Makariem. Salah satu program dari kebijakan Merdeka Belajar 
+– Kampus Merdeka adalah Hak Belajar Tiga Semester di Luar Program Studi. Program 
+tersebut merupakan amanah dari berbagai regulasi/landasan hukum pendidikan tinggi 
+dalam rangka peningkatan mutu pembelajaran dan lulusan pendidikan tinggi. Landasan 
+hukum pelaksanaan program kebijakan Hak Belajar Tiga Semester di Luar Program Studi 
+diantaranya, sebagai berikut: 
+1. Undang-Undang Nomor 20 Tahun 2003, tentang Sistem Pendidikan Nasional. 
+2. Undang-Undang Nomor 12 Tahun 2012, tentang Pendidikan Tinggi.
+3. Undang-Undang Nomor 6 Tahun 2014, tentang Desa.
+4. Peraturan Pemerintah Nomor 04 Tahun 2014, tentang Penyelenggaraan Pendidikan 
+Tinggi dan Pengelolaan Perguruan Tinggi.
+5. Peraturan Presiden nomor 8 tahun 2012, tentang KKNI.
+6. Peraturan Menteri Pendidikan dan Kebudayaan Republik Indonesia Nomor 3 Tahun 2020, 
+tentang Standar Nasional Pendidikan Tinggi.
+7. Peraturan Menteri Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi Nomor 11 
+Tahun 2019, tentang Prioritas Penggunaan Dana Desa Tahun 2020.
+8. Peraturan Menteri Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi Nomor 16 
+Tahun 2019, tentang Musyawarah Desa.
+9. Peraturan Menteri Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi Nomor 17 
+Tahun 2019, tentang Pedoman Umum Pembangunan dan Pemberdayaan Masyarakat 
+Desa.
+10. Peraturan Menteri Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi Nomor 18 
+Tahun 2019, tentang Pedoman Umum Pendampingan Masyarakat Desa.A. Landasan Hukum
+Dalam rangka menyiapkan mahasiswa menghadapi perubahan sosial, budaya, dunia kerja 
+dan kemajuan teknologi yang pesat, kompetensi mahasiswa harus disiapkan untuk lebih 
+gayut dengan kebutuhan zaman. Link and match  tidak saja dengan dunia industri dan 
+dunia kerja tetapi juga dengan masa depan yang berubah dengan cepat. Perguruan Tinggi 
+dituntut untuk dapat merancang dan melaksanakan proses pembelajaran yang inovatif 
+agar mahasiswa dapat meraih capaian pembelajaran mencakup aspek sikap, pengetahuan, 
+dan keterampilan secara optimal dan selalu relevan. 
+Kebijakan Merdeka Belajar - Kampus Merdeka diharapkan dapat menjadi jawaban atas 
+tuntutan tersebut. Kampus Merdeka merupakan wujud pembelajaran di perguruan tinggi 
+yang otonom dan fleksibel sehingga tercipta kultur belajar yang inovatif, tidak mengekang, 
+dan sesuai dengan kebutuhan mahasiswa.
+Program utama yaitu: kemudahan pembukaan program studi baru, perubahan sistem 
+akreditasi perguruan tinggi, kemudahan perguruan tinggi negeri menjadi PTN berbadan 
+hukum, dan hak belajar tiga semester di luar program studi. Mahasiswa diberikan kebebasan 
+mengambil SKS di luar program studi, tiga semester yang di maksud berupa 1 semester 
+kesempatan mengambil mata kuliah di luar program studi dan 2 semester melaksanakan 
+aktivitas pembelajaran di luar perguruan tinggi.  B. Latar Belakang3       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Berbagai bentuk kegiatan belajar di luar perguruan tinggi, di antaranya melakukan  magang/
+praktik kerja di Industri atau tempat kerja lainnya, melaksanakan proyek pengabdian 
+kepada masyarakat di desa, mengajar di satuan pendidikan, mengikuti pertukaran 
+mahasiswa, melakukan penelitian, melakukan kegiatan kewirausahaan, membuat studi/
+proyek independen, dan mengikuti program kemanusisaan. Semua kegiatan tersebut 
+harus dilaksanakan dengan bimbingan dari dosen. Kampus merdeka diharapkan dapat 
+memberikan pengalaman kontekstual lapangan yang akan meningkatkan kompetensi 
+mahasiswa secara utuh, siap kerja, atau menciptakan lapangan kerja baru.
+Proses pembelajaran dalam Kampus Merdeka merupakan salah satu perwujudan 
+pembelajaran yang berpusat pada mahasiswa ( student centered learning ) yang sangat 
+esensial.  Pembelajaran dalam Kampus Merdeka memberikan tantangan dan kesempatan 
+untuk pengembangan inovasi, kreativitas, kapasitas, kepribadian, dan kebutuhan mahasiswa, 
+serta mengembangkan kemandirian dalam mencari dan menemukan pengetahuan melalui 
+kenyataan dan dinamika lapangan seperti persyaratan kemampuan, permasalahan riil, 
+interaksi sosial, kolaborasi, manajemen diri, tuntutan kinerja, target dan pencapaiannya. 
+Melalui program merdeka belajar yang dirancang dan diimplementasikan dengan baik, 
+maka hard dan soft skills  mahasiswa akan terbentuk dengan kuat.
+Program Merdeka Belajar - Kampus Merdeka diharapkan dapat menjawab tantangan 
+Perguruan Tinggi untuk menghasilkan lulusan yang sesuai perkembangan zaman, kemajuan 
+IPTEK, tuntutan dunia usaha dan dunia industri, maupun dinamika masyarakat.
+Tujuan kebijakan Merdeka Belajar - Kampus Merdeka, program “hak belajar tiga semester di 
+luar program studi” adalah untuk meningkatkan kompetensi lulusan, baik soft skills  maupun 
+hard skills , agar lebih siap dan relevan dengan kebutuhan zaman, menyiapkan lulusan 
+sebagai pemimpin masa depan bangsa yang unggul dan berkepribadian. Program-program 
+experiential learning  dengan jalur yang fleksibel diharapkan akan dapat memfasilitasi 
+mahasiswa mengembangkan potensinya sesuai dengan passion  dan bakatnya.C. TujuanBuku Panduan Merdeka Belajar - Kampus Merdeka       4
+BAB II
+MERDEKA BELAJAR – KAMPUS MERDEKA
+“HAK BELAJAR TIGA SEMESTER DI LUAR PROGRAM STUDI”
+Dalam pelaksanaan kebijakan Merdeka Belajar 
+- Kampus Merdeka, program “hak belajar tiga 
+semester di luar program studi” , terdapat 
+beberapa persyaratan umum yang harus 
+dipenuhi oleh mahasiswa maupun perguruan 
+tinggi diantaranya, sebagai berikut:
+1. Mahasiswa berasal dari Program Studi yang 
+terakreditasi.
+2. Mahasiswa Aktif yang terdaftar pada PDDikti.
+Perguruan tinggi diharapkan untuk 
+mengembangkan dan memfasilitasi pelaksanaan 
+program Merdeka Belajar dengan membuat 
+panduan akademik. Program-program yang 
+dilaksanakan hendaknya disusun dan disepakati 
+bersama antara perguruan tinggi dengan mitra. 
+Program Merdeka Belajar dapat berupa program 
+nasional yang telah disiapkan oleh Kementerian 
+maupun program yang disiapkan oleh perguruan 
+tinggi yang didaftarkan pada Pangkalan Data 
+Pendidikan Tinggi.A. Persyaratan Umum
+a. Perguruan Tinggi
+1) Permendikbud Nomor 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi: 
+Perguruan Tinggi wajib memfasilitasi  hak bagi mahasiswa (dapat  diambil atau 
+tidak) untuk:
+a) Dapat mengambil SKS di luar perguruan tinggi paling lama 2 semester atau 
+setara dengan 40 SKS.
+b) Dapat mengambil SKS di program studi yang berbeda di perguruan tinggi 
+yang sama sebanyak 1 semester atau setara dengan 20 SKS.
+2) Menyusun kebijakan/pedoman akademik untuk memfasilitasi kegiatan 
+pembelajaran di luar prodi.
+3) Membuat dokumen kerja sama (MoU/SPK) dengan mitra.
+b. Fakultas 
+1) Menyiapkan fasilitasi daftar mata kuliah tingkat fakultas yang bisa diambil 
+mahasiswa lintas prodi.
+2) Menyiapkan dokumen kerja sama (MoU/SPK) dengan mitra yang relevan.
+c. Program Studi
+1) Menyusun atau menyesuaikan kurikulum dengan model implementasi kampus 
+merdeka.B. Pelaksanaan
+1. Peran Pihak-Pihak Terkait
+5       Buku Panduan Merdeka Belajar - Kampus Merdeka
+2) Memfasilitasi mahasiswa yang akan mengambil pembelajaran lintas prodi dalam 
+Perguruan Tinggi.
+3) Menawarkan mata kuliah yang bisa diambil oleh mahasiswa di luar prodi dan luar 
+Perguruan Tinggi beserta persyaratannya.
+4) Melakukan ekuivalensi mata kuliah dengan kegiatan pembelajaran luar prodi 
+dan luar Perguruan Tinggi.
+5) Jika ada mata kuliah/SKS yang belum terpenuhi dari kegiatan pembelajaran luar 
+prodi dan luar Perguruan Tinggi, disiapkan alternatif mata kuliah daring.
+d. Mahasiswa
+1) Merencanakan bersama Dosen Pembimbing Akademik mengenai program mata 
+kuliah/program yang akan diambil di luar prodi.
+2) Mendaftar program kegiatan luar prodi.
+3) Melengkapi persyaratan kegiatan luar prodi, termasuk mengikuti seleksi bila ada.
+4) Mengikuti program kegiatan luar prodi sesuai dengan ketentuan pedoman 
+akademik yang ada.
+e. Mitra
+1) Membuat dokumen kerja sama (MoU/SPK) bersama perguruan tinggi/fakultas/
+program studi.
+2) Melaksanakan program kegiatan luar prodi  sesuai dengan ketentuan yang ada 
+dalam dokumen kerja sama (MoU/SPK).
+Bentuk kegiatan pembelajaran sesuai dengan Permendikbud No 3 Tahun 2020 Pasal 15 
+ayat 1 dapat dilakukan di dalam Program Studi dan di luar Program Studi meliputi:2. Bentuk Kegiatan Pembelajaran
+Buku Panduan Merdeka Belajar - Kampus Merdeka       6
+a. Pertukaran Pelajar
+Saat ini pertukaran mahasiswa dengan full credit transfer  sudah banyak dilakukan 
+dengan mitra Perguruan Tinggi di luar negeri, tetapi sistem transfer kredit yang 
+dilakukan antar perguruan tinggi di dalam negeri sendiri masih sangat sedikit 
+jumlahnya. Pertukaran pelajar diselenggarakan untuk membentuk beberapa sikap 
+mahasiswa yang termaktub di dalam Peraturan Menteri Pendidikan dan Kebudayaan 
+(Permendikbud) Nomor 3 Tahun 2020, yaitu menghargai keanekaragaman budaya, 
+pandangan, agama, dan kepercayaan, serta pendapat atau temuan orisinal orang 
+lain; serta bekerja sama dan memiliki kepekaan sosial serta kepedulian terhadap 
+masyarakat dan lingkungan.
+Tujuan pertukaran pelajar antara lain:
+1) Belajar lintas kampus (dalam dan luar negeri), tinggal bersama dengan keluarga 
+di kampus tujuan, wawasan mahasiswa tentang ke-Bhinneka Tunggal Ika akan 
+makin berkembang, persaudaraan lintas budaya dan suku akan semakin kuat.
+2) Membangun persahabatan mahasiswa antar daerah, suku, budaya, dan agama, 
+sehingga meningkatkan semangat persatuan dan kesatuan bangsa.
+3) Menyelenggarakan transfer ilmu pengetahuan untuk menutupi disparitas 
+pendidikan baik antar perguruan tinggi dalam negeri, maupun kondisi pendidikan 
+tinggi dalam negeri dengan luar negeri.
+Beberapa bentuk kegiatan belajar yang bisa dilakukan dalam kerangka pertukaran 
+belajar adalah sebagai berikut.
+1) Pertukaran Pelajar antar Program Studi pada Perguruan Tinggi yang sama
+Bentuk pembelajaran yang dapat diambil mahasiswa untuk menunjang 
+terpenuhinya capaian pembelajaran baik yang sudah tertuang dalam struktur 
+kurikulum program studi maupun pengembangan kurikulum untuk memperkaya 
+capaian pembelajaran lulusan yang dapat berbentuk mata kuliah pilihan.
+a) Mekanisme
+(1) Program Studi
+ •Menyusun atau menyesuaikan kurikulum yang memfasilitasi 
+mahasiswa untuk mengambil mata kuliah di program studi lain.
+ •Menentukan dan menawarkan mata kuliah yang dapat diambil 
+mahasiswa dari luar prodi.
+ •Mengatur kuota peserta yang mengambil mata kuliah yang ditawarkan 
+dalam bentuk pembelajaran dalam Program Studi lain pada Perguruan 
+Tinggi yang sama.
+ •Mengatur jumah SKS yang dapat diambil dari prodi lain.
+(2) Mahasiswa
+ •Mendapatkan persetujuan Dosen Pembimbing Akademik (DPA). 
+ •Mengikuti program kegiatan luar prodi sesuai dengan ketentuan 
+pedoman akademik yang ada.
+b) Kegiatan pembelajaran dalam Program Studi lain pada Perguruan Tinggi 
+yang sama dapat dilakukan secara tatap muka atau dalam jaringan (daring).7       Buku Panduan Merdeka Belajar - Kampus Merdeka
+c) Contoh kegiatan
+Tabel 2.1. Contoh kegiatan pembelajaran dalam Program Studi lain pada  
+Perguruan Tinggi yang sama
+ProdiCapaian Pembelajran 
+Lulusan (CPL)Kompetensi Tambahan Prodi
+Desain 
+Produk1. Mampu 
+merancang produk
+2. Mampu 
+mengevaluasi 
+obyek desain
+3. Mampu 
+menyusun dan 
+menyampaikan 
+solusi desain 
+secara visualMampu menyusun, 
+menganalisis dan 
+menginterpretasi rencana 
+keuanganAkuntansi
+Mampu melaksanakan 
+fungsi pemasaranManajemen
+Mampu merancang 
+program dalam bidang 
+periklananKomunikasi
+Penjelasan Tabel 2.1. 
+Mahasiswa Desain Produk harus mampu menguasai minimal ketiga CPL prodi 
+tersebut, namun memerlukan kompetensi tambahan yang dapat diambil dari 
+prodi lain yang menunjang kompetensi lulusan. Oleh karena itu, mahasiswa 
+yang bersangkutan dapat mengambil mata kuliah di program studi akuntansi, 
+manajemen dan komunikasi.
+2) Pertukaran Pelajar dalam Program Studi yang sama pada Perguruan Tinggi yang 
+berbeda
+Bentuk pembelajaran yang dapat diambil mahasiswa untuk memperkaya 
+pengalaman dan konteks keilmuan yang didapat di perguruan tinggi lain 
+yang mempunyai kekhasan atau wahana penunjang pembelajaran untuk 
+mengoptimalkan CPL.
+a) Mekanisme
+(1) Program Studi
+ •Menyusun atau menyesuaikan kurikulum yang memfasilitasi 
+mahasiswa untuk mengambil mata kuliah di program studi yang sama 
+pada perguruan tinggi lain.
+ •Membuat kesepakatan dengan perguruan tinggi mitra antara lain 
+proses pembelajaran, pengakuan kredit semester dan penilaian, serta 
+skema pembiayaan. 
+ •Kerja sama dapat dilakukan dalam bentuk bilateral, konsorsium 
+(asosiasi prodi), klaster (berdasarkan akreditasi), atau zonasi (berdasar 
+wilayah).
+ •Mengatur kuota peserta yang mengambil mata kuliah yang ditawarkan 
+dalam bentuk pembelajaran dalam program studi yang sama pada 
+perguruan tinggi lain.
+ •Mengatur jumlah mata kuliah yang dapat diambil dari program studi Buku Panduan Merdeka Belajar - Kampus Merdeka       8
+yang sama pada perguruan tinggi lain.
+ •Melaporkan kegiatan ke Pangkalan Data Pendidikan Tinggi.
+(2) Mahasiswa
+ •Mendapatkan persetujuan Dosen Pembimbing Akademik (DPA). 
+ •Mengikuti program kegiatan di program studi yang sama pada 
+perguruan tinggi lain sesuai dengan ketentuan pedoman akademik 
+yang dimiliki perguruan tinggi.
+ •Terdaftar sebagai peserta mata kuliah di program studi yang sama 
+pada perguruan tinggi lain.
+b) Kegiatan pembelajaran dalam Program Studi yang sama pada Perguruan 
+Tinggi yang berbeda dapat dilakukan secara tatap muka atau dalam jaringan 
+(daring). Pembelajaran yang dilakukan secara daring dengan ketentuan mata 
+kuliah yang ditawarkan harus mendapat pengakuan dari Kemdikbud.
+c) Contoh kegiatan
+Tabel 2.2. Contoh kegiatan pembelajaran dalam Program Studi yang sama pada 
+Perguruan Tinggi yang berbeda
+Prodi CPL Prodi MK Prodi PT A MK Prodi PT A
+Kehutanan 1. Mampu 
+merancang dan 
+mengelola suatu 
+ekosistem hutan1. Pengelolaan 
+Ekosistem Hutan 
+Mangrove
+2. Pengelolaan 
+Ekosistem Hutan 
+Pegunungan1. Pengelolaan 
+Ekosistem 
+Hutan Dataran 
+Rendah
+2. Pengelolaan 
+Ekosistem 
+Hutan Pantai
+Penjelasan Tabel 2.2. 
+Prodi Kehutanan pada PT A dan PT B mempunyai salah satu CPL yaitu mampu 
+merancang dan mengelola suatu ekosistem hutan. Mahasiswa PT A dapat 
+mengambil mata kuliah yang ditawarkan oleh PT B atau sebaliknya.
+3) Pertukaran Pelajar antar Program Studi pada Perguruan Tinggi yang berbeda
+Bentuk pembelajaran yang dapat diambil mahasiswa pada perguruan tinggi yang 
+berbeda untuk menunjang terpenuhinya capaian pembelajaran baik yang sudah 
+tertuang dalam struktur kurikulum program studi, maupun pengembangan 
+kurikulum untuk memperkaya capaian pembelajaran lulusan.
+a) Mekanisme
+(1) Program Studi
+ •Menyusun kurikulum yang memfasilitasi mahasiswa untuk mengambil 
+mata kuliah di program studi lain pada perguruan tinggi yang berbeda.
+ •Menentukan mata kuliah yang dapat diambil mahasiswa dari luar 
+prodi. 
+ •Mengatur kuota peserta yang mengambil mata kuliah yang ditawarkan 
+dalam bentuk pembelajaran dalam Program Studi lain pada Perguruan 
+Tinggi yang berbeda.9       Buku Panduan Merdeka Belajar - Kampus Merdeka
+ •Mengatur jumlah SKS dan jumlah mata kuliah yang dapat diambil dari 
+prodi lain pada perguruan tinggi yang berbeda.
+ •Membuat kesepakatan dengan perguruan tinggi mitra antara lain 
+proses pembelajaran, pengakuan kredit semester dan penilaian, serta 
+skema pembiayaan. 
+ •Kerja sama dapat dilakukan dalam bentuk bilateral, konsorsium 
+(asosiasi prodi), klaster (berdasarkan akreditasi), atau zonasi (berdasar 
+wilayah).
+ •Melaporkan kegiatan ke Pangkalan Data Pendidikan Tinggi.
+(2) Mahasiswa
+ •Mendapatkan persetujuan Dosen Pembimbing Akademik (DPA). 
+ •Mengikuti program kegiatan pembelajaran dalam program studi 
+lain pada perguruan tinggi yang berbeda sesuai dengan ketentuan 
+pedoman akademik yang dimiliki perguruan tinggi.
+ •Terdaftar sebagai peserta mata kuliah di program studi yang dituju 
+pada perguruan tinggi lain.
+b) Kegiatan pembelajaran dalam Program Studi lain pada Perguruan Tinggi 
+yang berbeda dapat dilakukan secara tatap muka atau dalam jaringan 
+(daring). Pembelajaran yang dilakukan secara daring dengan ketentuan mata 
+kuliah yang ditawarkan harus mendapat pengakuan dari Kemdikbud.Contoh 
+kegiatan
+Tabel 2.3. Contoh kegiatan pembelajaran dalam Program Studi lain pada 
+Perguruan Tinggi yang berbeda
+Prodi CPL ProdiKompetensi 
+TambahanMK Prodi Lain PT 
+Lain
+Teknik 
+IndustriMampu merancang 
+sistem/komponen, 
+proses dan produk 
+industri untuk 
+memenuhi kebutuhan 
+dalam batasan-batasan 
+realistis (misalnya 
+ekonomi, lingkungan, 
+kesehatan)Mampu merancang 
+produk untuk 
+kebutuhan pertanianEnergi dan Mesin 
+Pertanian
+Mampu membangun 
+model untuk 
+menganalisis sumber 
+daya dan lingkunganPemodelan 
+Ekonomi Sumber 
+Daya dan 
+Lingkungan
+Penjelasan Tabel 2.3. 
+Mahasiswa Teknik Industri pada PT A harus mampu menguasai CPL untuk 
+merancang sistem/komponen, proses dan produk industri untuk memenuhi 
+kebutuhan dalam batasan-batasan realistis (misalnya ekonomi, lingkungan, 
+kesehatan), namun memerlukan kompetensi tambahan yang dapat diambil 
+dari prodi lain pada PT berbeda. Oleh karena itu mahasiswa yang bersangkutan 
+dapat mengambil mata kuliah Energi dan Mesin Pertanian pada prodi Teknologi 
+Pertanian PT B, dan mata kuliah Pemodelan Ekonomi Sumber Daya dan 
+Lingkungan pada prodi Ilmu Ekonomi PT C.Buku Panduan Merdeka Belajar - Kampus Merdeka       10
+Proses Program Pertukaran Pelajar
+Catatan:
+Pertukaran pelajar dapat dilakukan dengan perguruan tinggi di dalam maupun di luar negeri.
+Tugas Perguruan Tinggi Pengirim
+1) Menjalin kerja sama dengan perguruan tinggi dalam negeri dan luar negeri atau 
+dengan konsorsium keilmuan untuk penyelenggaraan transfer kredit yang dapat 
+diikuti mahasiswa.
+2) PT dapat mengalokasikan kuota untuk mahasiswa inbound maupun mahasiswa 
+yang melakukan outbound (timbal-balik/resiprokal).
+3) Bila diperlukan, menyelenggarakan seleksi pertukaran pelajar yang memenuhi 
+asas keadilan bagi mahasiswa.
+4) Melakukan pemantauan penyelenggaraan pertukaran mahasiswa.
+5) Menilai dan mengevaluasi hasil pertukaran mahasiswa untuk kemudian dilakukan 
+rekognisi terhadap SKS mahasiswa.
+6) Melaporkan hasil kegiatan belajar ke Direktorat Jenderal Pendidikan Tinggi 
+melalui Pangkalan Data Pendidikan Tinggi.
+Tugas Perguruan Tinggi Tujuan
+1) Menjalin kerja sama dengan perguruan tinggi dalam negeri dan luar negeri atau 
+dengan konsorsium keilmuan untuk penyelenggaraan transfer kredit yang dapat 
+diikuti mahasiswa.
+2) Menjamin terselenggaranya program pembelajaran mahasiswa dan aktivitas luar 
+kampus mahasiswa sesuai dengan kontrak perjanjian.
+3) PT dapat mengalokasikan kuota untuk mahasiswa inbound maupun mahasiswa 
+yang melakukan outbound (timbal-balik/resiprokal).
+4) Bila diperlukan, menyelenggarakan seleksi pertukaran pelajar yang memenuhi 
+asas keadilan bagi mahasiswa.
+5) Menyelenggarakan pengawasan secara berkala terhadap proses pertukaran 
+mahasiswa.
+11       Buku Panduan Merdeka Belajar - Kampus Merdeka
+6) Melakukan penjaminan mutu dan mengelola penyelenggaraan pertukaran 
+mahasiswa.
+7) Memberikan nilai dan hasil evaluasi akhir terhadap mahasiswa untuk direkognisi 
+di perguruan tinggi asalnya.
+8) Melaporkan hasil kegiatan belajar ke Direktorat Jenderal Pendidikan Tinggi 
+melalui Pangkalan Data Pendidikan Tinggi.
+b. Magang/Praktik Kerja
+Selama ini mahasiswa kurang mendapat pengalaman kerja di industri/dunia 
+profesi nyata sehingga kurang siap bekerja. Sementara magang yang berjangka 
+pendek (kurang dari 6 bulan) sangat tidak cukup untuk memberikan pengalaman 
+dan kompetensi industri bagi mahasiswa. Perusahaan yang menerima magang 
+juga menyatakan magang dalam waktu sangat pendek tidak bermanfaat, bahkan 
+mengganggu aktivitas di Industri.
+Tujuan program magang antara lain:
+Program magang 1-2 semester, memberikan pengalaman yang cukup kepada 
+mahasiswa, pembelajaran langsung di tempat kerja ( experiential learning ). Selama 
+magang mahasiswa akan mendapatkan hardskills  (keterampilan, c omplex problem 
+solving, analytical skills , dsb.), maupun soft skills  (etika profesi/kerja, komunikasi, 
+kerjasama, dsb.). Sementara industri mendapatkan talenta yang bila cocok nantinya 
+bisa langsung di- recruit , sehingga mengurangi biaya recruitment dan training  awal/
+induksi. Mahasiswa yang sudah mengenal tempat kerja tersebut akan lebih mantab 
+dalam memasuki dunia kerja dan karirnya. Melalui kegiatan ini, permasalahan 
+industri akan mengalir ke perguruan tinggi sehingga meng- update  bahan ajar dan 
+pembelajaran dosen serta topik-topik riset di perguruan tinggi akan makin relevan.
+Kegiatan pembelajaran yang dilakukan melalui kerja sama dengan mitra antara lain 
+perusahaan, yayasan nirlaba, organisasi multilateral, institusi pemerintah, maupun 
+perusahaan rintisan ( startup ). Adapun untuk mekanisme pelaksanaan magang/
+praktik kerja adalah sebagai berikut.
+1) Perguruan Tinggi
+a) Membuat kesepakatan dalam bentuk dokumen kerja sama (MoU/SPK) 
+dengan mitra antara lain proses pembelajaran, pengakuan kredit semester 
+dan penilaian.
+b) Menyusun program magang bersama mitra, baik isi/content dari program 
+magang, kompetensi yang akan diperoleh mahasiswa, serta hak dan 
+kewajiban ke dua belah pihak selama proses magang.
+c) Menugaskan dosen pembimbing yang akan membimbing mahasiswa selama 
+magang.
+d) Bila dimungkinkan pembimbing melakukan kunjungan di tempat magang 
+untuk monitoring dan evaluasi.
+e) Dosen pembimbing bersama supervisor menyusun logbook dan melakukan 
+penilaian capaian mahasiswa selama magang. 
+f) Pemantauan proses magang dapat dilakukan melalui Pangkalan Data 
+Pendidikan Tinggi.Buku Panduan Merdeka Belajar - Kampus Merdeka       12
+2) Mitra Magang
+a) Bersama Perguruan Tinggi, menyusun dan menyepakati program magang 
+yang akan ditawarkan kepada mahasiswa.
+b) Menjamin proses magang yang berkualitas sesuai dokumen kerja sama 
+(MoU/SPK).
+c) Menyediakan supervisor /mentor/ coach  yang mendampingi mahasiswa/
+kelompok mahasiswa selama magang.
+d) Memberikan hak dan jaminan sesuai peraturan perundangan (asuransi 
+kesehatan, keselamatan kerja, honor magang, hak karyawan magang).
+e) Supervisor  mendampingi dan menilai kinerja mahasiswa selama magang, 
+dan bersama dosen pembimbing memberikan penilaian.
+3) Mahasiswa
+a) Dengan persetujuan dosen pembimbing akademik mahasiswa mendaftar/
+melamar dan mengikuti seleksi magang sesuai ketentuan tempat magang.
+b) Mendapatkan persetujuan Dosen Pembimbing Akademik (DPA) dan 
+mendapatkan dosen pembimbing magang. 
+c) Melaksanakan kegiatan Magang sesuai arahan supervisor dan dosen 
+pembimbing magang.
+d) Mengisi logbook  sesuai dengan aktivitas yang dilakukan.
+e) Menyusun laporan kegiatan dan menyampaikan laporan kepada supervisor 
+dan dosen pembimbing.
+4) Dosen Pembimbing & Supervisor
+a) Dosen pembimbing meberikan pembekalan bagi mahasiswa sebelum 
+berangkat magang.
+b) Dosen pembimbing memberikan arahan dan tugas-tugas bagi mahasiswa 
+selama proses magang. Supervisor menjadi mentor dan membimbing 
+mahasiswa selama proses magang.
+c) Dosen pembimbing bersama supervisor melakukan evaluasi dan penilaian 
+atas hasil magang.
+Proses Program Magang
+13       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Catatan:
+1) Topik magang yang dilakukan mahasiswa tidak harus sesuai dengan program studi/jurusan
+2) Magang yang berjalan selama 1 semester wajib mendapatkan minimum 20 sks (tidak boleh 
+kurang, tapi boleh lebih banyak)
+Bobot SKS, Kesetaraan dan Penilaiannya
+Fokus dari program merdeka belajar adalah pada capaian pembelajaran ( learning 
+outcomes ). Kurikulum Pendidikan Tinggi pada dasarnya bukan sekedar kumpulan 
+mata kuliah, tetapi merupakan rancangan serangkaian proses Pendidikan/
+pembelajaran untuk menghasilkan suatu learning outcomes  (capaian pembelajaran). 
+A curriculum is broadly defined as the totality of student experiences that occur in the 
+educational process , (Kelly 2009).
+Secara umum penyetaraan bobot kegiatan Merdeka Belajar – Kampus Merdeka  
+dapat dikelompokkan menjadi 2 bentuk yaitu bentuk bebas ( free form ) dan bentuk 
+terstruktur ( structured form ).
+1) Bentuk bebas ( free form )
+Kegiatan merdeka belajar selama 6 bulan disetarakan dengan 20 SKS tanpa 
+penyetaraan dengan mata kuliah. Duapuluh SKS tersebut dinyatakan dalam 
+bentuk kompetensi yang diperoleh oleh mahasiswa selama mengikuti program 
+tersebut, baik dalam kompetensi keras ( hard skills ), maupun kompetensi halus 
+(soft skills ) sesuai dengan capaian pembelajaran yang diinginkan. Misalnya untuk 
+bidang keteknikan, contoh hard skills  sebagai bagian dari capaian pembelajaran 
+adalah: kecakapan untuk merumuskan permasalahan keteknikan yang 
+kompleks ( complex engineering problem definition ), kemampuan menganalisa 
+dan menyelesaikan permasalahan keteknikan berdasar pengetahuan sains 
+dan matematika, dsb.; sementara contoh soft skills -nya adalah: kemampuan 
+berkomunikasi dalam lingkungan kerja profesi, kemampuan bekerjasama dalam 
+tim, kemampuan untuk menjalankan etika profesi, dsb. Capaian pembelajaran 
+dan penilaiannya dapat dinyatakan dalam kompetensi-kompetensi tersebut.
+Sebagai contoh: Mahasiswa Magang di Industri selama 6 bulan
+Hard skills: 
+• Merumuskan permasalahan keteknikan  : 3 SKS  A
+• Menyelesaikan permasalahan teknis di lapangan : 3 SKS  B
+• Kemampuan sintesa dalam bentuk design   : 4 SKS  A
+Soft skills:
+• Kemampuan berkomunikasi     : 2 SKS  A
+• Kemampuan bekerjasama    : 2 SKS  A
+• Kerja keras      : 2 SKS  A
+• Kepemimpinan      : 2 SKS  A
+• Kreativitas      : 2 SKS  BBuku Panduan Merdeka Belajar - Kampus Merdeka       14
+Selain dalam bentuk penilaian capaian, pengalaman/kompetensi yang diperoleh 
+selama kegiatan magang dapat juga dituliskan dalam bentuk portofolio sebagai 
+SKPI (surat keterangan pendamping ijazah).
+2) Bentuk berstruktur ( structured form )
+Kegiatan merdeka belajar juga dapat distrukturkan sesuai dengan kurikulum 
+yang ditempuh oleh mahasiswa. Duapuluh SKS tersebut dinyatakan dalam 
+bentuk kesetaraan dengan mata kuliah yang ditawarkan yang kompetensinya 
+sejalan dengan kegiatan magang.
+Sebagai contoh, mahasiswa T Kimia magang 6 bulan di Industri Petrokimia akan 
+setara dengan belajar mata kuliah:
+• Fenomena transport     2 SKS  
+• Unit operasi      3 SKS
+• Industri proses kimia     3 SKS  
+• Rekayasa reaksi kimia     3 SKS
+• Kontrol proses kimjia     3 SKS  
+• Teknologi separasi     2 SKS
+• Laporan akhir sebagai pengganti skripsi 4 SKS
+Selain kedua bentuk tersebut, dapat pula dirancang bentuk hibrida, gabungan 
+antara bentuk bebas (free-form) dan terstruktur (structured).
+c. Asistensi Mengajar di Satuan Pendidikan
+Kualitas pendidikan dasar dan menengah di Indonesia masih sangat rendah (PISA 
+2018 peringkat Indonesia no 7 dari bawah). Jumlah satuan pendidikan di Indonesia 
+sangat banyak dan beragam permasalahan baik satuan pendidikan formal, non 
+formal maupun informal. Kegiatan pembelajaran dalam bentuk asistensi mengajar 
+dilakukan oleh mahasiswa di satuan pendidikan seperti sekolah dasar, menengah, 
+maupun atas. Sekolah tempat praktek mengajar dapat berada di lokasi kota maupun 
+di daerah terpencil.
+Tujuan program asistensi mengajar di satuan pendidikan antara lain:
+1) Memberikan kesempatan bagi mahasiswa yang memiliki minat dalam bidang 
+pendidikan untuk turut serta mengajarkan dan memperdalam ilmunya dengan 
+cara menjadi guru di satuan pendidikan.
+2) Membantu meningkatkan pemerataan kualitas pendidikan, serta relevansi 
+pendidikan dasar dan menengah dengan pendidikan tinggi dan perkembangan 
+zaman.
+Adapun mekanisme pelaksanaan asistensi mengajar di satuan pendidikan adalah 
+sebagai berikut.
+1) Perguruan Tinggi
+a) Menyusun dokumen kerja sama (MoU/SPK) dengan mitra satuan pendidikan, 
+izin dari dinas Pendidikan, dan menyusun program bersama satuan 
+Pendidikan setempat.
+b) Program ini dapat dilakukan melalui kerjasama dengan program Indonesia 
+Mengajar, Forum Gerakan Mahasiswa Mengajar Indonesia (FGMMI), dan 
+program-program lain yang direkomendasikan oleh Kemendikbud.
+c) Memberikan kesempatan kepada mahasiswa untuk mengikuti program 15       Buku Panduan Merdeka Belajar - Kampus Merdeka
+mengajar di satuan pendidikan formal maupun non-formal.
+d)  Data satuan pendidikan dapat diperoleh dari Kemendikbud maupun dari 
+Dinas Pendidikan setempat. Kebutuhan jumlah tenaga asisten pegajar dan 
+mata pelajarannya didasarkan pada kebutuhan masing-masing pemerintah 
+daerah melalui dinas pendidikan provinsi/kota.
+e) Menugaskan dosen pembimbing untuk melakukan pendampingan, 
+pelatihan, monitoring, serta evaluasi terhadap kegiatan mengajar di satuan 
+pendidikan yang dilakukan oleh mahasiswa.
+f) Melakukan penyetaraan/rekognisi jam kegiatan mengajar di satuan 
+pendidikan untuk diakui sebagai SKS.
+g) Melaporkan hasil kegiatan belajar ke Direktorat Jenderal Pendidikan Tinggi 
+melalui Pangkalan Data Pendidikan Tinggi.
+2) Sekolah/Satuan Pendidikan
+a) Menjamin kegiatan mengajar di satuan pendidikan yang diikuti mahasiswa 
+sesuai dengan kesepakatan dalam kontrak kerja sama
+b) Menunjuk guru pamong/pendamping mahasiswa yan melakukan kegiatan 
+mengajar di satuan pendidikan.
+c) Bersama-sama dosen pembimbing melakukan monitoring dan evaluasi atas 
+kegiatan yang diikuti oleh mahasiswa
+d) Memberikan nilai untuk direkognisi menjadi SKS mahasiswa.
+3) Mahasiswa
+a)  Dengan persetujuan Dosen Pembimbing Akademik (DPA) mahasiswa 
+mendaftarkan dan mengikuti seleksi asisten mengajar di satuan pendidikan. 
+b) Melaksanakan kegiatan asistensi mengajar di satuan Pendidikan di bawah 
+bimbingan dosen pembimbing.
+c) Mengisi logbook  sesuai dengan aktivitas yang dilakukan.
+d) Menyusun laporan kegiatan dan menyampaikan laporan dalam bentuk 
+presentasi.
+Proses Program Asistensi Mengajar di Satuan PendidikanBuku Panduan Merdeka Belajar - Kampus Merdeka       16
+d. Penelitian/Riset
+Bagi mahasiswa yang memiliki passion  menjadi peneliti, merdeka belajar dapat 
+diwujudkan dalam bentuk kegiatan penelitian di Lembaga riset/pusat studi. Melalui 
+penelitian mahasiswa dapat membangung cara berpikir kritis, hal yang sangat 
+dibutuhkan untuk berbagai rumpun keilmuan pada jenjang pendidikan tinggi. 
+Dengan kemampuan berpikir kritis mahasiswa akan lebih mendalami, memahami, 
+dan mampu melakukan metode riset secara lebih baik. Bagi mahasiswa yang 
+memiliki minat dan keinginan berprofesi dalam bidang riset, peluang untuk magang 
+di laboratorium pusat riset merupakan dambaan mereka. Selain itu, Laboratorium/
+Lembaga riset terkadang kekurangan asisten peneliti saat mengerjakan proyek riset 
+yang berjangka pendek (1 semester – 1 tahun).
+Tujuan program penelitian/riset antara lain:
+1) Penelitian mahasiswa diharapkan dapat ditingkatkan mutunya. Selain itu, 
+pengalaman mahasiswa dalam proyek riset yang besar akan memperkuat pool 
+talent  peneliti secara topikal.
+2) Mahasiswa mendapatkan kompetensi penelitian melalui pembimbingan 
+langsung oleh peneliti di lembaga riset/pusat studi.
+3) Meningkatkan ekosistem dan kualitas riset di laboratorium dan lembaga riset 
+Indonesia dengan memberikan sumber daya peneliti dan regenerasi peneliti 
+sejak dini.
+Adapun mekanisme pelaksanaan penelitian/riset adalah sebagai berikut.
+1) Perguruan Tinggi
+a) Membuat kesepakatan dalam bentuk dokumen kerja sama (MoU/SPK) 
+dengan mitra dari lembaga riset/laboratorium riset.
+b) Memberikan hak kepada mahasiswa untuk mengikuti seleksi hingga evaluasi 
+program riset di lembaga/laboratorium riset di luar kampus.
+c) Menunjuk dosen pembimbing untuk melakukan pembimbingan, 
+pengawasan, serta bersama-sama dengan peneliti di lembaga/laboratorium 
+riset untuk memberikan nilai. 
+d) Dosen bersama-sama dengan peneliti menyusun form logbook .
+e) Melakukan evaluasi akhir dan penyetaraan kegiatan riset di lembaga/
+laboratorium menjadi mata kuliah yang relevan (SKS) serta program 
+berkesinambungan.
+f) Menyusun pedoman teknis kegiatan pembelajaran melalui penelitian/riset.
+g) Melaporkan hasil kegiatan belajar ke Direktorat Jenderal Pendidikan Tinggi 
+melalui Pangkalan Data Pendidikan Tinggi.
+2) Lembaga Mitra
+a) Menjamin terselenggaranya kegiatan riset mahasiswa di lembaga mitra 
+sesuai dengan kesepakatan.
+b) Menunjuk pendamping untuk mahasiswa dalam menjalankan riset.
+c) Bersama-sama dengan dosen pendamping melakukan evaluasi dan penilaian 
+terhadap proyek riset yang dilakukan oleh mahasiswa.
+3) Mahasiswa
+a)  Dengan persetujuan Dosen Pembimbing Akademik (DPA), mahasiswa 
+mendaftarkan diri untuk program asisten riset. 17       Buku Panduan Merdeka Belajar - Kampus Merdeka
+b) Melaksanakan kegiatan riset sesuai dengan arahan dari Lembaga riset/pusat 
+studi tempat melakukan riset.
+c) Mengisi logbook sesuai dengan aktivitas yang dilakukan. 
+d) Menyusun laporan kegiatan dan menyampaikan laporan dalam bentuk 
+laporan penelitian/skripsi atau publikasi ilmiah.
+Proses Program Penelitian/Riset
+e. Proyek Kemanusiaan
+Indonesia banyak mengalami bencana alam, baik berupa gempa bumi, erupsi 
+gunung berapi, tsunami, bencana hidrologi, dsb. Perguruan tinggi selama ini banyak 
+membantu mengatasi bencana melalui program-program kemanusiaan. Pelibatan 
+mahasiswa selama ini bersifat voluntary dan hanya berjangka pendek. Selain itu, 
+banyak lembaga Internasional (UNESCO, UNICEF, WHO, dsb) yang telah melakukan 
+kajian mendalam dan membuat pilot project pembangunan di Indonesia maupun 
+negara berkembang lainnya. Mahasiswa dengan jiwa muda, kompetensi ilmu, dan 
+minatnya dapat menjadi “foot soldiers” dalam proyek-proyek kemanusiaan dan 
+pembangunan lainnya baik di Indonesia maupun di luar negeri.
+Tujuan program proyek kemanusiaan antara lain:
+1) Menyiapkan mahasiswa unggul yang menjunjung tinggi nilai kemanusiaan 
+dalam menjalankan tugas berdasarkan agama, moral, dan etika.
+2) Melatih mahasiswa memiliki kepekaan sosial untuk menggali dan menyelami 
+permasalahan yang ada serta turut memberikan solusi sesuai dengan minat dan 
+keahliannya masing-masing.
+Adapun mekanisme pelaksanaan proyek kemanusiaan adalah sebagai berikut.
+1) Perguruan Tinggi
+a) Membuat kesepakatan dalam bentuk dokumen kerja sama (MoU/SPK) 
+dengan mitra baik dalam negeri (Pemda, PMI, BPBD, BNPB, dll) maupun dari 
+lembaga luar negeri (UNESCO, UNICEF, WHO, UNOCHA, UNHCR, dll).
+Buku Panduan Merdeka Belajar - Kampus Merdeka       18
+b) Menunjuk dosen pendamping untuk melakukan pendampingan,  
+pengawasan, penilaian dan evaluasi terhadap kegiatan proyek kemanusiaan 
+yang dilakukan mahasiswa. 
+c) Dosen bersama lembaga mitra menyusun form logbook .
+d) Melakukan evaluasi akhir dan penyetaraan kegiatan proyek kemanusiaan 
+mahasiswa menjadi mata kuliah yang relevan (SKS), serta program 
+berkesinambungan.
+e)  Menyusun pedoman teknis kegiatan pembelajaran melalui proyek 
+kemanusiaan.
+f) Melaporkan hasil kegiatan belajar ke Direktorat Jenderal Pendidikan Tinggi 
+melalui Pangkalan Data Pendidikan Tinggi.
+2) Lembaga Mitra
+a) Menjamin kegiatan kemanusiaan yang diikuti mahasiswa sesuai dengan 
+kesepakatan dalam dokumen kerja sama (MoU/SPK).
+b) Menjamin pemenuhan hak dan keselamatan mahasiswa selama mengikuti 
+proyek kemanusiaan.
+c) Menunjuk supervisor/mentor dalam proyek kemanusiaan yang diikuti oleh 
+mahasiswa.
+d) Melakukan monitoring dan evaluasi bersama dosen pembimbing atas 
+kegiatan yang diikuti oleh mahasiswa.
+e) Memberikan nilai untuk direkognisi menjadi SKS mahasiswa.
+3) Mahasiswa
+a)  Dengan persetujuan Dosen Pembimbing Akademik (DPA), mahasiswa 
+mendaftarkan diri untuk mengikuti program kemanusiaan. 
+b) Melaksanakan kegiatan proyek (relawan) kemanusiaan di bawah bimbingan 
+dosen pembimbing dan supervisor/mentor lapangan.
+c) Mengisi logbook sesuai dengan aktivitas yang dilakukan.
+d) Menyusun laporan kegiatan dan menyampaikan laporan dalam bentuk 
+publikasi atau presentasi.
+Proses Program Proyek Kemanusiaan
+19       Buku Panduan Merdeka Belajar - Kampus Merdeka
+f. Kegiatan Wirausaha
+Berdasarkan Global Entrepreneurship Index (GEI) pada tahun 2018, Indonesia hanya 
+memiliki skor 21% wirausahawan dari berbagai bidang pekerjaan, atau peringkat 94 
+dari 137 negara yang disurvei. Sementara menurut riset darn IDN Research Institute 
+tahun 2019, 69,1% millennial di Indonesia memiliki minat untuk berwirausaha. 
+Sayangnya, potensi wirausaha bagi generasi milenial tersebut belum dapat dikelola 
+dengan baik selama ini. Kebijakan Kampus Merdeka mendorong pengembangan 
+minat wirausaha mahasiswa dengan program kegiatan belajar yang sesuai.
+Tujuan program kegiatan wirausaha antara lain:
+1) Memberikan mahasiswa yang memiliki minat berwirausaha untuk 
+mengembangkan usahanya lebih dini dan terbimbing.
+2) Menangani permasalahan pengangguran yang menghasilkan pengangguran 
+intelektual dari kalangan sarjana.
+Kegiatan pembelajaran dalam bentuk wirausaha baik yang belum maupun sudah 
+ditetapkan dalam kurikulum program studi. Persyaratan diatur dalam pedoman 
+akademik yang dikeluarkan oleh Perguruan Tinggi. Adapun untuk mekanisme 
+pelaksanaan kegiatan wirausaha adalah sebagai berikut.
+1) Perguruan Tinggi
+a) Program kewirausahaan mahasiswa hendaknya disusun pada tingkat 
+perguruan tinggi, dengan menyusun silabus kegiatan wirausaha yang dapat 
+memenuhi 20 SKS/semester atau 40 SKS/tahun. 
+b) Program tersebut bisa merupakan kombinasi beberapa mata kuliah dari 
+berbagai program studi yang ditawarkan oleh Fakultas yang ada di dalam 
+perguruan tinggi maupun di luar perguruan tinggi, termasuk kursus/ micro-
+credentials  yang ditawarkan melalui pembelajaran daring maupun luring.
+c) Untuk penilaian program kewirausahaan dapat disusun rubrik asesmen atau 
+ukuran keberhasilan capaian pembelajaran. Misalnya bila mahasiswa berhasil 
+membuat start up di akhir program maka mahasiswa mendapatkan nilai A 
+dengan bobot 20 SKS/40 SKS.
+d) Selama mengikuti program wirausaha, mahasiswa dibimbing oleh dosen 
+pembimbing, mentor pakar wirausaha/pengusaha yang telah berhasil.   
+e) Perguruan tinggi yang memiliki pusat inkubasi diharapkan mengintegrasikan 
+program ini dengan pusat tersebut. Bagi yang belum memiliki dapat bekerja 
+sama dengan pusat-pusat inkubasi dan akselerasi bisnis.
+f) Perguruan tinggi bekerja sama dengan institusi mitra dalam menyediakan 
+sistem pembelajaran kewirausahaan yang terpadu dengan praktik langsung. 
+Sistem pembelajaran ini dapat berupa fasilitasi pelatihan, pendampingan, 
+dan bimbingan dari mentor/pelaku usaha.
+g) Menyusun pedoman teknis kegiatan pembelajaran melalui wirausaha.
+2) Mahasiswa
+a) Dengan persetujuan dosen pembimbing akademik (DPA), mahasiswa 
+mendaftarkan program kegiatan wirausaha.
+b) Dengan bimbingan pusat inkubasi atau dosen pembimbing kewirausahaan/
+mentor, mahasiswa menyusun proposal kegiatan wirausaha. 
+c) Melaksanakan kegiatan wirausaha di bawah bimbingan dosen pembimbing 
+atau mentor kewirausahaan.Buku Panduan Merdeka Belajar - Kampus Merdeka       20
+d) Menyampaikan hasil kegiatan wirausaha dan menyampaikan laporan dalam 
+bentuk presentasi.
+Tabel 2.4. Contoh Capaian Pembelajaran Mahasiswa Ilmu Komunikasi yang 
+Mengikuti Kegiatan Wirausaha (Bentuk  Blended )
+Prodi CPL Wirausaha Ekuivalensi MKJumlah 
+SKS
+Ilmu 
+KomunikasiMampu 
+melakukan 
+praktik awal 
+wirausaha dengan 
+pemahaman 
+konsep 
+wirausaha yang 
+komprehensifKewirausahaan Sosial 3
+Etika Bisnis 2
+Pengantar Manajemen dan Bisnis 2
+Pemasaran Digital 3
+Wirausaha
+1. Desain Wirausaha dan 
+Presentasi
+2. Praktik Wirausaha
+3. Laporan Pelaksanaan 
+Wirausaha dan Presentasi3
+4
+3
+Jumlah 6 MK 20 SKS
+Penjelasan Tabel 2.4. 
+Mahasiswa Ilmu Komunikasi mengambil bentuk kegiatan pembelajaran 
+berupa Kewirausahaan untuk menambah kompetensinya di bidang wirausaha. 
+Kompetensi yang telah dicapai melalui serangkaian proses kegiatan pembelajaran 
+kewirausahaan ini sesuai dengan CPL, proses pencapaian CPL tersebut dapat 
+diekuivalensikan kedalam mata kuliah Kewirausahaan Sosial, Etika Bisnis, 
+Pengantar Manajemen dan Bisnis, Pemasaran Digital, Desain Wirausaha dan 
+Presentasi, Praktik Wirausaha, serta Laporan Wirausaha dan Presentasi yang 
+setara dengan 20 SKS.
+Proses Program Wirausaha
+21       Buku Panduan Merdeka Belajar - Kampus Merdeka
+g. Studi/Proyek Independen
+Banyak mahasiswa yang memiliki passion untuk mewujudkan karya besar yang 
+dilombakan di tingkat internasional atau karya dari ide yang inovatif. Idealnya, studi/
+proyek independen dijalankan untuk menjadi pelengkap dari kurikulum yang sudah 
+diambil oleh mahasiswa. Perguruan tinggi atau fakultas juga dapat menjadikan studi 
+independen untuk melangkapi topik yang tidak termasuk dalam jadwal perkuliahan, 
+tetapi masih tersedia dalam silabus program studi atau fakultas. Kegiatan proyek 
+independent dapat dilakukan dalam bentuk kerja kelompok lintas disiplin keilmuan.
+Tujuan program studi/proyek independen antara lain:
+1) Mewujudkan gagasan mahasiswa dalam mengembangkan produk inovatif yang 
+menjadi gagasannya.
+2) Menyelenggarakan pendidikan berbasis riset dan pengembangan (R&D).
+3) Meningkatkan prestasi mahasiswa dalam ajang nasional dan internasional.
+Studi/proyek independen dapat menjadi pelengkap atau pengganti mata kuliah yang 
+harus diambil. Ekuivalensi kegiatan studi independen ke dalam mata kuliah dihitung 
+berdasarkan kontribusi dan peran mahasiswa yang dibuktikan dalam aktivitas di 
+bawah koordinasi dosen pembimbing. Adapun untuk mekanisme pelaksanaan 
+kegiatan studi/proyek independen adalah sebagai berikut.
+1) Perguruan Tinggi
+a) Menyediakan tim dosen pendamping untuk proyek independen yang 
+diajukan oleh tim mahasiswa sesuai dengan keahlian dari topik proyek 
+independen yang diajukan.
+b) Memfasilitasi terbentuknya sebuah tim proyek independen yang terdiri dari 
+mahasiswa lintas disiplin.
+c) Menilai kelayakan proyek independen yang diajukan.
+d) Menyelenggarakan bimbingan, pendampingan, serta pelatihan dalam proses 
+proyek independen yang dijalankan oleh tim mahasiswa.
+e) Menyelenggarakan evaluasi dan penilaian dari proyek independen mahasiswa 
+untuk disetarakan menjadi mata kuliah yang relevan (SKS).
+2) Mahasiswa
+a) Mendapatkan persetujuan Dosen Pembimbing Akademik (DPA). 
+b) Membuat proposal kegiatan Studi Independen lintas disiplin.
+c) Melaksanakan kegiatan Studi Independen.
+d) Menghasilkan produk atau mengikuti lomba tingkat nasional atau 
+internasional.
+e) Menyusun laporan kegiatan dan menyampaikan laporan dalam bentuk 
+presentasi.Buku Panduan Merdeka Belajar - Kampus Merdeka       22
+Proses Program S tudi/Proyek Independen
+h. Membangun Desa/Kuliah Kerja Nyata Tematik
+Kuliah Kerja Nyata Tematik (KKNT) merupakan suatu bentuk pendidikan dengan 
+cara memberikan pengalaman belajar kepada mahasiswa untuk hidup di tengah 
+masyarakat di luar kampus, yang secara langsung bersama-sama masyarakat 
+mengidentifikasi potensi dan menangani masalah sehingga diharapkan mampu 
+mengembangkan potensi desa/daerah dan meramu solusi untuk masalah yang ada 
+di desa. Kegiatan KKNT diharapkan dapat mengasah softskill  kemitraan, kerjasama 
+tim lintas disiplin/keilmuan (lintas kompetensi), dan leadership  mahasiswa dalam 
+mengelola program pembangunan di wilayah perdesaan. Sejauh ini perguruan 
+tinggi sudah menjalankan program KKNT, hanya saja Satuan Kredit Semesternya 
+(SKS) belum bisa atau dapat diakui sesuai dengan program kampus merdeka yang 
+pengakuan kreditnya setara 6 – 12 bulan atau 20 – 40 SKS, dengan pelaksanaannya 
+berdasarkan beberapa model. Diharapkan juga setelah pelaksanaan KKNT, mahasiswa 
+dapat menuliskan hal-hal yang dilakukannya beserta hasilnya dalam bentuk tugas 
+akhir.
+Pelaksanaan KKNT dilakukan untuk mendukung kerja sama bersama Kementerian 
+Desa PDTT serta Kementerian/ stakeholder  lainnya. Pemerintah melalui Kementerian 
+Desa PDTT menyalurkan dana desa 1 milyar per desa kepada sejumlah 74.957 
+desa di Indonesia, yang berdasarkan data Indeks Desa Membangun (IDM) tahun 
+2019, terdapat desa sangat tertinggal sebanyak 6.549 dan desa tertinggal 20.128. 
+Pelaksanaan KKNT dapat dilakukan pada desa sangat tertinggal, tertinggal dan 
+berkembang, yang sumber daya manusianya  belum memiliki kemampuan 
+perencanaan pembangunan dengan fasilitas dana yang besar tersebut. Sehingga 
+efektivitas penggunaan dana desa untuk menggerakkan pertumbuhan ekonomi 
+masih perlu ditingkatkan, salah satunya melalui mahasiswa yang dapat menjadi 
+sumber daya manusia yang lebih memberdayakan dana desa.
+23       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Tujuan program membangun desa/kuliah kerja nyata antara lain:
+1) Kehadiran mahasiswa selama 6 – 12 bulan dapat memberikan kesempatan 
+kepada mahasiswa untuk memanfaatkan ilmu pengetahuan, teknologi, 
+dan keterampilan yang dimilikinya bekerjasama dengan banyak pemangku 
+kepentingan di lapangan.
+2) Membantu percepatan pembangunan di wilayah pedesaan bersama dengan 
+Kementerian Desa PDTT.
+Manfaat program membangun desa/kuliah kerja nyata antara lain:
+1) Bagi Mahasiswa
+a) Membuat mahasiswa mampu melihat potensi desa, mengidentifikasi masalah 
+dan mencari solusi untuk meningkatkan potensi dan menjadi desa mandiri. 
+b) Membuat mahasiswa mampu berkolaborasi menyusun dan membuat 
+Rencana Pembangunan Jangka Menengah Desa (RPJMDes), Rencana Kegiatan 
+Pembangunan Desa (RKPDes), dan program strategis lainnya di desa bersama 
+Dosen Pendamping, Pemerintah Desa, Penggerak Swadaya Masyarakat (PSM), 
+Kader Pemberdayaan Masyarakat Desa (KPMD), pendamping lokal desa, dan 
+unsur masyarakat.  
+c) Membuat mahasiswa dapat mengaplikasikan ilmu yang dimiliki secara 
+kolaboratif bersama dengan Pemerintah Desa dan unsur masyarakat untuk 
+membangun desa. 
+d) Mahasiswa mampu memanfaatkan ilmu pengetahuan, teknologi, dan 
+keterampilan yang dimilikinya di lapangan yang disukainya.
+2) Bagi Perguruan Tinggi
+a) Memberikan umpan balik bagi perguruan tinggi tentang ilmu pengetahuan 
+dan teknologi yang dibutuhkan secara nyata oleh masyarakat.   
+b) Menjadi   sarana bagi perguruan tinggi dalam membentuk jejaring atau mitra 
+strategis dalam membantu pembangunan desa.
+c)  Menjadi sarana pengembangan tri dharma perguruan tinggi.
+d)  Menjadi sarana aktualisasi dosen dalam pengembangan ilmu pengetahuan.
+3) Bagi Desa
+a) Memperoleh bantuan pemikiran dan tenaga dari tenaga terdidik untuk 
+menyusun Rencana Pembangunan Jangka Menengah Desa (RPJMDes) dan 
+Rencana Kegiatan Pembangunan Desa (RKPDes).
+b) Membantu perubahan/perbaikan tata kelola desa.  
+c)  Memacu terbentuknya tenaga muda yang diperlukan dalam pemberdayaan 
+masyarakat desa
+d)  Membantu pengayaan wawasan masyarakat terhadap pembangunan desa.
+e) Percepatan pembangunan di wilayah pedesaan.
+Selain persyaratan umum yang terdapat pada pelaksanaan kebijakan Merdeka Belajar 
+- Kampus Merdeka di atas, untuk kegiatan KKNT terdapat persyaratan tambahan 
+yang harus dipenuhi oleh mahasiswa, yaitu:
+1) Mahasiswa telah menyelesaikan proses pembelajaran setelah  semester 6.
+2) Dilakukan secara berkelompok,  anggota berjumlah ± 10   orang per kelompok 
+dan atau sesuai kebutuhan desa, dan bersifat multidisiplin (asal prodi/fakultas/
+kluster  yang berbeda).Buku Panduan Merdeka Belajar - Kampus Merdeka       24
+3) Peserta wajib tinggal di komunitas atau wajib “live in”  di lokasi yang telah 
+ditentukan. 
+4) Sehat jasmani dan rohani serta tidak sedang hamil bagi wanita.
+5) IPK minimal 2.00 sampai dengan semester 5.
+6) Ketentuan lain dapat diatur oleh perguruan tinggi pelaksana.
+Adapun untuk mekanisme pelaksanaan kegiatan membangun desa/kuliah kerja 
+nyata adalah sebagai berikut.
+1) Perguruan Tinggi
+a) Menjalin kerja sama dengan pihak Kementerian Desa PDTT, serta Kemdikbud 
+dalam penyelenggaraan program proyek di desa atau menjalin kerja sama 
+langsung dengan pemerintah daerah untuk penyelenggaraan program 
+proyek di desa.
+b) Mengelola pendaftaran dan penempatan mahasiswa ke desa tujuan.
+c) Menugaskan dosen pembimbing yang akan membimbing mahasiswa selama 
+KKNT.
+d) Bila dimungkinkan pembimbing melakukan kunjungan di lokasi KKNT untuk 
+monitoring dan evaluasi.
+e) Memberangkatkan dan memulangkan   mahasiswa    dari kampus ke lokasi 
+penempatan program.
+f) Memberikan pembekalan, pemeriksaan kesehatan, dan menyediakan 
+jaminan kesehatan dan keselamatan kepada mahasiswa calon peserta KKNT.
+g) Perguruan tinggi menyusun SOP pelaksanaan KKNT dengan 
+mempertimbangkan jaminan Keamanan dan Keselamatan Mahasiswa 
+selama di lapangan.
+h) Perguruan tinggi memberikan pembekalan tentang kearifan lokal masyarakat 
+dan perilaku etika selama melaksanakan kegiatan KKNT.  
+i) Melaporkan hasil kegiatan KKNT ke Direktorat Jenderal Pendidikan Tinggi.
+2) Mahasiswa
+a) Mahasiswa wajib tinggal ( live in)  pada lokasi yang telah ditentukan.
+b) Jika dalam proses pelaksanaan kompetensi mahasiswa tidak memenuhi 
+ekuivalensi 20 SKS, maka mahasiswa dapat mengambil MK daring atau 
+lainnya sesuai ketentuan Perguruan Tinggi.
+c) Proses dan hasil kegiatan ditulis dan dilaporkan kepada Perguruan Tinggi.
+d) Hasil kegiatan dapat diekuivalensikan sebagai skripsi atau tugas akhir sesuai 
+ketentuan Perguruan Tinggi.
+3) Pembimbing
+a) Dosen Pembimbing Akademik dari perguruan tinggi yang bertanggung 
+jawab terhadap kegiatan mahasiswa dari awal sampai dengan akhir.
+b) Pembimbing pendamping   dari pemerintah desa di lokasi setempat.
+c) Melibatkan unsur-unsur mitra, misalnya Penggerak Swadaya Masyarakat 
+(PSM) maupun unsur lain sesuai lingkup kegiatan.
+d) Dosen pendamping bersama pembimbing di desa melakukan pembimbingan 
+dan   penilaian terhadap program yang dilakukan mahasiswa.  
+e) Ketentuan lain dapat diatur oleh perguruan tinggi pelaksana.25       Buku Panduan Merdeka Belajar - Kampus Merdeka
+4) Lokasi Pelaksanaan
+a)  Lokasi berdasarkan rekomendasi dari Direktorat Jenderal Pendidikan Tinggi.
+b)  Lokasi pelaksanaan di desa sangat tertinggal, tertinggal dan berkembang.
+c)  Desa-desa Binaan Perguruan Tinggi Pelaksana.
+d)  Radius desa lokasi KKNT dengan Perguruan Tinggi dirancang 200 km.
+e) Desa lainnya yang diusulkan oleh Mitra (Pemda, Industri, dan lainnya.
+5) Mitra
+a) Pemerintah (Kemendes, Desa binaan PT, Kemkes, PUPR, Kementan, Kemensos, 
+KLHK, Kemdagri, Kemlu, TNI, Polri, dan lembaga lainnya).
+b) Pemerintah Daerah.
+c) BUMN dan Industri.
+d) Social Investment.
+e) Kelompok Masyarakat (perantau dan diaspora).
+6) Keamanan dan Keselamatan Mahasiswa (Kondisi Khusus)
+a) Terkait mahasiswa yang menderita penyakit dan/atau berkepentingan 
+khusus sehingga tidak bisa mengikuti kegiatan, wajib melaporkan keadaan 
+ini ke pengelola KKNT perguruan tinggi pelaksana yang dibuktikan oleh surat 
+keterangan dari pihak yang berwenang, sehingga penempatan di lokasi 
+dapat diatur dengan pertimbangan jarak dan kemudahan akses.
+b) Perguruan tinggi menyusun SOP pelaksanaan KKNT dengan 
+mempertimbangkan jaminan Keamanan dan Keselamatan Mahasiswa 
+selama di lapangan.
+c) Perguruan tinggi memberikan pembekalan tentang kearifan lokal masyarakat 
+dan perilaku etika selama melaksanakan kegiatan KKNT.
+7) Pendanaan
+a) Sumber Pendanaan
+(1) Perguruan Tinggi.
+(2) Mitra.
+(3) Sumber lain yang tidak mengikat.
+(4) Mahasiswa.
+b) Komponen Penggunaan Dana
+(1) Transportasi.
+(2) Biaya Hidup.
+(3) Asuransi Kecelakaan dan Kesehatan.
+(4) Biaya Program.
+(5) Pembiayaan lain “insidentil” yang timbul berkaitan dengan pelaksanaan 
+program di lapangan. 
+(6) Komponen pembiayaan yang lebih lanjut akan disusun sesuai ketentuan 
+perguruan tinggi pelaksana.
+Terdapat beberapa model dalam pelaksanaan KNKT yaitu sebagai berikut.
+1) Model KKNT yang Diperpanjang
+Dalam model ini perguruan tinggi membuat paket kompetensi yang akan 
+diperoleh mahasiswa dalam pelaksanaan KKNT regular, dan mahasiswa diberi 
+kesempatan untuk mengajukan perpanjangan KKNT selama maksimal 1 
+semester atau setara dengan 20 SKS. Untuk melanjutkan program KKNT yang 
+diperpanjang, mahasiswa dapat memanfaatkan Program Holistik Pembinaan Buku Panduan Merdeka Belajar - Kampus Merdeka       26
+dan Pemberdayaan Desa (PHP2D) dengan mengikuti prosedur dari Direktorat 
+Belmawa. Bentuk kegiatan KKNT yang Diperpanjang dapat berupa proyek  
+pemberdayaan masyarakat di desa dan penelitian untuk tugas akhir mahasiswa.
+Contoh Model KKNT yang Diperpanjang
+2) Model KKNT Pembangunan dan Pemberdayaan Desa
+Pada model ini perguruan tinggi bekerja sama dengan Mitra dalam melakukan 
+KKNT Pembangunan dan Pemberdayaan Desa berdasarkan peluang/kondisi 
+desa dalam bentuk paket kompetensi/pengembangan RPJMDes yang akan 
+diperoleh mahasiswa dalam pelaksanaan KKNT. Jumlah dan bidang Mahasiswa 
+yang mengikuti program ini menyesuaikan dengan kebutuhan program di desa. 
+Pelaksanaan KKNT Pembangunan dan Pemberdayaan Desa dilakukan selama        
+6 – 12 bulan di lokasi atau setara dengan maksimal 20 SKS. Perhitungan terhadap 
+capaian pembelajaran setara 20 SKS ini dapat disetarakan dalam beberapa mata 
+kuliah yang relevan dengan kompetensi lulusan. Penilaian terhadap capaian 
+pembelajaran dapat diidentifikasi dari laporan dan ujian portofolio/rubrik 
+kegiatan KKNT. Untuk kesesuaian dengan ketercapaian kompetensi lulusan 
+maka perlu dipersiapkan proposal/rancangan kegiatan yang dapat mewakili 
+bidang keahlian. Dosen pembimbing lapangan harus mewakili program studi 
+pengampu mata kuliah semester akhir dari setiap program studi. Mahasiswa 
+juga dapat memanfaatkan Program Holistik Pembinaan dan Pemberdayaan Desa 
+(PHP2D) dengan mengikuti prosedur dari Direktorat Belmawa.
+27       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Contoh Model KKNT Pembangunan dan Pemberdayaan bersama Kemendes
+Contoh Model KKNT Pembangunan dan Pemberdayaan bersama Mitra
+Buku Panduan Merdeka Belajar - Kampus Merdeka       28
+3) Model KKNT Mengajar di Desa
+Pelaksanaan kegiatan ini diutamakan pada mahasiswa program studi Pendidikan. 
+Bagi mahasiswa di luar program studi Pendidikan dapat melakukan kegiatan 
+mengajar sesuai dengan bidang keahlian dalam rangka pemberdayaan 
+masyarakat misalnya penerapan teknologi tepat guna. Semua kegiatan KKNT 
+mengajar ini bersifat membantu pengajaran formal dan non-formal. Bila di akhir 
+kegiatan ini akan dijadikan sebagai tugas akhir, maka harus direncanakan sejak 
+awal dalam bentuk proposal yang mengacu pada aturan prodi.
+Contoh Model KKNT Mengajar di Desa
+4) Model KKNT Free Form
+Mahasiswa diberikan kebebasan untuk menentukan dan melakukan bentuk 
+program KKNT yang akan dilaksanakan bersama Mitra. Dalam menyusun program 
+KKNT model ini, mahasiswa harus memperhatikan kurikulum terkait dengan 
+kegiatan dan dikonsultasikan dengan Dosen Pembimbing Akademik.
+29       Buku Panduan Merdeka Belajar - Kampus Merdeka
+Contoh Model KKNT Free Form
+Proses Program Membangun Desa/Kuliah Kerja Nyata Tematik
+Buku Panduan Merdeka Belajar - Kampus Merdeka       30
+BAB III
+PENJAMINAN MUTU
+1. Perguruan tinggi menyusun kebijakan dan manual mutu untuk Program Kampus 
+Merdeka yang terintegrasi dengan penjaminan mutu perguruan tinggi.
+2. Dalam menyusun kebijakan dan manual mutu Program Kampus Merdeka sebaiknya 
+mengacu pada kebijakan dan manual mutu dari sistem penjaminan mutu yang telah 
+berlaku di perguruan tinggi. 
+3. Kebijakan dan manual mutu Program Kampus Merdeka yang telah ditetapkan 
+wajib didiseminasikan dan disosialisasikan khususnya kepada dosen pembimbing, 
+pembimbing industri dan peserta magang.A. Menyusun Kebijakan dan Manual Mutu
+Agar pelaksanaan kebijakan Merdeka Belajar - Kampus Merdeka, program “hak belajar tiga 
+semester di luar program studi”dapat berjalan dengan mutu yang terjamin, maka perlu 
+ditetapkan beberapa mutu, antara lain :
+1. Mutu kompetensi peserta.
+2. Mutu pelaksanaan.
+3. Mutu proses pembimbingan internal dan ekternal.
+4. Mutu sarana dan pasarana untuk pelaksanaan. 
+5. Mutu pelaporan dan presentasi hasil.
+6. Mutu penilaian.
+Beberapa kriteria yang dianjurkan untuk kegiatan di luar kampus untuk menjaga mutu dan 
+mendapatkan sks penuh:
+Tabel 3.1. Kriteria Kegiatan di Luar Kampus
+No. Kegiatan Kriteria untuk dapat sks penuh (20 sks)
+1. Magang/ Praktek Kerja • Tingkat kemampuan yang diperlukan untuk 
+magang harus setara dengan level sarjana (bukan 
+tingkat SMA kebawah)
+• Mahasiswa menjadi bagian dari sebuah tim – 
+terlibat secara aktif di kegiatan tim
+• Mahasiswa mendapatkan masukan terkait 
+performa kinerja setiap 2 bulan
+• Harus memberikan presentasi di akhir magang 
+kepada salah satu pimpinan perusahaa
+2. Asistensi Mengajar di Satuan 
+Pendidikan• Menentukan target yang ingin dicapai selama 
+kegiatan (mis. meningkatkan kemampuan 
+numerik siswa, dst.) dan pencapaiannya 
+dievaluasi di akhir kegiatan
+3. Penelitian/ Riset • Jenis penelitian (tingkat kesulitan) harus sesuai 
+dengan tingkat sarjana
+• Harus terlibat dalam pembuatan laporan akhir/ 
+presentasi hasil penelitianB. Menetapkan Mutu31       Buku Panduan Merdeka Belajar - Kampus Merdeka
+4. Proyek Kemanusiaan • Berdedikasi untuk 1 atau 2 proyek utama, dengan 
+fokus:
+ »Pemecahan masalah sosial (mis. kurangnya 
+tenaga kesehatan di daerah, sanitasi yang 
+tidak memadai)
+ »Pemberian bantuan tenaga untuk 
+meringankan beban korban bencana
+• Menghasilkan dampak yang nyata di akhir 
+kegiatan (mis. menjadi tenaga medis di tengah 
+serangan wabah)
+5. Kegiatan Wirausaha • Memiliki rencana bisnis dan target (jangka 
+pendek dan panjang) 
+• Berhasil mencapai target penjualan sesuai 
+dengan target rencana bisnis yang ditetapkan di 
+awal
+• Bertumbuhnya SDM di perusahaan sesuai 
+dengan rencana bisnis
+6. Studi Independen • Jenis studi independen (tingkat kesulitan) harus 
+sesuai dengan tingkat sarjana
+• Topik studi independen tidak ditawarkan di 
+dalam kurikulum PT/prodi pada saat ini
+• Mahasiswa mengembangkan objektif mandiri 
+beserta dengan desain kurikulum, rencana 
+pembelajaran, jenis proyek akhir, dll yang harus 
+dicapai di akhir studi
+7. Membangun Desa • Berdedikasi untuk 1 atau 2 proyek utama, dengan 
+fokus:
+ »Peningkatan kapasitas kewirausahaan 
+masyarakat, UMKM, atau BUM Desa
+ »Pemecahan masalah sosial (mis. kurangnya 
+tenaga kesehatan di desa, pembangunan 
+sanitasi yang tidak memadai) 
+• Menghasilkan dampak yang nyata di akhir 
+kegiatan (mis. irigasi desa yang lebih memadai, 
+koperasi desa menghasilkan keuntungan lebih 
+banyak)
+8. Pertukaran Pelajar • Jenis mata pelajaran yang diambil harus 
+memenuhi ketentuan yang ditetapkan prodi asal 
+untuk lulus (mis. memenuhi kurikulum dasar, 
+memenuhi persyaratan kuliah umum, memenuhi 
+persyaratan electives, etc)Buku Panduan Merdeka Belajar - Kampus Merdeka       32
+Satuan penjaminan mutu di perguruan tinggi penyelenggara Merdeka Belajar - Kampus 
+Merdeka, program “hak belajar tiga semester di luar program studi” wajib memiliki 
+mekanisme formal untuk mengevaluasi dan memonitor mahasiswa secara periodik. Untuk 
+menjamin mutu program tersebut maka pelaksanaan monitor dan evaluasi dilakukan mulai 
+dari tahap persiapan, pelaksanaan, dan penilaian. Penilaian/evaluasi merupakan salah 
+satu rangkaian kegiatan dalam meningkatkan kualitas, kinerja, dan produktifitas dalam 
+melaksanakan program magang industri. Fokus evaluasi adalah individu mahasiswa, yaitu 
+prestasi yang dicapai dalam pelaksanaan magang oleh mahasiswa. Melalui evaluasi akan 
+diperoleh tentang apa yang telah dicapai dan apa yang belum dicapai oleh mahasiswa 
+selama mengikuti kegiatan.  Evaluasi dapat memberikan informasi terkait kemampuan apa 
+yang telah dicapai oleh mahasiswa selama mengikuti program.  Selain itu, melalui evaluasi 
+dapat dilakukan judgment terhadap nilai atau implikasi dari hasil program. Selanjutnya, 
+program ini digunakan untuk meningkatkan kompetensi mahasiswa.
+1. Prinsip Penilaian
+Penilaian dalam pelaksanaan kebijakan Merdeka Belajar - Kampus Merdeka, program 
+“hak belajar tiga semester di luar program studi” mengacu kepada 5 (lima) prinsip sesuai 
+SNPT yaitu edukatif, otentik, objektif, akuntabel, dan transparan yang dilakukan secara 
+terintegrasi.
+2. Aspek – aspek Penilaian
+Sejalan dengan prinsip-prinsip penilaian di atas, maka aspek-aspek yang dinilai dalam  
+pelaksanaan kebijakan Merdeka Belajar - Kampus Merdeka, program “hak belajar tiga 
+semester di luar program studi” , setidaknya sebagai berikut:
+a. kehadiran saat pembekalan dan pelaksanaan; 
+b. kedisiplinan dan tanggung jawab dalam melaksanakan tugas-tugas;
+c. sikap;
+d. kemampuan melaksanakan tugas-tugas;
+e. kemampuan membuat laporan.
+3. Prosedur Penilaian
+Sesuai dengan prinsip kesinambungan, penilaian dalam  pelaksanaan kebijakan Merdeka 
+Belajar - Kampus Merdeka, program “hak belajar tiga semester di luar program studi” 
+dilakukan selama kegiatan berlangsung (penilaian proses) dan akhir kegiatan berupa 
+laporan kegiatan belajar (penilaian hasil). Penilaian dalam proses dilakukan dengan 
+cara observasi (kepribadian dan sosial) sebagai teknik utama. Sedangkan penilaian 
+hasil dilaksanakan pada akhir pelaksanaan program dengan menggunakan laporan 
+yang dibuat oleh mahasiswa. Penilaian dilakukan oleh pendamping dari Pihak Ketiga 
+yang terkait dengan kegiatan yang diambil oleh mahasiswa dan dosen pendamping di 
+Perguruan Tinggi.
+Selain komponen diatas, perguruan tinggi diwajibkan untuk membuat sistem berupa 
+survey online  tentang pengalaman dan penilaian mahasiswa terhadap kualitas program 
+merdeka belajar yang mereka jalani selama satu semester diluar program studi. Hal ini dapat 
+digunakan untuk mendapatkan umpan balik dari mahasiswa sebagai sarana evaluasi bagi 
+perguruan tinggi dalam mengembangkan program berikutnya.C. Melaksanakan Monitoring dan Evaluasi33       Buku Panduan Merdeka Belajar - Kampus Merdeka
+BAB IV
+PENUTUP
+Demikian buku panduan ini disusun, semoga bermanfaat bagi perguruan tinggi dan dapat 
+digunakan sebagai salah satu acuan pelaksanaan Merdeka Belajar - Kampus Merdeka, dengan 
+harapan perguruan tinggi dapat menghasilkan insan Indonesia yang beradab, berilmu, 
+profesional dan kompetitif, serta berkontribusi terhadap kesejahteraan kehidupan bangsa.Buku Panduan Merdeka Belajar - Kampus Merdeka       34
+35       Buku Panduan Merdeka Belajar - Kampus Merdeka

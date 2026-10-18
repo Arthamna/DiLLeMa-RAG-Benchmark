@@ -1,0 +1,54 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (FULLY ONLINE)
+Curriculum: ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (LM-27)
+For more information visit http://www.unipa.it/struttura.html?id=2024
+---------
+Class of Master's Degree (MSc) on Electronic engineering (LM-29)Class of Master's Degree (MSc) on Telecommunications engineering (LM-27)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2257
+---------
+Educational objectives
+Specific educational objectives
+The Degree Course in Electronics and Telecommunications Engineering aims at training professionals with skills in the design and operation of electronic and measurement systems and in the definition of telecommunication architectures, systems, and services. In the professional field of ICT, the course is targeted to professionals capable of working at system level, capable of designing and integrating physical devices, technologies, network protocols and distributed services. With respect to ICT professions, analysed in 2019 Observatory for Digital skills, these professionals may be included in the following professions: IoT specialist, network specialist (with particular reference to the 5G/6G new generation cellular networks and related technologies), mobile specialist, system architect and technical specialist, but also ICT operation manager or digital consultant.
+To train these professionals, the course provides: 
+i)	Advanced skills in electronics, namely: design of programmable electronic systems, electronic circuits for radio-frequency applications, equipment and measurements, numerical processing and transmission systems.
+ii)	Skills in the relevant technologies for modern telecommunication systems (from optical fibre to 5G/6G networks, to the new microwave telecommunication bands, to Tera-Hertz)
+iii)	Skills in the complete definition of network systems and services, with specific reference to the protocols and security of IoT systems,
+The choice of an inter-class programme enables the provision of multidisciplinary skills in the Electronics and telecommunications sector, more responsive to the educational needs of the professions of IoT/network specialist and system architect.
+The 2nd cycle Degree Course covers three groups of subjects:
+-	Subjects constituting the training of a 2nd cycle Electronic Engineer, namely the advanced study of Applied Electronics and Programmable Electronic Systems.
+-	Subjects constituting the training of a 2nd cycle Telecommunications Engineer, namely the advanced study of Antennas and Wireless Systems, Wireless Networks (cellular and 5G networks and Personal Area Networks), Digital Communications and Cybersecurity.
+-	Subjects constituting the vertical integration of knowledge in the field of Electromagnetic Fields and Measurements, applied to Electronics and Telecommunications, such as, for instance, Microwaves and Terahertz Communications and the equipment for electronic measurements and Telecommunications.
+The web-based educational programme is intrinsically flexible, with respect to the fruition of contents and practice activities, both in time and in space. Many contents and e-tivities are designed for asynchronous and distance fruition.
+Internships will also take place by computerised means, through specific agreements with the interested companies. Various stakeholders and companies, mainly in the telecommunication field, have given their availability to activate distance internships.
+The educational methodologies will be developed taking into account the most recent e-learning models. Each course of the educational programme will be presented starting from its objectives, and, following a path with increasing complexity, pointing out which competencies are needed for the acquisition of more complex ones. Furthermore, the development of practical activities will be promoted, through discussions, problem solving, group projects, etc. Practical activities aim at verifying the correctness of what students are learning, and to offer the opportunity to provide rapid and punctual feedback on what they are doing, suggesting possible reinforcement activities. The teaching material will be generally renewed for each new start of the courses; the integration with materials provided for previous editions is not excluded, such as answers to FAQ, multimedia audio/video handouts, etc., with the explicit indication of the last update date.
+The syllabuses of all subject of the Degree Course are available on the Educational Offer Portal of the University of Palermo, therefore they are freely consultable by students.
+---------
+Professional opportunities
+Professional opportunities
+Profile:
+MSc in Electronics and Telecommunications Engineering (“Ingegnere Magistrale”)
+Functions:
+2nd cycle graduates know the methods and technique for the design of electronic and optoelectronic systems, communication systems, protocols. They may, therefore, find professional opportunities in the industrial  design, development, engineering, production, operation and maintenance of electronic and telecommunications systems sectors, as well as in the sectors actively using electronics and telecommunications, such as industry 4.0, automotive sector, energy, bioelectronics. 
+Skills
+-	Programming of firmware, middleware, software, and service configuration.
+-	Design of micro-controller systems and re-configurable electronic systems.
+-	Design, configuration and optimisation of architectures for local and cellular networks.
+-	Design and integration of optoelectronic technologies and optical fibre communications.
+-	Modelling and simulation of propagation mechanisms, also in millimetric bands and Terahertz.
+-	Simulation of telecommunication networks.
+-	Data organisation and analysis.
+-	Design and integration of cryptographic primitives and security protocols for the IoT and the cloud.
+-	Configuration, design of embedded devices or systems, local networks, and services, certification, troubleshooting, data science.
+Professional opportunities:
+2nd cycle graduates may find professional opportunities in public and private companies, not only in Information and Communication Technology, but also in Manufacturing, Services, and in the Technical-commercial sector, as advisors, employees of research and advanced training agencies, and as entrepreneurs.
+In detail, the typical professional areas of these graduates are the companies producing, marketing and distributing electronic products and systems, manufacturing and service companies using electronic technologies and network infrastructures for automation, or, in the civil, industrial and information area; fixed and mobile network operators; companies in the sectors of telematics and network multimedia, such as e-commerce and e-publishing, Internet services, telemedicine and remote surveillance; public and private companies providing terrestrial and space telecommunication services; public administrations; national and international scientific and technological research agencies; regulatory and control bodies.
+Graduates in Electronics and Telecommunications Engineering can access to private practice, after passing the national qualification exam and registration with the professional Register.
+---------
+Final examination features
+The final examination of the 2nd cycle Degree in Electronics and Telecommunications Engineering consists in the discussion of a written paper (thesis), prepared by the student under the guidance of an academic supervisor.
+The thesis, whose topic must be previously approved by the Board of the Degree Course, investigates issues of high scientific content, normally related to studies or plans highlighting innovative aspects of the typical Electronics and Telecommunications research sectors.
+---------

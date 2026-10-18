@@ -1,0 +1,98 @@
+Anno Accademico 2024/2025
+Laurea in STUDI GLOBALI. STORIA, POLITICHE, CULTURE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2015
+---------
+Classe di Laurea in Storia (L-42)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Culture e società
+Codice corso 2249
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20141	ATTIVITÀ SEMINARIALE		3	1° semestre	
+21556	STORIA E CULTURA DELL’EBRAISMO	PEPI	6	1° semestre	L-OR/08
+13415	STUDI CULTURALI	COMETA	12	2° semestre	L-FIL-LET/14
+20692	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B1		6	2° semestre	
+21788	ANTROPOLOGIA CULTURALE E MONDI CONTEMPORANEI	D'AGOSTINO	12	2° semestre	
+	MODULO 1	D'AGOSTINO	6		M-DEA/01
+	MODULO 2	MANCUSO	6		M-DEA/01
+24241	CIVILTÀ MEDIEVALI	RUSSO	12	2° semestre	M-STO/01
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21582	METODI QUANTITATIVI PER LA RICERCA STORICA E SOCIALE	OLIVERI	6	1° semestre	SECS-S/05
+21583	STORIA DEI CONCETTI POLITICI	SEGRETO	6	1° semestre	SPS/01
+22774	STORIA POLITICA E SOCIALE DELL'EUROPA MODERNA	CANCILA	6	1° semestre	M-STO/02
+24142	STORIA E ANALISI DEI PROCESSI ECONOMICI	ROSSI	12	1° semestre	
+	STORIA DEI PROCESSI ECONOMICI	ROSSI	6		SECS-P/12
+	ANALISI DEI SISTEMI ECONOMICI	BATTISTI	6		SECS-P/01
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		3	2° semestre	
+21554	STORIA DEGLI IMPERI IN ETÀ MODERNA	FAVARO'	6	2° semestre	M-STO/02
+21578	SPAZI POLITICI: GENERE, CLASSE E RAZZA	SAJEVA	6	2° semestre	SPS/01
+	Gruppo di attiv. form. opzionali II		6		
+	Attiv. form. a scelta dello studente (consigliate)		12		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21655	STORIA E CULTURA DEI PAESI ISLAMICI	DI DONATO	6	1° semestre	L-OR/10
+21828	GEOGRAFIA CULTURALE E DEL TERRITORIO	DE SPUCHES	12	1° semestre	
+	GEOGRAFIE E AMBIENTI CULTURALI	MESCHIARI	6		M-GGR/01
+	GEOGRAFIE POLITICHE DEL TERRITORIO	DE SPUCHES	6		M-GGR/02
+05917	PROVA FINALE		3	2° semestre	
+10252	STORIA DEL MONDO CONTEMPORANEO	BARIS	12	2° semestre	M-STO/04
+	Gruppo di attiv. form. opzionali III		6		
+	Gruppo di attiv. form. opzionali IV		6		
+	Gruppo di attiv. form. opzionali V		6		
+	Gruppo di attiv. form. opzionali VI		6		
+	Gruppo di attiv. form. opzionali VII		3		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24141	EPISTEMOLOGIA E METODOLOGIA DELLA STORIA	CUSUMANO	6	1° semestre	M-STO/02
+24143	TEORIE DELLA STORIA GLOBALE	DI BELLA	6	2° semestre	M-FIL/06
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24144	POLITICHE E SOCIETÀ DI ROMA ANTICA	MOTTA	6	1° semestre	L-ANT/03
+24146	POLITICHE E SOCIETÀ DELLA GRECIA ANTICA	BONANNO	6	1° semestre	L-ANT/02
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06734	STORIA DEL CRISTIANESIMO E DELLE CHIESE	BRAGHI	6	2° semestre	M-STO/07
+22773	MEDITERRANEAN STUDIES: HISTORY AND ECONOMICS (in inglese)	ROSSI	6	2° semestre	SECS-P/12
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04517	LETTERATURE COMPARATE	COGLITORE	6	1° semestre	L-FIL-LET/11
+22772	HISTORY OF EUROPEAN POLITICAL THOUGHT (in inglese)	DI BELLA	6	2° semestre	M-FIL/06
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24137	GERMANIC CULTURE AND THE PRESENT WORLD	TERESI	6	1° semestre	L-FIL-LET/15
+24138	ARTE GLOBALE	COSTANZO	6	1° semestre	L-ART/03
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03089	ESTETICA	CRESCIMANNO	6	1° semestre	M-FIL/04
+03202	FILOSOFIA DEL LINGUAGGIO	MANGANO	6	1° semestre	M-FIL/05
+04532	LINGUA ARABA	SPALLINO	6	1° semestre	L-OR/12
+23182	STORIA DELLA GLOBALIZZAZIONE	BLANDO	6	1° semestre	M-STO/04
+23688	INTERNATIONAL HUMAN RIGHTS LAW	STARITA	6	1° semestre	IUS/13
+24136	INTERCULTURAL COMMUNICATION	RUDVIN	6	1° semestre	L-LIN/12
+18020	HISTORY OF INTERNATIONAL INSTITUTIONS	SCICHILONE	6	2° semestre	SPS/03
+21793	STORIE E CULTURE DEI BALCANI OCCIDENTALI	GURGA	6	2° semestre	L-LIN/18
+
+Gruppo di attiv. form. opzionali VI
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24242	SOCIOLOGIA DELLE DIFFERENZE E DELLE DISUGUAGLIANZE	MANNOIA	6	1° semestre	SPS/08
+24243	SOCIOLOGIA DELLE MIGRAZIONI	DI ROSA	6	1° semestre	SPS/07
+
+Gruppo di attiv. form. opzionali VII
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24132	LAB. OSSERVATORIO CARTOGRAFICO E GIS PER L'ANALISI DEL TERRITORIO	FERRANTE	3	2° semestre	
+24134	LAB.OSSERVATOR.SU MEDIO ORIENT.E NORD AFRICA: CONFLITTI E TRANSIZIONI	MARCENO'	3	2° semestre	
+24135	LAB. OSSERVATORIO SULLE RELIGIONI NELL'ERA GLOBALE	BRAGHI	3	2° semestre	
+

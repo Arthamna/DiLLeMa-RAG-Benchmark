@@ -1,0 +1,71 @@
+Academic year 2024/2025
+Master's Degree (MSc) on MEDICINE AND SURGERY
+Curriculum: MEDICINE AND SURGERY - MEDIT - CALTANISSETTA
+For more information visit http://www.unipa.it/struttura.html?id=2697
+---------
+Class of Master's Degree (MSc) on Medicine and surgery (LM-41)
+Duration 6 years
+Location CALTANISSETTA
+Number of seats in national planning: 80
+Department of Biomedicine, Neurosciences and Advanced Diagnostics
+Course Code 2312
+---------
+Educational objectives
+The specific educational objective characterising the Degree Course in Medicine and Surgery with technological orientation (MED-IT) is the training of a Medical Doctor with a wealth of expertise strongly enriched through the acquisition of typical engineering knowledge and methodological and technological skills. Graduates in MED-IT will thus be able to face, analyse and solve medical-biological problems with innovative methodologies.
+In accordance with this objective, the MED-IT Degree Course is characterised by a balanced vertical and cross integration among:
+a)	Basic sciences, with a wide spectrum, including the knowledge of evolutionary biology, molecular biology, genetics, and biological complexity. This study aims at acquiring the knowledge of the structure and function of the human organism, in normal conditions, in order to maintain health conditions and to correctly apply the translational scientific research. Among basic sciences, a crucial role is played by subjects such as calculus, physics, chemistry, computer science, and statistics.
+b)	The knowledge of pathological processes and of the mechanisms that cause them, with specific attention to individual variability and to gender differences, in order also to define prevention, diagnosis and treatment in a targeted manner; under this perspective, the knowledge of the role played by lifestyle, nutrition, and physical activity in the acquisition and maintenance of health status and in the approach to pathologies is also crucial.
+c)	The clinical and methodological medical practice, which must be particularly solid, based on the extensive use of tutorial-professional teaching.
+d)	Human sciences, which should be a useful tool to achieve the awareness of being a medical doctor and of the values of the medical profession, and the ethics in doctor-patient relationship. 
+e)	The acquisition of evidence-based scientific, medical, clinical, and professional methodology for individual or collective health issues, with specific attention to the differences among populations and to gender differences, to rare diseases and to the development of new approaches enabling a growing effectiveness of medical care as well as of palliative care and pain therapy.
+f)	The technologies used in the medical field, necessary for an effective and safe use of equipment and plants, as well as for the training of health technicians and staff. Crucial for this knowledge is the study of computer science, bioinformatics, electromagnetism, electro-technique and applied electronics, automation, sensors and measurements, biomechanics, solid and fluid mechanics for biological systems, as well as basic notions of signal and image processing, neuroscience, as well as the concepts of biocompatibility, regenerative medicine, micro drug delivery and tissue engineering.
+g)	The always more complex biomedical equipment and plants, aiming at the diagnosis and care of patients, as well as the fundamentals of the most modern biomedical engineering issues.
+In synthesis: MED-IT graduates must be able to obtain information by the patient and to interpret them, to make clinical decisions guiding to a correct diagnosis and targeted therapeutic interventions, but also and above all, through the expert use of technologies, to which they have given their contribution during the specific application development. Their decisions must be deduced through the best clinical practices, the correct application of technology and scientific evidence, without forgetting the patient’s needs and of the Healthcare systems of the Country in which they operate. Their clinical practice must be therefore based upon updated knowledge and must be ethical and capable of ensuring an efficient use of the available resources; furthermore, it must be carried out in strict “cooperation-sharing” with the patients and their families and with the other members of the intra-professional/inter-professional work team.
+Thanks to the contribution of teachings in the biomedical engineering area, graduates will also be able to solve methodological and technological problems in the physiological and clinical fields, to carry out the analysis and modelling of bio signals and bioimages, medical robotics and computational biomechanics, and to use the relevant medical software supporting diagnostics.
+An integral part of the educational programme consists of:
+-	Professional/qualifying internship, both at the University Hospital and at various local accredited healthcare facilities and hospitals, as well as in the general practitioner clinics accredited by the University, in collaboration with the Province Boards of Medical Doctors, Surgeons and Dentists.
+-	The mandatory optional educational activities (ADO), allowing the integration of training with the study of subjects related to other areas (both medical and scientific-engineering ones) and with the acquisition of soft skills and knowledge useful for post-graduate training and for placement.
+The Course aims at providing a solid educational structure, and stakeholders have agreed upon the usefulness of the professional functions and skills acquired by MED-IT graduates; stakeholders are actively involved in the development process of this Degree Course with respect not only to the educational aspects, but also to the issues related to graduates’ know-how. The opinion of the consulted organisations is seen as very important in this project, aiming at the training of the Medical Doctor with the above-described skills. This with a view to preparing graduates with a profile immediately spendable in the labour market and, at the same time, with solid groundings for any continuation in higher level education.
+---------
+Professional opportunities
+Professional opportunities
+Profile:
+Medical Doctor with technological orientation
+Functions:
+The Medical Doctors with technological orientation primarily treat and cure the most common and widespread dysfunctions, diseases and injuries in the population; they apply advanced technologies both for early diagnosis and for the treatment of serious diseases in patients at risk; they prescribe drugs and non-pharmacological therapies, clinical tests for diagnosis, hospital admissions and visits to specialist doctors; they follow the course of pathologies and related treatments; they solicit and implement prevention interventions on patients or at the organizations in which they operate, also through the use of advanced technological and IT systems.
+They analyse the pathologies by identifying the most appropriate diagnostic tools, mastering and improving the advanced technologies available for fast and reliable diagnostic effectiveness, through diagnostic paths that make use of advanced tools such as virtual simulation and artificial intelligence.
+They identify the therapeutic measures to combat pathologies by applying the most appropriate and innovative technologies every time the latter have undoubted advantages.
+They manage medical-biological problems thanks to their solid training based on engineering methodologies and technologies.
+They assist the entry of new biomedical technologies for clinical applications and actively participate in the experimentation processes.
+They actively participate in the design and development of advanced medical devices.
+They connect with the patient making the most of the acquired knowledge, also using technological resources aimed at an effective development and improvement of the patient-doctor-caregiver relationship.
+They promote actions aiming at the health of the individual through the identification and correction of lifestyles at risk and the application of prevention and early diagnosis strategies, thanks also to innovative technological tools.
+Skills:
+Knowledge of basic sciences integrated by technological and engineering knowledge, and by the ability to understand and apply them in diversified fields.
+Competence in the clinical data analysis related to the state of health and disease of the individual, to critically interpret them on the basis of scientific, technological, and engineering knowledge.
+Interdisciplinary knowledge of medicine, science, and technology as well as of their repercussions on human health.
+Knowledge of history, ethics as well as of legal aspects of medicine.
+Ability to recognize the health problems of individuals and communities, intervening effectively in clinical practice, also using advanced technologies.
+Ability in the critical use of scientific and technological knowledge in the biomedical field with the ability to participate in interdisciplinary research groups and clinical trials.
+Ability and experience in addressing and responsibly solving priority health problems under a preventive, diagnostic, prognostic, therapeutic and rehabilitative perspective, promoting the integration of multi-omics, information technology, sensors, robotic, mechatronic, modelling, and biomechanical technologies, and of the technologies related to the analysis and processing of signals and images to support the entire clinical path.
+Ability to establish correct relationships with patients and their families.
+Ability to collaborate and interact effectively with different professionals in carrying out healthcare and related activities.
+Theoretical-practical background for practicing the medical profession.
+Ability to use training in engineering methodologies and technologies for understanding and possibly solving medical-biological problems.
+Command of the technologies based on artificial intelligence, both in research and to achieve diagnostic and therapeutic objectives in the context of precision medicine.
+Ability to design and develop experimental activities, analyse measurements, select, and calibrate biomedical instrumentation in order to identify innovative solutions for human health problems.
+Professional opportunities:
+Healthcare facilities and hospitals of the NHS.
+Universities and research centres.
+Health services management agencies.
+National health organizations.
+Companies in the pharmaceutical and biomedical sector.
+Territorial and service medicine.
+Postgraduate medical schools.
+Military medicine.
+---------
+Final examination features
+To be admitted to the final examination, students must have acquired, all the credits related to the teachings of the educational programme, except the credits assigned to the final examination, which will be acquired with the latter. 
+The final examination of the single cycle Degree Course, qualifying for the profession in compliance with the Ministerial Decree 58/2018 and subsequent changes and amendments, consists in the presentation of a thesis, written in an original way, aiming at ascertaining the level of scientific, technical and professional competence achieved, and in the discussion of possible questions posed by the members of the Degree Board. 
+The final mark, expressed out of 110, is determined by the average of the marks obtained in the individual teachings’ examinations, the assessment of the discussed dissertation, and any assessment of other activities, in the manner established by the Board of the Degree Course.
+---------

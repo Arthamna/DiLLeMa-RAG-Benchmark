@@ -1,0 +1,46 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SCIENZE PEDAGOGICHE PER LA COMUNICAZIONE INCLUSIVA MEDIATA DALLA LIS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2702
+---------
+Classe di Laurea magistrale in Scienze pedagogiche (LM-85 R)
+Durata 2 anni
+Sede PALERMO
+Numero posti in programmazione locale: 114
+Dipartimento di Scienze Psicologiche, Pedagogiche, dell’Esercizio Fisico e della Formazione
+Titolo congiunto con Università "Cà Foscari" di VENEZIA, VENEZIA (ITALIA)Università degli Studi ROMA TRE, ROMA (ITALIA)
+Codice corso 2317
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23739	PSICOLOGIA DELLO SVILUPPO, DELLA COMUNICAZIONE E DEL LINGUAGGIO		9	1° semestre	M-PSI/04
+23742	LINGUA DEI SEGNI ITALIANA 1		12	1° semestre	L-LIN/01
+23992	PEDAGOGIA E DIDATTICA SPECIALE E SORDITÀ CON LABORATORIO		12	1° semestre	
+	MODULO 2 CON LABORATORIO		6		M-PED/03
+	MODULO 1		6		M-PED/03
+23993	PEDAGOGIA DELLA CORPOREITÀ E METOD. PER INCLUSIONE SCOLAST. CON LAB.	MIGNOSI	12	1° semestre	
+	PEDAGOGIA DELLA CORPOREITÀ CON LABORATORIO	MIGNOSI	6		M-PED/01
+	METODOLOGIE PER L’INCLUSIONE SCOLASTICA CON LABORATORIO	COMPAGNO	6		M-PED/03
+03202	FILOSOFIA DEL LINGUAGGIO	CARAPEZZA	6	2° semestre	M-FIL/05
+23741	EDUCAZIONE ALLA SOSTENIBILITÀ PER L'INCLUSIONE		6	2° semestre	M-PED/01
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07553	TIROCINIO		9	1° semestre	
+23737	LABORATORIO DI AUDIOLOGIA		2	1° semestre	
+23748	LINGUA DEI SEGNI ITALIANA 2		12	1° semestre	L-LIN/01
+23987	TEORIA E METODOLOGIA DELLA RICERCA PEDAGOGICA		6	1° semestre	M-PED/01
+23988	ELEMENTI DI NEUROPSICHIATRIA INFANTILE		6	1° semestre	MED/39
+05917	PROVA FINALE		10	2° semestre	
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello studente (consigliate)		12		
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23735	LINGUISTICA DELLA LIS		6	1° semestre	L-LIN/01
+23736	CULTURA E SORDITÀ		6	1° semestre	L-LIN/01
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23745	LINGUISTICA PER LA SORDITÀ		6	1° semestre	L-LIN/01
+23991	SORDITÀ, APPRENDIMENTO, LINGUAGGIO		6	1° semestre	M-PSI/04
+

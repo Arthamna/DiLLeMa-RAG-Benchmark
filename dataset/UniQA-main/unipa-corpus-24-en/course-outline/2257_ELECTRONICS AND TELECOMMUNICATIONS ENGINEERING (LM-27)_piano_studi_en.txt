@@ -1,0 +1,41 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (FULLY ONLINE)
+Curriculum: ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (LM-27)
+For more information visit http://www.unipa.it/struttura.html?id=2024
+---------
+Class of Master's Degree (MSc) on Electronic engineering (LM-29)Class of Master's Degree (MSc) on Telecommunications engineering (LM-27)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2257
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20511	DIGITAL COMMUNICATIONS (in english)	MANGIONE	6	1° semestre	ING-INF/03
+20520	ANTENNAS AND WIRELESS SYSTEMS (in english)	CINO	9	1° semestre	ING-INF/02
+20523	DIGITAL SIGNAL PROCESSING (in english)	CROCE	6	1° semestre	ING-INF/03
+21738	DATA ANALYSIS (in english)	SFERLAZZA	6	1° semestre	ING-INF/04
+21740	APPLIED ELECTRONICS (in english)	LULLO	9	1° semestre	ING-INF/01
+23291	LASER AND OPTICAL COMMUNICATIONS C.I. (in english)	MOSCA	6	1° semestre	
+	OPTOELECTRONIC DEVICES (in english)	MOSCA	3		ING-INF/01
+	OPTICAL COMMUNICATIONS (in english)	BUSACCA	3		ING-INF/01
+20513	ELECTRONIC PROGRAMMABLE SYSTEMS (in english)	GIACONIA	9	2° semestre	ING-INF/01
+21518	AUTOMATIC MEASUREMENT SYSTEMS (in english)	ARTALE	9	2° semestre	ING-INF/07
+	Stage and others		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21519	CELLULAR NETWORKS AND 5G (in english)	TINNIRELLO	9	1° semestre	ING-INF/03
+05917	FINAL EXAMINATION		21	2° semestre	
+19220	CYBERSECURITY (in english)	GALLO	6	2° semestre	ING-INF/03
+21520	MICROWAVE AND TERAHERTZ COMMUNICATIONS (in english)	TOGNAZZI	9	2° semestre	ING-INF/02
+	Free subjects (suggested)		9		
+
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19697	INDUSTRIAL ELECTRONICS (in english)	SCIRE'	9	1° semestre	ING-INF/01
+20519	NANOELECTRONICS (in english)	MACALUSO	9	1° semestre	ING-INF/01
+22084	RADAR THEORY AND TECHNIQUES (in english)	LIVRERI	9	1° semestre	ING-INF/01
+

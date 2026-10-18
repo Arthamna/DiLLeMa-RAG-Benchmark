@@ -1,0 +1,78 @@
+Academic year 2024/2025
+Master's Degree (MSc) on DATA, ALGORITHMS AND MACHINE INTELLIGENCE
+Curriculum: DATA, ALGORITHMS, AND MACHINE INTELLIGENCE
+For more information visit http://www.unipa.it/struttura.html?id=2249
+---------
+Class of Master's Degree (MSc) on Computer science (LM-18)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Mathematics and Informatics
+Double Degree with Université Paris Est Marne-La-Vallée, Paris (FRANCE)
+Course Code 2270
+---------
+Educational objectives
+The course deepens and strengthens the theoretical, methodological, systems engineering and technology knowledge, in all the disciplines which are the cultural core of computer science, studied in the first cycle (class L-31). Therefore, in accordance with the guidelines of National(GRIN) and international (ACM) Associations in the field, the course includes the formation of a solid knowledge of the fundamentals as well as of the applicative aspects of the various areas of computer science. 
+The specific objectives of the course are: 
+-  The acquisition of the scientific method of inquiry involving the use of mathematical tools supporting information technology and its applications; t
+-  the deepening of the technologies of computer systems and information management; 
+-  Further development of the methodologies for the design and implementation of information systems; 
+-  Further investigation of the application areas of information systems and information technology. 
+In addition to the completion of mathematical-physical training, the educational programme includes an advanced investigation of key issues such as information theory and computational models, and insights in specific areas. 
+Among the various advanced courses it is worth mentioning the ones related to: 
+-  The design of advanced algorithms and their implementation through in-depth knowledge of programming languages;
+-  The methods for the management and analysis of large amounts of data, such as in the field of bioinformatics/biomedical and social sciences; 
+-  The methods for the design of infrastructure and high-performance networks, with particular reference to the quality of service, and to the security and protection for the privacy of data; 
+-  Web development and mobile technologies. 
+In accordance to the specific objectives of the course, the educational programme includes: 
+-  Lectures and laboratory exercises in class, autonomous project activities and individual activities in the laboratory; 
+-  External activities such as internships in companies, public administration facilities and laboratories, as well as periods of study at other Italian and European universities, also in the framework of international agreements.
+---------
+Professional opportunities
+Profile:
+Software and computer systems analysts and designers
+Functions:
+Analysis, design, development and implementation of application software and complex IT systems, also in project management roles or work groups.
+Skills:
+Graduates acquire solid programming and design skills of advanced algorithms, advanced methodologies to design, analyse and manage complex computer systems and software architectures. They also develop skills for the production and performance analysis of computer systems, the management of high-performance infrastructures and networks, and the design of techniques to ensure the security and privacy of data.
+Professional opportunities:
+National and multinational companies producing goods and services. Public and/or private organizations. Software manufacturing companies. Computer systems and network design firms. Public and private companies, administrations and research centres, using complex IT systems or involved in the management of large amounts of data.
+Profile:
+Researcher in Computer Science
+Functions:
+Research and methodological and applicative innovation activities, in all sectors of IT.
+Skills:
+Graduates have a solid knowledge of the scientific bases of computer science, acquire a rigorous scientific method of investigation, abstraction and understanding skills with respect to complex computational models, the ability to analyse and design models for the representation and exploration of data, the ability to design and implement complex computer systems.
+Professional opportunities:
+Public and private bodies operating in the field of computer science research, and more generally, of scientific research.
+It is also possible to access subsequent university levels of study, such as the PhD.
+Profile:
+IT Security Specialist
+Functions:
+Analyst, designer, developer of systems and software services to ensure IT security and protect company and business data from cyber-attacks.
+Skills:
+Graduates acquire skills in the design and configuration of computer networks, with particular regard to security aspects; service security analysis and management; design and installation of control, intrusion detection and prevention systems, also based on machine learning tools; specification, formal verification, development and implementation of cryptographic protocols; control and analysis of access to company data and services.
+Professional opportunities:
+National and multinational software companies; National and multinational companies designing information systems and networks; Companies, public administrations and research centres, public and private, which use complex computer systems.
+Profile:
+Artificial Intelligence Specialist
+Functions:
+Designer, developer and builder of Artificial Intelligence systems.
+Skills:
+Graduates acquire solid knowledge of the scientific foundations of Artificial Intelligence enabling them to carry out their activity in the design, development and implementation of Artificial Intelligence systems for the improvement of production and management activities of companies and businesses; installation and configuration of applications in complex computer systems that use Artificial Intelligence techniques; analysis of Artificial Intelligence systems existing on the market; modelling of problems using techniques and languages for the representation of knowledge; design and implementation of intelligent systems for the automatic analysis of signals, such as images and videos, and for the automatic understanding of speech and text, development of Artificial Intelligence systems based on Machine Learning and Deep Learning, in particular, for big data analysis; development of Artificial Intelligence systems based on tools for the representation of knowledge.
+Professional opportunities:
+National and multinational software companies; companies providing the design of computer systems and networks; Public administrations and research centres, public and private, which use complex IT systems or are involved in automatic data analysis; Public and private research and development laboratories, companies dealing with business intelligence, marketing, market analysis; Biomedical and pharmaceutical industry; Companies with automated production lines.
+Profile:
+Data Science and Information Science Specialist
+Functions:
+Designer and developer of models and strategies to extract knowledge and information through automatic and semi-automatic methods of analysis, exploration, visualization of large amounts of data.
+Skills:
+Graduates have solid skills in the design of advanced algorithms, statistical programming languages and database exploration, advanced models for data representation and for the construction of compressed information indexing structures. They also acquire the ability to use methods and models of data mining, machine learning and deep learning for automatic knowledge extraction, to develop software for the management and structuring of large amounts of data and for the use of the most common big data technologies.
+Professional opportunities:
+National and multinational companies in the financial, commercial and pharmaceutical sectors. National and multinational companies in the transport and telecommunications sector. Public and private research laboratories.
+---------
+Final examination features
+The final examination consists of the presentation of an original dissertation, aiming at ascertaining the level of individual technical scientific and professional competences.
+Students must discuss an original dissertation prepared under the guidance of a supervising professor and aiming at ascertaining the level of their technical scientific and professional groundings. The dissertation may have an experimental, technical or project cut, and may be prepared by the student at the University as well as at a research laboratory or at other public and private, Italian or foreign institutions and companies, accredited by the University of Palermo, according to the terms agreed with the School. 
+The preparation of the thesis (awarded with 18-24 CFU) is an important moment of reflection during which the student, if necessary, has the opportunity to integrate and streamline the learning experiences gained during the course to solve significant issues in the chosen specialisation field.
+---------

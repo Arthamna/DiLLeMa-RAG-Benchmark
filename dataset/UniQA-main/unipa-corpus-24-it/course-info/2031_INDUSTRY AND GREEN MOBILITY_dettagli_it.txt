@@ -1,0 +1,84 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA ELETTRICA
+Curriculum: INDUSTRY AND GREEN MOBILITY
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=716
+---------
+Classe di Laurea magistrale in Ingegneria elettrica (LM-28)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con Politechnika Wroclawska - Wroclaw University of Technology –, Wroclaw (POLAND)
+Codice corso 2031
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il Corso di Studio in Ingegneria Elettrica, LM-28, intende formare ingegneri con competenze specifiche e multidisciplinari orientate alla progettazione, costruzione, gestione di sistemi di produzione, distribuzione ed utilizzazione dell'energia elettrica, dei relativi componenti, alle relative implicazioni ambientali, economiche, normative e alla sicurezza, ed in grado di operare in tutte quelle attivita' industriali e di servizio, anche non strettamente elettriche, nelle quali l'energia elettrica rappresenta un aspetto di valore rilevante. I laureati magistrali in Ingegneria Elettrica sapranno interpretare, descrivere, identificare, formulare e risolvere, anche in modo innovativo e con approccio interdisciplinare, problemi complessi, e saranno capaci di ideare, pianificare, progettare e gestire sistemi, processi, prove e servizi complessi e/o innovativi.
+Il percorso formativo, in prosecuzione della formazione acquisita con la Laurea, prevede, nella declinazione proposta, una riorganizzazione in due curricula che si diramano a partire da una solida base comune di insegnamenti caratterizzanti, inseriti al I anno ed in parte erogati nel II anno, anche con la possibilita' di scelta di un insegnamento all'interno di un gruppo di insegnamenti opzionali caratterizzanti (C), con l'ulteriore inserimento di due insegnamenti inquadrati tra quelli affini e integrativi, erogati al I anno anch'essi con la possibilita' di scelta di uno degli insegnamenti all'interno di un gruppo opzionale di attivita' affini e integrative (AI); il primo curriculum e' orientato piu' specificamente all'industria ed alla mobilita' elettrica, il secondo e' declinato piu' specificamente nell'ambito delle smart grid, nell'ottica della transizione energetica. CiU' consente una migliore e piu' chiara visione degli obiettivi formativi, in un contesto multidisciplinare gia' ampiamente collaudato nel quale opera il CdLM-28, con evidenti risultati positivi in termini di placement dei laureati magistrali.
+Sono previsti insegnamenti che approfondiscono ed estendono gli aspetti concettuali, contenutistici, metodologici e progettuali (questi ultimi con l'ausilio di tecniche analitiche e numeriche avanzate) dei settori caratterizzanti l'ambito dell'ingegneria elettrica (Elettrotecnica; Sistemi elettrici per l'energia; Convertitori, Macchine e Azionamenti elettrici; Misure elettriche ed elettroniche), ricorrendo ai necessari supporti integrativi e applicativi forniti da insegnamenti di altri ambiti disciplinari (Elettronica, Automatica, Telecomunicazioni, Fisica tecnica ambientale, Sistemi di elaborazione delle informazioni, Analisi numerica, Chimica Fisica Applicata, Tecnologie e Sistemi di Lavorazione, Meccanica applicata alle Macchine).
+In particolare la base comune del percorso si sviluppa attraverso contenuti metodologici ed applicativi caratterizzanti e relativi ai sistemi elettrici per l'energia, la modellistica e la compatibilita' elettromagnetica, gli azionamenti elettrici, tutti impartiti al primo anno, e quelli relativi alle misure e alle prove per l'ingegneria elettrica, impartite al secondo anno; il percorso comune viene completato al I anno con i contenuti metodologici ed applicativi relativi agli ambiti affini e integrativi dell'automatica e di un altro insegnamento opzionale a scelta.
+Il curriculum orientato piu' specificamente all'industria ed alla mobilita' elettrica si sviluppa poi attraverso l'introduzione di contenuti ingegneristici applicativi caratterizzanti, nell'ambito della elettronica industriale di potenza impartiti al I anno, e degli azionamenti elettrici, della trazione elettrica, della 'automotive' e dei sistemi automatici di misura, impartiti al secondo anno. La scelta, tra quelli proposti nell'apposito gruppo, di un ulteriore insegnamento opzionale caratterizzante completa il profilo curriculare.
+Il curriculum orientato piu' specificamente nell'ambito delle smart grid, si sviluppa poi attraverso l'introduzione di contenuti ingegneristici applicativi caratterizzanti, nell'ambito della elettronica industriale di potenza, delle smart grid e dei relativi sistemi di misura, impartiti al I anno, e della produzione di energia elettrica e delle connesse problematiche del mercato dell'energia, impartiti al secondo anno. La scelta, tra quelli proposti nell'apposito gruppo, di un ulteriore insegnamento opzionale caratterizzante completa il profilo curriculare.
+Il percorso didattico viene completato poi attraverso ulteriori CFU a scelta libera, con possibilita' di attingere direttamente anche ai due gruppi di insegnamenti opzionali C e AI.
+La formazione e' integrata, all'interno degli insegnamenti previsti o tramite appositi seminari, con conoscenze di cultura economica-aziendale e di mercato, con particolare riferimento alle applicazioni di interesse e da approfondimenti sull'etica professionale.
+Gli allievi hanno inoltre la possibilita' di acquisire ulteriori competenze trasversali e multidisciplinari attraverso la partecipazione ai cosiddetti percorsi 'minor'. Il progetto si rivolge alla formazione di professionalita' in grado di rispondere ai fabbisogni posti dalla societa' con riferimento a due importanti settori di sviluppo socio-economico: Tecnologie Green e Infrastrutture Intelligenti. La formazione ingegneristica in questi settori richiede un elevato grado di competenze sistemiche, di visione interdisciplinare, di competenze digitali, di attenzione alla innovazione, affinchE' i professionisti del futuro possano contribuire efficacemente alle importanti transizioni che investono i nostri sistemi economici e sociali: transizione green, transizione digitale. I nuovi profili professionali affiancano, e non sostituiscono, i profili piu' specialistici dei singoli ambiti disciplinari. In particolare, essi si rivolgono ad una parte della platea studentesca che presenta attitudini e motivazioni adeguate alliimpegno previsto dal percorso formativo e congruenti con le funzioni nei contesti professionali. Il profilo minor 'Tecnologie Green' e' una figura professionale con solide competenze riferite al progetto ed al controllo delle trasformazioni della materia e dellienergia, in grado di intervenire con piena qualificazione nello sviluppo di soluzioni per unieconomia industriale per la produzione di beni e lierogazione di servizi e per la produzione, liutilizzo e liaccumulo dellienergia improntati a criteri di sostenibilita, basati sulliuso efficiente delle risorse, sulliimplementazione di protocolli di economia circolare, sulla preservazione della biodiversita' e sulla riduzione delliinquinamento. Il profilo minor 'Infrastrutture Smart' e' una figura professionale con solide conoscenze riferite alla progettazione, realizzazione ed esercizio di infrastrutture critiche (energia, trasporti, telecomunicazioni, supply chains) in grado di intervenire con piena qualificazione a supporto della implementazione di soluzioni per liefficienza, la sicurezza, la resilienza e la sostenibilita' delle reti e delle infrastrutture attraverso liimpiego delle piu' avanzate metodologie di analisi e tecnologie abilitanti.
+La preparazione prevista consente la possibilita' di un soddisfacente inserimento del laureato nel mondo del lavoro o la prosecuzione della formazione post-lauream (Master, Dottorato di Ricerca). L'acquisizione delle suddette ulteriori competenze viene documentata nel cosiddetto 'Diploma Supplement' dello studente.
+Il percorso formativo prevede lezioni frontali, esercitazioni teoriche, pratiche e di laboratorio, seminari, visite tecniche, stage e tirocini aziendali, con il supporto di materiale didattico indicato o fornito dai docenti in forma cartacea o in formato elettronico.
+Di seguito sono indicati i risultati di apprendimento attesi a conclusione del percorso formativo, le attivita' previste allo scopo e le relative modalita' di valutazione.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere Progettista
+Funzioni:
+Progettista elettrico
+Competenze:
+- progettazione, pianificazione e costruzione di installazioni e impianti elettrici anche complessi e innovativi;
+- progettazione e costruzione di apparecchiature e macchinari elettrici, azionamenti elettrici e sistemi elettronici di potenza, per la robotica e l'automazione industriale e civile;
+- supervisione nella realizzazione e messa in opera di installazioni, apparecchiature, impianti, azionamenti elettrici e sistemi elettronici di potenza.
+Sbocchi:
+Libera professione (si sottolinea che, per liaccesso alla professione e' prescritto il superamento del relativo esame di stato di abilitazione alla professione di ingegnere - sez. A, e l'iscrizione allialbo professionale - sez. A); aziende ed enti pubblici e privati di progettazione e costruzione di impianti di produzione, trasmissione, distribuzione e utilizzazione dell'energia elettrica; industrie per la produzione di componenti, apparecchiature e macchinari elettrici, azionamenti elettrici e sistemi elettronici di potenza.
+Profilo:
+ Ingegnere Esperto nella Pianificazione e nell'Esercizio
+Funzioni:
+Gestione della pianificazione e dell'esercizio
+Competenze:
+- pianificazione, esercizio e controllo di impianti elettrici complessi e/o innovativi per la produzione, anche da fonti rinnovabili, trasmissione e distribuzione dell'energia elettrica;
+- interazione con il mercato dell'energia elettrica e con i mercati ambientali;
+- pianificazione, esercizio e controllo di impianti, anche complessi e/o innovativi, per la produzione e gestione di beni e servizi automatizzati.
+Sbocchi:
+Consulente o dipendente di aziende ed enti pubblici e privati che operano nei settori della produzione (anche da fonti rinnovabili), trasmissione, distribuzione e utilizzazione (in ambito civile, industriale e dei trasporti) dell'energia elettrica, del mercato dell'energia e dei mercati ambientali.
+Profilo:
+Ingegnere Esperto Collaudatore
+Funzioni:
+Collaudo, prove e certificazione.
+Competenze:
+- collaudo di componenti, impianti elettrici per la produzione, anche da fonti rinnovabili, trasporto e distribuzione dell'energia elettrica;
+- collaudo di apparecchiature e macchinari elettrici, azionamenti elettrici e sistemi elettronici di potenza per l'automazione industriale e la robotica;
+- collaudo di impianti per la produzione e gestione di beni e servizi automatizzati;
+- prove per la valutazione del rischio da esposizione a campi elettromagnetici in ambienti lavorativi e civili.
+Sbocchi:
+Libera professione (si sottolinea che, per liaccesso alla professione e' prescritto il superamento del relativo esame di stato di abilitazione alla professione di ingegnere - sez. A, e l'iscrizione allialbo professionale - sez. A); aziende, enti, organismi, pubblici e privati che forniscono servizi per il collaudo di dispositivi, macchine ed impianti, per la verifica e la certificazione di rispondenza a norma.
+Profilo:
+Ingegnere Esperto nella Gestione dei Processi 
+Funzioni:
+Gestione e controllo di processi e servizi.
+Competenze:
+- progettazione e gestione di processi e servizi, anche complessi, che coinvolgono liutilizzazione dellienergia elettrica, in ambito civile, industriale e dei trasporti;
+- analisi e gestione della sicurezza elettrica e dei rischi, affidabilita' e controllo della qualita, compatibilita' elettromagnetica.
+Sbocchi:
+Aziende, enti, organismi, pubblici e privati che operano nel settore secondario e nel terziario.
+Profilo:
+Dirigente/Funzionario Tecnico
+Funzioni:
+Responsabilita' tecnica e tecnico/economica. Direzione.
+Competenze:
+- studio di fattibilita' tecnico/economica, progettazione, direzione dei lavori, collaudo di installazioni e impianti elettrici;
+- validazione tecnica, approvazione tecnica/amministrativa di progetti, emissione di pareri di conformita, predisposizione bandi di gara diappalto, aggiudicazione gara diappalto;
+- controlli ispettivi per liesecuzione delle verifiche di legge sugli impianti elettrici installati nei luoghi di lavoro.
+Sbocchi:
+Uffici tecnici di Enti locali (Comuni, Province, Regioni) e statali (Ministeri), di istituti, aziende e societa' a controllo pubblico (Aziende Sanitarie Provinciali, INAIL, ARPA, Corpo nazionale dei Vigili del Fuoco, etc.) e della Pubblica Amministrazione in genere.
+---------
+Caratteristiche della Prova Finale
+La prova finale del Corso di Laurea Magistrale consiste sia nella presentazione di una Tesi, redatta in modo originale, volta ad accertare il livello conseguito nella preparazione tecnico-scientifica e professionale sia nella discussione su quesiti eventualmente posti dai membri della Commissione. Tale prova e' regolamentata dalle disposizioni previste nel iRegolamento Esame di Laurea Magistrale" del Corso di Laurea Magistrale in Ingegneria Elettrica LM-28 (emanato con Decreto Rettorale n.1842/2014, prot. 32587 del 9 maggio 2014), riportato in Allegato 7 al Regolamento Didattico del CdLM, di cui fa parte integrante.
+La prova finale potra' includere anche uniattivita' di stage o tirocinio.
+---------

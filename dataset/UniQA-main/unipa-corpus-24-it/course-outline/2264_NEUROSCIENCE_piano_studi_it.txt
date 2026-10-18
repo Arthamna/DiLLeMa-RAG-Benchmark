@@ -1,0 +1,57 @@
+Anno Accademico 2024/2025
+Laurea magistrale in NEUROSCIENZE
+Curriculum: NEUROSCIENCE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2032
+---------
+Classe di Laurea magistrale in Biologia (LM-6)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Biomedicina, Neuroscienze e Diagnostica avanzata
+Codice corso 2264
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21031	BIOCHEMISTRY AND PHYSIOLOGY C.I. (in inglese)	EMANUELE	11	1° semestre	
+	PHYSIOLOGY (in inglese)	GIGLIA	5		BIO/09
+	BIOCHEMISTRY (in inglese)	EMANUELE	6		BIO/10
+21032	CELL BIOLOGY AND ANATOMY C.I. (in inglese)	SZYCHLINSKA	12	1° semestre	
+	CELL BIOLOGY (in inglese)		6		BIO/13
+	HUMAN ANATOMY (in inglese)	SZYCHLINSKA	6		BIO/16
+21877	NEUROANATOMY, NERVOUS ORGANOGENESIS, NEUROPHYSIOLOGY C.I.	SARDO	10	2° semestre	
+	NEUROANATOMY AND NERVOUS ORGANOGENESIS	DI FELICE	5		BIO/16
+	NEUROPHYSIOLOGY (in inglese)	SARDO	5		BIO/09
+21878	NEUROPHATOLOGY AND NEUROLOGY C.I.	DIELI	9	2° semestre	
+	NEUROLOGY (in inglese)	MONASTERO	3		MED/26
+	NEUROPATHOLOGY (in inglese)	DIELI	6		MED/04
+22014	INFORMATION PROCESSING SYSTEMS IN NEUROSCIENCE (in inglese)		6	2° semestre	ING-INF/05
+	Other language skills		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21013	INTERNSHIP AND ORIENTATION TRAINING (in inglese)		14	1° semestre	
+21027	CLINICAL NEUROPSYCHIATRY AND REHABILITATION TECHNIQUES C.I. (in inglese)	LA CASCIA	9	1° semestre	
+	PSYCHIATRY (in inglese)	QUATTRONE	3		MED/25
+	CLINICAL PSYCHOLOGY (in inglese)	MANIACI	3		M-PSI/08
+	NEURO-PSYCHIATRIC AND REHABILITATION TECHNIQUES (in inglese)	LA CASCIA	3		MED/48
+21876	PSYCOBIOLOGY AND CLINICAL BIOCHEMISTRY C.I.	OLIVERI	8	1° semestre	
+	CLINICAL BIOCHEMISTRY (in inglese)	BIVONA	5		BIO/12
+	PSYCOBIOLOGY (in inglese)	OLIVERI	3		M-PSI/02
+22012	NEUROPHARMACOLOGY	CANNIZZARO	5	1° semestre	BIO/14
+22713	MEDICAL ADVANCED DIAGNOSTICS IN NEUROSCIENCE C.I. (in inglese)	GAGLIARDO	7	1° semestre	
+	NEURORADIOLOGY (in inglese)	GAGLIARDO	4		MED/37
+	APPLIED MEDICAL TECHNICAL SCIENCE (in inglese)	LO RE	3		MED/50
+20658	FINAL THESIS (in inglese)		12	2° semestre	
+	Subjects of student’s choice		8		
+	Other training activities		3		
+
+Other language skills
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22711	ENGLISH LANGUAGE LEVEL C1		6	1° semestre	
+22712	ITALIAN LANGUAGE LEVEL A2 (in inglese)		6	1° semestre	
+
+Other training activities
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22709	OTHER EDUCATIONAL ACTIVITIES (in inglese)		3	1° semestre	
+22710	ITALIAN LANGUAGE LEVEL A1		3	1° semestre	
+

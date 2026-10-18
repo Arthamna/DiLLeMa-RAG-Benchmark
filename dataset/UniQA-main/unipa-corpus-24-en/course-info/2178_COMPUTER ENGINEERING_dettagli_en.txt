@@ -1,0 +1,41 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on COMPUTER ENGINEERING
+Curriculum: COMPUTER ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=1618
+---------
+Class of Bachelor's Degree (BSc) on Information technology engineering (L-8)
+Duration 3 years
+Location PALERMO
+Number of seats in local planning: 280
+Department of Engineering
+Course Code 2178
+---------
+Educational objectives
+The specific educational objectives of the Degree in Computer Engineering aim at the acquisition of the skills necessary for the design, implementation and management of information processing systems, ranging from the design of software systems and databases, to the management of networks and complex computer systems, which can be used in all application sectors with high added value typical of current information society.
+The course provides a broad spectrum training, firmly grounded in engineering disciplines. Students will also acquire sound methodological and technical skills, enabling them to identify the better technical and algorithmic solutions to various problem related to information processing, which may arise within a broad range of production areas.
+The course is designed with reference to specific learning areas, namely the areas of mathematics, physics, information engineering basics, computer engineering fundamentals and insights.
+During the first year, students acquire basic knowledge and skills in the fields of mathematics and physics, together with the first fundamentals of information engineering, including the fundamentals of programming and knowledge of the structure of computers.
+The second year, in addition to allowing students to acquire additional skills in the field of mathematics and physics, is largely dedicated to the acquisition of skills and knowledge of computer engineering. Furthermore, during the second year, students enrich their cultural background with some related activities, aiming at integrating the programme with respect to the skills and knowledge characterizing the degree course.
+Finally, during the third year, students complete their training in the field of computer engineering, both from a foundational point of view, with particular reference to systemic aspects, and by addressing the study of subjects dedicated to in-depth studies in the sector, focusing, in particular, on advanced aspects of programming and design of information systems. In the same period, students acquire most of the related knowledge and skills required by the training project.
+Overall, the student is given the necessary skills to operate effectively within public and private facilities, and, thanks to the specific attention given to basic subjects, general groundings sufficient to acquire and rapidly adapt, even independently, their training. to the changing needs of the labour market.
+---------
+Professional opportunities
+Profile:
+Junior computer engineer
+Functions:
+Application and system software analyst/designer/developer
+Computer networks and communications specialist
+Skills:
+Analysis of data processing issues for different application needs.
+Development, modification or optimization of application and system software.
+Identification and optimization of appropriate IT systems.
+Creation, integration and verification of the software used on a site or web application.
+Design, implementation and management of computer networks.
+professional opportunities:
+- The freelance profession as an analyst, designer or tester of computer systems and computer networks, as well as a designer of software applications or parts of them. Access to the profession requires passing the national qualification exam and subsequent registration in the professional register of the Board of engineers.
+- Employment in public or private agencies, such as IT companies operating in the areas of hardware and software production, automation and robotics companies, companies operating in the area of information systems and computer networks, service companies , or companies for the provision of IT services to the public administration.
+- Continuation of studies with direct access to the 2nd cycle degree in Computer Engineering.
+---------
+Final examination features
+The final test has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a written test, in accordance with the rules fixed every year by the Degree Course Regulations for the final examination, respecting and consistent to the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+---------

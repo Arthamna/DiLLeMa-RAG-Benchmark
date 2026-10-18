@@ -1,0 +1,62 @@
+Anno Accademico 2024/2025
+Laurea in TECNOLOGIE DIGITALI PER L'ARCHITETTURA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2283
+---------
+Classe di Laurea in Professioni tecniche per l'edilizia e il territorio (L-P01)
+Durata 3 anni
+Sede PALERMO
+Numero posti in programmazione locale: 40
+Dipartimento di Architettura
+Codice corso 2276
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il percorso formativo e' strutturato in coerenza con il DM 446/2020, integrato dai successivi DD.II 682/223 e 685/2023, e prevede attivita' formative erogate nelliarea delle discipline di base, caratterizzanti e affini/integrative. Tali attivita' si integrano con attivita' formative laboratoriali e di tirocinio (TPV) finalizzate a preparare il laureato a risolvere problemi pratici di architettura di base che potra' essere chiamato ad affrontare nella futura esperienza professionale.
+Si basa sull'acquisizione di conoscenze qualitative e quantitative nei seguenti campi:
+Attivita' formative di base
+Formazione informatica, matematica e statistica di base e Formazione chimica e fisica di base
+i) Saranno affrontati aspetti matematici, fisici ed informatici di base che consentano l'approccio alle materie piu' specialistiche e alliutilizzo delle moderne tecnologie.
+Attivita' formative caratterizzanti
+Rappresentazione
+ii) Nel campo della rappresentazione saranno trattate le tematiche del rilievo, dellianalisi e restituzione grafica delliarchitettura e del territorio con particolare riferimento al rilievo digitale e includendo i temi modellazione parametrica e del BIM per l'architettura.
+Edilizia
+iii) Nel campo delliedilizia si affronteranno le metodologie digitali di supporto alla progettazione architettonica sia in CAD che con applicazioni di computer-aided design, elementi di sistemi costruttivi e BIM e tematiche relative alla visualizzazione digitale dell'architettura.
+iv) Inoltre, si affronteranno i temi della rappresentazione e ricostruzione digitale dei manufatti architettonici storici e dell'indagine storica in architettura anche in modo integrato rispetto alle tecniche di ricostruzione virtuale dell'architettura nonchE' in riferimento ai temi dei digital twin e della conservazione.
+Territorio
+v) Le attivita' basate sulliutilizzo di metodologie digitali di supporto alla pianificazione e progettazione urbanistica saranno affrontate attraverso i temi delle analisi del territorio e delle infrastrutture con applicazioni GIS.
+Monitoraggio, diagnostica e impiantistica
+vi) Particolare attenzione verra' data agli aspetti del cantiere, alla organizzazione, gestione e contabilita' dei lavori, al monitoraggio, alla manutenzione degli edifici e del degrado nelle strutture con riferimento alla manutenzione edilizia digitalizzata e della contabilita' dei lavori.
+Stima e gestione legale amministrativa
+vii) I metodi di valutazione economico-amministrativa dei progetti sono affrontati attraverso i temi delliestimo, della pratica professionale, in relazione agli aspetti della fattibilita' e della sostenibilita' economica, nonchE' gli aspetti amministrativi e procedurali riguardanti le opere edili e quelli della contabilita' e gestione dei lavori.
+Nelliambito delle attivita' affini e integrative si affronta il tema della ricostruzione virtuale dell'architettura per la conservazione del patrimonio, offrendo specifiche competenze nel campo delle nuove tecnologie legate ai gemelli digitali che consentano di programmare interventi di manutenzione e conservazione applicati ai beni architettonici di pregio.
+Va sottolineato l'ampio spazio che e' dedicato ai laboratori dedicati attivita' connesse ai temi della rappresentazione digitale del progetto architettonico, della conoscenza dei sistemi costruttivi, della ricostruzione e visualizzazione virtuale delliarchitettura, delliarchitettura parametrica, del BIM, e anche la contabilita' e la gestione dei lavori e, quindi, delliedificio con attenzione agli aspetti manutentivi.
+Infine, lo studente dovra' sostenere attivita' formative a scelta e si prevede, inoltre, di approfondire la conoscenza della lingua inglese.
+Il tirocinio pratico-valutativo e' articolato tra il secondo anno (24 CFU) in particolare orientato alliapplicazione e consolidamento delle tecniche digitali acquisite e il terzo anno (24 CFU) in particolare orientato alla simulazione delliesperienza professionale e alla prova finale.
+---------
+Sbocchi Occupazionali
+Profilo:
+Tecnico laureato
+Funzioni:
+Il Tecnico Laureato sara' una figura polivalente nel settore delliarchitettura e dei processi edilizi, in grado di utilizzare le piu' innovative tecnologie digitali oggi a disposizione e con funzioni di supporto ad attivita' di progettazione e consulenza svolte da figure professionali piu' specializzate o in modalita' autonoma; in dettaglio, potra' occuparsi:
+di rilievi architettonici utilizzando le tecniche digitali fotogrammetriche e di laser scanning;
+della restituzione del progetto architettonico attraverso liuso del CAD e delliapplicazione dei principi della modellazione architettonica parametrica;
+di applicare la metodologia BIM e la modellazione informativa e di utilizzare la documentazione tecnica e i software dedicati per la modellazione degli oggetti e la produzione degli elaborati;
+della ricostruzione virtuale dei manufatti architettonici storici e contemporanei e della visualizzazione digitale delliarchitettura;
+della restituzione in formato digitale dei dati relativi al territorio attraverso liuso di GIS;
+potra' contribuire a, o eseguire in piena autonomia, le procedure di contabilita' per la gestione dei lavori e del cantiere attraverso liuso di software specifici per la produzione di computi metrici estimativi, capitolati tecnici, libretti delle misure, stati di avanzamento dei lavori, piani di manutenzione, ecc.
+potra' contribuire alla verifica della corretta applicazione delle procedure di sicurezza nella gestione dei cantieri, e degli aspetti relativi alla fattibilita' tecnica ed economica del processo di produzione e realizzazione delle opere di architettura;
+della corretta applicazione della normativa in materia di lavori pubblici e in ambito privatistico, degli strumenti urbanistici e dei titoli edilizi;
+della redazione di pratiche edilizie, di capitolati tecnici, di piani di manutenzione, di disegni tecnici e attivita' di consulenza forense;
+della progettazione, direzione dei lavori e vigilanza degli aspetti costruttivi, distributivi relativi a costruzioni modeste; delle procedure di contabilita' per la gestione dei lavori.
+Il proseguimento degli studi nelle lauree magistrali non e' uno sbocco naturale per i corsi di questa classe, ma puU' essere effettuato previo assolvimento dei necessari debiti formativi.
+Competenze:
+Le competenze acquisite dal laureato nel corso di studi riguardano una adeguata preparazione nelle discipline applicative di riferimento e un adeguato bagaglio di conoscenze operative indispensabili per operare in autonomia in ambiti quali:
+il rilevamento topografico, cartografico ed architettonico, includendo la successiva restituzione, anche cartografica e georeferenziata, mediante liutilizzo di tecnologie avanzate per il rilievo e la restituzione; la modellazione e lianalisi BIM, le tecniche di rappresentazione digitali per liarchitettura con il CAD; le attivita' basate sulliutilizzo di metodologie digitali di supporto alla pianificazione e progettazione urbanistico/architettonica attraverso il GIS; liattivita' di supporto al monitoraggio e alla diagnostica delle strutture, delle infrastrutture e del territorio; le attivita' correlate alla gestione e alliaggiornamento delle banche dati: catastali, demaniali e degli enti locali; a redazione di pratiche edilizie, di capitolati tecnici, di piani di manutenzione, di disegni tecnici e attivita' di consulenza tecnica forense; la progettazione, direzione dei lavori e vigilanza degli aspetti strutturali, distributivi e impiantistici relativi a costruzioni modeste (da intendersi costruzioni con struttura, tecniche costruttive e articolazione spaziali semplici) . Il laureato, inoltre, conosce adeguatamente gli aspetti riguardanti la fattibilita' tecnica ed economica, il calcolo dei costi come anche il processo di produzione e di realizzazione di opere in edilizia, degli impianti accessori e delle trasformazioni territoriali con i relativi elementi funzionali.
+Sbocchi:
+I tecnici laureati saranno in possesso di conoscenze idonee a svolgere ruoli tecnici nelliambito pubblico e privato. I principali sbocchi occupazionali previsti dai corsi di laurea della classe sono: i) attivita' libero-professionale; ii) dipendenti nei ruoli tecnici di societa' di ingegneria o di architettura, di studi legali o economico-commerciali, di imprese di costruzione o di gestione del patrimonio immobiliare, di enti per la gestione ed il controllo del territorio; iii) dipendenti nei ruoli tecnici delle pubbliche amministrazioni.
+Per liesercizio della libera professione, il Corso consente liiscrizione al Collegio dei Geometri e Geometri Laureati secondo quanto previsto dalle norme vigenti e di esercitare anche nei paesi europei perchE' ottempera alla direttiva UE (DIRETTIVA 2005/36/CE) che prescrive il possesso di un titolo di studi universitario.
+---------
+Caratteristiche della Prova Finale
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico del Corso di Studi e abilita all'esercizio della professione di geometra laureato.
+La prova finale, che comprende la predisposizione e liesposizione di un breve elaborato scritto, e' intesa a verificare la maturita' del candidato in relazione alla capacita' di identificare e affrontare aspetti concreti in ambiti di interesse della classe, applicando le conoscenze e le abilita' acquisite durante il corso di studi.
+---------

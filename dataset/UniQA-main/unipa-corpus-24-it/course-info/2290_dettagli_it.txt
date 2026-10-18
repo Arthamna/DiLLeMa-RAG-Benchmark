@@ -1,0 +1,48 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA ROBOTICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2558
+---------
+Classe di Laurea in Ingegneria dell'informazione (L-8)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2290
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il corso di laurea triennale in Ingegneria Robotica si inquadra nella classe L-8 - Ingegneria dell'Informazione.
+Gli obiettivi formativi specifici della laurea triennale in Ingegneria Robotica sono rivolti al conseguimento delle competenze necessarie alla progettazione, realizzazione, programmazione e gestione di sistemi robotici industriali e di servizio, orientati a tutti i settori applicativi ad alto valore aggiunto tipici dell'odierna societa' dell'informazione.
+L'Ingegnere Robotico e' una figura professionale pronta ad entrare nel mondo del lavoro in tutte le industrie e societa' di servizi pubblici e privati che prevedono attivita' legate all'analisi, allo sviluppo e implementazione di sistemi per l'automazione e la robotica.
+Il corso di studi e' progettato con riferimento a specifiche aree di apprendimento: le discipline di base dell'ingegneria, le discipline di base dell'ingegneria dell'informazione, le discipline della robotica, le discipline dell'informatica per la robotica. In dettaglio:
+- Le discipline di base per l'ingegneria trattano le conoscenze di base per l'ingegnere quali la matematica e la fisica.
+- Le discipline di base per l'ingegneria dell'informazione trattano le conoscenze comuni all'area dell'informazione, quali i principi dell'elettronica e dell'automazione, i fondamenti dei calcolatori elettronici e della programmazione.
+- Le discipline della robotica trattano le problematiche della elettronica e del controllo dei robot, le comunicazioni tra robot e reti di computer, la meccanica e gli azionamenti elettrici dei robot, le tecniche di progettazione dei robot assistita dal calcolatore, le principali applicazioni industriali e di servizio dei robot.
+- Le discipline di informatica per la robotica riguardano le conoscenze relative all'analisi e sviluppo di sistemi software per la robotica, incluse le conoscenze di Intelligenza Artificiale e Cyber-Sicurezza per la robotica.
+Durante il primo anno di studio gli studenti acquisiranno conoscenze e competenze delle discipline di base per l'ingegneria insieme ai primi fondamenti delle discipline dell'ingegneria dell'informazione e delle discipline della robotica. Nello stesso periodo, gli studenti acquisiranno alcune conoscenze e competenze a scelta previste dal progetto formativo.
+Il secondo anno, oltre a consentire agli studenti di acquisire ulteriori competenze nel campo delle discipline di base, sara' dedicato all'acquisizione di competenze e conoscenze dell'ingegneria dell'informazione e delle discipline della robotica. Inoltre, gli studenti acquisiranno gli elementi di base dell'informatica per la robotica.
+Infine, durante il terzo anno, gli studenti completeranno la propria formazione relativamente alle discipline della robotica, e affronteranno gli aspetti avanzati dell'informatica per la robotica. Nello stesso periodo, gli studenti acquisiranno la maggior parte delle conoscenze e competenze a scelta previste dal progetto formativo.
+Il progetto formativo prevede anche le competenze relative alle ulteriori attivita' formative. Gli studenti potranno acquisire queste competenze mediante lo svolgimento di un tirocinio formativo presso le aziende e centri di ricerca interessati allo sviluppo di sistemi robotici.
+Le schede di trasparenza dei singoli corsi riportano per ciascun insegnamento i risultati di apprendimento attesi in accordo con i descrittori di Dublino. Per la verifica dell'apprendimento, le schede di trasparenza riportano la valutazione relativa al raggiungimento degli obiettivi di apprendimento per ciascun descrittore e il peso in percentuale di ogni obiettivo nel computo del voto finale. Le schede sono rese disponibili sul sito web istituzionale.
+---------
+Sbocchi Occupazionali
+Profilo:
+Dottore in Ingegneria Robotica
+Funzioni:
+Il laureato in Ingegneria Robotica ha un profilo culturale e professionale focalizzato al conseguimento delle competenze necessarie alla progettazione, realizzazione, programmazione e gestione di sistemi robotici industriali e di servizio, orientati a tutti i settori applicativi ad alto valore aggiunto tipici dell'odierna societa' dell'informazione.
+Il laureato in ingegneria robotica analizza problematiche in ambito industriale e dei servizi, identifica e progetta soluzioni robotiche standard e sviluppa il sistema robotico necessario per la soluzione individuata.
+Competenze:
+- Analisi delle problematiche di robotica industriale e di servizio per diverse esigenze applicative.
+- Sviluppo, modifica e ottimizzazione di sistemi di controllo per manipolatori e robot mobili.
+- Individuazione e ottimizzazione di sistemi robotici che includono manipolatori robotici e robot mobili.
+- Realizzazione, integrazione e verifica del sistema software impiegato in un sistema robotico.
+- Progetto, realizzazione e gestione di reti informatiche che comprendono manipolatori robotici e robot mobili.
+Sbocchi:
+- La libera professione come analista, progettista o collaudatore di sistemi robotici.
+- Il lavoro dipendente presso enti pubblici o privati, quali: imprese di produzione che includono sistemi robotici, industrie per l'automazione e la robotica, imprese operanti nell'area dei sistemi robotici e della progettazione e produzione di apparati robotici, fornitori di servizi che includono sistemi robotici e, in generale, in tutte le strutture che si avvalgono di sistemi robotici.
+- Il proseguimento degli studi con l'accesso a diversi corsi di laurea magistrale.
+---------
+Caratteristiche della Prova Finale
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico.
+La prova finale consiste in una prova scritta secondo modalita' definite dal regolamento sulla prova finale del Corso di Laurea per ogni A.A., nel rispetto e in coerenza della tempistica, delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+---------

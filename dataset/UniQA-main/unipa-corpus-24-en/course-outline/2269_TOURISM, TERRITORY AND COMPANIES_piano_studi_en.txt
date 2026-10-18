@@ -1,0 +1,69 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on TOURISM, TERRITORIES AND BUSINESSES
+Curriculum: TOURISM, TERRITORY AND COMPANIES
+For more information visit http://www.unipa.it/struttura.html?id=2253
+---------
+Class of Bachelor's Degree (BSc) on Tourism (L-15)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Economics and statistical Sciences
+Course Code 2269
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00294	BUSINESS ECONOMICS	PICCIOTTO	6	1° semestre	SECS-P/07
+16945	SOCIOLOGY OF TOURISM	PEPE	8	1° semestre	SPS/07
+18861	PRINCIPLES OF LAW	COLLETTI	8	1° semestre	IUS/01
+22518	BASIC MATHEMATICAL AND DIGITAL KNOWLEDGE	PECORELLA	6	1° semestre	SECS-S/06
+17942	MUSEOLOGY AND MANAGEMENT OF  MUSEUM ASSETS		8	2° semestre	L-ART/04
+22676	GEOGRAPHY, CULTURAL AND ENVIROMENTAL HERITAGE	MERCATANTI	8	2° semestre	M-GGR/01
+24248	ELEMENTS OF ECONOMICS	FRICANO	8	2° semestre	SECS-P/06
+	Optional subjects II		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02742	BUSINESS ECONOMICS AND MANAGEMENT	LEVANTI	6	1° semestre	SECS-P/08
+06644	STATISTICS	DI SALVO	6	1° semestre	SECS-S/01
+11261	TRANSPORT AND TOURISM LAW	BEVILACQUA	6	1° semestre	IUS/06
+14184	INTERNSHIP		9	1° semestre	
+19210	TOURISM ECONOMICS - INTEGRATED COURSE	RUGGIERI	10	1° semestre	
+	TOURIST DESTINATION ECONOMICS	PURPURA	5		SECS-P/06
+	TOURISM ECONOMICS	RUGGIERI	5		SECS-P/06
+22511	HUMAN RESOURCES ORGANISATION AND MANAGEMENT IN TOURISM	INGRASSIA	8	2° semestre	SECS-P/10
+22521	ENGLISH LANGUAGE IN TOURIST CONVERSATION	GUCCIONE	8	2° semestre	L-LIN/12
+23778	PLANNING AND CONTROL IN TOURISM COMPANIES	PICCIOTTO	6	2° semestre	SECS-P/07
+	Optional subjects III		3		
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22512	ENGLISH LANGUAGE AND CULTURE IN TOURISM DISCOURSE (in english)	ROMEO	6	1° semestre	L-LIN/10
+22513	TALENT MANAGEMENT AND SKILL DEVELOPMENT	PACE	5	1° semestre	
+22532	ECONOMIC AND TOURISM POLICY	PIZZUTO	8	1° semestre	SECS-P/02
+04864	MARKETING	LEVANTI	6	2° semestre	SECS-P/08
+05917	FINAL EXAMINATION		3	2° semestre	
+23994	STATISTICS FOR ECONOMY AND TOURISM - INTEGRATED COURSE	DE CANTIS	12	2° semestre	
+	TOURISM STATISTICS	DE CANTIS	6		SECS-S/05
+	ECONOMIC STATISTICS	PIACENTINO	6		SECS-S/03
+	Optional subjects		8		
+	Free subjects (suggested)		12		
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04664	FRENCH LANGUAGE (in french)		6	2° semestre	
+04718	SPANISH LANGUAGE (in spanish)		6	2° semestre	
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00932	HISTORY OF MODERN ART		8	1° semestre	L-ART/02
+18545	ECONOMIC HISTORY AND HISTORY OF THE ECONOMIC THOUGHT	PIROLO	8	1° semestre	SECS-P/12
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23775	DIGITAL MARKETING WORKSHOP		3	2° semestre	
+23777	EXPERIENCE-BASED TOURISM WORKSHOP	FAZIO	3	2° semestre	
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02726	ECONOMICS OF CULTURE		6	2° semestre	SECS-P/06
+

@@ -1,0 +1,58 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA INFORMATICA
+Curriculum: CYBERSICUREZZA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=721
+---------
+Classe di Laurea magistrale in Ingegneria informatica (LM-32)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con UNIVERSITE D'ARTOIS, Arras (FRANCE)
+Codice corso 2035
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Gli obiettivi formativi della Laurea Magistrale in Ingegneria Informatica sono rivolti al conseguimento, da parte dello studente, di una solida preparazione sugli aspetti di base e applicativi dell'ingegneria informatica.
+Il laureato magistrale acquisira' competenze tecnico-scientifiche di alto livello che potra' utilizzare per l'analisi, il progetto, la realizzazione e la gestione di sistemi informatici evoluti. Le metodologie e gli strumenti acquisiti daranno al laureato la capacita' di adeguarsi velocemente alla prevedibile e continua evoluzione del settore.
+Il Corso di Laurea offre agli allievi un percorso didattico flessibile che, a partire da una solida base focalizzata sugli ambiti tradizionali del progetto, realizzazione e gestione di sistemi e applicazioni informatiche complesse, si particolarizza in due curricula che consentono allo studente di scegliere se privilegiare liacquisizione di competenze maggiormente legate alla sicurezza informatica o piu' focalizzate sui sistemi intelligenti e sulla robotica.
+Per realizzare questo percorso flessibile, il corso di studi e' organizzato prevedendo quattro insiemi di discipline:
+- un insieme di discipline caratterizzanti comuni ai due curricula;
+- un insieme di discipline caratterizzanti per il curriculum orientato alla sicurezza informatica;
+- un insieme di discipline caratterizzanti per il curriculum orientato ai sistemi intelligenti;
+- un insieme di discipline opzionali per lo svolgimento delle attivita' affini e integrative.
+Le discipline comuni ai due curricula vengono affrontate principalmente durante il primo anno di corso e consentono allo studente di confrontarsi gli aspetti metodologici avanzati delliingegneria informatica, con discipline legate alla progettazione e realizzazione di sistemi informatici evoluti, spaziando dalla progettazione dei sistemi web ai sistemi per la gestione dei big data, dal funzionamento dei sistemi embedded ai primi fondamenti delliintelligenza artificiale.
+Le discipline caratterizzanti e specializzate per i due curricula, vengono affrontate principalmente durante il secondo anno di corso.
+Gli insegnamenti caratterizzanti il curriculum orientato alla sicurezza informatica spaziano dallo studio dei diversi metodi di crittografia allo studio delle principali problematiche legate alla sicurezza informatica, dallianalisi delle problematiche legate alla gestione dei dati personali fino alla progettazione di sistemi sicuri per lielaborazione delle informazioni.
+Gli insegnamenti caratterizzanti il curriculum orientato ai sistemi intelligenti sono focalizzati sulle tematiche avanzate delliintelligenza artificiale, spaziando dallo studio di algoritmi e modelli propri di tale disciplina alle metodologie di progettazione di sistemi robotici, dalla visione artificiale alla elaborazione del linguaggio naturale.
+Il corso comprende numerose attivita' laboratoriali, soprattutto negli insegnamenti dedicati alliacquisizione di competenze proprie della progettazione dei sistemi informatici complessi. Sono previste inoltre attivita' formative a scelta dello studente, che, oltre agli insegnamenti a scelta dello studente, prevedono la possibilita' di svolgere un eventuale tirocinio formativo, o di partecipare a seminari, conferenze e workshop, con liobiettivo complessivo di fornire allo studente conoscenze e competenze utili per liinserimento nel mondo del lavoro.
+Infine, il completamento del percorso formativo prevede lo svolgimento di una tesi di laurea di ampio respiro, cui parte dello svolgimento puU' avvenire alliinterno di una eventuale attivita' di stage e tirocinio, che consentira' allo studente di consolidare la propria preparazione tecnico-scientifica e professionale.
+Le aree professionali di riferimento sono quelle dell'innovazione e dello sviluppo della produzione, della progettazione avanzata, della realizzazione e gestione di sistemi software sicuri e di sistemi basati sulliintelligenza informatica, sia nella libera professione che nelle imprese manifatturiere o di servizi, che nelle amministrazioni pubbliche.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere informatico magistrale
+Funzioni:
+Progettista/amministratore di sistemi informatici
+Analista/progettista/sviluppatore di applicazioni informatiche avanzate
+Specialista di Big Data
+Specialista di Sicurezza Informatica
+Specialista di Intelligenza Artificiale e Machine Learning
+Analista/progettista/sviluppatore di sistemi robotici
+Competenze:
+Incremento della conoscenza scientifica nelle scienze dell'informazione.
+Analisi delle esigenze degli utilizzatori e dei problemi di elaborazione e trasmissione delle informazioni in contesti applicativi complessi.
+Sviluppo, creazione, modifica e ottimizzazione di applicazioni informatiche avanzate e sistemi intelligenti.
+Individuazione, progetto e ottimizzazione di appropriati sistemi di elaborazione e gestione delle informazioni.
+Ideazione, realizzazione, integrazione e collaudo dei software impiegati in applicazioni informatiche complesse.
+Progettazione, coordinamento, implementazione e valutazione delle misure di sicurezza dei sistemi informatici.
+&nbsp;&nbsp;
+Sbocchi:
+La libera professione come analista, progettista o collaudatore di sistemi informatici e robotici avanzati. Per liaccesso alla libera professione e' previsto il superamento delliesame di stato e la successiva iscrizione allialbo professionale delliordine degli ingegneri.
+Il lavoro dipendente presso industrie informatiche avanzate operanti negli ambiti della produzione hardware e software, della sicurezza informatica, industrie per la robotica, imprese operanti nell'area dei sistemi informativi e delle reti di calcolatori, imprese erogatrici di servizi avanzati e basati sulliintelligenza artificiale, servizi informatici della pubblica amministrazione.
+---------
+Caratteristiche della Prova Finale
+Per il conseguimento della Laurea Magistrale lo studente deve sostenere una prova finale volta ad accertare il livello conseguito dallo studente nella preparazione tecnico-scientifica e professionale.
+La prova finale del Corso di Laurea Magistrale in Ingegneria Informatica consiste nella realizzazione di una tesi di laurea magistrale, redatta in modo originale, sotto la guida di un relatore, e nella sua presentazione e nella discussione su quesiti eventualmente posti dai membri della Commissione in sede di esame di laurea magistrale.
+Parte dello svolgimento della prova finale puU' avvenire alliinterno di una eventuale attivita' di stage o tirocinio.
+---------

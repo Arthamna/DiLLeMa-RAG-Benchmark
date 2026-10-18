@@ -1,0 +1,71 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SCIENZE FILOSOFICHE E STORICHE
+Curriculum: CRITICA DEI SAPERI STORICI
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1630
+---------
+Classe di Laurea magistrale in Scienze filosofiche (LM-78)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Umanistiche
+Codice corso 2207
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		3	1° semestre	
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		6	1° semestre	
+20691	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2		3	1° semestre	
+	Gruppo di attiv. form. opzionali		9		
+	Gruppo di attiv. form. opzionali II		9		
+	Gruppo di attiv. form. opzionali V		12		
+	Gruppo di attiv. form. opzionali VI		12		
+	Attiv. form. a scelta dello studente		9		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05917	PROVA FINALE		24	2° semestre	
+	Gruppo di attiv. form. opzionali III		18		
+	Gruppo di attiv. form. opzionali IV		9		
+	Attiv. form. a scelta dello studente II		6		
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03213	FILOSOFIA DELLA SCIENZA	OLIVERI	9	1° semestre	M-FIL/02
+15839	METAFISICA	LUPO	9	1° semestre	M-FIL/01
+21920	EPISTEMOLOGIA E FILOSOFIA ANALITICA	LICATA	9	1° semestre	M-FIL/02
+10941	ESTETICA CONTEMPORANEA	TEDESCO	9	2° semestre	M-FIL/04
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22687	GLOBAL PHILOSOPHY	LE MOLI	9	1° semestre	M-FIL/06
+11786	FILOSOFIA ANTICA	LASPIA	9	2° semestre	M-FIL/07
+16335	FILOSOFIE DELL'ETÀ CONTEMPORANEA	DI PAOLA	9	2° semestre	M-FIL/06
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03233	FILOSOFIA TEORETICA	CICATELLO	9	1° semestre	M-FIL/01
+18532	FILOSOFIA DELLE PRATICHE VERBALI	PIAZZA	9	1° semestre	M-FIL/05
+08946	ETICA	PUGLIESE	9	2° semestre	M-FIL/03
+21852	LINGUAGGI E GRAMMATICHE DEL POTERE	DI PIAZZA	9	2° semestre	M-FIL/05
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19017	FORME E GERARCHIE SOCIALI XIII-XVII SECOLO	MINEO	6	1° semestre	M-STO/01
+19216	STORIA DELLE RELAZIONI DI GENERE (SEC XVI-XIX)	FAZIO	6	1° semestre	M-STO/02
+23723	STORIA POLITICA E SOCIALE DEL MONDO BIZANTINO	ROGNONI	6	1° semestre	L-FIL-LET/07
+15843	PEDAGOGIA GENERALE (LIVELLO AVANZATO)	MALTESE	6	2° semestre	M-PED/01
+18117	STORIA DEL MONDO POST COLONIALE	BARIS	6	2° semestre	M-STO/04
+23722	LINGUAGGI, SIMBOLI E IDENTITÀ	DINO	6	2° semestre	SPS/12
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19092	STORIA DEI PROCESSI DI DEMOCRATIZZAZIONE	COCO	6	1° semestre	M-STO/04
+22173	PHILOSOPHY OF SOCIAL SCIENCES	PALUMBO	6	1° semestre	SPS/01
+19091	POLITICA E CONFLITTI (SEC. XVIII-XX)	DI FIGLIA	6	2° semestre	M-STO/04
+
+Gruppo di attiv. form. opzionali VI
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18531	STORIA SOCIALE E POLITICA DELLA GRECIA ANTICA	CUSUMANO	6	1° semestre	L-ANT/02
+21452	MODELS OF DEMOCRACY	PALUMBO	6	1° semestre	SPS/01
+23370	STORIA SOCIALE E POLITICA DI ROMA ANTICA	CASELLA	6	2° semestre	L-ANT/03
+

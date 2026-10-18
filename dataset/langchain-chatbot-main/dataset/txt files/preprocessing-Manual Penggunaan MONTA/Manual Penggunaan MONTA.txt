@@ -1,0 +1,87 @@
+SOP (Guidelines) Mahasiswa
+
+
+Berikut merupakan guidelines penggunaan MONTA untuk mahasiswa:
+
+
+ Login ke MONTA (monta.if.its.ac.id)
+   1. Melakukan login terlebih dahulu (default username dan password adalah NRP).
+
+
+
+
+   2. Setelah login, maka akan masuk ke halaman mahasiswa.
+
+
+
+
+       Berikut daftar RMK di Jurusan Teknik Informatika ITS, beserta dosen yang tergabung dalam RMK :
+             Manajemen Informasi : RS, HG, DS, SR, IM, AL, RN, NF, MN
+             Dasar dan Terapan Komputasi: AS, JL, YP, VH, BA, AW, RL, SL, DA
+             Algoritma & Pemrograman : HG, AR, DP, WN, RL, DS, RJ, RR, MN, FB
+             Arsitektur dan Jaringan Komputer : RM, TA, WW, SD, HC, MH, WS, AM, BS, HS, EL, RA
+             Komputasi Berbasis Jaringan : TA, RM, WW, SD, AR, HC, MH, WS, AM, BS, HS, RA
+             Komputasi Cerdas dan Visi : HT, CF, JL, AZ, NS, YP, BA, AS, DP, AY, IA, AW, DA
+             Interaksi, Grafik dan Seni : AY, NS, WN, IM, RR
+             Rekayasa Perangkat Lunak : ST, RS, DO, SR, UY, AL, RN, NF, RJ, SL, FB
+          Inisial nama dosen yang dicetak tebal adalah ketua RMK
+ Mendaftarkan proposal TA
+
+   1. Langkah awal sebelum mengisikan data proposal TA ke MONTA, mahasiswa wajib berdiskusi
+      terlebih dahulu dengan calon dosen pembimbing perihal topik TA yang ingin dikerjakan sambil
+      bimbingan dalam penyusunan draft proposal TA.
+
+   2. Setelah topik dan draft proposal TA sudah disetujui, mahasiswa melakukan pendaftaran proposal
+      TA ke sistem dengan memilih menu Proposal TA –> Buat Proposal serta mengunggah file draft
+      proposal yang sudah disepakati pembimbing.
+      Setelah mengisi semua isian form maka memilih tombol Buat Proposal Baru.
+
+
+
+
+   3. Setelah mendaftarkan proposal, mahasiswa dapat mencetak cover proposal TA dengan memilih
+      menu Cetak Cover –> Cetak Cover Proposal TA.
+
+
+
+
+   4. Mahasiswa wajib menyerahkan kepada koordinator TA/Ketua RMK, hardcopy proposal TA
+      lengkap dengan cover proposal yang dicetak dari MONTA dan sudah disetujui/ditandatangani
+      oleh dosen pembimbing.
+
+   5. Setelah semua proses diatas sudah dilakukan dengan benar, maka mahasiswa tinggal menunggu
+      perubahan status proposal TA-nya via MONTA (Mendaftar  Tunggu Sidang Proposal  OK/
+      Revisi/ Ditolak). Bagi mahasiswa yang status proposalnya OK, maka bisa segera melakukan
+      bimbingan ke dosen pembimbing. Sedangkan bagi proposalnya berstatus Revisi/Ditolak, harap
+      menghadap ke koordinator TA/Ketua RMK untuk mengambil hardcopy proposal dan menanyakan
+      keterangan lebih detail tenang status proposalnya.
+ Bimbingan TA
+
+  1. Setelah proposal TA mahasiswa berstatus “OK”, maka proses bimbingan TA bisa mulai dilakukan
+     baik secara online maupun offline. Untuk bimbingan online, mahasiswa mengisi kegiatan
+     bimbingan dengan memilih menu Progres TA, kemudian memilih menu Bimbingan Baru.
+
+
+
+
+  2. Berikut merupakan halaman bimbingan baru untuk diisikan item/catatan yang dijadikan topik
+     bimbingan.
+
+
+
+
+  3. Setelah selesai mengisi kartu bimbingan, maka akan kembali ke halaman progres Tugas Akhir
+     mahasiswa. Bimbingan TA dilakukan/dientri minimal sebanyak 8 kali. Jika kurang dari 8, maka
+     mahasiswa tersebut tidak dapat dijadwalkan untuk mengikuti sidang TA.
+ Mendaftar Sidang TA
+
+   1. Untuk mengikuti sidang TA, mahasiswa dapat mencetak cover persetujuan maju sidang pada
+      menu Cetak Cover –> Cetak Persetujuan Maju Sidang.
+
+
+
+
+   2. Form Persetujuan Maju Sidang yang sudah ditandatangani oleh dosen pembimbing, diserahkan
+      ke coordinator TA/ketua RMK untuk kemudian dijadwalkan untuk mengikuti sidang TA.
+      Mahasiswa dapat memonitor perubahan status TA dan jadwal TA via MONTA.
+

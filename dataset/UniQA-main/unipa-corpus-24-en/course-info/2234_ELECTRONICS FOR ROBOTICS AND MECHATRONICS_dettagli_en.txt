@@ -1,0 +1,148 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ELECTRONICS ENGINEERING
+Curriculum: ELECTRONICS FOR ROBOTICS AND MECHATRONICS
+For more information visit http://www.unipa.it/struttura.html?id=1874
+---------
+Class of Master's Degree (MSc) on Electronic engineering (LM-29)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with UNIVERZITA PARDUBICE, Pardubice (CZECH REPUBLIC)
+Course Code 2234
+---------
+Educational objectives
+Specific objectives:
+The 2nd cycle Degree in Electronics Engineering is characterized by a broad-spectrum approach, providing a complete training in the various sectors of interest for electronics, with in-depth studies in the fields of electrical and electronic measurements, telecommunications and automation.
+The educational programme is characterized by some mandatory common courses providing knowledge in the three complementary sectors of Electronics, Electrical and Electronic Measurements and Telecommunications, suitable for covering the plurality of employment opportunities, both for purely electronic fields, and for the integration of the Internet and information transport and processing technologies with modern electronic systems and technologies. Emphasis is placed on applied electronics, optoelectronics and measurements for telecommunications and automation, finally deepening the study of circuits and systems exploiting the propagation of electromagnetic waves in the frequency fields ranging from radio frequency to microwaves.
+After these common teachings, the Course is divided into different paths, each of which enabling students to delve into the aspects of Modern Electronics, Telecommunications, Bioelectronics or Robotics and Mechatronics and to choose the profile that best suits their inclinations and best responds to the working context and the market.
+The path in "Modern Electronics" provides a high level of knowledge in the field of micro/nano electronic systems, heterostructure devices, microwave instrumentation and measurements, as well as aspects related to the implementation of electronic systems based on high-speed processors and electronic interfaces.
+The path in "Telecommunications" aims at training experts in Telecommunications systems and digital infrastructures, namely with reference to the emerging scenarios of Internet of Things systems and mobile broadband access. The course will provide a solid preparation on modelling and interfacing techniques to the electromagnetic transmission medium, on the main modulation and coding techniques for the protection of information from disturbances and interferences, on the access techniques to the medium used in radio communication systems, on modern transmission network architectures, with particular attention to the aspects of security and confidentiality of information, and on the design and management of services on the Internet of Things.
+The path in "Bioelectronics" aims at training professionals with a solid basic education in the electronics sector, with highly specialized skills in the following fields: sensors and diagnostic instrumentation, electronics and Internet of Things (IoT) for biomedical applications (acquisition, storage, processing and transfer of biomedical data and signals) and for the analysis, modelling and post-processing of signals, images and medical-biological data.
+Finally, the path in "Electronics for Robotics and Mechatronics" aims at training professionals who are transversal to traditional engineering profiles, able to proceed with the analysis of systems of various physical nature, the planning of the objectives to be achieved, the mathematical formulation of a control problem that takes into account the aforementioned objectives, the solution of this problem also using the available software tools and, finally, its practical implementation.
+---------
+Professional opportunities
+Profile:
+Electronic Engineer, specialised in Modern Electronics
+Functions:
+The 2nd cycle Degree in Electronics Engineering trains professionals capable of covering a wide variety of roles in different work contexts, thanks to the theoretical education received during the course, also supported by more general and interdisciplinary knowledge and laboratory experience.
+Graduates will be able to apply the specific skills acquired not only in the electronic field, but also with respect to the methodological-operational aspects of basic sciences and engineering, in various sectors ranging from micro/nano electronics to electronic radiofrequency design, up to electronics for industry, energy and the car, and to ICT in general.
+More specifically, the training enables graduates in Electronics Engineering to work not only in technical-organizational environments, but also in planning and research contexts. In detail, graduates know the methods and techniques to design electronic devices, components, systems, lasers, communication systems, submicrometric integrated circuits and of the related manufacturing processes and applications. Therefore, they may find employment in the fields of design, development, engineering, production, operation and maintenance of electronic systems, but also in the ICT sector, as well as in sectors actively using electronics, such as industry, automotive, energy, bioelectronics.
+Thanks to the aforementioned competences, 2nd cycle graduates in Electronics Engineering will also be able to take on positions of responsibility in high technology scientific and industrial fields and will also be able to continue their studies in high specialization and research contexts (master, PhD).
+Finally, the 2nd cycle Degree in Electronics Engineering allows access - after passing the national qualification exam - to Section A of the Register of Engineers - Information Sector.
+Skills:
+The skills of a 2nd cycle graduate in Electronic Engineering (Modern Electronics curriculum) range from the semiconductors and materials physics used in microelectronics, to manufacturing technologies of devices and integrated circuits, to their design techniques, up to and including characterization methods by means of electronic measuring and testing equipment.
+In detail, the educational profile of the Degree in Electronic Engineering provides high-tech skills in all typical electronic fields, namely in:
+-  the design and production of micro and nanoelectronics devices, sensors and actuators.
+-  the design and production of analogic, digital or mixed (A/D) circuits, also for radiofrequency applications.
+- the design of integrated circuits and systems (system on chip): this activity includes the design of the board and its layout, the organization of production, and the final inspection.
+- the design and production of electronic components, subsystems and systems.
+- the design, operation and maintenance of electronic systems for applications in different fields, such as automotive, energy, the environment, bioengineering and in the medical field (image diagnostics, genetic diagnostics and molecular medicine)
+- the evaluation and installation of electronic equipment and components for communications networks.
+- the electronic control of equipment, machines, industrial production chains.
+- The operation of measurement systems, laboratories and production lines.
+Professional opportunities:
+The employment areas typical of graduates in Electronics Engineering (Modern Electronics curriculum) are numerous, for example:
+- in the industry, for the design or development of semiconductors, integrated circuits, components, electronic devices and systems, electronic instrumentation for consumer applications (such as audio, video, telephony, IT) or for biomedical, automation and robotics industries, telecommunications, transport, aeronautics, energy.
+- companies producing, marketing and distributing electronic, IT and biomedical products and devices.
+- manufacturing and service companies using electronic technologies and infrastructures for automation and control.
+- productive and operational facilities that employ electronic technologies and infrastructures for signals processing in the civil, industrial and information fields.
+- public administrations.
+- electronic design consulting companies.
+- national and international scientific and technological research agencies.
+- research and development laboratories.
+- regulatory and control bodies.
+- freelance activities for the design and implementation of electronic systems.
+Finally, it should be noted that graduates, thanks to their advanced competences, may access higher responsibility positions than first-cycle graduates, and therefore access more quickly high technical-managerial positions.
+Profile:
+Electronics Engineer – specialisation in Telecommunications 
+Functions:
+The educational profile of the 2nd cycle Degree in Electronics Engineering - curriculum Telecommunications enables graduates to operate, even autonomously, in the sectors of design, engineering, production, operation and maintenance of telecommunications systems, as well as in adjacent sectors of information engineering. Graduates also deepen the study of telecommunication systems and information coding. The training is completed and supplemented by laboratory experiences and elements of interdisciplinary culture ranging from Telecommunications and Automotive to Energy and Optoelectronics sectors.
+The typical professional fields for graduates are public and private companies, not only those in Information and Communications Technology, but also in manufacturing, services and technical-commercial sectors.
+Skills:
+The organization of the training path and the individual teaching modules have been designed to provide graduates with adequate and up-to-date training in the various areas of telecommunications: broadband communication systems, advanced modulation techniques, signal processing, networking and inter-networking technologies, systems management.
+Finally, the training provides the tools and skills to carry out professional activities of technical "support" and operation of network structures in all those sectors whose productivity is now strongly connected to the capacity and efficiency of telecommunications networks (e.g.: airports, air traffic control bodies, banking groups or insurance companies, distribution companies, public administration).
+The skills provided by the course include:
+- planning of ICT infrastructure, systems and services.
+- management of ICT infrastructures, systems and services.
+- design of technologies and platforms for data acquisition, transport, distribution and analysis.
+- analysis and sizing of telecommunications equipment, systems or networks.
+- ability to experiment and develop new telecommunications technologies.
+- ability to study and update telecommunications equipment, systems or networks.
+- ability to create, modify or verify software and other applications related to the management and operation of telecommunications networks.
+- ability to prepare reports or technical documents.
+After qualifying for the profession of engineer, graduates can also deal with the issues related to the legislation, safety and testing of works in the ICT field.
+Professional opportunities:
+The main employment opportunities of graduates in Electronics Engineering with a specialization in Telecommunications include:
+- Companies for the Design, production and operation of equipment, systems and infrastructures for the acquisition, processing and transport of information (data, voice and images) on fixed and mobile networks, remote observation and surveillance, performance monitoring of telecommunications networks and of service quality.
+- Healthcare companies, for the management of biomedical instrumentation and the design, implementation and management of innovative healthcare services.
+- Manufacturing companies in the fields of online telematics and multimedia networks, such as e-commerce and electronic publishing, Internet services, telemedicine and remote surveillance.
+- Public and private companies providing terrestrial or space telecommunications services.
+- Public and private companies providing aggregation and distribution services for mono and multimedia content for both information and entertainment purposes, including customized ones.
+- Companies providing telematic services.
+- Regulatory bodies and public control bodies (e.g. market regulation or air, land and ship traffic control).
+- Public bodies interested in environmental monitoring and protection.
+- Public and private companies of different sectors, needing professionals for the development and use of telecommunications systems and services in the areas of internal organization, production and marketing, as freelancers in the fields of analysis, design and operation of telecommunications, health and telecommunications security systems.
+- Specially established companies destined to build wireless networks to bridge the 'Digital Divide'
+The typical employment opportunities for 2nd cycle graduates in Electronics Engineering with a specialization in Telecommunications may be found at companies designing and/or producing systems and equipment for telecommunications and at network companies operating complex telecommunications systems, at public and private companies and institutions, providing telecommunications, remote sensing and traffic control services. This is consistent with the objective of providing graduates with the widest employment perspectives on the national territory and in the EU.
+Profile:
+Electronic Engineer, specialised in Robotics and Mechatronics
+Functions:
+Graduates in Electronic Engineering, “Electronics for Robotics and Mechatronics” curriculum, have a cultural and professional profile focused on scientific and technological knowledge of Mechatronic engineering and is capable of identifying, formulating and solving, even in an innovative way, complex problems or those requiring an interdisciplinary approach. With the skills acquired, they act as catalysts in the management and logistics of large production systems and are able to conceive, plan, design and manage complex and/or innovative systems, processes and services, exploiting their knowledge of context and soft skills.
+They possess in-depth knowledge of the analysis and design methods typical of Automation Engineering, enabling them to introduce into a complex system the “intelligence” needed to manage its operation without human intervention (automatic control), optimizing in some sense its operation and dominating the interaction among the various components of the system as well as the one between the system and the surrounding environment.
+Graduates in Electronics Engineering, "Electronics for Robotics and Mechatronics" curriculum, are also able to deal with complex problems in intrinsically multidisciplinary contexts being therefore capable of interfacing with the specialists of the process and systems to be automated, to suggest more effective operational and design solutions in technical and economic terms.
+They are therefore endowed with specific skills enabling them to fit promptly into very different working environments, operating as systems engineers and/or designers and/or technicians in any application context where the technologies and principles of automation play an important role.
+The functions performed by graduates in Electronics Engineering, "Electronics for Robotics and Mechatronics" curriculum in a work context can be summarized as follows:
+1) process and system analyst.
+2) designer of control systems.
+3) technician for planning, programming, monitoring, management, maintenance and automation of complex processes and systems.
+Skills:
+The skills provided by the Degree in Electronic Engineering,"Electronics for Robotics and Mechatronics", curriculum include:
+- the identification of descriptive models of real processes and systems.
+- the study of the properties of models aimed at studying the behaviour of real processes and systems (operating limits and potential).
+- the identification of control methodologies starting from the models.
+- the definition of project specifications for the control of processes and systems.
+- the planning and evaluation of control laws and strategies, based on the model of the real process or system, in accordance with the project specifications.
+- simulation of processes and systems, for their analysis and validation of the relative laws and control strategies.
+- implementation on digital systems of rapid prototyping and ability to conduct experiments on such systems.
+- theoretical and experimental development of innovative control methodologies and strategies.
+- design, management and implementation of automatic data acquisition and processing, measurement and control systems in real time, typical of digital control systems.
+- monitoring, management, maintenance and automation of complex processes and systems.
+opportunities:
+The main employment opportunities of graduates in Mechatronics include:
+- electronic, mechanical, automotive, electromechanical, aerospace, chemical and industrial, mobile and underwater robotics companies.
+- companies producing services (purification, transport, energy, civil and industrial automation).
+- research and development centres and laboratories for the automation sector.
+- public administration.
+- freelancer.
+Profile:
+Electronic Engineer: specialization in Bioelectronics
+Functions:
+This curriculum enables graduates to operate, even independently, in the fields of design, engineering, production, use, testing and maintenance of sensors, instrumentation and biomedical software for diagnostic or therapeutic support, for monitoring healthy or ill subjects (even directly in their home, assisted living environments), but also for telemedicine. They also deepen the analysis and modelling of biomedical data and signals, as well as image processing and archiving systems. Their preparation is completed and integrated by laboratory experiences.
+Skills:
+end cycle graduates in Electronics Engineering, “Bioelectronics” curriculum, have a solid basic training in the disciplines concerning electronics and ICT, with highly specialized skills in the field of sensors and diagnostic instrumentation, electronics and Internet of Things (IoT) for biomedical applications (for the acquisition, storage, treatment and transfer of biomedical data and signals), and for the analysis, modelling, processing and storage of signals, images and medical-biological data.
+The knowledge and skills provided in the course include:
+- solid (common) basic training in the electronics sector.
+- ability to analyse and process medical-biological signals, images and data.
+- ability to apply electronic circuit design techniques, methodological tools and quantitative methods for the study of physiological systems.
+- ability to extract, through adequate algorithms, physiological indexes starting from biosignals acquired on various districts (e.g. cardiovascular, cerebral) using suitable algorithms
+- ability to experiment and develop new algorithms for the modelling and description of physiological phenomena.
+- design, engineering, production, use and maintenance of biomedical sensors.
+- design, engineering, production, use and maintenance of biomedical instrumentation for diagnostic or therapeutic support, but also for telemedicine,
+- ability to design, develop and implement biomedical software.
+- ability to draw up reports or technical documents concerning biomedical instrumentation.
+Professional opportunities:
+The main employment opportunities of the graduates in Electronics Engineering, “Bioelectronics” curriculum, are the following:
+- Companies, healthcare facilities and specialized clinical laboratories for the management of biomedical instrumentation and the design, implementation and management of innovative healthcare services.
+- Companies designing, manufacturing and operating biomedical sensors, instrumentation or software.
+- Companies designing, developing and producing systems and infrastructures relating to the acquisition, processing and transport of biomedical data and signals.
+- Scientific institutions of hospitalization and care, to carry out clinical research activities, as well as management of health services.
+- national and international scientific and technological research bodies.
+- research and development laboratories.
+- regulatory and control bodies.
+- freelance activity for the design and construction of electronic systems for biomedical applications.
+---------
+Final examination features
+The final examination of the 2nd cycle degree Course in Electronics Engineering consists of the discussion of a written text (Degree thesis) prepared by the student under the guidance of an academic supervisor.
+The thesis, whose topic must be approved in advance by the Board of the Degree courses, delves into issues of significant scientific value and preferably addresses studies and achievements related to innovative aspects of Electronics typical research sectors.
+---------

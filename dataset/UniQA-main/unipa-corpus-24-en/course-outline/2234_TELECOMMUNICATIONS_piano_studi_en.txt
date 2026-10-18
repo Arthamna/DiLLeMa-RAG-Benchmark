@@ -1,0 +1,56 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ELECTRONICS ENGINEERING
+Curriculum: TELECOMMUNICATIONS
+For more information visit http://www.unipa.it/struttura.html?id=1874
+---------
+Class of Master's Degree (MSc) on Electronic engineering (LM-29)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with UNIVERZITA PARDUBICE, Pardubice (CZECH REPUBLIC)
+Course Code 2234
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19220	CYBERSECURITY (in english)	GALLO	6	1° semestre	ING-INF/05
+20516	 APPLIED AND INDUSTRIAL ELECTRONICS - INTEGRATED COURSE (in english)	LULLO	15	1° semestre	
+	LABORATORY OF APPLIED AND INDUSTRIAL ELECTRONICS (in english)	SCIRE'	3		ING-INF/01
+	INDUSTRIAL ELECTRONICS (in english)	VITALE	6		ING-INF/01
+	APPLIED ELECTRONICS (in english)	LULLO	6		ING-INF/01
+20513	ELECTRONIC PROGRAMMABLE SYSTEMS (in english)	GIACONIA	9	2° semestre	ING-INF/01
+20515	ELECTRONIC INSTRUMENTS AND MEASUREMENTS FOR AUTOMATION AND TELECOMMUNICATIONS (in english)	ARTALE	9	2° semestre	ING-INF/07
+20520	ANTENNAS AND WIRELESS SYSTEMS (in english)	CINO	6	2° semestre	ING-INF/02
+20525	MICROWAVE ELECTRONICS - INTEGRATED COURSE (in english)	STIVALA	12	2° semestre	
+	MICROWAVE COMPONENTS (in english)	STIVALA	6		ING-INF/01
+	MICROWAVE CIRCUITS (in english)	STIVALA	6		ING-INF/01
+	Optional subjects		6		
+	Optional subjects II		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19694	WIRELESS NETWORKS (in english)	TINNIRELLO	6	1° semestre	ING-INF/03
+20511	DIGITAL COMMUNICATIONS (in english)	MANGIONE	6	1° semestre	ING-INF/03
+05917	FINAL EXAMINATION		24	2° semestre	
+	Stage and others		6		
+	Free subjects (suggested)		9		
+
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+05034	DIGITAL SIGNAL PROCESSING	GARBO	6	1° semestre	ING-INF/03
+20523	DIGITAL SIGNAL PROCESSING (in english)	CROCE	6	1° semestre	ING-INF/03
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19641	PHOTOVOLTAIC DEVICES AND TECHNOLOGIES (in english)	CRUPI	6	1° semestre	ING-INF/01
+20512	OPTOELECTRONIC DEVICES (in english)	MOSCA	6	1° semestre	ING-INF/01
+17878	MACHINE LEARNING	TINNIRELLO	6	2° semestre	ING-INF/03
+24180	MODERN PHYSICS FOR ENGINEERS (in english)	BASILE	6	2° semestre	FIS/07
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01751	ELECTROMAGNETIC FIELDS	CINO	9	1° semestre	ING-INF/02
+21984	ELECTRIC AND ELECTRONIC MEASUREMENTS (in english)	CATALIOTTI	9	1° semestre	ING-INF/07
+17883	EMBEDDED SYSTEMS ELECTRONICS	GIACONIA	6	2° semestre	ING-INF/01
+

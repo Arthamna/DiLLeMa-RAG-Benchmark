@@ -1,0 +1,82 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on NEUROPHYSIOPATHOLOGY TECHNIQUES
+Curriculum: NEURO-PHYSIOPATHOLOGY TECHNIQUES
+For more information visit http://www.unipa.it/struttura.html?id=2252
+---------
+Class of Bachelor's Degree (BSc) on Technical health professions (L/SNT3)
+Duration 3 years
+Location PALERMO
+Number of seats in national planning: 20
+Department of Biomedicine, Neurosciences and Advanced Diagnostics
+Course Code 2267
+---------
+Educational objectives
+The TNFP course aims at training innovative professionals in a neurological sector offering graduates new opportunities to enter the labour market.
+In particular, the course aims at enlarging and improving efficiency in the prevention and diagnosis of neurological diseases through the acquisition of skills on biomedical equipment for the detection of bioelectrical signals from the peripheral and central nervous system.
+This professionals carry out Electromyography and Nerve Conduction Speed, Evoked Potentials, Electroencephalograms, Polysomnography, Ultrasounds and neurophysiological monitoring in intensive care and operating room; they can also interface with the staff of manufacturing companies and with clinical engineering for testing, maintenance, updating and programming the equipment used in Neurology and Neurophysiopathology facilities.
+The educational programme will provide advanced technical-scientific skills for recording neurological signals from patients, as well as a in-depth study Anatomy, Neurophysiology, Clinical Neurology and Neurophysiopathology.
+The complete three-year course provides a total of 180 ECTS, among which 60 credits are envisaged for professionalizing/qualifying internship, 6 for elective courses, 9 for the final examination and English language, 6 for other activities (IT, seminar activities etc.), 3 for related/integrative activities 
+The professional internship, at the University Hospital or other external facilities, is designed to better adapt the profile of the technician to the actual demands of the labour market.
+More specifically, graduates in Neurophysiopathology techniques, in accordance with the European Union guidelines, must achieve specific training objectives, with a progressive knowledge acquisition stemming from the chronological articulation of the educational programme over the three course years.
+During the first year, students will acquire notions regarding the essential theoretical aspects from the basic sciences, fundamental to professional application, with respect to:
+- Aspects relating to the biological organization of living beings and to the molecular and biochemical mechanisms underlying the life processes;
+- Elementary genetics knowledge related to transmission and expression of gene information;
+- Basic notions of applied physics, electrology, bioengineering, computer science and statistics, preliminary to the understanding of the generation, recording and interpretation of bioelectric signals and clinical electrophysiology data;
+- Notions related to the anatomical structural characteristics (macro and microscopic) of the human body (with particular regard to the anatomic-clinical aspects) and their functional organization (with particular attention to the nervous system);
+- Knowledge of the basic mechanisms of pathologies, infectious diseases and prevention strategies;
+- Notions related to the mechanisms of action, side effects, toxicity of drug classes, toxic and drugs of abuse;
+- English language notions aiming at understanding international literature and professional updating
+During the first year the learner will also acquire notions related to:
+-The main diseases of the peripheral and central nervous system;
+- The clinical, methodological and applicative characteristics of the electroencephalographic signal recording;
+- legal, medico-legal and deontological principles of the profession.
+The first year internship activities will mainly focus on electroencephalography: students will learn the procedures for preparing the patient, positioning the electrodes, checking the efficiency of the connections, recording the signal, identifying and signalling artefacts, the preparation of a technical report independently.
+The second year will be more dedicated to applicative and characterizing aspects, related to:
+- skills related to those pathologies of organs and systems whose basic knowledge is fundamental for the different areas of activity and patients managed by the NPT:
+- neuropsychiatric diseases in children and psychiatric diseases in adults, the latter sector also relevant for brain neurostimulation treatments in depression and other psychiatric pathologies in adults,
+ - diseases of the motor system and of the cardiovascular and respiratory systems;
+- Acquisition of specific advanced theoretical-practical skills regarding other techniques of clinical electrophysiology:
+-Electromyography and electroneurography;
+- Evoked potentials;
+- Polysomnographic techniques;
+- Non-invasive brain stimulation.
+Consistent with the theoretical acquisition, the second year internship will focus on the application of the relevant electrophysiological techniques:
+-Common traits: acquisition of the ability to prepare patients for the examination, selection and application of electrodes, recording of signals, control and resolution of impedance problems, ability to draw up a technical report independently.
+-Electromyography-electroneurography: acquisition of the most commonly used stimulation procedures of the limbs and face nerve trunks as well as of special nerve districts, repetitive stimulation techniques for the study of the neuromuscular junction;
+-Evoked potentials: preparation of the patient for each of the techniques used (potentials, visual, acoustic, somatosensory, motorial); knowledge and application of the stimulation and recording procedures in the different modalities.
+-Polysomnographic techniques: ability to manage the patient during the polygraphic recording during night sleep or afternoon siesta, assembly and control of the systems and recording channels of the various signals: EEG, EMG, ECG, aptogram, O2 variations.
+-Non-invasive brain neurostimulation: acquisition of brain stimulation procedures with:
+- magnetic fields (transcranial magnetic stimulation) for clinical diagnostics of locomotor system pathologies and for other therapeutic and rehabilitative applications, also in research settings: stimulation parameters setting: intensity, frequency, duration of trains; response recording modalities.
+- low amperage direct or alternating electric currents, the latter for applications, more of an experimental nature in research sets: setting of stimulus parameters: intensity, frequency (for alternating currents) duration of stimulation; response recording modalities.
+The third year will be dedicated to specific activities in more complex contexts:
+- Acquisition of basic skills in areas of pathology in which it can be called to carry out its function, such as anaesthesia and resuscitation, neurosurgery, plastic surgery, vascular surgery, etc.
+- Acquisition of skills related to radiological and neuro-radiological imaging, which are useful for a better orientation in specific recording sets as well as for the knowledge of the radiation protection standards provided by the European Union.
+- Acquisition of specific advanced theoretical and practical skills with respect to other more complex clinical electrophysiology techniques or neurophysiological techniques on Doppler signal:
+-Neurophysiopathology in the Critical area and electrophysiological monitoring;
+- Assessment of brain death, technical and ethical-legal aspects;
+-Ultrasound.
+-In the last year the acquisition of skills in the field of health management sciences is provided, to complete the clinical technical process, aiming at providing general skills useful to facilitate and promote the entrance in work contexts for Neurophysiopathology technicians, who must interface profitably with various health professionals.
+Finally, the third year internship activity provides the practical skills related to recordings in particularly complex sets, such as the critical area, intraoperative electrophysiological monitoring and brain death tests. Students will participate directly in these activities acquiring the necessary skills to independently manage all the required procedures.
+---------
+Professional opportunities
+Profile:
+Neurophysiopathology technician
+Functions:
+These professionals carry out their activity in the diagnosis of pathologies of the nervous system, directly applying, on medical prescription, specific diagnostic methods in the neurological and neurosurgical fields (electroencephalography, electromyography, electroneurography, polygraphy, polysomnography, motorial, somatosensory, acoustic, visual, laser evoked potentials, neuromuscular ultrasound, Doppler ultrasound). They apply the most suitable methods to record bioelectrical phenomena, with direct intervention on the patient and on the equipment for the purpose of creating a diagnostic-instrumental work program or neurophysiological research, prepared in close collaboration with the specialist doctor; they have direct responsibility in the application and the final result of the diagnostic method they use; they use diagnostic-instrumental methods to ascertain the electro-cerebral activity for clinical and/or medico-legal purposes; they provide for the preparation and control of the equipment.
+Skills:
+The knowledge of anatomy, neurophysiology and of the main neurological pathologies on the one hand and of the fundamentals of physics, computer science and of the transmission of bioelectrical signals on the other, enable this professional to independently apply the best diagnostic technique to detect the patients' nervous or neuromuscular system pathologies.
+Professional opportunities:
+The neurophysiopathology technician can work in all public, private, accredited  and IRCCS healthcare facilities, Local healthcare agencies, hospitals, university hospitals, rehabilitation centers, nursing homes, private and affiliated hospitals, medical and multi-specialty clinics, individual or associated clinics, commercial industrial companies of neurophysiological equipment, as employees or freelancers.
+---------
+Final examination features
+For the attainment of the Degree, a final examination, entitling to the State qualification for professional practice is envisaged. To be admitted to the final exam, students must have followed all the courses, passed the relative exams and obtained 174 of the 180 credits required by the degree course; the remaining 6 credits are awarded to the final examination.
+The final aims at ascertaining the level achieved by the student in the basic and class-specific knowledge and the specific professional preparation.
+Considering that the degree course in TNFP, pertaining to class 3 of the degrees in technical health professions pursuant to art. 6, paragraph 3, of the Legislative Decree. n. 502/92 and subsequent amendments, in addition to the academic value, the final examination has the value of a state exam and therefore enables the exercise of the health profession of
+Neurophysiopathology technician.
+The final examination consists of two different moments of evaluation:
+a) a practical test during which the student must demonstrate the acquisition of the theoretical-practical and technical-operational knowledge and skills of the specific professional profile;
+b) the drafting of a thesis and its discussion. The thesis will be elaborated in an original way by the student under the guidance of a teacher who will also perform the function of supervisor in the discussion.
+The practical test is structured in such a way as to allow candidates to demonstrate that they have acquired the knowledge and practical and technical skills included in the operational context envisaged by their professional profile.
+The academic evaluation will be related to the thesis focused on the peculiarity of the profession of neurophysiopathology technician.
+The different parts of the single final examination must be assessed separately, both contributing to the determination of the final grade
+---------

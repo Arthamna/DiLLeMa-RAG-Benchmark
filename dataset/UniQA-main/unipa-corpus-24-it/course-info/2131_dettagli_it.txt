@@ -1,0 +1,42 @@
+Anno Accademico 2024/2025
+Laurea in STATISTICA PER L'ANALISI DEI DATI
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=557
+---------
+Classe di Laurea in Statistica (L-41)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2131
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Le indicazioni provenienti dalle parti interessate (mondo del lavoro, studenti, docenti), nonché dai sempre più frequenti articoli giornalistici dedicati al tema del "data scientist", confermano l'esigenza di figure professionali esperte nella produzione e gestione di informazioni quantitative e qualitative, e nella valorizzazione dei patrimoni informativi di aziende e istituzioni, al fine di coadiuvare l'attività di gestione e di valutare gli effetti delle decisioni.
+Il Corso di Laurea in Statistica, coerentemente con quanto richiesto dagli obiettivi formativi qualificanti della classe, si propone di ottenere una figura di laureato che, dotato di una adeguata preparazione di base nell'ambito della Matematica, della Statistica e della Gestione informatica dei dati, sia capace di operare in vari settori di applicazione con buon grado di autonomia e responsabilità e di inserirsi sul mercato del lavoro come soggetto qualificato, in grado di produrre e gestire flussi informativi, di utilizzare sistemi informatici per raccogliere informazioni, elaborarle e ricavarne indicazioni strategiche, per infine distribuirle ai giusti livelli di dettaglio e con le modalità tecnologiche più opportune.
+Gli elementi più importanti del Corso di laurea sono la:
+- presenza di una attività formativa di base negli ambiti Informatico, Matematico, Statistico-probabilistico, che assicuri allo studente un'adeguata padronanza di metodi e contenuti scientifici generali;
+- attivazione di un unico percorso comune a tutti gli studenti, adattando un modello che miri a fornire competenze nei vari campi di applicazione della statistica. A questo fine, è previsto che gli studenti spendano un ragguardevole numero di crediti in attività formative incluse in tre dei cinque ambiti caratterizzanti previsti dal DM: Statistico-statistico applicato-demografico; Economico aziendale; Informatico-matematico applicato;
+- indicazione di una discreta gamma di attività formative affini e integrative, suddivise essenzialmente in 3 gruppi. Il primo gruppo contiene insegnamenti che serviranno ad integrare la preparazione del laureato, al fine di ampliare la sua conoscenza negli ambiti del trattamento dei dati, della sociologia e della epidemiologia. Il secondo e terzo contengono settori disciplinari presenti tra le attività caratterizzanti la Classe L-41 (ovvero quello aziendale e quello demografico) ritenute utili per approfondire gli argomenti economici e demografici. Inoltre, il CdL propone e suggerisce un elenco di insegnamenti, ritenuti comunque importanti, per aiutare lo studente ad individuare, nell'ambito degli "Insegnamenti a scelta libera", le attività formative la cui coerenza con il percorso formativo sia assicurata. Tale pacchetto di materie, assolutamente non vincolate per lo studente, viene aggiornato ogni anno sulla base dell'offerta formativa proposta dall'Ateneo e pubblicato nella sezione "Altre attività formative" del sito del CdS;
+- formazione non basata solo su lezioni frontali, ma integrata con esercitazioni e laboratori, che affiancheranno l'attività didattica tradizionale e nei quali saranno discussi casi, si approfondiranno temi di rilevanza economico-sociale. In tal senso, l'Offerta Formativa prevede ben quattro insegnamenti dedicati agli aspetti informatici, sia generali sia prettamente statistici, in modo da assicurare al laureato la capacità di gestione delle informazioni, secondo le modalità più richieste dal mercato del lavoro. L'attività di laboratorio sarà rivolta ad applicazioni statistiche di tipo generale e applicato, in modo da chiarire i limiti e le opportunità dello statistico nei vari campi di applicazione. Questo è finalizzato a sviluppare nello studente un'adeguata capacità critica che, partendo da una solida base metodologica, lo porti a mantenere costante attenzione anche al processo di formazione dei dati - nei suoi aspetti di concettualizzazione, definizione e misura - e a un uso critico di teorie e metodi in relazione alla natura e al significato delle informazioni disponibili;
+- possibilità di svolgere un tirocinio formativo presso aziende o organizzazioni private e pubbliche (fino a 6 CFU);
+- possibilità di svolgere una attività di Consulenza statistica (3 CFU - "ulteriori conoscenze utili per il mondo del lavoro") in cui si "mima" una consulenza statistica vera e propria, sotto la supervisione di docenti del Corso. L'obiettivo è fornire agli studenti le competenze di base, anche di tipo trasversale, oltre che professionale, per la conduzione di una attività di consulenza statistica. Tale esperienza, oltre a essere un'utile vetrina nei confronti delle aziende, o di singoli individui, è sicuramente un valore aggiunto per il neo laureato che si affaccia sul mondo del lavoro, perché ha avuto modo di sperimentare direttamente le proprie capacità relazionali e professionali con dei futuri clienti/utenti.
+---------
+Sbocchi Occupazionali
+Profilo:
+Tecnico statistico
+Funzioni:
+La figura professionale che un laureato della classe L41 può ricoprire unisce competenze informatiche inerenti alla costruzione e alla gestione di banche dati, attraverso l'uso di software specifico, a competenze statistiche relative alla descrizione, l'analisi, la modellazione e l'interpretazione di dati economico, sociali, e medico/sanitari. Questa figura professionale sara' infine competente nello sviluppare un rapporto statistico sui fenomeni in esame.
+Competenze:
+Gli sbocchi professionali previsti consistono in tutte le attività lavorative in cui sia richiesta competenza nella produzione, elaborazione, gestione e interpretazione di dati.
+I dati possono essere di natura economica, aziendale, sociale e medico-sanitaria.
+Le competenze possono essere riassunte nella figura professionale di data scientist di base.
+Un laureato nella classe L-41 potrà inoltre partecipare alla progettazione e alla verifica dei risultati di esperimenti e prove cliniche controllate, condurre attività di valutazione rivolte alla gestione della qualità e alla misurazione delle performance, alla certificazione dei dati statistici, partecipare alla analisi e alla elaborazione dei dati per indagare i fenomeni e per effettuare previsioni nei vari ambiti applicativi, e infine, progettare e gestire ed utilizzare banche dati per finalità varie.
+Sbocchi:
+Un laureato in L41 potra' ricoprire il ruolo di tecnico statistico nelle pubbliche amministrazioni, in uffici di progettazione e sperimentazione di aziende operanti nei settori biomedico ed epidemiologico, in uffici statistici di medio-grandi imprese, in uffici marketing di imprese di produzione e di distribuzione, in società di gestione di sistemi informativi, in società di consulenza statistica che svolgono attività di supporto esterno ad aziende/enti private e pubbliche e in enti di ricerca pubblici e privati.
+Le competenze e le conoscenze acquisite durante il Corso sono adeguate al proseguimento degli studi verso le LM-82 e LM-83, mentre con l'acquisizione di ulteriori CFU si puo' accedere al CdLM in Scienze Economiche.
+---------
+Caratteristiche della Prova Finale
+Per conseguire la laurea lo/a studente/ssa deve aver acquisito 180 crediti formativi compresi quelli relativi alla prova finale, pari a 3 CFU.
+La prova finale ha l'obiettivo di verificare il livello di maturità e la capacità critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attività previste dell'ordinamento didattico.
+La prova finale consiste in un colloquio sull'attività di tirocinio svolta o su un argomento a scelta tra quelli proposti dal Consiglio Interclasse di Corso di Studi, secondo le modalità definite dal regolamento sulla prova finale del Corso di Laurea, nel rispetto e in coerenza della tempistica, delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+---------

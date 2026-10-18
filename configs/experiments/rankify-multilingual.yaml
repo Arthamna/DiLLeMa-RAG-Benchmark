@@ -1,6 +1,6 @@
 dataset: its
 # Relative paths are resolved from this YAML file.
-source: ../../../langchain-chatbot-main/dataset
+source: ../../dataset/langchain-chatbot-main/dataset
 index_root: ../../artifacts/indexes
 rankify_python: ../../.venv-rankify/bin/python
 

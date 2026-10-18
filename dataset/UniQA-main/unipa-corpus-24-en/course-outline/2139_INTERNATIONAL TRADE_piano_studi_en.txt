@@ -1,0 +1,43 @@
+Academic year 2024/2025
+Master's Degree (MSc) on INTERNATIONAL RELATIONS
+Curriculum: INTERNATIONAL TRADE
+For more information visit http://www.unipa.it/struttura.html?id=1482
+---------
+Class of Master's Degree (MSc) on International relations (LM-52)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Political Sciences and International Relations
+Course Code 2139
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+15905	INTERNATIONAL TRADE LAW (in english)	CASABONA	12	1° semestre	IUS/02
+20652	CONTEMPORARY WORLD HISTORY (in english)	PATTI	6	1° semestre	M-STO/04
+20648	GLOBALIZATION AND EUROPEAN ECONOMIC HISTORY (in english)	ASSO	12	2° semestre	SECS-P/04
+20650	GLOBAL POLITICS AND INTERNATIONAL SECURITY (in english)	MONTELEONE	12	2° semestre	
+	INTERNATIONAL SECURITY (in english)	BALDARO	6		SPS/04
+	GLOBAL POLITICS (in english)	MONTELEONE	6		SPS/04
+22629	AFRICAN HISTORY AND INSTITUTIONS (in english)	PUDDU	6	2° semestre	SPS/13
+	Free subjects (suggested)		12		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+18285	BUSINESS ENGLISH (in english)		6	1° semestre	L-LIN/12
+20651	COMPETION LAW & INTELLECTUAL PROPERTY RIGHTS (in english)	GARILLI	12	1° semestre	
+	COMPETITION LAW (in english)	GARILLI	6		IUS/04
+	INTELLECTUAL PROPERTY RIGHTS (in english)	GARILLI	6		IUS/04
+20676	INTERNSHIP (in english)		12	1° semestre	
+21342	BUSINESS STRATEGY (in english)	COSENZ	6	1° semestre	SECS-P/07
+20658	FINAL THESIS (in english)		18	2° semestre	
+	Optional subjects		6		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+17108	EUROPEAN INTERNATIONAL TAX LAW (in english)	PARLATO	6	1° semestre	IUS/12
+20649	CORPORATE TAX AND CUSTOMS REGIMES (in english)	PERRONE	6	1° semestre	IUS/12
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21252	INTERNATIONAL TRANSPORT LAW AND LOGISTICS	RIGAZIO	12	1° semestre	IUS/01
+

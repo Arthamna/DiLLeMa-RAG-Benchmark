@@ -1,0 +1,40 @@
+Anno Accademico 2024/2025
+Laurea magistrale in MUSICOLOGIA E SCIENZE DELLO SPETTACOLO
+Curriculum: SCIENZE DELLO SPETTACOLO (LM-65)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1561
+---------
+Classe di Laurea magistrale in Musicologia e beni musicali (LM-45)Classe di Laurea magistrale in Scienze dello spettacolo e produzione multimediale (LM-65)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Umanistiche
+Codice corso 2192
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18403	ORGANIZZAZIONE E PRODUZIONE DELLO SPETTACOLO - CORSO AVANZATO		6	1° semestre	SECS-P/10
+20691	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2		6	1° semestre	
+22164	ICONOGRAFIA MUSICALE	TUFANO	6	1° semestre	L-ART/07
+22166	STRUMENTI DELLA RICERCA E DELLA PRATICA MUSICALE	TEDESCO	12	1° semestre	
+	STRUMENTI DELLA RICERCA	TEDESCO	6		L-ART/07
+	STORIA E TECNOLOGIA DEGLI STRUMENTI MUSICALI		6		L-ART/07
+18424	TEORIE E TECNICHE DELLA RECITAZIONE	SICA	12	2° semestre	L-ART/05
+20418	STORIA E DIDATTICA DEL TEATRO MUSICALE	TEDESCO	9	2° semestre	L-ART/07
+21089	TEORIE DEL CINEMA C.A.	CERVINI	6	2° semestre	L-ART/06
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05917	PROVA FINALE		15	1° semestre	
+09046	STORIA DELLA RADIO E DELLA TELEVISIONE	SCHEMBRI	6	1° semestre	L-ART/06
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		6	1° semestre	
+22163	CINEMA E PAESAGGIO	CERVINI	6	1° semestre	L-ART/06
+18423	DRAMMATURGIA - CORSO AVANZATO	SICA	6	2° semestre	L-ART/05
+19727	LETTERATURA TEATRALE IN LINGUA INGLESE	DI MAIO	6	2° semestre	L-LIN/10
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21451	ESTETICA DELLO SPETTACOLO	DI STEFANO	6	1° semestre	M-FIL/04
+18405	PSICOLOGIA DELLA PERCEZIONE SONORA	CALI'	6	2° semestre	M-FIL/04
+

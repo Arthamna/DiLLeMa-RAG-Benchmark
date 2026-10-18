@@ -1,0 +1,52 @@
+Anno Accademico 2024/2025
+Laurea magistrale in EDUCAZIONE AL PATRIMONIO ARCHEOLOGICO E ARTISTICO
+Curriculum: EDUCAZIONE AL PATRIMONIO ARCHEOLOGICO E ARTISTICO (LM-2)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2699
+---------
+Classe di Laurea magistrale in Archeologia (LM-2 R)Classe di Laurea magistrale in Storia dell'arte (LM-89 R)
+Durata 2 anni
+Sede AGRIGENTO
+Accesso libero
+Dipartimento di Culture e società
+Codice corso 2313
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23872	MUSEOLOGIA E STORIA DEL COLLEZIONISMO PER LE ARTI DECORATIVE	INTORRE	8	1° semestre	L-ART/04
+23875	PUBLIC HISTORY: STORIA ANTICA PER IL XXI SECOLO	SAMMARTANO	9	1° semestre	L-ANT/02
+23876	ARCHEOLOGIA E STORIA DELL’ARTE CLASSICA: TEMI E PERCORSI	PORTALE	9	1° semestre	L-ANT/07
+23880	TRANSLATING ARCHAEOLOGY FOR THE PUBLIC		6	1° semestre	L-ANT/07
+23866	STORIA DELL’ARCHITETTURA: TEMI E PERCORSI	DI FEDE	8	2° semestre	ICAR/18
+23869	STORIA DELL’ARTE MEDIEVALE E MODERNA: TEMI E PERCORSI	TRAVAGLIATO	12	2° semestre	
+	STORIA DELL’ARTE MEDIEVALE	TRAVAGLIATO	6		L-ART/01
+	STORIA DELL’ARTE MODERNA	DE CASTRO	6		L-ART/02
+23879	TELLING HISTORICAL NARRATIVES FROM CULTURAL HERITAGE (in inglese)		6	2° semestre	L-ANT/02
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07553	TIROCINIO		8	1° semestre	
+23862	ENGLISH FOR CULTURAL HERITAGE (in inglese)		3	1° semestre	
+23865	IL PATRIMONIO ARCHIVISTICO IN PROSPETTIVA MAB	MANALI	6	1° semestre	M-STO/08
+23867	EDUTAINMENT E TIC PER IL PATRIMONIO CULTURALE		3	1° semestre	
+05917	PROVA FINALE		12	2° semestre	
+	Gruppo di attiv. form. opzionali II		6		
+	Gruppo di attiv. form. opzionali III		6		
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23868	HUMAN COMMUNITIES AND ENVIRONMENT DURING PREHISTORY (in inglese)	FORGIA	6	2° semestre	L-ANT/01
+23870	INTERPRÉTATION DES PAYSAGES HISTORIQUES (in francese)	POLIZZI	6	2° semestre	L-ANT/09
+23873	SOCIETÀ E CULTURA IN ETÀ TARDO-MEDIEVALE E MODERNA	CUSUMANO	6	2° semestre	M-STO/02
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23860	ARCHEOCHIMICA	SALADINO	6	1° semestre	CHIM/02
+23863	RESTAURO E INTERPRETAZIONE DEL PATRIMONIO CULTURALE	PRESCIA	6	1° semestre	ICAR/19
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23861	LEGISLAZIONE DEL PATRIMONIO CULTURALE ED EDUCAZIONE	VENTIMIGLIA	6	1° semestre	IUS/10
+23864	ECONOMIA E PROGETTAZIONE	RUISI	6	1° semestre	SECS-P/07
+

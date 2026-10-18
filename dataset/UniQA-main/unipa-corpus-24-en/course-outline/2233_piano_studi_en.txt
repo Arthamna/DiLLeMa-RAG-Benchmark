@@ -1,0 +1,72 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on NURSING
+For more information visit http://www.unipa.it/struttura.html?id=1882
+---------
+Class of Bachelor's Degree (BSc) on Nursing and midwifery (L/SNT1)
+Duration 3 years
+Location PALERMO
+Number of seats in national planning: 60
+Department of Health promotion, maternal-child, excellence internal and specialist medicine “G.D’Alessandro”
+Course Code 2233
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20323	BIOLOGY AND GENETICS (in english)	GRIMAUDO	3	1° semestre	BIO/13
+20324	HUMAN ANATOMY AND HISTOLOGY (in english)	SCALIA	3	1° semestre	BIO/16
+20413	FOREIGN LANGUAGE (in english)		3	1° semestre	
+20426	GENERAL NURSING AND MEDICAL HUMANITIES - INTEGRAED COURSE (in english)	CRAXI'	9	1° semestre	
+	GENERAL PSYCHOLOGY (in english)		3		M-PSI/01
+	BIOETHICS (in english)	CRAXI'	3		MED/02
+	THEORY OF NURSING (in english)	ARENA	3		MED/45
+20316	GENERAL PATHOLOGY AND MICROBIOLOGY - INTEGRATED COURSE	BONURA	6	2° semestre	
+	GENERAL PATHOLOGY (in english)		3		MED/04
+	MICROBIOLOGY	BONURA	3		MED/07
+20330	PHYSIOLOGY (in english)	GAMBINO	3	2° semestre	BIO/09
+20335	INTERNSHIP I (in english)		15	2° semestre	MED/45
+24048	NURSING METHODOLOGY AND TECHNIQUES C.I. (in english)	DOMANSKAYA	6	2° semestre	
+	NURSING METHODOLOGY	DOMANSKAYA	3		MED/45
+	NURSING TECHNIQUES AND PROCEDURES	LOMBARDO	3		MED/45
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20315	PHARMACOLOGY, ONCOLOGY AND PALLIATIVE CARE - INTEGRATED COURSE (in english)	VALERIO	6	1° semestre	
+	ONCOLOGY AND PALLIATIVE CARE (in english)	VALERIO	3		MED/06
+	PHARMACOLOGY (in english)	LAVANCO	3		BIO/14
+20317	MEDICAL SCIENCE - INTEGRATED COURSE (in english)	LICATA	9	1° semestre	
+	INFECTIOUS DISEASES (in english)	CASCIO	3		MED/17
+	GASTROENTEROLOGY (in english)	CELSA	3		MED/12
+	INTERNAL MEDICINE (in english)	LICATA	3		MED/09
+20326	DIAGNOSTICS AND RADIOTHERAPY (in english)	CANNELLA	3	1° semestre	MED/36
+20334	INTERNSHIP II (in english)		20	Yearly	MED/45
+23419	NURSING METHODOLOGY IN ORTHOPAEDIC - REHABILITATIVE AREA C.I. (in english)		6	1° semestre	
+	REHABILITATIVE NURSING (in english)		3		MED/45
+	ORTHOPEDIC NURSING		3		MED/45
+20313	SURGICAL SCIENCE - INTEGRATED COURSE (in english)	PAVONE	6	2° semestre	
+	UROLOGY (in english)	PAVONE	3		MED/24
+	GENERAL SURGERY (in english)	FERRARA	3		MED/18
+23302	RESEARCH METHODOLOGY, HYGIENE AND PREVENTION IN NURSING C.I. (in english)	IMMORDINO	9	2° semestre	
+	RESEARCH METHODOLOGY  IN NURSING	LO MONACO	3		MED/45
+	HYGIENE, EPIDEMIOLOGY AND PREVENTION (in english)	IMMORDINO	3		MED/42
+	INFORMATICS (in english)		3		INF/01
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20337	INTERNSHIP III (in english)		25	Yearly	MED/45
+20362	SPECIALIST NURSING IN MATERNAL-PAEDIATRIC AREA - INTEGRATED COURSE (in english)		6	1° semestre	
+	OBSTETRIC NURSING (in english)		3		MED/47
+	PEDIATRIC NURSING (in english)		3		MED/45
+21906	CRITICAL CARE AND INTENSIVE MEDICINE - INTEGRATED COURSE (in english)	NOVO	6	1° semestre	
+	ANESTHESIOLOGY	CORTEGIANI	3		MED/41
+	CARDIOLOGY (in english)	NOVO	3		MED/11
+24046	NURSING METHODOLOGY IN CRITICAL AND NEUROLOGICAL AREA C.I. (in english)		6	1° semestre	
+	NEUROLOGICAL NURSING		3		MED/45
+	NURSING METHODOLOGY IN CRITICAL CARE		3		MED/45
+20425	OTHER ACTIVITIES (in english)		6	2° semestre	
+20427	LABORATORY (in english)		3	2° semestre	
+20429	FINAL EXAMINATION		6	2° semestre	
+20436	FORENSIC MEDICINE, DEONTOLOGY AND HEALTH SYSTEM MANAGEMENT - INTEGRATED COURSE (in english)	ARGO	9	2° semestre	
+	CLINICAL PSYCHOLOGY (in english)	MANIACI	3		M-PSI/08
+	HEALTH MANAGEMENT (in english)	COSENZ	3		SECS-P/07
+	FORENSIC MEDICINE	ARGO	3		MED/43
+	Optional Educational Activities (ADO)		6		
+

@@ -1,0 +1,45 @@
+Anno Accademico 2024/2025
+Laurea magistrale in STUDI STORICI, ANTROPOLOGICI E GEOGRAFICI
+Curriculum: ANTROPOLOGICO E GEOGRAFICO
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2718
+---------
+Classe di Laurea magistrale in Scienze storiche (LM-84)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Culture e società
+Codice corso 2325
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+08893	GEOGRAFIA CULTURALE	DE SPUCHES	12	1° semestre	M-GGR/01
+15874	ANTROPOLOGIA DEL LINGUAGGIO	MONTES	6	1° semestre	M-DEA/01
+24152	ANTROPOLOGIA CULTURALE E SOCIALE	D'AGOSTINO	6	1° semestre	M-DEA/01
+24154	FONTI E METODI DELLA RICERCA STORICA	CANCILA	6	1° semestre	M-STO/02
+01479	ARCHIVISTICA	MANALI	6	2° semestre	M-STO/08
+15873	ETNOLOGIA EUROPEA	BUTTITTA	6	2° semestre	M-DEA/01
+22530	LABORATORIO DI DIGITAL HUMANITIES	SABBATINI	3	2° semestre	
+24178	LABORATORIO BIBLIOGRAFIA E RICERCA STORICA ON LINE	SABBATINI	3	2° semestre	
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03109	ETNOANTROPOLOGIA	D'AGOSTINO	6	1° semestre	M-DEA/01
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		6	1° semestre	
+15062	GEOGRAFIA URBANA E ORGANIZZAZIONE TERRITORALE	DE SPUCHES	6	1° semestre	M-GGR/02
+18698	LINGUA INGLESE LIVELLO  B 2		6	1° semestre	
+05917	PROVA FINALE		18	2° semestre	
+20494	ANTROPOLOGIA DELL'AMBIENTE	MANCUSO	6	2° semestre	M-DEA/01
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21043	STORIA CULTURALE DELL'EUROPA MODERNA	CUSUMANO	6	2° semestre	M-STO/02
+24177	STORIA CULTURALE DEL MEDIOEVO	SANTORO	6	2° semestre	M-STO/01
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+17021	STORIA DEL MEDITERRANEO MEDIEVALE	SARDINA	6	1° semestre	M-STO/01
+17024	STORIA DEL MEDITERRANEO MODERNO	FAVARO'	6	1° semestre	M-STO/02
+

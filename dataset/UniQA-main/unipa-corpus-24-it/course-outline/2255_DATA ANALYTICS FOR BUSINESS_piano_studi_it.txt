@@ -1,0 +1,71 @@
+Anno Accademico 2024/2025
+Laurea magistrale in MANAGEMENT ENGINEERING
+Curriculum: DATA ANALYTICS FOR BUSINESS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2026
+---------
+Classe di Laurea magistrale in Ingegneria gestionale (LM-31)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con Instituto Universitario de Lisboa (ISCTE-IUL), Lisbona (PORTUGAL)Vilnius Gediminas Technical University, Vilnius (LITHUANIA)
+Codice corso 2255
+---------
+Insegnamenti primo anno \ in comune con gli altri curricula\profili
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+17051	CORPORATE FINANCE (in inglese)	LO NIGRO	9	1° semestre	ING-IND/35
+19022	INNOVATION MANAGEMENT (in inglese)	LA COMMARE	6	1° semestre	ING-IND/16
+21678	BUSINESS PROCESS MANAGEMENT (in inglese)	BRUCCOLERI	9	1° semestre	ING-IND/35
+04864	MARKETING (in inglese)	ROMA	6	2° semestre	ING-IND/35
+14368	SUPPLY CHAIN MANAGEMENT (in inglese)	AIELLO	9	2° semestre	ING-IND/17
+22201	ADVANCED STATISTICS FOR BUSINESS C.I. (in inglese)	LOMBARDO	6	2° semestre	
+	MULTIVARIATE ANALYSIS: THEORY (in inglese)	LOMBARDO	3		SECS-S/02
+	MULTIVARIATE ANALYSIS: APPLICATIONS (in inglese)	MARCON	3		SECS-S/02
+22217	PROJECT MANAGEMENT (in inglese)	CERTA	6	2° semestre	ING-IND/17
+	Attiv. form. a scelta dello studente		9		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22199	INDUSTRIAL ORGANIZATION AND STRATEGY (in inglese)	PERRONE	9	1° semestre	ING-IND/35
+22420	DATA ANALYTICS FOR BUSINESS C.I. (in inglese)	MANCINI	18	Annuale	
+	BUSINESS ANALYTICS (in inglese)	MANCINI	6		MAT/09
+	SERVICE QUALITY DATA-DRIVEN MANAGEMENT (in inglese)	LUPO	6		ING-IND/16
+	ADVANCED PROJECT MANAGEMENT FOR BUSINESS (in inglese)		6		ING-IND/17
+05917	PROVA FINALE		15	2° semestre	
+22394	LAB OF STATISTICS (in inglese)	LOMBARDO	3	2° semestre	
+	Stage, Tirocini, Altro		3		
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		6		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19220	CYBERSECURITY (in inglese)	GALLO	6	1° semestre	ING-INF/05
+17917	DATA AND MODELS FOR MANAGERIAL DECISIONS (in inglese)	DARDANONI	6	2° semestre	SECS-P/03
+21506	BIG DATA AND ANALYTICS C.I.	TINNIRELLO	6	2° semestre	
+	MACHINE LEARNING	TINNIRELLO	3		ING-INF/03
+	DATA ANALYTICS AND STORAGE (in inglese)	LO PRESTI	3		ING-INF/05
+22198	HR AND CHANGE MANAGEMENT (in inglese)	PACE	6	2° semestre	M-PSI/06
+22430	TIME-SERIES ANALYSIS AND DESIGN OF EXPERIMENT (in inglese)	LOMBARDO	6	2° semestre	SECS-S/02
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21668	SUSTAINABLE MANUFACTURING (in inglese)	INGARAO	6	1° semestre	ING-IND/16
+21675	PRODUCT/PROCESS INNOVATION (in inglese)	MICARI	6	1° semestre	ING-IND/16
+22197	STRATEGIC MANAGEMENT AND OPEN INNOVATION (in inglese)	PIAZZA	6	1° semestre	ING-IND/35
+22321	HEALTHCARE OPERATIONS MANAGEMENT	MAZZOLA	6	1° semestre	ING-IND/35
+22347	ECONOMIA DEL SETTORE PUBBLICO E DEL WELFARE	ABBATE	6	1° semestre	ING-IND/35
+22389	DIGITAL MARKETING (in inglese)	ROMA	6	1° semestre	ING-IND/35
+22390	SUPPLY CHAIN MANAGEMENT 4.0 (in inglese)	AIELLO	6	1° semestre	ING-IND/17
+23218	SMART CONTRACTS, BLOCKCHAIN AND CYBER SECURITY AWARENESS (in inglese)		6	1° semestre	ING-IND/35
+24189	REVERSE LOGISTICS AND SMART WASTE MANAGEMENT (in inglese)	AIELLO	6	1° semestre	ING-IND/17
+16079	SICUREZZA INDUSTRIALE	LA FATA	6	2° semestre	ING-IND/17
+17882	DIGITAL MANUFACTURING (in inglese)	EMAMI	6	2° semestre	ING-IND/16
+21512	PROCESS AND SYSTEM SIMULATION (in inglese)	BUFFA	6	2° semestre	ING-IND/16
+22341	ADDITIVE MANUFACTURING (in inglese)	FRATINI	6	2° semestre	ING-IND/16
+22342	TECH ENTREPRENEURSHIP (in inglese)	PERRONE	6	2° semestre	ING-IND/35
+22346	MANUFACTURING PROCESSES FOR THE CIRCULAR ECONOMY (in inglese)	INGARAO	6	2° semestre	ING-IND/16
+22388	SMART FACTORY (in inglese)	LA COMMARE	6	2° semestre	ING-IND/16
+23152	DIGITAL PRODUCT MANAGEMENT (in inglese)		6	2° semestre	ING-IND/35
+24188	SUSTAINABILITY MANAGEMENT (in inglese)	MAZZOLA	6	2° semestre	ING-IND/35
+
+

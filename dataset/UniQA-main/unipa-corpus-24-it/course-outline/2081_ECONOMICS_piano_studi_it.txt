@@ -1,0 +1,60 @@
+Anno Accademico 2024/2025
+Laurea in ECONOMIA E FINANZA
+Curriculum: ECONOMICS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=550
+---------
+Classe di Laurea in Scienze economiche (L-33)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2081
+---------
+Insegnamenti primo anno \ in comune con gli altri curricula\profili
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04897	MATEMATICA GENERALE	LACAGNINA, LACAGNINA	9	1° semestre	SECS-S/06
+05227	MICROECONOMIA	BAVETTA, MAGGIO	9	1° semestre	SECS-P/01
+17358	LINGUA INGLESE LIVELLO  B 1 (in inglese)		8	1° semestre	
+18545	STORIA ECONOMICA E DEL PENSIERO ECONOMICO	SIMON, PIROLO	8	1° semestre	SECS-P/04
+02526	DIRITTO PRIVATO	BRIZZOLARI, PIRAINO	8	2° semestre	IUS/01
+02704	ECONOMIA AZIENDALE	CINCIMINO, BRONZETTI	6	2° semestre	SECS-P/07
+21346	CONOSCENZE INFORMATICHE C.I.	AUGUGLIARO	6	2° semestre	
+	SOFTWARE PER ANALISI DATI ECONOMICI E FINANZIARI 1	AUGUGLIARO	3		
+	SOFTWARE PER ANALISI DATI ECONOMICI E FINANZIARI 2	DE LUCA	3		
+24255	STATISTICA 1	AUGUGLIARO, ABBRUZZO	8	2° semestre	SECS-S/01
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02549	DIRITTO PUBBLICO	SCALA	6	1° semestre	IUS/09
+06190	RAGIONERIA GENERALE ED APPLICATA	GUZZO	8	1° semestre	SECS-P/07
+23596	STATISTICA 2	MINEO	8	1° semestre	SECS-S/01
+04820	MACROECONOMIA	AGNELLO	9	2° semestre	SECS-P/02
+14314	ULTERIORI CONOSCENZE LINGUISTICHE		6	2° semestre	
+20628	CONCORRENZA E DIRITTO CONTRATTUALE EUROPEO	PURPURA	6	2° semestre	IUS/05
+	Gruppo di attiv. form. opzionali		8		
+	Attiv. form. a scelta dello studente		12		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06318	SCIENZA DELLE FINANZE	LI DONNI	8	1° semestre	SECS-P/03
+16505	APPLIED ECONOMICS C.I. (in inglese)	CUSIMANO	10	Annuale	
+	APPLIED MACROECONOMICS (in inglese)	FANTECHI	4		SECS-P/06
+	APPLIED MICROECONOMICS (in inglese)	CUSIMANO	6		SECS-P/06
+05718	POLITICA ECONOMICA	MAZZOLA	8	2° semestre	SECS-P/02
+05917	PROVA FINALE		3	2° semestre	
+22032	MACROECONOMETRICS (in inglese)	PARLA	4	2° semestre	SECS-P/05
+22033	MICROECONOMETRICS (in inglese)	DE LUCA	6	2° semestre	SECS-P/05
+	Stage, Tirocini, Altro		6		
+	Gruppo di attiv. form. opzionali II		10		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04892	MATEMATICA FINANZIARIA	CONSIGLIO	8	2° semestre	SECS-S/06
+06672	STATISTICA ECONOMICA	PIACENTINO	8	2° semestre	SECS-S/03
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16117	ECONOMIA E GESTIONE DEGLI INTERMEDIARI FINANZIARI	SCANNELLA	10	1° semestre	SECS-P/11
+16114	ECONOMIA E GESTIONE DELLE IMPRESE	PICONE	10	2° semestre	SECS-P/08
+
+

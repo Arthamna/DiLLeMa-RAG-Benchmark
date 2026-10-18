@@ -1,0 +1,59 @@
+Academic year 2024/2025
+Master's Degree (MSc) on STATISTICS AND DATA SCIENCE
+Curriculum: STATISTICAL METHODS AND DATA SCIENCE (LM-DATA)
+For more information visit http://www.unipa.it/struttura.html?id=2703
+---------
+Class of Master's Degree (MSc) on Statistics (LM-82 R)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Economics and statistical Sciences
+Course Code 2316
+---------
+Educational objectives
+Specific objectives:
+The 2nd cycle  Degree in Statistics and Data Science, consistent with the requirements of the educational objectives of both classes and with the indications coming from the surveys on the employment market of graduates in statistical disciplines (such as, for example, the AlmaLaurea interuniversity initiative), aims at training graduates who, with a solid, high level, background in mathematics, probability, statistics and computer science, are able to operate in various application areas with autonomy and responsibility and to enter the labour market as qualified experts, able to produce, manage and analyse diversified information flows.
+In particular, the CdS provides the tools to enable a solid statistical methodology and data interrogation and extraction preparation together with tools specific to some application contexts.
+The frontal teaching activity is characterized by the strong integration between theoretical lessons and exercises and laboratories.
+The educational structure of the Degree Course is characterized by: - the presence of a common package of advanced level teachings in mathematical, probabilistic, statistical and computer science disciplines capable of ensuring in-depth study and the acquisition of knowledge useful for subsequent methodological and applicative expansions of statistics; - a good degree of customization of the study programme by the student, to whom some customizations are recommended with reference to specific skills in some applied contexts; - attention to teaching methodologies, taking care that the solid theoretical training, based on frontal teachings, is integrated with application laboratories as much as possible in eco-digital environments in which real cases and problems will be discussed and topics of applicative relevance will be explored; - attention to the methods, tools and applications of innovative teaching (gamification, flipped classroom, etc.) and to service learning (with specific involvement of students).
+Two curricula are also planned, taking into account the growing international demand for these specific training courses. In the proposed program, the teachings are almost entirely covered by full professors of the first and second level and, to ensure maximum adherence to the contents and training objectives, teachings are largely proposed ex novo for the new course of study, therefore with specific attention to contents designed for the specific professional profile. 
+Two curricula are foreseen. The first curriculum includes an initial core, in the first year, of advanced statistical and data science disciplines and responds to the need to maintain a chain that, based on the first level degree in statistics (L41) already active at the University for many years, develops in a coherent and specific way the skills most related to the theoretical and applied disciplinary and content tradition of statistics. 
+The curriculum emphasizes the role of statistics for complex data and for the extraction and management of big data with particular attention to the most advanced statistical modelling and with specific applications in the social and economic fields, this also thanks to a wide use of three optional groups (plus a group chosen by the student) of subjects able to guarantee sufficient thematic depth in relation to the student's interests. 
+In this sense, the first curriculum provides training oriented to the basics of stochastic processes and networks, with data mining techniques and support of advanced statistical methods and models in both the parametric and non-parametric context and with specific attention to Bayesian approaches, without neglecting data and database management, as well as the necessary legal skills on the protection, management and conservation of data, and specific application areas oriented to the company and the economic and social context of analysis. These aspects can be further specified, at the student's choice, through optional subjects (group 1 and group 2) enabling in-depth study of genetic statistics, methods of evaluation and performance of services, sampling and social surveys, financial risk analysis, territorial economic analysis, or even in terms of modelling such as biostatistics, models for categorical data, natural language processing and internet tools. The subjects are activated ex novo to ensure maximum correspondence with the training needs of the Degree Course and maximum coherence within the syllabus. Students can also add among the optional subjects (group 3) some subjects of the second curriculum and, in particular, techniques and methods on some analysis topics such as - for example - cloud computing, high dimensional data, models for volatility in finance, but subjects of a broader scope belonging to the mathematical, economic, business, sociological and computer science areas. As always, the additional group remains free to choose by the student. The second curriculum offers partially differentiated contents - also with dedicated optional subjects - to guarantee a study path in line with specific aspects of data analysis. Therefore, the second curriculum is more oriented towards the management of complex data, querying but also data structure design, placing emphasis on more computer-side and computation-intensive automatic methods also with respect to the management of high-frequency multidimensional data. Also in this curriculum, customization with optional subjects (and the group chosen by the student) enables some thematic insights, but here limited to two more specific groups with technical disciplines also aimed at completing, if necessary, the student's statistical-methodological skills. Therefore, this profile proposes, from the first year, an enhancement is that is more oriented towards statistical learning, data and text mining and advanced computation skills, without neglecting the application aspects in the economic and social fields, but now declined in terms of an approach with complex and more computer-intensive data such as modelling approaches in finance or optimization and applications in contexts of very high-frequency multidimensional data. The more strictly statistical methods are assigned to an optional group (group 1) with some specific contents exclusively for methodological in-depth study, while another optional group (group 2) provides teachings with high technical qualification such as financial econometrics, risk management, survey sampling methods, marketing decisions and advanced mathematical and computer science subjects, such as cybersecurity and the Internet of Things. Once again, the additional group (group 4) with free choice by the student allows the free addition of subjects or other training activities. Finally, the delivery in English of this second curriculum appears useful to encourage qualified international demand and to complete a broad training offer also to the advantage of local students who will have additional training opportunities on site.
+The two curricula include a basic internship that can also be extended through the free choices of the students who, therefore, can achieve a wide coverage of credits for internships, guaranteeing maximum flexibility also based on specific needs expressed by the student or the host company.
+Both curricula provide for an equal distribution of credits among the 4 semesters of the two years with a greater concentration of training activities in the first 3 semesters, and the last semester mostly dedicated to internships, placement and consultancy activities, as well as to elective activities .
+---------
+Professional opportunities
+Profile:
+Statistician Data Scientist
+Functions:
+-	data analysis and support for risk management activities in the economic, financial and credit fields.
+-	 data analysis and support for research in the clinical, epidemiological and biological fields, as well as within the functions of official statistics through statistical approaches and advanced IT procedures to extract and manage complex data.
+Skills:
+-	design and implementation of evaluation activities for quality management and for performance evaluation in the product and service processes.
+-	 certification of statistical methodologies and techniques applied to surveys.
+-	data analysis and formalization of mathematical/statistical models to investigate phenomena and make forecasts in the various application fields.
+-	design, creation and management of databases for statistical and risk analysis purposes.
+-	design of sampling plans and complex statistical surveys pertaining to social and economic fields.
+-	design, analysis and verification of the results of experiments and controlled clinical trials.
+-	data analysis and formalization of mathematical/statistical models to investigate phenomena and make forecasts in the economic, financial, biological, health, and epidemiological fields. 
+-	Construction of complex databases, querying and extracting information with statistical synthesis of the data.
+Career opportunities:
+-	in public administrations.
+-	in the research offices of companies operating in the economic, financial, and insurance fields.
+-	in statistical offices of medium-large companies.
+-	in marketing offices of production and distribution companies.
+-	in information system management companies.
+-	in statistical consultancy companies that provide external support to private and public companies.
+-	in public and private research centres and institutes.
+-	in health companies, both in the clinical sector and in the epidemiological sector and in the management sector.
+-	in health departments in the evaluation and epidemiology sectors.
+-	in design and experimentation offices of companies operating in the biomedical, epidemiological, and biological sectors.
+-	in public and private research centres and institutes.
+-	in IT and software design companies in the field of data analysis.
+---------
+Final examination features
+To obtain the degree, students must have acquired 120 credits, including the ones attributed to the final examination.
+The final written original dissertation aims at demonstrating the level of maturity and critical skills of candidates, with respect to the acquired knowledge and skills, at the conclusion of the activities envisaged by the educational programme.
+Carrying out the "thesis in company" mode is permitted, integrating the thesis and internship activities within the scope and in the manner also established by the University Teaching Regulations.
+---------

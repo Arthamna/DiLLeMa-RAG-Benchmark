@@ -1,0 +1,46 @@
+Anno Accademico 2024/2025
+Laurea magistrale in MANAGEMENT ENGINEERING (IN TELEDIDATTICA)
+Curriculum: MANAGEMENT ENGINEERING
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2027
+---------
+Classe di Laurea magistrale in Ingegneria gestionale (LM-31)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2256
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+17051	CORPORATE FINANCE (in inglese)	LO NIGRO	9	1° semestre	ING-IND/35
+19022	INNOVATION MANAGEMENT (in inglese)	LA COMMARE	6	1° semestre	ING-IND/16
+21678	BUSINESS PROCESS MANAGEMENT (in inglese)	BRUCCOLERI	9	1° semestre	ING-IND/35
+04864	MARKETING (in inglese)	ROMA	6	2° semestre	ING-IND/35
+14368	SUPPLY CHAIN MANAGEMENT (in inglese)	AIELLO	9	2° semestre	ING-IND/17
+22201	ADVANCED STATISTICS FOR BUSINESS C.I. (in inglese)	LOMBARDO	6	2° semestre	
+	MULTIVARIATE ANALYSIS: APPLICATIONS (in inglese)	MARCON	3		SECS-S/02
+	MULTIVARIATE ANALYSIS: THEORY (in inglese)	LOMBARDO	3		SECS-S/02
+22217	PROJECT MANAGEMENT (in inglese)	RICCOBONO	6	2° semestre	ING-IND/17
+	Stage, Tirocini, Altro		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22198	HR AND CHANGE MANAGEMENT (in inglese)	PACE	6	1° semestre	M-PSI/06
+22199	INDUSTRIAL ORGANIZATION AND STRATEGY (in inglese)	PERRONE	9	1° semestre	ING-IND/35
+20429	FINAL EXAMINATION		15	2° semestre	
+	Gruppo di attiv. form. opzionali		24		
+	Attiv. form. a scelta dello studente		9		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22249	INNOVATION C.I. (in inglese)	PIAZZA	12	2° semestre	
+	STRATEGIC MANAGEMENT AND OPEN INNOVATION (in inglese)	PIAZZA	6		ING-IND/35
+	PRODUCT/PROCESS INNOVATION (in inglese)	MICARI	6		ING-IND/16
+22250	SMART FACTORY AND QUALITY C.I. (in inglese)	LA COMMARE	12	2° semestre	
+	PROCESS AND SYSTEM SIMULATION (in inglese)	BUFFA	6		ING-IND/16
+	SMART FACTORY (in inglese)	LA COMMARE	6		ING-IND/16
+22251	SUSTAINABILITY AND HEALTHCARE C.I. (in inglese)	INGARAO	12	2° semestre	
+	HEALTHCARE OPERATIONS MANAGEMENT (in inglese)	MAZZOLA	6		ING-IND/35
+	SUSTAINABLE MANUFACTURING (in inglese)	INGARAO	6		ING-IND/16
+
+

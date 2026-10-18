@@ -1,0 +1,52 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ELECTRONICS ENGINEERING
+Curriculum: BIOELECTRONICS
+For more information visit http://www.unipa.it/struttura.html?id=1874
+---------
+Class of Master's Degree (MSc) on Electronic engineering (LM-29)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with UNIVERZITA PARDUBICE, Pardubice (CZECH REPUBLIC)
+Course Code 2234
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20516	 APPLIED AND INDUSTRIAL ELECTRONICS - INTEGRATED COURSE (in english)	LULLO	15	1° semestre	
+	LABORATORY OF APPLIED AND INDUSTRIAL ELECTRONICS (in english)	SCIRE'	3		ING-INF/01
+	INDUSTRIAL ELECTRONICS (in english)	VITALE	6		ING-INF/01
+	APPLIED ELECTRONICS (in english)	LULLO	6		ING-INF/01
+20513	ELECTRONIC PROGRAMMABLE SYSTEMS (in english)	GIACONIA	9	2° semestre	ING-INF/01
+20515	ELECTRONIC INSTRUMENTS AND MEASUREMENTS FOR AUTOMATION AND TELECOMMUNICATIONS (in english)	ARTALE	9	2° semestre	ING-INF/07
+20525	MICROWAVE ELECTRONICS - INTEGRATED COURSE (in english)	STIVALA	12	2° semestre	
+	MICROWAVE CIRCUITS (in english)	STIVALA	6		ING-INF/01
+	MICROWAVE COMPONENTS (in english)	STIVALA	6		ING-INF/01
+21234	STATISTICAL ANALYSIS OF BIOMEDICAL SIGNALS (in english)	FAES	6	2° semestre	ING-INF/06
+	Optional subjects		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20251	ELECTRONICS AND IOT FOR BIOMEDICAL APPLICATIONS - INTEGRATED COURSE	CROCE	12	1° semestre	
+	BIOMEDICAL ELECTRONICS (in english)	CURCIO	6		ING-INF/01
+	PERSONAL AREA NETWORK (in english)	CROCE	6		ING-INF/03
+20510	INDUSTRIAL ROBOTICS (in english)	D'IPPOLITO	6	1° semestre	ING-INF/04
+21237	SENSORS AND SIGNAL CONDITIONING FOR DIGITAL MEASUREMENTS (in english)	ARTALE	6	1° semestre	ING-INF/07
+05917	FINAL EXAMINATION		24	2° semestre	
+	Stage and others		6		
+	Free subjects (suggested)		9		
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01751	ELECTROMAGNETIC FIELDS	CINO	9	1° semestre	ING-INF/02
+21984	ELECTRIC AND ELECTRONIC MEASUREMENTS (in english)	CATALIOTTI	9	1° semestre	ING-INF/07
+17883	EMBEDDED SYSTEMS ELECTRONICS	GIACONIA	6	2° semestre	ING-INF/01
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19641	PHOTOVOLTAIC DEVICES AND TECHNOLOGIES (in english)	CRUPI	6	1° semestre	ING-INF/01
+20512	OPTOELECTRONIC DEVICES (in english)	MOSCA	6	1° semestre	ING-INF/01
+17878	MACHINE LEARNING	TINNIRELLO	6	2° semestre	ING-INF/03
+24180	MODERN PHYSICS FOR ENGINEERS (in english)	BASILE	6	2° semestre	FIS/07
+
+

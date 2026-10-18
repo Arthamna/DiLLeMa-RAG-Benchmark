@@ -1,0 +1,49 @@
+Academic year 2024/2025
+Master's Degree (MSc) on DATA, ALGORITHMS AND MACHINE INTELLIGENCE
+Curriculum: DATA, ALGORITHMS, AND MACHINE INTELLIGENCE
+For more information visit http://www.unipa.it/struttura.html?id=2249
+---------
+Class of Master's Degree (MSc) on Computer science (LM-18)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Mathematics and Informatics
+Double Degree with Université Paris Est Marne-La-Vallée, Paris (FRANCE)
+Course Code 2270
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22452	KNOWLEDGE REPRESENTATION AND REASONING (in english)	FICI	6	1° semestre	INF/01
+22453	DATA ENCRYPTION AND CODES (in english)	FALCONE	6	1° semestre	MAT/03
+22454	PATTERN DISCOVERY FOR LIFE SCIENCES (in english)	EPIFANIO	6	1° semestre	INF/01
+17393	BIG DATA MANAGEMENT (in english)	ROMBO	6	2° semestre	INF/01
+22450	INFORMATION THEORY AND DATA COMPRESSION (in english)	SCIORTINO	6	2° semestre	INF/01
+23616	COMBINATORIAL AND PROBABILISTIC ALGORITHMS (in english)	GIANCARLO	6	2° semestre	INF/01
+24091	LANGUAGES AND COMPILERS DESIGN (in english)	MANTACI	6	2° semestre	INF/01
+	Optional subjects		6		
+	Free subjects (suggested)		12		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+13121	PRACTICE		6	1° semestre	
+18182	INTERNSHIP AND PRACTICE		6	1° semestre	
+21958	COMPLEX NETWORKS (in english)	MICCICHE'	6	1° semestre	FIS/07
+22451	CLOUD AND HIGH PERFORMANCE COMPUTING (in english)	REALE	6	1° semestre	FIS/05
+05917	FINAL EXAMINATION		24	2° semestre	
+19272	ARTIFICIAL INTELLIGENCE AND DEEP LEARNING (in english)	LO BOSCO	6	2° semestre	INF/01
+	Optional subjects II		6		
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+24082	NATURE INSPIRED ALGORITHMS FOR OPTIMIZATION (in english)	RIZZO	6	1° semestre	INF/01
+22449	INFORMATION RETRIEVAL AND NATURAL LANGUAGE PROCESSING (in english)	PILATO	6	2° semestre	INF/01
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+15082	ITALIAN LANGUAGE FOR FOREIGNERS		6	1° semestre	
+22630	ENGLISH LANGUAGE SKILLS - EQUIVALENT TO LEVEL C1	PINELLO	6	1° semestre	
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22956	IOT AND CLOUD SECURITY (in english)		6	2° semestre	ING-INF/03
+

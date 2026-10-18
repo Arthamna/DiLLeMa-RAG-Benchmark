@@ -1,0 +1,109 @@
+Anno Accademico 2024/2025
+Laurea in LINGUE E LETTERATURE - STUDI INTERCULTURALI
+Curriculum: LINGUE E LETTERATURE - STUDI INTERCULTURALI (L-12)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1559
+---------
+Classe di Laurea in Lingue e culture moderne (L-11)Classe di Laurea in Mediazione linguistica (L-12)
+Durata 3 anni
+Sede PALERMO
+Numero posti in programmazione locale: 500
+Dipartimento di Scienze Umanistiche
+Codice corso 2198
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04770	LINGUISTICA GENERALE	NARDI	9	1° semestre	L-LIN/01
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		3	1° semestre	
+04777	LINGUISTICA ITALIANA	PATERNOSTRO, PINELLO	9	2° semestre	L-FIL-LET/12
+	Gruppo di attiv. form. opzionali		18		
+	Gruppo di attiv. form. opzionali II		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+	Gruppo di attiv. form. opzionali III		18		
+	Gruppo di attiv. form. opzionali IV		24		
+	Gruppo di attiv. form. opzionali V		9		
+	Gruppo di attiv. form. opzionali IX		6		
+	Attiv. form. a scelta dello studente		12		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15082	LINGUA ITALIANA PER STRANIERI	AMENTA	9	1° semestre	L-FIL-LET/12
+19741	LINGUISTICA ACQUISIZIONALE		6	1° semestre	L-LIN/02
+05917	PROVA FINALE		3	2° semestre	
+	Gruppo di attiv. form. opzionali VI		18		
+	Gruppo di attiv. form. opzionali VII		24		
+	Gruppo di attiv. form. opzionali VIII		6		
+
+Gruppo di attiv. form. opzionali IX
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04438	LETTERATURA ITALIANA	JOSSA	6	1° semestre	L-FIL-LET/10
+19853	LETTERATURA ITALIANA CONTEMPORANEA E INTERCULTURALITÀ	CARMINA	6	2° semestre	L-FIL-LET/11
+
+Gruppo di attiv. form. opzionali VI
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13265	LINGUA E TRADUZIONE FRANCESE III	SCLAFANI	9	Annuale	L-LIN/04
+13267	LINGUA E TRADUZIONE INGLESE III	RIZZO	9	Annuale	L-LIN/12
+13268	LINGUA E TRADUZIONE SPAGNOLA III	QUARTARARO	9	Annuale	L-LIN/07
+13269	LINGUA E TRADUZIONE TEDESCA III		9	Annuale	L-LIN/14
+13271	LINGUA E TRADUZIONE ARABA III	SAITTA	9	Annuale	L-OR/12
+13536	LINGUA E TRADUZIONE RUSSA III	RUMYANTSEV	9	Annuale	L-LIN/21
+13537	LINGUA E TRADUZIONE CINESE III	TAMBURELLO	9	1° semestre	L-OR/21
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19041	LETTERATURA E CULTURA RUSSA I	COLOMBO	12	1° semestre	L-LIN/21
+19044	LETTERATURA E CULTURA CINESE I	TAMBURELLO	12	1° semestre	L-OR/21
+19046	LETTERATURA E CULTURA ARABA I	SICARI	12	1° semestre	L-OR/12
+19048	LETTERATURA E CULTURA TEDESCA I	BARRALE	12	1° semestre	L-LIN/13
+19049	LETTERATURA E CULTURA SPAGNOLA I	POLIZZI	12	1° semestre	L-LIN/05
+19050	LETTERATURA E CULTURA INGLESE I	CASTAGNA	12	1° semestre	L-LIN/10
+19052	LETTERATURA E CULTURA FRANCESE I	MADONIA	12	1° semestre	L-LIN/03
+
+Gruppo di attiv. form. opzionali VII
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19039	LETTERATURA E CULTURA CINESE II	TAMBURELLO	12	1° semestre	L-OR/21
+19040	LETTERATURA E CULTURA RUSSA II	GULLOTTA	12	1° semestre	L-LIN/21
+19045	LETTERATURA E CULTURA ARABA II	SICARI	12	1° semestre	L-OR/12
+19047	LETTERATURA E CULTURA TEDESCA II	DI BELLA	12	1° semestre	L-LIN/13
+19051	LETTERATURA E CULTURA FRANCESE II	TONONI	12	1° semestre	L-LIN/03
+19053	LETTERATURA E CULTURA SPAGNOLA II	PINELLO	12	1° semestre	L-LIN/05
+19054	LETTERATURA E CULTURA INGLESE II	CASTAGNA	12	1° semestre	L-LIN/10
+23716	LETTERATURA E CULTURA ISPANO-AMERICANA	MINARDI	12	1° semestre	L-LIN/06
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13146	LINGUA E TRADUZIONE SPAGNOLA II	PRESTIGIACOMO	9	Annuale	L-LIN/07
+13150	LINGUA E TRADUZIONE INGLESE II	GENDUSA, GENDUSA	9	Annuale	L-LIN/12
+13238	LINGUA E TRADUZIONE FRANCESE II		9	Annuale	L-LIN/04
+13239	LINGUA E TRADUZIONE ARABA II	ELSAKAAN	9	Annuale	L-OR/12
+13452	LINGUA E TRADUZIONE RUSSA II	RUMYANTSEV	9	Annuale	L-LIN/21
+13540	LINGUA E TRADUZIONE CINESE II		9	Annuale	L-OR/21
+13151	LINGUA E TRADUZIONE TEDESCA II	HOFFMANN	9	2° semestre	L-LIN/14
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19851	ORIGINI DELLE LINGUE E LETTERATURE ROMANZE	COLLURA	9	1° semestre	L-FIL-LET/09
+19852	ORIGINI DELLE LINGUE E LETTERATURE GERMANICHE	GILIBERTO	9	1° semestre	L-FIL-LET/15
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06715	STORIA CONTEMPORANEA	VERRI	6	1° semestre	M-STO/04
+07079	STORIA MODERNA	CANCILA	6	1° semestre	M-STO/02
+23717	STORIA E ISTITUZIONI DEL MONDO ARABO E ISLAMICO	SICARI	6	1° semestre	L-OR/10
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04633	LINGUA E TRADUZIONE ARABA I	SCIORTINO	9	Annuale	L-OR/12
+04638	LINGUA E TRADUZIONE FRANCESE I	SCLAFANI	9	Annuale	L-LIN/04
+04644	LINGUA E TRADUZIONE INGLESE I	GENDUSA, ZUMMO	9	Annuale	L-LIN/12
+04655	LINGUA E TRADUZIONE RUSSA I	SCHIRO'	9	Annuale	L-LIN/21
+04659	LINGUA E TRADUZIONE SPAGNOLA I	QUARTARARO, DI GESU'	9	Annuale	L-LIN/07
+04663	LINGUA E TRADUZIONE TEDESCA I		9	Annuale	L-LIN/14
+13529	LINGUA E TRADUZIONE CINESE I		9	Annuale	L-OR/21
+
+Gruppo di attiv. form. opzionali VIII
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		6	1° semestre	
+15081	TIROCINIO DI LINGUA ITALIANA COME LINGUA SECONDA		6	1° semestre	
+

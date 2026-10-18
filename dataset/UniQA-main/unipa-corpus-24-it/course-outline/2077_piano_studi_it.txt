@@ -1,0 +1,51 @@
+Anno Accademico 2024/2025
+Laurea in ECONOMIA E AMMINISTRAZIONE AZIENDALE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=525
+---------
+Classe di Laurea in Scienze dell'economia e della gestione aziendale (L-18)
+Durata 3 anni
+Sede PALERMO
+Numero posti in programmazione locale: 550
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2077
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+00294	ECONOMIA AZIENDALE	VERGARA	10	1° semestre	SECS-P/07
+04897	MATEMATICA GENERALE	PECORELLA	8	1° semestre	SECS-S/06
+14116	ABILITA' INFORMATICHE E TELEMATICHE		3	1° semestre	
+22696	LINGUA INGLESE B1 (in inglese)		6	1° semestre	
+02526	DIRITTO PRIVATO	PIRAINO	8	2° semestre	IUS/01
+02549	DIRITTO PUBBLICO	LAURICELLA	6	2° semestre	IUS/09
+02796	ECONOMIA POLITICA	MODICA	9	2° semestre	SECS-P/01
+05419	ORGANIZZAZIONE AZIENDALE	INGRASSIA	6	2° semestre	SECS-P/10
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02417	DIRITTO COMMERCIALE	BAVETTA	8	1° semestre	IUS/04
+02742	ECONOMIA E GESTIONE DELLE IMPRESE	MOCCIARO LI DESTRI	9	1° semestre	SECS-P/08
+06190	RAGIONERIA GENERALE ED APPLICATA	COSTA	10	1° semestre	SECS-P/07
+06644	STATISTICA	AGRO'	8	1° semestre	SECS-S/01
+02590	DIRITTO TRIBUTARIO	PIGNATONE	6	2° semestre	IUS/12
+02785	ECONOMIA INDUSTRIALE	TESORIERE	6	2° semestre	SECS-P/06
+04892	MATEMATICA FINANZIARIA	ANDRIA	6	2° semestre	SECS-S/06
+15919	BILANCI AZIENDALI	TORCIVIA	8	2° semestre	SECS-P/07
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04864	MARKETING	DOMINICI	6	1° semestre	SECS-P/08
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		6	1° semestre	
+17617	ECON.E GEST.DEGLI INTERMED. FINANZ./ECON. E GEST. FIN. DELLE IMP.C.I.	SCANNELLA	14	1° semestre	
+	ECONOMIA E GESTIONE DEGLI INTERMEDIARI FINANZIARI	SCANNELLA	8		SECS-P/11
+	GESTIONE DEGLI INVESTIMENTI E DEI FINANZIAMENTI	PICONE	6		SECS-P/08
+02443	DIRITTO DEL LAVORO		6	2° semestre	IUS/07
+05877	PROGRAMMAZIONE E CONTROLLO	CINCIMINO	8	2° semestre	SECS-P/07
+05917	PROVA FINALE		3	2° semestre	
+	Gruppo di attiv. form. opzionali		8		
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06318	SCIENZA DELLE FINANZE	BERRITTELLA	8	1° semestre	SECS-P/03
+05718	POLITICA ECONOMICA	MAZZOLA	8	2° semestre	SECS-P/02
+

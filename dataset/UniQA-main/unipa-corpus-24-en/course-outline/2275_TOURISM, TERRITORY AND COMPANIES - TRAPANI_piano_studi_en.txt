@@ -1,0 +1,75 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on TOURISM, TERRITORIES AND BUSINESSES
+Curriculum: TOURISM, TERRITORY AND COMPANIES - TRAPANI
+For more information visit http://www.unipa.it/struttura.html?id=2258
+---------
+Class of Bachelor's Degree (BSc) on Tourism (L-15)
+Duration 3 years
+Location TRAPANI
+Free access
+Department of Economics and statistical Sciences
+Course Code 2275
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+11254	ELEMENTS OF LAW - INTEGRATED COURSE	MAZZAMUTO	12	Yearly	
+	PRIVATE LAW	MAZZAMUTO	6		IUS/01
+	PUBLIC LAW		6		IUS/09
+19209	COMPUTER SCIENCE AND ELEMENTS OF MATHEMATICS	ANDRIA	6	1° semestre	SECS-S/06
+22489	ELEMENTS OF MICRO- AND MACRO-ECONOMICS	FAZIO	9	1° semestre	SECS-P/06
+23390	TOURISM SOCIOLOGY, INSTITUTIONS AND ORGANISATIONS - INTEGRATED COURSE	CIZICENO	12	1° semestre	
+	SOCIOLOGY OF TOURISM	CIZICENO	8		SPS/07
+	TOURIST INSTITUTIONS AND ORGANISATIONS	ALAGNA	4		SPS/03
+04677	ENGLISH LANGUAGE (in english)		8	2° semestre	L-LIN/12
+22488	TOURISM AND CULTURAL HERITAGE ECONOMICS	RUGGIERI	6	2° semestre	SECS-P/06
+	Optional subjects		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00294	BUSINESS ECONOMICS	QUARCHIONI	9	1° semestre	SECS-P/07
+06644	STATISTICS	RUGGIERI	6	1° semestre	SECS-S/01
+11261	TRANSPORT AND TOURISM LAW	ROMANA	8	1° semestre	IUS/06
+14184	INTERNSHIP		12	1° semestre	
+03610	GEOGRAPHY - INTEGRATED COURSE	MERCATANTI	9	2° semestre	
+	TOURISM GEOGRAPHY	MERCATANTI	6		M-GGR/01
+	LANDSCAPES AND INTERCULTURALISM		3		M-GGR/01
+06664	TOURISM STATISTICS	DE CANTIS	6	2° semestre	SECS-S/05
+20490	ARCHAEOLOGICAL ITINERARIES		8	2° semestre	L-ANT/07
+23779	EVENTS PLANNING AND MANAGEMENT		8	2° semestre	SECS-P/08
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00314	ECONOMICS AND MANAGEMENT OF TOURIST COMPANIES	PICONE	6	1° semestre	SECS-P/08
+06672	ECONOMIC STATISTICS	SCIORTINO	6	1° semestre	SECS-S/03
+05917	FINAL EXAMINATION		3	2° semestre	
+15853	HISTORY OF DECORATIVE ARTS		8	2° semestre	L-ART/02
+	Optional subjects II		6		
+	Optional subjects III		6		
+	Optional subjects IV		8		
+	Free subjects (suggested)		12		
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07992	TOURISM INDUSTRY ECONOMICS	RUGGIERI	6	2° semestre	SECS-P/06
+22532	ECONOMIC AND TOURISM POLICY	CUSIMANO	6	2° semestre	SECS-P/02
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04664	FRENCH LANGUAGE (in french)		6	2° semestre	
+04718	SPANISH LANGUAGE (in spanish)		6	2° semestre	
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02396	ADMINISTRATIVE LAW	RAGUSA	6	1° semestre	IUS/10
+19205	COMPARATIVE AND EUROPEAN PRIVATE LAW	PETRUSO	6	1° semestre	IUS/02
+20478	CULTURAL HERITAGE AND ENVIRONMENTAL LAW	COLLETTI	6	1° semestre	IUS/01
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00932	HISTORY OF MODERN ART		6	1° semestre	L-ART/02
+
+Optional subjects IV
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+24168	RURAL TOURISM ECONOMICS		8	1° semestre	AGR/01
+10183	SUSTAINABLE TOURISM	LO BRUTTO	8	2° semestre	BIO/05
+

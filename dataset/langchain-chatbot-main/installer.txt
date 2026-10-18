@@ -1,0 +1,11 @@
+pip3 install langchain
+pip3 install langchain_openai
+pip3 install pypdf
+pip3 install python-dotenv
+pip3 install sentence-transformers
+pip3 install faiss-cpu
+
+TEST
+pip3 install ragas
+pip3 install unstructured
+pip3 install "unstructured[pdf]"

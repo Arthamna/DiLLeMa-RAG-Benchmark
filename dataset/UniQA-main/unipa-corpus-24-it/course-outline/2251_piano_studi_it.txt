@@ -1,0 +1,56 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SERVIZIO SOCIALE, DISEGUAGLIANZE E VULNERABILITA' SOCIALE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2018
+---------
+Classe di Laurea magistrale in Servizio sociale e politiche sociali (LM-87)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Culture e società
+Codice corso 2251
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21122	LABORATORIO DI SERVIZIO SOCIALE	PIRRONE, MANNOIA	3	1° semestre	
+21415	GENERI, SESSUALITÀ E REGOLAZIONE SOCIALE (in inglese)	RINALDI	6	1° semestre	SPS/12
+23521	POLITICHE SOCIALI E SERVIZI (in inglese)	GERBINO	6	1° semestre	SPS/07
+21408	DISAGIO SOCIALE TRA ECONOMIA E SOCIETÀ	PIRRONE	6	2° semestre	SPS/07
+21434	MANAGEMENT DI SERVIZIO SOCIALE C.I.		15	2° semestre	
+	INTERVENTO SOCIALE E VALUTAZIONE DEL RISCHIO		6		SPS/07
+	PROGETTAZIONE E VALUTAZIONE NEL SOCIALE		9		SPS/07
+22025	SOCIOLOGIA DELLE FAMIGLIE (C.A.)	MANNOIA	6	2° semestre	SPS/08
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05418	ORGANIZZAZIONE E GESTIONE DELLE RISORSE UMANE	INGRASSIA	12	1° semestre	SECS-P/10
+16346	PSICOLOGIA SOCIALE DELLE ORGANIZZAZIONI	SCAFFIDI ABBATE	9	1° semestre	M-PSI/05
+22536	DIRITTO DEI SERVIZI SOCIALI	CELONE	6	1° semestre	IUS/10
+24240	DIRITTO PENALE E PENITENZIARIO	OMODEI	6	1° semestre	IUS/17
+05917	PROVA FINALE		12	2° semestre	
+07553	TIROCINIO		12	2° semestre	
+	Attiv. form. a scelta dello studente (consigliate)		9		
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21410	CULTURE DELLA MARGINALITÀ	MANNOIA	9	1° semestre	SPS/08
+21433	METOD. DELLA RIC. APPL. A SERV. SOC.	GUCCIARDO	9	1° semestre	SPS/07
+21986	MEDICINA E SALUTE DI COMUNITA'	TURDO	9	1° semestre	MED/50
+23519	CRIMINOLOGIA ED ELEMENTI DI VITTIMOLOGIA	RINALDI	9	1° semestre	SPS/12
+22700	DIRITTO DELLE PERSONE E DELLE RELAZIONI FAMILIARI	MORMILE	9	2° semestre	IUS/01
+23520	DISABILITÀ E PARTECIPAZIONE SOCIALE	DI MARTINO	9	2° semestre	IUS/21
+24166	DIRITTO, RELIGIONI E TERZO SETTORE	DI PRIMA	9	2° semestre	IUS/11
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18627	SOCIOLOGIA DELL'EDUCAZIONE E DEI MEDIA DIGITALI	CAPPELLO	6	1° semestre	SPS/08
+06597	SOCIOLOGIA POLITICA	MACALUSO	6	2° semestre	SPS/11
+07520	TEORIE E TECNICHE DELLA COMUNICAZIONE PUBBLICA (in inglese)	RIZZUTO	6	2° semestre	SPS/08
+21413	MEDIAZIONE,COESIONE SOCIALE E PRATICHE DI COMUNITÀ	DI ROSA	6	2° semestre	SPS/07
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+08841	DIRITTI UMANI (in inglese)	MANIACI	6	1° semestre	IUS/20
+16552	TEORIE DELL'INTERCULTURA	SEGRETO	6	1° semestre	SPS/01
+

@@ -1,0 +1,36 @@
+Academic year 2024/2025
+Master's Degree (MSc) on MOLECULAR AND HEALTH BIOLOGY
+Curriculum: MOLECULAR BIOLOGY
+For more information visit http://www.unipa.it/struttura.html?id=1556
+---------
+Class of Master's Degree (MSc) on Biology (LM-6)
+Duration 2 years
+Location PALERMO
+Number of seats in local planning: 85
+Department of Biological, Chemical and Pharmaceutical Sciences and Technologies
+Double Degree with Bonn-Rhine-Sieg University of Applied Sciences, Bonn (GERMANY)Universidad de A Coruña, La Coruna (SPAIN)
+Course Code 2195
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01597	CELL BIOLOGY	GERACI	6	1° semestre	BIO/06
+05176	BIOCHEMICAL METHODOLOGIES	ATTANZIO	6	1° semestre	BIO/10
+15559	BIOCHEMICAL MECHANISMS OF CELLULAR FUNCTIONS	GIULIANO	6	1° semestre	BIO/10
+20456	BIOMOLECULAR AND BIOINFORMATIC METHODOLOGIES	MELFI	6	1° semestre	BIO/11
+20691	ENGLISH LANGUAGE SKILLS - EQUIVALENT TO LEVEL B2		6	1° semestre	
+13351	ADVANCED SKILLS RELATED TO THE LABOUR MARKET		2	2° semestre	
+17196	ELEMENTS OF BIOPHYSICS	COTTONE	6	2° semestre	FIS/07
+20455	MOLECULAR MICROBIOLOGY	ALDUINA	6	2° semestre	BIO/19
+21261	GENETIC AND CYTOGENETIC METHODOLOGIES		6	2° semestre	
+	GENETIC METHODOLOGIES		3		BIO/18
+	CYTOGENETIC AND EPIGENETIC METHODOLOGIES		3		BIO/18
+94412	MOLECULAR GENETICS	LENTINI	6	2° semestre	BIO/18
+	Free subjects		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+08308	FUNCTIONAL GENOMICS	RAGUSA	9	1° semestre	BIO/11
+17195	MOLECULAR PHYSIOLOGY	ZIZZO	6	1° semestre	BIO/09
+05917	FINAL EXAMINATION		37	2° semestre	
+	Free subjects II		6		
+

@@ -1,0 +1,84 @@
+Anno Accademico 2024/2025
+Laurea magistrale in DATA, ALGORITHMS, AND MACHINE INTELLIGENCE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2249
+---------
+Classe di Laurea magistrale in Informatica (LM-18)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Matematica e Informatica
+Doppio titolo con Université Paris Est Marne-La-Vallée, Paris (FRANCE)
+Codice corso 2270
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il corso di laurea magistrale approfondisce e rafforza le conoscenze teoriche, metodologiche, sistemistiche e tecnologiche, in tutte le discipline che costituiscono gli elementi culturali fondamentali dell'informatica gia' presenti nel primo ciclo (laurea di classe L-31). Pertanto, in accordo con le linee guida delle associazioni nazionali (GRIN) ed internazionali (ACM) del settore, il percorso didattico prevede la formazione di solide conoscenze sia dei fondamenti che degli aspetti applicativi dei vari settori dell'informatica. La lingua ufficiale d'insegnamento e' l'inglese. Il carattere internazionale del corso di studi ha l'obiettivo di favorire l'inserimento del laureato in contesti lavorativi multinazionali.
+Gli obiettivi specifici del percorso formativo sono:
+- l'acquisizione del metodo scientifico di indagine che prevede l'utilizzazione degli strumenti matematici che sono di supporto all'informatica ed alle sue applicazioni;
+- l'approfondimento delle tecnologie dei sistemi di elaborazione e gestione dell'informazione;
+- l'approfondimento delle metodologie di progettazione e realizzazione dei sistemi informatici;
+- l'approfondimento dei settori di applicazione dei sistemi informatici e delle tecnologie informatiche;
+- il potenziamento della conoscenza e dell'utilizzo della lingua inglese con particolare attenzione alla comprensione della letteratura scientifica di riferimento ed alla redazione di report di attivita' progettuali.
+Il percorso formativo prevede, oltre ad un completamento della formazione matematico-fisica, una trattazione avanzata di tematiche fondamentali dell'Informatica come la teoria dell'informazione e i modelli per la rappresentazione dei dati, e approfondimenti in settori specifici.
+Tra i diversi corsi di approfondimento vi sono quelli dedicati:
+- alla progettazione di algoritmi avanzati e alla loro realizzazione tramite approfondite conoscenze di linguaggi di programmazione;
+- ai metodi per la gestione e l'analisi di grandi quantita' di dati, come per esempio in ambito bioinformatico/biomedico e nelle scienze sociali;
+- ai metodi per la progettazione di infrastrutture informatiche e strumenti di calcolo ad alte prestazioni, con particolare riferimento alla qualita' del servizio, la sicurezza e la protezione per la privatezza dei dati;
+- ai modelli e alle tecniche per la rappresentazione multisensoriale delle informazioni e alla progettazione di sistemi per l'esplorazione interattiva di dati e per l'analisi qualitativa degli stessi;
+- ai modelli connessi all'intelligenza artificiale e alle reti di deep learning per l'analisi dei dati;
+- ai modelli e alle tecniche per la risoluzione di problemi di ottimizzazione e minimizzazione multi-obiettivo ad elevata complessita' di calcolo;
+- all'analisi intelligente di dati presenti nel Web.
+Adeguatamente agli obiettivi specifici il curriculum del corso di laurea magistrale prevede:
+- lezioni ed esercitazioni di classe in laboratorio, attivita' progettuali autonome e di gruppo, ed attivita' individuali in laboratorio;
+- attivita' esterne come eventuali tirocini formativi presso aziende, strutture della pubblica amministrazione e laboratori, oltre a soggiorni di studio presso altre universita' italiane ed europee, anche nel quadro di accordi internazionali.
+---------
+Sbocchi Occupazionali
+Profilo:
+Analisti e progettisti di software e di sistemi informatici
+Funzioni:
+Analisi, progettazione, sviluppo e implementazione di software applicativi e di sistemi informatici complessi, anche in ruoli di responsabilita' di progetto o gruppi di lavoro.
+Competenze:
+Il laureato magistrale acquisisce solide competenze di programmazione e progettazione di algoritmi avanzati, metodologie avanzate per progettare, analizzare e gestire sistemi informatici complessi e architetture software. Sviluppa inoltre le abilita' per la realizzazione e l'analisi di prestazioni di sistemi informatici, la gestione di infrastrutture e reti ad alte prestazioni, e la progettazione di tecniche per garantire la sicurezza e privatezza dei dati.
+Sbocchi:
+Aziende nazionali e multinazionali di produzione di beni e servizi. Organizzazioni pubbliche e/o private. Imprese produttrici di software. Imprese di progettazione di sistemi informatici e reti. Imprese, amministrazioni e centri di ricerca, pubblici e privati, che utilizzano sistemi informatici complessi o coinvolti nella gestione di grandi quantita' di dati.
+Profilo:
+Ricercatore in Informatica
+Funzioni:
+Attivita' di ricerca e di innovazione metodologica ed applicativa, in tutti i settori dell'Informatica.
+Competenze:
+Il laureato magistrale possiede una solida conoscenza delle basi scientifiche dell'Informatica, acquisisce un rigoroso metodo scientifico di indagine, la capacita' di astrazione e comprensione di modelli computazionali complessi, le competenze di analisi e progettazione di modelli per la rappresentazione e l'esplorazione dei dati, l'abilita' di progettazione e realizzazione di sistemi informatici complessi.
+Sbocchi:
+Enti pubblici e privati operanti nel settore della ricerca in informatica, e piu' in generale, della ricerca scientifica.
+E' inoltre possibile accedere ai livelli di studio universitario successivi, quali il Dottorato di Ricerca.
+Profilo:
+Specialista in Sicurezza Informatica
+Funzioni:
+Analista, progettista, realizzatore di sistemi e servizi software per garantire la sicurezza informatica e proteggere i dati di aziende e imprese da attacchi di natura informatica.
+Competenze:
+Il laureato magistrale acquisisce capacita' di progettazione e configurazione di reti informatiche, con particolare riguardo agli aspetti di sicurezza; analisi e gestione della sicurezza dei servizi; progettazione ed installazione di sistemi di controllo, di rilevamento di intrusioni e di prevenzione di intrusioni, anche basati su strumenti di machine learning; specifica, verifica formale, sviluppo e implementazione di protocolli crittografici; controllo ed analisi degli accessi ai dati e ai servizi aziendali.
+Sbocchi:
+Imprese nazionali e multinazionali produttrici di software; Imprese nazionali e multinazionali di progettazione di sistemi informatici e reti; Imprese, amministrazioni pubbliche e centri di ricerca, pubblici e privati, che utilizzano sistemi informatici complessi.
+Profilo:
+Specialista in Intelligenza Artificiale
+Funzioni:
+Progettista, sviluppatore e realizzatore di sistemi di Intelligenza Artificiale.
+Competenze:
+Il laureato magistrale acquisisce solide conoscenze dei fondamenti scientifici dell'Intelligenza Artificiale che consentono di esercitare competenze di progettazione, sviluppo e realizzazione di sistemi di Intelligenza Artificiale per il miglioramento delle attivita' produttive e gestionali di aziende e imprese; installazione e configurazione di applicativi in sistemi informatici complessi che utilizzano tecniche di Intelligenza Artificiale; analisi di sistemi di Intelligenza Artificiale gia' presenti nel mercato; modellazione di problemi mediante tecniche e linguaggi per la rappresentazione della conoscenza; progettazione e realizzazione di sistemi intelligenti per l'analisi automatica di segnali, quali immagini e video, e per la comprensione automatica del parlato e del testo, sviluppo di sistemi di Intelligenza Artificiale basati sul Machine Learning e il Deep Learning, in particolare, per l'analisi di big data; sviluppo di sistemi di Intelligenza Artificiale basati su strumenti per la rappresentazione della conoscenza.
+Sbocchi:
+Imprese nazionali e multinazionali produttrici di software; di progettazione di sistemi informatici e reti; Amministrazioni pubbliche e centri di ricerca, pubblici e privati, che utilizzano sistemi informatici complessi o coinvolti nell'analisi automatica dei dati; Laboratori di ricerca e sviluppo, pubblici e privati. Aziende che si occupano di business intelligence, marketing, analisi di mercato; Industrie biomediche e farmaceutiche; Aziende con linee produttive automatizzate.
+Profilo:
+Specialista in Data Science e Information Science
+Funzioni:
+Progettista e sviluppatore di modelli e strategie per estrarre conoscenza e informazioni attraverso metodi automatici e semi-automatici di analisi, esplorazione, visualizzazione di grandi quantita' di dati.
+Competenze:
+Il Laureato magistrale possiede solide competenze di progettazione di algoritmi avanzati, di linguaggi di programmazione statistica e per l'esplorazione dei database, di modelli avanzati per la rappresentazione dei dati e per la costruzione di strutture di indicizzazione compressa delle informazioni. Sviluppa inoltre la capacita' di usare metodi e modelli di data mining, di machine learning e deep learning per estrazione automatica di conoscenza, di sviluppare software per la gestione e la strutturazione di grosse quantita' di dati e di utilizzo delle piu' note tecnologie dei big data.
+Sbocchi:
+Aziende nazionali e multinazionali nel settore finanziario, commerciale, farmaceutico. Imprese nazionali e multinazionali nel settore dei trasporti e delle telecomunicazioni. Laboratori di ricerca pubblici e privati.
+---------
+Caratteristiche della Prova Finale
+La prova finale per il conseguimento della Laurea Magistrale in Informatica consiste nella discussione pubblica di un elaborato originale scritto (tesi di laurea), redatto in lingua inglese, in cui lo studente mostra la sua preparazione e la maturita' scientifica raggiunta al termine del corso di studi.
+Lo studente deve discutere una tesi redatta in modo originale sotto la guida di un relatore e volta ad accertare il livello conseguito nella preparazione tecnico-scientifica e professionale. L'elaborato, che deve avere caratteristiche di originalita, puU' avere carattere sperimentale, teorico o progettuale, puU' essere svolto dallo studente sia presso la struttura didattica di competenza o laboratorio di ricerca che presso altre Istituzioni ed aziende pubbliche e/o private italiane o straniere accreditate dall'Ateneo di Palermo, secondo le modalita' concordate con la struttura didattica.
+Parte dello svolgimento della prova finale puU' avvenire all'interno di attivita' di stage o di tirocinio formativo.
+La preparazione alla prova finale (a cui sono dedicati 18-24 CFU) e' un importante momento di approfondimento durante il quale lo studente, secondo le necessita, ha l'opportunita' di integrare e razionalizzare le esperienze formative, maturate durante il suo percorso, per la risoluzione di problemi informatici significativi nell'ambito del settore di specializzazione scelto.
+Le modalita' di accesso alliesame di laurea magistrale, le caratteristiche della tesi e le modalita' di svolgimento della prova finale sono definiti nel Regolamento delliesame di Laurea Magistrale.
+---------

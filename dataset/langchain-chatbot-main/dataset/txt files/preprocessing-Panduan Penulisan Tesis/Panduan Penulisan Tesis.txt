@@ -1,0 +1,1237 @@
+Direktorat
+Pascasarjana
+dan Pengembangan
+Akademik ITS
+PANDUAN
+PENYUSUNAN
+TESIS
+PROGRAM MAGISTER
+Direktorat Pascasarjana dan Pengembangan Akademik
+Institut Teknologi Sepuluh Nopember
+2021
+PASCASARJANA
+
+PEDOMAN PENYUSUNAN TESIS
+1. PENDAHULUAN
+Tesis adalah karya ilmiah yang ditulis untuk memenuhi
+salah satu syarat untuk menyelesaikan studi pascasarjana strata 2
+(program Magister) di Institut Teknologi Sepuluh Nopember
+Surabaya. Tesis yang disusun harus mengikuti standar penyusunan yang baik dan benar sesuai kaidah ilmiah.
+Pada tahun 1997, Program Pascasarjana
+ITS telah
+membuat buku pedoman penulisan tesis dan pedoman penulisan proposal tesis. Namun untuk meningkatkan kualitas penyusunan tesis, maka dibuat buku pedoman penyusunan tesis baku ini, yang merupakan penyempurnaan buku pedoman tersebut. Pedoman ini disusun untuk mengelaborasi lebih detail terkait standar penulisan tesis sebagaimana yang tercantum dalam Baku Mutu Program
+Pascasarjana 2020.
+2. FORMAT PROPOSAL TESIS DAN TESIS
+2.1 Format Proposal Tesis
+1. Proposal tesis ditulis dalam Bahasa Indonesia yang baik dan benar. Dalam penulisannya diupayakan tidak menggunakan kata
+ganti orang pertama.
+2. Proposal tesis diketik dan diphoto copy pada kertas A4 - 80 gram. Huruf yang dipergunakan adalah jenis Times Roman
+ukuran 12-normal. Gunakan tinta yang tidak mudah luntur.
+
+3. Tulisan mempergunakan jarak antar baris 1,5 spasi. Penulisan dilakukan pada dua sisi halaman kertas. Sisi depan halaman selalu bernomor halaman ganjil dan sisi belakang bernomor genap.
+4. Layout tulisan disajikan dalam Lampiran 1, dengan penjelasan seperti yang tertulis pada item 5 di bawah ini.
+5. Tulisan diketik dengan batas tepi halaman mengikuti ketentuan
+jarak sebagai berikut:
+a) Jarak dari tepi atas kertas
+= 3,5 cm.
+b) Jarak dari tepi bawah kertas
+= 3 cm.
+c) Jarak dari tepi kiri kertas
+= 4 cm (halaman ganjil).
+d) Jarak dari tepi kanan kertas
+= 3 cm (halaman ganjil).
+e) Jarak dari tepi kiri kertas
+= 3 cm (halaman genap).
+f) Jarak dari tepi kanan kertas
+= 4 cm (halaman genap).
+6. Tulisan BAB 1, BAB 2, ..., dst. dimulai dari batas margin atas dengan ukuran huruf 14 point. Judul bab dimulai 1,5 spasi (1 kali ketukan enter) dari tulisan BAB 1, BAB 2, ..., dst. Tulisan bab dan judul bab ditulis dengan huruf kapital untuk semua huruf dengan ukuran huruf 14 point. Angka untuk nomor bab ditulis dengan angka Arabic (1, 2, 3, ..., dst). Kalimat awal (jika tidak dimulai dengan sub-bab) atau sub-bab awal dimulai 3 spasi (2 kali ketukan enter) dari judul bab dan dimulai dari margin kiri (untuk judul sub-bab) atau masuk 1 tab (1,5 cm) untuk awal kalimat. Judul sub-bab ditulis dengan title case (hanya huruf pertama setiap kata yang menggunakan huruf kapital, yang lainnya huruf kecil / lower case dan semua kata sambung harus
+2
+
+memakai huruf kecil / lower case). Kalimat awal pada sub-bab dimulai 1,5 spasi setelah judul sub-bab, masuk 1 tab. Judul sub-
+bab berikutnya dimulai 3 spasi dari baris terakhir dari sub-bab sebelumnya. Contoh penulisan bab dan sub-bab dapat dilihat
+pada Lampiran 2.
+7. Kalimat awal pada suatu paragraf ditulis masuk 1 (satu) tab.
+Antar paragraf tidak perlu diberi jarak.
+8. Permulaan bab selalu ditulis pada halaman baru dan dimulai pada halaman dengan nomor ganjil. Apabila suatu bab berakhir pada halaman dengan nomor ganjil, maka halaman genap
+berikutnya dibiarkan kosong.
+9. Penomoran halaman dilakukan sebagai berikut: semua bagian sebelum teks (sebelum Bab 1), dimulai dari lembar pengesahan, diberi nomor halaman dengan angka Romawi kecil yang diletakkan di bagian bawah-tengah halaman (i, ii, ..., dst). Bagian teks (Bab 1, dan seterusnya termasuk daftar pustaka dan lampiran) diberi nomor halaman dengan angka Arabic yang
+diletakkan di bagian bawah-tengah halaman.
+10. Semua gambar dan tabel harus jelas / tidak kabur / buram.
+Ukuran huruf pada gambar dan tabel harus dapat dibaca oleh mata normal dengan mudah. Gambar dan tabel diletakkan di tengah halaman (centered).
+11. Nomor dan judul tabel ditulis di sisi kiri di atas tabel. Nomor tabel disesuaikan dengan letak tabel tersebut di dalam bab, misalkan: Tabel 2.3 Konsentrasi Bahan Pencemar di Kali Mas Tgl 18 April 2006. Pada sisi bawah tabel diberi keterangan
+3
+
+tentang sumber informasi yang dicantumkan di dalam tabel, apakah informasi tersebut dari pustaka tertentu, hasil pengamatan, ataupun hasil perhitungan. Judul tabel ditulis dengan cara title case kecuali untuk kata sambung dan kata depan dengan jarak spasi 1. Tabel dibuat dengan jarak spasi 1.
+Sisi paling luar tabel tidak boleh melampaui batas margin kiri dan kanan. Format landscape menyesuaikan dengan pedoman
+ini. Contoh penampilan tabel disajikan pada Lampiran 3.
+12. Nomor dan judul gambar ditulis di sisi kiri di bawah gambar.
+Nomor Gambar disesuaikan dengan letak gambar tersebut di dalam bab, misalkan: Gambar 4.1 Grafik Hubungan Antara
+Pertumbuhan Penduduk dengan Penurunan Daya Dukung
+Lingkungan (Sugriwo, 2006). Sumber dari gambar dicantumkan langsung pada bagian belakang judul tersebut. Judul gambar ditulis dengan cara title case kecuali untuk kata sambung dan kata depan dengan jarak spasi 1. Sisi paling luar gambar tidak boleh melampaui batas margin kiri dan kanan. Format landscape menyesuaikan dengan pedoman ini. Contoh penampilan gambar
+disajikan pada Lampiran 3.
+13. Tulisan tabel dan gambar pada kalimat yang merujuk suatu tabel
+atau gambar harus diawali dengan huruf besar.
+Contoh: Sesuai dengan Tabel 2.3 dan Gambar 2.1
+14. Judul tabel atau batas gambar bagian atas dimulai 3 spasi dari baris terakhir di atasnya. Kalimat tepat di bawah tabel atau judul gambar dimulai 3 spasi (2 ketukan enter) dari batas bawah tabel atau judul gambar (lihat contoh di Lampiran 3). Antara judul
+
+tabel atau judul gambar dengan tabel atau gambar yang
+bersangkutan diberi jarak 1,5 spasi (satu ketukan enter).
+15. Semua rumus ditulis dengan menggunakan equation editor (atau mathtype). Penulisan rumus dimulai pada batas kiri, rata dengan kalimat tepat di atasnya, dengan jarak 1,5 (satu setengah) spasi dari kalimat di atas dan di bawahnya. Nomor rumus disesuaikan dengan nomor bab letak rumus tersebut dan ditulis di ujung kanan baris tersebut (aligned right). Ukuran huruf dan symbol pada rumus sesuai dengan defaults yang ada seperti disajikan
+pada Tabel 1 berikut ini.
+Tabel 1 Ukuran Huruf dan Simbol pada Rumus
+Contoh penulisan rumus adalah sebagai berikut:
+Jenis
+Ukuran (pt)
+Full
+12
+Subscript/Supercript
+7
+Sub-Subscript/Supercript
+5
+Symbol
+18
+Sub-symbol
+12
+Cory (x,,x;) = 0} exp
+dengan:
+of?
+ly
+dij
+(3.2)
+= variance dari logaritma konduktivitas hidrolik,
+= skala korelasi dari logaritma konduktivitas hidrolik,
+= jarak antara titik xi dan Xj,
+
+Xi,X
+= lokasi titik pada domain studi yang terpisah dengan jarak dij.
+Tidak boleh memperbesar tampilan rumus dengan men-drag pojok rumus yang sedang dibuat
+16. Proposal tesis dijilid dengan sampul luar (cover) kertas manila berwarna putih. Tulisan pada sampul dicetak dengan warna hitam dan logo ITS dicetak dengan warna biru. Contoh layout sampul luar tesis dijelaskan pada Sub-Bab 2.2.
+17. Penulisan abstrak.
+Abstrak proposal tesis ditulis dalam Bahasa Indonesia dan Inggris pada halaman yang berbeda secara berurutan. Format penulisan abstrak akan dijelaskan pada bagian di bawah ini:
+a. Judul tesis ditulis pada batas margin atas, di tengah halaman, dengan ukuran font 14 dan dicetak tebal, dengan jarak spasi
+1.
+b. Nama mahasiswa, dosen pembimbing, dan ko-pembimbing (jika ada) ditulis 2 spasi di bawahnya, dicetak dengan font normal, pada tengah halaman. Jarak antara baris dari ketiga nama di atas adalah 1 spasi.
+c. Abstrak berjarak 2 spasi dari kata ABSTRAK, yang tertulis di tengah halaman, dengan ukuran font 14, dicetak tebal, dan menggunakan huruf kapital untuk semua huruf (upper case).
+d. Kata ABSTRAK ditulis dengan jarak 2 spasi setelah tulisan nama pembimbing atau ko-pembimbing (jika ada).
+e. Jarak antar baris adalah 1 spasi.
+
+f. Setiap paragraf pada abstrak ini dimulai masuk 1 (satu) tab (1,5 cm) dari batas margin kiri dengan justified alignment.
+g. Jumlah kata maksimum adalah 350.
+h. Kata kunci harus dituliskan di bagian bawah abstrak dengan jarak 3 spasi dari akhir abstrak, dengan jumlah kata minimal tiga dan maksimal lima. Kata kunci dipilih kata penting yang merupakan kata pokok yang spesifik dalam proposal tesis.
+Penulisannya diurutkan sesai dengan abjad pertama dari kata kunci tersebut. Satu kata kunci boleh terdiri lebih dari
+satu kata.
+i. Hal yang perlu ditulis dalam abstrak: latar belakang, permasalahan, dan metodologi pelaksanaan rencana tesis.
+Contoh abstrak proposal tesis dapat dilihat pada Lampiran 4.
+2.2 Format Tesis
+1. Format tesis mengacu pada format proposal tesis seperti yang tercantum pada Sub-Bab 2.1.
+2. Tesis dijilid dengan soft cover. Warna sampul dan tulisan pada sampul mengikuti warna yang dipergunakan di masing-masing fakultas dengan rincian sebagai berikut:
+a. FSAD
+: sampul warna Salem, tulisan warna Putih
+b. FTIRS
+: sampul warna Fire Brick, tulisan warna Putih
+c. FTEIC
+: sampul warna Gold, tulisan warna Hitam
+d. FTSPK
+: sampul warna Nero Black, tulisan warna Putih
+e. FTK
+: sampul warna Summer Sky, tulisan warna Hitam
+f. FDKBD
+: sampul warna Indigo, tulisan warna Hitam
+7
+
+Contoh warna sampul luar ini berikut kode warnanya disajikan pada Lampiran 5. Sampul luar dibuat dari kertas doff (tidak glossy). Logo ITS dicetak dengan warna biru dengan dasar putih.
+Contoh sampul luar disajikan pada Lampiran 6A sampai dengan
+6C.
+3. Ukuran huruf, angka, simbol, notasi pada tulisan, rumus / persamaan, tabel, dan gambar harus cukup besar untuk dibaca dengan jelas apabila tesis tersebut dikecilkan ke dalam sebuah microfilm.
+4. Catatan kaki, bila diperlukan, ditulis dengan jarak 1 spasi pada bagian bawah halaman. Ukuran huruf yang digunakan untuk catatan kaki adalah 10. Catatan kaki ini diletakkan 3 spasi di bawah baris terbawah laporan utama.
+3. PEDOMAN PENYUSUNAN PROPOSAL TESIS
+3.1 Umum
+Pedoman penyusunan proposal tesis merupakan pedoman
+bagi para mahasiswa program magister di ITS dalam menyusun proposal tesis mereka. Selain itu, pedoman ini juga merupakan acuan bagi para dosen pembimbing, penguji, maupun pengelola program studi pascasarjana di semua jurusan di ITS dalam membimbing mahasiswa saat penyusunan proposal tesis dan memeriksa proposal tesis yang dibuat mahasiswa sebelum proposal tersebut disetujui. Semua hal yang berkaitan dengan penyusunan
+proposal tesis dijelaskan pada item di bawah ini:
+8
+
+1. Proposal tesis dapat dibuat setelah mahasiswa menyelesaikan ≥
+25 % beban sks dengan IP (indek prestasi) pada akhir semester
+secara kumulatif di atas 2,5 tanpa nilai D dan E.
+2. Proposal tesis harus dipresentasikan pada sebuah seminar terbuka (seminar proposal tesis). Presentasi proposal merupakan forum penyempurnaan proposal tesis dan juga sebagai forum ujian proposal tesis. Seminar ini harus dihadiri oleh:
+a. satu atau dua dosen pembimbing (pembimbing dan ko-
+pembimbing)
+b. dua atau lebih dosen penguji (seluruh dosen penguji yang
+ditunjuk)
+c. para mahasiswa program pascasarjana pada bidang keahlian
+yang sama
+d. pihak lain yang berminat
+Ketua sidang seminar proposal tesis ditunjuk dari tim
+pembimbing atau anggota tim penguji.
+3. Penilaian dari tim penguji atas presentasi tersebut adalah:
+a. proposal disetujui, atau
+b. proposal disetujui dengan perbaikan, atau
+c. proposal tidak disetujui dan seminar harus diulang.
+4. Usul perbaikan yang diberikan oleh seluruh dosen penguji termasuk dosen pembimbing, dituangkan dalam berita acara seminar proposal tesis dengan mencantumkan jangka waktu perbaikannya dengan batas maksimum satu bulan. Selain itu, para anggota tim penguji dan mahasiswa yang bersangkutan harus mengisi daftar hadir pada lembar yang telah disediakan.
+
+Pada lembar tersebut, para anggota tim penguji juga harus menuliskan evaluasi seminar proposal bagi mahasiswa tersebut.
+Semua usul perbaikan proposal tesis harus diakomodasikan ke dalam proposal tesis dan perbaikan ini harus dikonsultasikan kepada para dosen penguji dan dosen pembimbing. Apabila perbaikan telah dilakukan dan disetujui oleh masing-masing dosen penguji seminar proposal tesis, selanjutnya proposal tesis dijilid. Dosen pembimbing, ko-pembimbing (jika ada), dan semua dosen penguji membubuhkan tandatangan dan nama lengkap beserta gelarnya di atas lembar pengesahan. Contoh lembar penilaian, berita acara, dan pengesahan proposal tesis disajikan pada Lampiran 7.
+5. Masa perbaikan / revisi proposal adalah 30 (tiga puluh) hari kalender sejak tanggal pelaksanaan seminar. Apabila sampai batas waktu tersebut mahasiswa masih belum menyerahkan
+proposal yang dimaksud, maka proposal tesis dinyatakan gugur dan mahasiswa yang bersangkutan harus melaksanakan ulang seminar proposal tesis.
+6. Proposal yang tidak disetujui dapat diajukan kembali setelah diperbaiki dan mahasiswa yang bersangkutan harus mempresen-tasikan kembali proposal tersebut.
+7. Proposal tesis yang disetujui diserahkan sebanyak:
+a. Satu eksemplar ke Direktur Program Pascasarjana ITS.
+b. Satu eksemplar ke Koordinator Program Studi.
+c. Satu eksemplar ke masing-masing dosen pembimbing.
+10
+
+8. Photo copy berita acara seminar proposal tesis, daftar hadir, dan nilai ujian proposal tesis diserahkan ke Direktur Program Pascasarjana dan Dekan Fakultas mahasiswa yang bersangkutan untuk diproses lebih lanjut.
+3.2 Isi Proposal Tesis
+1. Unsur dalam proposal tesis
+Unsur proposal tesis terdiri dari:
+a. Judul Penelitian
+b. Lembar Pengesahan
+c. Abstrak
+d. Daftar isi
+e. Bagian tubuh (bab-bab)
+yang terdiri dari: Bab 1:
+Pendahuluan, meliputi latar belakang, perumusan masalah, tujuan dan manfaat penelitian; Bab 2: Kajian Pustaka dan Dasar Teori; Bab 3: Metoda Penelitian
+f. Rencana dan Jadwal Kerja Penelitian dan Penyusunan Tesis
+g. Daftar pustaka
+h. Lampiran
+2. Halaman judul dan lembar pengesahan
+a. Halaman pertama proposal tesis disebut halaman judul. Isi dan format halaman judul sama dengan sampul depan.
+Halaman judul tidak diberi nomor halaman. Contoh halaman judul disajikan pada Lampiran 8A sampai dengan 8C.
+b. Lembar pengesahan terletak setelah halaman judul dan sebelum abstrak.
+
+3. Judul tesis (proposal)
+Judul tesis sebaiknya berisi deskripsi yang singkat dan jelas tentang topik tesis yang akan dibuat. Judul tersebut antara lain memuat: studi tentang apa, tujuan penyelesaian persoalan, metoda yang digunakan, dan ruang lingkup pembahasan. Jumlah kata maksimum dalam judul adalah 20 kata.
+4. Abstrak
+Abstrak adalah ringkasan yang singkat dan padat dari tesis.
+Fungsi abstrak adalah membantu pembaca agar dengan cepat dapat memperoleh gambaran umum dari tulisan (ilmiah) tersebut. Dalam abstrak, kutipan dari penulis lainnya tidak boleh dicantumkan. Penjelasan tentang penulisan abstrak secara detil adalah sebagai berikut:
+Abstrak dari proposal tesis berisi motivasi, perumusan masalah, tujuan, pendekatan / metoda, dan hasil yang diharapkan dari studi, dengan penjelasan sebagai berikut (lihat Lampiran 4):
+i. Motivasi.
+Motivasi menjelaskan tentang pentingnya studi ini dilakukan.
+Bagian ini berisi:
+(i) Pentingnya studi ini.
+(ii) Tingkat kesulitan yang ada
+(iii)Dampak yang ditimbulkan jika hal yang dilakukan /
+distudi / diteliti berhasil diterapkan.
+12
+
+ii. Perumusan masalah.
+Perumusan masalah menjelaskan masalah yang akan diselesaikan. Selain itu, perumusan masalah mencakup pula ruang lingkup pendekatan apakah secara umum atau khusus.
+iii. Pendekatan / metoda.
+Pendekatan menjelaskan bagaimana persoalan yang ada diselesaikan, apakah menggunakan simulasi, model analitis,
+prototip, atau analisis data aktual.
+iv. Hasil yang diharapkan.
+Apabila memungkinkan, hasil yang diharapkan dari penelitian / studi yang akan dilakukan dapat dicantumkan.
+Pada umumnya proposal tesis tidak perlu mencantumkan
+hasil ini.
+5. Bagian tubuh proposal tesis (teks)
+Bagian tubuh proposal tesis lazimnya (tentative) me- ngandung
+unsur berikut:
+a. Pendahuluan.
+b. Latar belakang.
+c. Perumusan masalah.
+d. Tujuan dan manfaat penelitian.
+e. Hipotesa (bila ada)
+f. Kajian pustaka dan dasar teori.
+g. Metoda penelitian
+h. Rencana dan Jadwal Kegiatan Penelitian.
+13
+
+Semua unsur tersebut ditulis / disusun dalam item sebagai
+berikut:
+i. Pendahuluan.
+ii. Penelitian / studi dilakukan untuk menjawab keingin-tahuan peneliti dalam mengungkapkan suatu konsep / hipotesa / gejala atau penerapannya guna tujuan tertentu. Untuk itu,
+pendahuluan perlu memuat motivasi yang mendorong di-
+lakukannya penelitian / studi tersebut, atau uraian justifikasi tentang pentingnya subjek penelitian / studi. Dengan
+pendahuluan
+ini penulis mengajak pembaca untuk
+mengetahui secara umum konteks atau latar belakang penelitian, perumusan masalah, tujuan penelitian, dan manfaat penelitian yang diawali atau diiringi dengan landasan teori utama atau studi awal. Perlu dicatat bahwa penelitian sains dan teknologi dapat berbentuk kualitatif / kuantitatif atau esperimental, kajian pustaka, atau kerja pengembangan (project). Bagian-bagian yang diuraikan berikut ini lebih menonjolkan hasil penelitian esperimental dan bisa saja dimodifikasi sesuai dengan bentuk penelitian
+yang dilakukan.
+ii. Latar belakang.
+Latar belakang menyajikan konteks penelitian, untuk apa penelitian ini dilakukan, dan hal apa yang mengarahkan penelitian ini. Disini diuraikan dalam keadaan bagaimana
+topik akan dilakukan.
+14
+
+Latar belakang memuat studi awal atau berbagai teori utama yang relevan dan baru (recent) yang dipadukan sehingga mengerucut pada suatu persoalan unik yang kemudian disusun dalam bentuk perumusan masalah. Lazimnya bagian ini diawali dengan menguraikan kesenjangan, teoritik
+maupun praktis, antara harapan dan kenyataan. iv. Perumusan masalah.
+Dalam sub-bab ini, permasalahan yang ingin di-selesaikan dirumuskan secara jelas, tajam, dan terfokus. Bagian ini memuat uraian / pernyataan atau berbagai topik pokok yang akan digali dalam penelitian ini. Definisi, asumsi, dan lingkup penelitian / studi dapat pula dijelaskan pada bagian ini. Perumusan masalah menyebutkan fokus utama dari penelitian yang mencakup berbagai pertanyaan yang akan dijawab dalam penelitian sehingga gambaran tentang apa yang akan diungkapkan dalam penelitian perlu terurai dengan jelas. Semua pertanyaan yang diajukan perlu didukung oleh alasan pelandas / dasar yang diperoleh dari studi awal atau teori utama.
+v. Tujuan dan manfaat penelitian.
+Pada bagian ini, tujuan dilakukannya penelitian / studi dan target atau sasaran yang ingin dicapai dinyatakan secara singkat dan jelas sesuai dengan permasalahan yang telah dirumuskan. Penelitian / studi dapat bertujuan untuk menjajaki, menguraikan, menjelaskan, membuktikan, atau
+menerapkan suatu konsep / hipotesa / gejala, atau membuat
+15
+
+suatu prototip. Di sini perlu juga dicantumkan manfaat / kegunaan khusus / dampak kemanfaatan yang diharapkan dari hasil penelitian / studi ini. Ada kalanya manfaat penelitian tidak dinyatakan secara eksplisit.
+vi. Hipotesa (bila ada)
+Hipotesa adalah rangkuman dari berbagai kesimpulan teoritis berdasarkan studi pustaka yang merupakan jawaban sementara (tentative response) terhadap masalah yang diajukan terlebih dahulu secara teoritis yang dianggap paling mungkin dan berhasil untuk ditemukan atau diamati. Tidak semua penelitian memerlukan hipotesa, terutama penelitian bersifat eksploratif (menggali / memperdalam) dan deskriptif.
+Kebanyakan penelitian sains dan teknologi bersifat eksploratif, sehingga bagian hipotesa tidak diperlukan.
+Penyusunan hipotesa yang baik dapat membantu memberi arah jalan penelitian yang akan ditempuh / dilaksanakan. Bila hipotesa tidak dipakai, peneliti tetap harus menjelaskan hasil akhir apa yang hendak dicapai atau arah mana dari penelitian ini sesuai landasan teori yang dipilih.
+vi. Kajian pustaka dan dasar teori.
+Pada bagian ini, teori, temuan, dan bahan penelitian sebelumnya yang diperoleh dari berbagai referensi yang dijadikan dasar melakukan penelitian yang diusulkan ini dibahas. Hal yang relevan dengan subyek / topik / state of the art yang diteliti saja yang diuraikan. Kajian pustaka merupakan rangkuman singkat yang komprehensif tentang
+16
+
+semua materi terkait yang terdapat di dalam berbagai referensi. Bagian ini bisa merupakan tampilan diskusi atau debat antar pustaka. Selain itu juga bisa menjelaskan tentang teknik / kaidah / peralatan atau teknologi yang akan dan / atau akan / telah digunakan dalam melaksanakan penelitian yang akan / sedang dilaksanakan. Uraian yang ditulis diarahkan untuk menyusun kerangka pendekatan atau konsep yang diterapkan dalam penelitian. Materi yang disampaikan diusahakan dari referensi terbaru dan asli, misalkan dari jurnal papers.
+Dasar teori merupakan semua teori yang diambil/dipilih berdasarkan kajian pustaka
+yang
+melatarbelakangi
+permasalahan penelitian / studi yang akan/sedang dilakukan.
+Dasar teori juga akan digunakan sebagai pedoman untuk mengerjakan penelitian lebih lanjut. Bentuk dasar teori bisa berupa uraian kualitatif atau model / persamaan matematis.
+Kalau beberapa teori dibahas, perlu diketengahkan teori apa yang diutamakan.
+Semua referensi yang digunakan / dikutip harus di-cantumkan dalam daftar pustaka. Dalam mengutip, nama belakang pengarang dan tahun penerbitan / publikasi harus dicantumkan setelah kutipan di dalam tanda kurung kecil (nama belakang, tahun penerbitan / publikasi) [sistem Harvard], misalnya (Siregar, 2006). Apabila penulis dari artikel yang dikutip lebih dari 2 orang maka cukup nama penulis pertama yang ditulis, kemudian dilanjutkan dengan
+17
+
+tulisan dkk. Tetapi di dalam daftar pustaka nama semua penulis artikel tersebut harus dituliskan, tidak hanya ditulis nama penulis pertamanya saja ditambah dengan tulisan dkk.
+Dalam kutipan langsung (mengutip persis seperti yang ditulis oleh penulis lain), apabila yang dikutip hanya satu kalimat,
+maka kalimat kutipan tersebut harus diberi tanda kutip di awal dan akhir kalimat. Apabila kutipan langsung tersebut lebih dari satu kalimat, maka kutipan tersebut ditulis menjorok kedalam satu tab (1,5 cm) dari sisi kiri dan kanan, dengan jarak spasi 1. Contoh kutipan langsung diberikan
+pada Lampiran 9.
+vii. Metoda penelitian
+Pada bagian ini diuraikan desain, metoda, atau pendekatan yang akan digunakan dalam menjawab permasalahan penelitian / studi untuk mencapai tujuan penelitian, serta tahapan penelitian secara rinci, singkat dan jelas. Uraian dapat meliputi parameter penelitian, model yang digunakan, rancangan peneli-tian, teknik / metoda perolehan dan analisis data, langkah peneli-tian, teknik observasi (bila dilakukan), serta teori penunjang pelaksanaan penelitian. Apabila dalam pengumpulan data di-gunakan teknik wawancara, daftar pertanyaan atau kuesioner dilampirkan dalam lampiran.
+Bagian ini bisa dilengkapi dengan gambar diagram alir tentang langkah penelitian atau gambar lain yang diperlukan untuk memperjelas metoda penelitian / studi tersebut. Dalam
+Metoda Penelitian dicantumkan pula jadwal kegiatan
+18
+
+penelitian dalam bentuk bar-chart, mulai dari tahap persiapan pelaksanaan penelitian sampai dengan tahap penyusunan tesis.
+6. Daftar pustaka
+Daftar pustaka merupakan daftar referensi dari semua jenis referensi seperti buku, jurnal papers, artikel, disertasi, tesis, hand outs, laboratory manuals, dan karya ilmiah lainnya yang dikutip di dalam penulisan proposal tesis. Semua referensi yang tertulis dalam daftar pustaka harus dirujuk di dalam tesis.
+Referensi ditulis urut menurut abjad huruf awal dari nama akhir / keluarga penulis pertama dan tahun penerbitan (yang terbaru ditulis lebih dahulu). Apabila penulis yang sama mempunyai beberapa artikel / papers yang dirujuk, maka urutan artikelnya berdasarkan tahun publikasinya. Apabila pada tahun yang sama, paper dari penulis yang sama diterbitkan lebih dari satu artikel, maka di belakang tahun dituliskan huruf kecil a, b, ..., dan seterusnya. Perlu dicatat bahwa minimal 30% dari total pustaka di dalam kajian pustaka adalah berasal dari artikel jurnal ilmiah yang relevan. Tata cara penulisan daftar pustaka adalah sebagai berikut:
+a. Artikel / paper dari sebuah jurnal.
+Nama akhir / keluarga penulis pertama, nama kecil / depan, nama akhir / keluarga penulis kedua, nama kecil / depan, dan nama penulis selanjutnya. Semua nama
+19
+
+penulis harus ditulis di sini. Nama kecil / depan bisa
+ditulis lengkap atau hanya inisialnya saja.
+ii.
+Tahun penerbitan / publikasi ditulis dalam kurung.
+iii. Judul artikel / paper dicetak huruf tegak dengan title
+case diantara tanda kutip.
+iv. Judul jurnal, dicetak miring / italic.
+v. Nomor volume dari jurnal.
+vi. Nomor jurnal.
+vii. Nomor halaman dari artikel tersebut di dalam jurnal.
+viii. Antara satu hal dengan hal lainnya dipisahkan dengan tanda koma, dan pada akhir suatu referensi diberi tanda titik.
+ix. Apabila referensi tersebut ditulis lebih dari satu baris,
+maka baris kedua dan berikutnya ditulis menjorok 1 cm ke dalam. Jarak antara satu referensi ke referensi berikutnya adalah 1 spasi.
+Contoh:
+Neuman, S.P. (1980a), "A Statistical Approach to the Inverse
+Problem of Aquifer Hydrology, Improved Solution Method and Added Prespective", Water Resources Research, Vol. 16,
+No. 2, hal. 331-346.
+Neupauer, R.M. dan Wilson, J.L. (2001), "Adjoint-Derived
+Location and Travel Time Probabilities for a
+Multidimensional Groundwater System", Water Resources
+Research, Vol. 38, No. 6, hal. 1657-1668.
+20
+
+Catatan:
+penambahan huruf "a" setelah tahun untuk menun-jukkan cara menuliskan referensi apabila seorang penulis menulis lebih dari satu pustaka pada tahun yang sama. Untuk pustaka yang berikutnya (penulis yang sama pada tahun yang sama) ditambah dengan huruf b, c, dan seterusnya.
+b. Buku.
+i. Nama pengarang dan tahun publikasi sama dengan item
+a.i dan aii di atas.
+ii. Judul buku dicetak miring / italic dengan title case. iii. Nomor volume dari buku (jika ada). iv. Edisi penerbitan.
+v. Nama penerbit. vi. Kota tempat diterbitkan.
+Contoh:
+Todd, K.D dan Mays, LW, (2005), Groundwater Hydrology,
+3rd edition, John Wiley & Sons, Inc., New York.
+c. Artikel / paper dalam sebuah buku yang ditulis / dirangkum oleh editor.
+i. Nama pengarang, tahun publikasi, dan judul artikel / paper sama dengan item ai, aii, dan aiii di atas.
+ii.
+Judul buku, didahului oleh kata in atau dalam, dicetak miring / italic.
+iii. Nomor volume dari buku (jika ada). iv. Edisi penerbitan.
+21
+
+Nama editor, didahului dengan ed. atau eds. bila lebih dari satu editor.
+V1. Nama penerbit.
+vii. Kota tempat diterbitkan.
+viii. Nomor halaman dari artikel tersebut di dalam buku.
+Contoh:
+Hall, J.E. (1992), "Treatment and Use of Sewage Sludge", dalam the Treatment and Handling of Wastes, eds.
+Bradshaw, A.D., Southwood, R., dan Warner, F., Chapman and Hall, London, hal. 63-82.
+d. Artikel / paper dalam sebuah buku prosiding / proceeding (kumpulan makalah dari suatu seminar / conference).
+i. Nama pengarang, tahun publikasi, dan judul artikel / paper sama dengan item a.i, a.ii, dan a.ii di atas.
+ii. Tulisan prosiding / proceeding diikuti dengan nama konferensi dan nomor konferensinya (pertama, kedua, ketiga, dan seterusnya), dicetak miring / italic.
+iii. Nama editor, didahului dengan ed. atau eds. bila lebih
+dari satu editor.
+iv. Penyelenggara seminar / conference.
+v. Kota tempat penyelenggaraan.
+vi. Nomor halaman dari artikel / paper tersebut di dalam
+prosiding
+Contoh:
+Neuman, S.P. (1980), "Adjoint-State Finite Element Equations for Parameter Estimation", Proceedings of Third
+22
+
+International Conference on Finite Elements in Water Resources, Eds: Wang, S. Y. et al., University of Mississippi, Mississippi, hal. 189-215.
+e. Proyek / project (student's final project).
+i. Nama pengarang dan tahun publikasi sama dengan item ai dan aii di atas.
+ii. Judul proyek dicetak miring / italic. ii. Jenis proyek. iv. Nama perguruan tinggi.
+v. Kota tempat penyelenggaraan.
+Contoh:
+Cox, M.J.M. (1994), Improvemant of a Hang-Glider's Stall Characteristics, Mechanical Engineering Project, School of Engineering, The University of Middletown, Middletown.
+f. Tesis / thesis dan disertasi / dissertation.
+i. Nama pengarang dan tahun publikasi, sama dengan item
+a.i dan a.il, di atas.
+ii. Judul tesis / disertasi dicetak miring / italic.
+iii. Tulisan: Tesis / disertasi Ph.D / Master / Magister, tidak
+dicetak miring (dicetak huruf tegak). iv. Nama perguruan tinggi.
+v. Kota tempat perguruan tinggi tersebut.
+Contoh:
+Mardyanto, M.A. (2004), A Solution to an Inverse Problem of Groundwater Flow Using Stochastic Finite Element Method, Tesis Ph.D., University of Ottawa, Ottawa.
+23
+
+g. Standar teknis / engineering standard.
+1. Nama pengarang dan tahun publikasi, sama dengan item a.1 dan a.11 di atas.
+ii. Judul standar teknis dicetak miring / italic. iii. Nama penerbit. iv. Kota tempat diterbitkan.
+Contoh:
+ACI Committee 318 (1989), Building Code Requirements for Reinforced Concrete and Commentary, American Con-crete
+Institute, Detroit.
+h. Dokumen pemerintah / badan dunia.
+i. Nama pengarang, tahun publikasi, sama dengan item a.i dan a.11 di atas.
+ii. Judul dokumen dicetak miring / italic.
+ii. Volume atau nomor (jika ada). iv. Nama penerbit.
+v. Kota tempat diterbitkan.
+Contoh:
+World Health Organization (1976), Manual of the Statistical Clasification of Deseases, Injury, and causes of Death:
+Based on the Recomendation of the 9th Revision Conference, 1975 and Adopted by the 29th World Health Assembly, Vol. 1,
+WHO, Geneva.
+i. Komunikasi pribadi.
+Komunikasi pribadi tidak diperkenankan dimasukkan dalam
+daftar referensi.
+24
+
+j. Bahan kuliah / Handouts.
+i. Nama pengarang, tahun publikasi sama dengan item a.i, dan aii di atas.
+ii. Judul topik handouts, dicetak miring.
+iii. Tulisan: lecture handout / bahan kuliah dan nama mata
+kuliah dicetak huruf tegak. iv. Nama perguruan tinggi.
+v. Kota tempat perguruan tinggi tersebut.
+Contoh:
+Seidel, R. (1996), Robotics, Lecture handout: Engineering and Society, the University of Middletown, Middle-town.
+k. Petunjuk praktikum / laboratory manual.
+i. Nama pengarang, tahun publikasi sama dengan item ai, dan aii di atas.
+ii. Nama dari kegiatan laboratorium / praktikum, dicetak
+miring.
+iii. Tulisan: laboratory manual / petunjuk praktikum, dicetak
+huruf tegak.
+iv. Nama perguruan tinggi.
+v. Kota tempat perguruan tinggi tersebut.
+Contoh:
+Hermana, J., Tangahu, B.V., dan Samodra, A. (2003), Metoda Analisa Pencemar Lingkungan, Petunjuk Praktikum, Jurusan Teknik Lingkungan FTSP-ITS, Surabaya.
+25
+
+1. Artikel / paper dari Internet.
+Sampai sekarang belum ada konvensi tentang penulisan daftar pustaka dari sumber Internet. Namun untuk bijaknya jangan memasukkan bahan ini dalam referensi suatu karya ilmiah. Suatu contoh penulisan daftar pustaka dari sumber Internet disajikan di bawah ini.
+Contoh:
+Internet News Group Comp. Compression (1995), Frequently Asked Question Part I, Subject (17): What is the State of Fractal Image Compression?, Entry from Mair, P.
+mair@Zariski.harvard.edu.
+7. Lain-lain
+Semua hal yang berkenaan dengan penyusunan proposal tesis yang belum diatur dalam buku pedoman ini, dianjurkan untuk mengikuti tatacara dari tuntunan (buku) lain yang sejenis dengan buku ini. Beberapa bagian lain yang kadang-kadang diperlukan untuk mengantarkan tesis atau disertasi sehingga terjadi penulisan dengan tata alir yang baik (convenient flow) adalah:
+a. Asumsi penelitian, berisi anggapan dasar pijakan penelitian; dapat berupa substansi atau metoda penelitian.
+b. Batasan penelitian, berisi semua variabel yang diteliti atau kondisi yang melingkupi penelitian. Dengan menampilkan bagian ini pembaca dapat menyikapi dengan tepat laporan penelitian yang disajikan.
+26
+
+c. Kumpulan istilah, akan membantu pembaca dalam memahami arti istilah yang digunakan di dalam tulisan.
+Kumpulan istilah ini dapat juga dikelompokkan bersama kumpulan / daftar simbol.
+4. PEDOMAN PENYUSUNAN TESIS
+4.1 Umum
+1. Tesis adalah karya ilmiah yang ditulis untuk memenuhi salah satu syarat untuk menyelesaikan studi pascasarjana strata 2 (program magister).
+2. Tesis merupakan laporan ilmiah tentang hasil penelitian / studi, observasi, atau investigasi yang dilakukan oleh mahasiswa magister pada Program Pascasarjana Institut Teknologi Sepuluh Nopember, Surabaya.
+3. Sebagai suatu karya ilmiah yang dibukukan, tesis disusun dengan mengikuti kaidah penulisan karya ilmiah. Penelitian / studi untuk penulisan tesis dila-kukan setelah proposal tesis disetujui tim pembimbing dan penguji. Kegiatan publikasi hasil penelitian / studi dari suatu tesis pada umumnya dapat dilakukan apabila pelaksanaan tesis sudah mencapai lebih dari 50%.
+Publikasi dapat dilakukan pada suatu seminar nasional atau jurnal.
+4. Dalam mengerjakan suatu tesis, mahasiswa dibimbing oleh seorang atau lebih dosen pembimbing, dengan tanggung jawab sebagai berikut:
+27
+
+a. Mahasiswa bertanggung jawab atas semua aspek yang ber-kaitan dengan penyiapan tesis dan publikasi dari penelitian / studinya (tesisnya) tersebut, antara lain:
+i. Isi dan materi (substansi). ii. Organisasi dan format. ii. Pekerjaan editorial. iv. Bahasa.
+v. Bibliografi.
+vi. Pengetikan dan penyajian berbagai gambar. vii. Penjagaan terhadap kualitas dan kesahihan data, logika, dan rasionalitas yang dipergunakan dalam penulisan. viii. Penyiapan manuskrip untuk tujuan publikasi dimana materinya diambil dari sebagian atau keseluruhan dari tess.
+b. Dosen pembimbing (komite dosen pembimbing) bertanggung jawab untuk:
+1. Memeriksa,
+mengoreksi,
+dan mengarahkan materi
+(substansi) dan metodologi yang dipergunakan dalam penelitian / studi untuk penulisan sebuah tesis.
+ii. Memeriksa, mengoreksi, dan mengarahkan organisasi, isi,
+dan format tesis.
+iii. Melakukan review atas kualitas data, logika, dan
+rasionalitas dari tesis.
+iv. Melakukan evaluasi menyeluruh atas penyelesaian tesis
+dan pemenuhan terhadap kriteria yang ada.
+28
+
+v. Memberikan dorongan dan membimbing mahasiswa yang dibimbingnya untuk menyiapkan manuskrip untuk publi-kasi ilmiah (pada sebuah seminar atau jurnal).
+vi. Menjaga kualitas dan menjaga terhadap kemungkinan adanya penjiplakan (plagiarism) / orisinilitas tesis.
+5. Masa penyelesaian tesis adalah satu semester atau satu tahun (hari kalender) sejak tanggal persetujuan proposal tesis. Dalam jangka waktu maksimum satu tahun, tesis harus sudah diuji di depan tim penguji. Apabila batas waktu ini terlampaui maka mahasiswa yang bersangkutan wajib mengganti judul tesisnya
+dan mengulangi prosedur pengajuan tesis seperti yang dijelaskan pada Bab 1.
+6. Pihak yang boleh hadir di dalam ujian tertutup tesis hanyalah para dosen penguji ujian tesis. Para penguji tesis sebisa mungkin semua dosen penguji pada seminar proposal tesis. Ketua sidang ujian tesis ditunjuk dari tim pembimbing atau anggota tim penguji. Para penguji memberikan penilaiannya pada form evaluasi ujian akhir tesis seperti yang disajikan pada Lampiran
+10. Selanjutnya hasil ujian tesis dituliskan pada lembar berita acara ujian tesis. Contoh berita acara ujian tesis disajikan pada Lampiran 10.
+7. Masa Perbaikan tesis adalah 3 (tiga) bulan sejak tanggal pelaksanaan ujan tesis. Apabila sampai batas waktu tersebut mahasiswa masih belum menyerahkan tesis yang dimaksud,
+maka tesis dinyatakan batal dan mahasiswa yang bersangkutan harus menyusun ulang tesis dengan judul baru.
+29
+
+4.2 Isi Tesis
+1. Unsur dalam tesis
+Unsur dalam tesis terdiri dari:
+a. Judul penelitian.
+b. Lembar pengesahan.
+c. Abstrak.
+d. Daftar isi.
+e. Daftar gambar (jika ada).
+f. Daftar tabel (jika ada).
+g. Daftar notasi / simbol (bila diperlukan).
+h. Bagian Tubuh (bab-bab) yang terdiri dari: Bab 1:
+Pendahuluan, meliputi latar belakang, perumusan masalah, tujuan dan manfaat penelitian; Bab 2: Kajian Pustaka dan Dasar Teori; Bab 3: Metoda Penelitian; Bab 4. Hasil dan Pembahasan; Bab 5: Kesimpulan.
+i. Daftar pustaka.
+j. Lampiran (jika ada).
+k. Biografi penulis.
+2. Halaman judul dan lembar pengesahan
+Halaman judul dan lembar pengesahan tesis sama dengan yang dijelaskan pada Sub-Bab 3.2 nomor 2. Contoh halaman judul sama dengan yang disajikan pada Lampiran 8A sampai dengan
+8C. Contoh lembar pengesahan tesis disajikan pada Lampiran
+10.
+30
+
+3. Judul tesis
+Hal yang berkenaan dengan judul tesis telah dijelaskan pada
+Sub-Bab 3.2 nomor 3. Judul tesis boleh tidak sama persis dengan yang telah tercantum di proposal tesis apabila dalam proses penelitiannya terjadi perubahan atau penambahan yang cukup mendasar. Tetapi secara substansial penelitian pada tesis harus sama, walaupun tidak identik, dengan yang telah dijelaskan di dalam proposal tesis.
+4. Abstrak
+Abstrak tesis pada dasarnya sama dengan format abstrak proposal tesis, seperti yang telah dijelaskan pada Sub-Bab 3.2 nomor 4, tetapi pada abstrak tesis harus ditambahkan hasil dan kesimpulan dari penelitian yang telah dilakukan. Dalam
+kesimpulan, hindarkan penulisan yang menunjukkan keragu-
+raguan. Dalam tesis, selain abstrak yang ditulis dalam Bahasa
+Indonesia juga harus dilengkapi dengan abstrak yang ditulis dalam Bahasa Ingris. Contoh abstrak tesis yang ditulis dalam
+Bahasa Indonesia dan Inggris disajikan berturut-turut pada
+Lampiran 11.
+5. Bagian tubuh tesis (teks)
+Pada dasarnya bagian tubuh tesis sama dengan bagian tubuh proposal tesis, hanya saja pada tesis terdapat bab hasil penelitian dan pembahasan. Disamping itu, semua bagian pada tesis harus ditulis lebih detil dan dalam dibandingkan dengan yang telah
+31
+
+dituliskan pada proposal tesis, karena pada saat menulis tesis kajian pustaka dan penelitian telah dilakukan secara lebih mendalam. Adapun bagian pada tubuh tesis mencakup, tetapi tidak terbatas pada, hal-hal sebagai berikut:
+a. Pendahuluan.
+b. Latar belakang.
+c. Perumusan masalah.
+d. Tujuan dan manfaat penelitian.
+e. Hipotesa (bila ada).
+f. Kajian pustaka dan dasar teori.
+g. Metoda penelitian.
+h. Hasil penelitian dan pembahasan.
+i. Kesimpulan dan saran.
+Semua bagian tersebut ditulis / disusun dalam item sebagai berikut:
+i. Bagian a sampai dengan g di atas sama seperti apa yang telah dijelaskan pada Sub-Bab 3.2 nomor 5.
+ii. Hasil penelitian dan pembahasan.
+Pada awal bagian ini, perlu diberikan suatu pengantar yang memuat hal-hal yang akan dilakukan beserta analisis yang digunakan dalam menyelesaikan penelitian.
+Selanjutnya secara terperinci dan tahap demi tahap tujuan penelitian dibahas dan dianalisis secara detail dan tajam, dengan menggunakan metoda yang telah diberikan dalam metodologi penelitian, sampai diperoleh suatu hasil penelitian. Analisis dan pembahasan ini, dilakukan untuk
+32
+
+semua tujuan yang telah ditetapkan pada tujuan penelitian.
+iii. Kesimpulan dan saran.
+(i) Kesimpulan.
+Pada sub-bab ini dituliskan kesimpulan hasil penelitian atau kesimpulan tesis. Kesimpulan harus ditulis
+berdasarkan hasil penelitian, pembahasan, dan temuan yang telah ditulis pada bab sebelumnya yang tentu saja disesuaikan dengan tujuan penelitian atau tesis. Jangan menyimpulkan sesuatu yang tidak ada di dalam pembahasan yang telah dibuat. Kesimpulan dibuat dengan singkat dan jelas dengan urutan yang sebisa mungkin sesuai dengan tujuan penelitian (tertulis pada sub-bab tujuan penelitian).
+(ii)
+Saran (optional).
+Pada sub-bab ini dituliskan saran yang diusulkan oleh penulis. Dalam hal ini ada dua jenis saran:
+a) Saran untuk penelitian selanjutnya / kajian lanjutan.
+Saran jenis ini diberikan pada tesis yang bersifat penelitian dan modelling. Saran ini berisi berbagai hal yang belum dilakukan, atau belum selesai dilakukan, atau berbagai hal yang merupakan lanjutan penelitian yang telah dilakukan dalam tesis ini. Saran yang dibuat harus berdasarkan pembahasan serta kesimpulan yang telah dibuat.
+33
+
+Jangan menyarankan sesuatu yang berada di luar jangkauan pembahasan dan kesimpulan yang dibuat.
+b) Saran terhadap perbaikan sistem yang dibahas dalam tesis / practical implication. Saran jenis ini diberikan pada tesis yang bersifat studi kasus. Saran ini berisi berbagai hal yang harus dilakukan untuk perbaikan sistem yang telah dibahas dalam sub-bab pembahasan dan kesimpulan. Saran yang diberikan hasus masuk akal dan mungkin untuk dilakukan / diaplikasikan. Saran ini tentunya berdasarkan temuan yang diperoleh dalam pembahasan dan disimpul-kan dalam sub-bab kesimpulan. Jangan memberikan saran yang berbeda / menyimpang dengan apa yang dibahas dan disimpulkan pada sub-bab pembahasan dan kesimpulan.
+
+Lampiran (Pedoman Penulisan Tesis)
+1. Layout tulisan
+2. Contoh penulisan bab dan sub-bab
+3. Contoh penampilan tabel dan gambar
+4. Contoh abstrak proposal tesis dalam Bahasa Indonesia
+5. Warna sampul luar tesis dan kode warna
+6. Contoh sampul / cover luar tesis
+7. Contoh lembar penilaian, berita acara, dan lembar pengesahan proposal tesis
+8. Contoh sampul / cover dalam tesis
+9. Contoh kutipan langsung jika yang dikutip lebih dari satu
+kalimat
+10. Contoh lembar penilaian, berita acara, dan lembar pengesahan proposal tesis
+11. Contoh abstrak tesis
+35
+
+Lampiran 1A
+Layout tulisan untuk halaman ganjil
+3,5 cm
+K__-------
+г---
+Balas tepi ulisan
+4 cm
+Kertas ukuran A4 - 80 mg
+3cm,
+- - ---
+3 cm
+36
+
+Lampiran 1B
+Layout tulisan untuk halaman genap
+个
+3,5 cm
+_------•
+Batas tepi tulisan
+3 cm
+Kertas ukuran A4 - 80 mg
+Batas tepi kertas
+IllIll
+-_-
+爪
+3 cm
+4 cm
+37
+
+Lampiran 2
+Contoh penulisan bab dan sub bab.
+BAB 2
+KAJIAN PUSTAKA
+2.1 Model Aliran Airtanah
+Dalam studi aliran air tanah, biasanya sulit atau bahkan
+tidak mungkin untuk menentukan respon dari suatu akifer untuk aktivitas mendatang dengan melakukan penelitian laboratorium atau percobaan lapangan. Sebagai gantinya, model aliran airtanah, yang merepresentasikan sistem atau proses aliran airtanah (Bear, 1979;
+Konikow and Bredehoef, 1992; Kitanidis, 1997), dapat dibuat untuk memprediksi behaviour aliran airtanah pada suatu akifer.
+Model aliran airtanah dapat dikategorikan sebagai model
+fisik (model media porous, model analog, model analog elektronik), dan model matematika (Todd, 1980). Pada model fisik, sebuah model skala kecil diasumsikan mewakili kondisi atau proses lapangan yang sebenarnya. Pada model matematika, kondisi lapangan yang sesuangguhnya dinyatakan dengan persamaan matematika. Pada pemodelan matematika, sebuah program komputer biasanya diperlukan untuk menyelesaikan permasalahan aliran, khususnya jika berhubungan dengan domain yang komplek dan luas. Model fisik dan matematik kemungkinan dapat mensimulasikan aliran airtanah pada suatu domain tertentu; tetapi,
+38
+
+kondisi yang sebenarnya di lapangan dan proses aliran biasanya disederhanakan pada kedua macam model tersebut (Bear, 1979).
+Model matematika mempunyai beberapa keuntungan. (1)
+Model ini dapat mencakup kondisi yang komplek dari sistem akifer.
+Kekomplekan ini berasal dari kondisi heterogenitas dan anisotropi dari konduktivitas hidrolik, ketidak teraturan bentuk geometris akifer, jenis kondisi batas yang berbeda-beda, dan variabilitas dari discharge / recharge ke dan dari akifer. (2) Model ini mudah dikalibrasi; yaitu seseorang dapat mengubah-ubah nilai beberapa
+parameter sehingga respon akifer yang dimodelkan (muka airtanah atau head hidrolik) sama dengan respon yang sebenarnya. Karena itu, engineers umumnya menggunakan model matematika ini
+39
+Lampiran 3.A
+Contoh penampilan tabel.
+Tabel 3.4 Nilai Tipikal dari Batas Cair, Batas Plastis, dan Aktivitas dari Beberapa Mineral Lempung
+Sumber: Das, 2002
+Mineral
+Batas Cair, LIL
+Batas Plastis, PL
+Aktivitas, A
+Kaolinite
+35-100
+20 - 40
+0,3 -0,5
+Illite
+60 - 120
+35 - 60
+0,5 - 1,2
+Montmorillonite
+100 - 900
+50 - 100
+1,5 - 7,0
+Halloysite (hydrated)
+50-70
+40 - 60
+0,1 - 0,2
+Halloysite (dehydrated)
+40 - 55
+30- 45
+0,4 - 0,6
+Attapulgite
+150 - 250
+100 - 125
+0,4- 1,3
+Allophane
+200 - 250
+120 - 150
+0,4 - 1,3
+40
+
+Lampiran 3.B
+Contoh penampilan gambar.
+100
+10
+‡0
+infiltration rate (cm/hr)
+1
+.1
+0
+하
+distance (m)
+Gambar 1.2 Laju infiltrasi permukaan tanah alluvial yang diobservasi setiap jarak interval 25-ft di Rio Grande dekat Socorro, New Mexico (Gelhar, 1993; data diperoleh dari Gelhar et al., 1983)
+41
+
+Lampiran 4
+Contoh abstrak proposal tesis dalam Bahasa Indonesia
+INFILTRASI AIR HUJAN DAN KEGEMPAAN TERINDUKSI
+LERENG STABILITAS PADA TANAH SISA
+MENGGUNAKAN RESISTIVITAS DAN PENGUKURAN
+MICROTREMOR
+Mahasiswa Nama
+Mahasiswa ID
+Pembimbing
+Co-Supervisor
+: Dwa Desa Warnana
+: 3107 301 202
+: Dr. Ir. Ria A. A. Soemitro, M.Eng
+: Dr. Ir. Widya Utama, DEA.
+ABSTRAK
+Penggunaan metode resistivitas dan mikrotremor dalam
+investigasi kestabilan lereng berkembang sangat pesat dalam beberapa tahun terakhir. Keuntungan dari kedua metode tersebut adalah memberikan informasi tentang struktur internal dari tanah dengan penyelidikan non destruktif. Berdasarkan fenomena konduksi tanah, variasi spasial dan temporal dari kandungan air dan heterogenitas bawah permukaan dapat dievaluasi dari pengukuran resistivitas. Respon tanah terhadap ground motion dan efek tapak lokal dapat dievaluasi dari pengukuran microtremor. Meskipun begitu, hanya evaluasi bawah permukaan secara kualitatif yag dapat diperoleh dari kedua metode tersebut. Penilaian kestabilan lereng secara kuantitatif akibat hujan dan kegempaan dengan penerapan dari kedua metode dalam penelitian merupakan keterbaharuan
+penting yang diberikan dalam penelitian ini.
+Penelitian ini bertujuan untuk mengkaji stabilitas lereng
+pada tanah residual di Desa Kemuning Lor Arjasa, Jember dan Desa Sumber Aji, Batu Malang akibat pengaruh infiltrasi air hujan dan
+seismisitas
+(kegempaan) dengan
+menggunakan pengukuran
+resistivitas dan mikrotremor. Pengukuran dilakukan pada musim kemarau dan hujan. Pengukuran parameter geoteknik dan resistivitas skala laboratorium juga telah dilakukan. Hasil pengolahan resistivitas telah diverifikasi dengan hasil pengukuran geoteknik dan
+42
+
+analisa
+skala
+laboratorium untuk mendapatkan interpretasi
+kuantitatif dengan pendekatan petrofisika. Pengukuran Microtremor dilakukan untuk lebih memahami respon tanah akibat kegempaan.
+Dari perandingan spectrum H / V maka periode natural dan puncak amplitudo tanah dapat ditentukan dan kestabilan lereng berdasarkan indeks kerentanan tanah dan shear strain dapat ditentukan pula.
+Pengaruh kandungan air, kohesi, berat volume tanah, dan sudut geser terhadap resistivitas telah diselidiki. Untuk kandungan air (wc) kurang dari 25%, resistivitas tanah menurun sangat tajam.
+Penurunan nilai resisitivitas ini sensitif terhadap berat volume tanah kering dan kandungan mineral lempung setempat yang akhirnya berpengaruh terhadap korelasi antara resistivitas dan parameter tanah lainnya. Di lain pihak, penurunan resistivitas tanah hampir linear untuk kandungan air (Wc) lebih besar dari 25%.
+Persamaan empiris perhitungan angka keamanan (SF)
+berdasarkan interaksi antara resistivitas dengan infiltrasi air hujan dan sudut kemiringan setempat telah dibangun dan diaplikasikan terhadap hasil pengukuran monitoring tomografi resistivitas di masing - masing lokasi penelitian. Dari hasil perhitungan tersebut ditemukan kondisi kritis di lereng Jember pada musim hujan.
+Peta sebaran puncak HVSR dan frekuensi natural tanah telah dibuat dan dibandingkan. Telah ditemukan bahwa frekuensi natural hasil pengukuran mikrotremor dapat dijadikan acuan sebagai frekuensi natural tanah setempat. Stabilitas lereng akibat gempa telah dikaji dengan menggunakan perhitungan indeks kerentanan tanah dan shear strain dari pengukuran mikrotremor. Stabilitas lereng akibat gempa pada musim hujan ditemukan lebih rentan daripada di musim kemarau.
+Kata kunci: kestabilan lereng, faktor keamanan, kandungan air, kegempaan, resistivitas, Mikrotremor, Kemuning Lor Arjasa - Jember, Sumber Aji - Batu Malang
+43
+
+44
+Lampiran 5
+Warna Sampul Luar Tesis dan Kode Warna
+NO.
+NAMA
+FAKULTAS
+(IND)
+NAMA
+FAKULTAS
+(ENG)
+WARNA
+KODE WARNA
+1
+Sains dan
+Analitika Data
+Science and Data
+Analytics
+Salem
+R: 15 G: 129 B: 64
+C: 87 M: 24 Y: 100 K: 13
+HEX: #0F8140
+2
+Teknologi
+Industri dan
+Rekayasa Sistem
+Industrial
+Technology and Systems
+Engineering
+Fire Brick
+R: 179 G: 30 B: 35
+C: 18 M: 100 Y: 100 K: 14
+HEX: #63123
+3
+Teknologi
+Elektro dan
+Informatika
+Cerdas
+Intelligent
+Electrical and Informatics Technology
+Gold
+R: 255G: 215 B: 0
+C: 1 M: 13 Y: 100 K: 0
+HEX: #FFD700
+4
+Teknik Sipil, Perencanaan dan
+Kebumian
+Civil, Planning, and Geo Engineering
+Nero Black
+R: 35G: 31 B: 32
+C: 0M: 0Y: 0 K: 100
+HEX: #231F20
+5
+Teknologi Kelautan
+Marine
+Technology
+Summer Sky
+R: 39 G: 175 B: 229
+C: 69 M: 12 Y: 0 K: 0
+HEX: #26AEE4
+6
+Desain Kreatif
+dan Bisnis
+Digital
+Creative Design and Digital Business
+Indigo
+R: 75G: 0 B: 130
+C: 85 M: 100 Y: 11 K: 8
+HEX: #460082
+
+Sekolah
+Interdisiplin Manajemen Teknologi
+school of
+Interdisciplinary Management and Technology
+Very Dark Blue
+R: 10G: 16 B: 25
+C: 62 M: 38 Y: 0 K: 75
+HEX: #192841
+
+- - --
+0.6 dari tinggi kertas
+0.4 dari tinggi kertas
+Lampiran 6A
+A. Contoh sampul / cover luar tesis mono disiplin
+$20 mm
+40 mm
+A
+35 mm
+Warna Dibagian Atas Garis Biru ITS : Putih
+...
+€ 15 mm
+Warna Biru ITS
+Warna Dibawah Garis Biru ITS :
+Sesuai Warna Fakultas
+Tesis - No. Kode Tesis
+Judul Tesis
+Trebuchet MS (Bold),
+12 point
+Trebuchet MS (Bold),
+18 point
+40 mm
+NAMA MAHASISWA NRP MAHASISWA
+DOSEN PEMBIMBING
+Prof. Ir. Wahyu Susilo, M.Sc., Ph.D.
+Dr. Ir. Indah Wahyuni, M.Sc.
+PROGRAM MAGISTER BIDANG KEAHLIAN ...
+00.......
+PROGRAM STUDI...........
+DEPARTEMEN.
+FAKULTAS ..
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER
+SURABAYA
+20..
+§30 mm
+L Trebuchet MS,
+12 point
+45
+
+Lampiran 6B
+C. Contoh sampul / cover luar tesis multi disiplin
+20 mm
+40 mm
+35 mm
+Warna Dibagian Atas Garis Biru ITS : Putih
+$ 15 mm
+0.6 dari tinggi kertas
+Warna Biru ITS
+Warna Dibawah Garis Biru ITS :
+Sesuai Warna Fakultas
+Tesis - No. Kode Tesis
+Judul Tesis
+Trebuchet MS (Bold),
+12 point
+Trebuchet MS (Bold),
+18 point
+0.4 dari tinggi kertas
+40 mm
+NAMA MAHASISWA NRP MAHASISWA
+DOSEN PEMBIMBING
+Prof. Ir. Wahyu Susilo, M.Sc., Ph.D.
+Dr. Ir. Indah Wahyuni, M.Sc.
+PROGRAM MAGISTER
+BIDANG KEAHLIAN .................
+PROGRAM STUDI .....
+•..
+PROGRAM PASCASARJANA
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER !
+SURABAYA
+720..
+: 30 mm
+V
+Trebuchet MS,
+12 point
+46
+
+Lampiran 7A
+Contoh lembar penilaian dan daftar hadir seminar proposal
+tesis
+DEPARTEMEN PENDIDIKAN NASIONAL
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER SURABAYA
+PROGRAM PASCASARJANA
+DAFTAR HADIR DAN NILAI SEMINAR PROPOSAL TESIS
+:........
+Judul Seminar
+Oleh
+Nrp.
+Program Studi
+Bidang Keahlian
+Tanda Tangan
+:....
+:
+No
+Nama Dosen
+Jabatan
+Tanda Tangan
+Nilai (dalam angka)
+
+
+Ketua
+Anggota
+Anggota
+Anggota
+
+
+Nilai rata-rata : .... (dalam angka)
+.... (dalam huruf)
+Ketua Sidang,
+Surabaya,
+Mengetahui :
+Ketua Program Studi,
+47
+
+Lampiran 7B
+Contoh berita acara seminar proposal tesis
+DEPARTEMEN PENDIDIKAN NASIONAL
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER SURABAYA
+PROGRAM PASCASARJANA
+BERITA ACARA
+SEMINAR PROPOSAL TESIS
+Pada
+Hari, Tanggal
+Jam
+Tempat
+.........
+:.........
+..........
+telah dilaksanakan Seminar Proposal Tesis
+Judul
+Oleh Nrp.
+Program Studi
+Bidang Keahlian
+:...
+:....
+dengan hasil
+1. disetujui
+2. disetujui dengan perbaikan / penyempuraan (jangka waktu perbaikan: ...hari)
+3. tidak disetujui atau mengulang
+Perbaikan / penyempurnaan yang harus dilakukan adalah : (kalau diperlukan dapat ditulis di lembar terpisah
+Nama Dosen
+Tanda Tangan
+Ketua Sidang,
+1..
+2.
+.....
+Mengetahui :
+Ketua Program Studi,
+3.
+4.
+48
+
+Catatan : dibuat rangkap 4
+1. Direktur PPs - ITS
+2. Ketua Program Studi
+3. Dosen (-dosen) Pembimbing
+4. Mahasiswa yang bersangkutan
+49
+
+Lampiran 7C
+Contoh lembar pengesahan proposal tesis
+LEMBAR PENGESAHAN
+PROPOSAL TESIS
+Judul
+Oleh
+Nrp.
+:............................
+............
+・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・
+Telah diseminarkan pada:
+Hari
+Tanggal
+Tempat
+Dosen Penguji:
+1...
+NIP:
+2......
+NIP:
+3...
+NIP:
+Mengetahui / menyetujui:
+Calon Dosen Pembimbing:
+1....
+NIP:
+2...
+NIP:
+50
+
+ーー
+Lampiran 8A
+A. Contoh sampul / cover dalam tesis mono disiplin
+e20 mm
+40 mm
+35 mm
+Warna Dibagian Atas Garis Biru ITS : Putih
+0.6 dari tinggi kertas
+• 15 mm
+Warna Biru ITS
+Warna Dibawah Garis Biru ITS :
+Sesuai Warna Fakultas
+Tesis - No. Kode Tesis
+Judul Tesis
+Trebuchet MS (Bold), 17 puchet Ms (Bold),
+18 point
+0.4 dari tinggi kertas
+40 mm
+NAMA MAHASISWA NRP MAHASISWA
+DOSEN PEMBIMBING
+Prof. Ir. Wahyu Susilo, M.Sc., Ph.D.
+Dr. Ir. Indah Wahyuni, M.Sc.
+PROGRAM MAGISTER BIDANG KEAHLIAN ...
+00.......
+PROGRAM STUDI..............
+DEPARTEMEN ..
+FAKULTAS ..
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER
+SURABAYA
+>20..
+--1
+130 mm
+V
+- Trebuchet MS,
+12 point
+51
+
+Lampiran 8B
+C. Contoh sampul / cover dalam tesis multi disiplin
+20 mm
+40 mm
+35 mm
+Warna Dibagian Atas Garis Biru ITS : Putih
+@ 15 mm
+0.6 dari tinggi kertas
+ーーーーー
+Warna Biru ITS
+Warna Dibawah Garis Biru ITS :
+Sesuai Warna Fakultas
+Tesis - No. Kode Tesis
+Judul Tesis
+Trebuchet MS (Bold),
+12 point
+Trebuchet MS (Bold),
+18 point
+0.4 dari tinggi kertas
+40 mm
+NAMA MAHASISWA NRP MAHASISWA
+DOSEN PEMBIMBING
+Prof. Ir. Wahyu Susilo, M.Sc., Ph.D.
+Dr. Ir. Indah Wahyuni, M.Sc.
+PROGRAM MAGISTER
+BIDANG KEAHLIAN .................
+PROGRAM STUDI .....
+•..
+PROGRAM PASCASARJANA
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER
+SURABAYA
+720..
+: 30 mm
+V
+Trebuchet MS,
+12 point
+52
+
+Lampiran 9
+Contoh kutipan langsung jika yang dikutip lebih dari satu kalimat (masuk 1 tab dari kiri dan kanan)
+Langkah umum untuk menyelesaikan problem invers stokastik yang dikutip dari Sun dan Yeh (1992) adalah sebagai berikut:
+a. Gunakan mean dan varians dari pengukuran log K sampel sebagai estimasi awal dari parameter statistik My dan oy.
+b. Gunakan hasil pengukuran log K saja untuk mengestimasi parameter statistik My, Oy, dan ly dengan menggunakan MLE dan buat log K field dengan menggunakan krigging.
+c. Gunakan semua parameter statistik yang diperoleh pada langkah terakhir sebagai estimasi awal, dan gunakan hasil pengukuran log K dan head hidrolik untuk menyelesaikan problem invers stokastik.
+53
+
+Lampiran 10.A
+Contoh Form Evaluasi Ujian Akhir Tesis (Rekapitulasi)
+DEPARTEMEN PENDIDIKAN NASIONAL
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER SURABAYA
+PROGRAM PASCASARJANA
+DAFTAR NILAI UJIAN TESIS
+:.............
+Judul Tesis
+Oleh Nrp.
+Bidang Keahlian
+Program Studi
+: Pascasarjana
+Fakultas / Jurusan
+Tanda Tangan
+I. NILAI UJIAN (kisaran antara 40 - 60%)
+
+Penguji I
+Penguji II
+Penguji II
+Penguji IV
+Penguji V
+Rata-rata
+Materi (80%)
+
+
+
+
+
+
+Sikap /
+Presentasi (20%)
+
+
+
+
+
+
+
+
+Nilai Total
+
+
+
+
+Catatan : Pembimbing juga bertindak sebagai penguji
+II. NILAI PEMBIMBING (kisaran antara 40 - 60%)
+
+Dosen Pembimbing
+Nilai
+
+Pembimbing I
+Pembimbing I
+
+54
+
+Nilai rata-rata : .............(dalam angka)
+... (dalam huruf)
+Surabaya, .......................
+Mengetahui :
+KetuaProgram Studi,
+55
+
+Lampiran 10.B
+Contoh Form Evaluasi Ujian Akhir Tesis untuk Masing-masing
+Dosen
+DEPARTEMEN PENDIDIKAN NASIONAL
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER SURABAYA
+PROGRAM PASCASARJANA
+DAFTAR NILAI UJIAN TESIS
+:.........
+Judul Tesis
+Oleh
+Nrp.
+Bidang Keahlian
+Program Studi
+Fakultas / Jurusan
+: Pascasarjana
+Nama Penguji
+Nilai
+Surabaya, ...
+Penguji,
+56
+
+Lampiran 10.C
+Contoh Berita Acara Ujian Akhir Tesis
+DEPARTEMEN PENDIDIKAN NASIONAL
+INSTITUT TEKNOLOGI SEPULUH NOPEMBER SURABAYA
+PROGRAM PASCASARJANA
+BERITA ACARA
+UJIAN TESIS
+Pada
+Hari, Tanggal Jam
+Tempat
+telah dilaksanakan Ujian Tesis
+Judul
+Oleh Nrp.
+Program Studi
+Bidang Keahlian
+:.....
+:...
+dengan hasil
+1. disetujui
+2. disetujui dengan perbaikan / penyempurnaan
+3. tidak disetujui atau mengulang
+Perbaikan / penyempurnaan yang harus dilakukan adalah : (kalau diperlukan dapat ditulis di lembar terpisah)
+Penguji :
+Ketua Sidang
+1..
+2.
+Mengetahui,
+Ketua Program Studi,
+3.
+4......
+5. Dst
+57
+
+Catatan : dibuat rangkap 4
+1. Direktur PPs - ITS
+2. Ketua Program Studi
+3. Dosen (-dosen) Pembimbing
+4. Mahasiswa yang bersangkutan
+
+Lampiran 10.D
+Contoh lembar pengesahan tesis
+Tesis disusun untuk memenuhi salah satu syarat memperoleh gelar
+Magister Manajemen Teknologi (M.MT)
+di
+Institut Teknologi Sepuluh Nopember
+oleh :
+Nrp.-
+Tanggal Ujian :
+Periode Wisuda :
+Disetujui oleh:
+1. Nama Pembimbing
+NIP:
+2. Nama Pembimbing
+NIP:
+3. Nama Penguji
+NIP:
+4. Nama Penguji
+NIP:
+5. Nama Penguji
+NIP:
+(Pembimbing 1)
+(Pembimbing Il)
+(Penguji)
+(Penguji)
+(Penguji)
+Direktur Program Pascasarjana,
+Nama Lengkap
+NIP.
+59
+
+Lampiran 11.A
+Contoh abstrak tesis dalam Bahasa Indonesia
+KINERJA KOMPOS PRODUKSI UDPK BRATANG
+SEBAGAI MEDIA PENUKAR ION UNTUK MEREDUKSI LOGAM BERAT Cu DALAM AIR LIMBAH BUATAN
+Nama mahasiswa
+NRP
+Pembimbing
+ABSTRAK
+Kurangnya motivasi dalam kegiatan pengomposan salah
+satunya adalah karena rendahnya nilai jual dan sempitnya pasar untuk produksi kompos. Pemanfaatan kompos sebagai media penukar 10n dharapkan dapat meningkatkan nila jual kompos sekaligus untuk memberikan alternatif pengolahan logam berat, khususnya Cu, yang murah. Kemampuan kompos untuk menukar ion berasal dari kandungan materi humus pada kompos yang mempunyai kapasitas tukar kation (KTK). Grup fungsi yang
+berperan
+adalah grup karboksil (-COOH) sehingga
+bisa
+dikategorikan sebagai resin asam lemah. Penelitian ini bertujuan untuk mengkaji kinerja kompos produksi UDPK Bratang sebagai media penukar ion untuk mereduksi Cu dalam air limbah buatan.
+KTK teoritis diukur dengan metode titrasi pH dan
+ammonium replacement. Kompos dibagi menjadi tiga kategori berdasarkan ukuran partikelnya. Untuk mengetahui pengaruh pH dan konsentrasi awal Cu terhadap efisiensi penyisihan Cu dilakukan
+percobaan batch dengan variasi pH 2-10 serta konsentrasi Cu 2-10 mg / It. Percobaan dilanjutkan dengan percobaan kontinyu untuk mendapatkan kapasitas operasi kolom penukar ion, kondisi kesetimbangan (x / m), serta model adsorbsi isotermisnya.
+Kompos dengan ukuran partikel ≤ 0,425 m (lolos ayakan
+no. 40) mempunyai KTK teoritis terbesar yaitu 1,6 meq / g, jika diukur dengan titrasi pH, dan 15,89 meq / 100g, jika diukur dengan ammonium replacement. pH optimum didapat sekitar 6 dan 10.
+60
+
+Konsentrasi awal Cu yang akan disishkan antara 2 mg / 1 sampai 10 mg / 1, yang digunakan dalam penelitian ini, tidak menunjukkan pengaruh signifikan terhadap efisiensi penyisihan. Pada percobaan kontinyu didapatkan kapasitas operasi kolom penukar ion sebesar 249,129 meq / 1, kesetimbangan dicapai pada perbandingan 2,9 mg Cu / g media kompos, dan model adsorbsi isotermis mengikuti persamaan Freundlich sebagai berikut:
+=X=0,029Ce 209
+Kata kunci: Cu, kompos, kapasitas tukar kation, logam berat, media pernukaran ion
+61
+
+Lampiran 11.B
+Contoh abstrak tesis dalam Bahasa Inggris
+POWER FACTOR CORRECTION OF THE 3 PHASE AC-DC
+CONVERTER USING SINGLE SWITCHING
+By
+Student Identity Number
+Supervisor
+: Edi Purwanto
+: 3300601009
+: Prof. Dr. Ir. Soebagio
+ABSTRACT
+An ac-dc converter (which is used diode or thyristor) has
+a sinusoidal input voltage waveform and non sinusoidal current input waveform. The current produces harmonics and causes low power factor. Improvement of the power factor can be done by using a force commutation with a single switching system. The scheme of this method uses combination of 3-phase diode rectifier with an ac-do chopper boost type. The chopper boost type is used to simplify the scheme of this power factor correction. The frequency switching is chosen such that the frequency much higher than the power line one. It causes the current phase angle nearly the same with the voltage phase one and the low order of the input current harmonics will be eliminated. As a result, there would be appeared that the high frequency harmonics close to the switching frequency. By using hogh frequency filter at the input line, the harmonic would also be eliminated. This method will increase the value of the power factor of the line from 0.5981 to 0.96813 and harmonic content reduces from 132.2 % to 4.28% at a duty cycle of 0.5. At a duty cycle of 0.7, the power factor increases to 0.9872 and the harmonic content reduces to 2.5 %.
+Key words: ac-de converter, chopper boost type, force commutation,
+3-phase diode rectifier
+62
+
+Direktorat Pascasarjana dan Pengembangan Akademik
+Institut Teknologi Sepuluh Nopember
+2021
+Direktorai
+Pascasarjana
+dan Pengembangan
+Akademik ITS

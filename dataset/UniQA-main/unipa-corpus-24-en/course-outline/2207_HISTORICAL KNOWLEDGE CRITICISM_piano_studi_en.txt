@@ -1,0 +1,71 @@
+Academic year 2024/2025
+Master's Degree (MSc) on PHILOSOPHICAL AND HISTORICAL SCIENCES
+Curriculum: HISTORICAL KNOWLEDGE CRITICISM
+For more information visit http://www.unipa.it/struttura.html?id=1630
+---------
+Class of Master's Degree (MSc) on Philosophy (LM-78)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Humanities
+Course Code 2207
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+13351	ADVANCED SKILLS RELATED TO THE LABOUR MARKET		3	1° semestre	
+14184	INTERNSHIP		6	1° semestre	
+20691	ENGLISH LANGUAGE SKILLS - EQUIVALENT TO LEVEL B2		3	1° semestre	
+	Optional subjects		9		
+	Optional subjects II		9		
+	Optional subjects V		12		
+	Optional subjects VI		12		
+	Free subjects		9		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+05917	FINAL EXAMINATION		24	2° semestre	
+	Optional subjects III		18		
+	Optional subjects IV		9		
+	Free subjects II		6		
+
+Optional subjects IV
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+03213	PHILOSOPHY OF SCIENCE	OLIVERI	9	1° semestre	M-FIL/02
+15839	METAPHYSICS	LUPO	9	1° semestre	M-FIL/01
+21920	EPISTEMOLOGY AND ANALYTICAL PHILOSOPHY	LICATA	9	1° semestre	M-FIL/02
+10941	CONTEMPORARY AESTHETICS	TEDESCO	9	2° semestre	M-FIL/04
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22687	GLOBAL PHILOSOPHY	LE MOLI	9	1° semestre	M-FIL/06
+11786	ANCIENT PHILOSOPHY	LASPIA	9	2° semestre	M-FIL/07
+16335	PHILOSOPHIES OF THE CONTEMPORARY AGE	DI PAOLA	9	2° semestre	M-FIL/06
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+03233	THEORETICAL PHILOSOPHY	CICATELLO	9	1° semestre	M-FIL/01
+18532	PHILOSOPHY OF VERBAL PRACTICES	PIAZZA	9	1° semestre	M-FIL/05
+08946	ETHICS	PUGLIESE	9	2° semestre	M-FIL/03
+21852	LANGUAGES AND GRAMMARS OF POWER	DI PIAZZA	9	2° semestre	M-FIL/05
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19017	SOCIAL FORMS AND HIERARCHIES OF THE XIII-XVII CENTURIES	MINEO	6	1° semestre	M-STO/01
+19216	HISTORY OF GENDER RELATIONS (XV-XIX CENTURIES)	FAZIO	6	1° semestre	M-STO/02
+23723	POLITICAL AND SOCIAL HISTORY OF THE BYZANTINE WORLD	ROGNONI	6	1° semestre	L-FIL-LET/07
+15843	GENERAL PEDAGOGY (ADVANCED LEVEL)	MALTESE	6	2° semestre	M-PED/01
+18117	HISTORY OF THE POST-COLONIAL WORLD	BARIS	6	2° semestre	M-STO/04
+23722	LANGUAGES, SYMBOLS AND IDENTITY	DINO	6	2° semestre	SPS/12
+
+Optional subjects V
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19092	HISTORY OF DEMOCRATISATION PROCESSES	COCO	6	1° semestre	M-STO/04
+22173	 PHILOSOPHY OF SOCIAL SCIENCES	PALUMBO	6	1° semestre	SPS/01
+19091	POLITICS AND CONFLICTS (XVII-XX CENTURIES)	DI FIGLIA	6	2° semestre	M-STO/04
+
+Optional subjects VI
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+18531	SOCIAL AND POLITICAL HISTORY OF ANCIENT GREECE	CUSUMANO	6	1° semestre	L-ANT/02
+21452	MODELS OF DEMOCRACY	PALUMBO	6	1° semestre	SPS/01
+23370	ANCIENT ROME SOCIAL AND POLITICAL HISTORY	CASELLA	6	2° semestre	L-ANT/03
+

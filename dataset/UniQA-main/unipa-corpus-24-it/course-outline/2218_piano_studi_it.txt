@@ -1,0 +1,78 @@
+Anno Accademico 2024/2025
+Laurea magistrale in ARCHEOLOGIA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1778
+---------
+Classe di Laurea magistrale in Archeologia (LM-2)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Culture e società
+Codice corso 2218
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+11099	LABORATORIO	SOLE	2	1° semestre	
+20691	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2		3	Annuale	
+11101	ATTIVITÀ SUL CAMPO		3	2° semestre	
+	Gruppo di attiv. form. opzionali		8		
+	Gruppo di attiv. form. opzionali II		32		
+	Gruppo di attiv. form. opzionali III		12		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07553	TIROCINIO		3	1° semestre	
+05917	PROVA FINALE		21	2° semestre	
+	Gruppo di attiv. form. opzionali IV		6		
+	Gruppo di attiv. form. opzionali V		8		
+	Gruppo di attiv. form. opzionali VI		12		
+	Gruppo di attiv. form. opzionali VII		2		
+	Attiv. form. a scelta dello studente		8		
+
+Gruppo di attiv. form. opzionali VII
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20611	LABORATORIO GIS	FORGIA	2	1° semestre	
+21292	LABORATORIO DI MODELLAZIONE 3D	LIMONCELLI	2	1° semestre	
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21113	ARCHEOLOGIA EGEA	CULTRARO	8	1° semestre	L-FIL-LET/01
+02036	CIVILTA' BIZANTINA	ROGNONI	8	2° semestre	L-FIL-LET/07
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19707	ARCHEOLOGIA POST-CLASSICA	VITALE	8	1° semestre	L-ANT/08
+19964	ARCHEOLOGIA GRECA	MANDRUZZATO	8	1° semestre	L-ANT/07
+20483	PREISTORIA	CULTRARO	8	1° semestre	L-ANT/01
+22502	NUMISMATICA GRECA E ROMANA	SOLE	8	1° semestre	L-ANT/04
+17175	ARCHEOLOGIA DELLA MAGNA GRECIA E DELLA SICILIA	DE CESARE	8	2° semestre	L-ANT/07
+17438	TOPOGRAFIA E URBANISTICA DEL MONDO ANTICO	BURGIO	8	2° semestre	L-ANT/09
+19710	ARCHEOLOGIA DEL MONDO ROMANO	AIOSA	8	2° semestre	L-ANT/07
+20482	ARCHEOLOGIA E STORIA DELL'ARCHITETTURA ANTICA	MONTALI	8	2° semestre	L-ANT/07
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22510	METODOLOGIE PER LA RICERCA BIOANTROPOLOGICA	SINEO	6	1° semestre	BIO/08
+23504	ARCHEOLOGIA URBANA	POLIZZI	6	1° semestre	L-ANT/10
+15119	CHIMICA APPLICATA AI BENI CULTURALI	SALADINO	6	2° semestre	CHIM/02
+20493	FONDAMENTI DI TEORIA E STORIA DEL RESTAURO	SCADUTO	6	2° semestre	ICAR/19
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13594	ARCHEOLOGIA E STORIA DELL'ARTE PALEOCRISTIANA	VITALE	6	1° semestre	L-ANT/08
+21551	RILIEVO 3D PER L’ARCHEOLOGIA	LO BRUTTO	6	1° semestre	ICAR/06
+19688	FORTUNA DELL'ARTE CLASSICA	RAMBALDI	6	2° semestre	L-ANT/07
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03029	EPIGRAFIA GRECA	BONANNO	8	1° semestre	L-ANT/02
+21304	EPIGRAFIA LATINA	MOTTA	8	1° semestre	L-ANT/03
+13432	STORIA DELLA SICILIA GRECA	SAMMARTANO	8	2° semestre	L-ANT/02
+
+Gruppo di attiv. form. opzionali VI
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20682	ARCHEOLOGIA VIRTUALE	LIMONCELLI	6	1° semestre	L-ANT/10
+22767	PATR. CULT. MONDIALE IN PERICOLO:IL MEDITERRANEO E IL VICINO ORIENTE	SCONZO	6	1° semestre	L-OR/05
+24145	ECOLOGIA DEL PAESAGGIO E ARCHEOBOTANICA	BAZAN	6	1° semestre	BIO/03
+01444	ARCHEOMETRIA	MONTANA	6	2° semestre	GEO/09
+22768	PERCORSI DI ARCHEOLOGIA FENICIO-PUNICA	SCONZO	6	2° semestre	L-OR/06
+

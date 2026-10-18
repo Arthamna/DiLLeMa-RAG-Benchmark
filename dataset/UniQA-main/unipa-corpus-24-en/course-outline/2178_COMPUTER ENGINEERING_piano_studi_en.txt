@@ -1,0 +1,47 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on COMPUTER ENGINEERING
+Curriculum: COMPUTER ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=1618
+---------
+Class of Bachelor's Degree (BSc) on Information technology engineering (L-8)
+Duration 3 years
+Location PALERMO
+Number of seats in local planning: 280
+Department of Engineering
+Course Code 2178
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01477	COMPUTER ARCHITECTURES	PERI, PERI	9	1° semestre	ING-INF/05
+03295	PHYSICS 1	BONSIGNORE	9	Yearly	FIS/03
+03675	GEOMETRY	MARTINO, LATTUCA	6	1° semestre	MAT/03
+04677	ENGLISH LANGUAGE		3	1° semestre	
+19109	MATHEMATICAL ANALYSIS - INTEGRATED COURSE	BRANDOLINI, TRIOLO	12	Yearly	
+	MATHEMATICAL ANALYSIS - MODULE 1	TRIOLO, BRANDOLINI	6		MAT/05
+	MATHEMATICAL ANALYSIS - MODULE 2	TRIOLO, BRANDOLINI	6		MAT/05
+20771	ALGEBRA	VALENTI, SCUDO	6	2° semestre	MAT/02
+22670	PRINCIPLES OF PROGRAMMING	AGATE	9	2° semestre	ING-INF/05
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01175	ALGORITHMS AND DATA STRUCTURES	LO PRESTI	9	1° semestre	ING-INF/05
+02965	ELECTRICAL DEVICES AND CIRCUITS	IMBURGIA	6	1° semestre	ING-IND/31
+06644	STATISTICS	MARCON	9	1° semestre	SECS-S/02
+07811	PHYSICS II	PRINCIPATO	6	1° semestre	FIS/01
+01527	DATA BASES AND INFORMATION SYSTEMS	SORBELLO	6	2° semestre	ING-INF/05
+05871	PROGRAMMING	LA CASCIA	9	2° semestre	ING-INF/05
+07393	SIGNAL THEORY	GARBO	9	2° semestre	ING-INF/03
+	Free subjects		12		
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02190	AUTOMATIC CONTROL	FAGIOLINI	9	1° semestre	ING-INF/04
+03472	PRINCIPLES OF ELECTRONICS	MOSCA	9	1° semestre	ING-INF/01
+13761	COMPUTER NETWORKS AND INTERNET	DE PAOLA	9	1° semestre	ING-INF/05
+03968	SOFTWARE ENGINEERING	SEIDITA	9	2° semestre	ING-INF/05
+05917	FINAL EXAMINATION		3	2° semestre	
+06510	OPERATING SYSTEMS	MORANA	9	2° semestre	ING-INF/05
+18033	WEB AND MOBILE PROGRAMMING	CONCONE	9	2° semestre	ING-INF/05
+	Stage and others		3		
+
+

@@ -1,0 +1,38 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SCIENZE ECONOMICHE E FINANZIARIE
+Curriculum: ECONOMIC AND FINANCIAL ANALYSIS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=767
+---------
+Classe di Laurea magistrale in Scienze dell'economia (LM-56)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Doppio titolo con University of Dubrovnik, Dubrovnik (CROATIA)Université de Tunis El Manar, Tunisi (TUNISIA)
+Codice corso 2063
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15503	PUBLIC ECONOMICS (in inglese)	BERRITTELLA	8	1° semestre	SECS-P/03
+15969	PROBABILITY AND STOCHASTIC PROCESSES (in inglese)	ADELFIO	6	1° semestre	SECS-S/01
+21911	INTERNATIONAL, EU AND COMPARATIVE LABOUR LAW (in inglese)		6	1° semestre	IUS/07
+21912	ENGLISH LANGUAGE B2 (in inglese)		4	1° semestre	
+15507	MATHEMATICS FOR ECONOMICS AND FINANCE (in inglese)	CONSIGLIO	10	2° semestre	SECS-S/06
+17644	CORPORATE STRATEGY (in inglese)	MOCCIARO LI DESTRI	8	2° semestre	SECS-P/08
+18120	TOPICS IN ECONOMIC POLICY (in inglese)	FURCERI	8	2° semestre	SECS-P/02
+22568	ECONOMIC ANALYSIS C.I. (in inglese)	GIANSANTE	8	2° semestre	
+	ADVANCED FINANCE (in inglese)	GIANSANTE	4		SECS-P/01
+	ADVANCED MICROECONOMICS (in inglese)	MAGGIO	4		SECS-P/01
+	Attiv. form. a scelta dello studente		8		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06634	STAGE (in inglese)		6	1° semestre	
+15506	RISK MANAGEMENT (in inglese)	SCANNELLA	6	1° semestre	SECS-P/11
+15519	INDUSTRIAL ORGANIZATION (in inglese)	TESORIERE	6	1° semestre	SECS-P/06
+18122	TOPICS IN MACRO AND FINANCIAL ECONOMETRICS (in inglese)	CIPOLLINI	6	1° semestre	SECS-P/05
+15508	INTERNATIONAL ECONOMICS (in inglese)	CIPOLLINI	8	2° semestre	SECS-P/06
+16047	THESIS (in inglese)		16	2° semestre	
+	Stage, Tirocini, Altro		6		
+
+

@@ -1,0 +1,49 @@
+question,context
+Bagaimana langkah-langkah pemesanan cetak buku TA di myITS Printing?,"Pemesanan Cetak Buku TA di myITS Printing
+ Subdit. Aplikasi dan Platform Digital
+ Direktorat Pengembangan Teknologi dan Sistem Informasi
+ 30 Juli 2020
+
+ Tata Cara Pemesanan:
+ 1. Mengunggah file buku TA yang sudah ditandatangani pembimbing ke repository.its.ac.id dan mencatat Eprint ID.
+ 2. Menunggu validasi buku TA 1x24 jam (hari kerja).
+ 3. Membuka my.its.ac.id dan memilih aplikasi myITS Printing.
+ 4. Memilih layanan Cetak Buku TA.
+ 5. Memasukkan Eprint ID.
+ 6. Memasukkan ukuran buku, opsi warna, opsi jilid sampul, dan jumlah buku.
+ 7. Melihat harga total dan melakukan pembayaran dengan cara transfer ke Virtual Account BNI.
+ 8. Selesai (mahasiswa dapat memantau status pencetakan di menu Daftar Pesanan Saya)."
+Apa yang dilakukan untuk melihat Eprint ID terpublikasi?,"Melihat Eprint ID terpublikasi:
+ 1. Membuka laman repository.its.ac.id.
+ 2. Memilih menu Latest Addition.
+ 3. Mencari publikasi yang sesuai.
+ 4. Eprint ID:88888 (Eprint ID berbeda-beda untuk setiap mahasiswa. Jangan menggunakan Eprint ID orang lain)."
+Bagaimana cara membuka aplikasi myITS Printing melalui myITS SSO?,"Membuka Aplikasi via myITS SSO:
+ 1. Kunjungi https://my.its.ac.id menggunakan browser.
+ 2. Pilih aplikasi myITS Printing di bagian Layanan.
+ 3. Pilih ikon aplikasi myITS Printing."
+Apa yang perlu dilakukan setelah memasukkan Eprint ID pada myITS Printing?,"Memasukkan Eprint ID:
+ 1. Masukkan Eprint ID dan tekan tombol Cek.
+ 2. Mengisi Detil Pesanan:
+ - Pilih berkas, opsi warna cetak isi, opsi sampul jilid, ukuran buku, dan jumlah buku. Klik tombol Pesan jika sudah yakin."
+Apa saja informasi yang perlu diberikan oleh departemen kepada mahasiswa terkait buku TA?,"Departemen perlu menginformasikan kepada mahasiswa mengenai syarat buku TA (warna cetak isi, ukuran buku, sampul jilid, dan jumlah buku) sesuai standar prodi masing-masing."
+Bagaimana cara melihat total harga cetak buku di myITS Printing?,"Melihat Total Harga:
+ - Sistem menghitung otomatis jumlah halaman A5, A4, dan A3 dan menghitung total harga.
+ - Jika setuju dengan harga yang ditawarkan tekan tombol Bayar.
+ - Selama kode billing VA belum keluar maka pesanan dapat dibatalkan."
+Bagaimana cara melakukan pembayaran untuk cetak buku di myITS Printing?,"Melakukan Pembayaran:
+ - Lakukan pembayaran dengan transfer ke VA BNI. Berlaku 1x24 jam. Jika kadaluarsa bisa melakukan pesanan baru."
+Apa saja status yang bisa dipantau dalam pesanan cetak buku di myITS Printing?,"Memantau Pesanan:
+ Status Pesanan:
+ - Membuat pesanan cetak
+ - Menunggu pembayaran
+ - Pembayaran diterima
+ - Proses pencetakan
+ - Selesai dicetak
+ - Pengiriman ke Perpustakaan / Departemen
+ - Selesai
+ - Pesanan kadaluarsa
+ - Pesanan dibatalkan"
+Kemana harus menghubungi jika ada permasalahan teknis terkait cetak buku di myITS Printing?,"Jika ada permasalahan teknis dapat menghubungi:
+ - WA Layanan DPTSI: 0811 3333 8 222 (07:30 – 16:00 WIB)
+ - Portal Servicedesk: https://servicedesk.its.ac.id"

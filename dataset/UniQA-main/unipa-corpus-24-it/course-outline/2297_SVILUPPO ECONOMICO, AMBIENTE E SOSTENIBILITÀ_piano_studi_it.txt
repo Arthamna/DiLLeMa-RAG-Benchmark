@@ -1,0 +1,78 @@
+Anno Accademico 2024/2025
+Laurea in ECONOMIA E COOPERAZIONE INTERNAZIONALE PER LO SVILUPPO SOSTENIBILE
+Curriculum: SVILUPPO ECONOMICO, AMBIENTE E SOSTENIBILITÀ
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2565
+---------
+Classe di Laurea in Scienze sociali per la cooperazione, lo sviluppo e la pace (L-37)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2297
+---------
+Insegnamenti primo anno \ in comune con gli altri curricula\profili
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06493	SISTEMI GIURIDICI COMPARATI	PERA	6	1° semestre	IUS/02
+18240	SCIENZA POLITICA	BALDARO	6	1° semestre	SPS/04
+22582	MATEMATICA PER LE SCIENZE SOCIALI	PECORELLA	6	1° semestre	SECS-S/06
+22589	LINGUA INGLESE PER LA COOPERAZIONE INTERNAZIONALE E LE MIGRAZIONI	GUCCIONE	9	1° semestre	L-LIN/12
+00294	ECONOMIA AZIENDALE	GUZZO	6	2° semestre	SECS-P/07
+17618	MICRO E MACROECONOMIA APPLICATA	EPIFANIO	10	2° semestre	SECS-P/06
+22160	ANTROPOLOGIA CULTURALE E MONDI CONTEMPORANEI C.I.	D'AGOSTINO	8	2° semestre	
+	ANTROPOLOGIA CULTURALE E MONDI CONTEMPORANEI MODULO 1	D'AGOSTINO	4		M-DEA/01
+	ANTROPOLOGIA CULTURALE E MONDI CONTEMPORANEI MODULO 2	MANCUSO	4		M-DEA/01
+22581	SOCIOL. GENER. E DELLO SVILUPPO E METOD. DELLA RICERCA SOCIALE C.I.	LO VERDE	12	2° semestre	
+	SOCIOLOGIA GENERALE E DELLO SVILUPPO	LO VERDE	6		SPS/07
+	METODOLOGIA DELLA RICERCA SOCIALE	SIINO	6		SPS/07
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06644	STATISTICA	BONO	8	1° semestre	SECS-S/01
+07553	TIROCINIO		6	1° semestre	
+19115	FONDAMENTI DI ECONOMIA CIRCOLARE	LONGO	6	1° semestre	ING-IND/11
+23183	DIRITTO INTERNAZIONALE E TUTELA AMBIENTALE C.I.	ROMANA	10	1° semestre	
+	DIRITTO INTERNAZIONALE E SFIDE GLOBALI		6		IUS/13
+	DIRITTO DEI TRASPORTI E SOSTENIBILITÀ AMBIENTALE	ROMANA	4		IUS/06
+02732	ECONOMIA DELLO SVILUPPO	MAGGIO	6	2° semestre	SECS-P/01
+06672	STATISTICA ECONOMICA	URSO	6	2° semestre	SECS-S/03
+18049	ECONOMIA DEL NON PROFIT E DEL MICROCREDITO	PROVENZANO	6	2° semestre	SECS-P/06
+	Attiv. form. a scelta dello studente (consigliate)		6		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22585	POLITICA ECONOMICA E DELLO SVILUPPO SOSTENIBILE C.I.	PIZZUTO	12	1° semestre	
+	POLITICA ECONOMICA E DELL'INTEGRAZIONE EUROPEA	PIZZUTO	6		SECS-P/02
+	ECONOMIA E POLITICA DELLO SVILUPPO SOSTENIBILE	PIZZUTO	6		SECS-P/02
+22587	LABORATORIO DI PROGETTI E PROGRAMMI PER LO SVILUPPO	FRAZZICA	6	1° semestre	
+23180	SISTEMI INFORMATICI PER LO SVILUPPO		6	1° semestre	ING-INF/05
+05917	PROVA FINALE		3	2° semestre	
+22580	POVERTÀ, SVILUPPO E DEMOGRAFIA C.I.	BUSETTA	12	2° semestre	
+	POPOLAZIONE, MIGRAZIONI E SVILUPPO	BUSETTA	6		SECS-S/04
+	POVERTÀ E DISUGUAGLIANZA	GENOVA	6		SECS-S/05
+23186	GEOGRAFIA E SOSTENIBILITÀ	GIUBILARO	6	2° semestre	M-GGR/01
+	Gruppo di attiv. form. opzionali II		6		
+	Attiv. form. a scelta dello stud. (consigliate) II		6		
+
+Attiv. form. a scelta dello stud. (consigliate) II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16072	ECONOMIA REGIONALE	PROVENZANO	6	1° semestre	SECS-P/06
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23181	STORIA DELLO SVILUPPO ECONOMICO	SIMON	6	1° semestre	SECS-P/12
+23182	STORIA DELLA GLOBALIZZAZIONE	BLANDO	6	1° semestre	M-STO/04
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04532	LINGUA ARABA (in arabo)		6	1° semestre	
+04664	LINGUA FRANCESE (in francese)		6	1° semestre	
+04677	LINGUA INGLESE (in inglese)		6	1° semestre	
+04710	LINGUA RUSSA (in russo)		6	1° semestre	
+04718	LINGUA SPAGNOLA (in spagnolo)		6	1° semestre	
+04736	LINGUA TEDESCA (in tedesco)		6	1° semestre	
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23145	ECODESIGN DI SISTEMI E PROCESSI	CELLURA	6	1° semestre	ING-IND/11
+

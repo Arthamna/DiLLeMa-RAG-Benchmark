@@ -1,0 +1,44 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA CHIMICA
+Curriculum: INGEGNERIA DEI PROCESSI ALIMENTARI
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=711
+---------
+Classe di Laurea magistrale in Ingegneria chimica (LM-22)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2025
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21893	PHYSICAL CHEMISTRY OF DISPERSED SYSTEMS (in inglese)	DI FRANCO	6	1° semestre	ING-IND/23
+21894	PACKAGING E REOLOGIA PER L'INDUSTRIA ALIMENTARE	BOTTA	9	1° semestre	ING-IND/22
+21897	INDUSTRIAL CHEMICAL AND BIOCHEMICAL PROCESSES (in inglese)	GALIA	9	1° semestre	ING-IND/27
+22870	BIOCHEMICAL PLANT DESIGN C.I. (in inglese)	LI PUMA	9	1° semestre	
+	REACTOR DESIGN (in inglese)	LI PUMA	6		ING-IND/25
+	BIOCHEMICAL PLANT AND OPERATIONS (in inglese)	LIMA	3		ING-IND/25
+07871	MACCHINE	BECCARI	9	2° semestre	ING-IND/08
+21900	CHEMICAL AND BIOCHEMICAL PROCESS CONTROL (in inglese)	CIPOLLINA	9	2° semestre	ING-IND/26
+21903	PROCESSI DELL'INDUSTRIA ALIMENTARE C.I. (in inglese)	DISPENZA	9	2° semestre	
+	FONDAMENTI DI CHIMICA PER GLI ALIMENTI	DISPENZA	3		CHIM/07
+	PROCESSI DELL'INDUSTRIA ALIMENTARE (in inglese)		6		ING-IND/27
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21898	CONCEPTUAL DESIGN OF CHEMICAL AND BIOCHEMICAL PROCESSES (in inglese)	MICALE	9	1° semestre	ING-IND/26
+05917	PROVA FINALE		21	2° semestre	
+16079	SICUREZZA INDUSTRIALE	GRISAFI	9	2° semestre	ING-IND/25
+	Stage, Tirocini, Altro		3		
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello studente		12		
+
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07177	TECNICA DEL FREDDO	PANNO	6	1° semestre	ING-IND/10
+17583	CORROSION AND PROTECTION OF METALS (in inglese)	INGUANTA	6	1° semestre	ING-IND/23
+19692	PROCESSI DI TRASFORMAZIONE DEI PRODOTTI AGROALIMENTARI	CRUPI	6	1° semestre	AGR/15
+21883	COSTRUZIONE DI APPARECCHIATURE PER L'INDUSTRIA DI PROCESSO	PANTANO	6	1° semestre	ING-IND/14
+23970	ADVANCED REACTOR DESIGN (in inglese)	LI PUMA	6	2° semestre	ING-IND/25
+

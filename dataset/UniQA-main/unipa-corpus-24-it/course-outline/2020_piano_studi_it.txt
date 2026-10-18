@@ -1,0 +1,89 @@
+Anno Accademico 2024/2025
+Laurea magistrale in FISICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=708
+---------
+Classe di Laurea magistrale in Fisica (LM-17)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Fisica e Chimica - Emilio Segrè
+Doppio titolo con University of Turku, Turku (FINLAND)
+Codice corso 2020
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15308	INTERAZIONE RADIAZIONE-MATERIA	DI SALVO	6	1° semestre	FIS/05
+15316	MECCANICA QUANTISTICA AVANZATA	RIZZUTO	6	1° semestre	FIS/02
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		1	2° semestre	
+19782	SPETTROSCOPIA CON LABORATORIO	MESSINA	6	2° semestre	FIS/01
+22646	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2+		3	2° semestre	
+22671	STATISTICAL PHYSICS (in inglese)	MANTEGNA	6	2° semestre	FIS/03
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		6		
+	Gruppo di attiv. form. opzionali III		6		
+	Attiv. form. a scelta dello studente (consigliate)		12		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05917	PROVA FINALE		30	2° semestre	
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		8	2° semestre	
+	Gruppo di attiv. form. opzionali IV		24		
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23367	ADVANCED MATHEMATICS FOR PHYSICS (in inglese)	BAGARELLO	6	2° semestre	MAT/07
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01171	ALGEBRA NON COMMUTATIVA	MARTINO	6	1° semestre	MAT/02
+02335	DIDATTICA DELLA FISICA	FAZIO	6	1° semestre	FIS/08
+15346	CHIMICA FISICA DEI MATERIALI	PIGNATARO	6	1° semestre	CHIM/02
+21956	STELLAR EVOLUTION (in inglese)	ARGIROFFI	6	1° semestre	
+	STAR FORMATION AND MAIN SEQUENCE (in inglese)	ARGIROFFI	3		FIS/05
+	POST MAIN SEQUENCE STARS AND SUPERNOVAE (in inglese)	MICELI	3		FIS/05
+21958	COMPLEX NETWORKS (in inglese)	MICCICHE'	6	1° semestre	FIS/07
+21961	ASTROPHYSICS - LABORATORY (in inglese)	BARBERA	6	1° semestre	FIS/05
+21963	PHYSICS OF COMPLEX SYSTEMS (in inglese)	VALENTI	6	1° semestre	FIS/02
+22020	HIGH ENERGIES ASTROPHYSICS WITH LABORATORY (in inglese)	IARIA	6	1° semestre	FIS/05
+22425	SPACE WEATHER (in inglese)	REALE	6	1° semestre	
+	SOLAR PHYSICS (in inglese)	REALE	3		FIS/06
+	SUN-EARTH INTERACTION (in inglese)	PAGANO	3		FIS/06
+22451	CLOUD AND HIGH PERFORMANCE COMPUTING	REALE	6	1° semestre	FIS/05
+22618	GAUGE THEORIES (in inglese)	LORENZO	6	1° semestre	FIS/03
+22658	RADIATION DETECTORS WITH LAB (in inglese)	ABBENE	6	1° semestre	FIS/07
+22659	LAB OF PHYSICAL CHARACTERIZATION AND BIOSIGNAL PROCESSING (in inglese)	PERSANO ADORNO	6	1° semestre	FIS/07
+22660	LAB OF PHYSICS OF MATTER (in inglese)	AGNELLO	6	1° semestre	
+	LAB OF RAMAN SPECTROSCOPY AND PARAMAGNETIC RESONANCE (in inglese)	AGNELLO	3		FIS/01
+	LAB OF TIME-RESOLVED SPECTROSCOPY (in inglese)	MESSINA	3		FIS/01
+22663	BIOPHOTONICS WITH LABORATORY (in inglese)	VETRI	6	1° semestre	
+	LAB OF BIOPHOTONICS (in inglese)	VETRI	3		FIS/07
+	INTRODUCTION TO BIOPHOTONICS AND WET LAB (in inglese)	VETRI	3		FIS/07
+22748	QUANTUM THERMODYNAMICS (in inglese)	NAPOLI	6	1° semestre	
+	EQUILIBRIUM QUANTUM THERMODYNAMICS (in inglese)	MILITELLO	3		FIS/03
+	NON-EQUILIBRIUM QUANTUM THERMODYNAMICS (in inglese)	NAPOLI	3		FIS/03
+24010	STANDARD MODEL (in inglese)	PASSANTE	6	1° semestre	
+	RENORMALIZATION AND PHYS BEYOND STD MODEL (in inglese)	PASSANTE	3		FIS/02
+	INTRODUCTION TO THE STANDARD MODEL (in inglese)	RIZZUTO	3		FIS/02
+24011	QUANTUM INFORMATION (in inglese)	PATERNOSTRO	6	1° semestre	FIS/03
+05044	METODI E MODELLI MATEM.PER LE APPLIC.	SCIACCA	6	2° semestre	MAT/07
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22021	STRUCTURE OF MATTER - ADVANCED COURSE (in inglese)	CICCARELLO	6	1° semestre	FIS/03
+07382	TEORIA DEI CAMPI	PASSANTE	6	2° semestre	FIS/03
+21944	LABORATORY OF NUCLEAR AND SUBNUCLEAR PHYSICS (in inglese)	MARSELLA	6	2° semestre	FIS/04
+22024	QUANTUM OPTICS (in inglese)	PALMA	6	2° semestre	FIS/03
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22018	COMPUTATIONAL PHYSICS WITH LABORATORY (in inglese)	COTTONE	6	1° semestre	FIS/07
+22022	BIOPHYSICS (in inglese)	COTTONE	6	1° semestre	FIS/07
+15315	FISICA DEGLI STATI CONDENSATI		6	2° semestre	FIS/01
+24120	INTRODUCTION TO MEDICAL PHYSICS	MARRALE	6	2° semestre	FIS/07
+21962	NANO-PARTICLES AND NANO-STRUCTURES (in inglese)	BUSCARINO	6	1° semestre	FIS/01
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22019	THEORY OF GENERAL RELATIVITY (in inglese)	CAROLLO	6	1° semestre	FIS/05
+01500	ASTROFISICA	MICELI	6	2° semestre	FIS/05
+

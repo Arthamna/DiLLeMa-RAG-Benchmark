@@ -1,0 +1,42 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA INFORMATICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1618
+---------
+Classe di Laurea in Ingegneria dell'informazione (L-8)
+Durata 3 anni
+Sede PALERMO
+Numero posti in programmazione locale: 280
+Dipartimento di Ingegneria
+Codice corso 2178
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Gli obiettivi formativi specifici della Laurea in Ingegneria Informatica sono rivolti al conseguimento delle competenze necessarie alla progettazione, realizzazione e gestione di sistemi per l'elaborazione delle informazioni, che vanno dalla progettazione dei sistemi software e delle basi di dati, alla gestione delle reti e dei sistemi informatici complessi, che possono trovare impiego in tutti i settori applicativi ad alto valore aggiunto tipici dell'odierna societa' dell'informazione.
+Il percorso formativo e' progettato in modo da fornire allo studente una preparazione di ampio spettro, solidamente fondata sulle discipline imprescindibili per l'ingegneria. Inoltre, lo studente acquisira' solide competenze metodologiche e tecniche, che gli consentiranno di individuare le migliori soluzioni tecniche e algoritmiche per la risoluzione dei molteplici problemi legati all'elaborazione delle informazioni, che possono emergere all'interno di un ampio spettro di realta' produttive.
+Il corso di studi e' progettato con riferimento a specifiche aree di apprendimento, che includono le aree della matematica, della fisica, elementi di base delliingegneria delliinformazione, fondamenti e approfondimenti delliingegneria informatica.
+Durante il primo anno di studio gli studenti acquisiranno conoscenze e competenze di base negli ambiti della matematica e della fisica, insieme ai primi fondamenti nel campo delliingegneria delliinformazione, tra cui vi sono i fondamenti della programmazione e la conoscenza della struttura dei calcolatori elettronici.
+Il secondo anno, oltre a consentire agli studenti di acquisire ulteriori competenze nel campo della matematica e della fisica, sara' in larga parte dedicato alliacquisizione di competenze e conoscenze che costituiscono i fondamenti delliingegneria informatica. Inoltre, durante il secondo anno, gli studenti arricchiranno il proprio bagaglio culturale con alcune prime attivita' affini, volte ad integrare la formazione degli allievi rispetto alle competenze e alle conoscenze caratterizzanti il corso di laurea.
+Infine, durante il terzo anno, lo studente completera' la propria formazione nel campo delliingegneria informatica, sia dal punto di vista fondazionale, con particolare riferimento agli aspetti sistemistici, che affrontando lo studio di insegnamenti dedicati ad approfondimenti nel settore, con un particolare focus ad aspetti avanzati di programmazione e progettazione dei sistemi informativi. Nello stesso periodo, lo studente acquisira' la maggior parte delle conoscenze e competenze affini previste dal progetto formativo.
+Complessivamente, vengono conferite allo studente le competenze necessarie per operare efficacemente all'interno di strutture pubbliche e private, e, grazie alla particolare attenzione volta alle materie di base, una preparazione generale sufficiente ad acquisire e adeguare rapidamente, anche in autonomia, la propria formazione alle mutevoli esigenze del mondo del lavoro.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere informatico junior
+Funzioni:
+Analista/progettista/sviluppatore di software applicativi e di sistema
+Specialista in reti e comunicazioni informatiche
+Competenze:
+Analisi dei problemi di elaborazione dati per diverse esigenze applicative.
+Sviluppo, modifica o ottimizzazione di software applicativi e di sistema.
+Individuazione e ottimizzazione di appropriati sistemi informatici.
+Realizzazione, integrazione e verifica dei software impiegati in un sito o in uniapplicazione web.
+Progetto, realizzazione e gestione di reti informatiche.
+Sbocchi:
+- La libera professione come analista, progettista o collaudatore di sistemi informatici e di reti di calcolatori, nonchE' come progettista di applicativi software o parti di essi. Per liaccesso alla libera professione e' previsto il superamento delliesame di stato e la conseguente iscrizione allialbo professionale delliordine degli ingegneri.
+- Il lavoro dipendente presso Enti Pubblici o privati, quali ad esempio industrie informatiche operanti negli ambiti della produzione hardware e software, industrie per l'automazione e la robotica, imprese operanti nell'area dei sistemi informativi e delle reti di calcolatori, imprese di servizi, o imprese per lierogazione di servizi informatici della pubblica amministrazione.
+- Il proseguimento degli studi con l'accesso diretto alla laurea magistrale in Ingegneria Informatica.
+---------
+Caratteristiche della Prova Finale
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico.
+La prova finale consiste in una prova scritta secondo modalita' definite dal regolamento sulla prova finale del Corso di Laurea per ogni A.A., nel rispetto e in coerenza della tempistica, delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+---------

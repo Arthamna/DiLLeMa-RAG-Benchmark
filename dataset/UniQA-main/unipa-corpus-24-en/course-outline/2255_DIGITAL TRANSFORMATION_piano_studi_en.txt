@@ -1,0 +1,71 @@
+Academic year 2024/2025
+Master's Degree (MSc) on MANAGEMENT ENGINEERING
+Curriculum: DIGITAL TRANSFORMATION
+For more information visit http://www.unipa.it/struttura.html?id=2026
+---------
+Class of Master's Degree (MSc) on Management engineering (LM-31)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with Instituto Universitario de Lisboa (ISCTE-IUL), Lisbona (PORTUGAL)Vilnius Gediminas Technical University, Vilnius (LITHUANIA)
+Course Code 2255
+---------
+Teachings first year \ in common with the others curricula\profiles
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+17051	CORPORATE FINANCE (in english)	LO NIGRO	9	1° semestre	ING-IND/35
+19022	INNOVATION MANAGEMENT (in english)	LA COMMARE	6	1° semestre	ING-IND/16
+21678	BUSINESS PROCESS MANAGEMENT (in english)	BRUCCOLERI	9	1° semestre	ING-IND/35
+04864	MARKETING (in english)	ROMA	6	2° semestre	ING-IND/35
+14368	SUPPLY CHAIN MANAGEMENT (in english)	AIELLO	9	2° semestre	ING-IND/17
+22201	ADVANCED STATISTICS FOR BUSINESS (in english)	LOMBARDO	6	2° semestre	
+	MULTIVARIATE ANALYSIS: APPLICATIONS (in english)	MARCON	3		SECS-S/02
+	MULTIVARIATE ANALYSIS: THEORY (in english)	LOMBARDO	3		SECS-S/02
+22217	PROJECT MANAGEMENT (in english)	CERTA	6	2° semestre	ING-IND/17
+	Free subjects		9		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22199	INDUSTRIAL ORGANIZATION AND STRATEGY (in english)	PERRONE	9	1° semestre	ING-IND/35
+22248	DIGITAL TRANSFORMATION - INTEGRATED COURSE (in english)	ROMA	18	Yearly	
+	SUPPLY CHAIN MANAGEMENT 4.0 (in english)	AIELLO	6		ING-IND/17
+	SMART FACTORY (in english)	LA COMMARE	6		ING-IND/16
+	DIGITAL MARKETING (in english)	ROMA	6		ING-IND/35
+22396	LAB OF BUSINESS PROCESS DIGITALIZATION (in english)	BRUCCOLERI	3	1° semestre	
+05917	FINAL EXAMINATION		15	2° semestre	
+	Stage and others		3		
+	Optional subjects		6		
+	Optional subjects II		6		
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19220	CYBERSECURITY (in english)	GALLO	6	1° semestre	ING-INF/05
+23217	BUSINESS ANALYTICS (in english)	MANCINI	6	1° semestre	MAT/09
+05871	PROGRAMMING	LA CASCIA	6	2° semestre	ING-INF/05
+20462	PRINCIPLES OF SMART GRIDS	RIVA SANSEVERINO	6	2° semestre	ING-IND/33
+21506	BIG DATA AND ANALYTICS - INTEGRATED COURSE	TINNIRELLO	6	2° semestre	
+	MACHINE LEARNING	TINNIRELLO	3		ING-INF/03
+	DATA ANALYTICS AND STORAGE (in english)	LO PRESTI	3		ING-INF/05
+22198	HR AND CHANGE MANAGEMENT (in english)	PACE	6	2° semestre	M-PSI/06
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21668	SUSTAINABLE MANUFACTURING (in english)	INGARAO	6	1° semestre	ING-IND/16
+21675	PRODUCT/PROCESS INNOVATION (in english)	MICARI	6	1° semestre	ING-IND/16
+22196	SERVICE QUALITY DATA-DRIVEN MANAGEMENT	LUPO	6	1° semestre	ING-IND/16
+22197	STRATEGIC MANAGEMENT AND OPEN INNOVATION (in english)	PIAZZA	6	1° semestre	ING-IND/35
+22321	HEALTHCARE OPERATIONS MANAGEMENT	MAZZOLA	6	1° semestre	ING-IND/35
+22347	PUBLIC SECTOR AND WELFARE ECONOMICS	ABBATE	6	1° semestre	ING-IND/35
+23218	SMART CONTRACTS, BLOCKCHAIN AND CYBER SECURITY AWARENESS (in english)		6	1° semestre	ING-IND/35
+24189	REVERSE LOGISTICS AND SMART WASTE MANAGEMENT (in english)	AIELLO	6	1° semestre	ING-IND/17
+16079	SAFETY MANAGEMENT	LA FATA	6	2° semestre	ING-IND/17
+17882	DIGITAL MANUFACTURING (in english)	EMAMI	6	2° semestre	ING-IND/16
+21512	PROCESS AND SYSTEM SIMULATION (in english)	BUFFA	6	2° semestre	ING-IND/16
+22339	ADVANCED PROJECT MANAGEMENT FOR BUSINESS (in english)		6	2° semestre	ING-IND/17
+22341	ADDITIVE MANUFACTURING (in english)	FRATINI	6	2° semestre	ING-IND/16
+22342	TECH ENTREPRENEURSHIP (in english)	PERRONE	6	2° semestre	ING-IND/35
+22346	MANUFACTURING PROCESSES FOR THE CIRCULAR ECONOMY (in english)	INGARAO	6	2° semestre	ING-IND/16
+23152	DIGITAL PRODUCT MANAGEMENT (in english)		6	2° semestre	ING-IND/35
+24188	SUSTAINABILITY MANAGEMENT (in english)	MAZZOLA	6	2° semestre	ING-IND/35
+
+

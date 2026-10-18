@@ -1,0 +1,53 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on ENERGY ENGINEERING AND RENEWABLE ENERGIES
+Curriculum: ENERGY
+For more information visit http://www.unipa.it/struttura.html?id=1879
+---------
+Class of Bachelor's Degree (BSc) on Industrial engineering (L-9)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2223
+---------
+Educational objectives
+The course aims at providing engineers the competences enabling them to work in the field of electrical, energy and nuclear engineering, with advanced knowledge of the principles underlying the processes of production, distribution, operation and use of energy, in its various forms (electrical, nuclear, thermal and from alternative and renewable sources), as well as the relevant components and systems, and the environmental, economic, juridical and safety implications.
+The proposed educational programme takes into account the recent trends in the decarbonisation of energy cycles and the development and diffusion of technologies with reduced environmental impact.
+The educational program provides the same core subjects, and some common class specific subjects, of the other courses in Industrial Engineering in Palermo, privileging the training about specific ambits of electrical, energy, nuclear, safety and industrial protection engineering.
+The course then investigates further specific issues of individual class specific ambits, in order to diversify the training with respect to various application areas. The training is completed and enriched by related and integrative subjects.
+The course provides, in particular:
+1)	core educational activities (as the other Industrial Engineering courses) in the fields of mathematics, physics, chemistry, and class specific activities, such as computer aided design, construction theory and computational methods for engineering;
+2)	common course-specific educational activities, with respect in particular to the technology of materials, technical physics, energetics, principles of electrical engineering, electrical energy components and systems, renewable sources.
+3)	specific ambit-related educational activities, diversified in accordance with the proposed curricula:
+Electrical engineering: electrical machines, electric and electronic measurements, electrical plants, electronics and domotics applications, smart grids, distribute power generation by renewable sources;
+- Energy: energy planning and management, energy assessment and certification, thermos-technical measurements, environmental comfort control, machinery, building thermos-physics, industrial thermal uses of renewables;
+- Technologies and production: principles of nuclear engineering, thermo-hydraulics, safety and risk analysis, machinery, thermos-mechanics, fossil fuels;
+The educational programme is integrated by notions of computer science and applications, statistics, business economics, with respect to specific professional applications.
+Graduates will possess the competences needed to continue their education, or to carry out their professional activities in energy as well as multidisciplinary application areas, and more specifically in the areas which are investigated in-depth; they will be able to carry out activities such as the design, production, operation and organization, assistance to technical-commercial facilities, risk analysis, safety management, both as self-employees and in manufacturing or service companies, as well as in public administration.
+The course, even in absence of specific professionalising training, enables graduates to enter the labour market  as well as to continue their studies(2nd  cycle degree courses, university master courses, PhD courses)
+The educational programme provides frontal teachings, class and laboratory practice, internships in companies, supported by the teaching stuff provided by teachers, both in printed and electronic format, and available on the web.
+---------
+Professional opportunities
+Profile:
+Graduate in Energy Engineering and Renewable Energies
+Functions:
+Graduates in Energy Engineering and Renewable Energies, in line with the chosen curriculum, are the answer to the most current technical needs in the fields of electrical, energy and nuclear engineering, with in-depth knowledge of the principles underlying the processes of production , distribution, management and use of energy in its various forms (electricity, nuclear, thermal), and by conventional, alternative and renewable sources. In addition to the more technical aspects, the course provides knowledge on environmental, economic, regulatory and safety aspects. Starting from a consolidated basic knowledge of thermodynamic, electrical and heat transmission phenomena, common to the three curricula, graduates acquire more in-depth skills on different application aspects of the management of distributed production systems, the use of ICT technologies in the field of energy at different levels, renewable energy conversion technologies for various end uses (electrical and thermal, civil and industrial), energy analysis of high-performance buildings, conversion of nuclear energy through fusion processes. This will lead them to cover the functions of designer, analyst and manager of traditional and innovative energy systems as well as to draw up energy certifications according to national regulations and to play the role of energy manager in public administration or private companies.
+Skills:
+The skills acquired mainly concern the design, management, control and maintenance of energy plants and systems in various sectors such as:
+- The energy sector, distribution systems and energy machines (hydraulic, thermal and electrical, refrigeration, HVAC), photovoltaic and wind power plants, smart grids, home automation, energy dispatching and trading, development , also authorization, of energy projects from RES in the territory, of energy planning at different territorial scales (PAES, PEARS);
+- The sector of safety and environmental impact of industrial and civil activities, even at high risk;
+- The field of energy certification, environmental assessment, energy efficiency and energy management; access to incentives or compliance with mandatory requirements (eg Green and White Certificates)
+Professional opportunities:
+- institutional and private companies that deal with the supply of complete energy services, supplying not only electric power, but also gas, heat, servicing (including financial) as well as "turnkey" plants;
+- public administration (technical offices, energy manager, authority);
+- a large number of manufacturing companies (from small to large) operating in the energy and energy machinery sector (hydraulic and thermal machines, engines, boilers, heat exchangers, refrigeration and air conditioning industry, oil sector, solar and wind plant engineering)
+- Freelance professionals or companies designing, operating or installing energy and electrical systems, dealing with energy certification and environmental impact assessments. 
+Graduates in Energy Engineering and Renewable Energies, after passing the national qualification exam, may enrol in the Register of Engineers, with the title of Junior Engineer.
+The course provides an Intense activity related to the design, construction, testing and management of thermal, electrical, cogeneration, tri-generation and air-conditioning systems for environmental control in civil, tertiary and industrial buildings, etc. as well as the completion of technical and environmental authorizations for the construction and management of plants that use RES.
+Graduates of this Course may can continue their studies without any Additional Educational Duties in the 2nd cycle Degree Courses in "Electrical Engineering" and "Energy and Nuclear Engineering" of the University of Palermo.
+---------
+Final examination features
+To obtain the degree, students must have acquired 180 credits including those relating to the final examination (3 credits). 
+The final examination has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a written or oral test, in accordance with the rules fixed every year by the Degree Course Regulations for the final examination, respecting and consistent to the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+Every year a list of topics and relative university tutors is published, among which the candidate has the right to choose. The Tutor will provide indications about the texts and bibliography to be consulted and will provide didactic and scientific support to the student.
+---------

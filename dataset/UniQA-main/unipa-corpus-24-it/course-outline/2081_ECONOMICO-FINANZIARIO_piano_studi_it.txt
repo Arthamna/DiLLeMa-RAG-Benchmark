@@ -1,0 +1,58 @@
+Anno Accademico 2024/2025
+Laurea in ECONOMIA E FINANZA
+Curriculum: ECONOMICO-FINANZIARIO
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=550
+---------
+Classe di Laurea in Scienze economiche (L-33)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2081
+---------
+Insegnamenti primo anno \ in comune con gli altri curricula\profili
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04897	MATEMATICA GENERALE	LACAGNINA, LACAGNINA	9	1° semestre	SECS-S/06
+05227	MICROECONOMIA	BAVETTA, MAGGIO	9	1° semestre	SECS-P/01
+17358	LINGUA INGLESE LIVELLO  B 1 (in inglese)		8	1° semestre	
+18545	STORIA ECONOMICA E DEL PENSIERO ECONOMICO	SIMON, PIROLO	8	1° semestre	SECS-P/04
+02526	DIRITTO PRIVATO	BRIZZOLARI, PIRAINO	8	2° semestre	IUS/01
+02704	ECONOMIA AZIENDALE	CINCIMINO, BRONZETTI	6	2° semestre	SECS-P/07
+21346	CONOSCENZE INFORMATICHE C.I.	AUGUGLIARO	6	2° semestre	
+	SOFTWARE PER ANALISI DATI ECONOMICI E FINANZIARI 2	DE LUCA	3		
+	SOFTWARE PER ANALISI DATI ECONOMICI E FINANZIARI 1	AUGUGLIARO	3		
+24255	STATISTICA 1	AUGUGLIARO, ABBRUZZO	8	2° semestre	SECS-S/01
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02549	DIRITTO PUBBLICO	SCALA	6	1° semestre	IUS/09
+04820	MACROECONOMIA	BETTARELLI	9	1° semestre	SECS-P/02
+06190	RAGIONERIA GENERALE ED APPLICATA	GUZZO	8	1° semestre	SECS-P/07
+04892	MATEMATICA FINANZIARIA	CONSIGLIO	8	2° semestre	SECS-S/06
+14314	ULTERIORI CONOSCENZE LINGUISTICHE		6	2° semestre	
+23596	STATISTICA 2	MINEO	8	2° semestre	SECS-S/01
+24246	CONCORRENZA E DIRITTO CONTRATTUALE EUROPEO	PURPURA	6	2° semestre	IUS/05
+	Attiv. form. a scelta dello studente (consigliate)		12		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02417	DIRITTO COMMERCIALE	BAVETTA	6	1° semestre	IUS/04
+06318	SCIENZA DELLE FINANZE	LI DONNI	8	1° semestre	SECS-P/03
+16117	ECONOMIA E GESTIONE DEGLI INTERMEDIARI FINANZIARI	SCANNELLA	10	1° semestre	SECS-P/11
+02694	ECONOMETRIA	LO CASCIO	8	2° semestre	SECS-P/05
+05718	POLITICA ECONOMICA	MAZZOLA	8	2° semestre	SECS-P/02
+05917	PROVA FINALE		3	2° semestre	
+	Stage, Tirocini, Altro		6		
+	Gruppo di attiv. form. opzionali		6		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18119	ANALISI DI SCENARIO PER LA FINANZA	CIPOLLINI	6	2° semestre	SECS-P/05
+20625	GESTIONE DEGLI INVESTIMENTI E DEI FINANZIAMENTI	PICONE	6	2° semestre	SECS-P/08
+24058	STATISTICA ECONOMICA E FINANZIARIA	PIACENTINO	6	2° semestre	SECS-S/03
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02469	DIRITTO DELL'INFORMATICA E DEL TRATTAMENTO DEI DATI		6	1° semestre	IUS/01
+
+

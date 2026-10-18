@@ -1,0 +1,45 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INTERNATIONAL RELATIONS, POLITICS & TRADE (FULLY ONLINE)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2023
+---------
+Classe di Laurea magistrale in Relazioni internazionali (LM-52)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Politiche e delle Relazioni Internazionali
+Codice corso 2262
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15905	INTERNATIONAL TRADE LAW (in inglese)	CASABONA	12	1° semestre	
+	INTERNATIONAL CONTRACT LAW (in inglese)	CASABONA	6		IUS/02
+	WTO AND REGIONAL TRADE LAW (in inglese)	CASABONA	6		IUS/13
+18285	BUSINESS ENGLISH (in inglese)	GUARINO	6	1° semestre	L-LIN/12
+21252	INTERNATIONAL TRANSPORT LAW AND LOGISTICS (in inglese)	RIGAZIO	6	1° semestre	IUS/01
+10546	WORKSHOP (in inglese)		3	2° semestre	
+20765	GLOBAL POLITICS (in inglese)	MONTELEONE	9	2° semestre	SPS/04
+21342	BUSINESS STRATEGY	COSENZ	6	2° semestre	SECS-P/07
+21593	FOREIGN DIRECT INVESTMENTS AND GOLDEN POWERS (in inglese)	MOCAVINI	6	2° semestre	IUS/09
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21591	INTERNATIONAL ECONOMICS AND ECONOMIC HISTORY (in inglese)	ASSO	12	1° semestre	
+	GLOBAL  FIRMS AND POLICY ISSUES	CERMELLI	6		SECS-P/06
+	GROWTH AND INEQUALITIES	ASSO	6		SECS-P/04
+14368	SUPPLY CHAIN MANAGEMENT (in inglese)	BRUCCOLERI	9	2° semestre	ING-IND/35
+20658	FINAL THESIS (in inglese)		21	2° semestre	
+20807	GLOBAL HISTORY (in inglese)	PATTI	6	2° semestre	M-STO/04
+22629	AFRICAN HISTORY AND INSTITUTIONS	PUDDU	6	2° semestre	SPS/06
+	Gruppo di attiv. form. opzionali		9		
+	Attiv. form. a scelta dello studente (consigliate)		9		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20651	COMPETION LAW & INTELLECTUAL PROPERTY RIGHTS	GARILLI	9	1° semestre	IUS/04
+21617	INTERNATIONAL CUSTOMS LAW & CORPORATE TAX (in inglese)	PERRONE	9	1° semestre	IUS/12
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21647	COMPETION LAW AND INTELLECTUAL PROPERTY RIGHTS (in inglese)	GARILLI	9	1° semestre	IUS/04
+21648	INTERNATIONAL CUSTOMS LAW AND CORPORATE TAX	PERRONE	9	1° semestre	IUS/12
+

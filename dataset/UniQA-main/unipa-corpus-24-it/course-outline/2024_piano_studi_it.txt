@@ -1,0 +1,48 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA AEROSPAZIALE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=710
+---------
+Classe di Laurea magistrale in Ingegneria aerospaziale e astronautica (LM-20)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2024
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03549	GASDINAMICA (in inglese)	GULIZZI	9	1° semestre	ING-IND/06
+07141	STRUTTURE AEROSPAZIALI	MILAZZO	12	1° semestre	ING-IND/04
+14427	TECNOLOGIE DELLA PRODUZIONE AERONAUTICA	FRATINI	9	1° semestre	ING-IND/16
+02190	CONTROLLI AUTOMATICI		9	2° semestre	ING-INF/04
+22202	AIRCRAFT CONCEPTUAL DESIGN (in inglese)	BENEDETTI	9	2° semestre	ING-IND/04
+22205	AEROSPACE PROPULSION (in inglese)	LOMBARDO	12	2° semestre	ING-IND/07
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02374	DINAMICA DEL VOLO	MONTANO	12	1° semestre	ING-IND/03
+22203	AEROELASTICITY (in inglese)	LO CASCIO	6	1° semestre	ING-IND/04
+05917	PROVA FINALE		15	2° semestre	
+	Stage, Tirocini, Altro		12		
+	Gruppo di attiv. form. opzionali		6		
+	Attiv. form. a scelta dello studente (consigliate)		9		
+
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01258	ANALISI SPERIMENTALE DELLE TENSIONI	PITARRESI	6	1° semestre	ING-IND/14
+10069	PROGETTAZIONE DI PROCESSO	BUFFA	6	1° semestre	ING-IND/16
+21526	MOBILE AND DISTRIBUTED ROBOTICS (in inglese)	FAGIOLINI	6	1° semestre	ING-INF/04
+22341	ADDITIVE MANUFACTURING (in inglese)	PALMERI	6	1° semestre	ING-IND/16
+18053	CORROSIONE E PROTEZIONE DEI MATERIALI PER L'AEROSPAZIO	SANTAMARIA	6	2° semestre	ING-IND/23
+18552	SCIENZA E TECNOLOGIA DEI  MATERIALI COMPOSITI PER L'ING. AEROSPAZIALE	VALENZA	6	2° semestre	ING-IND/22
+22204	MACHINE LEARNING FOR AEROSPACE ENGINEERING C.I. (in inglese)	TINNIRELLO	6	2° semestre	
+	DATA ANALYTICS (in inglese)	LO PRESTI	3		ING-INF/05
+	MACHINE LEARNING (in inglese)	TINNIRELLO	3		ING-INF/03
+22905	COMPUTATIONAL FLUID DYNAMICS (in inglese)	MARRETTA	6	2° semestre	ING-IND/06
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21516	ESTIMATION, FILTERING AND SYSTEM IDENTIFICATION (in inglese)	SFERLAZZA	9	1° semestre	ING-INF/04
+01746	CALCOLO NUMERICO	FRANCOMANO	9	2° semestre	MAT/08
+

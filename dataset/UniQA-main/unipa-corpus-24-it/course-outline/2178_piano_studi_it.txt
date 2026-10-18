@@ -1,0 +1,46 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA INFORMATICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1618
+---------
+Classe di Laurea in Ingegneria dell'informazione (L-8)
+Durata 3 anni
+Sede PALERMO
+Numero posti in programmazione locale: 280
+Dipartimento di Ingegneria
+Codice corso 2178
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01477	ARCHITETTURE DEI CALCOLATORI	PERI, PERI	9	1° semestre	ING-INF/05
+03295	FISICA I	BONSIGNORE	9	Annuale	FIS/03
+03675	GEOMETRIA	MARTINO, LATTUCA	6	1° semestre	MAT/03
+04677	LINGUA INGLESE		3	1° semestre	
+19109	ANALISI MATEMATICA C.I.	BRANDOLINI, TRIOLO	12	Annuale	
+	MODULO ANALISI MATEMATICA 1	TRIOLO, BRANDOLINI	6		MAT/05
+	MODULO ANALISI MATEMATICA 2	TRIOLO, BRANDOLINI	6		MAT/05
+20771	ALGEBRA	VALENTI, SCUDO	6	2° semestre	MAT/02
+22670	FONDAMENTI DI PROGRAMMAZIONE	AGATE	9	2° semestre	ING-INF/05
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01175	ALGORITMI E STRUTTURE DATI	LO PRESTI	9	1° semestre	ING-INF/05
+02965	ELETTROTECNICA	IMBURGIA	6	1° semestre	ING-IND/31
+06644	STATISTICA	MARCON	9	1° semestre	SECS-S/02
+07811	FISICA II	PRINCIPATO	6	1° semestre	FIS/01
+01527	BASI DI DATI E SISTEMI INFORMATIVI	SORBELLO	6	2° semestre	ING-INF/05
+05871	PROGRAMMAZIONE	LA CASCIA	9	2° semestre	ING-INF/05
+07393	TEORIA DEI SEGNALI	GARBO	9	2° semestre	ING-INF/03
+	Attiv. form. a scelta dello studente		12		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02190	CONTROLLI AUTOMATICI	FAGIOLINI	9	1° semestre	ING-INF/04
+03472	FONDAMENTI DI ELETTRONICA	MOSCA	9	1° semestre	ING-INF/01
+13761	RETI DI CALCOLATORI E INTERNET	DE PAOLA	9	1° semestre	ING-INF/05
+03968	INGEGNERIA DEL SOFTWARE	SEIDITA	9	2° semestre	ING-INF/05
+05917	PROVA FINALE		3	2° semestre	
+06510	SISTEMI OPERATIVI	MORANA	9	2° semestre	ING-INF/05
+18033	PROGRAMMAZIONE WEB E MOBILE	CONCONE	9	2° semestre	ING-INF/05
+	Stage, Tirocini, Altro		3		
+
+

@@ -1,0 +1,52 @@
+Academic year 2024/2025
+Master's Degree (MSc) on CYBER-PHYSICAL SYSTEMS ENGINEERING FOR INDUSTRY
+For more information visit http://www.unipa.it/struttura.html?id=2021
+---------
+Class of Master's Degree (MSc) on Automation engineering (LM-25)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2254
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21513	ADVANCED & ADDITIVE MANUFACTURING (in english)	BUFFA	9	1° semestre	ING-IND/16
+21515	APPLIED MECHANICS - INTEGRATED COURSE	CAMMALLERI	12	Yearly	
+	PRINCIPLES OF MECHANICS	CAMMALLERI	6		ING-IND/13
+	DYNAMICS OF MECHANICAL SYSTEMS	CAMMALLERI	6		ING-IND/13
+21517	MOBILE AND INDUSTRIAL ROBOTICS - INTEGRATED COURSE (in english)	FAGIOLINI	12	1° semestre	
+	INDUSTRIAL ROBOTICS (in english)	D'IPPOLITO	6		ING-INF/04
+	MOBILE AND DISTRIBUTED ROBOTICS (in english)	FAGIOLINI	6		ING-INF/04
+21506	BIG DATA AND ANALYTICS - INTEGRATED COURSE	LO PRESTI	9	2° semestre	
+	MACHINE LEARNING	TINNIRELLO	3		ING-INF/03
+	DATA ANALYTICS AND STORAGE	LO PRESTI	6		ING-INF/05
+21509	AUTOMATIC MEASUREMENT SYSTEMS AND SENSORS - INTEGRATED COURSE (in english)	COSENTINO	9	2° semestre	
+	AUTOMATIC MEASUREMENT SYSTEMS (in english)	COSENTINO	5		ING-INF/07
+	SENSORS (in english)	D'ACQUISTO	4		ING-IND/12
+21516	ESTIMATION, FILTERING AND SYSTEM IDENTIFICATION (in english)	SFERLAZZA	9	2° semestre	ING-INF/04
+	Optional subjects		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21504	ELECTRONICS FOR INDUSTRIAL IOT	CHIARELLO	6	1° semestre	ING-INF/01
+21508	DIGITAL CONTROL (in english)		6	1° semestre	ING-INF/04
+21511	INDUSTRIAL ELECTRICAL DRIVES (in english)	CARUSO	6	1° semestre	ING-IND/32
+05917	FINAL EXAMINATION		12	2° semestre	
+	Stage and others		6		
+	Optional subjects II		6		
+	Free subjects		12		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19220	CYBERSECURITY (in english)	GALLO	6	1° semestre	ING-INF/05
+21507	IOT AND CLOUD SECURITY (in english)		6	2° semestre	ING-INF/03
+21512	PROCESS AND SYSTEM SIMULATION (in english)	BUFFA	6	2° semestre	ING-IND/16
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21505	QUALITY CONTROL (in english)	LUPO	6	1° semestre	ING-IND/16
+21510	SUPPLY CHAIN MANAGEMENT IN INDUSTRY 4.0 (in english)	AIELLO	6	1° semestre	ING-IND/17
+21523	ADVANCED MODELLING AND VISUALISATION TECHNIQUES	INGRASSIA	6	1° semestre	ING-IND/15
+
+

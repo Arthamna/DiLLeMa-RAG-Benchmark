@@ -1,0 +1,133 @@
+Anno Accademico 2024/2025
+Laurea in INFORMATICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=546
+---------
+Classe di Laurea in Scienze e tecnologie informatiche (L-31)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Matematica e Informatica
+Codice corso 2086
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+I laureati del corso di laurea devono possedere conoscenze nei vari settori delle scienze e tecnologie dell'informazione, mirate sia all'uso e alla gestione consapevole di sistemi informatici esistenti, sia alla progettazione e sviluppo di nuovi sistemi informatici. A tal fine il laureato dovra' acquisire un'adeguata conoscenza dei settori di base dell'informatica, nonchE' degli aspetti fondamentali e degli strumenti di supporto della matematica. Pertanto, in accordo con le linee guida delle associazioni nazionali (GRIN) ed internazionali (ACM) del settore, il percorso didattico prevede:
+- l'acquisizione di nozioni di base di fisica e di matematica sia discreta che del continuo;
+- la conoscenza dei principi, dei modelli teorici e delle architetture dei sistemi di elaborazione e delle reti di comunicazione;
+- la conoscenza e l'utilizzazione dei sistemi operativi;
+- l'acquisizione di elementi di analisi e progettazione degli algoritmi e delle strutture dati;
+- l'acquisizione delle moderne metodologie di programmazione, nonchE' la conoscenza dei linguaggi di programmazione rappresentativi dei principali paradigmi di programmazione;
+- l'assimilazione dei principi e dei sistemi per la progettazione e la gestione delle basi di dati e le tecnologie correlate;
+- l'acquisizione delle tecniche di progettazione e realizzazione di sistemi informatici;
+- l'acquisizione dei metodi e delle tecniche fondamentali per l'analisi e l'elaborazione informatica dei dati sperimentali.
+Il percorso didattico prevede inoltre:
+- l'acquisizione di conoscenze in settori affini anche a carattere interdisciplinare;
+- un congruo numero di crediti riservato a corsi di laboratorio oltre che alle esercitazioni di laboratorio eventualmente previste in altri corsi;
+- un congruo numero di crediti per corsi a scelta dello studente, allo scopo di completare la propria preparazione in maniera mirata ai suoi interessi specifici anche in considerazione della pervasivita' delle scienze e tecnologie informatiche nella moderna societa' dell' informazione;
+- attivita' seminariali tenute da rappresentanti di aziende o enti esterni all'universita' allo scopo di favorire l'inserimento degli studenti nel mondo del lavoro;
+- attivita' esterne, come tirocini formativi presso aziende, strutture della pubblica amministrazione e laboratori, oltre a soggiorni di studio presso altre universita' italiane e estere, anche nel quadro di accordi internazionali.
+Il percorso formativo, sui tre anni, si articola nel seguente modo:
+1. Nel primo anno, oltre alla formazione matematico-fisica di base, vengono forniti i fondamenti scientifici dell'informatica, i primi corsi relativi alla programmazione, alle strutture dati, alle architetture necessarie per affrontare gli anni successivi.
+2. Nel secondo anno viene completata la preparazione matematica ritenuta necessaria per la figura professionale dell'informatico. Si completa inoltre la preparazione degli studenti sugli aspetti salienti dell'informatica attraverso corsi su tematiche fondamentali, come basi di dati, algoritmi, informatica teorica, sistemi operativi e linguaggi di programmazione.
+3. Nel terzo anno viene ulteriormente consolidata la preparazione degli studenti sugli aspetti algoritmici, di elaborazione dei dati digitali e sui compilatori. Il terzo anno e' inoltre dedicato all'acquisizione di conoscenze informatiche specifiche e professionalizzanti sia mediante corsi nell'ambito delle gestione delle reti e dell'ingegneria del software, sia grazie ad attivita' di stage o tirocinio che consentono allo studente di fare esperienza nel mondo del lavoro.
+---------
+Sbocchi Occupazionali
+Profilo:
+Tecnico Programmatore
+Funzioni:
+- Assistenza ai progettisti e analisti di software traducendo istruzioni e specifiche di controllo, di procedure o di soluzioni di problemi, in diagrammi logici di flusso per la programmazione in linguaggio informatico;
+- Sviluppo e scrittura di programmi per memorizzare, ricercare ed elaborare informazioni e dati.
+Competenze:
+Applica conoscenze di:
+- Programmazione
+- Algoritmi
+- Compilatori e Linguaggi di Programmazione, incluso i loro fondamenti teorici
+- Sistemi Operativi
+- Ingegneria del Software
+Sbocchi:
+Aziende di produzione di beni e servizi. Organizzazioni pubbliche e/o private. Esempi di impiego: programmatore informatico, tecnico specialista di linguaggi di programmazione.
+Profilo:
+Tecnico Esperto in Applicazioni
+Funzioni:
+- Assistenza ai progettisti e analisti di software per l'installazione, la gestione e la manutenzione di applicazioni software.
+Competenze:
+Applica conoscenze di:
+- Programmazione
+- Algoritmi
+- Compilatori e Linguaggi di Programmazione, incluso i loro fondamenti teorici
+- Sistemi Operativi
+- Architetture degli Elaboratori
+- Conoscenza di software applicativo avanzato.
+Sbocchi:
+Aziende di produzione di beni e servizi. Organizzazioni pubbliche e/o private. Esempi di impiego: amministratore piattaforma di e-learning; grafico impaginatore web; operatore centro elaborazione dati; tecnico della catalogazione informatizzata; tecnico di interconnessione con sistemi complessi; tecnico di programmazione macchine a controllo numerico; tecnico esperto office automation; tecnico in computer grafica; tecnico specialista di applicazioni informatiche.
+Profilo:
+Tecnico Web
+Funzioni:
+- Assistenza ai progettisti e analisti di applicazioni web con sviluppo, configurazione, gestione, manutenzione ed ottimizzazione di siti internet, intranet e server web.
+Competenze:
+Applica conoscenze di:
+- Programmazione
+- Algoritmi
+- Compilatori e Linguaggi di Programmazione, incluso i loro fondamenti teorici
+- Sistemi Operativi
+- Architetture degli Elaboratori
+- Reti di Calcolatori
+Sbocchi:
+Aziende di produzione di beni e servizi. Organizzazioni pubbliche e/o private. Esempi di impiego: Amministratori di siti web; WebMaster.
+Profilo:
+Tecnico gestore di Basi di Dati
+Funzioni:
+- Assistenza agli analisti e progettisti di basi di dati con gestione, controllo e manutenzione di basi di dati.
+Competenze:
+Applica conoscenze di:
+- Programmazione
+- Algoritmi
+- Compilatori e Linguaggi di Programmazione, incluso i loro fondamenti teorici
+- Sistemi Operativi
+- Architetture degli Elaboratori
+- Basi di Dati
+- Algoritmi per Analisi Dati
+Sbocchi:
+Aziende di produzione di beni e servizi. Organizzazioni pubbliche e/o private. Esempi di impiego: Gestore di Basi di Dati.
+Profilo:
+Tecnico gestore di reti e di sistemi telematici
+Funzioni:
+- Assistenza ai progettisti e amministratori di sistema su installazione, configurazione, gestione e manutenzione per gli aspetti software dei sistemi telematici.
+Competenze:
+Applica conoscenze di:
+- Programmazione
+- Algoritmi
+- Compilatori e Linguaggi di Programmazione, incluso i loro fondamenti teorici
+- Sistemi Operativi
+- Architetture degli Elaboratori
+- Reti di Calcolatori
+- Ingegneria del Software
+Sbocchi:
+Aziende di produzione di beni e servizi. Organizzazioni pubbliche e/o private. Esempi di impiego: collaudo e integrazione di sistemi; amministratore di rete; amministratore di sistemi telematici; operatore di supporto tecnico reti intranet (lan).
+Profilo:
+Ingegnere dell'Informazione Junior (previo superamento Esame di Stato)
+Funzioni:
+Libero Professionista-previa iscrizione all' Albo di Ingegnere dell'Informazione junior. Si occupa di pianificazione, progettazione, sviluppo, direzione lavori, di stima, collaudo e gestione di impianti e sistemi elettronici, di automazione e di generazione, trasmissione ed elaborazione delle informazioni.
+Competenze:
+Applica conoscenze di:
+- Programmazione
+- Progetto ed Analisi di Algoritmi
+- Informatica Teorica
+- Progetto di Compilatori
+- Linguaggi di Programmazione
+- Progetto di Sistemi Operativi
+- Architetture degli Elaboratori
+- Reti di Calcolatori
+- Ingegneria del Software
+- Progetto di Algoritmi per Analisi Dati, incluse immagini
+- Calcolo Numerico
+- Calcolo delle Probabilita' e Statistica
+- Metodi Matematici per L'Informatica
+Sbocchi:
+Lavoro Autonomo o Dipendente nel settore ITC.
+---------
+Caratteristiche della Prova Finale
+Per conseguire la laurea, lo studente deve aver acquisito 180 crediti formativi compresi quelli relativi alla prova finale.
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico.
+La prova finale consiste in una prova scritta o orale secondo modalita' definite dal regolamento del Corso di Laurea per ogni anno accademico, nel rispetto e in coerenza della tempistica, delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+---------

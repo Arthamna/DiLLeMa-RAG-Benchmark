@@ -1,0 +1,73 @@
+Anno Accademico 2024/2025
+Laurea magistrale in STATISTICA E DATA SCIENCE
+Curriculum: DATA SCIENCE AND STATISTICS (LM-DATA)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2703
+---------
+Classe di Laurea magistrale in Data science (LM Data)Classe di Laurea magistrale in Scienze statistiche (LM-82 R)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2316
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+22216	BIG DATA C.I. (in inglese)	PIRRONE	12	Annuale	
+	BIG DATA ANALYTICS (in inglese)	PIRRONE	6		ING-INF/05
+	BIG DATA TOOLS (in inglese)	LA CASCIA	6		ING-INF/05
+23843	DATA PROTECTION (in inglese)	PIRAINO	6	1° semestre	IUS/01
+23844	DATA AND TEXT MINING C.I. (in inglese)	PLAIA	9	1° semestre	
+	DATA MINING (in inglese)	PLAIA	6		SECS-S/01
+	TEXT MINING (in inglese)	PLAIA	3		SECS-S/01
+23845	MACHINE LEARNING AND STATISTICAL MODELS C.I. (in inglese)	CHIODI	12	1° semestre	
+	STATISTICAL MACHINE LEARNING (in inglese)	SOTTILE	6		SECS-S/01
+	STATISTICAL MODELS (in inglese)	CHIODI	6		SECS-S/01
+23161	ADVANCED SURVIVAL ANALYSIS (in inglese)	ATTANASIO	9	2° semestre	SECS-S/05
+23815	CLOUD COMPUTING (in inglese)	GALLO	9	2° semestre	ING-INF/05
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23941	PERFORMANCE STATISTICS AND STATISTICAL MODELS IN FINANCE C.I. (in inglese)	CRACOLICI	9	1° semestre	
+	STATISTICAL MODELS FOR VOLATILITY IN FINANCE (in inglese)	VASSALLO	6		SECS-S/03
+	PERFORMANCE MANAGEMENT STATISTICS (in inglese)	CRACOLICI	3		SECS-S/03
+23953	NETWORKS AND HIGH DIMENSIONAL DATA ANALYSIS C.I. (in inglese)	TUMMINELLO	15	1° semestre	
+	NETWORKS AND OPTIMIZATION (in inglese)	TUMMINELLO	9		SECS-S/06
+	STATISTICAL LEARNING FOR HIGH DIMENSIONAL DATA (in inglese)	AUGUGLIARO	6		SECS-S/01
+16047	THESIS (in inglese)		12	2° semestre	
+	Gruppo di attiv. form. opzionali II		6		
+	Gruppo di attiv. form. opzionali III		6		
+	Attiv. form. a scelta dello studente (consigliate)		9		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15506	RISK MANAGEMENT (in inglese)	SCANNELLA	6	1° semestre	SECS-P/11
+18122	TOPICS IN MACRO AND FINANCIAL ECONOMETRICS (in inglese)	CIPOLLINI	6	1° semestre	SECS-P/05
+19220	CYBERSECURITY (in inglese)		6	1° semestre	ING-INF/05
+20526	INTERNET OF THINGS (in inglese)		6	1° semestre	ING-INF/03
+23828	DATA SCIENCE FOR MARKETING DECISIONS (in inglese)	CRACOLICI	6	1° semestre	SECS-S/03
+23952	SURVEY SAMPLING METHODS IN SOCIAL SCIENCES (in inglese)	ATTANASIO	6	1° semestre	SECS-S/05
+15507	MATHEMATICS FOR ECONOMICS AND FINANCE (in inglese)	CONSIGLIO	6	2° semestre	SECS-S/06
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16439	STOCHASTIC PROCESSES (in inglese)	ADELFIO	6	1° semestre	SECS-S/01
+21224	NON PARAMETRIC STATISTICS (in inglese)	MUGGEO	6	2° semestre	SECS-S/01
+21225	BAYESIAN STATISTICS (in inglese)	ABBRUZZO	6	2° semestre	SECS-S/01
+22383	MODELS FOR CATEGORICAL DATA (in inglese)	SCIANDRA	6	2° semestre	SECS-S/01
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06634	STAGE		6	2° semestre	
+11033	STAGE 3 CFU		3	2° semestre	
+23942	STATISTICAL CONSULTANCY 3 (in inglese)		3	2° semestre	
+23943	STATISTICAL CONSULTANCY 2 (in inglese)		6	2° semestre	
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+08627	STAGE		3	2° semestre	SECS-S/01
+11028	STAGE 6 CFU		6	2° semestre	SECS-S/01
+11029	STAGE 9 CFU		9	2° semestre	SECS-S/01
+23944	STATISTICAL CONSULTANCY (in inglese)		3	2° semestre	SECS-S/01
+23945	STATISTICAL CONSULTANCY 1 (in inglese)		6	2° semestre	SECS-S/01
+

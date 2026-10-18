@@ -1,0 +1,42 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SPATIAL PLANNING
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2552
+---------
+Classe di Laurea magistrale in Pianificazione territoriale urbanistica e ambientale (LM-48)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Architettura
+Codice corso 2286
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21063	PLANNING 1 - STUDIO (in inglese)	SCHILLECI	10	1° semestre	ICAR/21
+21064	URBAN AND REGIONAL ECONOMICS (in inglese)		6	1° semestre	SECS-P/06
+23115	SOCIAL GEOGRAPHY AND PARTICIPATORY PRACTICES STUDIO (in inglese)	PICONE	6	1° semestre	M-GGR/01
+21062	PLANNING THEORY (in inglese)	LO PICCOLO	6	2° semestre	ICAR/21
+23111	OTHER KNOWLEDGE USEFUL FOR JOB PLACEMENT		2	2° semestre	
+23114	GEOMATICS	MIDULLA	6	2° semestre	ICAR/06
+23117	LANDSCAPE DESIGN STUDIO	LEONE	8	2° semestre	ICAR/15
+	Attiv. form. a scelta dello studente (consigliate)		8		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21013	INTERNSHIP AND ORIENTATION TRAINING		10	1° semestre	
+21072	URBAN DESIGN (in inglese)	RONSIVALLE	8	1° semestre	ICAR/21
+21496	LANDSCAPE ECOLOGY (in inglese)	BAZAN	6	1° semestre	BIO/03
+23375	PLANNING 2 - STUDIO + URBAN AND REGIONAL POLICIES C.I. (in inglese)	CARTA	16	1° semestre	
+	PLANNING 2 - STUDIO (in inglese)	CARTA	10		ICAR/21
+	URBAN AND REGIONAL POLICIES	LINO	6		ICAR/20
+16047	THESIS		10	2° semestre	
+21070	ENERGETIC POLICIES FOR THE TERRITORY+SUSTAINABLE MOBILITY POLICIES C.I (in inglese)	LA GENNUSA	12	2° semestre	
+	SUSTAINABLE MOBILITY POLICIES (in inglese)	MIGLIORE	6		ICAR/05
+	ENERGETIC POLICIES FOR THE TERRITORY (in inglese)	LA GENNUSA	6		ING-IND/11
+23116	TECHNOLOGICAL DESIGN FOR SETTLEMENTS	MAMI'	6	2° semestre	ICAR/12
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23409	SLOW AND SOFT MOBILITY + STRATEGIC PLANNING PROJECT CI	CONTATO	8	1° semestre	
+	STRATEGIC PLANNING PROJECT	CONTATO	3		ICAR/21
+	SLOW AND SOFT MOBILITY	MIGLIORE	5		ICAR/05
+

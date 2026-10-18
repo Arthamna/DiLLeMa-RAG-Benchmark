@@ -1,0 +1,173 @@
+Admin Akademik Pascasarjana
+Menginfokan jadwal,
+persyaratan, dan link google
+form pendaftaran sidang
+proposal tesisSTART
+Merekap catatan revisi di
+lembar revisi dan nilai di
+excel
+Membagikan lembar revisi ke
+mahasiswaMelaksanakan sidang proposal
+tesis sesuai jadwal
+Mengerjakan revisi sesuai
+catatan di lembar revisiDosen pembimbing dan
+penguji menguji sidang
+proposal tesis sesuai plotting
+Memberikan penilaian dan
+catatan revisi melalui google
+formMemverifikasi berkas
+persyaratan sidang proposal
+tesis
+Apakah berkas
+sudah memenuhi
+syarat?Tidak
+Ya
+Merekap daftar peserta sidang
+proposal tesis setiap RMK dan
+menginfokan ke Ketua RMK
+Menginfokan jadwal sidang
+proposal tesis ke mahasiswa dan
+dosen (pembimbing dan penguji)Checklist kelengkapan
+berkas pendaftaran
+sidang proposal tesis  Mahasiswa
+Apakah berkas
+sudah lengkap?
+Melakukan pendaftaran sidang
+proposal tesis
+Meminta tanda tangan form revisi
+ke dosen pembimbing dan
+penguji dan lembar pengesahan
+ke dosen pembimbingJadwal sidang, link
+meeting, form penilaian
+dan form berita acara  
+Mengajukan hasil revisi
+ke dosen pembimbing
+dan pengujiMelengkapi dan memeriksa
+berkas persyaratan pendaftaran
+sidang proposal tesis
+Tidak
+Ya
+Catatan revisi sidang proposal
+tesis dan data penilaian sidang
+proposal tesis dari
+pembimbing dan penguji
+Mahasiswa dapat mengecek nilai
+sidang proposal tesis melalui
+SIAKAD ITS di akhir semester
+(IF 185301 T esis-Proposal)Dosen (Pembimbing, Penguji, Ketua RMK)
+Dosen pembimbing dan penguji
+menandatangani form revisi dan
+lembar pengesahan, lalu
+menyerahkan kembali ke mahasiswaDosen pembimbing
+dan penguji memeriksa
+hasil revisiDokumen hasil
+revisi sidang
+proposal tesis  
+Apakah revisi
+sudah sesuai?Dokumen hasil
+revisi sidang
+proposal tesis  Ketua RMK menentukan penguji
+dan menjadwalkan sidang
+proposal tesis setiap pesertaSOP PENDAFT ARAN SIDANG PROPOSAL TESIS PROGRAM STUDI S2 TEKNIK INFORMA TIKA (SISTEM ONLINE ), FT -EIC, ITS  
+YaDraft proposal tesis
+dan form persetujuan
+pembimbing
+Pemeriksa,
+ 
+ 
+ 
+ 
+ 
+Lina Ambarwati, S.Kom.  
+NIP. 198003242014092001  Mengetahui,
+Dr. Ahmad Saikhu, S.Si., M.T . 
+NIP. 197107182006041001Pembuat,
+ 
+ 
+ 
+ 
+ 
+Kartika Dwi Y uniavita Rahmawati, S.T .
+NPP. 1998202122056  
+Jadwal sidang, link
+meeting, dan VB
+Tidak
+Menginfokan link google form
+untuk meng-upload  seluruh
+dokumen hasil revisi sidang
+proposal tesis ke mahasiswa
+Status sidang
+proposal tesis
+menjadi "Disetujui"Merekap data mahasiswa yang
+telah menyelesaikan revisi
+sidang proposal tesis dan
+menginfokan ke Kaprodi
+Meng-update status sidang
+proposal tesis di MonT esMeng-upload lembar revisi sidang
+proposal tesis dan buku proposal
+tesis yang dilengkapi dengan
+lembar pengesahan yang sudah
+tertandatanganiLembar revisi dan
+lembar pengesahan yang
+telah tertandatanganiData peserta sidang
+proposal tesis
+Lembar revisi sidang
+proposal tesis  Usulan jadwal dan
+penguji sidang
+proposal tesis  
+Lembar revisi dan
+lembar pengesahanSIDANG PROPOSAL TESIS (IF -185301) PROGRAM STUDI S2 TEKNIK 
+INFORMATIKA, DEPARTEMEN TEKNIK INFORMATIKA, FT -EIC ITS  
+(SISTEM ONLINE ) 
+ 
+1. Dalam satu semester, terdapat dua kali siding proposal tesis, yaitu minggu ke -5 – minggu 
+ke-6 dan minggu ke -17 – minggu  ke-18. 
+2. Admin Akademik Pascasarjana  menginfokan jadwal, persyaratan, dan link Google Form 
+pendaftaran sidang proposal tesis melalui MonTes dan grup whatsapp.  
+3. Mahasiswa yang ingin mendaftar sidang proposal tesis, harus melengkapi berkas 
+persyaratan  pendafta ran sidang proposal tesis , meliputi  draft proposal tesis dan lembar  
+persetujuan pembimbing. Apabila kedua dokumen tersebut sudah lengkap, mahasiswa 
+dapat melakukan pendaftaran melalui Google Form dengan link 
+https://bit.ly/DaftarSidangPropTesGasal2122 . 
+4. Admin Akademik Pascasarjana  memverikasi berkas persyaratan pendaftaran sidang 
+proposal tesis . Apabila berkas sudah memenuhi, kemudian meng -input data mahasiswa 
+yang mendaftar sidang proposal tesis ke MonTes  dan mengatur status menjadi ‘Terdaftar’.  
+5. Admin Akademik Pascasarjana  merekap data mahasiswa pendaftar sidang proposal tesis 
+di Microsoft Excel dan mengirimkan file hasil rekapitulasi data pendaf tar sidang proposal 
+tesis ke masing -masing ketua RMK yang terkait dengan topik penelitian tesis mahasiswa 
+untuk meminta di -plotting -kan jadwal sidang tesis dan dosen penguji.  
+6. Ketua RMK mem -plotting jadwal dan dosen penguji sidang proposal tesis untuk masi ng-
+masing mahasiswa dan menginfokannya ke Admin Akademik Pascasarjana . 
+7. Admin Akademik Pascasarjana  mengirimkan jadwal dan virtual background sidang 
+proposal tesis ke mahasiswa melalui grup Whatsapp.  
+8. Mahasiswa standby 30 menit sebelum sesi dimulai dan bergabung ke link meeting sesuai 
+jadwal sidang proposal tesis yang telah ditentukan.  
+9. Dosen pembimbing dan penguji bergabung ke link meeting sesuai jadwal sidang proposal 
+tesis yang telah ditentukan.  
+10. Mahasiswa melaksanakan sidang proposal tesis. Sedangkan, dosen pembimbing dan 
+penguji memberikan feedback ke mahasiswa, mengisi berita acara , memberikan penilaian 
+dan catatan revisi  sidang proposal tesis.  
+11. Setelah mahasiswa melaksanakan sidang proposal tesis, Admin Akademik Pascasarjana  
+meng -update status sidang proposal tesis di MonTes dari ‘Terjadwal Ujian’ menjadi 
+‘Revisi ’. 
+12. Mahasiswa mengerjakan revisi dan menyusun buku proposal tesis sesuai dengan hasil 
+diskusi ketika sidang proposal tesis dan/atau sesuai catatan dalam lembar revisi. Apabila 
+sudah selesai mengerjakan revisi, mahasiswa dapat memberikan hasil revisinya ke dosen 
+pembimbing dan penguji serta mengajukan lembar revisi dan lembar pengesahan buku 
+proposal tesis untuk meminta persetujuan ke dosen pembimbing dan penguji. Batas 
+pengerjaan revi si adalah 2 minggu setelah sidang proposal tesis berlangsung.  
+13. Apabila revisi yang dikerjakan mahasiswa dirasa sudah tepat, dosen pembimbing dan 
+penguji dapat memberikan persetujuan yang dibuktikan dengan menandatangi form revisi  
+dan lembar pengesahan buku proposal tesis . 14. Admin Akademik Pascasarjana  menginfokan link untuk upload hasil revisi sidang 
+proposal tesis ke mahasiswa melalui grup Whatsapp.  
+15. Mahasiswa meng -upload file hasil revisi sidang proposal tesis dan lembar revisi sidang 
+proposal tesis ke link https://bit.ly/HasilRevisiProposalTesisDTIf . 
+16. Apabila mahasiswa sudah mengumpulkan softfile buku proposal tesis, Admin Akademik 
+Pascasarjana  mengubah status sidang proposal tesis di MonTes  dari ‘Revisi’  menjad i 
+‘Disetujui’.  
+17. Mahasiswa dapat mengecek nilai sidang proposal tesis di SIAKAD ITS mata kuliah IF 
+185301 Tesis -Proposal.  
+ 
+ 
+Notes: Link google form akan di -update setiap tahun ajaran  
+ 

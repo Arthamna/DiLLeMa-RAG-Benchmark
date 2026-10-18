@@ -1,0 +1,45 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on ROBOTICS ENGINEERING
+Curriculum: ROBOTIC ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=2558
+---------
+Class of Bachelor's Degree (BSc) on Information technology engineering (L-8)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2290
+---------
+Educational objectives
+The three-year Degree Course in Robotics Engineering belongs to class L-8 - Information Engineering.
+The specific educational objective of the Degree Course is the acquisition of the skills needed to the design, implementation, programming and operation of industrial and service robotic systems, for all the high value added application areas which are typical of the current information society.
+He robotics engineer is a professional ready to fit in the work environment of all public and private companies and services providing activities related to the analysis, development and implementation of systems for automation and robotics.
+The Degree Course is designed with respect to specific learning areas: basic engineering and information engineering subjects, robotics subjects, and subjects related to computer science for robotics. More in detail:
+-	Basic engineering subjects deal with the basic knowledge of engineers, such as mathematics and physics.
+-	Basic information engineering subjects deal with the common information knowledge, such as the fundamentals of electronics and automation, of computers and programming.
+-	Robotics subjects deal with issues related to electronics and robots’ control, to the communication among robots and computer networks, to robots mechanics and electric drives, to the techniques of computer aided robot design, to the main industrial and service robot applications.
+-	The subjects of computer science for robotics are related to the analysis and development of software systems for robotics, including the knowledge related to Artificial Intelligence and Cyber-Security for robotics.
+In the first course year, students will acquire knowledge and skills related to basic engineering subjects, together with the fundamentals of information engineering subjects and robotics subjects. In the same time, the will acquire elective competencies and skills.
+The second year not only provides students with further basic subjects but is also dedicated to the acquisition of knowledge and skills in information engineering and robotics subjects. Furthermore, students will acquire the bases of computer science for robotics.
+Finally, during the third course year, students will complete their training in robotics subjects and will tackle the advanced issues of computer science for robotics.
+The educational project also provides skills related to other educational activities, Students may acquire these skills through an internship in companies and research centres operating in the development of robotic systems.
+---------
+Professional opportunities
+Profile:
+Graduate in Robotics Engineering
+Functions:
+Graduates in Robotics Engineering have a cultural and professional profile oriented towards the achievement of the skills necessary for the design, construction, programming, and operation of industrial and service robotic systems, oriented towards all application sectors with high added value typical of today's information society.
+Robotics engineering graduates analyse problems in the industrial and service fields, identify and design standard robotic solutions and develop the robotic system necessary for the solution identified.
+Skills:
+-	Analysis of the industrial and service robotics issues for various application needs.
+-	Development, modification, and optimisation of control systems for robotic manipulators and mobile robots.
+-	Production, integration and verification of the software system used in a robotic system.
+-	Design, production and operation of computer networks which include robotic manipulators and mobile robots.
+Professional Opportunities:
+-	Private practice as robotic systems analyst, designer or tester.
+-	Employment in public or private agencies, such as: production companies using robotic systems, automation and robotics industry, companies operating in the field of robotic systems and of the design and production of robotic systems, service providers using robotic systems and, generally, all the facilities using robotic systems.
+-	The continuation of studies with access to various master's degree courses.
+---------
+Final examination features
+The final test has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a written or oral test, in accordance with the rules fixed every year by the Degree Course Regulations for the final examination, respecting and consistent with the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+---------

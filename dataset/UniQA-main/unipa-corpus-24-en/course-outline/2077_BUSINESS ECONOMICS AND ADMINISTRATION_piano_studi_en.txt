@@ -1,0 +1,52 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on ECONOMICS AND BUSINESS ADMINISTRATION
+Curriculum: BUSINESS ECONOMICS AND ADMINISTRATION
+For more information visit http://www.unipa.it/struttura.html?id=525
+---------
+Class of Bachelor's Degree (BSc) on Business administration (L-18)
+Duration 3 years
+Location PALERMO
+Number of seats in local planning: 550
+Department of Economics and statistical Sciences
+Course Code 2077
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00294	BUSINESS ECONOMICS	VERGARA	10	1° semestre	SECS-P/07
+04897	GENERAL MATHEMATICS	PECORELLA	8	1° semestre	SECS-S/06
+14116	COMPUTING AND TELEMATICS SKILLS		3	1° semestre	
+22696	ENGLISH LANGUAGE B1 (in english)		6	1° semestre	
+02526	PRIVATE LAW	PIRAINO	8	2° semestre	IUS/01
+02549	PUBLIC LAW	LAURICELLA	6	2° semestre	IUS/09
+02796	POLITICAL ECONOMICS	MODICA	9	2° semestre	SECS-P/01
+05419	BUSINESS ORGANISATION	INGRASSIA	6	2° semestre	SECS-P/10
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02417	COMMERCIAL LAW	BAVETTA	8	1° semestre	IUS/04
+02742	BUSINESS ECONOMICS AND MANAGEMENT	MOCCIARO LI DESTRI	9	1° semestre	SECS-P/08
+06190	GENERAL AND APPLIED ACCOUNTING	COSTA	10	1° semestre	SECS-P/07
+06644	STATISTICS	AGRO'	8	1° semestre	SECS-S/01
+02590	TAXATION LAW	PIGNATONE	6	2° semestre	IUS/12
+02785	INDUSTRIAL ECONOMICS	TESORIERE	6	2° semestre	SECS-P/06
+04892	FINANCIAL MATHEMATICS	ANDRIA	6	2° semestre	SECS-S/06
+15919	CORPORATE BUDGETS	TORCIVIA	8	2° semestre	SECS-P/07
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04864	MARKETING	DOMINICI	6	1° semestre	SECS-P/08
+13121	PRACTICE		6	1° semestre	
+17617	ECONOMICS AND MANAGEMENT OF FINANCIAL INTERMEDIARIES/BUSINESS ECONOMICS AND FINANCIAL MANAGEMENT - INTEGRATED COURSE	SCANNELLA	14	1° semestre	
+	ECONOMICS AND MANAGEMENT OF FINANCIAL INTERMEDIARIES	SCANNELLA	8		SECS-P/11
+	INVESTMENT AND FUNDS MANAGEMENT	PICONE	6		SECS-P/08
+02443	LABOUR LAW		6	2° semestre	IUS/07
+05877	PLANNING AND CONTROL	CINCIMINO	8	2° semestre	SECS-P/07
+05917	FINAL EXAMINATION		3	2° semestre	
+	Optional subjects		8		
+	Free subjects		12		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+06318	SCIENCE OF FINANCE	BERRITTELLA	8	1° semestre	SECS-P/03
+05718	ECONOMIC POLICY	MAZZOLA	8	2° semestre	SECS-P/02
+

@@ -1,0 +1,36 @@
+Anno Accademico 2024/2025
+Laurea magistrale in BIOLOGIA MOLECOLARE E DELLA SALUTE
+Curriculum: BIOLOGIA MOLECOLARE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1556
+---------
+Classe di Laurea magistrale in Biologia (LM-6)
+Durata 2 anni
+Sede PALERMO
+Numero posti in programmazione locale: 85
+Dipartimento di Scienze e Tecnologie Biologiche, Chimiche e Farmaceutiche
+Doppio titolo con Bonn-Rhine-Sieg University of Applied Sciences, Bonn (GERMANY)Universidad de A Coruña, La Coruna (SPAIN)
+Codice corso 2195
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01597	BIOLOGIA CELLULARE	GERACI	6	1° semestre	BIO/06
+05176	METODOLOGIE BIOCHIMICHE	ATTANZIO	6	1° semestre	BIO/10
+15559	MECCANISMI BIOCHIMICI DELLE FUNZIONI CELLULARI	GIULIANO	6	1° semestre	BIO/10
+20456	METODOLOGIE BIOMOLECOLARI E BIOINFORMATICHE	MELFI	6	1° semestre	BIO/11
+20691	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2		6	1° semestre	
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		2	2° semestre	
+17196	ELEMENTI DI BIOFISICA	COTTONE	6	2° semestre	FIS/07
+20455	MICROBIOLOGIA MOLECOLARE	ALDUINA	6	2° semestre	BIO/19
+21261	METODOLOGIE GENETICHE E CITOGENETICHE		6	2° semestre	
+	METODOLOGIE GENETICHE		3		BIO/18
+	METODOLOGIE CITOGENETICHE ED EPIGENETICHE		3		BIO/18
+94412	GENETICA MOLECOLARE	LENTINI	6	2° semestre	BIO/18
+	Attiv. form. a scelta dello studente		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+08308	GENOMICA FUNZIONALE	RAGUSA	9	1° semestre	BIO/11
+17195	FISIOLOGIA MOLECOLARE	ZIZZO	6	1° semestre	BIO/09
+05917	PROVA FINALE		37	2° semestre	
+	Attiv. form. a scelta dello studente II		6		
+

@@ -1,0 +1,41 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on ARTIFICIAL INTELLIGENCE
+For more information visit http://www.unipa.it/struttura.html?id=2559
+---------
+Class of Bachelor's Degree (BSc) on Computer Science (L-31)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Mathematics and Informatics
+Course Code 2291
+---------
+Educational objectives
+The CdS in Artificial Intelligence aims to train experts in the theoretical foundations, techniques, methodologies, and methods of applying artificial intelligence. The course aims at providing graduates a cultural and professional profile clearly different from the one of computer science graduates, mainly for the interdisciplinary traits characterizing the most recent developments in artificial intelligence. Artificial Intelligence graduates will receive a solid training on the essential topics for artificial intelligence in the areas of mathematics, computer science, physics, and cognitive sciences. In particular, graduates will be able to use logical-mathematical tools with awareness, will possess a solid knowledge of the fundamental aspects of computer science and command of the topics, techniques and methodologies of artificial intelligence, including the extraction and representation of knowledge, automatic reasoning , machine learning, artificial vision, search and optimization algorithms, human-machine interaction, as well as application-based disciplines. Graduates in AI will also possess legal and ethical knowledge enabling them to make conscious use of the acquired knowledge and skills in decision-making and information processing processes. This knowledge is acquired through lectures and laboratory activities. The verification of the knowledge acquired in the various training activities is carried out in the most suitable forms for the specific types and characteristics of training activities. The verifications typically consist, for example, of written and/or oral exams, reports on the activities carried out and the knowledge acquired, intermediate tests, as well as the final test for obtaining the degree.
+The laboratory and internship activities enable graduates to contribute, on the basis of constantly updated interdisciplinary knowledge and skills, to the design and implementation of innovative solutions based on AI techniques and models, both in the public and private sectors.
+The educational activities aim both at understanding the fundamentals of AI and at experimenting its use in applications. The degree course is structured as follows:
+- the first two years consist of training activities dedicated to the founding nucleus of training in artificial intelligence and are essential for defining the graduate's interdisciplinary profile.
+- the third year is partially dedicated to the definition of specific methodological skills of artificial intelligence as well as to the use of artificial intelligence in application areas; in the third year, students can freely choose some courses according to their cultural interests and can complete the practical understanding of artificial intelligence, also in application areas, through laboratory activities or internships;
+- the training course is completed at the end of the third year with the final exam.
+---------
+Professional opportunities
+Profile:
+Expert in Artificial Intelligence applied to data analysis
+Functions:
+Graduates will make use of the skills acquired in artificial intelligence to solve problems of data collection, organisation, processing and classification, and to build predictive and decision support models.
+Skills:
+The mastery of a wide range of techniques and methods, logical-deductive as well as based on machine learning, characterizes the professional profile. Disciplines such as psychology and law allow the development of skills in communication, teamwork, the ability to organize work with different levels of responsibility. Graduates will be able to use English language in the workplace, as well as in their specific area of expertise.
+Professional opportunities:
+Graduates will be able to operate in a variety of working environments characterized by the management of highly complex data, in private companies and in public institutions.
+Profile:
+Expert in Artificial Intelligence applied to interaction
+Functions:
+Graduates will be able to design, implement and test interactive systems based on natural language processing and multimodal communication.
+Skills:
+The command of a wide range of artificial intelligence techniques and methods characterizes the professional profile. Subjects such as person-machine interaction and ethics favour the development of skills in the design of intelligent interactive systems, and in their evaluation in variously articulated social and environmental contexts. Graduates will be able to use the English language in the workplace, as well as in their specific area of expertise.
+Professional opportunities:
+Graduates will be able to operate in a variety of working areas centered on the design or adaptation of conversational computer systems, or systems based on the analysis and synthesis of non-textual information, characterized by computational elements of artificial intelligence.
+---------
+Final examination features
+To obtain the Degree, students must have acquired 180 credits, including the credits related to the final examination.
+The final test has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a oral test, in accordance with the rules fixed every academic year by the Degree Course Regulations, respecting and consistent with the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+---------

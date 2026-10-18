@@ -1,0 +1,47 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SCIENZE DELLA NATURA
+Curriculum: VULNERABILITÀ DELLA NATURA E SOSTENIBILITÀ
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=770
+---------
+Classe di Laurea magistrale in Scienze della natura (LM-60)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze della Terra e del Mare
+Codice corso 2056
+---------
+Insegnamenti primo anno \ in comune con gli altri curricula\profili
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19792	STATISTICA APPLICATA ALLA RICERCA SCIENTIFICA	CILLUFFO	6	1° semestre	SECS-S/02
+20538	BIOGEOGRAFIA C.I.	ILARDI	9	1° semestre	
+	ZOOGEOGRAFIA	MARRONE	3		BIO/05
+	GEOBOTANICA	ILARDI	6		BIO/03
+20691	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B2		3	1° semestre	
+22410	CLIMATE CHANGE E RISCHIO VULCANICO	PARELLO	6	1° semestre	GEO/08
+22413	APPLICAZIONI DI ZOOLOGIA ED ENTOMOLOGIA C.I.	LO VALVO	12	1° semestre	
+	APPLICAZIONI DI ENTOMOLOGIA	MANACHINI	6		AGR/11
+	APPLICAZIONI DI ZOOLOGIA	LO VALVO	6		BIO/05
+19977	APPLICAZIONI DI ECOLOGIA	GIANGUZZA	6	2° semestre	BIO/07
+22414	BIOLOGIA E BIODIVERSITÀ UMANA	DUMAS	6	2° semestre	BIO/08
+22549	PALEONTOLOGIA APPLICATA	INCARBONA	6	2° semestre	GEO/01
+	Attiv. form. a scelta dello studente (consigliate)		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		3	1° semestre	
+22411	BIOGEOCHIMICA C.I.	QUATRINI	6	1° semestre	
+	GEOMICROBIOLOGIA	QUATRINI	3		BIO/19
+	CICLI BIOGEOCHIMICI	CALABRESE	3		GEO/08
+22415	VULNERABILITÀ DEI SISTEMI NATURALI	SIGNA	6	1° semestre	BIO/07
+22470	COMUNICAZIONE E DIVULGAZIONE SCIENTIFICA		3	1° semestre	
+24122	FLORA SICILIANA	GUARINO	6	1° semestre	BIO/02
+24161	RISCHI E RISORSE NATURALI C.I.	ROTIGLIANO	6	1° semestre	
+	RISCHI NATURALI	ROTIGLIANO	3		GEO/04
+	RISORSE NATURALI		3		GEO/04
+05917	PROVA FINALE		24	2° semestre	
+	Attiv. form. a scelta dello studente II		6		
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+14052	CONSERVAZIONE DELLA NATURA	QUATTROCCHI	6	2° semestre	BIO/07
+

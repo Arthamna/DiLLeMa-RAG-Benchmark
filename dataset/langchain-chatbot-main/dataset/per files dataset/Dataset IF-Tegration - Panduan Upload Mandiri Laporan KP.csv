@@ -1,0 +1,137 @@
+konten
+"PANDUAN UPLOAD MANDIRI
+HOW TO UPLOAD PROJECT REPORT FILE
+
+1 Januari 2021
+Divisi Pengembangan Perpustakaan Digital
+
+LANGKAH-LANGKAH UPLOAD FILE TUGAS AKHIR
+STEP BY STEP THESIS FILE UPLOAD
+
+Daftar Akun / Create Repository Account
+Login Repository / Login into Repository (Setelah diaktivasi / after activated by librarian)
+Upload File KP / Upload Project Report
+Isi Metadata / Fill out Metadata Entries
+Tentukan Subyek / Determine Thesis Subjects
+Deposit Item / Deposit Item Process
+Repository.its.ac.id Login Panduan / Guidance Daftar Akun / Create Account WEBSITE REPOSITORY REPOSITORY WEBSITE
+
+CARA DAFTAR AKUN REPOSITORY
+HOW TO REGISTER REPOSITORY ACCOUNT
+
+Access this link: http://bit.ly/PengumpulanKP
+
+Catatan:
+
+KP dengan 2 pengarang cukup mendaftar 1 akun saja.
+LOGIN TO REPOSITORY
+
+Anda bisa login setelah akun diaktivasi oleh pustakawan, paling lama 20 menit setelah mendaftar di jam kerja (tanpa ada notifikasi melalui email).
+Login to repository is available after the account is activated by librarian. Activation process need time around 20 minutes (work hours) without notification email.
+Hubungi administrator apabila lebih dari 20 menit masih belum bisa login.
+Contact the administrators (click About ITS Repository) if you are not able to login after that hours.
+PERSIAPAN / PREPARATIONS
+
+File PDF tanpa watermark. Berisi semua isi TA/Tesis/Disertasi dari cover sampai lampiran.
+PDF File without watermark. Full content from cover to Appendix.
+Pastikan lembar Pengesahan sudah ditandatangani dosen pembimbing dan stempel departemen.
+Include Approval sheet which has been signed by Thesis Advisors.
+Laporan KP dengan pengarang tunggal:
+
+NRP-Project_Report
+Student ID Number-Project_Report
+Contoh: / example: 04111060010007-Project_Report
+Laporan KP dengan 2 pengarang atau lebih:
+
+Project report with 2 authors or more
+NRP1_NRP2-Project_Report
+Student ID Number1_ Student ID Number2-Project_Report
+Contoh: / example: 04111060010007_04111060010111-Project_Report
+Format Nama File / File Name
+
+Gunakan NRP sebagai username dan password.
+Use your Student ID Number as username and password.
+123 Nama anda nampak di sini
+Your name appear here
+Klik “New item” / Click “New item”
+MANAGE DEPOSITS
+
+Pilih “Monograph” / Choose “Monograph”
+Kemudian klik “Next” / Then Click “Next”
+
+Upload file di sini / Upload file here
+Klik “Next” / Click “Next”
+UPLOAD FILE
+
+File sudah masuk / Thesis file uploaded
+Pilih “Accepted version” / Choose “Accepted version”
+Pilih “Anyone” / Choose “Anyone”
+Pilih Bahasa yang digunakan / Choose language as used on
+Klik “Next” / Click “Next”
+Title, diisi judul bhs Ind, dengan gaya penulisan huruf besar tiap kata.
+Title, fill it with thesis title, use Capitalize Each Word style.
+
+Abstract, diisi abstrak Ind dan Eng. Gunakan tanda “ = “ sebagai pemisah.
+Abstract, fill it with Ind and Eng abstracts. Use “ = “ as divider of Ind and Eng Abstracts.
+
+MENGISI METADATA / METADATA ENTRIES
+
+Monograph Type, pilih “Project Report”
+Monograph Type, choose “Project Report”.
+Corporate Creators, diisi nama Perusahaan yang berkontribusi dalam penulisan KP.
+NIDN, diisi NIDN dosen pembimbing. Boleh dikosongkan bila tidak tahu.
+NIDN, fill it with thesis advisor ID number. Can be blank.
+MENGISI METADATA / METADATA ENTRIES
+
+Isikan nama dosen pembimbing dengan nama belakang pada kolom family name.
+Fill it with Thesis Advisors name.
+Pilih “Thesis Advisor” / Choose “Thesis Advisor”.
+NRP/NIM: diisi NIM [no NRP]
+NRP/NIM: NIM [student ID number].
+Creators, isikan pengarang dengan nama belakang pada kolom family name.
+Creators, fill it with creators name.
+MENGISI METADATA / METADATA ENTRIES
+
+Divisions, pilih Fakultas terlebih dahulu, kemudian pilih departemen dan jenjang Pendidikan yang sesuai dengan studi.
+Divisions, choose Faculty and Department that appropriate with your study.
+Status, pilih Unpublish.
+Status, choose Unpublish.
+Institution: Institut Teknologi Sepuluh Nopember.
+MENGISI METADATA / METADATA ENTRIES
+
+Department, diisi nama Departemen tempat studi.
+Department, department study program.
+Date, diisi sesuai tanggal di lembar pengesahan.
+Date, as date on approval sheet.
+Date Type, pilih Completion.
+Date Type, choose Completion.
+Publisher, diisi [s.n.].
+Publisher, fill it with [s.n.].
+Contact Email Address, isikan alamat email pengarang.
+Status, choose “Unpublished”.
+Uncontrolled Keywords, diisi kata kunci berbahasa Ind dan Eng yang terdapat di halaman Abstrak.
+Uncontrolled Keywords, keywords on Abstract page, both Indonesian and English.
+MENGISI METADATA / METADATA ENTRIES
+
+Klik “Next” / Click “Next”.
+
+References, isikan konten daftar pustaka.
+References, bibliography contents.
+
+Ketikkan subyek (Eng) yang sesuai dengan isi TA pada kolom yang tersedia. Kemudian klik “Search”. klik “Add” pada subyek yang cocok.
+Type the subjects then click “Search” then click “Add” on the subject that is appropriate.
+
+MENENTUKAN SUBYEK / DETERMINE THE SUBJECTS
+
+Bisa dilakukan dengan 2 cara:
+Can be done in 2 ways:
+Secara manual pilih subyek yang tersedia, kemudian klik “Add”.
+Manually choose the subject on the menu then click “Add”.
+Klik “Next” / Click “Next”.
+DEPOSIT ITEM PROCESS
+
+Deposit item adalah proses terakhir untuk mengirimkan file anda ke sistem administrator. Klik “Deposit Item Now”.
+Deposit Item is the last process to send the thesis file to the administrator system. Click “Deposit Item Now”.
+# THANK YOU #
+Feel Free to Contact the administrators (click About ITS Repository) if you have any questions.
+"

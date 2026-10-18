@@ -1,0 +1,60 @@
+Academic year 2024/2025
+Master's Degree (MSc) on CYBER-PHYSICAL SYSTEMS ENGINEERING FOR INDUSTRY
+For more information visit http://www.unipa.it/struttura.html?id=2021
+---------
+Class of Master's Degree (MSc) on Automation engineering (LM-25)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2254
+---------
+Educational objectives
+Specific objectives.
+The specific educational objective of the 2nd cycle Degree Course in Cyber-Physical Systems Engineering for Industry is the training of professionals capable of designing, controlling and managing complex processes and systems, in the fields of industrial and information engineering and of the related smart automation issues (robotics, automation, cyber-physical systems, smart factories, industry 4.0).
+The multidisciplinary educational programme, with a strong focus in the automation sector, is enriched by general skills in industrial and information engineering, aims at training strongly specialised engineers, through a specific training focusing on process engineering and on the operation and control of complex systems.
+In the context of these systems, Cyber-Physical Systems Engineers for Industry are capable of planning the targets to be achieves, formulating the control problem taking into account these targets, solve the problem in an optimal way, produce a hardware/software model/prototype of the whole system and fully feature its performance.
+Thanks to the knowledge and skills acquired during the Course, graduates in Cyber-Physical Systems Engineering for Industry will reach sound design ability, addressed primarily to the cyber-physical systems and to ICT, which are founding and strategic elements for the development of modern processes for the production, distribution and supply of goods and services, with a specific attention to the needs of the so-called intelligent and interconnected industry.
+The training of these professionals consists of in-depth education in class-specific sectors, with respect, in particular, to automation, integrated with specific, soft and interdisciplinary skills in sectors of industrial and information  engineering, aiming at the development and the application of cyber-physical systems in the process industry and in spart automation.
+More in detail, the educational programme includes:
+-	A group of class-specific subjects in the sectors of automation engineering (automation, mechanics applied to machines, converters, electrical machines and drives), providing specialist knowledge and skills in the fields of industrial and mobile robotics, digital control and in the evaluation, filtering and identification of systems, as well as insights related to applied mechanics and mechanical systems dynamics and industrial electrical drives;
+-	A group of related subjects, in the sectors of industrial engineering (processing technologies and systems, design and methods of industrial engineering, mechanical industrial plants), providing specialist knowledge and skills in the fields of advanced and additive manufacturing, process and systems simulation, quality control, supply chain management, advanced modelling and visualisation techniques; 
+-	A group of related subjects, in the sectors of information engineering (electronics, measures, information processing systems, telecommunications), providing advanced and interdisciplinary skills in the fields od electronics for the industrial IOT, automatic measurement systems and related sensors, Machine Learning and Deep Learning algorithms, Cyber-security and Cloud security.
+The Course includes several laboratory activities of high interest in almost all the provided courses and is completed by elective activities (internship, conferences, seminars, workshops, educational activities and elective subjects), enabling an integrated training through the study of subjects related to other scientific-engineering filed as well as the acquisition of context-related knowledge and skills, useful to enter the labour market.
+---------
+Professional opportunities
+Profile:
+“DOTTORE MAGISTRALE” IN AUTOMATION ENGINEERING (MSc)
+Functions:
+Graduates in Cyber-physical systems engineering for industry have a cultural and professional profile focused on the typical automation engineering scientific and technological knowledge, as well as on interdisciplinary knowledge and skills in the fields of industrial and information engineering, enabling them to identify, formulate and solve, also in innovative ways, complex problems or problems requiring an interdisciplinary approach.
+Thanks to the acquired skills, they play a catalyst role in the management and logistics of big production systems, being able to create, plan, design and operate complex and/or innovative systems and processes, exploiting their context knowledge and interdisciplinary.
+They possess advanced knowledge of the typical analysis and design methods of Automation as well as specialist skills in the field of design, construction, and operation of cyber-physical systems with respect, specifically, to the industrial sector.  These knowledge and skills enable them to introduce, in a complex system, the necessary “intelligence” to manage operations without human intervention (i.e., automatic control), optimizing operations and dominating the interaction among the various parts of the systems as well as between the systems and the surrounding environment.
+Graduates can face complex problems in intrinsically multidisciplinary contexts; therefore, they are able to interface with the specialists of processes and systems to be automated, suggesting the most effective operational and project functions, in technical and economic terms. 
+In this sense, the functions in a work context may be synthetised as follows:
+1)	Process and system analyst;
+2)	Control systems analyst;
+3)	Technician for the definition, programming, monitoring, operation, maintenance and automation of complex processes and systems.
+Skills:
+-	Identification of descriptive models of complex real processes and systems and characterisation of the properties of models aiming at the study of the behaviour of these processes and systems.
+-	Identification of advanced control methodologies, starting from models, definition of project specifications for the control of complex processes and systems.
+-	Design and evaluation of control laws and strategies complying with project specifications.
+-	Simulation and analysis of complex continuous and discrete processes and systems, and validation of the relevant control laws and strategies.
+-	Theoretical and experimental development of advanced and innovative control methods and strategies, implementation on rapid prototyping digital systems and ability to carry out experiments on these systems.
+-	Design, operation and production of automatic systems for data acquisition and processing, measurement and real-time control, typical of digital control systems.
+-	Monitoring, operation, maintenance and automation of complex processes and systems.
+-	Design and implementation of cyber-physical systems for the operation and control of processes in the industrial field.
+Professional opportunities
+Graduates in Cyber-Physical Systems Engineering for Industry possess specific skills enabling them to fit in rapidly in various industrial and non-industrial professional fields, working as systemists and/or designer and/or technician in any application context where the principles of automation and the technologies of cyber-physical systems play an important role.
+Professional opportunities might be found specifically in:
+-	Electronic, mechanical, automotive, electro-mechanical, aerospace, chemical and industrial, mobile and submarine robotics companies.
+-	Service providing companies (water management and network services, transports, energy, civil and industrial automation, big data, Internet of Things and related services).
+-	Research and development centres and laboratories in the automation sector.
+-	Public administration and private practice.
+The multidisciplinary training characterising the Degree Course not only provides excellent placement perspectives, but also enables graduates as well to continue with third cycle studies, namely in national and international PhD courses in the cultural and scientific fields related to cyber-physical systems and their applications in the industrial field. In particular, with respect to the third cycle educational offer of the University of Palermo , it is worth pointing out the coherence between the Course programme with the research issues of the PhD courses in “Information and Communication Technologies" and “Mechanical, Manufacturing, Management and Aerospace Innovation" of the Engineering Department
+---------
+Final examination features
+The final examination consists of the discussion of a thesis, prepared by the student under the guidance of a professor and any academic and/or company supervisors. The topic of the dissertation is approved in advance by the Board of the Degree Course.
+The thesis deeply investigates issues of high scientific content and consists mainly of an experimental study or production emphasising the innovative aspects of the typical automation engineering research sectors. 
+Thanks to the interdisciplinary character of the educational programme, it is expected that the final examination focuses on issues exploiting these contents to propose innovative solutions on the field of the issues covered by the Degree Course. 
+The final examination procedures are defined by specific Regulations, approved by the Board of the Degree Course and published on the Course website.
+---------

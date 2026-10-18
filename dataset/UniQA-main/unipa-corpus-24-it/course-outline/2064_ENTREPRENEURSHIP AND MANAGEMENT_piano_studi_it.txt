@@ -1,0 +1,44 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SCIENZE ECONOMICO-AZIENDALI
+Curriculum: ENTREPRENEURSHIP AND MANAGEMENT
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=733
+---------
+Classe di Laurea magistrale in Scienze economico-aziendali (LM-77)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Doppio titolo con University of Dubrovnik, Dubrovnik (CROATIA)
+Codice corso 2064
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15506	RISK MANAGEMENT (in inglese)	SCANNELLA	6	1° semestre	SECS-P/11
+18126	STATISTICAL METHODS (in inglese)	ADELFIO	6	1° semestre	SECS-S/01
+18133	BUSINESS STRATEGY AND FAMILY BUSINESS C.I. (in inglese)	RUISI	10	Annuale	
+	FAMILY BUSINESS (in inglese)	TOMASELLI	4		SECS-P/07
+	BUSINESS STRATEGY (in inglese)	RUISI	6		SECS-P/07
+21911	INTERNATIONAL, EU AND COMPARATIVE LABOUR LAW (in inglese)		6	1° semestre	IUS/07
+22697	ADVANCED ENGLISH B2 (in inglese)	ROMEO	4	1° semestre	
+18132	GAME THEORY (in inglese)	MODICA	6	2° semestre	SECS-P/01
+18547	STATISTICS FOR ECONOMICS & BUSINESS (in inglese)	ARONICA	8	2° semestre	SECS-S/03
+21936	FINANCIAL ACCOUNTING, PLANNING AND CONTROL C.I. (in inglese)	QUARCHIONI	10	2° semestre	
+	STRATEGIC PLANNING AND CONTROL (in inglese)	QUARCHIONI	6		SECS-P/07
+	FINANCIAL ACCOUNTING (in inglese)	VALENZA	4		SECS-P/07
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06634	STAGE (in inglese)		6	1° semestre	
+21937	BUSINESS SYSTEMS AND CONSUMER BEHAVIOUR C.I. (in inglese)	DOMINICI	12	1° semestre	
+	BUSINESS SYSTEMS (in inglese)	DOMINICI	6		SECS-P/08
+	DIGITAL MARKETING AND CONSUMER BEHAVIOUR (in inglese)	DOMINICI	6		SECS-P/08
+15508	INTERNATIONAL ECONOMICS (in inglese)	FAZIO	6	2° semestre	SECS-P/06
+18131	GLOBAL MANAGEMENT AND CORPORATE STRATEGY C.I. (in inglese)	AMENTA	10	2° semestre	
+	GLOBAL MANAGEMENT (in inglese)	AMENTA	6		SECS-P/08
+	CORPORATE STRATEGY (in inglese)	MOCCIARO LI DESTRI	4		SECS-P/08
+18235	ENTREPRENEURSHIP (in inglese)	RUISI	6	2° semestre	SECS-P/07
+22649	DISSERTATION (in inglese)		10	2° semestre	
+	Stage, Tirocini, Altro		6		
+	Attiv. form. a scelta dello studente		8		
+
+

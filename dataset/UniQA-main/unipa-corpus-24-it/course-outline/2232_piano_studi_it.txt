@@ -1,0 +1,56 @@
+Anno Accademico 2024/2025
+Laurea magistrale in COOPERAZIONE, SVILUPPO E MIGRAZIONI
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1872
+---------
+Classe di Laurea magistrale in Scienze per la cooperazione allo sviluppo (LM-81)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Culture e società
+Doppio titolo con Université de Tunis El Manar, Tunisi (TUNISIA)
+Codice corso 2232
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23607	HUMAN RIGHTS: THEORY AND POLICIES	MARCENO'	9	1° semestre	
+	HUMAN RIGHTS CONCEPTS AND THEORY	SAJEVA	3		SPS/01
+	HUMAN RIGHTS IN DEVELOPMENT AND MIGRATION POLICIES	MARCENO'	6		SPS/01
+24104	QUANTITATIVE METHODS & GIS FOR THE STUDY OF MIGRATION PHENOMENA (in inglese)	FERRANTE	6	1° semestre	SECS-S/05
+24105	ANTHROPOLOGY OF DEVELOPMENT (in inglese)	MANCUSO	6	1° semestre	M-DEA/01
+19766	HISTORY OF INTERNATIONAL RELATIONS		6	2° semestre	SPS/06
+22528	MIDDLE EAST AND NORTH AFRICA: HISTORY, POLITICS, CULTURES	DI DONATO	6	2° semestre	L-OR/10
+22563	DEVELOPMENT AND INTERNATIONAL ECONOMICS	ASSO	9	Annuale	
+	INTERNATIONAL ECONOMICS		3		SECS-P/06
+	DEVELOPMENT AND INEQUALITIES	ASSO	6		SECS-P/04
+24106	CRITICAL GEOGRAPHIES OF MIGRATIONS (in inglese)	DE SPUCHES	6	2° semestre	M-GGR/01
+24107	PROJECT PLANNING FOR INTERNATIONAL DEVELOPMENT (in inglese)	FRAZZICA	6	2° semestre	
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO		6	1° semestre	
+14314	ULTERIORI CONOSCENZE LINGUISTICHE		6	1° semestre	
+22522	DEMOGRAPHY AND ECONOMICS OF MIGRATIONS	BUSETTA	12	1° semestre	
+	ECONOMICS OF MIGRATIONS	LAVEZZI	6		SECS-P/01
+	DEMOGRAPHY OF MIGRATIONS	BUSETTA	6		SECS-S/04
+05917	PROVA FINALE		15	2° semestre	
+	Gruppo di attiv. form. opzionali II		6		
+	Gruppo di attiv. form. opzionali III		6		
+	Attiv. form. a scelta dello studente		9		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02502	DIRITTO INTERNAZIONALE	TERRASI	6	2° semestre	IUS/13
+18484	LEGAL TRADITIONS OF THE WORLD (in inglese)	PERA	6	2° semestre	IUS/21
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18117	STORIA DEL MONDO POST COLONIALE	BARIS	6	1° semestre	M-STO/04
+24108	HISTORY OF POST-COLONIAL WORLD (in inglese)		6	2° semestre	M-STO/04
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+17469	POLITICHE SOCIALI E GLOBALIZZAZIONE	GERBINO	6	2° semestre	SPS/07
+22054	STORIA DELLE ISTITUZIONI POLITICHE INTERNAZIONALI	SCICHILONE	6	2° semestre	SPS/03
+22527	INTERNATIONAL SOCIAL WORK:GLOBAL ISSUES IN MIGRATIONS AND DEVELOPMENT (in inglese)	DI ROSA	6	2° semestre	SPS/07
+

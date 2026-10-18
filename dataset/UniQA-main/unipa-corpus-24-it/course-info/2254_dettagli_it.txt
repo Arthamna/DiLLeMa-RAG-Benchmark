@@ -1,0 +1,60 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA DEI SISTEMI CIBER-FISICI PER L'INDUSTRIA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2021
+---------
+Classe di Laurea magistrale in Ingegneria dell'automazione (LM-25)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2254
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Gli obiettivi formativi specifici del CdLM in Ingegneria dei Sistemi Ciberfisici per liIndustria sono quelli di formare una figura professionale in grado di progettare, controllare e gestire processi e sistemi complessi, negli ambiti delliingegneria industriale e delliinformazione e delle problematiche di smart automation ad essi correlati (robotica, automazione, sistemi ciberfisici, smart factories, industria 4.0).
+Il percorso di studi di tipo multidisciplinare, con una forte connotazione nel settore delliAutomatica, e arricchito da conoscenze trasversali delliingegneria industriale e delliinformazione, mira a formare un ingegnere altamente specializzato, con una preparazione specifica orientata alliingegneria di processo e alla gestione e controllo di sistemi complessi. Nelliambito di tali sistemi, liingegnere magistrale dei Sistemi Ciberfisici per liIndustria e' in grado pianificare gli obiettivi da conseguire, formulare il problema di controllo che tenga conto dei succitati obiettivi, risolvere in modo ottimo tale problema, realizzare un modello/prototipo hardware/software dell'intero sistema e caratterizzarne in modo completo le prestazioni.
+Con liapporto delle conoscenze e competenze acquisite durante il corso, i laureato in Ingegneria dei Sistemi Ciberfisici per liIndustria conseguira' una solida capacita' progettuale rivolta primariamente ai sistemi ciber-fisici ed alle Information and Communication Technologies (ICT), che si collocano come elementi fondanti e strategici per lo sviluppo dei moderni processi di produzione, distribuzione ed erogazione di beni e servizi, con uniattenzione particolare verso le necessita' poste dal mondo della cosi' detta industria intelligente ed interconnessa.
+Per formare la succitata figura professionale gli iscritti al corso ricevono una approfondita preparazione nei settori caratterizzanti, con particolare riferimento alliautomatica, integrata con conoscenze specifiche, trasversali e interdisciplinari in settori delliingegneria industriale e delliinformazione, orientate allo sviluppo e alliapplicazione di sistemi ciberfisici e tecnologie ICT nelliindustria di processo e nella smart automation.
+Piu' in dettaglio il percorso formativo prevede:
+- un gruppo di insegnamenti caratterizzanti nei settori delliingegneria delliautomazione (automatica, meccanica applicata alle macchine, convertitori, macchine e azionamenti elettrici), che forniscono conoscenze e competenze specialistiche negli ambiti della robotica industriale e mobile, del controllo digitale e della stima, filtraggio e identificazione dei sistemi e approfondimenti riguardanti la meccanica applicata e la dinamica dei sistemi meccanici e gli azionamenti elettrici industriali;
+- un gruppo di insegnamenti affini nei settori delliingegneria industriale (tecnologie e sistemi di lavorazione, disegno e metodi delliingegneria industriale, impianti industriali meccanici), che forniscono conoscenze e competenze specialistiche negli ambiti della advanced and additive manufacturing, la simulazione di processi e sistemi, il controllo di qualita, la gestione della catena di produzione, le tecniche avanzate di modellazione e visualizzazione;
+- un gruppo di insegnamenti affini nei settori delliingegneria delliinformazione (elettronica, misure, sistemi di elaborazione delle informazioni, telecomunicazioni), che forniscono conoscenze e competenze avanzate e trasversali negli ambiti dellielettronica per liindustrial IoT, i sistemi automatici di misura e la relativa sensoristica, gli algoritmi di Machine Learning e Deep Learning, la Cybersecurity e Cloud security.
+Il corso comprende numerose attivita' laboratoriali di rilevante interesse in quasi tutti gli insegnamenti erogati e si completa con attivita' a scelta dello studente (tirocinio, conferenze, seminari, workshops, convegni, corsi di formazione e insegnamenti a scelta), che permettono liintegrazione della formazione attraverso lo studio di discipline relative ad altri ambiti scientifico-ingegneristici e liacquisizione di conoscenze e competenze di contesto utili per liinserimento nel mondo del lavoro.
+---------
+Sbocchi Occupazionali
+Profilo:
+DOTTOR MAGISTRALE IN INGEGNERIA DELL'AUTOMAZIONE
+Funzioni:
+Il Laureato in Ingegneria dei Sistemi Ciber-fisici per liIndustria ha un profilo culturale e professionale focalizzato su conoscenze scientifiche e tecnologiche proprie dell'ingegneria delliautomazione e su conoscenze e competenze trasversali nei settori delliingegneria industriale e delliinformazione che gli conferiscono la capacita' di identificare, formulare e risolvere, anche in modo innovativo, problemi complessi o che richiedono un approccio interdisciplinare.
+Con le competenze acquisite, si pone come elemento catalizzatore nel management e nella logistica di grandi sistemi produttivi ed e' in grado di ideare, pianificare, progettare e gestire sistemi e processi complessi e/o innovativi, sfruttando le conoscenze di contesto e le capacita' trasversali delle quali e' dotato.
+Egli possiede conoscenze approfondite delle metodologie di analisi e di progettazione proprie dell'Automatica e competenze specialistiche nelliambito della progettazione, realizzazione e gestione dei sistemi ciber-fisici con specifico riferimento alliambito industriale. Queste gli consentono di introdurre all'interno di un sistema complesso "l'intelligenza" necessaria per gestire il suo funzionamento senza l'intervento dell'uomo (controllo automatico), ottimizzando il suo funzionamento e dominando l'interazione sia fra i vari componenti del sistema sia quella fra il sistema e l'ambiente circostante.
+Il Laureato e' in grado di affrontare problemi complessi in contesti intrinsecamente multidisciplinari ed e' perciU' capace di interfacciarsi con gli specialisti dei processi e dei sistemi da automatizzare, per suggerire le soluzioni operative e di progetto piu' efficaci in termini sia tecnici che economici. In tal senso le funzioni svolte un contesto di lavoro possono sintetizzarsi come segue:
+1) analista di processi e sistemi;
+2) progettista di sistemi di controllo;
+3) tecnico per la pianificazione, programmazione, monitoraggio, gestione, manutenzione e automazione di processi e sistemi complessi.
+Competenze:
+- identificazione di modelli descrittivi di processi e sistemi reali complessi e caratterizzazione delle proprieta' dei modelli finalizzate allo studio del comportamento dei suddetti processi e sistemi;
+- individuazione di metodologie di controllo avanzate a partire dai modelli, definizione delle specifiche di progetto per il controllo di processi e sistemi complessi;
+- progettazione e valutazione di leggi e strategie di controllo in accordo con le specifiche di progetto;
+- simulazione e analisi di processi e sistemi complessi, a tempo continuo e a tempo discreto, e validazione delle relative leggi e strategie di controllo;
+- sviluppo teorico e sperimentale di metodologie e strategie di controllo di tipo avanzato e innovativo, implementazione su sistemi digitali di prototipazione rapida e capacita' di condurre esperimenti su tali sistemi;
+- progettazione, gestione e realizzazione di sistemi automatici di acquisizione ed elaborazione dati, misura e controllo in tempo reale, tipici dei sistemi di controllo digitale;
+- monitoraggio, gestione, manutenzione e automazione di processi e sistemi complessi;
+- progettazione e implementazione di sistemi ciber-fisici per la gestione e il controllo di processi in ambito industriale.
+Sbocchi:
+Il Laureato in Ingegneria dei Sistemi Ciber-fisici per liIndustria e' dotato di specifiche capacita' che gli consentono di inserirsi prontamente in ambiti lavorativi anche molto differenziati, industriali e non, operando in qualita' di sistemista e/o progettista e/o tecnico in ogni contesto applicativo in cui i principi dell'automazione e le tecnologie dei sistemi ciber-fisici rivestono un ruolo di rilievo.
+In particolare, gli sbocchi professionali riguardano principalmente:
+- aziende elettroniche, meccaniche, automobilistiche, elettromeccaniche, aerospaziali, chimiche e di robotica industriale, mobile e sottomarina;
+- aziende produttrici di servizi
+(gestione delle acque e servizi a rete, trasporti, energia, automazione civile e industriale, big data, Internet delle Cose e servizi correlati);
+- centri e laboratori di ricerca e sviluppo per il settore dell'automazione;
+- pubblica amministrazione e libera professione.
+La preparazione multidisciplinare che caratterizza il percorso formativo del CdS, oltre ad offrire ottime prospettive di placement nel mercato del lavoro, puU' anche consentire ai laureati di proseguire nella formazione di terzo livello, trovando sbocco nei corsi di Dottorato di Ricerca in ambito nazionale e internazionale negli ambiti culturali e scientifici attinenti ai sistemi ciber-fisici e alle loro applicazioni in ambito industriale. In particolare, nelliambito delliofferta formativa di terzo livello delliAteneo di Palermo, si evidenzia in particolare la coerenza del percorso formativo con le tematiche di ricerca dei Dottorati di Ricerca in iInformation and Communication Technologies" e iMechanical, Manufacturing, Management and Aerospace Innovation" del Dipartimento di Ingegneria delliAteneo di Palermo.
+---------
+Caratteristiche della Prova Finale
+La Prova Finale consiste nella discussione della tesi di laurea magistrale, elaborata dallo studente sotto la guida di un docente e di eventuali correlatori accademici e/o aziendali.
+Liargomento della tesi e' preventivamente approvato dal Consiglio di Corso di Studi.
+Lielaborato approfondisce tematiche di rilevante contenuto scientifico ed affronta preferibilmente studi e realizzazioni sperimentali che pongano l'accento su aspetti innovativi dei settori di ricerca tipici delliingegneria delliautomazione.
+In forza dei contenuti interdisciplinari appresi durante il percorso formativo, sara' auspicabile che la Prova Finale sia incentrata su argomenti che sfruttino tali conoscenze per proporre soluzioni innovative nell'ambito delle tematiche di interesse del Corso di Studi .
+Le modalita' di svolgimento della Prova Finale sono definite da un apposito Regolamento, approvato dal Consiglio di Corso di Studi e pubblicato sul sito web del CdS.
+---------

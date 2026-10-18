@@ -1,0 +1,78 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA AEROSPAZIALE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2710
+---------
+Classe di Laurea in Ingegneria industriale (L-9 R)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2322
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il Corso di Laurea in Ingegneria Aerospaziale si propone di fornire allo studente solida 
+formazione di base in discipline matematiche, fisiche e informatiche nonchE' 
+competenze specifiche relative agli ambiti disciplinari della meccanica del volo atmosferico e spaziale, dell'aerodinamica, dei materiali, e delle tecnologie e costruzioni aerospaziali. Tali competenze concorrono alla capacita' di identificare, analizzare e interpretare problemi tipici dell'ingegneria industriale in generale e del settore aerospaziale in particolare.
+Il Corso intende dare rilievo alle 
+competenze trasversali, soprattutto informatiche, con l'obiettivo di formare una figura capace di utilizzare strumenti aggiornati per l'analisi e l'interpretazione di sistemi complessi. Il Laureato avra' inoltre acquisito l'abilita' di reperire nella letteratura specialistica, anche in lingua inglese, le informazioni necessarie per approfondire nuovi metodi per la risoluzione di problemi multidisciplinari tipici dell'ingegneria aerospaziale.
+Il progetto formativo si articola nei seguenti blocchi disciplinari:
+- Formazione scientifica di base: matematica, fisica, chimica, informatica;
+- Formazione ingegneristica di base nel campo industriale: fisica tecnica, elettrotecnica, meccanica delle strutture, CAD, elementi di economia, scienza e tecnologia dei materiali, misure meccaniche;
+- Formazione caratterizzante dell'ingegneria aerospaziale: meccanica del volo atmosferico e spaziale, aerodinamica, costruzioni e tecnologie aerospaziali.
+I 
+crediti formativi a scelta consentono allo studente di integrare la formazione con contenuti, fra i quali si incoraggiano (non prescritti): metodi matematici per l'ingegneria; complementi di meccanica e fondamenti di robotica; elementi di elettronica; data science e machine learning.
+I crediti per 
+tirocini o altre attivita' consentono di svolgere stage presso aziende o, in alternativa, attivita' formative integrative di laboratorio.
+I gruppi formativi identificati sono erogati con una specifica progressione cronologica di insegnamenti:
+- Al primo anno sono erogate gran parte delle discipline di base, la lingua inglese ed elementi di ingegneria aerospaziale;
+- Al secondo anno e' completata la formazione di base e sono erogati gli insegnamenti fondamentali dell'ingegneria industriale;
+- Al terzo anno trovano collocazione gli insegnamenti caratterizzanti dell'ingegneria aerospaziale e i crediti liberi.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere aerospaziale junior - analista
+Funzioni:
+E' la figura professionale classica impiegata negli uffici tecnici dell'industria per supporto alla progettazione e alla gestione del ciclo di vita del prodotto.
+Competenze:
+- Supporto al progetto di aeromobili e/o veicoli aerospaziali in qualita' di analista alliinterno di team di progettazione;
+- Analisi multidisciplinare di sistemi complessi del settore aerospaziale;
+- Soddisfacimento e verifica della conformita' agli standard di certificazione.
+Sbocchi:
+- Industrie aeronautiche e spaziali ampiamente presenti sia in ambito nazionale che comunitario;
+- Industrie per la produzione di macchine e apparecchiature ove siano rilevanti l'aerodinamica e le strutture leggere;
+- Enti e istituti operanti nei settori delliaviazione e della manutenzione di aeromobili.
+- Previo superamento dell'Esame di Stato e' possibile l'iscrizione all'Albo dell'Ordine degli Ingegneri con il titolo di Ingegnere junior.
+Profilo:
+Ingegnere aerospaziale junior - produzione
+Funzioni:
+E' la figura professionale che si occupa della ingegnerizzazione e della produzione del prodotto.
+Competenze:
+- Identificazione di attrezzature, processi e materiali;
+- Verifica della conformita' agli standard di certificazione;
+- Analisi e risoluzione di avarie e proposizione di migliorie degli impianti.
+Sbocchi:
+- Industrie aeronautiche e spaziali ampiamente presenti sia in ambito nazionale che comunitario;
+- Industrie per la produzione di macchine e apparecchiature ove siano rilevanti l'aerodinamica e le strutture leggere.
+- Previo superamento dell'Esame di Stato e' possibile l'iscrizione all'Albo dell'Ordine degli Ingegneri con il titolo di Ingegnere junior.
+Profilo:
+Ingegnere aerospaziale junior - manutenzione
+Funzioni:
+E' una figura professionale con funzioni di supporto alla gestione e pianificazione della manutenzione aeronautica.
+Competenze:
+- Controllo funzionale degli aeromobili;
+- Applicazione e verifica delle procedure di manutenzione degli aeromobili;
+- Verifica della conformita' agli standard di certificazione;
+- Supporto alla redazione e controllo di piani di manutenzione per sistemi aeronautici.
+Sbocchi:
+- Aziende di trasporto aereo;
+- Agenzie e imprese di manutenzione di aeromobili;
+- Aeronautica Militare e settori aeronautici di altre forze armate;
+- Industrie aeronautiche e spaziali
+- Previo superamento dell'Esame di Stato e' possibile l'iscrizione all'Albo dell'Ordine degli Ingegneri con il titolo di Ingegnere junior.
+---------
+Caratteristiche della Prova Finale
+Per conseguire la Laurea si dovranno acquisire 180 crediti formativi (CFU) compresi quelli relativi alla prova finale.
+La prova finale verifichera' il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti ed alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico.
+Essa consiste nella predisposizione e discussione, anche attraverso l'utilizzo di software multimediali, di un elaborato su un tema scelto dallo studente da una lista predisposta dal Corso di Laurea, coerentemente con gli obiettivi formativi del corso. Nella prova lo studente dovra' dimostrare di essere in grado di analizzare, approfondire e rielaborare in modo critico il tema scelto.
+---------

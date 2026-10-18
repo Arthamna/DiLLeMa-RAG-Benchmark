@@ -1,0 +1,56 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA ELETTRICA
+Curriculum: SMART GRIDS PER LA TRANSIZIONE ENERGETICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=716
+---------
+Classe di Laurea magistrale in Ingegneria elettrica (LM-28)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con Politechnika Wroclawska - Wroclaw University of Technology –, Wroclaw (POLAND)
+Codice corso 2031
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02190	CONTROLLI AUTOMATICI	D'IPPOLITO	9	1° semestre	ING-INF/04
+16941	SISTEMI ELETTRICI PER L'ENERGIA	IPPOLITO	9	1° semestre	ING-IND/33
+22268	COMPON. E SIST. ELETTR. DI POTENZA PER SMART-GRIDS E SMART GRIDS C.I.	RIVA SANSEVERINO	12	Annuale	
+	COMPONENTI E SISTEMI ELETTRONICI DI POTENZA PER LE SMART-GRIDS	ZIZZO	6		ING-IND/33
+	SMART-GRIDS (in inglese)	RIVA SANSEVERINO	6		ING-IND/33
+07186	TECNICA DELLA SICUREZZA ELETTRICA	FAVUZZA	9	2° semestre	ING-IND/33
+18233	MODELLISTICA E COMPATIBILITA' ELETTROMAGNETICA	ALA	9	2° semestre	ING-IND/31
+22265	ELECTRICAL DRIVES (in inglese)	MICELI	6	2° semestre	ING-IND/32
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19865	MISURE E PROVE PER L'INGEGNERIA ELETTRICA	SPATARO	9	1° semestre	ING-INF/07
+22274	PRODUZIONE DI ENERGIA ELETTRICA E MERCATO ELETTRICO	DI SILVESTRE	9	1° semestre	ING-IND/33
+05917	PROVA FINALE		12	2° semestre	
+22272	MEASUREMENT SYSTEMS FOR SMART-GRIDS (in inglese)	CATALIOTTI	6	2° semestre	ING-INF/07
+	Stage, Tirocini, Altro		6		
+	Gruppo di attiv. form. opzionali II		6		
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+16944	PRODUZIONE DI ENERGIA ELETTRICA DA FONTI RINNOVABLI	DI DIO	6	1° semestre	ING-IND/32
+22261	PROGETTAZIONE ELETTRICA	FAVUZZA	6	1° semestre	ING-IND/33
+22271	ELECTRIC MOBILITY FOR THE SMART CITY (in inglese)	VIOLA	6	1° semestre	ING-IND/31
+03853	IMPIANTI DI ILLUMINAZIONE	MASSARO	6	2° semestre	ING-IND/33
+22262	DYNAMIC AND CONTROL OF POWER SYSTEMS (in inglese)	MUSCA	6	2° semestre	ING-IND/33
+22270	ELECTRIC INSULATION SYSTEMS DIAGNOSTICS (in inglese)	ROMANO	6	2° semestre	ING-IND/31
+22273	DESIGN OF ELECTRICAL MACHINES (in inglese)	DI TOMMASO	6	2° semestre	ING-IND/32
+22277	ENERGY STORAGE AND CHARGING SYSTEMS (in inglese)	CAMPAGNA	6	2° semestre	ING-IND/32
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19022	INNOVATION MANAGEMENT (in inglese)	LA COMMARE	6	1° semestre	ING-IND/16
+19641	PHOTOVOLTAIC DEVICES AND TECHNOLOGIES (in inglese)	CRUPI	6	1° semestre	ING-INF/01
+20523	DIGITAL SIGNAL PROCESSING (in inglese)	CROCE	6	1° semestre	ING-INF/03
+21526	MOBILE AND DISTRIBUTED ROBOTICS (in inglese)	FAGIOLINI	6	1° semestre	ING-INF/04
+22269	SCIENTIFIC COMPUTING (in inglese)	FRANCOMANO	6	1° semestre	MAT/08
+17605	DINAMICA E CONTROLLO DEI SISTEMI MECCANICI	CAMMALLERI	6	2° semestre	ING-IND/13
+
+

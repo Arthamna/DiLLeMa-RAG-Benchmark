@@ -1,0 +1,39 @@
+Anno Accademico 2024/2025
+Laurea magistrale in MEDITERRANEAN FOOD SCIENCE AND TECHNOLOGY
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1896
+---------
+Classe di Laurea magistrale in Scienze e tecnologie alimentari (LM-70)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Agrarie, Alimentari e Forestali
+Codice corso 2238
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20206	FOOD INDUSTRY MANAGEMENT AND ENTREPRENEURSHIP (in inglese)	INGRASSIA	6	1° semestre	AGR/01
+20207	MICROBIOTA ASSOCIATED WITH MEDITERRANEAN AGRI-FOOD CHAINS (in inglese)	SETTANNI	6	1° semestre	AGR/16
+20218	TECHNOLOGY AND QUALITY IN THE FOOD SUPPLY SYSTEM (in inglese)	TODARO	6	1° semestre	AGR/15
+20220	APPLIED TECHNOLOGY ON MEDITERRANEAN FOOD (in inglese)	CINQUANTA	6	1° semestre	AGR/15
+20213	ANIMAL FOOD AND FISHERIES C.I. (in inglese)	MESSINA	9	2° semestre	
+	FISHERY RESOURCES AND UTILIZATION (in inglese)	MESSINA	6		AGR/20
+	ANIMAL FOOD QUALITY (in inglese)		3		AGR/19
+20216	AGROINDUSTRY SUSTAINABLE SYSTEMS AND PLANTS C.I. (in inglese)	VALLONE	11	2° semestre	
+	SUSTAINABLE AGROINDUSTRY SYSTEMS (in inglese)		5		ING-IND/11
+	FOOD PRODUCTION AND AGRO-INDUSTRIAL PLANTS (in inglese)	VALLONE	6		AGR/09
+21781	ENZIMOLOGY AND FOOD CHEMICAL ANALYSIS (in inglese)	DE PASQUALE	9	2° semestre	
+	FOOD CHEMICAL ANALYSIS AND SAFETY CONTROL (MOD)	DE PASQUALE	6		AGR/13
+	ENZIMOLOGY	PROIA	3		BIO/10
+	Attiv. form. a scelta dello studente		8		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06634	STAGE (in inglese)		12	1° semestre	
+20205	CONSUMER BEHAVIOUR AND FOOD MARKETING (in inglese)	MIGLIORE	6	1° semestre	AGR/01
+20219	FOOD TRADE AND SAFETY LEGISLATION (in inglese)		6	1° semestre	IUS/03
+16047	THESIS (in inglese)		20	2° semestre	
+20204	FOOD SENSORY ANALYSIS (in inglese)	CORONA	6	2° semestre	AGR/15
+20227	PEST MANAGEMENT AND DISEASE CONTROL IN THE FOODSERVICE INDUSTRY C.I. (in inglese)	PERI	9	2° semestre	
+	PEST CONTROL FOR THE FOODSERVICE INDUSTRY (in inglese)	PERI	6		AGR/11
+	BIOTIC CONTAMINANTS AND FOOD CONTROL (in inglese)		3		AGR/12
+

@@ -1,0 +1,60 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA CIBERNETICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1480
+---------
+Classe di Laurea in Ingegneria dell'informazione (L-8)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2188
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Gli obiettivi formativi del corso sono quelli di formare una figura professionale alternativa a quelle ingegneristiche tradizionali (elettrica, elettronica, informatica, ecc.), che sia in grado analizzare e gestire sistemi di varia natura, caratterizzati da reti di elementi in interazione, e di applicare le tecnologie dell'informazione a problemi di automazione in vari ambiti (smart automation, smart factories, industria 4.0, smart homes, ecc.).
+A tal fine, il corso offre agli studenti la possibilita' di acquisire conoscenze e competenze di tipo multidisciplinare, finalizzate alla comprensione della teoria di base del controllo e all'analisi e gestione di sistemi meccatronici e, ciberfisici, che rappresentano gli elementi fondanti per lo sviluppo dei moderni processi di produzione, distribuzione ed erogazione di beni e servizi.
+Nell'ottica di operare su tali sistemi, l'ingegnere cibernetico deve essere in grado di procedere alla pianificazione degli obiettivi da conseguire, alla formulazione matematica di un problema di controllo che tenga conto dei succitati obiettivi, alla soluzione di tale problema utilizzando anche gli strumenti software disponibili e, infine, alla verifica delle prestazioni ottenute utilizzando tecniche di simulazione e, laddove possibile, mediante realizzazione pratica di un prototipo dell'intero sistema. Insieme a tali capacita, il corso mira ad fornire agli studenti specifiche conoscenze e competenze ingegneristiche, necessarie a permettere loro di studiare e fare interagire sistemi di natura fisica diversa (reali e/o virtuali).
+Per conseguire tali obiettivi, il corso fornisce conoscenze e competenze metodologiche proprie dell'ingegneria dell'informazione, integrate con contenuti delliambito delliingegneria industriale, in un percorso formativo avente carattere fortemente multidisciplinare.
+In particolare, il percorso formativo e' essenzialmente articolato in quattro gruppi di discipline:
+- Il primo gruppo e' quello delle discipline di base tipiche della classe dei corsi di laurea in Ingegneria dell'Informazione (matematica, fisica);
+- Il secondo gruppo di insegnamenti riguarda conoscenze ingegneristiche di tipo trasversale nei settori dell'elettrotecnica, dell'elettronica, delle misure elettriche ed elettroniche, dell'ingegneria informatica, delle telecomunicazioni e dell'ingegneria economico-gestionale;
+- Il terzo gruppo di insegnamenti riguarda le metodologie di studio proprie dell'Automatica, sia di tipo teorico (controlli automatici) che di tipo applicativo (robotica industriale e veicoli autonomi);
+- Il quarto gruppo di insegnamenti riguarda invece aspetti specifici dell'ingegneria cibernetica, con riferimento ai diversi aspetti dei sistemi meccatronici e ciberfisici, caratterizzati dalla capacita' di elaborazione, comunicazione e interazione con ambienti virtuali e sistemi reali. . In particolare, sono previsti insegnamenti riguardanti la meccanica, le macchine, i convertitori e gli azionamenti elettrici, l'automazione industriale e la domotica, la programmazione, il machine learning, le tecnologie per il cloud, le reti internet, i metodi numerici e i big data.
+In particolare gli insegnamenti specifici sono strutturati in gruppi opzionali, in modo da consentire allo studente di approfondire maggiormente le tematiche relative alliautomazione di sistemi reali e alla meccatronica o quelle relative alle tecnologie delliinformazione e alliinterazione tra sistemi reali e ambienti virtuali. .
+Grazie al percorso formativo cosi' articolato, lo studente potra' personalizzare la propria formazione, acquisendo conoscenze e competenze specifiche che gli daranno la capacita' di affrontare le problematiche relative alla gestione e al controllo dei sistemi meccatronici (con particolare riferimento ai sistemi di automazione di macchine, processi ed impianti), che integrano componenti informatici, apparati di misura, attuatori e sistemi di trasmissione ed elaborazione dati, con logiche ed architetture di supervisione e controllo di tipo sia centralizzato che distribuito e di applicare ai suddetti sistemi le moderne tecnologie delliinformazione (internet delle cose, virtualizzazione, big data), al fine di automatizzare processi e aggiungere intelligenza in ambito smart home, smart industry, smart city, etc., attraverso l'utilizzo di sistemi ciberfisici distribuiti, capaci di elaborare informazioni, comunicare, decidere e agire nel mondo reale e virtuale.
+Il laureato in Ingegneria Cibernetica che si intende formare avra' quindi conoscenze idonee sia per la prosecuzione del percorso di studi post-lauream (laurea magistrale, master), sia per l'inserimento immediato nel mondo del lavoro, potendo svolgere attivita' sia nella libera professione che nelle imprese manifatturiere o di servizi e nelle amministrazioni pubbliche, in numerosi settori della produzione e dei servizi (quali ad es. veicoli autonomi, telecomunicazioni, reti di sensori e reti internet, sistemi distribuiti di monitoraggio e controllo, automazione di sistemi di produzione, distribuzione ed erogazione di beni e servizi, sistemi di tecnologia assistita, sistemi robotici).
+---------
+Sbocchi Occupazionali
+Profilo:
+DOTTORE IN INGEGNERIA CIBERNETICA
+Funzioni:
+Il laureato in Ingegneria Cibernetica e' in grado di studiare e gestire un sistema cibernetico nel suo complesso, determinando un modello del sistema in oggetto, le interazioni tra i sottosistemi, la comunicazione tra essi, il raggiungimento ottimale di un obiettivo e il soddisfacimento di specifiche di controllo.
+Egli ha un profilo culturale e professionale focalizzato sulle conoscenze scientifiche e tecnologiche dell'ingegneria delliinformazione, quali la conoscenza delle reti di sensori, la robotica e i sistemi distribuiti, l'elettronica e i controlli automatici, la meccatronica, la rete Internet e le piattaforme cloud, grazie alle quali e' capace di identificare, formulare e risolvere problemi non complessi ma che possono richiedere un approccio interdisciplinare. Egli possiede conoscenze di base delle metodologie di analisi e di progettazione proprie dell'Automatica, che gli consentono di introdurre all'interno di un sistema non complesso il'intelligenza" necessaria per gestire il suo funzionamento senza l'intervento dell'uomo (controllo automatico), ottimizzando il suo funzionamento e dominando l'interazione sia fra i vari componenti del sistema che quella fra il sistema e l'ambiente circostante (reale e/o virtuale).
+Il laureato in Ingegneria Cibernetica e' altresi' in grado di affrontare problemi non complessi in contesti intrinsecamente multidisciplinari ed e' perciU' capace di interfacciarsi con gli specialisti dei processi e dei sistemi da automatizzare, per suggerire soluzioni operative e di progetto piu' efficaci in termini tecnici ed economici.
+L'ingegnere cibernetico e' dotato quindi di specifiche capacita' che gli consentono di inserirsi prontamente in ambiti lavorativi anche molto differenziati, operando in qualita' di sistemista e/o tecnico in vari contesti applicativi in cui le tecnologie e i principi dell'automazione rivestono un ruolo di rilievo.
+Competenze:
+Le competenze riguardano principalmente:
+- identificazione di modelli descrittivi di processi e sistemi meccatronici e ciberfisici (reali e/o virtuali);
+- studio delle proprieta' dei modelli finalizzate allianalisi del comportamento dei processi e sistemi reali (limiti di funzionamento e potenzialita);
+- individuazione di metodologie di controllo a partire dai modelli;
+- definizione delle specifiche di progetto per il controllo di processi e sistemi;
+- progettazione e valutazione di leggi e strategie di controllo, basate sul modello del processo o sistema, in accordo con le specifiche di progetto;
+- individuazione delle tecnologie piu' opportune per implementare soluzioni di intelligenza/automazione per sistemi ciberfisici;
+- simulazione di processi e sistemi, per la loro analisi e la validazione delle relative leggi e strategie di controllo;
+- implementazione su sistemi digitali di prototipazione rapida e capacita' di condurre esperimenti su tali sistemi;
+- sviluppo teorico e sperimentale di metodologie e strategie di controllo;
+- monitoraggio, gestione, manutenzione di processi e sistemi.
+Sbocchi:
+Gli sbocchi professionali riguardano principalmente:
+- aziende elettroniche, meccaniche, automobilistiche, elettromeccaniche, aerospaziali, chimiche e di robotica industriale, mobile e sottomarina;
+- aziende produttrici di servizi (gestione delle acque e servizi a rete, trasporti, energia, automazione civile e industriale, telecomunicazioni, big data, Internet delle Cose, IoT, e servizi correlati);
+- centri e laboratori di ricerca e sviluppo per il settore dell'automazione;
+- pubblica amministrazione;
+- libera professione.
+Inoltre, poichE' la laurea rappresenta oggi il primo livello di istruzione universitaria, nelliottica della prosecuzione del loro percorso di studi, i laureati in Ingegneria Cibernetica possono accedere a diversi Corsi di Laurea Magistrale delliUniversita' di Palermo cosi' come a corsi equivalenti presenti sul territorio nazionale.
+---------
+Caratteristiche della Prova Finale
+Per essere ammesso alla prova finale lo studente deve aver acquisito tutti i crediti formativi previsti dall'ordinamento didattico del Corso di Studio, con l'eccezione dei soli CFU assegnati alla prova finale, che vengono acquisiti all'atto della prova stessa.
+La prova finale ha liobiettivo di verificare il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dalliordinamento didattico.
+La prova finale consiste in una prova scritta o orale, secondo le modalita' definite dal regolamento sulla prova finale del Corso di Laurea, nel rispetto e in coerenza con la tempistica, le prescrizioni ministeriali e le inerenti linee guida di Ateneo.
+---------

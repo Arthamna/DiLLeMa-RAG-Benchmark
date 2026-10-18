@@ -1,0 +1,122 @@
+Berkas yang diperlukan untuk Yudisium S1 di Departemen Teknik Informatika DesclaimerBerkas yang diperlukan untuk Yudisium S1 di Departemen Teknik Informatika
+SOFTCOPY yang perlu dikumpulkan beserta penamaannya :
+
+Poster TA (NRP-nama-Video_TA contoh: 5102100006-Radityo-Anggoro-Video_TA)
+Artikel POMITS dalam format .doc atau .pdf (NRP-nama-POMITS contoh: 5102100006-Radityo-Anggoro-POMITS)
+Video TA (NRP-nama-Poster_TA contoh: 5102100006-Radityo-Anggoro-Poster_TA)
+Buku TA (NRP-nama-Buku_TA contoh: 5102100006-Radityo-Anggoro-Buku_TA)
+Presentasi TA (NRP-nama-Slide_TA contoh: 5102100006-Radityo-Anggoro-Slide_TA)
+===============================
+= Ketentuan Video Tugas Akhir =
+===============================
+
+1. Jenis video adalah video promosi, boleh juga berupa video tutorial penggunaan software / hardware.
+2. Durasi video antara 1-5 menit
+3. Resolusi video 720p atau 1080i (HD)
+4. Bisa menggunakan video editor bebas, seperti Camtasia, Windows MovieMaker, dll.
+5. Format yang dikumpulkan berupa .mp4 atau .wmv
+6. Konten video minimal berisi :
+
+Logo ITS
+Judul Tugas Akhir
+Data Pembuat dan Pembimbing (NRP, NIP, Nama, menggunakan foto juga boleh)
+Deskripsi singkat tugas akhir (boleh berupa narasi suara, anotasi dan atau tulisan)
+Cara jalannya aplikasi (bisa direkam menggunakan video camcoder atau screen capture)
+Supaya lebih menarik, beri animasi title clip, caption, maupun musik latar belakang.
+================================
+= Ketentuan Poster Tugas Akhir =
+================================
+
+1. Poster berjumlah satu lembar dengan ukuran kertas A3.
+2. Poster hendaknya terbaca dengan baik dalam jarak maksimal sekitar 2 meter.
+3. Pedoman tipografi: disarankan teks rata kiri
+4. Line spacing 1.2 spasi.
+5. Gunakan subjudul dengan ukuran lebih besar dari teks atau menggunakan underline/bold).
+6. Batasi panjang kolom tidak lebih dari 11 kata.
+7. Gunakan tidak lebih dari 2 typeface (jenis huruf)/font.
+8. Jangan menggunakan allcaps (semua huruf kapital).
+9. Tentukan margin yang sesuai dengan besar kolom.
+10. Desain Layout poster diminta memperhatikan prinsip keseimbangan.
+11. Pengaturan elemen gambar, warna, latar belakang, harus menarik.
+12. Perlu dipertimbangkan juga hirarki dan kontras.
+13. Isi poster hendaknya terbaca secara terstruktur untuk kemudahan ’navigasi’nya.
+14. Format yang dikumpulkan berupa .psd/.cdr dan .jpg/.jpeg
+15. Konten di dalamnya adalah
+
+Judul
+Data pelaksana (NRP & Nama mahasiswa serta NIP dan Nama Pembimbing)
+Logo ITS
+Latar belakang/introduksi
+Metode
+Hasil (teks dan gambar/fotografi/skema)
+Simpulan dan Saran
+Logo perangkat lunak yang digunakan / Institusi mitra (jika ada)
+16.Gambar produk jika ada akan sangat mendukung impresi pelaksanaan kegiatan secara visual.
+17.Resolusi yang disarankan untuk kualitas cetakan adalah minimal 300 dpi dari sumber gambar aslinya.
+
+Desclaimer
+
+Mahasiswa wajib mengisi Form Kepuasan Layanan & Pengumpulan Berkas Yudisium secara lengkap sebelum deadline pengumpulan berakhir.
+
+Deadline pengunggahan kelengkapan yudisium S1 di Departemen Teknik Informatika 10 Februari 2024
+
+Link Terkait
+
+Isi Form Kepuasan Mahasiswa
+
+Isi Form Pengumpulan Berkas Yudisium
+
+Cek berkas-berkas yudisium
+What to do?*
+
+*Jika ada informasi yang kurang mohon informasikan kepada kami :))
+
+1        
+Mengecek nilai TOEFL di UPT Bahasa.
+
+Jika belum terpenuhi, segera melakukan perbaikan nilai!
+
+https://bahasa.its.ac.id/
+2        Melakukan pengecekan nilai SKEM di MyITS StudentConnect.
+(Bagi mahasiswa Program Sarjana dan Sarjana Terapan) Jika belum terpenuhi, segera melakukan perbaikan nilai!        
+SKEM lama (Angkatan sebelum 2018)
+CP: Romli (085755935945)
+
+Link: melalui SIAKAD 
+
+ SKEM baru (Angkatan 2018 dst)
+CP: Rayhan (082233935593)
+
+Link: MyITS student connect
+
+Cek juga Informasi SKEM di halaman depan if-tegration, di IF, dapat ditanyakan ke TKK > Bu Ratih
+
+3        
+Bebas Pustaka dengan mengakses e-Bebas-Pustaka melalui web perpustakaan.
+
+Salah satu persyaratan bebas Pustaka adalah upload buku TA melalui web repository.its.ac.id.
+
+Bebas Pustaka akan dikirim langsung ke e-mail atau No. WA yang telah didaftarkan jika sudah TIDAK mempunyai tanggungan berupa pinjaman koleksi atau denda. Pengecekan pinjaman koleksi atau denda dapat dilakukan melalui web perpustakaan bagian layanan online pinjaman koleksi atau denda.
+
+Bebas Pustaka: https://www.its.ac.id/perpustakaan/id/bebas-pustaka-id/
+
+ 
+
+Upload buku TA: https://repository.its.ac.id/
+
+4        
+Melakukan upload jurnal/artikel di Pomits.
+
+(Bagi mahasiswa Program Sarjana dan Sarjana Terapan)
+
+http://lpmp2ki.its.ac.id/pomits
+5        
+Melunasi IKOMA.
+
+(Bagi mahasiswa Program Sarjana dan Sarjana Terapan)
+
+Dapat bertanya ke Instagram @ikomaits 
+6        Mengisi data-data untuk cetak ijazah di Direktorat Pendidikan dengan Pengisian Data di SIAKAD        Baca dokumen “Pemberitahuan untuk calon Wisudawan ITS…”
+7        Mengisi data terkait peminjaman-pengembalian toga.        https://wisuda.its.ac.id/
+8        Mengajak kepada semua calon wisudawan untuk berpartisipasi menjadi donatur dana abadi/endowment fund ITS.        http://danaabadi.its.ac.id/web/
+9        Mengisi Form Kepuasan & Yudisium Departemen        Link di atas :D

@@ -1,0 +1,80 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on PHILOSOPHICAL AND HISTORICAL STUDIES
+Curriculum: HISTORICAL STUDIES
+For more information visit http://www.unipa.it/struttura.html?id=497
+---------
+Class of Bachelor's Degree (BSc) on Philosophy (L-5)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Humanities
+Course Code 2184
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01340	CULTURAL ANTHROPOLOGY	MANNIA	6	1° semestre	M-DEA/01
+04062	ELEMENTS OF PHILOSOPHY	CICATELLO	12	1° semestre	M-FIL/01
+05621	GENERAL AND SOCIAL PEDAGOGY	MALTESE	6	1° semestre	M-PED/01
+07051	ECONOMIC AND SOCIAL HISTORY  OF THE MODERN AGE	CANCILA	6	1° semestre	M-STO/02
+20692	ENGLISH LANGUAGE SKILLS - EQUIVALENT TO LEVEL B1		6	1° semestre	
+06864	HISTORY OF PHILOSOPHY	LE MOLI	12	2° semestre	M-FIL/06
+08761	CONTEMPORARY HISTORY	COCO	12	2° semestre	M-STO/04
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07068	MEDIEVAL HISTORY	SARDINA	12	1° semestre	M-STO/01
+13351	ADVANCED SKILLS RELATED TO THE LABOUR MARKET		3	1° semestre	
+06870	HISTORY OF ANCIENT PHILOSOPHY	LASPIA	6	2° semestre	M-FIL/07
+06881	HISTORY OF MEDIEVAL PHILOSOPHY	PANARELLI	6	2° semestre	M-FIL/08
+07079	MODERN HISTORY	FAZIO	12	2° semestre	M-STO/02
+	Optional subjects		6		
+	Optional subjects V		6		
+	Optional subjects VI		3		
+	Free subjects		6		
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+14116	COMPUTING AND TELEMATICS SKILLS		3	1° semestre	
+05917	FINAL EXAMINATION		3	2° semestre	
+	Optional subjects II		12		
+	Optional subjects III		18		
+	Optional subjects IV		12		
+	Free subjects II		12		
+
+Optional subjects V
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07061	GREEK HISTORY	SAMMARTANO	6	1° semestre	L-ANT/02
+07088	ROMAN HISTORY	CASELLA	6	2° semestre	L-ANT/03
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+03216	PHILOSOPHY OF HISTORY	MAZZOCCHIO	6	1° semestre	M-FIL/03
+07807	POLITICAL PHILOSOPHY	PALUMBO	6	1° semestre	SPS/01
+17899	HISTORY OF MAFIAS	COCO	6	1° semestre	M-STO/04
+09988	HISTORY OF MEDIEVAL SICILY	RUSSO	6	2° semestre	M-STO/01
+
+Optional subjects IV
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+03604	GEOGRAPHY	GIUBILARO	6	2° semestre	M-GGR/01
+06098	GENERAL PSYCHOLOGY	SMIRNI	6	2° semestre	M-PSI/01
+06557	SOCIOLOGY OF COMMUNICATION	RIZZUTO	6	2° semestre	SPS/08
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07006	HISTORY OF POLITICAL INSTITUTIONS	SCICHILONE	6	1° semestre	SPS/03
+23724	HISTORY TEACHING METHODOLOGY	VERRI	6	1° semestre	M-STO/04
+00875	BYZANTINE HISTORY(*)	ROGNONI	6	2° semestre	L-FIL-LET/07
+05500	PALEOGRAPHY AND DIPLOMATICS	RUSSO	6	2° semestre	M-STO/09
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+06926	HISTORY OF LOGIC	LICATA	6	1° semestre	M-FIL/02
+13155	THEORY OF LANGUAGES	CARAPEZZA	6	1° semestre	M-FIL/05
+03089	AESTHETICS	MAGGIORE	6	2° semestre	M-FIL/04
+10696	RHETORIC	PIAZZA	6	2° semestre	M-FIL/05
+
+Optional subjects VI
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+14184	INTERNSHIP		3	1° semestre	
+16852	COMPETENCES RELATED TO THE LABOUR MARKET 2		3	1° semestre	
+

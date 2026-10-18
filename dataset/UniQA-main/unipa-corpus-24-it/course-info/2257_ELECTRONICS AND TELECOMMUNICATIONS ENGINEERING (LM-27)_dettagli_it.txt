@@ -1,0 +1,51 @@
+Anno Accademico 2024/2025
+Laurea magistrale in ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (FULLY ONLINE)
+Curriculum: ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (LM-27)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2024
+---------
+Classe di Laurea magistrale in Ingegneria delle telecomunicazioni (LM-27)Classe di Laurea magistrale in Ingegneria elettronica (LM-29)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2257
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il CdS in Electronics and Telecommunications Engineering mira a formare figure professionali con competenze nella progettazione e gestione di sistemi elettronici e di misura e nella definizione di architetture, sistemi e servizi di telecomunicazioni. Nell'ambito delle varie professioni dell'ICT, il corso si focalizza quindi su figure in grado di lavorare a livello di sistema, con capacita' di progettazione e integrazione di dispositivi fisici, tecnologie e protocolli di reti, servizi distribuiti. Con riferimento alle professioni ICT analizzate nell'Osservatorio delle competenze digitali del 2019, queste figure possono ricadere nelle professioni di: IoT specialist, network specialist (con particolare riferimento alle reti cellulari di nuova generazione 5G/6G e alle tecnologie relative), mobile specialist, system architect e technical specialist, ma anche ICT operation manager o digital consultant.
+Per la formazione di queste figure, il corso offre di sviluppare: i) competenze avanzate nell'ambito dell'elettronica e cioe' progettazione di sistemi elettronici programmabili, circuiti elettronici per applicazioni a radiofrequenza, strumentazione e misure, sistemi di elaborazione e trasmissione numerica; ii) competenze nelle tecnologie di riferimento per i sistemi di telecomunicazione moderni (dalle fibre ottiche, alle reti 5G/6G, alle nuove bande di comunicazione dalle microonde ai Tera-Hertz); iii) competenze nella definizione completa di sistemi e servizi di rete, con particolare attenzione ai protocolli e alla sicurezza per sistemi IoT.
+La scelta di un percorso interclasse permettere di intercettare competenze multi-disciplinari nei settore dell'Elettronica e delle Telecomunicazioni, piu' rispondenti alle esigenze formative delle figure di IoT/network specialist e system architect.
+Il corso di Laurea Magistrale si articola su 3 blocchi di discipline:
+- Sono previste discipline che costituiscono la formazione dell'Ingegnere Elettronico di secondo livello, ovvero l'approfondimento dell'elettronica applicata e dei sistemi elettronici programmabili;
+- Sono previste discipline che costituiscono la formazione dell'Ingegnere delle Telecomunicazioni di secondo livello, ovvero l'approfondimento delle Antenne e dei sistemi wireless, delle reti wireless (reti cellulari e 5G e Personal Area Networks), le telecomunicazioni digitali e la cybersecurity;
+- Sono previste discipline che costituiscono la verticalizzazione delle conoscenze nell'area Campi elettromagnetici e Misure, applicate all'Elettronica e alle Telecommunicazioni, come ad esempio le Microonde e Telecomunicazioni Terahertz e la strumentazione per misure elettroniche e per le Telecomunicazioni.
+Il corso in modalita' telematica nasce intrinsecamente flessibile nelle modalita' di fruizione dei contenuti e delle esercitazioni previste, sia nel tempo, sia nello spazio. Molti contenuti e e-tivity sono infatti predisposti per una fruizione asincrona e da remoto.
+Anche le attivita' di tirocinio saranno previste in modalita' telematica, mediante opportune convenzioni stilate con le aziende interessate. E' stata gia' acquisita la disponiblita' di stakeholder e di altre aziende, in particolare del comparto delle telecomunicazioni, ad attivare tirocini telematici.
+Le metodologie didattiche saranno sviluppato tenendo conto i risultati piu' recenti dei modelli di e-learning. Ogni corso sara' presentato partendo dagli obiettivi e seguendo un percorso a complessita' crescente, evidenziando quali conoscenze sono necessarie all'acquisizione di quelle piu' complesse. Inoltre, si cerchera' di promuovere il piu' possibile lo sviluppo di attivita' pratiche, attraverso discussioni, soluzioni di problemi, progetti proposti in gruppo ecc. Le attivita' pratiche sono finalizzate a verificare la correttezza di ciU' che si sta apprendendo, e ad offrire occasioni per fornire feedback veloci e puntuali su ciU' che sta facendo, con suggerimenti riguardo attivita' di rinforzo. Il materiale didattico sara' in linea di massimo rinnovato per ogni nuova erogazione dei corsi; non e' esclusa l'integrazione di materiale preparato per le edizioni precedenti, quali ad esempio risposte ai dubbi piu' comuni, dispense multimediali predisposte in formato audio/video, etc., previa indicazione esplicita della data di ultimo aggiornamento del materiale.
+Le schede di trasparenza di tutti gli insegnamenti del Corso di Studi sono disponibili sul portale dell'offerta formativa di Ateneo, e quindi sono liberamente consultabili dagli studenti.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere Magistrale Elettronico e delle Telecomunicazioni
+Funzioni:
+Il laureato magistrale conosce i metodi e le tecniche per il progetto di sistemi elettronici e optoelettronici, dei sistemi di comunicazione, dei protocolli. Pertanto, potra' essere impiegato nei settori della progettazione, sviluppo, ingegnerizzazione, produzione, esercizio e manutenzione dei sistemi elettronici e delle telecomunicazioni, nonchE' in settori che utilizzano attivamente l'elettronica e le telecomunicazioni, quali l'industria, l'automotive, l'energia, la bioelettronica.
+Competenze:
+Le competenze associate alle funzioni di un laureato in Electronics and Telecommunications Engineering nel proprio contesto di lavoro sono:
+- programmazione di firmware, middleware, software e configurazione di servizi;
+- progettazione di sistemi a micro-controllore e sistemi elettronici riconfigurabili;
+- progettazione, configurazione e ottimizzazione di architetture per reti locali e reti cellulari;
+- progettazione e integrazione di tecnologie optoelettroniche e comunicazioni in fibra ottica;
+- modellazione e simulazione di meccanismi di propagazione, anche nelle bande millimetriche e nei terahertz;
+- simulazione di reti di telecomunicazione;
+- organizzazione e analisi dei dati;
+- progettazione e integrazione primitive e protocolli di sicurezza per liIoT e il cloud;
+- configurazione, progettazione di dispositivi o sistemi embedded, reti e servizi in area locale, certificatore, troubleshooting, data scientist.
+Sbocchi:
+I laureati magistrali possono trovare occupazione in imprese pubbliche e private, non solo quelle del settore della Information and Communications Technology, ma anche del manifatturiero, dei servizi e tecnico-commerciale, come consulenti, dipendenti di enti di ricerca ed alta formazione ed imprenditori
+In dettaglio, ambiti occupazionali tipici di questi laureati sono le aziende di produzione, commercializzazione e distribuzione di prodotti ed apparati elettronici, le imprese manifatturiere e di servizi che utilizzano tecnologie elettroniche e infrastrutture di rete per l'automazione, o in ambito civile, industriale e dell'informazione; operatori di rete fisse e mobili; imprese che operano nei settori della telematica e della multimedialita' in rete, quali ad esempio commercio ed editoria elettronica, servizi Internet, telemedicina e telesorveglianza; aziende pubbliche e private fornitrici di servizi di telecomunicazione terrestri o spaziali; amministrazioni pubbliche; enti di ricerca scientifica e tecnologica nazionali ed internazionali; enti normativi e di controllo.
+Il laureato magistrale in Electronics and Telecommunications Engineering puU' accedere alla libera professione, previo superamento dell'esame di stato e iscrizione all'albo.
+---------
+Caratteristiche della Prova Finale
+La Prova Finale del Corso di Laurea Magistrale in Electronics and Telecommunication Engineering consiste nella discussione di una relazione scritta (Tesi di Laurea), elaborata dallo studente sotto la guida di un relatore accademico.
+La tesi, il cui argomento e' approvato preventivamente dal Consiglio di Corso di Laurea, approfondisce tematiche di rilevante contenuto scientifico ed affronta preferibilmente studi e realizzazioni che pongano l'accento su aspetti innovativi dei settori di ricerca tipici dell'Elettronica e delle Telecomunicazioni.
+---------

@@ -1,0 +1,41 @@
+Anno Accademico 2024/2025
+Laurea magistrale in ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (FULLY ONLINE)
+Curriculum: ELECTRONICS AND TELECOMMUNICATIONS ENGINEERING (LM-29)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2025
+---------
+Classe di Laurea magistrale in Ingegneria delle telecomunicazioni (LM-27)Classe di Laurea magistrale in Ingegneria elettronica (LM-29)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2258
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20511	DIGITAL COMMUNICATIONS (in inglese)	MANGIONE	6	1° semestre	ING-INF/03
+20520	ANTENNAS AND WIRELESS SYSTEMS (in inglese)	CINO	9	1° semestre	ING-INF/02
+20523	DIGITAL SIGNAL PROCESSING (in inglese)	CROCE	6	1° semestre	ING-INF/03
+21738	DATA ANALYSIS (in inglese)	SFERLAZZA	6	1° semestre	ING-INF/04
+21740	APPLIED ELECTRONICS (in inglese)	LULLO	9	1° semestre	ING-INF/01
+23291	LASER AND OPTICAL COMMUNICATIONS C.I. (in inglese)	MOSCA	6	1° semestre	
+	OPTOELECTRONIC DEVICES (in inglese)	MOSCA	3		ING-INF/01
+	OPTICAL COMMUNICATIONS (in inglese)	BUSACCA	3		ING-INF/01
+20513	ELECTRONIC PROGRAMMABLE SYSTEMS (in inglese)	GIACONIA	9	2° semestre	ING-INF/01
+21518	ELECTRONIC INSTRUMENTS AND MEASUREMENTS FOR TELECOMMUNICATIONS (in inglese)	ARTALE	9	2° semestre	ING-INF/07
+	Stage, Tirocini, Altro		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21519	CELLULAR NETWORKS AND 5G (in inglese)	TINNIRELLO	9	1° semestre	ING-INF/03
+05917	PROVA FINALE		21	2° semestre	
+19220	CYBERSECURITY (in inglese)	GALLO	6	2° semestre	ING-INF/03
+21520	MICROWAVE AND TERAHERTZ COMMUNICATIONS (in inglese)	TOGNAZZI	9	2° semestre	ING-INF/02
+	Attiv. form. a scelta dello studente (consigliate)		9		
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19697	INDUSTRIAL ELECTRONICS (in inglese)	SCIRE'	9	1° semestre	ING-INF/01
+20519	NANOELECTRONICS (in inglese)	MACALUSO	9	1° semestre	ING-INF/01
+22084	RADAR THEORY AND TECHNIQUES (in inglese)	LIVRERI	9	1° semestre	ING-INF/01
+
+

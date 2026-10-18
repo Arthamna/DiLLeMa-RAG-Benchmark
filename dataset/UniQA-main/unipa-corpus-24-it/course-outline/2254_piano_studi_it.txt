@@ -1,0 +1,52 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA DEI SISTEMI CIBER-FISICI PER L'INDUSTRIA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2021
+---------
+Classe di Laurea magistrale in Ingegneria dell'automazione (LM-25)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2254
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21513	ADVANCED & ADDITIVE MANUFACTURING (in inglese)	BUFFA	9	1° semestre	ING-IND/16
+21515	MECCANICA APPLICATA C.I.	CAMMALLERI	12	Annuale	
+	FONDAMENTI DI MECCANICA	CAMMALLERI	6		ING-IND/13
+	DINAMICA DEI SISTEMI MECCANICI	CAMMALLERI	6		ING-IND/13
+21517	MOBILE AND INDUSTRIAL ROBOTICS C.I. (in inglese)	FAGIOLINI	12	1° semestre	
+	INDUSTRIAL ROBOTICS (in inglese)	D'IPPOLITO	6		ING-INF/04
+	MOBILE AND DISTRIBUTED ROBOTICS (in inglese)	FAGIOLINI	6		ING-INF/04
+21506	BIG DATA AND ANALYTICS C.I.	LO PRESTI	9	2° semestre	
+	MACHINE LEARNING	TINNIRELLO	3		ING-INF/03
+	DATA ANALYTICS AND STORAGE	LO PRESTI	6		ING-INF/05
+21509	AUTOMATIC MEASUREMENT SYSTEMS AND SENSORS C.I. (in inglese)	COSENTINO	9	2° semestre	
+	AUTOMATIC MEASUREMENT SYSTEMS (in inglese)	COSENTINO	5		ING-INF/07
+	SENSORS (in inglese)	D'ACQUISTO	4		ING-IND/12
+21516	ESTIMATION, FILTERING AND SYSTEM IDENTIFICATION (in inglese)	SFERLAZZA	9	2° semestre	ING-INF/04
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21504	ELECTRONICS FOR INDUSTRIAL IOT	CHIARELLO	6	1° semestre	ING-INF/01
+21508	DIGITAL CONTROL (in inglese)		6	1° semestre	ING-INF/04
+21511	INDUSTRIAL ELECTRICAL DRIVES (in inglese)	CARUSO	6	1° semestre	ING-IND/32
+05917	PROVA FINALE		12	2° semestre	
+	Stage, Tirocini, Altro		6		
+	Gruppo di attiv. form. opzionali II		6		
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19220	CYBERSECURITY (in inglese)	GALLO	6	1° semestre	ING-INF/05
+21507	IOT E CLOUD SECURITY (in inglese)		6	2° semestre	ING-INF/03
+21512	PROCESS AND SYSTEM SIMULATION (in inglese)	BUFFA	6	2° semestre	ING-IND/16
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+21505	QUALITY CONTROL (in inglese)	LUPO	6	1° semestre	ING-IND/16
+21510	SUPPLY CHAIN MANAGEMENT IN INDUSTRY 4.0 (in inglese)	AIELLO	6	1° semestre	ING-IND/17
+21523	TECNICHE DI MODELLAZIONE E VISUALIZZAZIONE AVANZATE	INGRASSIA	6	1° semestre	ING-IND/15
+
+

@@ -1,0 +1,40 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on STATISTICS FOR DATA ANALYSIS
+For more information visit http://www.unipa.it/struttura.html?id=557
+---------
+Class of Bachelor's Degree (BSc) on Statistics (L-41)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Economics and statistical Sciences
+Course Code 2131
+---------
+Educational objectives
+The indications coming from the interested parties (world of work, students, teachers), as well as the increasingly frequent journalistic articles dedicated to the "data scientist" theme, confirm the need for professional figures skilled in the production and management of quantitative and qualitative information and in the upgrading  of the information assets of companies and institutions, aiming to support the management and to evaluate the effects of decisions. 
+The degree course in Statistics, coherently with the class-specific educational objectives, aims at training graduates with adequate groundings in the fields of Mathematics, Statistics and Computer Data Management, capable of working in various areas with autonomy and responsibility and to fit in the labour market as qualified experts, capable of producing and managing information flows and of using computer systems to gather and process information and to get from this information strategic indications, to be diffused at adequate detail level and through the most suitable technological modes.
+The educational programme is characterized by:
+-	Core educational activities in the fields of Computer Science, Mathematics, Statistics, Probability, providing students adequate command of general methods and scientific content;
+-	A common curriculum for all students, aiming at providing competences in the various field of applied statistics. Students will therefore acquire an adequate amount of credits in three out of the five class-specific areas: Statistics, Applied Statistics, Demography; Business Economics, Applied Computer Mathematics;
+-	An adequate number of integrative and class related activities, divided into three groups. The first group consists of subjects integrating undergraduate competences, to  increase his/her knowledge in the fields of data management, sociology and epidemiology. The second and third groups contain scientific sectors which are included in the L-41 class specific ones (business administration and demography), which are useful for an in-depth study of economic and demographic issues. The Course also proposes and suggests a list of subjects, considered important, to help students to identify, in the field of “elective subjects”, educational activities consistent with the educational programme. This list is updated each year, in accordance with the educational offer of the University of Palermo, and published on the Course website.
+-	An educational programme consisting not only of frontal teachings, but also integrated by practice laboratories, accompanying traditional teaching for the discussion of case studies and the investigation of economic-social issues. 
+For this reason, The educational offer provides four teachings related to computer issues, both at large and specifically statistical, in a way to provide graduates the ability to manage information, responding to the needs of the labour market. Laboratory activities aim at general and applied statistical applications, in a way to identify the limits and opportunities for statisticians in various application areas. In this way, the course aims at providing students with adequate critical capability which, based on solid methodological groundings, brings them to pay constant attention to the process of data production – conceptualization, definition and measurement – and to a critical use of theories and methods with respect to the type and meaning of available information;
+-	Possibility of attending educational internships at private or public organization, (up to 6 credits).
+-	possibility of carrying out statistical consultancy activity (up to 3 credits - "competences related to the labour market") where a true statistical consultancy is simulated, under the guidance of teachers of the Course. The objective is to provide students with the basic skills, including soft as well as professional skills, to perform statistical consultancy activity. This experience, as well as being a useful showcase for companies or individuals, is certainly an added value for the undergraduates facing the labour market, having been  able to experience their own relational and professional skills directly with future customers/users.
+---------
+Professional opportunities
+Profile:
+Statistical technician
+Functions:
+The professional profile that a graduate of the L41 class can hold combines computer skills related to the construction and management of databases, through the use of specific software, to statistical skills related to the description, analysis, modeling and interpretation of economic, social, and medical/health data. This professional will eventually be competent to develop a statistical report on the phenomena under examination.
+Skills:
+The expected professional opportunities consist of all the work activities in which competence is required in the production, processing, management and interpretation of data.
+Data may be of an economic, business, social and medical-health nature.
+The skills can be summarized in the professional figure of basic data scientist.
+A graduate in the L-41 class will also be able to participate in the design and verification of the results of controlled experiments and clinical trials, carry out assessment activities aimed at quality management and performance measurement, certification of statistical data, participate in the analysis and processing of data to investigate phenomena and to make predictions in various application areas, and finally, design and manage and use databases for various purposes.
+Professional opportunities:
+A graduate in L41 might play the role of statistical technician in public administrations, in the planning and experimentation branches of companies operating in the biomedical and epidemiological sectors, in statistical offices of medium-large enterprises, in marketing offices of production and distribution companies, in information systems management companies, in statistical consultancy companies that carry out external support activities for private and public companies/agencies and in public and private research organizations.
+The skills and knowledge acquired during the course are adequate to continue the studies towards in LM-82 and LM-83, and with the acquisition of additional credits, graduates may access the 2nd cycle degree courses in Economics.
+---------
+Final examination features
+To obtain the degree, students must have acquired 180 credits including those relating to the final examination (3 credits). The final test has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of an interview about the internship carried out or about a topic chosen among those proposed by the Board of the degree, respecting and consistent to the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+---------

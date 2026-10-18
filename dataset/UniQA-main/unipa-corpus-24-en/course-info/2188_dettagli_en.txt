@@ -1,0 +1,57 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on CYBERNETIC ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=1480
+---------
+Class of Bachelor's Degree (BSc) on Information technology engineering (L-8)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2188
+---------
+Educational objectives
+The course specifically aims at training professionals alternative to the traditional engineering ones (electrical, electronic, computer engineering, etc.), capable of analysing and managing various systems, characterised by networks of interacting elements, and to apply information technologies to automation issues in various fields (smart automation, smart factories, industry 4.0, smart homes, etc.). 
+The course provides the possibility to acquire multidisciplinary knowledge and skills, aimed at understanding basic control theory and at the analysis and operation of mechatronic and, in general, cyber physic systems, representing the bases for the development of modern production, distribution and supply of goods and services.
+In the operation of these systems, cybernetic engineers must be able to plan the objectives to achieve, to proceed to the mathematical formulation of a control problem considering the above mentioned objectives, to the solution of the problem also using the available software tools and, finally, to the verification of the obtained performance, through simulation techniques and, where possible, through the practical implementation of a prototype of the whole system.
+Together with these skills, the course aims at providing students the specific engineering knowledge and skills, needed to enable them to study and make interact among them systems with a different physical (real and/or virtual) nature.
+To achieve these objectives, the course provides the typical knowledge and methodological skills of information engineering, with a strongly multidisciplinary orientation.
+The educational programme is divided in four subjects’ groups:
+-	The first group consist of the basic subjects of the degree class in Information Engineering (mathematics, physics);
+-	The second group is related to engineering skills, in the fields of electrotechnics, electronics, electric and electronic measurements, information and telecommunication engineering, economic-management engineering;
+-	The third subjects’ group is related to the typical Automation methodologies, both theoretical (automatic control) and applicative (industrial robotics and autonomous vehicles) ones.
+-	The fourth group is related to the specific traits of cybernetic engineering, with reference to the various aspects of mechatronic and cyber physic systems, characterised by the ability to process, communicate and interact with virtual environments and real systems.
+In particular, the course teachings related to mechanics, machines, electric converters and activators, industrial automation and domotics, programming, machine learning, cloud technologies, internet networks, numerical methods and big data.
+More specifically, class specific teachings are divided in optional groups, in order to enable students to deeply investigate issues related to real systems automation and mechatronics and issues related to information technologies and to the interaction among real systems and virtual environments.
+Thanks to the articulated educational programme, students will be able to customize their training, acquiring specific knowledge and skills enabling them  to face the problems relating to the management and control of mechatronic systems (with particular reference to the automation systems of machines, processes and systems), which integrate IT components, measurement equipment, actuators and data transmission and processing systems, with centralized and distributed supervisory and control logics and architectures, as well as to apply modern information technologies to the aforementioned systems (internet of things, virtualization, big data), in order to automate processes and add intelligence in the smart home, smart industry, smart city, etc., through the use of distributed cyber-physical systems, capable of processing information, communicating, deciding and acting in the real and virtual world.
+Graduates in Cybernetic Engineering will therefore possess adequate knowledge to continue with post-graduate studies (master's degree, master's degree), as well as to fit immediately in the labour market, being able to carry out their activities as freelancers and in manufacturing or service companies and public administrations, in various production and services sectors(such as, for example, autonomous vehicles, telecommunications, sensor networks and internet networks, distributed monitoring and control systems, production systems automation, distribution and supply of goods and services, assisted technology systems, robotic systems).
+---------
+Professional opportunities
+Profile:
+1st cycle Graduate in Cybernetic Engineering
+Functions:
+Graduates in Cybernetics Engineering are able to design and manage a cybernetic system as a whole, resulting in a model of this system, the interactions between subsystems, the communication among them, the optimal achievement of a goal and the fulfilment of control specifications.
+Their cultural and professional profile is focused on scientific and technological information engineering knowledge, such as the knowledge of sensor networks, robotics and distributed systems, electronics and automatic controls, mechatronics, Internet network and cloud platforms, thanks to which they are able to identify, formulate and solve problems which, even if non-complex, may require an interdisciplinary approach. They possess basic knowledge of Automatics design and analytical methods, enabling them to introduce within non-complex systems the necessary intelligence to manage its operation without human intervention (automatic control), optimizing its operation and dominating the interaction among the various components of the system as well as between the system and the surrounding (real and/or virtual) environment.
+Graduates in Cybernetics Engineering are also able to deal with non-complex problems in intrinsically multidisciplinary settings and are therefore capable of interfacing with the specialists of the processes and systems to automate, to suggest more effective operational and project solutions in technical and economic terms.
+Cybernetic engineers, therefore, possess specific skills enabling them to readily fit into very different professional environments working as systems analysts and/or technicians in various application contexts where technologies and automation principles play an important role.
+Skills:
+- Identification of descriptive models of (real and/or virtual) mechatronic and cyber-physic processes and systems;
+- Study of the properties of the models aimed at analysing the behaviour of real processes and systems (operating limits and potential);
+- Identification of the control methods starting from models;
+- Definition of design specifications for process and systems control;
+- design and evaluation of control laws and strategies, based on the system or process model, in accordance with the design specifications;
+- identification of the most adequate technologies for the implementation of intelligence/automatic solutions for cyber physic systems;
+- Simulation of processes and systems, for their analysis and for the validation of the relevant control laws and strategies;
+- Implementation on digital systems for rapid prototyping and ability to conduct experiments on such systems;
+- Theoretical and experimental development of control methods and strategies;
+- Monitoring, operation, maintenance of processes and systems.
+Professional opportunities:
+- Electronic, mechanical, automotive, electromechanical, aerospace, chemical and industrial, mobile, submarine robotics companies;
+- Service companies (water management and network services, transport, energy, civil and industrial automation, telecommunications, big data, Internet-of-Things (IoT), and related services;
+- Research and development centres and laboratories for the automation industry;
+- public administration;
+- freelance activities.
+Also, since the 1st cycle degree is the first level of university education, in view of the continuation of their studies, graduates in Engineering Cybernetics can access different 2nd cycle degree courses of the University of Palermo as well as equivalent courses on the national territory
+---------
+Final examination features
+To obtain the degree, students must have acquired all the credits required by the curriculum with the exception of the credits of the final test, which are acquired at the time of testing. The final test has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a written or oral test, in accordance with the rules fixed every year by the Degree Course Regulations for the final examination, respecting and consistent with the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+---------

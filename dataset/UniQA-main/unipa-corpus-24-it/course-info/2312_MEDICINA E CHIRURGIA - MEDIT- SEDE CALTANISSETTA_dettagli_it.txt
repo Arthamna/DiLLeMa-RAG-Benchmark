@@ -1,0 +1,71 @@
+Anno Accademico 2024/2025
+Laurea magistrale a ciclo unico in MEDICINA E CHIRURGIA (INDIRIZZO TECNOLOGICO)
+Curriculum: MEDICINA E CHIRURGIA - MEDIT- SEDE CALTANISSETTA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2697
+---------
+Classe di Laurea magistrale a ciclo unico in Medicina e chirurgia (LM-41)
+Durata 6 anni
+Sede CALTANISSETTA
+Numero posti in programmazine nazionale: 80
+Dipartimento di Biomedicina, Neuroscienze e Diagnostica avanzata
+Codice corso 2312
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Gli obiettivi formativi specifici che caratterizzano il Corso di Laurea in Medicina e Chirurgia ad indirizzo tecnologico (MED-IT) sono quelli di formare una figura professionale di Medico Chirurgo con un bagaglio di competenze fortemente arricchite con l'acquisizione di conoscenze e di capacita' metodologiche e tecnologiche proprie dell'ingegneria. Il laureato MED-IT potra', quindi, affrontare, analizzare e risolvere problemi di interesse medico-biologico con metodologie innovative.
+In linea con tali obiettivi, il Corso di Laurea MED-IT presenta un impianto caratterizzato da uniequilibrata integrazione verticale e trasversale tra:
+a) le scienze di base, che debbono essere ampie e prevedere la conoscenza della biologia evoluzionistica, della biologia molecolare e della genetica e della complessita' biologica. Tale studio mira alla conoscenza della struttura e funzione dell'organismo umano in condizioni normali, ai fini del mantenimento delle condizioni di salute e della corretta applicazione della ricerca scientifica traslazionale. Tra le scienze di base, un posto fondamentale sara' occupato da discipline come lianalisi matematica, la fisica, la chimica, liinformatica, e la statistica;
+b) la conoscenza dei processi patologici e dei meccanismi che li provocano, con particolare attenzione alla variabilita' individuale ed alle differenze di genere, anche al fine di impostare la prevenzione, la diagnosi e la terapia in maniera mirata. In questiottica, centrale risulta anche la conoscenza del ruolo che lo stile di vita, lialimentazione e liattivita' fisica giocano nelliacquisizione e nel mantenimento dello stato di salute e nelliapproccio alle patologie;
+c) la metodologia e la pratica medica clinica, che devono essere particolarmente solide e basate su un ampio utilizzo della didattica di tipo tutoriale professionalizzante;
+d) le scienze umane, che debbono costituire un bagaglio essenziale per raggiungere la consapevolezza dell'essere medico, i valori profondi della professionalita' medica e l'etica del rapporto medico-paziente;
+e) l'acquisizione della metodologia scientifica, medica, clinica e professionale, basata sull'evidenza, rivolta ai problemi di salute del singolo e della comunita', con una specifica attenzione alle differenze di popolazione e di sesso/genere, alle malattie rare ed allo sviluppo di nuovi approcci che consentano una crescente efficacia delle cure mediche nonche' delle cure palliative e della terapia del dolore;
+f) le tecnologie utilizzate in ambito clinico, necessarie per un uso efficace e sicuro della strumentazione e degli impianti, nonche' per la formazione dei tecnici e del personale sanitario. Fondamentali per tali conoscenze sono lo studio di argomenti di informatica e bioinformatica, elettromagnetismo, elettrotecnica ed elettronica applicata, automatica, sensori e misure, biomeccanica, meccanica dei solidi e dei fluidi per i sistemi biologici nonche' le nozioni fondamentali dell'elaborazione di segnali ed immagini, le neuroscienze, i concetti di biocompatibilita', medicina rigenerativa, micro-drug delivery e ingegneria tissutale;
+g) la strumentazione biomedica e l'impiantistica, sempre piu' complesse, finalizzate alla diagnosi e alla cura del paziente, nonche' i fondamenti delle tematiche piu' moderne delliingegneria biomedica.
+In sintesi, il laureato MED-IT deve essere in grado di raccogliere le informazioni dal paziente e saperle interpretare, saper prendere decisioni cliniche che conducano ad una corretta diagnosi e a interventi terapeutici mirati, anche e soprattutto attraverso liimpiego esperto delle tecnologie, cui avra' saputo dare il proprio contributo in fase di sviluppo applicativo specifico. Le sue decisioni dovranno essere dedotte dalle migliori pratiche cliniche, dalliapplicazione corretta della tecnologia e dalle evidenze scientifiche, senza dimenticare le necessita' del paziente e le esigenze del sistema sanitario del Paese in cui opera. La sua attivita' clinica deve essere pertanto basata su conoscenze estremamente aggiornate, deve essere etica e in grado di garantire un efficiente uso delle risorse a disposizione; dialtra parte, va condotta in stretta "collaborazione-condivisione" con il paziente e la sua famiglia e con gli altri membri del gruppo di lavoro intraprofessionale-interprofessionale.
+Grazie alliapporto degli insegnamenti di ambito ingegneristico di tipo biomedico, il laureato magistrale sara' anche in grado di risolvere problemi metodologici e tecnologici in ambito fisiologico e clinico, di occuparsi di analisi e modellistica di biosegnali e bioimmagini e di robotica medica e biomeccanica computazionale, e di utilizzare opportuni software medicali per assistenza diagnostica.
+Del percorso formativo fanno parte integrante:
+- il tirocinio professionalizzante/abilitante, sia interno all'Azienda Ospedaliera Universitaria sia esterno, svolto presso numerose strutture territoriali convenzionate sanitarie ed ospedaliere, oltre che presso i medici di base convenzionati con liAteneo, in collaborazione con gli Ordini provinciali dei MCeO;
+- le obbligatorie attivita' didattiche opzionali (ADO), che consentono liintegrazione della formazione attraverso lo studio di discipline relative ad altri ambiti (sia medici che scientifico-ingegneristici) e liacquisizione di conoscenze e competenze di contesto utili per la formazione post laurea e per liinserimento nel mondo del lavoro.
+Il corso si propone di offrire una struttura didattica e formativa solida e le parti sociali hanno confermato l'utilita' delle funzioni professionali e delle competenze acquisite dal laureato MED - IT; gli Stakeholders sono attivamente coinvolti nel processo di sviluppo del corso di laurea in Medicina e Chirurgia a indirizzo tecnologico sia per quello che attiene gli aspetti formativi, sia per gli aspetti legati al saper fare dei laureati. Il parere delle organizzazioni consultate e' ritenuto di grande rilevanza nel progetto presentato che si pone come obiettivo la formazione di un Medico Chirurgo con le competenze specifiche discusse prima. Cio' nell'ottica di formare un laureato con un profilo immediatamente spendibile nel mondo del lavoro e, contemporaneamente, con una solida preparazione anche per un'eventuale prosecuzione verso percorsi di formazione di livello superiore.
+---------
+Sbocchi Occupazionali
+Profilo:
+Medico Chirurgo a indirizzo tecnologico
+Funzioni:
+Il medico chirurgo a indirizzo tecnologico, primariamente tratta e cura le disfunzioni, le malattie e le lesioni piu' comuni e maggiormente diffuse nella popolazione; applica tecnologie avanzate sia per la diagnosi precoce che per la cura di gravi patologie in pazienti a rischio; prescrive farmaci e terapie non farmacologiche, esami clinici per le diagnosi, ricoveri ospedalieri e visite presso medici specialisti; segue il decorso delle patologie e delle relative cure; sollecita e attua interventi di prevenzione presso i pazienti o presso le organizzazioni in cui opera anche attraverso l'uso di sistemi tecnologici ed informatici avanzati.
+Analizza le patologie individuando i mezzi diagnostici piu' appropriati, padroneggiando e migliorando le tecnologie avanzate disponibili per una efficacia diagnostica veloce ed affidabile, attraverso percorsi diagnostici che si avvalgono di strumenti avanzati come la simulazione virtuale l'intelligenza artificiale.
+Individua le misure terapeutiche per contrastare le patologie applicando le tecnologie piu' appropriate e innovative tutte le volte che queste ultime presentano degli indubbi vantaggi.
+Gestisce le problematiche medico-biologiche con una solida formazione basata sulle metodologie e nelle tecnologie dell'ingegneria.
+Assiste l'ingresso delle nuove tecnologie biomediche per le applicazioni cliniche e partecipa attivamente ai processi di sperimentazione.
+Partecipa attivamente alla progettazione e sviluppo di dispositivi medici avanzati.
+Si relaziona con il paziente sfruttando al meglio le conoscenze acquisite, utilizzando anche risorse tecnologiche volte ad una efficace sviluppo e miglioramento della relazione paziente-medico-caregiver.
+Promuove azioni volte alla salute dell'individuo tramite l'individuazione e correzione di stili di vita a rischio e l'applicazione di strategie di prevenzione e di diagnosi precoce delle malattie, grazie anche a strumenti tecnologici innovativi.
+Competenze:
+Conoscenze delle scienze di base integrate da conoscenze tecnologiche ed ingegneristiche con capacita' di compresione ed applicazione in ambiti diversificati.
+Competenza nell'analisi clinica dei dati relativi allo stato di salute e di malattia del singolo individuo, interpretandoli criticamente sulla base delle conoscenze scientifiche, tecnologiche ed ingegnaristiche.
+Conoscenze interdisciplinari della medicina, delle scienze e della tecnologia nonche' delle loro ripercussioni sulla salute umana.
+Conoscenze della storia, dell'etica nonche' legale della medicina.
+Abilita' nel riconoscere i problemi sanitari dei singoli e delle comunita', intervenendo con efficacia nella pratica clinica, utilizzando anche tecnologie avanzate.
+Abilita' nell'uso critico delle conoscenze scientifiche e tecnologiche in ambito biomedico con capacita' di partecipazione a gruppi di ricerca interdisciplinari e di sperimentazione clinica.
+Abilita' ed esperienza nell'affrontare e risolvere responsabilmente i problemi sanitari prioritari dal punto di vista preventivo, diagnostico, prognostico, terapeutico e riabilitativo, promuovendo l'integrazione delle tecnologie multi-omiche, informatiche, sensoristiche, robotiche, meccatroniche, modellistiche e biomeccaniche, e relative all'analisi e al trattamento di segnali e immagini a supporto di tutto il percorso clinico.
+Capacita' di relaionarsi correttamente col paziente e coi suoi familiari.
+Capacita' di collaborare e interagire efficacemente con figure professionali diverse nello svolgimento di attivita' sanitarie ed attivita' correlate.
+Preparazione teorico-pratica all'esercizio della professione di medico.
+Capacita' di utilizzare la formazione nelle metodologie e nelle tecnologie dell'ingegneria per la comprensione e la eventuale soluzione di problematiche medico-biologiche.
+Padronanza delle tecnologie basate sulla intelligenza artificiale sia in ambito di ricerca sia per raggiungere obiettivi diagnostici e terapeutici nel contesto della Medicina di precisione.
+Capacita' di progettare e sviluppare attivita' sperimentali, analizzare le misure, selezionare e calibrare strumentazione biomedica al fine di individuare soluzioni innovative per problemi inerenti la salute umana.
+Sbocchi:
+Strutture sanitarie e ospedaliere del SSN.
+Universita' e centri di ricerca.
+Enti di gestione dei servizi sanitari.
+Organizzazioni sanitarie nazionali.
+Aziende del settore farmaceutico e biomedicale.
+Medicina territoriale e dei servizi.
+Scuole di specializzazione di area sanitaria.
+Medicina militare.
+---------
+Caratteristiche della Prova Finale
+Per essere ammesso alla prova finale lo studente deve avere acquisito tutti i crediti formativi previsti dall'ordinamento didattico del Corso di Studio con l'eccezione dei CFU assegnati alla prova finale che vengono acquisiti all'atto della prova stessa.
+La prova finale del Corso di Laurea Magistrale, che ha carattere abilitante a norma del DM 58/2018 e succ. mod. e integr., consiste sia nella presentazione di una Tesi, redatta in modo originale, volta ad accertare il livello conseguito nella preparazione tecnico-scientifica e professionale, sia nella discussione su quesiti eventualmente posti dai membri della Commissione di Laurea.
+A determinare il voto di laurea, che e' espresso in centodecimi, contribuiscono la media dei voti conseguiti negli esami curriculari, la valutazione della tesi in sede di discussione, e l'eventuale valutazione di altre attivita', con le modalita' stabilite dal Consiglio del Corso di Studi.
+---------

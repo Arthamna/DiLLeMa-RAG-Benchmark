@@ -1,0 +1,46 @@
+Academic year 2024/2025
+Master's Degree (MSc) on CHEMICAL ENGINEERING
+Curriculum: SUSTAINABLE PROCESS ENGINERING
+For more information visit http://www.unipa.it/struttura.html?id=711
+---------
+Class of Master's Degree (MSc) on Chemicl Engineering (LM-22)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2025
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21897	INDUSTRIAL CHEMICAL AND BIOCHEMICAL PROCESSES (in english)	GALIA	9	1° semestre	ING-IND/27
+21902	SUSTAINABLE INDUSTRIAL PROCESSES - INTEGRATED COURSE (in english)	SCIALDONE	9	1° semestre	
+	SUSTAINABLE INDUSTRIAL PROCESSES (in english)	SCIALDONE	6		ING-IND/27
+	GREEN CHEMISTRY FOR SUSTAINABLE PROCESSES (in english)	DISPENZA	3		CHIM/07
+22870	BIOCHEMICAL PLANT DESIGN - INTEGRATED COURSE (in english)	LI PUMA	9	1° semestre	
+	REACTOR DESIGN (in english)	LI PUMA	6		ING-IND/25
+	BIOCHEMICAL PLANT AND OPERATIONS (in english)	LIMA	3		ING-IND/25
+07871	MACHINES	BECCARI	9	2° semestre	ING-IND/08
+21892	PLANT DESIGN FOR PROCESS SUSTAINABILITY (in english)	CAPUTO	6	2° semestre	ING-IND/25
+21896	CHEMICAL AND BIOCHEMICAL REACTORS (in english)	LODDO	9	2° semestre	ING-IND/24
+21900	CHEMICAL AND BIOCHEMICAL PROCESS CONTROL (in english)	CIPOLLINA	9	2° semestre	ING-IND/26
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21898	CONCEPTUAL DESIGN OF CHEMICAL AND BIOCHEMICAL PROCESSES (in english)	MICALE	9	1° semestre	ING-IND/26
+05917	FINAL EXAMINATION		21	2° semestre	
+16079	SAFETY MANAGEMENT	GRISAFI	9	2° semestre	ING-IND/25
+	Stage and others		3		
+	Optional subjects		6		
+	Free subjects		12		
+
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+18583	MODELS FOR THERMOFLUID DYNAMICS (in english)	TAMBURINI	6	1° semestre	ING-IND/26
+21886	ADVANCED CHEMICAL AND BIOCHEMICAL PLANT DESIGN (in english)	GRISAFI	6	1° semestre	ING-IND/25
+23342	POLYMERS AND COMPOSITES FOR SUSTAINABLE APPLICATIONS (in english)	DINTCHEVA	6	1° semestre	ING-IND/22
+01817	APPLIED CHEMISTRY FOR ENVIRONMENTAL  PROTECTION	SCAFFARO	6	2° semestre	ING-IND/22
+17580	INDUSTRIAL POLYMERIZATION PROCESSES (in english)	GALIA	6	2° semestre	ING-IND/27
+21887	PROCESS DYNAMICS SIMULATION AND CONTRO (in english)	TAMBURINI	6	2° semestre	ING-IND/26
+23970	ADVANCED REACTOR DESIGN (in english)	LI PUMA	6	2° semestre	ING-IND/25
+

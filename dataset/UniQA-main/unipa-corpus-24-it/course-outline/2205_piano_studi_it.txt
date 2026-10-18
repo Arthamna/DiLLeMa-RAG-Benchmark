@@ -1,0 +1,50 @@
+Anno Accademico 2024/2025
+Laurea magistrale in TOURISM SYSTEMS AND HOSPITALITY MANAGEMENT
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1632
+---------
+Classe di Laurea magistrale in Progettazione e gestione dei sistemi turistici (LM-49)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Doppio titolo con Universidad de Malaga, Malaga (SPAIN)University of Dubrovnik, Dubrovnik (CROATIA)
+Codice corso 2205
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+17629	ADVANCED ENGLISH (in inglese)	ROMEO	6	1° semestre	
+18986	TOURISM ECONOMICS AND REGIONAL POLICY C.I. (in inglese)	MAZZOLA	9	1° semestre	
+	TOURISM SYSTEMS ECONOMICS (in inglese)	RUGGIERI	6		SECS-P/02
+	REGIONAL ECONOMIC POLICY (in inglese)	MAZZOLA	3		SECS-P/02
+18990	DEMOGRAPHY (in inglese)	BUSETTA	8	1° semestre	SECS-S/04
+20742	MARKETING AND POSITIVE ORGANIZATIONS FOR TOURISM C.I. (in inglese)		11	Annuale	
+	MARKETING FOR TOURISM (in inglese)		6		SECS-P/08
+	POSITIVE ORGANIZATIONS IN TOURISM (in inglese)		5		SECS-P/07
+18547	STATISTICS FOR ECONOMICS & BUSINESS (in inglese)	ARONICA	6	2° semestre	SECS-S/03
+23995	ANALYSIS OF TOURISM BEHAVIOUR C.I. (in inglese)	DE CANTIS	6	2° semestre	
+	STATISTICAL ANALYSIS OF TOURISM BEHAVIOUR (in inglese)	DE CANTIS	3		SECS-S/05
+	MODELS OF TOURISM BEHAVIOUR (in inglese)		3		SECS-S/05
+24076	ECONOMIC HISTORY AND TOURISM (in inglese)	SIMON	8	2° semestre	SECS-P/12
+	Attiv. form. a scelta dello studente (consigliate)		8		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13121	TIROCINI FORMATIVI E DI ORIENTAMENTO (in inglese)		12	1° semestre	
+18994	SPANISH (in spagnolo)		8	1° semestre	L-LIN/07
+18995	ADVANCED TOURISM STATISTICS (in inglese)	DE CANTIS	6	1° semestre	SECS-S/05
+18996	AGRICULTURE AND FOOD SYSTEMS C.I. (in inglese)	COLUMBA	10	1° semestre	
+	FOOD AND BEVERAGE (in inglese)	BARONE	4		AGR/03
+	AGRI-FOOD SYSTEMS (in inglese)	COLUMBA	6		AGR/01
+05917	PROVA FINALE (in inglese)		10	2° semestre	
+19009	EVENTS MANAGEMENT (in inglese)		6	2° semestre	SECS-P/08
+	Gruppo di attiv. form. opzionali		6		
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18993	INTERNATIONAL TOURISM LAW (in inglese)		8	2° semestre	IUS/06
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19886	STRATEGIC PLANNING AND CONTROL (in inglese)	QUARCHIONI	6	2° semestre	SECS-P/07
+23998	STRATEGY AND YIELD AND REVENUE MANAGEMENT (in inglese)	MOCCIARO LI DESTRI	6	2° semestre	SECS-P/08
+

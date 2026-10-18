@@ -1,0 +1,83 @@
+Academic year 2024/2025
+Master's Degree (MSc) on DIGITAL HUMANITIES FOR CULTURAL INDUSTRY
+Curriculum: DIGITAL HUMANITIES  FOR CULTURAL INDUSTRY
+For more information visit http://www.unipa.it/struttura.html?id=2564
+---------
+
+Duration 2 years
+Location PALERMO
+Free access
+Department of Humanities
+Course Code 2299
+---------
+Educational objectives
+The cultural project of the Degree Course provides for a broad and complementary humanistic and IT training capable of making degree graduates competitive in activities such as:
+- research and elaboration, in a professional and communicative way, of contents of IT, linguistic, philological, literary, artistic, archival, juridical, historical, and philosophical nature.
+- exercise of theoretical, critical, and practical skills on narrative forms and structures in the audio-visual field, on the manipulation and reuse of images in different media contexts, as well as on the dynamics of transition of audio-visual objects among different media.
+- creation of multimedia products and websites.
+- work in the field of automatic language processing.
+- enhancement of the cultural heritage of Libraries, Archives, Museums.
+- coordination of digital activities in the school and in the Public Administration.
+The training project provides, through the individual option among related subjects and elective teachings, the acquisition the foundations of a varied IT-humanistic training, such as not to limit the professional skills of graduates to perspectives linked to a single professional field or to one European country. The course is therefore carried out through frontal teachings, laboratory activities, seminars, internships and professional training, activities conducted remotely (smart working, project work and the like) embracing several scientific branches and can also take place abroad, thus providing awareness of employment contexts and professions guiding the choice of future study and work commitments. Mandatory internships in companies, organizations or research or service centres enable students to put in practice the acquired skills.
+The course is therefore divided into the following main areas:
+a) IT area, in which the study of the different computer programming languages is addressed, from the latest native version Python interpreter, with Idle integrated to one of the Content Management Systems such as WordPress or Joomla locally via the Xampp platform, aiming at providing students a secure mastery of computer programming languages for cultural production and to make them capable of managing the operating system in its basic functions and the software application packages in the installation, recovery and use of files phases.
+b) Linguistic-literary area in which the study of themes and forms of Italian literature and contemporary Italian literature is addressed with exemplary insights into movements, poetics, authors and the analysis of texts and the main critical interpretations. From the perspective of humanistic information technology, the main existing digital resources for study and research in the field of the discipline are illustrated aiming to enable students to make use of them profitably. A specific role is played by the study of textual forms of the twentieth-century tradition and their new configurations in the 'digital revolution', envisaging the unprecedented frontier of file philology. The objective is to enable students to use the methodologies of critical, linguistic, and philological analysis at an advanced level and to create digital critical editions using IT tools. In the linguistic field, the study of the notions of 'hypotextuality' and 'fragmentation' and the acquisition of the tools to create the contents of digital storytelling will be addressed with the aim of knowing how to orchestrate the various declinations (timeline, story mapping, trans-media storytelling, visual and video storytelling). It will be accompanied by the study of the principles of distributional linguistics, neural networks, embeddings, deep learning, up to the analysis of current Large Language Models or computational linguistic models with the aim of framing problems that can be treated with Big Data (extraction of information from texts, automatic response to questions, chat bots) and to solve them through the design and development of Natural Language Processing (NLP) solutions.
+d) Historical field, in which the historical, political and theoretical context in which - in the contemporary age - public opinion was born, developed and transformed is studied in order to enable students to recognize the different concepts of public opinion by placing them in relation to the various historical phases in which they appeared, identifying the lines of continuity and fracture and consciously orienting themselves within today's public sphere, characterized on a global scale by the crisis of democracy and the pervasiveness of new media.
+e) Legal field, in which the study of the rules and fundamental principles of digital law is addressed, to enable students to orient themselves in the system of this discipline and to master its interpretative tools.
+f) Field of archival and artistic disciplines, related to the study of basic or complex digital environments (big data), of the transformations and impacts that the network has on the way of interacting and managing, as well as of the museological development from the second half of the twentieth century to date, in relation to museums, galleries and art archives in Western Europe and North America.
+The objective is to enable students to set up and create databases and digital archives, enhance the cultural heritage of Libraries, Archives, Museums and coordinate digital activities in Schools and in the Public Administration. This disciplinary area also deals with the study of the manipulation and reuse of images in different media contexts, as well as the dynamics of transition of audio-visual objects among different media, in order to put students in the conditions to handle an integrated digital ecosystem.
+g) Philosophical-pedagogical field, focused on the study of perceptual structures that can be translated into parameters for communication with new media, of the relationship between language and communication in the digital age, of the extensions of digital teaching to the world of edutainment and serious games. The objective is to enable students to use digital languages and metalanguages professionally in the elaboration and processing of texts and other cultural objects.
+A digital publishing workshop is functional to provide basic and advanced skills in digital processing textual contents intended for publication. In particular, the steps of the main editorial workflow models are formalized and analysed in their digital version as well as in the execution of their specific objectives. The aim is to accompany students, through all the steps, in the design and creation of a digital editorial content.
+The educational path provides for the preparatory study of the Fundamentals of Computer Science and Programming, combined with a first group of class-specific and related disciplines , providing knowledge of digital law (of information technology, the web, the network ), of the notions and functional tools to create the contents of digital storytelling and digital publishing in all its phases (from design to implementation), of the principles of distributional linguistics, neural networks. At the same time, students can start structuring their own preparation through the study of digital teaching linked to the world of educational games and the contribution, according to an individual choice, of optional related subjects such as Italian literature, archiving and museology, in order to allow the acquisition of skills that can be used in various professional fields.
+Based on the knowledge acquired, the course proceeds with the advanced study of other computer science disciplines and of one of the significant applications of computer science to literary analysis, the study of digital philology applied to the texts of contemporary writers which can be supported in the context of related disciplines. an extension on themes and forms of contemporary Italian literature. This fruitful interdisciplinary interweaving is enriched by the proposal of a variety of teachings aimed at deepening and broadening the digital horizon and its effects in the fields of history, cinema, communication, aesthetics, and Italian literature. Lastly, further training opportunities are offered by web-based internship activities (in companies, bodies, public administrations allowing the application of digital technology in the various disciplines and in the various professional fields) and, on the internationalization side, by the Erasmus mobility programme,  as part of the agreements with European universities including the University of Louvain (Katholieke Universiteit Leuven) where an advanced Master's degree in Digital Humanities is active and the Niccolò Copernico University of Torun.
+At the end of the two-year period, the student presents as a final test a report which has as its object a research in the digital humanities area, which can also be connected to the activity carried out as an internship in cultural centers and companies. The work must demonstrate command of IT tools, mastery of the topics addressed, critical, expository, and independent judgement skills. LM-43 graduates will be therefore able to further develop their skills through new digital and research tools in the context of different professional contexts.
+The criteria and methods for drafting the degree thesis will be detailed in the Educational Regulations.
+---------
+Professional opportunities
+Web application analyst and designer
+function in a work context:
+-	websites design, development and management (Web master);
+-	design, planning, creation and management of website content (Content manager); 
+-	design and development of educational video games (Game designer and developer for education); 
+-	development digital strategies aimed at intercepting user needs and satisfying them (Digital Strategies Manager; Social Media & Community Manager).
+Skills:
+Analysts and web application designers, graduate in LM-43, possess fundamental IT knowledge (digital platforms, programming languages, analytics products) and are competent in the design, development and management of websites as well as in the digitization of processes and in the development of digital strategies for marketing.
+Employment opportunities
+Web application analysts and designers work in software manufacturing and localization companies, in Web agencies, in companies investing on the digitization of processes and working methods, in national and international banking institutions, in cultural institutions (libraries, museums, archives ).
+Database analyst and designer
+function in a work context:
+-	analysis, design, development and testing of the databases management systems of archives, museums, libraries.
+Skills associated with the function:
+Database analysts and designers, are competent in designing databases, modelling domains according to entity-relationship diagrams, setting up data retrieval and query systems.
+Employment opportunities:
+Database analysts and designers work in public and private cultural institutions.
+Web article editor
+function in a work context: 
+-	planning, creating and curating web content; 
+-	writing texts capable of achieving the objectives that a company sets itself (UX Writer); 
+-	writing texts or posts for company portals or blogs; 
+-	reviewing articles for online newspapers and magazines; 
+-	writing effective headlines and titles.
+Skills:
+Web article writers are proficient in planning, creating, and curating online content; in web writing; in UX writing; in writing texts, for journalism and marketing, useful and attractive to online users.
+Employment opportunities:
+Editorial offices of online newspapers and magazines; companies, cultural institutions.
+Text reviewer
+function in a work context:
+-	Reviewing texts to be published, audiovisual and multimedia; correcting drafts, reviewing technical texts.
+Skills associated with the function:
+critical reviewing of texts to be published online, audiovisual and multimedia; proofreading; reviewing technical texts.
+Employment opportunities:
+Text reviewers work in publishing, in the editorial offices of online newspapers and magazines, in companies.
+Museum curator and conservator
+function in a work context:
+-	acquiring, evaluating, guaranteeing the conservation of artifacts of historical, cultural or artistic interest and works of art; making such artifacts and works available on microfilm, digital or other media; organizing promotional activities, exhibitions and events.
+Skills associated with the function:
+Museum curators and conservators are competent in setting up and creating databases and digital archives; in enhancing the cultural heritage of libraries, archives, museums; in reusing images in different media contexts, in manipulating an integrated digital ecosystem.
+Employment opportunities:
+Art galleries, museums, virtual museums, corporate museums, library museums.
+---------
+Final examination features
+At the end of the Degree Course, students will present a degree dissertation which will have as its object research in the digital humanities sector and which can also be linked to the activity carried out during an internship in cultural centres and companies. The work carried out must show command of IT tools and the ability to manage them, secure knowledge of the topics, critical and expository skills and independent judgement.
+The methods and criteria for drafting the degree thesis will be detailed in the Educational Regulations.
+---------

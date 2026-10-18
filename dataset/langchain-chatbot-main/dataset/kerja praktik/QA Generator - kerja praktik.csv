@@ -1,0 +1,21 @@
+Question,Expected Answer
+Berapa jumlah kredit mata kuliah KP?,2 SKS
+Apa persyaratan mengajukan KP?,Mahasiswa aktif Teknik Informatika SKS tempuh minimum 90 SKS Mengisi MONKP: monkp.if.its.ac.id (registrasi akun dan data KP) Status KP akan menjadi CREATED Surat Pengantar Kerja Praktik
+Apa link MS TEAMS untuk mengunggah buku KP dan bukti terima repo ITS,https://teams.microsoft.com/l/team/19%3a447977fe03c040ff98ad9e82e63982e2%40thread.tacv2/conversations?groupId=862aa22c-c596-49e1-94dd-6354fd625a2e&tenantId=1d5169ac-c7cb-4275-9764-bf8c9c364a4c
+Apa Syarat mendapatkan dosen pembimbing internal KP?,"Status KP akan menjadi CONFIRMED Dosen Pembimbing KP dipilih oleh koordinator KP dengan menyesuaikan load pembimbingan dosen, kecuali ada rekomendasi khusus dari dosen ybs Pengalokasian dilakukan secara batch operation Di lokasi KP"
+Berapa lama durasi KP?,Lama KP: 1-2 bulan dengan hitungan kerja part time
+Berapa lama untuk bisa login setelah akun diaktivasi oleh pustakawan?,paling lama 20 menit
+apa itu deposit item process?,Deposit item adalah proses terakhir untuk mengirimkan file anda ke sistem administrator. Klik “Deposit Item Now”.
+Kapan status KP akan menjadi FINISHED?,Jika nilai telah diterima koordinator KP
+Kapan paling lambat menyerahkan laporan KP?,paling lambat 1 bulan terhitung mulai tanggal selesainya kerja praktek di perusahaan
+Bagaimana cara mengupload file tugas akhir?,Daftar Akun / Create Repository Account Login Repository / Login into Repository (Setelah diaktivasi / after activated by librarian) Upload File KP / Upload Project Report Isi Metadata / Fill out Metadata Entries Tentukan Subyek / Determine Thesis Subjects Deposit Item / Deposit Item Process Repository.its.ac.id Login Panduan / Guidance Daftar Akun / Create Account WEBSITE REPOSITORY REPOSITORY WEBSITE
+Apa yang harus dilakukan jika belum bisa login ke repository setelah 20 menit aktivasi akun?,"Hubungi administrator melalui opsi ""About ITS Repository"" jika belum bisa login setelah lebih dari 20 menit."
+Format apa saja yang diharapkan untuk file PDF yang diunggah ke repository?,File PDF harus tanpa watermark dan berisi semua isi TA/Tesis/Disertasi dari cover sampai lampiran.
+Apa yang perlu dipastikan sebelum mengunggah lembar pengesahan ke repository?,Pastikan lembar pengesahan sudah ditandatangani dosen pembimbing dan sudah diberi stempel departemen.
+Bagaimana format nama file untuk laporan proyek dengan satu pengarang?,"Format nama file untuk laporan proyek dengan satu pengarang adalah NRP-Project_Report, contohnya 04111060010007-Project_Report."
+agaimana format nama file untuk laporan proyek dengan dua pengarang atau lebih?,"Format nama file untuk laporan proyek dengan dua pengarang adalah NRP1_NRP2-Project_Report, contohnya 04111060010007_04111060010111-Project_Report."
+"Apa yang perlu diisi pada kolom ""Corporate Creators"" saat mengisi metadata?","Isi kolom ""Corporate Creators"" dengan nama perusahaan yang berkontribusi dalam penulisan laporan proyek."
+"Apa yang harus diisi dalam bagian ""Divisions"" saat mengisi metadata?","Pilih Fakultas terlebih dahulu, lalu departemen dan jenjang Pendidikan yang sesuai dengan studi."
+Bagaimana cara menentukan subyek tesis saat mengisi metadata? ,"Ketikkan subyek yang sesuai dengan isi TA pada kolom yang tersedia, kemudian klik ""Search"", lalu klik “Add” pada subyek yang cocok."
+Berapa jumlah kredit mata kuliah Kerja Praktik (KP) di Departemen Teknik Informatika ITS? ,2 sks
+Apa yang harus dilakukan setelah surat pengantar KP dikeluarkan oleh departemen?,"Surat pengantar KP dikirimkan ke instansi penerima KP dan jika balasan persetujuan sudah diterima, unggah ke MONKP sehingga status KP menjadi CONFIRMED."

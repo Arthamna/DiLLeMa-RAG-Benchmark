@@ -1,0 +1,78 @@
+Anno Accademico 2024/2025
+Laurea in STUDI FILOSOFICI E STORICI
+Curriculum: STUDI FILOSOFICI
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=497
+---------
+Classe di Laurea in Filosofia (L-5)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Umanistiche
+Codice corso 2184
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01340	ANTROPOLOGIA CULTURALE	MANNIA	6	1° semestre	M-DEA/01
+04062	ISTITUZIONI DI FILOSOFIA	CICATELLO	12	1° semestre	M-FIL/01
+05621	PEDAGOGIA GENERALE E SOCIALE	MALTESE	6	1° semestre	M-PED/01
+07051	STORIA ECONOMICA E SOCIALE DELL'ETA' MODERNA	CANCILA	6	1° semestre	M-STO/02
+20692	COMPETENZE LINGUISTICHE IN INGLESE EQUIPARABILI AL LIVELLO B1		6	1° semestre	
+06864	STORIA DELLA FILOSOFIA	LE MOLI	12	2° semestre	M-FIL/06
+08761	STORIA CONTEMPORANEA	COCO	12	2° semestre	M-STO/04
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03202	FILOSOFIA DEL LINGUAGGIO	CARAPEZZA	12	1° semestre	M-FIL/05
+06870	STORIA DELLA FILOSOFIA ANTICA	LASPIA	6	1° semestre	M-FIL/07
+07068	STORIA MEDIEVALE		6	1° semestre	M-STO/01
+03089	ESTETICA	MAGGIORE	12	2° semestre	M-FIL/04
+06881	STORIA DELLA FILOSOFIA MEDIEVALE	PANARELLI	6	2° semestre	M-FIL/08
+07079	STORIA MODERNA	FAZIO	6	2° semestre	M-STO/02
+	Gruppo di attiv. form. opzionali III		6		
+	Gruppo di attiv. form. opzionali IV		6		
+	Gruppo di attiv. form. opzionali V		3		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03226	FILOSOFIA MORALE	PUGLIESE	12	1° semestre	M-FIL/03
+14116	ABILITA' INFORMATICHE E TELEMATICHE	MAZZOLA	3	1° semestre	
+16852	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO 2		3	1° semestre	
+05917	PROVA FINALE		3	2° semestre	
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		12		
+	Attiv. form. a scelta dello studente		18		
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03992	INTELLIGENZA ARTIFICIALE		6	1° semestre	ING-INF/05
+04786	LOGICA	OLIVERI	6	1° semestre	M-FIL/02
+19238	ISTITUZIONI DI FILOSOFIA DELLA SCIENZA	LICATA	6	1° semestre	M-FIL/02
+23725	FILOSOFIA E DIFFERENZA DI GENERE	CALDARONE	6	1° semestre	M-FIL/01
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03219	FILOSOFIA DELLE RELIGIONI	LUPO	6	1° semestre	M-FIL/01
+06885	STORIA DELLA FILOSOFIA MODERNA	ROSCIGLIONE	6	1° semestre	M-FIL/06
+07807	FILOSOFIA POLITICA	PALUMBO	6	1° semestre	SPS/01
+23389	FILOSOFIA DELLA TECNICA	LE MOLI	6	1° semestre	M-FIL/06
+03037	ERMENEUTICA FILOSOFICA	AGNELLO	6	2° semestre	M-FIL/01
+03216	FILOSOFIA DELLA STORIA	MAZZOCCHIO	6	2° semestre	M-FIL/03
+06875	STORIA DELLA FILOSOFIA CONTEMPORANEA	DI PAOLA	6	2° semestre	M-FIL/06
+23724	METODOLOGIA DELL'INSEGNAMENTO DELLA STORIA	VERRI	6	2° semestre	M-STO/04
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03604	GEOGRAFIA	GIUBILARO	6	1° semestre	M-GGR/01
+06098	PSICOLOGIA GENERALE	SMIRNI	6	1° semestre	M-PSI/01
+06557	SOCIOLOGIA DELLA COMUNICAZIONE	RIZZUTO	6	2° semestre	SPS/08
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07061	STORIA GRECA	SAMMARTANO	6	1° semestre	L-ANT/02
+07088	STORIA ROMANA	CASELLA	6	2° semestre	L-ANT/03
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		3	1° semestre	
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		3	1° semestre	
+

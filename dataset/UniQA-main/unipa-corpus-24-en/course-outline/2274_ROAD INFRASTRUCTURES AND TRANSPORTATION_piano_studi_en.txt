@@ -1,0 +1,45 @@
+Academic year 2024/2025
+Master's Degree (MSc) on CIVIL ENGINEERING
+Curriculum: ROAD INFRASTRUCTURES AND TRANSPORTATION
+For more information visit http://www.unipa.it/struttura.html?id=2257
+---------
+Class of Master's Degree (MSc) on Civil engineering (LM-23)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with Gdansk University of Technology, Gdansk (POLAND)
+Course Code 2274
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01122	AQUEDUCTS AND SEWERAGES	NASELLO	9	1° semestre	ICAR/02
+18633	TOWN PLANNING	BONAFEDE	6	1° semestre	ICAR/20
+21621	VIBRATIONS (in english)	PIRROTTA	9	1° semestre	ICAR/08
+13465	ROAD, RAILROAD AND AIRPORT TECHNIQUE	CELAURO	9	2° semestre	ICAR/04
+21620	DESIGN OF STEEL AND CONCRETE STRUCTURES (in english)	CAMPIONE	9	2° semestre	ICAR/09
+21866	SANITARY AND ENVIRONMENTAL ENGINEERING (in english)	MANNINA	6	2° semestre	ICAR/03
+22245	ADVANCED GEOMECHANICS (in english)	FERRARI	9	2° semestre	ICAR/07
+	Free subjects (suggested)		9		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+13472	MANAGEMENT OF ROAD INFRASTRUCTURES	DI MINO	6	1° semestre	ICAR/04
+17625	PLANTS AND YARDS FOR CIVIL WORKS	DI MINO	6	1° semestre	ICAR/04
+22243	TRANSPORT PLANNING AND DESIGN	MIGLIORE	9	1° semestre	ICAR/05
+05917	FINAL EXAMINATION		9	2° semestre	
+22242	SMART ROAD, RAILWAYS AND AIRPORT (in english)	LO PRESTI	9	2° semestre	ICAR/04
+	Stage and others		6		
+	Free subjects (suggested) II		9		
+
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22316	BIM FOR STRUCTURES AND INFRASTRUCTURES	INZERILLO	6	1° semestre	ICAR/17
+22315	PRINCIPLES OF APPLIED CIRCULAR ECONOMICS FOR CIVIL BUILDING ENGINEERING	DI MINO	6	2° semestre	ICAR/04
+
+Free subjects (suggested) II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07446	THEORY AND TECHNIQUE OF CIRCULATION	SALVO	9	1° semestre	ICAR/05
+22241	SUSTAINABLE TRANSPORT INFRASTRUCTURE (in english)	LO PRESTI	6	2° semestre	ICAR/04
+

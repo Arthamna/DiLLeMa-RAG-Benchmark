@@ -1,0 +1,51 @@
+Anno Accademico 2024/2025
+Laurea magistrale in ELECTRONICS ENGINEERING
+Curriculum: MODERN ELECTRONICS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1874
+---------
+Classe di Laurea magistrale in Ingegneria elettronica (LM-29)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con UNIVERZITA PARDUBICE, Pardubice (CZECH REPUBLIC)
+Codice corso 2234
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19700	HETEROSTRUCTURE DEVICES (in inglese)	CUSUMANO	6	1° semestre	ING-INF/01
+20516	APPLIED AND INDUSTRIAL ELECTRONICS C.I. (in inglese)	LULLO	15	1° semestre	
+	LABORATORY OF APPLIED AND INDUSTRIAL ELECTRONICS (in inglese)	SCIRE'	3		ING-INF/01
+	APPLIED ELECTRONICS (in inglese)	LULLO	6		ING-INF/01
+	INDUSTRIAL ELECTRONICS (in inglese)	VITALE	6		ING-INF/01
+20521	OPTOELECTRONICS (in inglese)	BUSACCA	6	1° semestre	ING-INF/01
+20513	ELECTRONIC PROGRAMMABLE SYSTEMS (in inglese)	GIACONIA	9	2° semestre	ING-INF/01
+20515	ELECTRONIC INSTRUMENTS AND MEASUREMENTS FOR AUTOMATION AND TELECOMM. (in inglese)	ARTALE	9	2° semestre	ING-INF/07
+20525	MICROWAVE ELECTRONICS C.I. (in inglese)	STIVALA	12	2° semestre	
+	MICROWAVE COMPONENTS (in inglese)	STIVALA	6		ING-INF/01
+	MICROWAVE CIRCUITS (in inglese)	STIVALA	6		ING-INF/01
+24179	INTEGRATED OPTICS (in inglese)		6	2° semestre	ING-INF/02
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19698	MICROWAVE INSTRUMENTS AND MEASUREMENTS (in inglese)	LIVRERI	6	1° semestre	ING-INF/01
+20519	NANOELECTRONICS (in inglese)	MACALUSO	6	1° semestre	ING-INF/01
+05917	PROVA FINALE		24	2° semestre	
+	Stage, Tirocini, Altro		6		
+	Attiv. form. a scelta dello studente (consigliate)		9		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19641	PHOTOVOLTAIC DEVICES AND TECHNOLOGIES (in inglese)	CRUPI	6	1° semestre	ING-INF/01
+20512	OPTOELECTRONIC DEVICES (in inglese)	MOSCA	6	1° semestre	ING-INF/01
+17878	MACHINE LEARNING	TINNIRELLO	6	2° semestre	ING-INF/03
+24180	MODERN PHYSICS FOR ENGINEERS (in inglese)	BASILE	6	2° semestre	FIS/07
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01751	CAMPI ELETTROMAGNETICI	CINO	9	1° semestre	ING-INF/02
+21984	ELECTRIC AND ELECTRONIC MEASUREMENTS (in inglese)	CATALIOTTI	9	1° semestre	ING-INF/07
+17883	ELETTRONICA DEI SISTEMI EMBEDDED	GIACONIA	6	2° semestre	ING-INF/01
+
+

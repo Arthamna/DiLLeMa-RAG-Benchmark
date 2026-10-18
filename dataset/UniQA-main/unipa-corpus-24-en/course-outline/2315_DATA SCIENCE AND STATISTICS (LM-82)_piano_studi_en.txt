@@ -1,0 +1,73 @@
+Academic year 2024/2025
+Master's Degree (MSc) on STATISTICS AND DATA SCIENCE
+Curriculum: DATA SCIENCE AND STATISTICS (LM-82)
+For more information visit http://www.unipa.it/struttura.html?id=2704
+---------
+Class of Master's Degree (MSc) on Statistics (LM-82 R)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Economics and statistical Sciences
+Course Code 2315
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22216	BIG DATA - INTEGRATED COURSE (in english)	PIRRONE	12	Yearly	
+	BIG DATA ANALYTICS (in english)	PIRRONE	6		ING-INF/05
+	BIG DATA TOOLS (in english)	LA CASCIA	6		ING-INF/05
+23843	DATA PROTECTION (in english)	PIRAINO	6	1° semestre	IUS/01
+23844	DATA AND TEXT MINING C.I. (in english)	PLAIA	9	1° semestre	
+	DATA MINING (in english)	PLAIA	6		SECS-S/01
+	TEXT MINING (in english)	PLAIA	3		SECS-S/01
+23845	MACHINE LEARNING AND STATISTICAL MODELS C.I. (in english)	CHIODI	12	1° semestre	
+	STATISTICAL MODELS (in english)	CHIODI	6		SECS-S/01
+	STATISTICAL MACHINE LEARNING (in english)	SOTTILE	6		SECS-S/01
+23161	ADVANCED SURVIVAL ANALYSIS (in english)	ATTANASIO	9	2° semestre	SECS-S/05
+23815	CLOUD COMPUTING (in english)	GALLO	9	2° semestre	ING-INF/05
+	Optional subjects		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23941	PERFORMANCE STATISTICS AND STATISTICAL MODELS IN FINANCE C.I. (in english)	CRACOLICI	9	1° semestre	
+	STATISTICAL MODELS FOR VOLATILITY IN FINANCE (in english)	VASSALLO	6		SECS-S/03
+	PERFORMANCE MANAGEMENT STATISTICS (in english)	CRACOLICI	3		SECS-S/03
+23953	NETWORKS AND HIGH DIMENSIONAL DATA ANALYSIS C.I. (in english)	TUMMINELLO	15	1° semestre	
+	STATISTICAL LEARNING FOR HIGH DIMENSIONAL DATA (in english)	AUGUGLIARO	6		SECS-S/01
+	NETWORKS AND OPTIMIZATION (in english)	TUMMINELLO	9		SECS-S/06
+16047	THESIS (in english)		12	2° semestre	
+	Optional subjects II		6		
+	Optional subjects III		6		
+	Free subjects (suggested)		9		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+16439	STOCHASTIC PROCESSES (in english)	ADELFIO	6	1° semestre	SECS-S/01
+21224	NON PARAMETRIC STATISTICS (in english)	MUGGEO	6	2° semestre	SECS-S/01
+21225	BAYESIAN STATISTICS (in english)	ABBRUZZO	6	2° semestre	SECS-S/01
+22383	MODELS FOR CATEGORICAL DATA (in english)	SCIANDRA	6	2° semestre	SECS-S/01
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+15506	RISK MANAGEMENT (in english)	SCANNELLA	6	1° semestre	SECS-P/11
+18122	TOPICS IN MACRO AND FINANCIAL ECONOMETRICS (in english)	CIPOLLINI	6	1° semestre	SECS-P/05
+19220	CYBERSECURITY (in english)		6	1° semestre	ING-INF/05
+20526	INTERNET OF THINGS (in english)		6	1° semestre	ING-INF/03
+23828	DATA SCIENCE FOR MARKETING DECISIONS (in english)	CRACOLICI	6	1° semestre	SECS-S/03
+23952	SURVEY SAMPLING METHODS IN SOCIAL SCIENCES (in english)	ATTANASIO	6	1° semestre	SECS-S/05
+15507	MATHEMATICS FOR ECONOMICS AND FINANCE (in english)	CONSIGLIO	6	2° semestre	SECS-S/06
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+08627	INTERNSHIP		3	2° semestre	SECS-S/01
+11028	INTERNSHIP 6 CREDITS		6	2° semestre	SECS-S/01
+11029	INTERNSHIP 9 CREDITS		9	2° semestre	SECS-S/01
+23944	STATISTICAL CONSULTANCY (in english)		3	2° semestre	SECS-S/01
+23945	STATISTICAL CONSULTANCY 1 (in english)		6	2° semestre	SECS-S/01
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+06634	INTERNSHIP		6	2° semestre	
+11033	INTERNSHIP 3 CREDITS		3	2° semestre	
+23942	STATISTICAL CONSULTANCY 3 (in english)		3	2° semestre	
+23943	STATISTICAL CONSULTANCY 2 (in english)		6	2° semestre	
+

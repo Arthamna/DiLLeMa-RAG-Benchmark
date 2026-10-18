@@ -1,0 +1,58 @@
+Academic year 2024/2025
+Master's Degree (MSc) on HISTORY, ANTHROPOLOGY AND GEOGRAPHY
+Curriculum: HISTORIC
+For more information visit http://www.unipa.it/struttura.html?id=2718
+---------
+Class of Master's Degree (MSc) on History (LM-84)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Cultures and Societies
+Course Code 2325
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+08893	CULTURAL GEOGRAPHY	DE SPUCHES	12	1° semestre	M-GGR/01
+21036	HISTORY AND HISTORIOGRAPHY OF MEDIEVAL EUROPE	CORRAO	6	1° semestre	M-STO/01
+24152	CULTURAL AND SOCIAL ANTHROPOLOGY	D'AGOSTINO	6	1° semestre	M-DEA/01
+24154	SOURCES AND METHODS OF HISTORICAL RESEARCH	CANCILA	6	1° semestre	M-STO/02
+01479	ARCHIVISTICS	MANALI	6	2° semestre	M-STO/08
+22530	DIGITAL HUMANITIES WORKSHOP	SABBATINI	3	2° semestre	
+24178	ONLINE BIBLIOGRAPHY AND SOCIAL RESEARCH . WORKSHOP	SABBATINI	3	2° semestre	
+	Optional subjects		6		
+	Optional subjects II		6		
+	Optional subjects III		6		
+	Free subjects		12		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+00997	ECONOMIC HISTORY	ROSSI	6	1° semestre	SECS-P/12
+14184	INTERNSHIP		6	1° semestre	
+18698	ENGLISH LANGUAGE - LEVEL B2		6	1° semestre	
+05917	FINAL EXAMINATION		18	2° semestre	
+24148	HISTORY OF CHIRCH AND RELIGIOUS MOVEMENTS	D'AVENIA	6	2° semestre	M-STO/07
+	Optional subjects IV		6		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+17021	HISTORY OF MEDIEVAL MEDITERRANEAN	SARDINA	6	1° semestre	M-STO/01
+17024	HISTORY OF MODERN MEDITERRANEAN	FAVARO'	6	1° semestre	M-STO/02
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+24149	LATIN HISTORIOGRAPHICAL TEXTS OF THE MIDDLE AGES AND HUMANISM	BISANTI	6	2° semestre	L-FIL-LET/08
+24150	CULTURAL HISTORY OF MEDIEVAL ISLAM	ABRAM	6	2° semestre	L-OR/10
+24151	EXEGESIS AND EDITING OF MEDIEVAL HISTORICAL SOURCES	RUSSO	6	2° semestre	M-STO/01
+24158	BYZANTINE CIVILISATION: SOURCES AND HISTORIOGRAPHY	ROGNONI	6	2° semestre	L-FIL-LET/07
+
+Optional subjects IV
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02346	HISTORY  TEACHING METHODOLOGY	PALERMO	6	1° semestre	M-STO/02
+06715	CONTEMPORARY HISTORY	PATTI	6	1° semestre	M-STO/04
+19703	HISTORY OF POLITICAL THOUGHT AND INSTITUTIONS	MARSALA	6	1° semestre	SPS/02
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21043	CULTURAL HISTORY OF MODERN EUROPE	CUSUMANO	6	2° semestre	M-STO/02
+24177	CULTURAL HISTORY OF THE MIDDLE AGES	SANTORO	6	2° semestre	M-STO/01
+

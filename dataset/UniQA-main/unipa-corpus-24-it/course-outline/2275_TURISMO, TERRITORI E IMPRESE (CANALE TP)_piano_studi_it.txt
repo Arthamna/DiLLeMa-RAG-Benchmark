@@ -1,0 +1,75 @@
+Anno Accademico 2024/2025
+Laurea in TURISMO, TERRITORI E IMPRESE
+Curriculum: TURISMO, TERRITORI E IMPRESE (CANALE TP)
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2258
+---------
+Classe di Laurea in Scienze del turismo (L-15)
+Durata 3 anni
+Sede TRAPANI
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Codice corso 2275
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+11254	ISTITUZIONI DI DIRITTO C.I.	MAZZAMUTO	12	Annuale	
+	DIRITTO PRIVATO	MAZZAMUTO	6		IUS/01
+	DIRITTO PUBBLICO		6		IUS/09
+19209	INFORMATICA ED ELEMENTI DI MATEMATICA	ANDRIA	6	1° semestre	SECS-S/06
+22489	ELEMENTI DI MICRO E MACROECONOMIA	FAZIO	9	1° semestre	SECS-P/06
+23390	SOCIOLOGIA, ISTITUZIONI E ORGANIZZAZIONI DEL TURISMO C.I.	CIZICENO	12	1° semestre	
+	SOCIOLOGIA DEL TURISMO	CIZICENO	8		SPS/07
+	ISTITUZIONI E ORGANIZZAZIONI TURISTICHE	ALAGNA	4		SPS/03
+04677	LINGUA INGLESE (in inglese)		8	2° semestre	L-LIN/12
+22488	ECONOMIA DEL TURISMO E DEI BENI CULTURALI	RUGGIERI	6	2° semestre	SECS-P/06
+	Gruppo di attiv. form. opzionali		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+00294	ECONOMIA AZIENDALE	QUARCHIONI	9	1° semestre	SECS-P/07
+06644	STATISTICA	RUGGIERI	6	1° semestre	SECS-S/01
+11261	DIRITTO DEI TRASPORTI E DEL TURISMO	ROMANA	8	1° semestre	IUS/06
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		12	1° semestre	
+03610	GEOGRAFIA C.I.	MERCATANTI	9	2° semestre	
+	GEOGRAFIA DEL TURISMO	MERCATANTI	6		M-GGR/01
+	PAESAGGI E INTERCULTURALITÀ		3		M-GGR/01
+06664	STATISTICA DEL TURISMO	DE CANTIS	6	2° semestre	SECS-S/05
+20490	ITINERARI ARCHEOLOGICI		8	2° semestre	L-ANT/07
+23779	PROGETTAZIONE E GESTIONE DEGLI EVENTI		8	2° semestre	SECS-P/08
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+00314	ECONOMIA E GESTIONE DELLE IMPRESE TURISTICHE	PICONE	6	1° semestre	SECS-P/08
+06672	STATISTICA ECONOMICA	SCIORTINO	6	1° semestre	SECS-S/03
+05917	PROVA FINALE		3	2° semestre	
+15853	STORIA DELLE ARTI DECORATIVE		8	2° semestre	L-ART/02
+	Gruppo di attiv. form. opzionali II		6		
+	Gruppo di attiv. form. opzionali III		6		
+	Gruppo di attiv. form. opzionali IV		8		
+	Attiv. form. a scelta dello studente (consigliate)		12		
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07992	ECONOMIA DELL'INDUSTRIA TURISTICA	RUGGIERI	6	2° semestre	SECS-P/06
+22532	POLITICA ECONOMICA E DEL TURISMO	CUSIMANO	6	2° semestre	SECS-P/02
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04664	LINGUA FRANCESE (in francese)		6	2° semestre	
+04718	LINGUA SPAGNOLA (in spagnolo)		6	2° semestre	
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02396	DIRITTO AMMINISTRATIVO	RAGUSA	6	1° semestre	IUS/10
+19205	DIRITTO PRIVATO COMPARATO ED EUROPEO	PETRUSO	6	1° semestre	IUS/02
+20478	DIRITTO DEI BENI CULTURALI E DELL'AMBIENTE	COLLETTI	6	1° semestre	IUS/01
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+00932	STORIA DELL'ARTE MODERNA		6	1° semestre	L-ART/02
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+24168	ECONOMIA DEL TURISMO RURALE		8	1° semestre	AGR/01
+10183	TURISMO SOSTENIBILE	LO BRUTTO	8	2° semestre	BIO/05
+

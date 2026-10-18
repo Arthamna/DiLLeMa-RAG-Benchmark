@@ -1,0 +1,7 @@
+.env
+venv
+app/model/modules/*/**
+__pycache__
+app/embeddings/*/**
+pretrained
+local_xnli_dataset

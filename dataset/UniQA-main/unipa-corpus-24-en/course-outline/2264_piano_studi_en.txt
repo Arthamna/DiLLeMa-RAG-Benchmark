@@ -1,0 +1,56 @@
+Academic year 2024/2025
+Master's Degree (MSc) on NEUROSCIENCE
+For more information visit http://www.unipa.it/struttura.html?id=2032
+---------
+Class of Master's Degree (MSc) on Biology (LM-6)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Biomedicine, Neurosciences and Advanced Diagnostics
+Course Code 2264
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21031	BIOCHEMISTRY AND PHYSIOLOGY - INTEGRATED COURSE (in english)	EMANUELE	11	1° semestre	
+	PHYSIOLOGY (in english)	GIGLIA	5		BIO/09
+	BIOCHEMISTRY (in english)	EMANUELE	6		BIO/10
+21032	CELL BIOLOGY AND ANATOMY - INTEGRATED COURSE (in english)	SZYCHLINSKA	12	1° semestre	
+	CELL BIOLOGY (in english)		6		BIO/13
+	HUMAN ANATOMY (in english)	SZYCHLINSKA	6		BIO/16
+21877	NEUROANATOMY, NERVOUS ORGANOGENESIS, NEUROPHYSIOLOGY - INTEGRATED COURSE	SARDO	10	2° semestre	
+	NEUROANATOMY AND NERVOUS ORGANOGENESIS	DI FELICE	5		BIO/16
+	NEUROPHYSIOLOGY (in english)	SARDO	5		BIO/09
+21878	NEUROPATHOLOGY AND NEUROLOGY - INTEGRATED COURSE	DIELI	9	2° semestre	
+	NEUROLOGY (in english)	MONASTERO	3		MED/26
+	NEUROPATHOLOGY (in english)	DIELI	6		MED/04
+22014	INFORMATION PROCESSING SYSTEMS IN NEUROSCIENCE (in english)		6	2° semestre	ING-INF/05
+	Other language skills		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21013	INTERNSHIP AND ORIENTATION TRAINING (in english)		14	1° semestre	
+21027	CLINICAL NEUROPSYCHIATRY AND REHABILITATION TECHNIQUES - INTEGRATED COURSE (in english)	LA CASCIA	9	1° semestre	
+	PSYCHIATRY (in english)	QUATTRONE	3		MED/25
+	CLINICAL PSYCHOLOGY (in english)	MANIACI	3		M-PSI/08
+	NEURO-PSYCHIATRIC AND REHABILITATION TECHNIQUES (in english)	LA CASCIA	3		MED/48
+21876	PSYCOBIOLOGY AND CLINICAL BIOCHEMISTRY - INTEGRATED COURSE	OLIVERI	8	1° semestre	
+	CLINICAL BIOCHEMISTRY (in english)	BIVONA	5		BIO/12
+	PSYCHOBIOLOGY (in english)	OLIVERI	3		M-PSI/02
+22012	NEUROPHARMACOLOGY	CANNIZZARO	5	1° semestre	BIO/14
+22713	MEDICAL ADVANCED DIAGNOSTICS IN NEUROSCIENCE - INTEGRATED COURSE (in english)	GAGLIARDO	7	1° semestre	
+	NEURORADIOLOGY (in english)	GAGLIARDO	4		MED/37
+	APPLIED MEDICAL TECHNICAL SCIENCE (in english)	LO RE	3		MED/50
+20658	FINAL THESIS (in english)		12	2° semestre	
+	Subjects of student’s choice		8		
+	Other training activities		3		
+
+Other language skills
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22711	ENGLISH LANGUAGE LEVEL C1		6	1° semestre	
+22712	ITALIAN LANGUAGE LEVEL A2 (in english)		6	1° semestre	
+
+Other training activities
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22709	OTHER EDUCATIONAL ACTIVITIES (in english)		3	1° semestre	
+22710	ITALIAN LANGUAGE LEVEL A1		3	1° semestre	
+

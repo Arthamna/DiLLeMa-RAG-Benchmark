@@ -1,0 +1,67 @@
+Anno Accademico 2024/2025
+Laurea magistrale in ITALIANISTICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1628
+---------
+Classe di Laurea magistrale in Filologia moderna (LM-14)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Umanistiche
+Codice corso 2206
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04438	LETTERATURA ITALIANA	CARTA	12	1° semestre	
+	LETTERATURA ITALIANA D'ETÀ MEDIEVALE	CARTA	6		L-FIL-LET/10
+	LETTERATURA ITALIANA DI ETÀ RINASCIMENTALE	JOSSA	6		L-FIL-LET/10
+20700	LAB LINGUA INGLESE - COMPETENZE EQUIPARABILI LIVELLO B2		6	1° semestre	
+16324	DIDATTICA DELLA LINGUA ITALIANA	AMENTA	6	2° semestre	L-FIL-LET/12
+18543	DIDATTICA DELLA LETTERATURA ITALIANA	CARTA	6	2° semestre	L-FIL-LET/10
+	Gruppo di attiv. form. opzionali		9		
+	Gruppo di attiv. form. opzionali II		9		
+	Gruppo di attiv. form. opzionali III		9		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05917	PROVA FINALE		21	1° semestre	
+07553	TIROCINIO		3	1° semestre	
+19063	TEMI E FORME DELLA LETTERATURA ITALIANA CONTEMPORANEA	LA MONACA	9	2° semestre	L-FIL-LET/11
+	Gruppo di attiv. form. opzionali IV		6		
+	Gruppo di attiv. form. opzionali V		9		
+	Gruppo di attiv. form. opzionali VI		6		
+	Attiv. form. a scelta dello studente		9		
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20495	DIALETTOLOGIA: METODI E APPLICAZIONI		6	1° semestre	L-FIL-LET/12
+08902	LETTERATURA ITALIANA MODERNA	DI GESU'	6	2° semestre	L-FIL-LET/10
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04782	LINGUISTICA TEORICA	BARTOLOTTA	9	1° semestre	L-LIN/01
+13316	LINGUA E LETTERATURA LATINA (SEMINARIO)	LANDOLFI	9	1° semestre	L-FIL-LET/04
+19121	METODI E TEMI DELLA COMPARATISTICA LETTERARIA	RESTUCCIA	9	1° semestre	L-FIL-LET/14
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06912	STORIA DELLA LINGUA ITALIANA	CASTIGLIONE	9	1° semestre	L-FIL-LET/12
+20496	TEORIE E METODI DELL'EDIZIONE DIGITALE	CASTELLO	9	2° semestre	L-FIL-LET/11
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19017	FORME E GERARCHIE SOCIALI XIII-XVII SECOLO	MINEO	9	1° semestre	M-STO/01
+19018	POLITICHE E CONFLITTI XVIII-XX SECOLO	DI FIGLIA	9	2° semestre	M-STO/04
+22678	STORIA DELLE CHIESE E DEI MOVIMENTI RELIGIOSI XIII-XIX SECOLO	D'AVENIA	9	2° semestre	M-STO/02
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03193	FILOLOGIA ROMANZA	CARAPEZZA	9	1° semestre	L-FIL-LET/09
+19020	LINGUE E SOCIETÀ	D'AGOSTINO	9	1° semestre	L-FIL-LET/12
+
+Gruppo di attiv. form. opzionali VI
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+08521	TIROCINIO III		3	1° semestre	
+08611	TIROCINIO II		3	1° semestre	
+14339	ALTRE CONOS. UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		3	1° semestre	
+16852	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO 2		3	1° semestre	
+

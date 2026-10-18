@@ -1,0 +1,80 @@
+Anno Accademico 2024/2025
+Laurea magistrale in DIGITAL HUMANITIES PER L'INDUSTRIA CULTURALE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2564
+---------
+Classe di Laurea magistrale in Metodologie informatiche per le discipline umanistiche (LM-43)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Umanistiche
+Codice corso 2299
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il progetto culturale del Corso di Laurea prevede un’ampia e complementare formazione umanistica e informatica in grado di rendere i laureati magistrali competitivi in attività quali:
+-ricercare ed elaborare, in forma professionale e comunicativa, contenuti di carattere informatico, linguistico, filologico, letterario, artistico, archivistico, giuridico, storico e filosofico;
+-esercitare competenze teoriche, critiche e pratiche sulle forme e le strutture narrative in campo audiovisivo, sulle manipolazioni e il riutilizzo delle immagini in diversi contesti mediali, nonché sulle dinamiche di transizione degli oggetti audiovisivi tra media differenti;
+- realizzare prodotti multimediali e siti web;
+- operare nel campo del trattamento automatico del linguaggio;
+- valorizzare il patrimonio culturale delle Biblioteche, degli Archivi, dei Musei;
+- coordinare le attività digitali nella Scuola e nella Pubblica Amministrazione.
+Il progetto formativo permette, attraverso l’opzione individuale fra le materie affini e le materie a scelta, di acquisire i fondamenti di una variegata formazione informatico-umanistica, tale da non limitare le competenze professionali dei laureati a prospettive legate a un solo ambito professionale o a un solo paese europeo. Il percorso di studi viene dunque realizzato sotto forma di corsi, attività di laboratorio, seminari, stages e tirocini di formazione professionale, nella forma di attività condotte da remoto (smart working, project work e simili) che abbracciano più branche scientifiche e possono svolgersi anche all'estero, funzionali ad acquisire consapevolezza dei contesti occupazionali e delle professioni e ad orientare la scelta dei futuri impegni di studio e di lavoro. L’istituzione di tirocini obbligatori presso aziende, enti o centri di ricerca o di servizi consente di mettere in pratica le competenze acquisite.
+Il Corso si articola dunque sui seguenti ambiti formativi principali:
+a) Ambito informatico in cui si affronta lo studio dei diversi linguaggi di programmazione informatica, dall’interprete Python ultima versione nativa, con Idle integrato ad uno dei Content Management Systems quale WordPress o Jumla in locale tramite piattaforma Xampp, con l’obiettivo di fornire agli studenti una sicura padronanza dei linguaggi di programmazione informatica finalizzati alla produzione culturale e di renderli capaci di gestire il sistema operativo nelle sue funzioni base e i pacchetti applicativi software nelle fasi di installazione, ripristino e uso di file.
+b) Ambito linguistico- letterario in cui si affronta lo studio di temi e forme della letteratura italiana e della letteratura italiana contemporanea con affondi esemplari su movimenti, poetiche, autori e l’analisi dei testi e delle principali interpretazioni critiche. Nella prospettiva dell’informatica umanistica, si illustrano le principali risorse digitali esistenti per lo studio e la ricerca nell’ambito della disciplina con l’obiettivo di porre gli studenti nelle condizioni di avvalersene con proficuità. Ruolo specifico riveste lo studio delle forme testuali della tradizione novecentesca e delle loro nuove configurazioni nell’era della 'rivoluzione digitale' che prospettano l‘inedita frontiera della filologia dei files. L’obiettivo si configura nel porre gli studenti nelle condizioni di utilizzare a livello avanzato le metodologie dell’analisi critica, linguistica e filologica e di realizzare attraverso gli strumenti informatici edizioni critiche digitali. In ambito linguistico si affronterà lo studio delle nozioni di 'ipotestualità' e 'frammentarietà' e l’acquisizione degli strumenti per realizzare i contenuti del digital storytelling con l’obiettivo di saperne orchestrare le varie declinazioni (timeline, story mapping, transmedia storytelling, visual e video storytelling). Ad esso si affiancherà lo studio dei principi della linguistica distribuzionale, delle reti neurali, degli embeddings, del deep learning, fino all’analisi degli attuali Large Language Model o modelli linguistici computazionali con l’obiettivo di inquadrare problemi trattabili con i Big Data (estrazione di informazioni da testi, risposta automatica a domande, chat bot) e di risolverli tramite il design e lo sviluppo di soluzioni Natural Language Processing (NLP).
+d) Ambito storico in cui si affronta lo studio del contesto storico, politico e teorico in cui – in età contemporanea – l’opinione pubblica è nata, si è sviluppata e si è trasformata con l’obiettivo di porre gli studenti nelle condizioni di riconoscere i differenti concetti di opinione pubblica ponendoli in relazione con le varie fasi storiche in cui sono apparsi, individuandone le linee di continuità e di frattura e di orientarsi consapevolmente all’interno della sfera pubblica odierna, caratterizzata su scala globale dalla crisi della democrazia e dalla pervasività dei nuovi media.
+e) Ambito giuridico in cui si affronta lo studio delle regole e dei principi fondamentali del diritto digitale con l’obiettivo di porre gli studenti nelle condizioni di orientarsi nel sistema di tale disciplina e di padroneggiarne gli strumenti interpretativi.
+f) Ambito delle discipline archivistiche e artistiche in cui si affronta lo studio degli ambienti digitali di base o complessi (big data), delle trasformazioni e degli impatti che la rete ha sul modo di interagire e di gestire informazioni. Si studiano gli sviluppi museologici dal secondo Novecento fino ai giorni nostri, in rapporto a musei, gallerie e archivi d’arte dell'Occidente europeo e nordamericano.
+L’obiettivo si configura nel porre gli studenti nelle condizioni di impostare e realizzare banche dati e archivi digitali, valorizzare il patrimonio culturale delle Biblioteche, degli Archivi, dei Musei e coordinare le attività digitali nella Scuola e nella Pubblica Amministrazione. In questo ambito disciplinare si affronta inoltre lo studio delle manipolazioni e del riutilizzo delle immagini in diversi contesti mediali, nonché delle dinamiche di transizione degli oggetti audiovisivi tra media differenti, con l’obiettivo di porre gli studenti nelle condizioni di maneggiare un ecosistema digitale integrato.
+g) Ambito filosofico - pedagogico incentrato sullo studio delle strutture percettive traducibili in parametri per la comunicazione con i nuovi media; del rapporto tra linguaggio e comunicazione nell’era digitale; delle estensioni della didattica digitale al mondo dell’edutainment, dei serious game. L’obiettivo si configura nel porre gli studenti in condizione di spendere professionalmente linguaggi e metalinguaggi digitali nella elaborazione e nel trattamento di testi e di altri oggetti culturali.
+Un laboratorio di editoria digitale curriculare si rende funzionale a far acquisire competenze di base ed avanzate nell’elaborazione digitale di contenuti testuali destinati alla pubblicazione. In particolare sono formalizzati gli step dei principali modelli di workflow editoriale e analizzati nella loro versione digitale così come nell’esecuzione dei loro obiettivi specifici. Obiettivo è accompagnare gli studenti, attraverso tutti i passaggi, nella progettazione e nella realizzazione di un contenuto editoriale digitale.
+Il percorso formativo, nel suo complesso, prevede lo studio propedeutico dei Fondamenti di Informatica e Programmazione cui si abbina un primo gruppo di discipline caratterizzanti e affini che consentono allo studente di acquisire la conoscenza del diritto digitale (dell’informatica, del web, della rete), delle nozioni e degli strumenti funzionali a realizzare i contenuti del digital storytelling e dell'editoria digitale seguita in tutte le sue fasi (dalla progettazione alla realizzazione), dei principi della linguistica distribuzionale, delle reti neurali. Nello stesso tempo si consente allo studente di cominciare a strutturare la propria preparazione attraverso lo studio della Didattica digitale legata al mondo dei giochi educativi e l’apporto, secondo una scelta individuale, di materie affini opzionali quali letteratura italiana, archivistica e museologia in modo da consentire l’acquisizione di competenze spendibili in diversi ambiti professionali.
+Sulla base delle conoscenze acquisite si procederà con lo studio avanzato di altre discipline informatiche e di una delle significative applicazioni dell'informatica all'analisi letteraria ovvero lo studio della Filologia digitale applicata ai testi degli scrittori contemporanei cui potrà affiancarsi nell'ambito delle discipline affini, un ampliamento su temi e forme della letteratura italiana contemporanea. Tale fruttuoso intreccio interdisciplinare è arricchito dalla proposta di una varietà di discipline volte ad approfondire ed ampliare l'orizzonte e le ricadute del digitale nel campo della storia, del cinema, della comunicazione, dell'estetica e della letteratura italiana. Ulteriori possibilità di formazione sono infine offerte dalle attività di tirocinio in forma telematica (che si svolgono presso aziende, enti, pubbliche amministrazioni consentendo l’applicazione del digitale nelle diverse discipline e nei diversi ambiti professionali) e, sul versante dell’internazionalizzazione, dai programmi di mobilità erasmus nell’ambito degli accordi con le università europee tra cui l’Università di Lovanio (Katholieke Universiteit Leuven) dove peraltro è attivo un Master avanzato di Digital Humanities e l’Università Niccolò Copernico di Torun.
+A conclusione del biennio lo studente presenta come prova finale una relazione che ha per oggetto una ricerca nel settore delle digital humanities che può essere collegata anche all’attività svolta come tirocinio presso centri culturali e aziende. Il lavoro svolto deve dimostrare padronanza degli strumenti informatici e capacità di gestirli, padronanza degli argomenti, capacità critiche, espositive e autonomia di giudizio. I laureati in LM-43 saranno pertanto in grado di sviluppare ulteriormente le proprie competenze con il ricorso a nuovi strumenti digitali e di ricerca nell'ambito di diversi contesti professionali.
+I criteri e le modalità per la stesura della tesi di laurea saranno dettagliate nel Regolamento didattico.
+---------
+Sbocchi Occupazionali
+Analisti e progettisti di applicazioni web 
+funzione in un contesto di lavoro: 
+Le funzioni esercitate in un contesto di lavoro sono: progettare, sviluppare e gestire i siti web (Web master); progettare, pianificare, creare, gestire i contenuti dei siti web (Content manager); progettare e sviluppare videogiochi a scopo educativo; (Game designer and developer for education); sviluppare strategie digitali rivolte ad intercettare le esigenze degli utenti e a soddisfarle (Manager delle strategie digitali; Social Media & Community Manager). 
+competenze associate alla funzione:  
+Gli analisti e progettisti di applicazioni web, laureati in LM-43, possiedono le fondamentali conoscenze informatiche (piattaforme digitali, linguaggi di programmazione, prodotti analytics) e sono competenti nella progettazione nello sviluppo e gestione dei siti web; nella digitalizzazione dei processi e nello sviluppo di strategie digitali per il marketing. 
+sbocchi occupazionali: 
+Gli analisti e progettisti di applicazioni web lavorano nelle aziende produttrici e localizzatrici di software, nelle Web agencies, nelle Aziende che scommettono sulla digitalizzazione dei processi e delle modalità di lavoro, negli Istituti bancari nazionali ed internazionali, nelle Istituzioni culturali (biblioteche, musei, archivi). 
+Analisti e progettisti di basi dati
+funzione in un contesto di lavoro:
+Le funzioni esercitate in un contesto di lavoro sono:
+analizzare, progettare, sviluppare e collaudare i sistemi di gestione di banche dati di archivi, musei, biblioteche.
+competenze associate alla funzione:
+Gli analisti e progettisti di basi dati, laureati in LM-43, sono competenti nel progettare basi di dati, modellare domini secondo diagrammi entità-relazioni, predisporre sistemi di recupero e interrogazione dati.
+sbocchi occupazionali:
+Gli analisti e progettisti di basi dati lavorano nelle Istituzioni culturali pubbliche e private .
+Redattore di articoli per il web
+funzione in un contesto di lavoro:
+Le funzioni esercitate in un contesto di lavoro sono:
+pianificare, creare e curare contenuti per il web; scrivere testi in grado di raggiungere gli obiettivi che un’azienda si prefissa (UX Writer); scrivere testi o post per portali o blog aziendali; revisionare gli articoli per i giornali e magazine on line; scrivere headline e titoli efficaci.
+competenze associate alla funzione:
+I redattori di articoli per il web, laureati in LM-43, sono competenti nella pianificazione, creazione e cura di contenuti on line; nel web writing; nell’UX writing; nella scrittura di testi, per il giornalismo e il marketing, utili e attraenti per gli utenti on line.
+sbocchi occupazionali:
+I Redattori di articoli per il web, laureati in LM-43, lavorano nelle Redazioni dei giornali e dei magazine on line; nelle Aziende, nelle Istituzioni culturali.
+Revisori di testi
+funzione in un contesto di lavoro:
+Le funzioni esercitate in un contesto di lavoro sono:
+Revisionare testi da pubblicare, audiovisivi e multimediali; correggere bozze, revisionare testi tecnici.
+competenze associate alla funzione:
+I revisori di testi, laureati in LM-43, sono competenti nella revisione critica dei testi da pubblicare on line, audiovisivi e multimediali; nella correzione di bozze; nella revisione di testi tecnici.
+sbocchi occupazionali:
+I Revisori di testi lavorano nell’Editoria, nelle Redazioni dei giornali e magazine on line, nelle Aziende.
+Curatori e conservatori di Musei
+funzione in un contesto di lavoro:
+Le funzioni esercitate in un contesto di lavoro sono:
+acquisire, valutare, garantire la conservazione di artefatti di interesse storico, culturale o artistico e opere d’arte; rendere tali artefatti e tali opere disponibili su microfilm, supporti digitali o di altra natura; organizzare attività di promozione, mostre ed eventi.
+competenze associate alla funzione:
+I curatori e conservatori di musei, laureati in LM-43, sono competenti nell’impostazione e realizzazione di banche dati e archivi digitali; nella valorizzazione del patrimonio culturale delle biblioteche, degli archivi, dei musei; nel riutilizzo delle immagini in diversi contesti mediali, nella manipolazione di un ecosistema digitale integrato.
+sbocchi occupazionali:
+I Curatori e conservatori di Musei, laureati in LM-43,lavorano nelle Gallerie d’arte, Musei, Musei virtuali, Musei imprese, Musei biblioteche.
+---------
+Caratteristiche della Prova Finale
+A conclusione del biennio lo studente presentera' come prova finale una tesi di laurea che avra' per oggetto una ricerca nel settore delle digital humanities e che potra' essere collegata anche alliattivita' espletata come tirocinio presso centri culturali e aziende. Il lavoro svolto dovra' dimostrare padronanza degli strumenti informatici e capacita' di gestirli, sicura conoscenza degli argomenti, capacita' critiche, espositive e autonomia di giudizio.
+Le modalita' e i criteri per la stesura della tesi di laurea saranno dettagliate nel Regolamento didattico.
+---------

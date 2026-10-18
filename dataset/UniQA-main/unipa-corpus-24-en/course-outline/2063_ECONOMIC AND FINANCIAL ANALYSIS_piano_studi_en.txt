@@ -1,0 +1,38 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ECONOMIC AND FINANCIAL SCIENCES
+Curriculum: ECONOMIC AND FINANCIAL ANALYSIS
+For more information visit http://www.unipa.it/struttura.html?id=767
+---------
+Class of Master's Degree (MSc) on Economics (LM-56)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Economics and statistical Sciences
+Double Degree with University of Dubrovnik, Dubrovnik (CROATIA)Université de Tunis El Manar, Tunisi (TUNISIA)
+Course Code 2063
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+15503	PUBLIC ECONOMICS (in english)	BERRITTELLA	8	1° semestre	SECS-P/03
+15969	PROBABILITY AND STOCHASTIC PROCESSES (in english)	ADELFIO	6	1° semestre	SECS-S/01
+21911	 INTERNATIONAL, EU AND COMPARATIVE LABOUR LAW (in english)		6	1° semestre	IUS/07
+21912	ENGLISH LANGUAGE B2 (in english)		4	1° semestre	
+15507	MATHEMATICS FOR ECONOMICS AND FINANCE (in english)	CONSIGLIO	10	2° semestre	SECS-S/06
+17644	CORPORATE STRATEGY (in english)	MOCCIARO LI DESTRI	8	2° semestre	SECS-P/08
+18120	TOPICS IN ECONOMIC POLICY (in english)	FURCERI	8	2° semestre	SECS-P/02
+22568	ECONOMIC ANALYSIS C.I. (in english)	GIANSANTE	8	2° semestre	
+	ADVANCED FINANCE (in english)	GIANSANTE	4		SECS-P/01
+	ADVANCED MICROECONOMICS (in english)	MAGGIO	4		SECS-P/01
+	Free subjects		8		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+06634	INTERNSHIP (in english)		6	1° semestre	
+15506	RISK MANAGEMENT (in english)	SCANNELLA	6	1° semestre	SECS-P/11
+15519	INDUSTRIAL ORGANISATION (in english)	TESORIERE	6	1° semestre	SECS-P/06
+18122	TOPICS IN MACRO AND FINANCIAL ECONOMETRICS (in english)	CIPOLLINI	6	1° semestre	SECS-P/05
+15508	INTERNATIONAL ECONOMICS (in english)	CIPOLLINI	8	2° semestre	SECS-P/06
+16047	THESIS (in english)		16	2° semestre	
+	Stage and others		6		
+
+

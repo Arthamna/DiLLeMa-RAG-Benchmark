@@ -1,0 +1,45 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA INFORMATICA
+Curriculum: CYBERSICUREZZA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=721
+---------
+Classe di Laurea magistrale in Ingegneria informatica (LM-32)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Doppio titolo con UNIVERSITE D'ARTOIS, Arras (FRANCE)
+Codice corso 2035
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+03994	INTELLIGENZA ARTIFICIALE 1	GAGLIO	9	1° semestre	ING-INF/05
+21500	WEB SYSTEMS DESIGN AND ARCHITECTURE	LA CASCIA	6	1° semestre	ING-INF/05
+22216	BIG DATA C.I.	PIRRONE	12	Annuale	
+	TECNOLOGIE PER I BIG DATA	LA CASCIA	6		ING-INF/05
+	MACHINE LEARNING PER I BIG DATA	PIRRONE	6		ING-INF/05
+04761	LINGUAGGI E TRADUTTORI	LO RE	9	2° semestre	ING-INF/05
+21501	EMBEDDED SYSTEMS	PERI	6	2° semestre	ING-INF/05
+24184	CRITTOGRAFIA DIGITALE	DE PAOLA	6	2° semestre	ING-INF/05
+	Gruppo di attiv. form. opzionali		12		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+20036	LINGUA INGLESE (in inglese)		3	1° semestre	
+22213	CYBERSICUREZZA	LO RE	12	1° semestre	ING-INF/05
+22214	GESTIONE DEI DATI PERSONALI E FORENSI	MORANA	6	1° semestre	ING-INF/05
+05917	PROVA FINALE		24	2° semestre	
+	Stage, Tirocini, Altro		3		
+	Attiv. form. a scelta dello studente		12		
+
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05034	METODI DI ELABORAZIONE DEI SEGNALI	GARBO	6	1° semestre	ING-INF/03
+19694	WIRELESS NETWORKS (in inglese)	TINNIRELLO	6	1° semestre	ING-INF/03
+22672	METODI NUMERICI AVANZATI	FRANCOMANO	6	1° semestre	MAT/08
+23218	SMART CONTRACTS, BLOCKCHAIN AND CYBER SECURITY AWARENESS (in inglese)		6	1° semestre	ING-IND/35
+17917	DATA AND MODELS FOR MANAGERIAL DECISIONS (in inglese)	DARDANONI	6	2° semestre	SECS-P/03
+22450	INFORMATION THEORY AND DATA COMPRESSION (in inglese)	SCIORTINO	6	2° semestre	INF/01
+24183	ANALISI INTELLIGENTE DEI SEGNALI	SINISCALCHI	6	2° semestre	ING-INF/05
+

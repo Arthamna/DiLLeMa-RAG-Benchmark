@@ -1,0 +1,45 @@
+Anno Accademico 2024/2025
+Laurea magistrale in INGEGNERIA ENERGETICA E NUCLEARE
+Curriculum: INDUSTRIAL ENERGY SYSTEMS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=719
+---------
+Classe di Laurea magistrale in Ingegneria energetica e nucleare (LM-30)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2033
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18021	ANALISI DI SISTEMI ENERGETICI E TERMOECONOMIA	PIACENTINO	6	1° semestre	ING-IND/10
+19660	COMPUTATIONAL THERMOFLUIDYNAMICS (in inglese)	CHIOVARO	6	1° semestre	ING-IND/19
+23148	TERMOTECNICA E REGOLAZIONI TERMOFLUIDODINAMICHE	CATRINI	9	1° semestre	ING-IND/10
+23198	IMPIANTI TECNICI E TECNICA DEL FREDDO C.I.	PANNO	15	Annuale	
+	TECNICA DEL FREDDO	PANNO	6		ING-IND/10
+	IMPIANTI TECNICI	PANNO	9		ING-IND/10
+19658	IDROGENO E SISTEMI DI ACCUMULO ELETTROCHIMICI	INGUANTA	6	2° semestre	ING-IND/23
+23147	FISSION NUCLEAR POWER PLANTS (in inglese)	BONGIOVÌ	6	2° semestre	ING-IND/19
+23225	COMBUSTIONE E IMPATTO AMBIENTALE C.I.	CAPUTO	12	2° semestre	
+	IMPATTO AMBIENTALE DEI SISTEMI ENERGETICI	TOMARCHIO	6		ING-IND/20
+	COMBUSTIONE	CAPUTO	6		ING-IND/25
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23203	PROGETTAZIONE DI IMPIANTI ENERGETICI	MORALE	6	1° semestre	ING-IND/10
+05917	PROVA FINALE		15	2° semestre	
+23146	DATA-DRIVEN ENERGY LAB (in inglese)	LO BRANO	6	2° semestre	ING-IND/11
+	Stage, Tirocini, Altro		9		
+	Gruppo di attiv. form. opzionali		12		
+	Attiv. form. a scelta dello studente		12		
+
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+18043	NEUTRONICA	CHIOVARO	6	1° semestre	ING-IND/19
+23141	NUCLEAR FUSION REACTORS (in inglese)	DI MAIO	6	1° semestre	ING-IND/19
+23142	MISURE NUCLEARI E DOSIMETRIA	TOMARCHIO	6	1° semestre	ING-IND/20
+23145	ECODESIGN DI SISTEMI E PROCESSI (in inglese)	CELLURA	6	1° semestre	ING-IND/11
+23150	ENERGY SYSTEMS MODELLING LAB (in inglese)	LO BRANO	6	1° semestre	ING-IND/10
+23151	CENTRALI E RETI TERMOFRIGORIFERE	PIACENTINO	6	1° semestre	ING-IND/10
+

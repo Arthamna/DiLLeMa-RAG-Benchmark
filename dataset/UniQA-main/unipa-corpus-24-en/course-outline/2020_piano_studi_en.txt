@@ -1,0 +1,89 @@
+Academic year 2024/2025
+Master's Degree (MSc) on PHYSICS
+For more information visit http://www.unipa.it/struttura.html?id=708
+---------
+Class of Master's Degree (MSc) on Physics (LM-17)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Physics and Chemistry – Emilio Segrè
+Double Degree with University of Turku, Turku (FINLAND)
+Course Code 2020
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+15308	RADIATION-MATTER INTERACTION	DI SALVO	6	1° semestre	FIS/05
+15316	ADVANCED QUANTUM MECHANICS	RIZZUTO	6	1° semestre	FIS/02
+13351	ADVANCED SKILLS RELATED TO THE LABOUR MARKET		1	2° semestre	
+19782	SPECTROSCOPY WITH LABORATORY	MESSINA	6	2° semestre	FIS/01
+22646	ENGLISH LANGUAGE SKILLS - EQUIVALENT TO LEVEL B2+		3	2° semestre	
+22671	STATISTICAL PHYSICS (in english)	MANTEGNA	6	2° semestre	FIS/03
+	Optional subjects		6		
+	Optional subjects II		6		
+	Optional subjects III		6		
+	Free subjects (suggested)		12		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+05917	FINAL EXAMINATION		30	2° semestre	
+13121	PRACTICE		8	2° semestre	
+	Optional subjects IV		24		
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23367	ADVANCED MATHEMATICS FOR PHYSICS (in english)	BAGARELLO	6	2° semestre	MAT/07
+
+Optional subjects IV
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+01171	NON-COMMUTATIVE ALGEBRA	MARTINO	6	1° semestre	MAT/02
+02335	PHYSICS TEACHING METHODOLOGY	FAZIO	6	1° semestre	FIS/08
+15346	PHYSICAL CHEMISTRY OF MATERIALS	PIGNATARO	6	1° semestre	CHIM/02
+21956	STELLAR EVOLUTION (in english)	ARGIROFFI	6	1° semestre	
+	STAR FORMATION AND MAIN SEQUENCE (in english)	ARGIROFFI	3		FIS/05
+	POST MAIN SEQUENCE STARS AND SUPERNOVAE (in english)	MICELI	3		FIS/05
+21958	COMPLEX NETWORKS (in english)	MICCICHE'	6	1° semestre	FIS/07
+21961	ASTROPHYSICS - LABORATORY (in english)	BARBERA	6	1° semestre	FIS/05
+21963	PHYSICS OF COMPLEX SYSTEMS (in english)	VALENTI	6	1° semestre	FIS/02
+22020	HIGH ENERGIES ASTROPHYSICS WITH LABORATORY (in english)	IARIA	6	1° semestre	FIS/05
+22425	SPACE WEATHER (in english)	REALE	6	1° semestre	
+	SOLAR PHYSICS (in english)	REALE	3		FIS/06
+	SUN-EARTH INTERACTION (in english)	PAGANO	3		FIS/06
+22451	CLOUD AND HIGH PERFORMANCE COMPUTING	REALE	6	1° semestre	FIS/05
+22618	GAUGE THEORIES (in english)	LORENZO	6	1° semestre	FIS/03
+22658	RADIATION DETECTORS WITH LAB (in english)	ABBENE	6	1° semestre	FIS/07
+22659	LAB OF PHYSICAL CHARACTERIZATION AND BIOSIGNAL PROCESSING (in english)	PERSANO ADORNO	6	1° semestre	FIS/07
+22660	LAB OF PHYSICS OF MATTER (in english)	AGNELLO	6	1° semestre	
+	LAB OF RAMAN SPECTROSCOPY AND PARAMAGNETIC RESONANCE (in english)	AGNELLO	3		FIS/01
+	LAB OF TIME-RESOLVED SPECTROSCOPY (in english)	MESSINA	3		FIS/01
+22663	BIOPHOTONICS WITH LABORATORY (in english)	VETRI	6	1° semestre	
+	LAB OF BIOPHOTONICS (in english)	VETRI	3		FIS/07
+	INTRODUCTION TO BIOPHOTONICS AND WET LAB (in english)	VETRI	3		FIS/07
+22748	QUANTUM THERMODYNAMICS (in english)	NAPOLI	6	1° semestre	
+	EQUILIBRIUM QUANTUM THERMODYNAMICS (in english)	MILITELLO	3		FIS/03
+	NON-EQUILIBRIUM QUANTUM THERMODYNAMICS (in english)	NAPOLI	3		FIS/03
+24010	STANDARD MODEL (in english)	PASSANTE	6	1° semestre	
+	RENORMALIZATION AND PHYS BEYOND STD MODEL (in english)	PASSANTE	3		FIS/02
+	INTRODUCTION TO THE STANDARD MODEL (in english)	RIZZUTO	3		FIS/02
+24011	QUANTUM INFORMATION (in english)	PATERNOSTRO	6	1° semestre	FIS/03
+05044	MATHEMATICAL METHODS AND MODELS FOR APPLICATIONS	SCIACCA	6	2° semestre	MAT/07
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22021	STRUCTURE OF MATTER - ADVANCED COURSE (in english)	CICCARELLO	6	1° semestre	FIS/03
+07382	THEORY OF FIELDS	PASSANTE	6	2° semestre	FIS/03
+21944	LABORATORY OF NUCLEAR AND SUBNUCLEAR PHYSICS (in english)	MARSELLA	6	2° semestre	FIS/04
+22024	QUANTUM OPTICS (in english)	PALMA	6	2° semestre	FIS/03
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22018	COMPUTATIONAL PHYSICS WITH LABORATORY (in english)	COTTONE	6	1° semestre	FIS/07
+22022	BIOPHYSICS (in english)	COTTONE	6	1° semestre	FIS/07
+15315	CONDENSED MATTER PHYSICS		6	2° semestre	FIS/01
+24120	INTRODUCTION TO MEDICAL PHYSICS	MARRALE	6	2° semestre	FIS/07
+21962	NANO-PARTICLES AND NANO-STRUCTURES (in english)	BUSCARINO	6	1° semestre	FIS/01
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22019	THEORY OF GENERAL RELATIVITY (in english)	CAROLLO	6	1° semestre	FIS/05
+01500	ASTROPHYSICS	MICELI	6	2° semestre	FIS/05
+

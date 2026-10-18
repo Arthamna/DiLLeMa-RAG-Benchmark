@@ -1,0 +1,89 @@
+Anno Accademico 2024/2025
+Laurea in LINGUE E LETTERATURE - STUDI INTERCULTURALI
+Curriculum: LINGUE E LETTERATURE - STUDI INTERCULTURALI (L-12) - SEDE AG
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1930
+---------
+Classe di Laurea in Lingue e culture moderne (L-11)Classe di Laurea in Mediazione linguistica (L-12)
+Durata 3 anni
+Sede AGRIGENTO
+Numero posti in programmazione locale: 500
+Dipartimento di Scienze Umanistiche
+Codice corso 2240
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04770	LINGUISTICA GENERALE	NIGRELLI	9	1° semestre	L-LIN/01
+08893	GEOGRAFIA CULTURALE		9	1° semestre	M-GGR/01
+13351	ALTRE CONOSCENZE UTILI PER L'INSERIMENTO NEL MONDO DEL LAVORO		3	1° semestre	
+23786	DIALETTO, STORIA E TERRITORIO	CASTIGLIONE	9	2° semestre	L-FIL-LET/12
+	Gruppo di attiv. form. opzionali		18		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+05304	MUSEOLOGIA		9	1° semestre	L-ART/04
+	Gruppo di attiv. form. opzionali III		18		
+	Gruppo di attiv. form. opzionali IV		24		
+	Gruppo di attiv. form. opzionali V		9		
+	Gruppo di attiv. form. opzionali IX		6		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04767	LINGUISTICA APPLICATA		6	1° semestre	L-LIN/02
+06715	STORIA CONTEMPORANEA	VERRI	6	1° semestre	M-STO/04
+23787	LINGUA ITALIANA E REDAZIONE DI TESTI		9	1° semestre	L-FIL-LET/12
+05917	PROVA FINALE		3	2° semestre	
+	Gruppo di attiv. form. opzionali VI		12		
+	Gruppo di attiv. form. opzionali VII		12		
+	Gruppo di attiv. form. opzionali VIII		6		
+	Attiv. form. a scelta dello studente		12		
+
+Gruppo di attiv. form. opzionali VI
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23793	LINGUA ARABA PER IL TURISMO CULTURALE	ELSAKAAN	6	1° semestre	L-OR/12
+23794	LINGUA SPAGNOLA PER IL TURISMO CULTURALE		6	1° semestre	L-LIN/07
+23795	LINGUA FRANCESE PER IL TURISMO CULTURALE	SCLAFANI	6	1° semestre	L-LIN/04
+23796	LINGUA INGLESE PER IL TURISMO CULTURALE		6	1° semestre	L-LIN/12
+
+Gruppo di attiv. form. opzionali IV
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+23789	LETTERATURA E CULTURA FRANCESE	MADONIA	12	1° semestre	L-LIN/03
+23791	LETTERATURA E CULTURA ARABA	SAITTA	12	1° semestre	L-OR/12
+23788	LETTERATURA E CULTURA SPAGNOLA		12	2° semestre	L-LIN/05
+23790	LETTERATURA E CULTURA INGLESE		12	2° semestre	L-LIN/10
+
+Gruppo di attiv. form. opzionali VII
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+15808	LETTERATURA FRANCESE E TRADUZIONE	MADONIA	12	1° semestre	L-LIN/03
+23792	LETTERATURA ARABA E TRADUZIONE	SAITTA	12	1° semestre	L-OR/12
+15809	LETTERATURA INGLESE E TRADUZIONE		12	2° semestre	L-LIN/10
+16862	LETTERATURA SPAGNOLA E TRADUZIONE		12	2° semestre	L-LIN/05
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13146	LINGUA E TRADUZIONE SPAGNOLA II		9	1° semestre	L-LIN/07
+13150	LINGUA E TRADUZIONE INGLESE II		9	1° semestre	L-LIN/12
+13238	LINGUA E TRADUZIONE FRANCESE II		9	1° semestre	L-LIN/04
+13239	LINGUA E TRADUZIONE ARABA II	SCIORTINO	9	1° semestre	L-OR/12
+
+Gruppo di attiv. form. opzionali V
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+19852	ORIGINI DELLE LINGUE E LETTERATURE GERMANICHE		9	1° semestre	L-FIL-LET/15
+19851	ORIGINI DELLE LINGUE E LETTERATURE ROMANZE	COLLURA	9	2° semestre	L-FIL-LET/09
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04633	LINGUA E TRADUZIONE ARABA I	SCIORTINO	9	1° semestre	L-OR/12
+04644	LINGUA E TRADUZIONE INGLESE I		9	1° semestre	L-LIN/12
+04638	LINGUA E TRADUZIONE FRANCESE I	SALA	9	2° semestre	L-LIN/04
+04659	LINGUA E TRADUZIONE SPAGNOLA I		9	2° semestre	L-LIN/07
+
+Gruppo di attiv. form. opzionali VIII
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+14184	TIROCINIO FORMATIVO E DI ORIENTAMENTO		6	1° semestre	
+15081	TIROCINIO DI LINGUA ITALIANA COME LINGUA SECONDA		6	1° semestre	
+
+Gruppo di attiv. form. opzionali IX
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+04438	LETTERATURA ITALIANA		6	1° semestre	L-FIL-LET/10
+24256	LUOGHI E CONTESTI DELLA  LETTERATURA ITALIANA CONTEMPORANEA	CARMINA	6	2° semestre	L-FIL-LET/11
+

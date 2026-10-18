@@ -1,0 +1,38 @@
+Academic year 2024/2025
+Master's Degree (MSc) on MOLECULAR AND HEALTH BIOLOGY
+Curriculum: HEALTH BIOLOGY
+For more information visit http://www.unipa.it/struttura.html?id=1556
+---------
+Class of Master's Degree (MSc) on Biology (LM-6)
+Duration 2 years
+Location PALERMO
+Number of seats in local planning: 85
+Department of Biological, Chemical and Pharmaceutical Sciences and Technologies
+Double Degree with Bonn-Rhine-Sieg University of Applied Sciences, Bonn (GERMANY)Universidad de A Coruña, La Coruna (SPAIN)
+Course Code 2195
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+13351	ADVANCED SKILLS RELATED TO THE LABOUR MARKET		2	1° semestre	
+15454	ADVANCED BIOCHEMISTRY	DE BLASIO	6	1° semestre	BIO/10
+17016	HUMAN GENETICS AND HUMAN CYTOGENETICS	CARADONNA	9	1° semestre	
+	HUMAN GENETICS	CARADONNA	6		BIO/18
+	HUMAN CYTOGENETICS	CARADONNA	3		BIO/18
+18624	COMPLEMENTS OF CYTOLOGY AND HISTOLOGY	LUPARELLO	6	1° semestre	BIO/06
+20456	BIOMOLECULAR AND BIOINFORMATIC METHODOLOGIES	MELFI	6	1° semestre	BIO/11
+20691	ENGLISH LANGUAGE SKILLS - EQUIVALENT TO LEVEL B2		6	1° semestre	
+03137	PHARMACOLOGY	POMA	6	2° semestre	BIO/14
+05201	APPLIED MICROBIOLOGY	VILLANOVA	6	2° semestre	BIO/19
+10038	APPLIED CELLULAR BIOTECHNOLOGIES FOR FORENSIC STUDIES	CARRA	6	2° semestre	BIO/06
+15432	PATHOPHYSIOLOGY OF SYSTEMS AND NEUROBIOLOGY - INTEGRATED COURSE	MULE'	9	2° semestre	
+	PATHOPHYSIOLOGY OF SYSTEMS	MULE'	6		BIO/09
+	NEUROBIOLOGY	SERIO	3		BIO/09
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+17013	PHYSIOLOGY OF NUTRITION AND EATING BEHAVIOUR - INTEGRATED COURSE	BALDASSANO	9	1° semestre	
+	EATING BEHAVIOUR	BALDASSANO	3		BIO/09
+	PHYSIOLOGY OF NUTRITION	BALDASSANO	6		BIO/09
+05917	FINAL EXAMINATION		37	2° semestre	
+	Free subjects		12		
+

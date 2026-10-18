@@ -1,0 +1,45 @@
+Academic year 2024/2025
+Master's Degree (MSc) on COMPUTER ENGINEERING
+Curriculum: CYBERSECURITY
+For more information visit http://www.unipa.it/struttura.html?id=721
+---------
+Class of Master's Degree (MSc) on Computer systems engineering (LM-32)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Double Degree with UNIVERSITE D'ARTOIS, Arras (FRANCE)
+Course Code 2035
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+03994	ARTIFICIAL INTELLIGENCE 1	GAGLIO	9	1° semestre	ING-INF/05
+21500	WEB SYSTEMS DESIGN AND ARCHITECTURE	LA CASCIA	6	1° semestre	ING-INF/05
+22216	BIG DATA - INTEGRATED COURSE	PIRRONE	12	Yearly	
+	BIG DATA TECHNOLOGIES	LA CASCIA	6		ING-INF/05
+	MACHINE LEARNING FOR BIG DATA	PIRRONE	6		ING-INF/05
+04761	FORMAL LANGUAGES AND COMPILERS	LO RE	9	2° semestre	ING-INF/05
+21501	EMBEDDED SYSTEMS	PERI	6	2° semestre	ING-INF/05
+24184	DIGITAL ENCRYPTION	DE PAOLA	6	2° semestre	ING-INF/05
+	Optional subjects		12		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+20036	ENGLISH LANGUAGE (in english)		3	1° semestre	
+22213	CYBERSECURITY	LO RE	12	1° semestre	ING-INF/05
+22214	PERSONAL AND FORENSIC DATA MANAGEMENT	MORANA	6	1° semestre	ING-INF/05
+05917	FINAL EXAMINATION		24	2° semestre	
+	Stage and others		3		
+	Free subjects		12		
+
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+05034	DIGITAL SIGNAL PROCESSING	GARBO	6	1° semestre	ING-INF/03
+19694	WIRELESS NETWORKS (in english)	TINNIRELLO	6	1° semestre	ING-INF/03
+22672	ADVANCED NUMERICAL METHODS	FRANCOMANO	6	1° semestre	MAT/08
+23218	SMART CONTRACTS, BLOCKCHAIN AND CYBER SECURITY AWARENESS (in english)		6	1° semestre	ING-IND/35
+17917	DATA AND MODELS FOR MANAGERIAL DECISIONS (in english)	DARDANONI	6	2° semestre	SECS-P/03
+22450	INFORMATION THEORY AND DATA COMPRESSION (in english)	SCIORTINO	6	2° semestre	INF/01
+24183	INTELLIGENT SIGNAL ANALYSIS	SINISCALCHI	6	2° semestre	ING-INF/05
+

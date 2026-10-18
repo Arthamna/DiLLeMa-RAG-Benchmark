@@ -1,0 +1,58 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on ECONOMICS AND FINANCE
+Curriculum: FINANCIAL ECONOMIC
+For more information visit http://www.unipa.it/struttura.html?id=550
+---------
+Class of Bachelor's Degree (BSc) on Economics (L-33)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Economics and statistical Sciences
+Course Code 2081
+---------
+Teachings first year \ in common with the others curricula\profiles
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04897	GENERAL MATHEMATICS	LACAGNINA, LACAGNINA	9	1° semestre	SECS-S/06
+05227	MICROECONOMICS	BAVETTA, MAGGIO	9	1° semestre	SECS-P/01
+17358	ENGLISH LANGUAGE - LEVEL B1 (in english)		8	1° semestre	
+18545	ECONOMIC HISTORY AND HISTORY OF THE ECONOMIC THOUGHT	SIMON, PIROLO	8	1° semestre	SECS-P/04
+02526	PRIVATE LAW	BRIZZOLARI, PIRAINO	8	2° semestre	IUS/01
+02704	BUSINESS ECONOMICS	CINCIMINO, BRONZETTI	6	2° semestre	SECS-P/07
+21346	COMPUTING SKILLS - INTEGRATED COURSE	AUGUGLIARO	6	2° semestre	
+	SOFTWARE FOR ECONOMIC AND FINANCIAL DATA ANALYSIS 2	DE LUCA	3		
+	SOFTWARE FOR ECONOMIC AND FINANCIAL DATA ANALYSIS 1	AUGUGLIARO	3		
+24255	STATISTICS I	AUGUGLIARO, ABBRUZZO	8	2° semestre	SECS-S/01
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02549	PUBLIC LAW	SCALA	6	1° semestre	IUS/09
+04820	MACROECONOMICS	BETTARELLI	9	1° semestre	SECS-P/02
+06190	GENERAL AND APPLIED ACCOUNTING	GUZZO	8	1° semestre	SECS-P/07
+04892	FINANCIAL MATHEMATICS	CONSIGLIO	8	2° semestre	SECS-S/06
+14314	OTHER LANGUAGE SKILLS		6	2° semestre	
+23596	STATISTICS 2	MINEO	8	2° semestre	SECS-S/01
+24246	COMPETITION AND EUROPEAN CONTRACT LAW	PURPURA	6	2° semestre	IUS/05
+	Free subjects (suggested)		12		
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02417	COMMERCIAL LAW	BAVETTA	6	1° semestre	IUS/04
+06318	SCIENCE OF FINANCE	LI DONNI	8	1° semestre	SECS-P/03
+16117	ECONOMICS AND MANAGEMENT OF FINANCIAL INTERMEDIARIES	SCANNELLA	10	1° semestre	SECS-P/11
+02694	ECONOMETRICS	LO CASCIO	8	2° semestre	SECS-P/05
+05718	ECONOMIC POLICY	MAZZOLA	8	2° semestre	SECS-P/02
+05917	FINAL EXAMINATION		3	2° semestre	
+	Stage and others		6		
+	Optional subjects		6		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+18119	SCENARIO ANALYSIS FOR FINANCE	CIPOLLINI	6	2° semestre	SECS-P/05
+20625	INVESTMENT AND FUNDS MANAGEMENT	PICONE	6	2° semestre	SECS-P/08
+24058	ECONOMIC  AND FINANCIAL STATISTICS	PIACENTINO	6	2° semestre	SECS-S/03
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+02469	INFORMATION  TECHNOLOGY LAW AND COMPUTER DATA PROCESSING LAW		6	1° semestre	IUS/01
+
+

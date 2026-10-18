@@ -1,0 +1,64 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on ELECTRICAL ENGINEERING FOR E-MOBILITY
+For more information visit http://www.unipa.it/struttura.html?id=1881
+---------
+Class of Bachelor's Degree (BSc) on Industrial engineering (L-9)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2224
+---------
+Educational objectives
+The Degree Course aims at training engineers possessing the basic knowledge and skills of an electrical engineer and being able to know how to apply and decline such knowledge and skills in a new application sector, namely that of electric mobility.
+Starting with a solid basic multidisciplinary training, the course provides general groundings in the fields of electrical engineering, electrical machinery and drives, power electronics, electrical systems, electrical measurements, and electromechanical applications, together with more specific competences with respect to the electrical aspects of mobility.
+Graduates in Electrical Engineering for E-Mobility will be able to design, build, manage and test all the electrical parts of the vehicle (batteries, converters, motors, wiring and measuring instrumentation) and to design, implement, manage, and test the electricity infrastructures supporting E-Mobility (distribution networks, distributed generation, smart-grid, charging infrastructures).
+These objectives are achieved through an educational programme consisting of lectures, exercises, discussion of case studies, seminars and practical applications in the laboratory and in the field.
+The course consists of:
+• basic subjects (mathematics, physics, geometry, chemistry).
+• transversal engineering disciplines typical of Industrial Engineering (computer aided design, construction theory, technical physics).
+• basic subjects typical of the degree courses in Electrical Engineering (electrical engineering, electrical machines, electrical systems, and electrical measurements).
+• support subjects (electronics, power electronics, principles of design and construction of electric vehicles).
+• application subjects (electric drives for the automotive industry, storage systems, sustainable mobility, automotive equipment).
+• elective courses that may be chosen among those provided by other Degree Courses to integrate their training independently, according to their interests and attitudes.
+---------
+Professional opportunities
+Profile:
+Electrical engineer
+Functions:
+The graduate collaborates in:
+-	The design, planning and construction of electrical infrastructure for mobility.
+-	The design, planning and construction of electrical installations and systems.
+-	The design and construction of components and systems for electric mobility.
+-	The design and construction of electrical equipment and machinery, electric drives and electronic power systems.
+-	The operation and control of electrical infrastructure for mobility.
+-	The operation and control of electrical installations for power production and distribution.
+-	The operation and control of facilities for the production and management of goods and services.
+-	The testing of electrical components and systems for mobility.
+-	The testing of electrical components, equipment and systems.
+-	The testing of plants for the production and management of automated goods and services.
+Skills:
+Graduates are able to:
+-	provide technical support for the various phases of project design and execution.
+-	evaluate and define the technical specifications and costs of components and systems.
+-	draw up technical documents, metric calculations, and estimates.
+-	examine the legislative documentation, legislation and technical catalogues.
+-	apply the safety principles.
+-	control the production processes.
+-	carry out the maintenance of equipment and facilities.
+-	carry out measurements, tests and checks.
+-	work in groups, even in interdisciplinary contexts.
+-	communicate properly the proposals and solutions adopted or to be adopted.
+Employment opportunities:
+-	Automotive and electric mobility industries in general.
+-	Public and private bodies for the design, construction, and management of electrical infrastructures for mobility.
+-	Industrial companies producing components, electrical equipment and machinery, electric drives, and electronic power systems.
+-	Companies and public and private bodies for the design and construction of electricity distribution and utilization plants.
+-	Electric vehicle maintenance, repair and overhaul centres.
+-	Companies, organizations, public and private bodies providing services for the testing of devices, machines, and plants, for the verification and certification of compliance with regulations.
+-	Private practice.
+---------
+Final examination features
+To obtain the degree, students must have acquired 180 credits including those relating to the final examination (3 credits). The final test has the objective of assessing the level of maturity and critical skills of the undergraduate, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a written or oral test, in accordance with the rules fixed every year by the Degree Course Regulations for the final examination, respecting and consistent to the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+Among the topics for the final examination, the Course website also presents issues proposed by the stakeholders, who each year provide an external perspective, useful to align the educational programme with the needs of the labour market.
+---------

@@ -1,0 +1,66 @@
+question,context
+Berapa jumlah kredit mata kuliah Kerja Praktik (KP) di Departemen Teknik Informatika ITS?,"Sekilas Kerja Praktik
+Jumlah kredit Mata Kuliah KP: 2 SKS"
+Kapan SKS untuk KP diambil?,"SKS KP diambil bersamaan / setelah menyelesaikan KP di organisasi (perusahaan, instansi, yayasan)"
+Berapa lama durasi Kerja Praktik (KP)?,Lama KP: 1-2 bulan dengan hitungan kerja part time
+Apakah KP bisa dilakukan secara berkelompok?,Bisa perorangan atau berkelompok maksimal 2 (dua) mahasiswa
+Dimana bisa mendapatkan berkas-berkas KP?,"Berkas-berkas KP bisa didapatkan di link resource akademik:
+https://intip.in/ResourceAkademikDanKemahasiswaanIF"
+Apa saja prosedur Kerja Praktik (KP)?,"Prosedur Kerja Praktik
+Mengajukan KP
+Surat Pengantar KP
+Dosen Pembimbing KP
+Pelaksanaan KP
+Penilaian KP oleh Pembimbing Lapangan
+Penilaian KP oleh Dosen Pembimbing
+Penyerahan Laporan KP ke RBTC
+Mengumpulkan bukti penyelesaian KP
+Lulus KP"
+Apa syarat untuk mengajukan KP?,"Sebelum berangkat KP
+Mengajukan KP
+Memenuhi persyaratan sebagai berikut:
+Mahasiswa aktif Teknik Informatika
+SKS tempuh minimum 90 SKS
+Mengisi MONKP: monkp.if.its.ac.id (registrasi akun dan data KP)
+Status KP akan menjadi CREATED"
+Bagaimana cara mendapatkan Surat Pengantar Kerja Praktik?,"Surat Pengantar Kerja Praktik
+Meminta persetujuan form pengajuan KP ke Koordinator Kerja Praktek (Sekretaris Departemen 1)
+Menyerahkan Form Pengajuan KP yang sudah disetujui Koord. KP kepada Staf Akademik untuk dibuatkan surat pengantar ke tempat KP
+Surat pengantar KP dikeluarkan oleh departemen Teknik Informatika yang ditujukan kepada organisasi tempat KP yang berisi:
+Permohonan agar mahasiswa X diijinkan untuk melakukan KP di organisasi Y,
+Tanggal mulai,
+Durasi kerja praktik
+Surat pengantar KP dikirimkan ke instansi penerima KP
+Jika balasan persetujuan sudah didapatkan, unggah ke MONKP
+Status KP akan menjadi CONFIRMED"
+Siapa yang memilih Dosen Pembimbing Kerja Praktik?,"Dosen Pembimbing Kerja Praktik
+Status KP akan menjadi CONFIRMED
+Dosen Pembimbing KP dipilih oleh koordinator KP dengan menyesuaikan load pembimbingan dosen, kecuali ada rekomendasi khusus dari dosen ybs
+Pengalokasian dilakukan secara batch operation"
+Apa yang harus dilakukan oleh mahasiswa selama pelaksanaan Kerja Praktik?,"Di lokasi KP
+4. Melaksanakan Kerja Praktik
+Menghubungi dosen pembimbing yang sudah ditentukan oleh koordinator KP
+Mematuhi dan mengikuti segala aturan terkait kerja praktik di perusahaan/tempat KP
+Mengerjakan pekerjaan yang sesuai dengan kompetensi Informatika
+Progress report secara reguler ke dosen pembimbing dan pembimbing lapangan sesuai kesepakatan dengan pembimbing"
+Bagaimana penilaian Kerja Praktik oleh Pembimbing Lapangan?,"Penilaian KP oleh Pembimbing Lapangan
+Sudah menyelesaikan segala tugas/pekerjaan yang diberikan pembimbing lapangan di tempat KP
+Meminta pembimbing lapangan untuk mengisi Formulir Penilaian Kerja Praktik Lapangan dilengkapi dengan stempel resmi perusahaan"
+Apa yang harus dilakukan setelah Kerja Praktik selesai?,"Setelah KP selesai
+6. Penilaian KP oleh Dosen Pembimbing
+Sudah menyelesaikan segala pekerjaan terkait KP di perusahaan dan sudah kembali aktif di kampus
+Menemui dosen pembimbing untuk melakukan ujian lisan dan menyerahkan Formulir Penilaian Ujian Lisan Kerja Praktik untuk diisi oleh dosen pembimbing internal
+Dosen pembimbing internal mengirimkan nilai ke koordinator KP via email
+Jika nilai telah diterima koordinator KP, maka status KP akan menjadi FINISHED"
+Bagaimana cara menyerahkan Laporan KP?,"Menyerahkan Laporan KP
+Sudah menyelesaikan segala urusan KP dengan dosen pembimbing
+Dokumentasi KP sudah disetujui dan ditandatangani oleh dosen pembimbing
+Dokumentasi tersebut berupa softcopy dan diunggah ke repo ITS (lihat manual unggah ke repo ITS di manual unggah mandiri)
+Menerima Bukti Penyerahan KP dari REPO ITS
+Mengunggah buku KP dan bukti terima repo ITS ke MS TEAMS KP pada link berikut:
+https://teams.microsoft.com/l/team/19%3a447977fe03c040ff98ad9e82e63982e2%40thread.tacv2/conversations?groupId=862aa22c-c596-49e1-94dd-6354fd625a2e&tenantId=1d5169ac-c7cb-4275-9764-bf8c9c364a4c"
+Bagaimana penilaian Kerja Praktik dilakukan?,"Penilaian Kerja Praktik
+Nilai dari Pembimbing Lapangan
+Nilai dari Dosen Pembimbing
+Laporan KP
+Kedisplinan (ketepatan waktu dalam mengumpulkan item 1-3)"

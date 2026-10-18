@@ -1,0 +1,43 @@
+Anno Accademico 2024/2025
+Laurea in INTELLIGENZA ARTIFICIALE
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2559
+---------
+Classe di Laurea in Scienze e tecnologie informatiche (L-31)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Matematica e Informatica
+Codice corso 2291
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il CdS in Intelligenza Artificiale mira a formare esperti dei fondamenti teorici, delle tecniche, delle metodologie e delle modalita' di applicazione dell'intelligenza artificiale. Il percorso di studi mira a costruire un profilo culturale e professionale del laureato che si differenzia chiaramente da quello tipico dei laureati in informatica, soprattutto per il carattere interdisciplinare che caratterizza i piu' recenti sviluppi dell'intelligenza artificiale. I laureati in Intelligenza Artificiale riceveranno una solida formazione sulle tematiche essenziali per l'intelligenza artificiale nelle aree della matematica, dell'informatica, della fisica e delle scienze cognitive. In particolare, i laureati sapranno utilizzare con consapevolezza gli strumenti logico-matematici, possiederanno una solida conoscenza degli aspetti fondamentali delliinformatica e una padronanza degli argomenti, delle tecniche e delle metodologie propri dell'intelligenza artificiale tra cui liestrazione e rappresentazione di conoscenza, il ragionamento automatico, il machine learning, la visione artificiale, gli algoritmi di ricerca e ottimizzazione, liinterazione persona macchina, nonchE' le discipline di approfondimento applicativo. I laureati in IA inoltre possiederanno conoscenze giuridiche ed etiche che gli consentiranno un uso consapevole delle conoscenze e competenze acquisite nei processi decisionali e di elaborazione delle informazioni. Tali conoscenze saranno acquisite mediante lezioni frontali e attivita' di laboratorio, declinate a seconda delle specifiche caratteristiche di ciascun insegnamento. La verifica delle conoscenze acquisite nelle varie attivita' formative consiste nelle forme piu' adatte alle specifiche tipologie e caratteristiche di attivita' formative. Le forme di verifica consistono tipicamente, ad esempio, in esami scritti e/o orali, in relazioni sulle attivita' svolte e le conoscenze acquisite, prove intermedie, nonchE' nella prova finale per il conseguimento della laurea.
+Le attivita' laboratoriali e di tirocinio consentiranno ai laureati di essere in grado di contribuire, sulla base di conoscenze e competenze interdisciplinari costantemente aggiornate, a progettare e realizzare soluzioni innovative basate su tecniche e modelli di IA sia nel settore pubblico sia in quello privato.
+Il corso di laurea prevede attivita' formative orientate sia a comprendere i fondamenti dell'IA, sia a sperimentarne l'uso in applicazioni. Il corso di laurea e' cosi' strutturato:
+- i primi due anni sono costituiti dalle attivita' formative dedicate al nucleo fondante della formazione in intelligenza artificiale e sono fondamentali per definire il profilo interdisciplinare del laureato.
+- il terzo anno e' parzialmente dedicato alla definizione di competenze metodologiche specifiche delliintelligenza artificiale nonchE' alliutilizzo dell'intelligenza artificiale in aree applicative; tipicamente nel terzo anno, lo studente puU' scegliere liberamente alcuni insegnamenti secondo i propri interessi culturali e puU' completare la comprensione pratica dell'intelligenza artificiale, anche in aree applicative, attraverso attivita' laboratoriali o di tirocinio;
+- il percorso formativo si completa alla fine del terzo anno con la prova finale.
+---------
+Sbocchi Occupazionali
+Profilo:
+Esperto in Intelligenza Artificiale applicata allianalisi dei dati 
+Funzioni:
+Il laureato si avvarra' delle competenze acquisite sull'intelligenza artificiale per la risoluzione di problemi di raccolta, organizzazione, elaborazione e classificazione di dati, e per la costruzione di modelli predittivi e di supporto alle decisioni.
+Competenze:
+La padronanza di un ampio spettro di tecniche e metodi, sia di tipo logico-deduttivo sia basati su apprendimento automatico, caratterizza la figura professionale. Liincontro di discipline quali la psicologia e il diritto consente lo sviluppo di competenze nella comunicazione, nel lavoro di gruppo, nella capacita' di organizzare il lavoro con diversi livelli di responsabilita. Il laureato sara' in grado di utilizzare la lingua inglese nel mondo del lavoro, oltre che nell'ambito specifico di competenza.
+Sbocchi:
+Il laureato potra' operare in una molteplicita' di ambiti lavorativi caratterizzati dalla gestione di dati di elevata complessita, in aziende private e in istituzioni pubbliche.
+Profilo:
+Esperto in Intelligenza Artificiale applicata alliinterazione
+Funzioni:
+Il laureato sara' in grado di progettare, realizzare e collaudare sistemi interattivi basati sullielaborazione del linguaggio naturale e sulla comunicazione multimodale.
+Competenze:
+La padronanza di un ampio spettro di tecniche e metodi di intelligenza artificiale caratterizza la figura professionale. Liincontro di discipline quali liinterazione persona-macchina e lietica consente lo sviluppo di competenze nel design dei sistemi interattivi intelligenti, e nella valutazione degli stessi in contesti sociali e ambientali variamente articolati. Il laureato sara' in grado di utilizzare la lingua inglese nel mondo del lavoro, oltre che nell'ambito specifico di competenza.
+Sbocchi:
+Il laureato potra' operare in una molteplicita' di ambiti lavorativi centrati sulla progettazione o sulliadattamento di sistemi informatici conversazionali, ovvero di sistemi basati sullianalisi e sintesi di informazione non testuale, caratterizzati da elementi computazionali di intelligenza artificiale.
+---------
+Caratteristiche della Prova Finale
+Per conseguire la laurea, lo studente deve aver acquisito 180 crediti formativi compresi quelli relativi alla prova finale.
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico.
+La prova finale consiste in una prova orale secondo modalita' definite dal regolamento del Corso di Laurea per ogni anno accademico, nel rispetto e in coerenza della tempistica, delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+---------

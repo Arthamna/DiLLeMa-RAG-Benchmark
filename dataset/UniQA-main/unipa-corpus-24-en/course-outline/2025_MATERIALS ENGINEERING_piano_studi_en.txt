@@ -1,0 +1,44 @@
+Academic year 2024/2025
+Master's Degree (MSc) on CHEMICAL ENGINEERING
+Curriculum: MATERIALS ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=711
+---------
+Class of Master's Degree (MSc) on Chemicl Engineering (LM-22)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2025
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21895	APPLIED ELECTROCHEMISTRY (in english)	SANTAMARIA	9	1° semestre	ING-IND/23
+21897	INDUSTRIAL CHEMICAL AND BIOCHEMICAL PROCESSES (in english)	GALIA	9	1° semestre	ING-IND/27
+22870	BIOCHEMICAL PLANT DESIGN - INTEGRATED COURSE (in english)	LI PUMA	9	1° semestre	
+	BIOCHEMICAL PLANT AND OPERATIONS (in english)	LIMA	3		ING-IND/25
+	REACTOR DESIGN (in english)	LI PUMA	6		ING-IND/25
+07871	MACHINES	BECCARI	9	2° semestre	ING-IND/08
+17371	BIOMATERIALS	SCAFFARO	6	2° semestre	ING-IND/22
+21890	MACROMOLECULAR MATERIALS TECHNOLOGY AND RECYCLING		9	2° semestre	ING-IND/22
+21900	CHEMICAL AND BIOCHEMICAL PROCESS CONTROL (in english)	CIPOLLINA	9	2° semestre	ING-IND/26
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+21898	CONCEPTUAL DESIGN OF CHEMICAL AND BIOCHEMICAL PROCESSES (in english)	MICALE	9	1° semestre	ING-IND/26
+05917	FINAL EXAMINATION		21	2° semestre	
+16079	SAFETY MANAGEMENT	GRISAFI	9	2° semestre	ING-IND/25
+	Stage and others		3		
+	Optional subjects		6		
+	Free subjects		12		
+
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+17583	CORROSION AND PROTECTION OF METALS (in english)	INGUANTA	6	1° semestre	ING-IND/23
+20675	 CHEMICAL FOUNDATIONS OF BIONANOTECHNOLOGIES (in english)	DISPENZA	6	1° semestre	CHIM/07
+21883	CONSTRUCTION OF EQUIPMENT FOR THE PROCESSING INDUSTRY	PANTANO	6	1° semestre	ING-IND/14
+21889	ELECTROCHEMICAL POWER SOURCES (in english)	ZAFFORA	6	1° semestre	ING-IND/23
+17559	APPLIED PHYSICAL CHEMISTRY (in english)	PATELLA	6	2° semestre	ING-IND/23
+17581	MATERIALS AND PROCESSES FOR TISSUE ENGINEERING (in english)	LA CARRUBBA	6	2° semestre	ING-IND/34
+23970	ADVANCED REACTOR DESIGN (in english)	LI PUMA	6	2° semestre	ING-IND/25
+

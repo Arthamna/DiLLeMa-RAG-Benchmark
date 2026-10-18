@@ -1,0 +1,53 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA CHIMICA E BIOCHIMICA
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1759
+---------
+Classe di Laurea in Ingegneria industriale (L-9)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2211
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02605	DISEGNO ASSISTITO DA CALCOLATORE	INGRASSIA	9	1° semestre	ING-IND/15
+03675	GEOMETRIA	FALCONE	6	1° semestre	MAT/03
+04677	LINGUA INGLESE		3	1° semestre	
+19109	ANALISI MATEMATICA C.I.	VETRO	12	Annuale	
+	MODULO ANALISI MATEMATICA 1	CORSO	6		MAT/05
+	MODULO ANALISI MATEMATICA 2	VETRO	6		MAT/05
+01788	CHIMICA	DISPENZA	9	2° semestre	CHIM/07
+15540	FISICA I	CORSO	9	2° semestre	FIS/03
+	Attiv. form. a scelta dello studente		6		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01933	CHIMICA ORGANICA	BRUNO	9	1° semestre	CHIM/06
+07870	FISICA II	DE GIOVANNINI	6	1° semestre	FIS/01
+19578	TERMODINAMICA DEI PROCESSI CHIMICI E BIOCHIMICI	INGUANTA	12	1° semestre	ING-IND/23
+06313	SCIENZA DELLE COSTRUZIONI	BORINO	9	2° semestre	ICAR/08
+08559	BIOCHIMICA	GIULIANO	6	2° semestre	BIO/10
+19577	PRINCIPI DI INGEGNERIA CHIMICA E BIOCHIMICA	TAMBURINI	12	2° semestre	ING-IND/24
+	Attiv. form. a scelta dello studente II		6		
+
+Insegnamenti terzo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+01814	CHIMICA APPLICATA	DINTCHEVA	9	1° semestre	ING-IND/22
+02965	ELETTROTECNICA	ROMANO	9	1° semestre	ING-IND/31
+19575	IMPIANTI CHIMICI E BIOCHIMICI	SCARGIALI	12	1° semestre	ING-IND/25
+05193	MICROBIOLOGIA	QUATRINI	6	2° semestre	BIO/19
+05917	PROVA FINALE		3	2° semestre	
+17523	MODELLI MATEMATICI DELL'INGEGNERIA CHIMICA	MICALE	6	2° semestre	ING-IND/26
+19574	FONDAMENTI DI CHIMICA E BIOCHIMICA  INDUSTRIALE	SCIALDONE	12	2° semestre	ING-IND/27
+	Stage, Tirocini, Altro		3		
+	Gruppo di attiv. form. opzionali		6		
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+10068	PROCESSI DI TRATTAMENTO DI EFFLUENTI INDUSTRIALI	PRESTIGIACOMO	6	2° semestre	ING-IND/27
+19576	COMBUSTIONE	CAPUTO	6	2° semestre	ING-IND/25
+21913	TECNOLOGIE A MEMBRANA PER L'INGEGNERIA	BATTAGLIA	6	2° semestre	ING-IND/26
+21914	TECNOLOGIE BIOMEDICHE E DEL RILASCIO CONTROLLATO	LA CARRUBBA	6	2° semestre	ING-IND/24
+
+

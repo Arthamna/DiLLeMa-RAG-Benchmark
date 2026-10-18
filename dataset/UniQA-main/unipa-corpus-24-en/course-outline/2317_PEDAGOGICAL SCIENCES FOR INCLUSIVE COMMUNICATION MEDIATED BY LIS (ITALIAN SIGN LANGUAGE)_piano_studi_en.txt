@@ -1,0 +1,47 @@
+Academic year 2024/2025
+Master's Degree (MSc) on PEDAGOGICAL SCIENCES FOR INCLUSIVE COMMUNICATION MEDIATED BY LIS (ITALIAN SIGN LANGUAGE)
+Curriculum: PEDAGOGICAL SCIENCES FOR INCLUSIVE COMMUNICATION MEDIATED BY LIS (ITALIAN SIGN LANGUAGE)
+For more information visit http://www.unipa.it/struttura.html?id=2702
+---------
+Class of Master's Degree (MSc) on Education (LM-85 R)
+Duration 2 years
+Location PALERMO
+Number of seats in local planning: 114
+Department of Psychological, Pedagogical, Exercise and Training Sciences
+Joint Degree with Università "Cà Foscari" di VENEZIA, VENEZIA (ITALIA)Università degli Studi ROMA TRE, ROMA (ITALIA)
+Course Code 2317
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23739	PSYCHOLOGY OF DEVELOPMENT, COMMUNICATION AND LANGUAGE		9	1° semestre	M-PSI/04
+23742	ITALIAN SIGN LANGUAGE 1		12	1° semestre	L-LIN/01
+23992	PEDAGOGY AND SPECIAL TEACHING METHODOLOGY FOR DEAFNESS + WORKSHOP		12	1° semestre	
+	MODULE 2 WITH WORKSHOP		6		M-PED/03
+	MODULE 1		6		M-PED/03
+23993	CORPOREITY PEDAGOGY AND SCHOOL INCLUSION METHODOLOGIES WITH WORKSHOP	MIGNOSI	12	1° semestre	
+	CORPOREITY PEDAGOGY WITH WORKSHOP	MIGNOSI	6		M-PED/01
+	SCHOOL INCLUSION METHODOLOGIES WITH WORKSHOP	COMPAGNO	6		M-PED/03
+03202	PHILOSOPHY OF LANGUAGE	CARAPEZZA	6	2° semestre	M-FIL/05
+23741	SUSTAINABILITY EDUCATION FOR INCLUSION		6	2° semestre	M-PED/01
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07553	PROFESSIONAL PRACTICE		9	1° semestre	
+23737	AUDIOLOGY LAB		2	1° semestre	
+23748	ITALIAN SIGN LANGUAGE 2		12	1° semestre	L-LIN/01
+23987	THEORY AND METHODOLOGY OF PEDAGOGICAL RESEARCH		6	1° semestre	M-PED/01
+23988	ELEMENTS OF CHILD NEUROPSYCHIATRY		6	1° semestre	MED/39
+05917	FINAL EXAMINATION		10	2° semestre	
+	Optional subjects		6		
+	Free subjects (suggested)		12		
+
+Free subjects (suggested)
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23735	ITALIAN SIGN LANGUAGE LINGUISTICS		6	1° semestre	L-LIN/01
+23736	CULTURE AND DEAFNESS		6	1° semestre	L-LIN/01
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23745	LINGUISTICS FOR DEAFNESS		6	1° semestre	L-LIN/01
+23991	DEAFNESS, LEARNING, LANGUAGE		6	1° semestre	M-PSI/04
+

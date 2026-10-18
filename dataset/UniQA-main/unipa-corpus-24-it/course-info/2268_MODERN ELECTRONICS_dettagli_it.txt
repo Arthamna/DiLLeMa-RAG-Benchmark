@@ -1,0 +1,94 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA ELETTRONICA
+Curriculum: MODERN ELECTRONICS
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=2250
+---------
+Classe di Laurea in Ingegneria dell'informazione (L-8)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2268
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+Il Corso di Laurea in Ingegneria Elettronica si pone come obiettivo specifico la formazione di una figura professionale dotata di una solida preparazione sul piano scientifico-tecnologico e con competenze specifiche nell'ambito dell'Elettronica, in grado di fornire una risposta ai bisogni di competenze trasversali, oggi sempre piu' richieste nelle smart cities, nell'internet-of-things, nei big data, nelle reti di telecomunicazioni sicure e a larghissima banda, nelle reti elettriche di nuova generazione, nei sistemi intelligenti in grado di operare senza liintervento delliuomo (controllo automatico, nella domotica, nella meccatronica, nella robotica, nelliidentificazione e filtraggio dei sistemi dinamici, ma anche nella medicina diagnostica e nelle nuove tecnologie di produzione di impiantistica moderna.
+Oltre agli indispensabili strumenti delle discipline scientifiche di base, il Corso di Laurea eroga insegnamenti specifici dell'elettronica, attivita' sperimentali in laboratorio, e permette di completare la preparazione dello studente grazie ad insegnamenti riguardanti ulteriori ambiti, quali l'automazione, la robotica, l'elettrotecnica, la bioelettronica.
+Il Corso di Studi e' progettato con riferimento a specifiche aree di apprendimento, descritte nella sezione apposita di questo documento.
+Durante il primo anno di corso, lo studente maturera' la capacita' di comprensione degli strumenti matematici di base e dei fondamenti della fisica, ma nello stesso tempo si confrontera' con tematiche specifiche dell'Ingegneria dell'Informazione, come le reti internet, l'informatica e le reti logiche.
+Il secondo ed il terzo anno del corso saranno in larga misura dedicati agli insegnamenti di discipline proprie dell'ambito elettronico, che guideranno lo studente nel processo di apprendimento dei metodi che caratterizzano l'analisi e la progettazione dei moderni dispositivi e sistemi elettronici di ultima generazione. La preparazione dello studente sara' completata da attivita' sperimentali in laboratorio e da insegnamenti riguardanti l'automazione e l'elettrotecnica.
+Il Corso di Laurea in Ingegneria Elettronica prevede, al terzo anno, percorsi formativi con insegnamenti erogati in lingua inglese.
+Durante il terzo anno, lo studente potra' scegliere se:
+- apprendere le moderne tecniche di progettazione automatica dei circuiti elettronici e le metodologie di caratterizzazione, misura e collaudo mediante strumentazione elettronica (specializzazione in Modern Electronics);
+- conoscere gli strumenti e le metodologie che caratterizzano il settore dell'internet of things e frequentare il laboratorio di reti e telecomunicazioni (specializzazione in Internet Technologies);
+- acquisire competenze specifiche nell'ambito della sensoristica e della strumentazione diagnostica, nonchE' dell'elaborazione e analisi di segnali, immagini e dati medico-biologici (specializzazione in Biomedical Information Technologies);
+- acquisire conoscenze proprie delliingegneria del controllo e dei sistemi, della robotica industriale e mobile e della meccatronica nonchE' nella gestione di sistemi complessi (specializzazione in Electronics for Robotics and Mechatronics).
+Grazie alle solide basi tecnico-scientifiche impartite durante il percorso formativo, il Corso di Laurea in Ingegneria Elettronica puU' garantire un proficuo inserimento nel mondo del lavoro gia' al termine degli studi, ma anche permettere al laureato di approfondire le proprie competenze mediante l'iscrizione ad un Corso di Laurea Magistrale.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere Elettronico: specializzazione in Modern Electronics
+Funzioni:
+Il corso di studi in Ingegneria Elettronica forma figure professionali in grado di ricoprire ruoli tecnici e organizzativi, anche in un contesto progettuale e di ricerca, privilegiando gli aspetti specifici dell'ambito dell'Elettronica, senza tralasciare gli aspetti generali. Il profilo formativo consente al laureato in Ingegneria Elettronica specializzato in Modern Electronics di operare nei settori della progettazione, sviluppo, ingegnerizzazione e produzione di dispositivi e sistemi elettronici, in contesti che spaziano dalla micro/nano elettronica, alla progettazione elettronica, fino all'elettronica per l'industria, l'energia, l'automobile. Il laureato avra' acquisito conoscenze ad ampio spettro, che spaziano dalla fisica dei semiconduttori alla microelettronica, alle tecnologie di progettazione e fabbricazione di dispositivi e circuiti, fino ancora alle metodologie di caratterizzazione per mezzo di strumentazione elettronica di misura e collaudo. Il laureato in Ingegneria Elettronica specializzato in Modern Electronics conosce le principali metodologie e le tecniche per il progetto dei componenti elettronici, dei sistemi elettronici, degli apparati e dei relativi processi di fabbricazione. La preparazione e' completata e integrata da esperienze di laboratorio.
+Competenze:
+Il profilo formativo della Laurea in Ingegneria Elettronica con specializzazione in Modern Electronics consente di maturare competenze ad alto contenuto tecnologico, quali:
+- progettazione e produzione di componenti, sottosistemi e sistemi elettronici;
+- conoscenza dell'hardware e dei software dei computer, dei pacchetti applicativi e dei linguaggi di programmazione; - ingegnerizzazione, esercizio e manutenzione di sistemi elettronici;
+- controllo elettronico di apparati, macchine, catene di produzione;
+- gestione di sistemi elettronici di misura, di laboratori e di linee di produzione.
+Sbocchi:
+Il laureato in Ingegneria Elettronica con specializzazione in Modern Electronics consente di operare nei settori della progettazione, sviluppo, ingegnerizzazione e produzione di dispositivi e sistemi elettronici, in contesti che spaziano dalla micro/nano elettronica, alla progettazione elettronica, fino all'elettronica per l'industria, l'energia, l'automobile. Gli ambiti occupazionali tipici sono i seguenti:
+- industrie per la progettazione o sviluppo di semiconduttori, di circuiti integrati, di componenti, apparati e sistemi elettronici, di strumentazione elettronica per applicazioni in ambito consumer (come audio, video, telefonia, informatica), industrie di automazione e robotica, trasporti, aeronautica, energia;
+- aziende di produzione, commercializzazione e distribuzione di prodotti ed apparati elettronici, e informatici;
+- imprese manifatturiere e di servizi che utilizzano tecnologie e infrastrutture elettroniche per l'automazione e il controllo;
+- realta' produttive e operative che impiegano tecnologie e infrastrutture elettroniche per il trattamento di segnali in ambito civile, industriale e dell'informazione;
+- amministrazioni pubbliche;
+- societa' di consulenza per la progettazione elettronica;
+- enti di ricerca scientifica e tecnologica nazionali ed internazionali;
+- laboratori di ricerca e sviluppo;
+- enti normativi e di controllo;
+- attivita' di libero professionista per progettazione e realizzazione di sistemi elettronici.
+Profilo:
+Ingegnere Elettronico: specializzazione in Internet Technologies
+Funzioni:
+Il profilo formativo del Laureato in Ingegneria Elettronica specializzato in Internet Technologies consente di operare, anche autonomamente, nei settori della progettazione, ingegnerizzazione, produzione, esercizio e manutenzione dei sistemi di telecomunicazione. Il laureato approfondisce lo studio dei piu' comuni protocolli di comunicazione e delliInternet-of-Things, anche mediante specifiche attivita' di laboratorio. Gli ambiti professionali tipici per i Laureati sono le imprese pubbliche e private, non solo quelle del settore della Information and Communications Technology, ma anche del manifatturiero, dei servizi e tecnico-commerciale.
+Competenze:
+L'Ingegnere Elettronico specializzato in Internet Technologies fornisce una risposta ai bisogni di competenze trasversali, per sviluppare applicazioni intelligenti in vari ambienti (smart cities, smart homes, smart industries, etc.). L'organizzazione del percorso formativo e' stata concepita per fornire al laureato adeguata ed aggiornata preparazione nell'ambito della progettazione e gestione di reti di telecomunicazioni e oggetti intelligenti. La formazione acquisita fornisce gli strumenti e le competenze per svolgere anche attivita' professionali di "supporto" tecnico e analisi dei dati in tutti quei settori la cui produttivita' e' ormai fortemente connessa alla capacita' di monitorare i processi, identificare inefficienze e predire malfunzionamenti. Le competenze fornite dal corso includono:
+- progettazione di infrastruttura, sistemi e servizi ICT;
+- gestione di infrastrutture, sistemi e servizi ICT;
+- analisi e dimensionamento di apparati, sistemi o reti di telecomunicazioni;
+- capacita' di creare, modificare o verificare software e altri applicativi legati alla gestione ed operazione delle reti di telecomunicazioni;
+- capacita' di redigere rapporti o documenti tecnici.
+Sbocchi:
+La Laurea in Ingegneria Elettronica con specializzazione in Internet Technologies consente di operare nei settori della progettazione, ingegnerizzazione, produzione, esercizio e manutenzione dei sistemi di telecomunicazione, nonchE' presso gli operatori di rete che forniscono servizi di telecomunicazione.
+Il naturale sbocco professionale del laureato con specializzazione in Internet Technologies e' presso le seguenti realta:
+- Integratori di sistemi e servizi ed aziende di consulenza ICT;
+- operatori di rete che gestiscono sistemi di telecomunicazioni;
+- aziende ed enti, pubblici e privati, che forniscono servizi di telecomunicazione, telerilevamento e controllo del traffico.
+- imprese appositamente costituite destinate alla realizzazione di reti wireless per colmare il 'Digital Divide'.
+- enti normativi, di standardizzazione, di certificazione.
+Profilo:
+Ingegnere Elettronico: specializzazione in Biomedical Information Technologies
+Funzioni:
+Il Laureato in Ingegneria Elettronica con specializzazione in Biomedical Information Technologies avra' competenze nella progettazione e caratterizzazione di sistemi di misura biomedicali, divenendo in grado di disegnare, realizzare e collaudare sensori e apparecchiature elettromedicali dedicate al monitoraggio, alla diagnosi ed alla terapia. Inoltre, tale figura sara' in grado di implementare tecniche per lielaborazione di dati e di immagini di interesse per la biomedicina, per lianalisi e la modellistica di sistemi fisiologici, e per la gestione e la trasmissione di informazioni mediche. Inoltre, il laureato si occupa di sistemi di supporto alla decisione clinica, di sistemi informativi sanitari e, infine, dello sviluppo di software medicale.
+Competenze:
+Il Laureato possiede una solida formazione di base relativa a componenti, circuiti e sistemi elettronici, con competenze specifiche nell'ambito della sensoristica e della strumentazione diagnostica, nonchE' dellielaborazione e analisi di segnali, immagini e dati medico-biologici. Grazie al percorso formativo effettuato, tale figura professionale potra' occuparsi di: progettazione, produzione, gestione e collaudo di biosensori e strumentazione biomedica; sviluppo di algoritmi per lielaborazione di segnali e immagini biomediche; utilizzo di opportuni software medicali per assistenza diagnostica; soluzione di problemi metodologici e tecnologici in ambito fisiologico e clinico.
+Sbocchi:
+Il laureato in Ingegneria Elettronica con specializzazione in Biomedical Information Technologies puU' operare principalmente presso industrie, strutture ospedaliere, laboratori clinici specializzati, centri di ricerca e universita, per la progettazione, produzione, gestione e collaudo di sensori e apparecchiature biomedicali e per l'utilizzo di opportuni software medicali per assistenza diagnostica e negli ambienti di vita assistiti.
+Inoltre, puU' trovare collocazione presso i reparti di ingegneria clinica ed i laboratori specialistici delle aziende sanitarie, occupandosi di collaudo e manutenzione della strumentazione biomedica e di progettazione, realizzazione e gestione di servizi innovativi per la sanita.
+Infine potra' anche accedere alla libera professione previo superamento dell'esame di stato e iscrizione all'albo.
+Profilo:
+Ingegnere Elettronico: specializzazione in Electronics for Robotics and Mechatronics
+Funzioni:
+Il Laureato in Ingegneria Elettronica, indirizzo Electronics for Robotics and Mechatronics, ha un profilo culturale e professionale focalizzato su conoscenze scientifiche e tecnologiche della robotica industriale e mobile e della meccatronica ed e' capace di identificare, formulare e risolvere, anche in modo innovativo, problemi complessi o che richiedono un approccio interdisciplinare. Egli possiede conoscenze approfondite delle metodologie di analisi e di progettazione proprie dell'Automatica, che gli consentono di introdurre all'interno di un sistema complesso "l'intelligenza" necessaria per gestire il suo funzionamento senza l'intervento dell'uomo (controllo automatico), ottimizzando in qualche senso il suo funzionamento e dominando l'interazione sia fra i vari componenti del sistema che quella fra il sistema e l'ambiente circostante.
+L'ingegnere elettronico, indirizzo Electronics for Robotics and Mechatronics, e' dotato quindi di specifiche capacita' che gli consentono di inserirsi prontamente in ambiti lavorativi anche molto differenziati, operando in qualita' di sistemista e/o progettista e/o tecnico in ogni contesto applicativo in cui le tecnologie e i principi dell'automazione rivestono un ruolo di rilievo.
+Competenze:
+Le competenze fornite dal corso di Laurea in Ingegneria Elettronica, indirizzo Electronics for Robotics and Mechatronics, riguarderanno l'identificazione e il filtraggio dei sistemi dinamici, la modellizzazione, l'analisi, la simulazione e il controllo delle principali piattaforme robotiche mobili oggi disponibili, con specifico riferimento alle architetture di robotica e al controllo di algoritmi per veicoli e velivoli. Inoltre verranno fornite specifiche competenze riguardanti lo studio delle proprieta' dei modelli finalizzate alla progettazione di leggi e strategie di controllo in accordo con determinate specifiche di progetto.
+Sbocchi:
+Il laureato in Ingegneria Elettronica con specializzazione in Electronics for Robotics and Mechatronics puU' operare principalmente presso industrie e aziende nel settore elettronico, meccanico, automobilistico, elettromeccanico, aerospaziale, chimico e di robotica industriale, mobile e sottomarina. Inoltre, puU' trovare collocazione presso aziende produttrici di servizi (impianti di depurazione, trasporti, energia, automazione civile e industriale), centri e laboratori di ricerca e sviluppo per il settore dell'automazione. Infine potra' lavorare presso la pubblica amministrazione e anche accedere alla libera professione previo superamento dell'esame di stato e iscrizione all'albo.
+---------
+Caratteristiche della Prova Finale
+Per conseguire il titolo di Laurea e' necessario acquisire 180 Crediti Formativi Universitari, ivi compresi quelli relativi alla Prova Finale, il cui numero di crediti e' definito all'interno della proposta ordinamentale del Corso di Studi.
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica del laurando,con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall 'ordinamento didattico.
+La prova finale consiste in una prova scritta o orale secondo modalita' definite dal regolamento sulla prova finale del Corso di Laurea per ogni A.A., nel rispetto e in coerenza della tempistica, delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+---------

@@ -1,0 +1,89 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on LANGUAGES AND LITERATURES - INTERCULTURAL STUDIES
+Curriculum: LANGUAGE AND LITERATURES - INTERCULTURAL STUDIES (L-12) - AGRIGENTO
+For more information visit http://www.unipa.it/struttura.html?id=1930
+---------
+Class of Bachelor's Degree (BSc) on Applied languages (L-12)Class of Bachelor's Degree (BSc) on Modern languages and civilisations (L-11)
+Duration 3 years
+Location AGRIGENTO
+Number of seats in local planning: 500
+Department of Humanities
+Course Code 2240
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04770	GENERAL LINGUISTICS	NIGRELLI	9	1° semestre	L-LIN/01
+08893	CULTURAL GEOGRAPHY		9	1° semestre	M-GGR/01
+13351	ADVANCED SKILLS RELATED TO THE LABOUR MARKET		3	1° semestre	
+23786	DIALECT, HISTORY AND TERRITORY	CASTIGLIONE	9	2° semestre	L-FIL-LET/12
+	Optional subjects		18		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+05304	MUSEOLOGY		9	1° semestre	L-ART/04
+	Optional subjects III		18		
+	Optional subjects IV		24		
+	Optional subjects V		9		
+	Optional subjects IX		6		
+
+Teachings third year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04767	APPLIED LINGUISTICS		6	1° semestre	L-LIN/02
+06715	CONTEMPORARY HISTORY	VERRI	6	1° semestre	M-STO/04
+23787	IALIAN LANGUAGE AND COPYWRITING		9	1° semestre	L-FIL-LET/12
+05917	FINAL EXAMINATION		3	2° semestre	
+	Optional subjects VI		12		
+	Optional subjects VII		12		
+	Optional subjects VIII		6		
+	Free subjects		12		
+
+Optional subjects VI
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23793	ARAB LANGUAGE FOR CULTURAL TOURISM	ELSAKAAN	6	1° semestre	L-OR/12
+23794	SPANISH LANGUAGE FOR CULTURAL TOURISM		6	1° semestre	L-LIN/07
+23795	FRENCH LANGUAGE FOR CULTURAL TOURISM	SCLAFANI	6	1° semestre	L-LIN/04
+23796	ENGLISH LANGUAGE FOR CULTURAL TOURISM		6	1° semestre	L-LIN/12
+
+Optional subjects IV
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23789	FRENCH  LITERATURE AND CIVILISATION	MADONIA	12	1° semestre	L-LIN/03
+23791	ARAB LITERATURE AND CIVILISATION	SAITTA	12	1° semestre	L-OR/12
+23788	SPANISH  LITERATURE AND CIVILISATION		12	2° semestre	L-LIN/05
+23790	ENGLISH  LITERATURE AND CIVILISATION		12	2° semestre	L-LIN/10
+
+Optional subjects VII
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+15808	FRENCH LITERATURE AND TRANSLATION	MADONIA	12	1° semestre	L-LIN/03
+23792	ARAB LITERATURE AND TRANSLATION	SAITTA	12	1° semestre	L-OR/12
+15809	ENGLISH LITERATURE AND TRANSLATION		12	2° semestre	L-LIN/10
+16862	SPANISH LITERATURE AND TRANSLATION		12	2° semestre	L-LIN/05
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+13146	SPANISH LANGUAGE AND TRANSLATION II		9	1° semestre	L-LIN/07
+13150	ENGLISH LANGUAGE AND TRANSLATION II		9	1° semestre	L-LIN/12
+13238	FRENCH LANGUAGE AND TRANSLATION  II		9	1° semestre	L-LIN/04
+13239	ARAB LANGUAGE AND TRANSLATION II	SCIORTINO	9	1° semestre	L-OR/12
+
+Optional subjects V
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+19852	ORIGINS OF GERMANIC LANGUAGES AND LITERATURES		9	1° semestre	L-FIL-LET/15
+19851	ORIGINS OF ROMANCE LANGUAGES AND LITERATURES	COLLURA	9	2° semestre	L-FIL-LET/09
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04633	ARAB LANGUAGE AND TRANSLATION I	SCIORTINO	9	1° semestre	L-OR/12
+04644	ENGLISH LANGUAGE AND TRANSLATION I		9	1° semestre	L-LIN/12
+04638	FRENCH LANGUAGE AND TRANSLATION  I	SALA	9	2° semestre	L-LIN/04
+04659	SPANISH LANGUAGE AND TRANSLATION I		9	2° semestre	L-LIN/07
+
+Optional subjects VIII
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+14184	INTERNSHIP		6	1° semestre	
+15081	ITALIAN AS SECOND LANGUAGE - PRACTICE		6	1° semestre	
+
+Optional subjects IX
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+04438	ITALIAN LITERATURE		6	1° semestre	L-FIL-LET/10
+24256	PLACES AND CONTEXTS OF CONTEMPORARY ITALIAN LITERATURE	CARMINA	6	2° semestre	L-FIL-LET/11
+

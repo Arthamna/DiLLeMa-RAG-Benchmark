@@ -1,0 +1,55 @@
+Anno Accademico 2024/2025
+Laurea magistrale in SCIENZE ECONOMICHE E FINANZIARIE
+Curriculum: ECONOMIA PER LE AMMINISTRAZIONI PUBBLICHE E LE ISTITUZIONI INTERNAZIONALI
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=767
+---------
+Classe di Laurea magistrale in Scienze dell'economia (LM-56)
+Durata 2 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Scienze Economiche, Aziendali e Statistiche
+Doppio titolo con University of Dubrovnik, Dubrovnik (CROATIA)Université de Tunis El Manar, Tunisi (TUNISIA)
+Codice corso 2063
+---------
+Insegnamenti primo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02805	ECONOMIA PUBBLICA	LI DONNI	8	1° semestre	SECS-P/03
+07951	ANALISI ECONOMICA	BAVETTA	8	1° semestre	SECS-P/01
+17585	ECONOMIA E POLITICA URBANA DEL TERRITORIO		8	1° semestre	SECS-P/02
+19774	LINGUA INGLESE B2 (in inglese)		4	1° semestre	
+09375	ECONOMIA E POLITICA INTERNAZIONALE	FURCERI	7	2° semestre	SECS-P/02
+14341	MATEMATICA PER L'ECONOMIA E LA FINANZA	RUSSINO	10	2° semestre	SECS-S/06
+22744	DIRITTO DEL MERCATO DEL LAVORO E DELLA SICUREZZA SOCIALE		6	2° semestre	IUS/07
+	Attiv. form. a scelta dello studente (consigliate)		8		
+
+Insegnamenti secondo anno
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+07553	TIROCINIO		6	1° semestre	
+19584	ECONOMIA E GESTIONE DELLE UTILITIES	AMENTA	6	1° semestre	SECS-P/08
+05917	PROVA FINALE		17	2° semestre	
+18123	CONTABILITÀ E BILANCI DI AZIENDE PUBBLICHE E PRIVATE	GUZZO	6	2° semestre	SECS-P/07
+	Stage, Tirocini, Altro		6		
+	Gruppo di attiv. form. opzionali		6		
+	Gruppo di attiv. form. opzionali II		8		
+	Gruppo di attiv. form. opzionali III		6		
+
+
+Gruppo di attiv. form. opzionali II
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+06660	STATISTICA COMPUTAZIONALE E SOFTWARE ST.	ABBRUZZO	8	1° semestre	SECS-S/01
+18162	ANALISI STATISTICA DEI COMPORTAMENTI ECONOMICI	PIACENTINO	8	1° semestre	SECS-S/03
+
+Gruppo di attiv. form. opzionali
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02396	DIRITTO AMMINISTRATIVO		6	1° semestre	IUS/10
+18124	DIRITTO FINANZIARIO EUROPEO E INTERNAZIONALE	PIGNATONE	6	1° semestre	IUS/12
+
+Gruppo di attiv. form. opzionali III
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+02768	ECONOMIA E POLITICA MONETARIA	AGNELLO	6	1° semestre	SECS-P/02
+22602	DATI E MODELLI PER LE DECISIONI ECONOMICHE	PRETE	6	2° semestre	SECS-P/03
+
+Attiv. form. a scelta dello studente (consigliate)
+Codice materia	Nome materia	Docente	CFU	Periodo	SSD
+13609	SOCIOLOGIA DEI CONSUMI E DEGLI STILI DI VITA	LO VERDE	8	2° semestre	SPS/07
+

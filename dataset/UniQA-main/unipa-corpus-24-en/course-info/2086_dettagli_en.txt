@@ -1,0 +1,123 @@
+Academic year 2024/2025
+Bachelor's Degree (BSc) on COMPUTER SCIENCE
+For more information visit http://www.unipa.it/struttura.html?id=546
+---------
+Class of Bachelor's Degree (BSc) on Computer Science (L-31)
+Duration 3 years
+Location PALERMO
+Free access
+Department of Mathematics and Informatics
+Course Code 2086
+---------
+Educational objectives
+Graduates of this course should have knowledge in various fields of science and technology aimed at the use and management of existing computer systems, as well as at the design and development of new ones. To this end, graduates must acquire adequate knowledge of the basic areas of computer science as well as of the fundamental aspects and support tools of mathematics. Therefore, in accordance with the guidelines of National (GRIN) and international (ACM) Associations in the field, the course syllabus provides:
+- The acquisition of basic knowledge of continuous and discrete physics and mathematics.
+- Knowledge of the principles, theoretical models and architectures of computer systems and communication networks.
+- Knowledge and use of operating systems.
+- The acquisition of elements of design and analysis of algorithms and data structures.
+- The acquisition of modern programming methodologies as well as the knowledge of programming languages representative of the main programming paradigms.
+- Assimilation of the principles and systems for the design and management of databases and related technologies;
+- The acquisition of the techniques for the design and implementation of computer systems.
+- The acquisition of methods and techniques for the analysis and computer processing of experimental data.
+The course also includes:
+- The acquisition of interdisciplinary knowledge in related fields.
+- An appropriate number of credits reserved for lab courses as well as the laboratory exercises provided in other courses.
+- An appropriate number of credits for elective courses in order to better enable students to complete their preparation targeting it to specific interests, in consideration of the pervasiveness of information science and technology in the modern information society.
+- external activities such as internships in companies, public administration and laboratories , as well as periods of study at other Italian and foreign universities, also within international agreements.
+The educational programme, over the three years, is divided as follows:
+1. In the first year, in addition to basic mathematics and physics training, the course provides the scientific foundations of computer science, the first teachings related to programming and data structures, and the basics of architectures and operating systems needed to face the following years.
+2. In the second year the mathematical-physical training necessary for the professional computer scientists is completed, as well as the training on the  key aspects of computer science, through the teachings related to data bases, algorithms, theoretic computer science, operating systems, and programming languages.
+3. In the third year, students' preparation on algorithmic aspects, digital data processing and compilers is further consolidated. The third year is also dedicated to the acquisition of specific and professionalizing IT knowledge both through teachings in the field of network management and software engineering, and to internship or apprenticeship activities, enabling students to gain experience in the world of work.
+---------
+Professional opportunities
+Profile:
+Programming Technician
+Functions:
+- Assistance to software designers and analysts by translating instructions and specifications of control, procedures or problem solutions, into logical flow diagrams for programming in computer language.
+- Development and writing of programs to store, search and process information and data.
+Skills:
+- Programming
+- Algorithms
+- Compilers and Programming Languages, including their theoretical foundations
+- Operating systems
+- Software engineering
+Professional opportunities:
+Companies producing goods and services. Public and/or private organizations. Employment examples: computer programmer, programming language specialist.
+Profile:
+Technical Expert in Applications
+Functions:
+- Assistance to software designers and analysts for the installation, management, and maintenance of software applications.
+Skills:
+- Programming
+- Algorithms
+- Compilers and Programming Languages, including their theoretical foundations
+- Operating systems
+- Computer architectures
+- Knowledge of advanced application software.
+Professional opportunities:
+Companies producing goods and services. Public and/or private organizations. Employment examples: e-learning platform administrator; web page designer; data processing centre operator; computerized cataloguing technician; interconnection technician with complex systems; numerical control machine programming technician; expert office automation technician; computer graphics technician; computer applications specialist.
+Profile:
+Web Technician
+Functions:
+- Assistance to web application designers and analysts with the development, configuration, management, maintenance and optimization of websites, intranets and web servers.
+Skills:
+- Programming
+- Algorithms
+- Compilers and Programming Languages, including their theoretical foundations
+- Operating systems
+- Computer architectures
+- Computer Networks
+Professional opportunities:
+Companies producing goods and services. Public and/or private organizations. Employment examples: Website administrators; Webmaster.
+Profile:
+Database manager
+Functions:
+- Assistance to database analysts and designers with management, control, and maintenance of databases.
+Skills:
+- Programming
+- Algorithms
+- Compilers and Programming Languages, including their theoretical foundations
+- Operating systems
+- Computer architectures
+- Databases
+- Algorithms for Data Analysis
+Professional opportunities:
+Companies producing goods and services. Public and/or private organizations. Employment examples: Database Manager.
+Profile:
+Technician manager of networks and telematic systems
+Functions:
+- Assistance to system designers and administrators on the installation, configuration, management, and maintenance for the software aspects of telematic systems.
+Skills:
+- Programming
+- Algorithms
+- Compilers and Programming Languages, including their theoretical foundations
+- Operating systems
+- Computer architectures
+- Computer Networks
+- Software engineering
+Professional opportunities:
+Companies producing goods and services. Public and/or private organizations. Examples of use: testing and system integration; network administrator; telematic systems administrator; intranet (LAN) technical support operator.
+Profile:
+Junior Information Engineer (after passing the State Exam)
+Functions:
+Freelancer - upon enrolment in the Junior Information Engineer Register. The junior information engineer deals with the planning, design, development, construction supervision, estimation, testing and management of electronic, automation and generation, transmission and processing of information plants and systems.
+Skills:
+- Programming
+- Design and Analysis of Algorithms
+- Theoretical computer science
+- Compilers Project
+- Programming languages
+- Operating Systems Project
+- Computer architectures
+- Computer Networks
+- Software engineering
+- Design of Algorithms for Data Analysis, including images
+- Numerical Calculation
+- Calculation of Probabilities and Statistics
+- Mathematical Methods for Computer Science
+Professional opportunities:
+Self-employment or employment in the ITC sector.
+---------
+Final examination features
+To obtain the degree, students must have acquired 180 credits including those relating to the final examination. The final test has the objective of assessing the level of maturity and critical skills of undergraduates, with respect to learning and to the acquired knowledge, on completion of the activities provided by the course syllabus. The final examination consists of a written or oral test, in accordance with the rules fixed every year by the Degree Course Regulations, consistent to the calendar, the ministerial requirements and to the relevant Guidelines of the University.
+---------

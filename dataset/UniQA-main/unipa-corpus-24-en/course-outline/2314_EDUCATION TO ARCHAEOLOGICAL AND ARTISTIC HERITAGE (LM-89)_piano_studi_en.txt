@@ -1,0 +1,52 @@
+Academic year 2024/2025
+Master's Degree (MSc) on ARCHAEOLOGICAL AND ARTISTIC HERITAGE EDUCATION
+Curriculum: EDUCATION TO ARCHAEOLOGICAL AND ARTISTIC HERITAGE (LM-89)
+For more information visit http://www.unipa.it/struttura.html?id=2700
+---------
+Class of Master's Degree (MSc) on Archaeology (LM-2 R)Class of Master's Degree (MSc) on Art history (LM-89 R)
+Duration 2 years
+Location AGRIGENTO
+Free access
+Department of Cultures and Societies
+Course Code 2314
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23872	MUSEOLOGY AND HISTORY OF COLLECTING FOR THE DECORATIVE ARTS	INTORRE	8	1° semestre	L-ART/04
+23875	PUBLIC HISTORY: ANCIENT HISTORY FOR THE XXI CENTURY	SAMMARTANO	9	1° semestre	L-ANT/02
+23876	ARCHAEOLOGY AND HISTORY OF CLASSICAL ART: ISSUES AND PATHS	PORTALE	9	1° semestre	L-ANT/07
+23880	TRANSLATING ARCHAEOLOGY FOR THE PUBLIC		6	1° semestre	L-ANT/07
+23866	HISTORY OF ARCHITECTURE: ISSUES AND PATHS	DI FEDE	8	2° semestre	ICAR/18
+23869	HISTORY OF MEDIEVAL AND MODERN ART: ISSUES AND PATHS	TRAVAGLIATO	12	2° semestre	
+	HISTORY OF MEDIEVAL ART	TRAVAGLIATO	6		L-ART/01
+	HISTORY OF MODERN ART	DE CASTRO	6		L-ART/02
+23879	TELLING HISTORICAL NARRATIVES FROM CULTURAL HERITAGE (in english)		6	2° semestre	L-ANT/02
+	Optional subjects		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+07553	PROFESSIONAL PRACTICE		8	1° semestre	
+23862	ENGLISH FOR CULTURAL HERITAGE (in english)		3	1° semestre	
+23865	ARCHIVAL HERITAGE UNDER A MAB PERSPECTIVE	MANALI	6	1° semestre	M-STO/08
+23867	EDUTAINMENT AND ICT FOR CULTURAL HERITAGE		3	1° semestre	
+05917	FINAL EXAMINATION		12	2° semestre	
+	Optional subjects II		6		
+	Optional subjects III		6		
+	Free subjects		12		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23868	HUMAN COMMUNITIES AND ENVIRONMENT DURING PREHISTORY (in english)	FORGIA	6	2° semestre	L-ANT/01
+23870	INTERPRTATION DES PAYSAGES HISTORIQUES (in french)	POLIZZI	6	2° semestre	L-ANT/09
+23873	SOCIETY AND CULTURE IN THE LATE MIDDLE AGE AND IN THE MODERN AGE	CUSUMANO	6	2° semestre	M-STO/02
+
+Optional subjects II
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23860	ARCHAEOCHEMISTRY	SALADINO	6	1° semestre	CHIM/02
+23863	CULTURAL HERITAGE RESTORATION AND INTERPRETATION	PRESCIA	6	1° semestre	ICAR/19
+
+Optional subjects III
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+23861	CULTURAL HERITAGE LEGISLATION AND EDUCATION	VENTIMIGLIA	6	1° semestre	IUS/10
+23864	ECONOMICS AND PLANNING	RUISI	6	1° semestre	SECS-P/07
+

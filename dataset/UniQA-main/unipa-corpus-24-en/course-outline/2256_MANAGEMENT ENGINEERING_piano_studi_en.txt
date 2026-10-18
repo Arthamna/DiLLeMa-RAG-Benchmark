@@ -1,0 +1,46 @@
+Academic year 2024/2025
+Master's Degree (MSc) on MANAGEMENT ENGINEERING (ONLINE)
+Curriculum: MANAGEMENT ENGINEERING
+For more information visit http://www.unipa.it/struttura.html?id=2027
+---------
+Class of Master's Degree (MSc) on Management engineering (LM-31)
+Duration 2 years
+Location PALERMO
+Free access
+Department of Engineering
+Course Code 2256
+---------
+Teachings first year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+17051	CORPORATE FINANCE (in english)	LO NIGRO	9	1° semestre	ING-IND/35
+19022	INNOVATION MANAGEMENT (in english)	LA COMMARE	6	1° semestre	ING-IND/16
+21678	BUSINESS PROCESS MANAGEMENT (in english)	BRUCCOLERI	9	1° semestre	ING-IND/35
+04864	MARKETING (in english)	ROMA	6	2° semestre	ING-IND/35
+14368	SUPPLY CHAIN MANAGEMENT (in english)	AIELLO	9	2° semestre	ING-IND/17
+22201	ADVANCED STATISTICS FOR BUSINESS (in english)	LOMBARDO	6	2° semestre	
+	MULTIVARIATE ANALYSIS: APPLICATIONS (in english)	MARCON	3		SECS-S/02
+	MULTIVARIATE ANALYSIS: THEORY (in english)	LOMBARDO	3		SECS-S/02
+22217	PROJECT MANAGEMENT (in english)	RICCOBONO	6	2° semestre	ING-IND/17
+	Stage and others		6		
+
+Teachings second year
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22198	HR AND CHANGE MANAGEMENT (in english)	PACE	6	1° semestre	M-PSI/06
+22199	INDUSTRIAL ORGANIZATION AND STRATEGY (in english)	PERRONE	9	1° semestre	ING-IND/35
+20429	FINAL EXAMINATION		15	2° semestre	
+	Optional subjects		24		
+	Free subjects		9		
+
+Optional subjects
+Subject code	Subject name	Teacher	ECTS	Term	Scientific sector
+22249	INNOVATION C.I. (in english)	PIAZZA	12	2° semestre	
+	STRATEGIC MANAGEMENT AND OPEN INNOVATION (in english)	PIAZZA	6		ING-IND/35
+	PRODUCT/PROCESS INNOVATION (in english)	MICARI	6		ING-IND/16
+22250	SMART FACTORY AND QUALITY - INTEGRATED COURSE (in english)	LA COMMARE	12	2° semestre	
+	PROCESS AND SYSTEM SIMULATION (in english)	BUFFA	6		ING-IND/16
+	SMART FACTORY (in english)	LA COMMARE	6		ING-IND/16
+22251	SUSTAINABILITY AND HEALTHCARE - INTEGRATED COURSE (in english)	INGARAO	12	2° semestre	
+	HEALTHCARE OPERATIONS MANAGEMENT (in english)	MAZZOLA	6		ING-IND/35
+	SUSTAINABLE MANUFACTURING (in english)	INGARAO	6		ING-IND/16
+
+

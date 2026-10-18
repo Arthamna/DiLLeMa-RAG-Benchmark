@@ -1,0 +1,66 @@
+Anno Accademico 2024/2025
+Laurea in INGEGNERIA ELETTRICA PER LA E-MOBILITY
+Per maggiori informazioni vai su http://www.unipa.it/struttura.html?id=1881
+---------
+Classe di Laurea in Ingegneria industriale (L-9)
+Durata 3 anni
+Sede PALERMO
+Accesso libero
+Dipartimento di Ingegneria
+Codice corso 2224
+---------
+Obiettivi Formativi
+Obiettivi specifici:
+L'obiettivo del Corso di Laurea e' quello di formare ingegneri che, oltra a possedere le conoscenze e le competenze di base di un ingegnere elettrico, sappiano applicare e declinare tali conoscenze e tali competenze in un nuovo settore applicativo, cioe' quello della mobilita' elettrica.
+Partendo da una solida formazione di base di tipo multidisciplinare, il Corso fornisce una preparazione generalista nei campi dell'elettrotecnica, delle macchine e degli azionamenti elettrici, dell'elettronica di potenza, degli impianti elettrici, delle misure elettriche e delle applicazioni elettromeccaniche e una preparazione piu' specifica sugli aspetti elettrici della mobilita.
+Il laureato in Ingegneria Elettrica per la E-Mobility possiedera' le basi per progettare, costruire, gestire e collaudare tutte le parti elettriche a bordo del veicolo (batterie, convertitori, motori, cablaggio e strumentazione di misura) e per progettare, mettere in opera, gestire e collaudare le infrastrutture elettriche a supporto della E-Mobility (reti di distribuzione, generazione distribuita, smart-grid, infrastrutture di ricarica).
+Il raggiungimento degli obiettivi e' ottenuto attraverso un percorso formativo che prevede lezioni frontali, esercitazioni, discussione su casi studio, seminari e applicazioni pratiche in laboratorio e sul campo ed e' essenzialmente articolato in:
+- materie di base (matematica, fisica, geometria, chimica);
+- discipline ingegneristiche di tipo trasversale tipiche della classe dei corsi di laurea in Ingegneria Industriale (disegno assistito da calcolatore, scienza delle costruzioni, fisica tecnica);
+- materie di base tipiche dei corsi di laurea in Ingegneria Elettrica (elettrotecnica, macchine elettriche, sistemi elettrici e misure elettriche);
+- materie di supporto (elettronica, elettronica di potenza, fondamenti di progettazione e costruzioni di veicoli elettrici);
+- materie applicative (azionamenti elettrici per l'automotive, sistemi di accumulo, mobilita' sostenibile, apparati per l'autoveicolo);
+- materie a scelta che gli allievi potranno scegliere tra quelle erogate dagli altri Corsi di Laurea per integrare autonomamente, secondo i loro interessi e le loro inclinazioni, la loro formazione.
+---------
+Sbocchi Occupazionali
+Profilo:
+Ingegnere Elettrico
+Funzioni:
+Il laureato collabora alla:
+progettazione, pianificazione e realizzazione di infrastrutture elettriche per la mobilita;
+progettazione, pianificazione e realizzazione di installazioni e impianti elettrici;
+progettazione e costruzione di componenti e sistemi per la mobilita' elettrica;
+progettazione e costruzione di apparecchiature e macchinari elettrici, azionamenti elettrici e sistemi elettronici di potenza;
+esercizio e controllo di infrastrutture elettriche per la mobilita;
+esercizio e controllo di impianti elettrici per la produzione e la distribuzione dell'energia elettrica;
+esercizio e controllo di impianti per la produzione e gestione di beni e servizi;
+collaudo di componenti e sistemi elettrici per la mobilita:
+collaudo di componenti, apparecchiature e impianti elettrici;
+collaudo di impianti per la produzione e gestione di beni e servizi automatizzati.
+Competenze:
+Il laureato e' in grado di:
+fornire supporto tecnico alle varie fasi di progettazione e di esecuzione dei progetti;
+valutare e definire le specifiche tecniche e i costi di componenti e sistemi;
+redigere documenti tecnici, computi metrici e preventivi;
+esaminare la documentazione legislativa, normativa e i cataloghi tecnici;
+applicare i principi di sicurezza;
+controllare i processi produttivi;
+manutenere apparecchiature e impianti;
+effettuare misure, prove e verifiche;
+lavorare in gruppo, anche in contesti interdisciplinari;
+comunicare con proprieta' di linguaggio le proposte e le soluzioni adottate o da adottare.
+Sbocchi:
+Industrie automobilistiche e della mobilita' elettrica in genere.
+Enti pubblici e privati per la progettazione, realizzazione e gestione di infrastrutture elettriche per la mobilita.
+Industrie per la produzione di componenti, apparecchiature e macchinari elettrici, azionamenti elettrici e sistemi elettronici di potenza.
+Aziende ed enti pubblici e privati di progettazione e costruzione di impianti di distribuzione e utilizzazione dell'energia elettrica.
+Centri di manutenzione, riparazione e revisione di veicoli elettrici;
+Aziende, enti, organismi, pubblici e privati che forniscono servizi per il collaudo di dispositivi, macchine ed impianti, per la verifica e la certificazione di rispondenza a norma.
+Libera professione.
+---------
+Caratteristiche della Prova Finale
+Per conseguire la laurea lo studente deve aver acquisito 180 crediti formativi compresi quelli relativi alla prova finale che e' pari a 3 CFU.
+La prova finale ha l'obiettivo di verificare il livello di maturita' e la capacita' critica del laureando, con riferimento agli apprendimenti e alle conoscenze acquisite, a completamento delle attivita' previste dall'ordinamento didattico.
+La prova finale consiste in una prova scritta o orale secondo modalita' definite dal regolamento sulla prova finale del Corso di Laurea per ogni A.A., nel rispetto delle prescrizioni ministeriali e delle inerenti linee guida di Ateneo.
+Tra gli argomenti della prova finale, nella pagina web del CdS sono anche presentate tematiche richieste dei portatori di interesse, che consultati annualmente forniscono un punto di vista esterno utile all'allineamento del percorso formativo con le richieste del settore lavorativo.
+---------
