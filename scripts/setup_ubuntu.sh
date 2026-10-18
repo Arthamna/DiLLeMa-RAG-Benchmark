@@ -20,10 +20,11 @@ source .venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
 
 if [[ "${INSTALL_QUANTIZED:-1}" == "1" ]]; then
-  python -m pip install -e ".[api,dev,rrag,quantized]"
+  python -m pip install -e ".[api,dev,hf,quantized]"
 else
-  python -m pip install -e ".[api,dev,rrag]"
+  python -m pip install -e ".[api,dev,hf]"
 fi
 
 python -c 'import torch; print("CUDA tersedia:", torch.cuda.is_available()); print("GPU:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "tidak terdeteksi; pipeline akan memakai CPU")'
 echo "Setup selesai. Aktifkan kembali dengan: source .venv/bin/activate"
+echo "Untuk matriks Rankify, jalankan juga: bash scripts/setup_rankify_ubuntu.sh"

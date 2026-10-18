@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import time
 from collections import OrderedDict
 from dataclasses import dataclass
 
@@ -25,6 +26,7 @@ def is_listing(question: str) -> bool:
 class PackedContext:
     text: str
     evidence: list[RetrievedEvidence]
+    diagnostics: dict | None = None
 
 
 def drop_weak_evidence(items: list[RetrievedEvidence], ratio: float) -> list[RetrievedEvidence]:
@@ -63,12 +65,11 @@ def pack_parent_pages(items: list[RetrievedEvidence], max_parents: int) -> Packe
         source = group[0]
         label = str(source.metadata.get("title") or source.metadata.get("source_path") or source.source_id)
         bodies.append(f"Source: {label}\n" + "\n\n".join(parts))
-    return PackedContext(text="\n\n---\n\n".join(bodies), evidence=kept)
+    return PackedContext(text="\n\n---\n\n".join(bodies), evidence=kept, diagnostics={})
 
 
 class RAGPipeline:
     name = "dillema"
-    supports_training = False
 
     def __init__(self, store, embedder, reranker, config: PipelineConfig | None = None, generator=None):
         self.store = store
@@ -92,11 +93,15 @@ class RAGPipeline:
         return len(chunks)
 
     def retrieve(self, collection: str, question: str) -> PackedContext:
+        retrieval_started = time.perf_counter()
         query_vector = self.embedder.encode_query(question)
         hits = self.store.search(collection, query_vector, question, self.config.retrieval_candidates)
+        retrieval_ms = (time.perf_counter() - retrieval_started) * 1000
         payloads = [dict(hit.payload or {}) for hit in hits]
         passages = [str(payload.get("document") or "") for payload in payloads]
+        rerank_started = time.perf_counter()
         scores = self.reranker.score(question, passages)
+        rerank_ms = (time.perf_counter() - rerank_started) * 1000
         ranked: list[RetrievedEvidence] = []
         for payload, passage, score in zip(payloads, passages, scores):
             if not passage or score < self.config.rerank_min_score:
@@ -121,16 +126,26 @@ class RAGPipeline:
         top = self.config.listing_top_results if listing else self.config.normal_top_results
         ratio = self.config.listing_relative_floor if listing else self.config.rerank_relative_floor
         parents = self.config.listing_max_parents if listing else self.config.max_parents
-        return pack_parent_pages(drop_weak_evidence(ranked[:top], ratio), parents)
+        packed = pack_parent_pages(drop_weak_evidence(ranked[:top], ratio), parents)
+        packed.diagnostics = {
+            "retrieval_latency_ms": round(retrieval_ms, 3),
+            "rerank_latency_ms": round(rerank_ms, 3),
+            "retrieved_candidates": len(hits),
+        }
+        return packed
 
     def answer(self, collection: str, question: str) -> TechniqueResult:
         packed = self.retrieve(collection, question)
+        generation_started = time.perf_counter()
         prediction = self.generator.generate(question, packed.text) if packed.text and self.generator else ""
+        generation_ms = (time.perf_counter() - generation_started) * 1000
         return TechniqueResult(
             prediction=prediction,
             context=packed.text,
             evidence=packed.evidence,
             diagnostics={
+                **(packed.diagnostics or {}),
+                "generation_latency_ms": round(generation_ms, 3),
                 "listing": is_listing(question),
                 "selected_evidence": len(packed.evidence),
                 "selected_parents": len({item.metadata.get("parent_id") or item.source_id for item in packed.evidence}),

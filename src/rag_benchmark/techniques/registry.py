@@ -6,13 +6,11 @@ from dataclasses import dataclass
 @dataclass(frozen=True, slots=True)
 class TechniqueSpec:
     name: str
-    supports_training: bool
     import_path: str
 
 
 TECHNIQUES = {
-    "dillema": TechniqueSpec("dillema", False, "rag_benchmark.techniques.dillema.pipeline:RAGPipeline"),
-    "rrag": TechniqueSpec("rrag", True, "rag_benchmark.techniques.rrag.pipeline:RRAGTechnique"),
+    "dillema": TechniqueSpec("dillema", "rag_benchmark.techniques.dillema.pipeline:RAGPipeline"),
 }
 
 

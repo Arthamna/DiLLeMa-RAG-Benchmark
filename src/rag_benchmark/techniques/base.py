@@ -7,7 +7,6 @@ from ..shared.records import DocumentRecord, TechniqueResult
 
 class Technique(Protocol):
     name: str
-    supports_training: bool
 
     def index(self, collection: str, documents: list[DocumentRecord]) -> int: ...
 

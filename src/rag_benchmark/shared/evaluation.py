@@ -7,13 +7,14 @@ from .config import collection_name
 from .records import PredictionRecord, QARecord, RetrievedEvidence
 
 
-def _source_recall(evidence: list[RetrievedEvidence], gold: list[str]) -> float | None:
+def _relevant_ranks(evidence: list[RetrievedEvidence], gold: list[str]) -> list[int]:
     if not gold:
-        return None
+        return []
     normalized_gold = {str(item).casefold() for item in gold}
-    retrieved: set[str] = set()
-    for item in evidence[:10]:
-        retrieved.add(item.source_id.casefold())
+    ranks: list[int] = []
+    matched_gold: set[str] = set()
+    for rank, item in enumerate(evidence[:10], 1):
+        retrieved = {item.source_id.casefold()}
         source_path = str(item.metadata.get("source_path") or "")
         if source_path:
             retrieved.add(source_path.casefold())
@@ -22,7 +23,11 @@ def _source_recall(evidence: list[RetrievedEvidence], gold: list[str]) -> float 
         source_file = str(item.metadata.get("source_file") or "")
         if source_file:
             retrieved.add(source_file.casefold())
-    return 1.0 if normalized_gold & retrieved else 0.0
+        new_matches = (normalized_gold & retrieved) - matched_gold
+        if new_matches:
+            ranks.append(rank)
+            matched_gold.update(new_matches)
+    return ranks
 
 
 def evaluate_questions(
@@ -31,6 +36,8 @@ def evaluate_questions(
     dataset: str,
     technique: str,
     model_fingerprint: str,
+    corpus_fingerprint: str = "",
+    decoding_config: dict | None = None,
 ) -> list[PredictionRecord]:
     predictions: list[PredictionRecord] = []
     for question in questions:
@@ -56,9 +63,10 @@ def evaluate_questions(
             except Exception as exc:  # failures remain in the BLEU denominator
                 status = "error"
                 error = f"{type(exc).__name__}: {exc}"
-        recall = _source_recall(evidence, question.source_ids)
-        if recall is not None:
-            diagnostics["source_recall_at_10"] = recall
+        relevant_ranks = _relevant_ranks(evidence, question.source_ids)
+        if question.source_ids:
+            diagnostics["relevant_ranks"] = relevant_ranks
+            diagnostics["source_recall_at_10"] = 1.0 if relevant_ranks else 0.0
             diagnostics["relevance_label"] = question.metadata.get("relevance_label")
         predictions.append(PredictionRecord(
             id=question.id,
@@ -77,6 +85,8 @@ def evaluate_questions(
             technique=technique,
             split=question.split,
             model_fingerprint=model_fingerprint,
+            corpus_fingerprint=corpus_fingerprint,
+            decoding_config=dict(decoding_config or {}),
             gold_source_ids=question.source_ids,
             diagnostics=diagnostics,
         ))

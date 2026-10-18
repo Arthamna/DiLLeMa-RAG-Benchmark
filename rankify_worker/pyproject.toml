@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dillema-rankify-worker"
+version = "0.1.0"
+description = "Isolated Rankify worker for the DiLLeMa benchmark"
+requires-python = ">=3.10"
+dependencies = [
+  "rankify[retriever,reranking,rag]==0.1.4",
+  "bitsandbytes>=0.43.0; platform_system == 'Linux'",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

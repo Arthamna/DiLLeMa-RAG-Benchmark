@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import json
+import math
 import re
+import unicodedata
 from collections import Counter
 from pathlib import Path
 from typing import Iterable
@@ -23,6 +25,79 @@ def normalize_content(text: str) -> str:
     value = _URL.sub(" ", text or "")
     value = _BOILERPLATE.sub(" ", value)
     return " ".join(value.split()).strip()
+
+
+def normalize_answer(text: str) -> str:
+    value = unicodedata.normalize("NFKC", text or "").casefold()
+    return " ".join(re.findall(r"\w+", value, flags=re.UNICODE))
+
+
+def _answer_scores(record: dict) -> tuple[float, float]:
+    prediction = normalize_answer(str(record.get("prediction") or ""))
+    references = [normalize_answer(str(item)) for item in record.get("references") or [""]]
+    exact = 1.0 if prediction and prediction in references else 0.0
+    prediction_tokens = prediction.split()
+    best_f1 = 0.0
+    for reference in references:
+        reference_tokens = reference.split()
+        if not prediction_tokens or not reference_tokens:
+            continue
+        overlap = sum((Counter(prediction_tokens) & Counter(reference_tokens)).values())
+        if not overlap:
+            continue
+        precision = overlap / len(prediction_tokens)
+        recall = overlap / len(reference_tokens)
+        best_f1 = max(best_f1, 2 * precision * recall / (precision + recall))
+    return exact, best_f1
+
+
+def _percentile(values: list[float], ratio: float) -> float:
+    if not values:
+        return 0.0
+    ordered = sorted(values)
+    position = (len(ordered) - 1) * ratio
+    lower = int(position)
+    upper = min(lower + 1, len(ordered) - 1)
+    weight = position - lower
+    return ordered[lower] * (1 - weight) + ordered[upper] * weight
+
+
+def _latency(values: list[float]) -> dict:
+    return {
+        "mean": sum(values) / len(values) if values else 0.0,
+        "p50": _percentile(values, 0.50),
+        "p95": _percentile(values, 0.95),
+    }
+
+
+def _retrieval_scores(records: list[dict]) -> dict:
+    labeled = [row for row in records if row.get("gold_source_ids")]
+    labels = sorted({
+        str(row.get("diagnostics", {}).get("relevance_label")) for row in labeled
+        if row.get("diagnostics", {}).get("relevance_label")
+    })
+    recalls = {1: [], 5: [], 10: []}
+    reciprocal_ranks: list[float] = []
+    ndcgs: list[float] = []
+    for row in labeled:
+        ranks = [int(value) for value in row.get("diagnostics", {}).get("relevant_ranks", [])]
+        for cutoff in recalls:
+            recalls[cutoff].append(1.0 if any(rank <= cutoff for rank in ranks) else 0.0)
+        first = min(ranks) if ranks else None
+        reciprocal_ranks.append(1.0 / first if first else 0.0)
+        dcg = sum(1.0 / math.log2(rank + 1) for rank in ranks if rank <= 10)
+        ideal_count = min(len(set(row.get("gold_source_ids") or [])), 10)
+        ideal = sum(1.0 / math.log2(rank + 1) for rank in range(1, ideal_count + 1))
+        ndcgs.append(dcg / ideal if ideal else 0.0)
+    return {
+        "labeled_count": len(labeled),
+        "relevance_label": labels[0] if len(labels) == 1 else labels,
+        "recall_at_1": sum(recalls[1]) / len(labeled) if labeled else None,
+        "recall_at_5": sum(recalls[5]) / len(labeled) if labeled else None,
+        "recall_at_10": sum(recalls[10]) / len(labeled) if labeled else None,
+        "mrr_at_10": sum(reciprocal_ranks) / len(labeled) if labeled else None,
+        "ndcg_at_10": sum(ndcgs) / len(labeled) if labeled else None,
+    }
 
 
 def _reference_streams(records: list[dict], transform) -> list[list[str]]:
@@ -56,22 +131,30 @@ def bleu_variant(records: list[dict], content_only: bool = False) -> dict:
 
 
 def score_group(records: list[dict]) -> dict:
-    recalls = [
-        float(row.get("diagnostics", {}).get("source_recall_at_10"))
-        for row in records
-        if row.get("diagnostics", {}).get("source_recall_at_10") is not None
-    ]
+    answer_scores = [_answer_scores(row) for row in records]
     latencies = [float(row.get("latency_ms", 0.0)) for row in records]
+    stage_latency = {}
+    for key in ("retrieval_latency_ms", "rerank_latency_ms", "generation_latency_ms"):
+        values = [
+            float(row.get("diagnostics", {}).get(key)) for row in records
+            if row.get("diagnostics", {}).get(key) is not None
+        ]
+        stage_latency[key.removesuffix("_latency_ms")] = _latency(values)
+    statuses = Counter(str(row.get("status", "")) for row in records)
     return {
         "count": len(records),
-        "status_counts": dict(sorted(Counter(str(row.get("status", "")) for row in records).items())),
+        "status_counts": dict(sorted(statuses.items())),
         "BLEU_raw": bleu_variant(records, content_only=False),
         "BLEU_content": bleu_variant(records, content_only=True),
-        "retrieval": {
-            "labeled_count": len(recalls),
-            "recall_at_10": (sum(recalls) / len(recalls)) if recalls else None,
-        },
+        "exact_match": sum(score[0] for score in answer_scores) / len(records) if records else 0.0,
+        "token_f1": sum(score[1] for score in answer_scores) / len(records) if records else 0.0,
+        "retrieval": _retrieval_scores(records),
         "average_latency_ms": (sum(latencies) / len(latencies)) if latencies else 0.0,
+        "latency_ms": {"end_to_end": _latency(latencies), **stage_latency},
+        "error_rate": statuses.get("error", 0) / len(records) if records else 0.0,
+        "cpu_fallback_count": sum(
+            1 for row in records if row.get("diagnostics", {}).get("gpu_fallback")
+        ),
     }
 
 

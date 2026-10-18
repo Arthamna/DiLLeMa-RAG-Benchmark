@@ -39,3 +39,22 @@ def test_uniqa_strict_and_valid_denominators():
     assert report["corpus_valid"]["en"]["count"] == 1
     assert "macro_average" in report["strict"]
 
+
+def test_unicode_answer_retrieval_and_latency_metrics():
+    row = _row("L'università è aperta", ["L'università è aperta"])
+    row.update({
+        "gold_source_ids": ["doc"],
+        "diagnostics": {
+            "relevant_ranks": [1], "retrieval_latency_ms": 2,
+            "rerank_latency_ms": 3, "generation_latency_ms": 4,
+        },
+        "latency_ms": 10,
+    })
+    report = summarize([row])["its"]
+    assert report["exact_match"] == 1.0
+    assert report["token_f1"] == 1.0
+    assert report["retrieval"]["recall_at_1"] == 1.0
+    assert report["retrieval"]["mrr_at_10"] == 1.0
+    assert report["retrieval"]["ndcg_at_10"] == 1.0
+    assert report["latency_ms"]["end_to_end"]["p95"] == 10.0
+

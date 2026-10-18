@@ -79,6 +79,8 @@ class PredictionRecord:
     technique: str = "dillema"
     split: str = "test"
     model_fingerprint: str = ""
+    corpus_fingerprint: str = ""
+    decoding_config: dict[str, Any] = field(default_factory=dict)
     gold_source_ids: list[str] = field(default_factory=list)
     diagnostics: dict[str, Any] = field(default_factory=dict)
 

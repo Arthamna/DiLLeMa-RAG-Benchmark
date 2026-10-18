@@ -10,7 +10,6 @@ from .device import cuda_available
 
 LOGGER = logging.getLogger(__name__)
 
-RETRIEVAL_TOKEN = "<R>"
 SYSTEM_PROMPT = (
     "Answer using only the supplied evidence. Answer in the same language as the question. "
     "Return only the answer, without citations, source labels, preamble, or commentary. "
@@ -52,14 +51,6 @@ def base_prompt(question: str, context: str) -> str:
     return f"{SYSTEM_PROMPT}\n\nEvidence:\n{context}\n\nQuestion:\n{question}\n\nAnswer:"
 
 
-def rrag_prompt(question: str, evidence) -> str:
-    documents = []
-    for index, item in enumerate(evidence, 1):
-        title = item.metadata.get("title") or item.metadata.get("source_path") or item.source_id
-        documents.append(f"[{index}] retrieval: {RETRIEVAL_TOKEN} (Title: {title}) {item.text}")
-    return base_prompt(question, "\n".join(documents))
-
-
 class LocalLLM:
     """The only base-model loader/tokenizer/decoder used by every technique."""
 
@@ -71,7 +62,8 @@ class LocalLLM:
             model, tokenizer = self._load(config)
         self.model = model
         self.tokenizer = tokenizer
-        self._ensure_tokens()
+        if getattr(self.tokenizer, "pad_token_id", None) is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
         for parameter in self.model.parameters():
             parameter.requires_grad = False
         self.model.eval()
@@ -101,27 +93,9 @@ class LocalLLM:
         model = AutoModelForCausalLM.from_pretrained(config.model_name, **model_kwargs)
         return model, tokenizer
 
-    def _ensure_tokens(self) -> None:
-        if getattr(self.tokenizer, "pad_token_id", None) is None:
-            self.tokenizer.pad_token = self.tokenizer.eos_token
-        vocabulary = self.tokenizer.get_vocab()
-        if RETRIEVAL_TOKEN not in vocabulary:
-            self.tokenizer.add_special_tokens({"additional_special_tokens": [RETRIEVAL_TOKEN]})
-            self.model.resize_token_embeddings(len(self.tokenizer))
-        self.retrieval_token_id = int(self.tokenizer.convert_tokens_to_ids(RETRIEVAL_TOKEN))
-
     @property
     def device(self):
         return next(self.model.parameters()).device
-
-    @property
-    def hidden_size(self) -> int:
-        config = self.model.config
-        if hasattr(config, "hidden_size"):
-            return int(config.hidden_size)
-        if hasattr(config, "text_config") and hasattr(config.text_config, "hidden_size"):
-            return int(config.text_config.hidden_size)
-        raise ValueError("Unable to determine the causal LLM hidden size")
 
     @property
     def fingerprint(self) -> str:
@@ -145,48 +119,4 @@ class LocalLLM:
             pad_token_id=self.tokenizer.pad_token_id,
         )
         return self._decode_new_tokens(outputs, int(tokens.input_ids.shape[1]))
-
-    def inject(self, input_ids, retrieval_embeddings):
-        token_embeddings = self.model.get_input_embeddings()(input_ids)
-        positions = (input_ids == self.retrieval_token_id).nonzero(as_tuple=False)
-        flat = retrieval_embeddings.reshape(-1, retrieval_embeddings.shape[-1])
-        if positions.shape[0] != flat.shape[0]:
-            raise ValueError(
-                f"Prompt has {positions.shape[0]} retrieval tokens but adapter produced {flat.shape[0]} embeddings"
-            )
-        updated = token_embeddings.clone()
-        updated[positions[:, 0], positions[:, 1]] = flat.to(updated.dtype)
-        return updated
-
-    def generate_with_injections(self, prompt: str, retrieval_embeddings) -> str:
-        tokens = self.tokenize(prompt).to(self.device)
-        inputs_embeds = self.inject(tokens.input_ids, retrieval_embeddings)
-        outputs = self.model.generate(
-            inputs_embeds=inputs_embeds,
-            attention_mask=tokens.attention_mask,
-            do_sample=False,
-            max_new_tokens=self.config.max_new_tokens,
-            pad_token_id=self.tokenizer.pad_token_id,
-        )
-        return self._decode_new_tokens(outputs, int(tokens.input_ids.shape[1]))
-
-    def training_tensors(self, prompt: str, answer: str):
-        import torch
-        from transformers import BatchEncoding
-
-        suffix = answer + (self.tokenizer.eos_token or "")
-        answer_ids = self.tokenizer(suffix, add_special_tokens=False)["input_ids"]
-        answer_ids = answer_ids[: self.config.max_input_tokens - 1]
-        prompt_limit = max(1, self.config.max_input_tokens - len(answer_ids))
-        prompt_ids = self.tokenizer(
-            prompt, add_special_tokens=True, truncation=True, max_length=prompt_limit,
-        )["input_ids"]
-        input_ids = torch.tensor([prompt_ids + answer_ids], device=self.device)
-        combined = BatchEncoding({
-            "input_ids": input_ids,
-            "attention_mask": torch.ones_like(input_ids),
-        })
-        labels = input_ids.clone()
-        labels[:, : len(prompt_ids)] = -100
-        return combined, labels
 
