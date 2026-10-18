@@ -26,13 +26,13 @@ di diagnostics.
 
 - Ubuntu 22.04 atau lebih baru.
 - `uv` dan `curl` untuk mengelola Python serta dependency project.
-- Java yang kompatibel dengan Pyserini untuk index BM25 Rankify.
+- JDK 21 lengkap (`java` dan `javac`) untuk index BM25 Rankify/Pyserini.
 - NVIDIA driver/CUDA opsional tetapi sangat disarankan.
 - Ruang disk untuk model Hugging Face dan index.
 
 ```bash
 sudo apt update
-sudo apt install -y curl ca-certificates openjdk-21-jre-headless
+sudo apt install -y curl ca-certificates openjdk-21-jdk-headless
 curl -LsSf https://astral.sh/uv/0.12.19/install.sh | sh
 exec "$SHELL" -l
 uv --version
@@ -61,6 +61,11 @@ Compatibility worker dikunci pada PyArrow 17 dan Chardet 5.x.
 Jika `.venv-rankify` sudah dibuat oleh versi setup lama, cukup sinkronkan ulang:
 
 ```bash
+sudo apt install -y openjdk-21-jdk-headless
+export JAVA_HOME="$(dirname "$(dirname "$(readlink -f "$(command -v javac)")")")"
+java -version
+javac -version
+
 export UV_PROJECT_ENVIRONMENT="$PWD/.venv-rankify"
 uv sync --project rankify_worker --python 3.12 --locked
 
@@ -68,8 +73,9 @@ printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
   | .venv-rankify/bin/python -m rag_benchmark_rankify.worker
 ```
 
+Worker mendeteksi JDK dari `javac` dan mengatur `JAVA_HOME` untuk subprocess-nya.
 Probe yang berhasil berakhir dengan `"status": "ok"` dan menampilkan versi
-Python, NumPy, PyArrow, Torch, serta status CUDA.
+Python, NumPy, PyArrow, Torch, lokasi Java, serta status CUDA.
 
 ## Konfigurasi generator
 

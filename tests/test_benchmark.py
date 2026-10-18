@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 from pathlib import Path
 from types import ModuleType, SimpleNamespace
@@ -21,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "rankify_worker" / 
 from rag_benchmark_rankify.worker import (  # noqa: E402
     PRESETS,
     _capabilities,
+    _configure_java_home,
     _custom_prompt,
     _generation_kwargs,
     _generator,
@@ -105,6 +107,25 @@ def test_setup_scripts_use_uv_only():
     assert all("uv sync" in script for script in scripts)
     assert all("pip install" not in script for script in scripts)
     assert all("python3 -m venv" not in script for script in scripts)
+
+
+def test_rankify_worker_configures_java_home_from_javac(tmp_path, monkeypatch):
+    javac = tmp_path / "jdk-21" / "bin" / "javac"
+    javac.parent.mkdir(parents=True)
+    javac.write_text("", encoding="utf-8")
+    monkeypatch.delenv("JAVA_HOME", raising=False)
+    monkeypatch.setattr("rag_benchmark_rankify.worker.shutil.which", lambda name: str(javac))
+
+    assert _configure_java_home() == str(javac.parent.parent.resolve())
+    assert os.environ["JAVA_HOME"] == str(javac.parent.parent.resolve())
+
+
+def test_rankify_worker_requires_full_jdk(monkeypatch):
+    monkeypatch.delenv("JAVA_HOME", raising=False)
+    monkeypatch.setattr("rag_benchmark_rankify.worker.shutil.which", lambda name: None)
+
+    with pytest.raises(RuntimeError, match="openjdk-21-jdk-headless"):
+        _configure_java_home()
 
 
 def test_generation_and_experiment_models_are_configuration_driven(tmp_path, monkeypatch):

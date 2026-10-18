@@ -5,6 +5,7 @@ import importlib.metadata
 import json
 import logging
 import os
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -20,6 +21,24 @@ PRESETS = {
     "rankify_hybrid_bge_rerank_cot": ("hybrid", True, "chain-of-thought-rag"),
     "rankify_hybrid_bge_rerank_incontext": ("hybrid", True, "in-context-ralm"),
 }
+
+
+def _configure_java_home() -> str:
+    configured = os.environ.get("JAVA_HOME")
+    if configured:
+        java_bin = Path(configured) / "bin"
+        if any((java_bin / name).is_file() for name in ("javac", "javac.exe")):
+            return configured
+
+    javac = shutil.which("javac")
+    if not javac:
+        raise RuntimeError(
+            "Rankify BM25 requires JDK 21 (javac), not only a JRE. "
+            "On Ubuntu run: sudo apt install openjdk-21-jdk-headless"
+        )
+    java_home = str(Path(javac).resolve().parent.parent)
+    os.environ["JAVA_HOME"] = java_home
+    return java_home
 
 
 def _device(request: dict) -> tuple[str, bool]:
@@ -326,9 +345,11 @@ def main() -> None:
         request = json.loads(sys.stdin.readline())
         if int(request.get("schema_version", 0)) != 1:
             raise ValueError("Unsupported worker schema_version")
+        java_home = _configure_java_home()
         operation = request.get("operation")
         if operation == "capabilities":
             response = _capabilities()
+            response["java_home"] = java_home
         elif operation == "index":
             response = _index(request)
         elif operation == "evaluate":
