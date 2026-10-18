@@ -10,6 +10,8 @@ requires-python = ">=3.10"
 dependencies = [
   "rankify[retriever,reranking,rag]==0.1.4",
   "bitsandbytes>=0.43.0; platform_system == 'Linux'",
+  "pyarrow==17.0.0",
+  "chardet>=5,<6",
 ]
 
 [tool.setuptools]

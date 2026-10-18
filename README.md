@@ -54,6 +54,23 @@ Kedua environment dibuat oleh `uv` di `.venv` dan `.venv-rankify`, tetap lokal
 di repository, dan diabaikan Git. Python mengikuti `.python-version`; worker
 dipin pada `rankify==0.1.4`. `uv sync` membuat atau memperbarui lockfile project.
 
+Worker memanggil `TransformerRanker` secara langsung agar registry reranker
+Rankify tidak memuat dependency LiT5/RankLLM seperti `fastchat` yang tidak dipakai.
+Compatibility worker dikunci pada PyArrow 17 dan Chardet 5.x.
+
+Jika `.venv-rankify` sudah dibuat oleh versi setup lama, cukup sinkronkan ulang:
+
+```bash
+export UV_PROJECT_ENVIRONMENT="$PWD/.venv-rankify"
+uv sync --project rankify_worker --python 3.12 --locked
+
+printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
+  | .venv-rankify/bin/python -m rag_benchmark_rankify.worker
+```
+
+Probe yang berhasil berakhir dengan `"status": "ok"` dan menampilkan versi
+Python, NumPy, PyArrow, Torch, serta status CUDA.
+
 ## Konfigurasi generator
 
 Salin `.env.example`, lalu pilih satu backend pada YAML eksperimen.

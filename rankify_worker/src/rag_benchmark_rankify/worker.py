@@ -44,8 +44,11 @@ def _device(request: dict) -> tuple[str, bool]:
 
 
 def _capabilities() -> dict:
+    import numpy
+    import pyarrow
+    import torch
     from rankify.generator.generator import Generator
-    from rankify.models.reranking import Reranking
+    from rankify.models.transformer_ranker import TransformerRanker
     from rankify.retrievers.retriever import Retriever
 
     version = importlib.metadata.version("rankify")
@@ -57,9 +60,15 @@ def _capabilities() -> dict:
         raise RuntimeError(f"Rankify is missing required retrievers: {sorted(missing)}")
     return {
         "status": "ok",
+        "python_version": sys.version.split()[0],
         "rankify_version": version,
+        "numpy_version": numpy.__version__,
+        "pyarrow_version": pyarrow.__version__,
+        "torch_version": torch.__version__,
+        "cuda_available": bool(torch.cuda.is_available()),
+        "cuda_device": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
         "retrievers": retrievers,
-        "reranker_import": Reranking.__name__,
+        "reranker_import": TransformerRanker.__name__,
         "generator_import": Generator.__name__,
         "presets": list(PRESETS),
     }
@@ -151,11 +160,10 @@ def _retrieve(document, retrievers: dict, mode: str, rrf_k: int, candidates: int
 def _reranker(request: dict, enabled: bool, device: str):
     if not enabled:
         return None
-    from rankify.models.reranking import Reranking
+    from rankify.models.transformer_ranker import TransformerRanker
 
     configured = str(request["reranker_model"])
-    model_key = configured.split("/", 1)[1] if configured.startswith("BAAI/") else configured
-    return Reranking(method="transformer_ranker", model_name=model_key, device=device)
+    return TransformerRanker(method="transformer_ranker", model_name=configured, device=device)
 
 
 def _generator(request: dict, method: str, device: str):

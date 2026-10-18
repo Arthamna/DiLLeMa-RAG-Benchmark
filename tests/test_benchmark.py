@@ -24,6 +24,7 @@ from rag_benchmark_rankify.worker import (  # noqa: E402
     _custom_prompt,
     _generation_kwargs,
     _generator,
+    _reranker,
 )
 
 
@@ -35,7 +36,7 @@ def _fake_rankify(monkeypatch):
     generator_module = ModuleType("rankify.generator.generator")
     models_package = ModuleType("rankify.models")
     models_package.__path__ = []
-    reranking_module = ModuleType("rankify.models.reranking")
+    transformer_module = ModuleType("rankify.models.transformer_ranker")
     retrievers_package = ModuleType("rankify.retrievers")
     retrievers_package.__path__ = []
     retriever_module = ModuleType("rankify.retrievers.retriever")
@@ -47,8 +48,11 @@ def _fake_rankify(monkeypatch):
         def __init__(self, **kwargs):
             type(self).last_kwargs = kwargs
 
-    class Reranking:
-        pass
+    class TransformerRanker:
+        last_kwargs = None
+
+        def __init__(self, **kwargs):
+            type(self).last_kwargs = kwargs
 
     class Retriever:
         @staticmethod
@@ -56,7 +60,7 @@ def _fake_rankify(monkeypatch):
             return ("bm25", "bge")
 
     generator_module.Generator = Generator
-    reranking_module.Reranking = Reranking
+    transformer_module.TransformerRanker = TransformerRanker
     retriever_module.Retriever = Retriever
     prompt_module.DEFAULT_PROMPTS = {"in-context-ralm": "native RALM prompt"}
     prompt_module.PromptTemplate = SimpleNamespace(IN_CONTEXT_RALM="in-context-ralm")
@@ -66,13 +70,19 @@ def _fake_rankify(monkeypatch):
         "rankify.generator.generator": generator_module,
         "rankify.generator.prompt_template": prompt_module,
         "rankify.models": models_package,
-        "rankify.models.reranking": reranking_module,
+        "rankify.models.transformer_ranker": transformer_module,
         "rankify.retrievers": retrievers_package,
         "rankify.retrievers.retriever": retriever_module,
     }.items():
         monkeypatch.setitem(sys.modules, name, module)
+    monkeypatch.setitem(sys.modules, "numpy", SimpleNamespace(__version__="1.26.4"))
+    monkeypatch.setitem(sys.modules, "pyarrow", SimpleNamespace(__version__="17.0.0"))
+    monkeypatch.setitem(sys.modules, "torch", SimpleNamespace(
+        __version__="2.5.1",
+        cuda=SimpleNamespace(is_available=lambda: True, get_device_name=lambda index: "Mock GPU"),
+    ))
     monkeypatch.setattr("importlib.metadata.version", lambda name: "0.1.4")
-    return Generator
+    return Generator, TransformerRanker
 
 
 def test_rrag_is_absent_from_registry_and_cli():
@@ -148,8 +158,14 @@ def test_rankify_generation_is_greedy_and_bounded():
 
 
 def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatch):
-    generator_class = _fake_rankify(monkeypatch)
-    assert _capabilities()["rankify_version"] == "0.1.4"
+    generator_class, reranker_class = _fake_rankify(monkeypatch)
+    capabilities = _capabilities()
+    assert capabilities["rankify_version"] == "0.1.4"
+    assert capabilities["reranker_import"] == "TransformerRanker"
+    assert capabilities["numpy_version"] == "1.26.4"
+    assert capabilities["pyarrow_version"] == "17.0.0"
+    assert capabilities["cuda_available"] is True
+    assert "rankify.models.reranking" not in sys.modules
     monkeypatch.setenv("LLM_API_KEY", "runtime-only-secret")
     _generator({"generator": {
         "backend": "openai-compatible",
@@ -171,6 +187,12 @@ def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatc
     }}, "in-context-ralm", "cuda")
     assert generator_class.last_kwargs["method"] == "basic-rag"
     assert _custom_prompt("in-context-ralm") == "native RALM prompt"
+    _reranker({"reranker_model": "BAAI/bge-reranker-v2-m3"}, True, "cuda")
+    assert reranker_class.last_kwargs == {
+        "method": "transformer_ranker",
+        "model_name": "BAAI/bge-reranker-v2-m3",
+        "device": "cuda",
+    }
 
 
 def test_rankify_question_payload_never_contains_references():
