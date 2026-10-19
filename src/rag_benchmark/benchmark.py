@@ -186,6 +186,14 @@ class ExperimentSpec:
     def validate(self) -> "ExperimentSpec":
         if not self.source.exists():
             raise FileNotFoundError(f"Dataset source not found: {self.source}")
+        if self.generator.backend == "huggingface":
+            model_path = Path(self.generator.model).expanduser()
+            if not model_path.is_absolute():
+                raise ValueError("Hugging Face local generator requires an absolute HF_MODEL_NAME snapshot path")
+            if not (model_path / "config.json").is_file():
+                raise FileNotFoundError(
+                    f"Hugging Face snapshot config not found: {model_path / 'config.json'}"
+                )
         if not self.dense_model or not self.reranker_model:
             raise ValueError("models.dense_multilingual and models.reranker_multilingual are required")
         if min(self.candidates, self.top_k, self.rrf_k) <= 0 or self.top_k > self.candidates:

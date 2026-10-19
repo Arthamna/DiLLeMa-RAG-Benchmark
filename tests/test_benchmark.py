@@ -12,6 +12,7 @@ from rag_benchmark.benchmark import (
     GenerationSpec,
     _convert_worker_rows,
     _question_payload,
+    _worker_common,
 )
 from rag_benchmark.cli import build_parser, run_compare_techniques
 from rag_benchmark.metrics import write_jsonl
@@ -144,7 +145,11 @@ def test_generation_and_experiment_models_are_configuration_driven(tmp_path, mon
     source.mkdir()
     python = tmp_path / "python"
     python.write_text("", encoding="utf-8")
-    monkeypatch.setenv("HF_MODEL_NAME", "small/model-a")
+    snapshot = tmp_path / "snapshot"
+    snapshot.mkdir()
+    (snapshot / "config.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setenv("HF_MODEL_NAME", str(snapshot.resolve()))
+    monkeypatch.delenv("LLM_API_KEY", raising=False)
     config = tmp_path / "experiment.yaml"
     config.write_text(
         "\n".join([
@@ -168,14 +173,37 @@ def test_generation_and_experiment_models_are_configuration_driven(tmp_path, mon
         encoding="utf-8",
     )
     spec = ExperimentSpec.load(config)
-    assert spec.generator.model == "small/model-a"
+    assert spec.generator.model == str(snapshot.resolve())
+    assert spec.generator.backend == "huggingface"
     assert spec.dense_model == "configurable/dense"
     assert spec.presets == RANKIFY_PRESETS
+    assert _worker_common(spec)["generator"]["model"] == str(snapshot.resolve())
     first = spec.generator.fingerprint()
     second = GenerationSpec.from_dict({
         "backend": "huggingface", "model": "small/model-b", "temperature": 0,
     }).fingerprint()
     assert first != second
+
+
+def test_huggingface_experiment_rejects_missing_local_snapshot(tmp_path, monkeypatch):
+    source = tmp_path / "dataset"
+    source.mkdir()
+    missing = tmp_path / "missing-snapshot"
+    monkeypatch.setenv("HF_MODEL_NAME", str(missing.resolve()))
+    config = tmp_path / "experiment.yaml"
+    config.write_text(
+        "\n".join([
+            "dataset: its", "source: dataset", "index_root: indexes",
+            "rankify_python: python", "generator:", "  backend: huggingface",
+            "  model_env: HF_MODEL_NAME", "  temperature: 0", "models:",
+            "  dense_multilingual: configurable/dense",
+            "  reranker_multilingual: configurable/reranker",
+        ]),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(FileNotFoundError, match="snapshot config not found"):
+        ExperimentSpec.load(config)
 
 
 def test_worker_exposes_the_controlled_seven_presets():
@@ -233,7 +261,9 @@ def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatc
     )
     assert set(retrievers) == {"bm25", "bge"}
     assert bm25_class.last_kwargs == {
-        "n_docs": 40, "index_folder": str(Path("/tmp/index/bm25/bm25_index_custom")),
+        "n_docs": 40,
+        "index_type": "custom",
+        "index_folder": str(Path("/tmp/index/bm25")),
     }
     assert bge_class.last_kwargs == {
         "n_docs": 40, "index_folder": str(Path("/tmp/index/bge/bge_index_custom")),

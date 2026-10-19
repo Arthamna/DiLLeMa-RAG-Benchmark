@@ -85,9 +85,21 @@ Salin `.env.example`, lalu pilih satu backend pada YAML eksperimen.
 
 Hugging Face lokal:
 
+Temukan snapshot model yang sudah diunduh. Folder `models--...` adalah root
+cache; `HF_MODEL_NAME` harus menunjuk ke folder di bawah `snapshots/`.
+
+```bash
+MODEL_ROOT="$HOME/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct"
+MODEL_REVISION="$(cat "$MODEL_ROOT/refs/main")"
+MODEL_PATH="$(readlink -f "$MODEL_ROOT/snapshots/$MODEL_REVISION")"
+test -f "$MODEL_PATH/config.json"
+echo "$MODEL_PATH"
+```
+
 ```dotenv
-HF_MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct
+HF_MODEL_NAME=/home/user/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/<commit>
 HF_QUANTIZATION=4bit
+HF_TRUST_REMOTE_CODE=false
 HF_MAX_INPUT_TOKENS=4096
 HF_MAX_NEW_TOKENS=768
 ```
@@ -98,7 +110,30 @@ generator:
   model_env: HF_MODEL_NAME
   temperature: 0
   max_tokens: 768
+  max_tokens_env: HF_MAX_NEW_TOKENS
   quantization: 4bit
+  trust_remote_code: false
+  max_input_tokens: 4096
+  max_input_tokens_env: HF_MAX_INPUT_TOKENS
+```
+
+Preset siap pakai berada di `configs/experiments/rankify-multilingual-local.yaml`
+dan `configs/experiments/rankify-uniqa-local.yaml`. Snapshot absolut membuat
+generator lokal tidak menghubungi Hub, sedangkan dense retriever dan reranker
+tetap dapat memakai cache atau mengunduh modelnya sendiri.
+
+Preflight dan benchmark ITS penuh:
+
+```bash
+set -a
+source .env
+set +a
+test -f "$HF_MODEL_NAME/config.json"
+.venv/bin/python -c 'import os; from transformers import AutoConfig; print(AutoConfig.from_pretrained(os.environ["HF_MODEL_NAME"], local_files_only=True).model_type)'
+.venv/bin/python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-multilingual-local.yaml \
+  --stage all \
+  --output artifacts/benchmarks/its-local-qwen
 ```
 
 OpenAI-compatible API, termasuk OpenRouter:
