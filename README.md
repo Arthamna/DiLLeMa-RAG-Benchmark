@@ -201,9 +201,22 @@ dataset: uniqa
 source: ../../../UniQA-main
 ```
 
-Path relatif dihitung dari lokasi file YAML. ITS memakai held-out split 20%;
-UniQA memakai test split native Inggris dan Italia. Reference test tidak pernah
-dikirim ke Rankify worker, retriever, prompt, atau generator.
+Path relatif dihitung dari lokasi file YAML. Jumlah QA yang dievaluasi dikontrol
+oleh konfigurasi berikut:
+
+```yaml
+evaluation:
+  split: all  # all atau test
+```
+
+Kedua preset ITS default ke `all`, sehingga seluruh 340 QA unik dari semua file
+`QA Generator*.csv` dan tiga QA CSV top-level dievaluasi. Ubah menjadi `test`
+untuk memakai held-out split 20% yang berisi 69 QA. Kedua preset UniQA tetap
+default ke `test`, yaitu test split native Inggris dan Italia.
+
+Nilai `all` hanya mengubah QA yang dijadwalkan untuk evaluasi; tidak ada model
+training dan index corpus yang sama dapat digunakan kembali. Reference answer
+tidak pernah dikirim ke Rankify worker, retriever, prompt, atau generator.
 
 ## Menjalankan benchmark
 

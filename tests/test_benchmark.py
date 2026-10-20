@@ -246,6 +246,8 @@ def test_generation_and_experiment_models_are_configuration_driven(tmp_path, mon
             "source: dataset",
             "index_root: indexes",
             "rankify_python: python",
+            "evaluation:",
+            "  split: all",
             "generator:",
             "  backend: huggingface",
             "  model_env: HF_MODEL_NAME",
@@ -265,6 +267,8 @@ def test_generation_and_experiment_models_are_configuration_driven(tmp_path, mon
     assert spec.generator.model == str(snapshot.resolve())
     assert spec.generator.backend == "huggingface"
     assert spec.dense_model == "configurable/dense"
+    assert spec.evaluation_split == "all"
+    assert spec.public_dict()["evaluation"] == {"split": "all"}
     assert spec.presets == RANKIFY_PRESETS
     assert _worker_common(spec)["generator"]["model"] == str(snapshot.resolve())
     first = spec.generator.fingerprint()
@@ -272,6 +276,30 @@ def test_generation_and_experiment_models_are_configuration_driven(tmp_path, mon
         "backend": "huggingface", "model": "small/model-b", "temperature": 0,
     }).fingerprint()
     assert first != second
+
+
+def test_experiment_rejects_unknown_evaluation_split(tmp_path, monkeypatch):
+    source = tmp_path / "dataset"
+    source.mkdir()
+    snapshot = tmp_path / "snapshot"
+    snapshot.mkdir()
+    (snapshot / "config.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setenv("HF_MODEL_NAME", str(snapshot.resolve()))
+    config = tmp_path / "experiment.yaml"
+    config.write_text(
+        "\n".join([
+            "dataset: its", "source: dataset", "index_root: indexes",
+            "rankify_python: python", "evaluation:", "  split: invalid",
+            "generator:", "  backend: huggingface", "  model_env: HF_MODEL_NAME",
+            "  temperature: 0", "models:",
+            "  dense_multilingual: configurable/dense",
+            "  reranker_multilingual: configurable/reranker",
+        ]),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="evaluation.split must be test or all"):
+        ExperimentSpec.load(config)
 
 
 def test_huggingface_experiment_rejects_missing_local_snapshot(tmp_path, monkeypatch):

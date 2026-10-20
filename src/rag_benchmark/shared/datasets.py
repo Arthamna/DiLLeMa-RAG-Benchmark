@@ -28,6 +28,8 @@ class DatasetBundle:
         return [question for question in self.questions if not question.available]
 
     def questions_for_split(self, split: str = "test") -> list[QARecord]:
+        if split == "all":
+            return list(self.questions)
         return [question for question in self.questions if question.split == split]
 
 

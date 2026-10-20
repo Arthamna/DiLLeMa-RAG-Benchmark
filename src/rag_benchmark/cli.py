@@ -151,8 +151,11 @@ def run_index(technique: str, dataset: str, source: Path, index_root: Path) -> d
         "technique": technique,
         "dataset": dataset,
         "source": str(source.resolve()),
-        "training_questions": len(bundle.questions_for_split("train")),
-        "evaluation_questions": len(bundle.questions_for_split("test")),
+        "qa_questions": {
+            "all": len(bundle.questions_for_split("all")),
+            "train_label": len(bundle.questions_for_split("train")),
+            "test_label": len(bundle.questions_for_split("test")),
+        },
         "collections": indexed,
         "pipeline_config": asdict(pipeline_config),
         "pipeline_fingerprint": pipeline_config.fingerprint(),
@@ -198,11 +201,12 @@ def run_evaluate(
     runtime=None,
     model_fingerprint: str | None = None,
     decoding_config: dict | None = None,
+    evaluation_split: str = "test",
 ) -> dict:
     get_technique(technique)
     index_manifest, dataset_source = _load_index_manifest(index_root, technique, dataset, source)
     bundle = load_dataset(dataset, dataset_source)
-    scheduled = bundle.questions_for_split("test")
+    scheduled = bundle.questions_for_split(evaluation_split)
     pipeline_config = PipelineConfig.from_env()
     device = resolve_torch_device("RAG evaluation")
     runtime = runtime or _evaluation_runtime()
@@ -231,7 +235,7 @@ def run_evaluate(
     output.mkdir(parents=True, exist_ok=True)
     rows = [record.to_dict() for record in prediction_records]
     if len(rows) != len(scheduled):
-        raise RuntimeError("Evaluation did not produce exactly one prediction per scheduled test question")
+        raise RuntimeError("Evaluation did not produce exactly one prediction per scheduled question")
     write_jsonl(output / "predictions.jsonl", rows)
     missing = [question for question in scheduled if not question.available]
     write_jsonl(output / "missing-context.jsonl", [{
@@ -255,6 +259,7 @@ def run_evaluate(
         "model_fingerprint": resolved_model_fingerprint,
         "corpus_fingerprint": corpus_fingerprint,
         "decoding_config": resolved_decoding,
+        "evaluation_split": evaluation_split,
     }
     write_json(output / "config.json", config_record)
     manifest = {
@@ -262,7 +267,7 @@ def run_evaluate(
         "created_at": _now(),
         "technique": technique,
         "dataset": dataset,
-        "split": "test",
+        "split": evaluation_split,
         "source": str(dataset_source.resolve()),
         "scheduled_questions": len(scheduled),
         "prediction_records": len(rows),

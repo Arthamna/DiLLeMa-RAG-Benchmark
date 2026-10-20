@@ -39,6 +39,7 @@ def test_its_schema_deduplication_and_multireference(tmp_path):
     assert "café" in bundle.documents[0].text
     assert "Alias" in bundle.documents[0].aliases
     assert len(bundle.questions) == 1
+    assert bundle.questions_for_split("all") == bundle.questions
     assert len(bundle.questions[0].references) == 2
     assert bundle.questions[0].split == "train"
     assert bundle.questions[0].source_ids == [bundle.documents[0].id]
@@ -86,6 +87,7 @@ def test_canonical_dataset_counts():
     assert (len(its.documents), len(its.questions)) == (53, 340)
     assert sum(len(question.references) for question in its.questions) == 345
     assert Counter(question.split for question in its.questions) == {"train": 271, "test": 69}
+    assert len(its.questions_for_split("all")) == 340
     assert not ({q.id for q in its.questions_for_split("train")} & {q.id for q in its.questions_for_split("test")})
     uniqa = load_uniqa(uniqa_root)
     assert Counter(document.language for document in uniqa.documents) == {"en": 522, "it": 521}

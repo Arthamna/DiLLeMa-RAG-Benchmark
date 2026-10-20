@@ -4,6 +4,9 @@ source: ../../dataset/langchain-chatbot-main/dataset
 index_root: ../../artifacts/indexes
 rankify_python: ../../.venv-rankify/bin/python
 
+evaluation:
+  split: all
+
 generator:
   backend: openai-compatible
   model_env: LLM_MODEL

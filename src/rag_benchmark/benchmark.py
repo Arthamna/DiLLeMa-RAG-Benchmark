@@ -130,6 +130,7 @@ class ExperimentSpec:
     candidates: int
     top_k: int
     rrf_k: int
+    evaluation_split: str
     presets: tuple[str, ...]
     generator: GenerationSpec
 
@@ -162,6 +163,7 @@ class ExperimentSpec:
 
         models = raw.get("models") or {}
         retrieval = raw.get("retrieval") or {}
+        evaluation = raw.get("evaluation") or {}
         presets = tuple(raw.get("presets") or RANKIFY_PRESETS)
         if presets != RANKIFY_PRESETS:
             raise ValueError(f"presets must contain the controlled seven in order: {', '.join(RANKIFY_PRESETS)}")
@@ -179,6 +181,7 @@ class ExperimentSpec:
             candidates=int(retrieval.get("candidates", 40)),
             top_k=int(retrieval.get("top_k", 10)),
             rrf_k=int(retrieval.get("rrf_k", 60)),
+            evaluation_split=str(evaluation.get("split") or "test").strip().casefold(),
             presets=presets,
             generator=GenerationSpec.from_dict(raw.get("generator") or {}),
         ).validate()
@@ -198,6 +201,8 @@ class ExperimentSpec:
             raise ValueError("models.dense_multilingual and models.reranker_multilingual are required")
         if min(self.candidates, self.top_k, self.rrf_k) <= 0 or self.top_k > self.candidates:
             raise ValueError("retrieval values must be positive and top_k cannot exceed candidates")
+        if self.evaluation_split not in {"test", "all"}:
+            raise ValueError("evaluation.split must be test or all")
         return self
 
     def public_dict(self) -> dict[str, Any]:
@@ -208,6 +213,7 @@ class ExperimentSpec:
             "rankify_python": str(self.rankify_python),
             "models": {"dense_multilingual": self.dense_model, "reranker_multilingual": self.reranker_model},
             "retrieval": {"candidates": self.candidates, "top_k": self.top_k, "rrf_k": self.rrf_k},
+            "evaluation": {"split": self.evaluation_split},
             "presets": list(self.presets),
             "generator": self.generator.public_dict(),
         }
@@ -413,7 +419,7 @@ def _convert_worker_rows(
 def _evaluate_rankify(
     spec: ExperimentSpec, bundle, worker: RankifyWorkerClient, output: Path, corpus_fingerprint: str,
 ) -> dict[str, Any]:
-    questions = bundle.questions_for_split("test")
+    questions = bundle.questions_for_split(spec.evaluation_split)
     results = {}
     with tempfile.TemporaryDirectory(prefix="rag-rankify-") as temporary:
         temp = Path(temporary)
@@ -522,7 +528,7 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
             run_evaluate(
                 "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
                 spec.source, runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
-                decoding_config=spec.generator.decoding_dict(),
+                decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
             )
         finally:
             del runtime
