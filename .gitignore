@@ -3,6 +3,7 @@
 /.venv/
 /.venv-rankify/
 /.venv-rankify-gpu/
+/.venv-vllm-gpu/
 /.validation-packages/
 /.pytest_cache/
 /__pycache__/

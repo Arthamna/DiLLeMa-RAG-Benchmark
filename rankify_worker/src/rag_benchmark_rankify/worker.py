@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import importlib
 import importlib.metadata
 import json
 import logging
@@ -21,6 +22,29 @@ PRESETS = {
     "rankify_hybrid_bge_rerank_cot": ("hybrid", True, "chain-of-thought-rag"),
     "rankify_hybrid_bge_rerank_incontext": ("hybrid", True, "in-context-ralm"),
 }
+
+
+def _ensure_rankify_vllm_import() -> bool:
+    """Provide Rankify's unused eager vLLM import without installing vLLM here."""
+    try:
+        module = importlib.import_module("vllm")
+    except ModuleNotFoundError as error:
+        if error.name != "vllm":
+            raise
+
+        class UnavailableLLM:
+            def __init__(self, *args, **kwargs):
+                raise RuntimeError(
+                    "Rankify's in-process vLLM backend is disabled in this environment. "
+                    "Run vLLM from .venv-vllm-gpu and use generator.backend="
+                    "openai-compatible instead."
+                )
+
+        module = type(sys)("vllm")
+        module.LLM = UnavailableLLM
+        module.__dillema_import_shim__ = True
+        sys.modules["vllm"] = module
+    return bool(getattr(module, "__dillema_import_shim__", False))
 
 
 def _configure_java_home() -> str:
@@ -66,6 +90,7 @@ def _capabilities() -> dict:
     import numpy
     import pyarrow
     import torch
+    vllm_shimmed = _ensure_rankify_vllm_import()
     from rankify.generator.generator import Generator
     from rankify.models.transformer_ranker import TransformerRanker
     from rankify.retrievers.bge_retriever import BGERetriever
@@ -87,6 +112,7 @@ def _capabilities() -> dict:
         "retriever_imports": [BM25Retriever.__name__, BGERetriever.__name__],
         "reranker_import": TransformerRanker.__name__,
         "generator_import": Generator.__name__,
+        "rankify_vllm_import": "shim" if vllm_shimmed else "installed",
         "presets": list(PRESETS),
     }
 
@@ -186,6 +212,7 @@ def _reranker(request: dict, enabled: bool, device: str):
 
 
 def _generator(request: dict, method: str, device: str):
+    _ensure_rankify_vllm_import()
     from rankify.generator.generator import Generator
 
     config = request["generator"]

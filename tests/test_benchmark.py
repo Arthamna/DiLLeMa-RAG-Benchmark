@@ -29,6 +29,7 @@ from rag_benchmark_rankify.worker import (  # noqa: E402
     _custom_prompt,
     _generation_kwargs,
     _generator,
+    _ensure_rankify_vllm_import,
     _reranker,
     _retrievers,
 )
@@ -48,6 +49,7 @@ def _fake_rankify(monkeypatch):
     bge_module = ModuleType("rankify.retrievers.bge_retriever")
     bm25_module = ModuleType("rankify.retrievers.bm25_retriever")
     prompt_module = ModuleType("rankify.generator.prompt_template")
+    vllm_module = ModuleType("vllm")
 
     class Generator:
         last_kwargs = None
@@ -89,6 +91,7 @@ def _fake_rankify(monkeypatch):
         "rankify.retrievers": retrievers_package,
         "rankify.retrievers.bge_retriever": bge_module,
         "rankify.retrievers.bm25_retriever": bm25_module,
+        "vllm": vllm_module,
     }.items():
         monkeypatch.setitem(sys.modules, name, module)
     monkeypatch.setitem(sys.modules, "numpy", SimpleNamespace(__version__="1.26.4"))
@@ -206,6 +209,7 @@ def test_setup_scripts_use_uv_only():
         (root / "scripts" / "setup_ubuntu.sh").read_text(encoding="utf-8"),
         (root / "scripts" / "setup_rankify_ubuntu.sh").read_text(encoding="utf-8"),
         (root / "scripts" / "setup_rankify_gpu_ubuntu.sh").read_text(encoding="utf-8"),
+        (root / "scripts" / "setup_vllm_gpu_ubuntu.sh").read_text(encoding="utf-8"),
     ]
     assert all("uv sync" in script for script in scripts)
     assert all("pip install" not in script for script in scripts)
@@ -223,9 +227,49 @@ def test_rankify_gpu_environment_targets_blackwell():
     assert "rankify[retriever,rag]==0.1.4" in dependencies
     assert all("reranking" not in dependency for dependency in dependencies)
     assert project["tool"]["uv"]["index"][0]["url"].endswith("/cu132")
+    rankify_lock = tomllib.loads(
+        (root / "rankify_worker_gpu" / "uv.lock").read_text(encoding="utf-8")
+    )
+    assert all(package["name"] != "vllm" for package in rankify_lock["package"])
 
     for config in (root / "configs" / "experiments").glob("rankify-*.yaml"):
         assert "../../.venv-rankify-gpu/bin/python" in config.read_text(encoding="utf-8")
+
+
+def test_vllm_gpu_environment_is_isolated_and_pinned():
+    root = Path(__file__).resolve().parents[1]
+    project = tomllib.loads(
+        (root / "vllm_gpu" / "pyproject.toml").read_text(encoding="utf-8")
+    )
+    setup = (root / "scripts" / "setup_vllm_gpu_ubuntu.sh").read_text(encoding="utf-8")
+    runner = (root / "scripts" / "run_vllm_gpu_ubuntu.sh").read_text(encoding="utf-8")
+    lock = tomllib.loads((root / "vllm_gpu" / "uv.lock").read_text(encoding="utf-8"))
+    locked = {package["name"]: package["version"] for package in lock["package"]}
+
+    assert project["project"]["dependencies"] == ["vllm==0.32.0"]
+    assert locked["vllm"] == "0.32.0"
+    assert locked["torch"] == "2.13.0"
+    assert ".venv-vllm-gpu" in setup
+    assert "torch.cuda.get_device_capability(0)" in setup
+    assert 'startswith("13.0")' in setup
+    assert "from vllm import LLM" in setup
+    assert "LLM_MODEL" in runner
+    assert "LLM_API_KEY" in runner
+    assert "VLLM_GPU_MEMORY_UTILIZATION:-0.65" in runner
+
+
+def test_rankify_vllm_import_shim_fails_clearly_when_used(monkeypatch):
+    monkeypatch.delitem(sys.modules, "vllm", raising=False)
+
+    def missing_vllm(name):
+        assert name == "vllm"
+        raise ModuleNotFoundError("No module named 'vllm'", name="vllm")
+
+    monkeypatch.setattr("rag_benchmark_rankify.worker.importlib.import_module", missing_vllm)
+
+    assert _ensure_rankify_vllm_import() is True
+    with pytest.raises(RuntimeError, match="openai-compatible"):
+        sys.modules["vllm"].LLM(model="unused")
 
 
 def test_rankify_worker_configures_java_home_from_javac(tmp_path, monkeypatch):
@@ -360,6 +404,7 @@ def test_rankify_capability_probe_and_openai_compatible_configuration(monkeypatc
     assert capabilities["numpy_version"] == "1.26.4"
     assert capabilities["pyarrow_version"] == "17.0.0"
     assert capabilities["cuda_available"] is True
+    assert capabilities["rankify_vllm_import"] == "installed"
     assert "rankify.models.reranking" not in sys.modules
     assert "rankify.retrievers.retriever" not in sys.modules
     assert capabilities["retriever_imports"] == ["BM25Retriever", "BGERetriever"]

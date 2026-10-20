@@ -47,15 +47,18 @@ beberapa dependency model.
 cd /path/to/DiLLeMa-RAG-Benchmark
 bash scripts/setup_ubuntu.sh
 bash scripts/setup_rankify_gpu_ubuntu.sh
+# Opsional, hanya bila memakai server vLLM lokal:
+bash scripts/setup_vllm_gpu_ubuntu.sh
 cp .env.example .env
 ```
 
 Environment utama dan GPU Rankify dibuat oleh `uv` di `.venv` dan
-`.venv-rankify-gpu`, tetap lokal di repository, dan diabaikan Git. Python
-mengikuti `.python-version`; worker dipin pada `rankify==0.1.4`. Environment GPU
-memakai `torch==2.13.0+cu132` dan `bitsandbytes==0.50.2`, termasuk kernel
-Blackwell `sm_120` untuk RTX 50-series. Konfigurasi eksperimen bawaan menunjuk
-ke `.venv-rankify-gpu/bin/python`.
+`.venv-rankify-gpu`; server vLLM opsional dibuat terpisah di
+`.venv-vllm-gpu`. Ketiganya tetap lokal di repository dan diabaikan Git. Python
+mengikuti `.python-version`; worker dipin pada `rankify==0.1.4`. Environment
+Rankify GPU memakai `torch==2.13.0+cu132` dan `bitsandbytes==0.50.2`, termasuk
+kernel Blackwell `sm_120` untuk RTX 50-series. Konfigurasi eksperimen bawaan
+menunjuk ke `.venv-rankify-gpu/bin/python`.
 
 Worker memanggil `TransformerRanker` secara langsung agar registry reranker
 Rankify tidak memuat dependency LiT5/RankLLM seperti `fastchat` yang tidak dipakai.
@@ -65,6 +68,10 @@ Compatibility worker dikunci pada PyArrow 17 dan Chardet 5.x.
 Environment GPU tidak memasang extra reranking Rankify karena extra tersebut
 menarik vLLM 0.7.0 dan PyTorch 2.5.1 yang tidak dipakai oleh direct
 `TransformerRanker` serta tidak mendukung `sm_120`.
+Rankify 0.1.4 tetap mengimpor kelas vLLM secara eager ketika generator dimuat.
+Worker menyediakan import shim terbatas untuk kasus tersebut; shim akan gagal
+dengan pesan eksplisit bila backend vLLM in-process benar-benar dipilih. Engine
+vLLM nyata hanya dijalankan dari `.venv-vllm-gpu` melalui API lokal.
 
 Untuk GPU lama atau fallback kompatibilitas, `.venv-rankify` tetap tersedia:
 
@@ -175,6 +182,57 @@ models:
 ```
 
 Mengganti model atau konfigurasi menghasilkan fingerprint/index namespace baru.
+
+### vLLM lokal melalui API OpenAI-compatible
+
+Setup vLLM hanya perlu dilakukan satu kali dan tidak mengubah dependency
+Rankify:
+
+```bash
+bash scripts/setup_vllm_gpu_ubuntu.sh
+```
+
+Isi `.env` dengan model dan token lokal. `LLM_API_KEY` di sini adalah token
+pilihan sendiri untuk melindungi endpoint lokal, bukan API key provider.
+
+```dotenv
+LLM_MODEL=Qwen/Qwen2.5-3B-Instruct
+LLM_API_KEY=local-vllm-token
+LLM_BASE_URL=http://127.0.0.1:8000/v1
+VLLM_GPU_MEMORY_UTILIZATION=0.65
+```
+
+Muat `.env` pada terminal server:
+
+```bash
+set -a
+source .env
+set +a
+bash scripts/run_vllm_gpu_ubuntu.sh
+```
+
+Pada terminal lain, periksa server dan jalankan preset OpenAI-compatible yang
+sudah ada:
+
+```bash
+curl -fsS \
+  -H "Authorization: Bearer $LLM_API_KEY" \
+  "$LLM_BASE_URL/models"
+
+set -a
+source .env
+set +a
+.venv/bin/python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-multilingual.yaml \
+  --stage all \
+  --output artifacts/benchmarks/its-vllm
+```
+
+Jangan jalankan server vLLM dan generator Hugging Face lokal bersamaan pada
+GPU 16 GB. Nilai `VLLM_GPU_MEMORY_UTILIZATION` dapat disesuaikan bila model dan
+retriever/reranker memerlukan pembagian VRAM berbeda. Wheel vLLM 0.32.0 memakai
+runtime CUDA 13.0 dan dijalankan oleh driver CUDA 13.2 melalui kompatibilitas
+driver NVIDIA.
 
 ## GPU dan fallback CPU
 
