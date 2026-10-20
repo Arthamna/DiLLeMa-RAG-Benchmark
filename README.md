@@ -240,6 +240,38 @@ uv run --no-sync python -m rag_benchmark benchmark \
   --output artifacts/benchmarks/its-run
 ```
 
+Di Ubuntu/Linux, tambahkan `-d` atau `--detach` agar proses tetap berjalan
+setelah terminal ditutup. Environment `.env` tetap harus di-source sebelum
+menjalankan command karena diteruskan ke child process.
+
+```bash
+set -a
+source .env
+set +a
+
+.venv/bin/python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-uniqa-local.yaml \
+  --stage all \
+  --output artifacts/benchmarks/uniqa-run \
+  --detach
+```
+
+Command langsung mengembalikan PID serta lokasi log. Mode detached membuat
+`benchmark.log` dan `benchmark.pid` di direktori output. Run kedua dengan
+direktori output yang sama ditolak selama PID pertama masih aktif.
+
+```bash
+tail -f artifacts/benchmarks/uniqa-run/benchmark.log
+
+PID="$(cat artifacts/benchmarks/uniqa-run/benchmark.pid)"
+ps -p "$PID" -o pid,ppid,etime,%cpu,%mem,cmd
+kill "$PID"
+```
+
+Mode ini bertahan setelah terminal ditutup, tetapi tidak setelah mesin reboot.
+Output internal worker Rankify masih di-buffer per preset, sehingga log dapat
+diam sementara walaupun CPU/GPU masih bekerja.
+
 CLI DiLLeMa lama tetap tersedia:
 
 ```bash
@@ -260,6 +292,8 @@ Tidak ada lagi command `train` atau opsi `--checkpoint`.
 
 ```text
 artifacts/benchmarks/<run-id>/
+├── benchmark.log        # hanya mode detached
+├── benchmark.pid        # hanya mode detached
 ├── manifest.json
 ├── leaderboard.json
 ├── leaderboard.csv

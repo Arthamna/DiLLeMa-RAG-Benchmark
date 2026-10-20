@@ -1,5 +1,6 @@
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
 from types import ModuleType, SimpleNamespace
@@ -14,7 +15,7 @@ from rag_benchmark.benchmark import (
     _question_payload,
     _worker_common,
 )
-from rag_benchmark.cli import build_parser, run_compare_techniques
+from rag_benchmark.cli import _launch_detached_benchmark, build_parser, run_compare_techniques
 from rag_benchmark.metrics import write_jsonl
 from rag_benchmark.models import QARecord
 from rag_benchmark.techniques import TECHNIQUES, get_technique
@@ -108,6 +109,94 @@ def test_rrag_is_absent_from_registry_and_cli():
     assert "train" not in help_text
     with pytest.raises(SystemExit):
         parser.parse_args(["evaluate", "--technique", "rrag"])
+
+
+def test_benchmark_parser_accepts_detach_aliases():
+    parser = build_parser()
+    arguments = [
+        "benchmark", "--config", "experiment.yaml", "--stage", "all",
+        "--output", "artifacts/benchmarks/run",
+    ]
+    assert parser.parse_args(arguments).detach is False
+    assert parser.parse_args([*arguments, "-d"]).detach is True
+    assert parser.parse_args([*arguments, "--detach"]).detach is True
+
+
+def test_detached_benchmark_launches_same_cli_and_tracks_pid(tmp_path, monkeypatch):
+    config = tmp_path / "experiment.yaml"
+    output = tmp_path / "run"
+    output.mkdir()
+    (output / "benchmark.pid").write_text("999\n", encoding="utf-8")
+    monkeypatch.setattr("rag_benchmark.cli.platform.system", lambda: "Linux")
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path: SimpleNamespace())
+    monkeypatch.setattr("rag_benchmark.cli._pid_is_running", lambda pid: False)
+    observed = {}
+
+    def fake_popen(command, **kwargs):
+        observed["command"] = command
+        observed["kwargs"] = kwargs
+        return SimpleNamespace(pid=4321)
+
+    monkeypatch.setattr("rag_benchmark.cli.subprocess.Popen", fake_popen)
+    result = _launch_detached_benchmark(config, "all", output)
+
+    assert result == {
+        "status": "started",
+        "pid": 4321,
+        "log": str((output / "benchmark.log").resolve()),
+        "pid_file": str((output / "benchmark.pid").resolve()),
+        "output": str(output.resolve()),
+    }
+    assert observed["command"] == [
+        sys.executable, "-u", "-m", "rag_benchmark", "benchmark",
+        "--config", str(config.resolve()), "--stage", "all",
+        "--output", str(output.resolve()),
+    ]
+    assert observed["kwargs"]["start_new_session"] is True
+    assert observed["kwargs"]["close_fds"] is True
+    assert observed["kwargs"]["stdin"] == subprocess.DEVNULL
+    assert observed["kwargs"]["stderr"] == subprocess.STDOUT
+    assert observed["kwargs"]["cwd"] == str(Path.cwd())
+    assert observed["kwargs"]["env"]["PYTHONUNBUFFERED"] == "1"
+    assert observed["kwargs"]["stdout"].closed
+    assert (output / "benchmark.pid").read_text(encoding="utf-8") == "4321\n"
+
+
+def test_detached_benchmark_rejects_live_pid(tmp_path, monkeypatch):
+    output = tmp_path / "run"
+    output.mkdir()
+    (output / "benchmark.pid").write_text("123\n", encoding="utf-8")
+    monkeypatch.setattr("rag_benchmark.cli.platform.system", lambda: "Linux")
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path: SimpleNamespace())
+    monkeypatch.setattr("rag_benchmark.cli._pid_is_running", lambda pid: True)
+
+    with pytest.raises(RuntimeError, match="already running with PID 123"):
+        _launch_detached_benchmark(tmp_path / "experiment.yaml", "all", output)
+
+
+def test_detached_benchmark_preflights_huggingface_snapshot(tmp_path, monkeypatch):
+    source = tmp_path / "dataset"
+    source.mkdir()
+    monkeypatch.setenv("HF_MODEL_NAME", str((tmp_path / "missing-snapshot").resolve()))
+    monkeypatch.setattr("rag_benchmark.cli.platform.system", lambda: "Linux")
+    config = tmp_path / "experiment.yaml"
+    config.write_text(
+        "\n".join([
+            "dataset: its", "source: dataset", "index_root: indexes",
+            "rankify_python: python", "generator:", "  backend: huggingface",
+            "  model_env: HF_MODEL_NAME", "  temperature: 0", "models:",
+            "  dense_multilingual: configurable/dense",
+            "  reranker_multilingual: configurable/reranker",
+        ]),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(
+        "rag_benchmark.cli.subprocess.Popen",
+        lambda *args, **kwargs: pytest.fail("Popen must not run when preflight fails"),
+    )
+
+    with pytest.raises(FileNotFoundError, match="snapshot config not found"):
+        _launch_detached_benchmark(config, "all", tmp_path / "run")
 
 
 def test_setup_scripts_use_uv_only():
