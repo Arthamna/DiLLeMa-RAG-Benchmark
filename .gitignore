@@ -2,6 +2,7 @@
 /artifacts/
 /.venv/
 /.venv-rankify/
+/.venv-rankify-gpu/
 /.validation-packages/
 /.pytest_cache/
 /__pycache__/

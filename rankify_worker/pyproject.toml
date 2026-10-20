@@ -7,7 +7,10 @@ name = "dillema-rankify-worker"
 version = "0.1.0"
 description = "Isolated Rankify worker for the DiLLeMa benchmark"
 requires-python = ">=3.10"
-dependencies = [
+dependencies = []
+
+[project.optional-dependencies]
+legacy = [
   "rankify[retriever,reranking,rag]==0.1.4",
   "bitsandbytes>=0.43.0; platform_system == 'Linux'",
   "pyarrow==17.0.0",

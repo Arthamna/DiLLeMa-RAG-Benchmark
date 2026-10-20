@@ -19,4 +19,4 @@ fi
 
 uv run --no-sync python -c 'import torch; print("CUDA tersedia:", torch.cuda.is_available()); print("GPU:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "tidak terdeteksi; pipeline akan memakai CPU")'
 echo "Setup selesai. Jalankan command project dengan: uv run --no-sync <command>"
-echo "Untuk matriks Rankify, jalankan juga: bash scripts/setup_rankify_ubuntu.sh"
+echo "Untuk matriks Rankify GPU, jalankan juga: bash scripts/setup_rankify_gpu_ubuntu.sh"

@@ -2,6 +2,7 @@ import json
 import os
 import subprocess
 import sys
+import tomllib
 from pathlib import Path
 from types import ModuleType, SimpleNamespace
 
@@ -204,10 +205,27 @@ def test_setup_scripts_use_uv_only():
     scripts = [
         (root / "scripts" / "setup_ubuntu.sh").read_text(encoding="utf-8"),
         (root / "scripts" / "setup_rankify_ubuntu.sh").read_text(encoding="utf-8"),
+        (root / "scripts" / "setup_rankify_gpu_ubuntu.sh").read_text(encoding="utf-8"),
     ]
     assert all("uv sync" in script for script in scripts)
     assert all("pip install" not in script for script in scripts)
     assert all("python3 -m venv" not in script for script in scripts)
+
+
+def test_rankify_gpu_environment_targets_blackwell():
+    root = Path(__file__).resolve().parents[1]
+    project = tomllib.loads(
+        (root / "rankify_worker_gpu" / "pyproject.toml").read_text(encoding="utf-8")
+    )
+    dependencies = project["project"]["dependencies"]
+
+    assert "torch==2.13.0" in dependencies
+    assert "rankify[retriever,rag]==0.1.4" in dependencies
+    assert all("reranking" not in dependency for dependency in dependencies)
+    assert project["tool"]["uv"]["index"][0]["url"].endswith("/cu132")
+
+    for config in (root / "configs" / "experiments").glob("rankify-*.yaml"):
+        assert "../../.venv-rankify-gpu/bin/python" in config.read_text(encoding="utf-8")
 
 
 def test_rankify_worker_configures_java_home_from_javac(tmp_path, monkeypatch):

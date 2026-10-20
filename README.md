@@ -46,21 +46,27 @@ beberapa dependency model.
 ```bash
 cd /path/to/DiLLeMa-RAG-Benchmark
 bash scripts/setup_ubuntu.sh
-bash scripts/setup_rankify_ubuntu.sh
+bash scripts/setup_rankify_gpu_ubuntu.sh
 cp .env.example .env
 ```
 
-Kedua environment dibuat oleh `uv` di `.venv` dan `.venv-rankify`, tetap lokal
-di repository, dan diabaikan Git. Python mengikuti `.python-version`; worker
-dipin pada `rankify==0.1.4`. `uv sync` membuat atau memperbarui lockfile project.
+Environment utama dan GPU Rankify dibuat oleh `uv` di `.venv` dan
+`.venv-rankify-gpu`, tetap lokal di repository, dan diabaikan Git. Python
+mengikuti `.python-version`; worker dipin pada `rankify==0.1.4`. Environment GPU
+memakai `torch==2.13.0+cu132` dan `bitsandbytes==0.50.2`, termasuk kernel
+Blackwell `sm_120` untuk RTX 50-series. Konfigurasi eksperimen bawaan menunjuk
+ke `.venv-rankify-gpu/bin/python`.
 
 Worker memanggil `TransformerRanker` secara langsung agar registry reranker
 Rankify tidak memuat dependency LiT5/RankLLM seperti `fastchat` yang tidak dipakai.
 Retriever BM25 dan BGE juga diimpor langsung agar registry retriever tidak
 memuat `OnlineRetriever` dan dependency web-search yang tidak digunakan.
 Compatibility worker dikunci pada PyArrow 17 dan Chardet 5.x.
+Environment GPU tidak memasang extra reranking Rankify karena extra tersebut
+menarik vLLM 0.7.0 dan PyTorch 2.5.1 yang tidak dipakai oleh direct
+`TransformerRanker` serta tidak mendukung `sm_120`.
 
-Jika `.venv-rankify` sudah dibuat oleh versi setup lama, cukup sinkronkan ulang:
+Untuk GPU lama atau fallback kompatibilitas, `.venv-rankify` tetap tersedia:
 
 ```bash
 sudo apt install -y openjdk-21-jdk-headless
@@ -69,7 +75,7 @@ java -version
 javac -version
 
 export UV_PROJECT_ENVIRONMENT="$PWD/.venv-rankify"
-uv sync --project rankify_worker --python 3.12 --locked
+uv sync --project rankify_worker --python 3.12 --extra legacy --locked
 
 printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
   | .venv-rankify/bin/python -m rag_benchmark_rankify.worker
@@ -78,6 +84,8 @@ printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
 Worker mendeteksi JDK dari `javac` dan mengatur `JAVA_HOME` untuk subprocess-nya.
 Probe yang berhasil berakhir dengan `"status": "ok"` dan menampilkan versi
 Python, NumPy, PyArrow, Torch, lokasi Java, serta status CUDA.
+Jika memakai environment legacy, ubah `rankify_python` pada YAML eksperimen
+kembali menjadi `../../.venv-rankify/bin/python`.
 
 ## Konfigurasi generator
 
@@ -169,6 +177,17 @@ models:
 Mengganti model atau konfigurasi menghasilkan fingerprint/index namespace baru.
 
 ## GPU dan fallback CPU
+
+RTX 50-series/Blackwell memerlukan wheel PyTorch yang menyertakan `sm_120`.
+Setup GPU melakukan smoke test tensor CUDA dan berhenti bila arsitektur GPU tidak
+ada pada `torch.cuda.get_arch_list()`:
+
+```bash
+bash scripts/setup_rankify_gpu_ubuntu.sh
+```
+
+CUDA 13.2 GA dipasangkan dengan driver NVIDIA Linux minimal 595.45.04.
+Driver 595.91.07 memenuhi persyaratan ini.
 
 ```dotenv
 RAG_DEVICE=auto

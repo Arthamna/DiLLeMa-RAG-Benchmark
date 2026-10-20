@@ -1548,7 +1548,9 @@ wheels = [
 name = "dillema-rankify-worker"
 version = "0.1.0"
 source = { editable = "." }
-dependencies = [
+
+[package.optional-dependencies]
+legacy = [
     { name = "bitsandbytes", marker = "sys_platform == 'linux'" },
     { name = "chardet" },
     { name = "pyarrow" },
@@ -1557,11 +1559,12 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bitsandbytes", marker = "sys_platform == 'linux'", specifier = ">=0.43.0" },
-    { name = "chardet", specifier = ">=5,<6" },
-    { name = "pyarrow", specifier = "==17.0.0" },
-    { name = "rankify", extras = ["retriever", "reranking", "rag"], specifier = "==0.1.4" },
+    { name = "bitsandbytes", marker = "sys_platform == 'linux' and extra == 'legacy'", specifier = ">=0.43.0" },
+    { name = "chardet", marker = "extra == 'legacy'", specifier = ">=5,<6" },
+    { name = "pyarrow", marker = "extra == 'legacy'", specifier = "==17.0.0" },
+    { name = "rankify", extras = ["retriever", "reranking", "rag"], marker = "extra == 'legacy'", specifier = "==0.1.4" },
 ]
+provides-extras = ["legacy"]
 
 [[package]]
 name = "diskcache"

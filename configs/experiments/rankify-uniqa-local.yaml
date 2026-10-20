@@ -2,7 +2,7 @@ dataset: uniqa
 # Relative paths are resolved from this YAML file.
 source: ../../dataset/UniQA-main
 index_root: ../../artifacts/indexes
-rankify_python: ../../.venv-rankify/bin/python
+rankify_python: ../../.venv-rankify-gpu/bin/python
 
 evaluation:
   split: test
