@@ -125,7 +125,8 @@ java -version
 javac -version
 
 export UV_PROJECT_ENVIRONMENT="$PWD/.venv-rankify"
-uv sync --project rankify_worker --python 3.12 --extra legacy --locked
+uv sync --project src/rag_benchmark/techniques/rankify/worker \
+  --python 3.12 --extra legacy --locked --reinstall-package dillema-rankify-worker
 
 printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
   | .venv-rankify/bin/python -m rag_benchmark_rankify.worker
@@ -280,10 +281,12 @@ driver NVIDIA.
 ## GPU dan fallback CPU
 
 RTX 50-series/Blackwell memerlukan wheel PyTorch yang menyertakan `sm_120`.
-Setup GPU melakukan smoke test tensor CUDA dan berhenti bila arsitektur GPU tidak
+Environment utama dan Rankify GPU dikunci ke PyTorch 2.13.0 CUDA 13.2. Kedua
+setup melakukan smoke test tensor CUDA dan berhenti bila arsitektur GPU tidak
 ada pada `torch.cuda.get_arch_list()`:
 
 ```bash
+bash scripts/setup_ubuntu.sh
 bash scripts/setup_rankify_gpu_ubuntu.sh
 ```
 
@@ -304,6 +307,21 @@ agar penggunaan VRAM tetap sesuai untuk GPU sekitar 6 GB.
 ```bash
 uv run --no-sync python -c 'import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU fallback")'
 ```
+
+Pipeline menyinkronkan CUDA sesudah E5 embedding, BGE reranking, dan generation.
+Jika kernel gagal, log menyebut stage tersebut dan evaluasi berhenti sebelum
+sticky error muncul lagi di `empty_cache()`. Untuk diagnosis satu kali dengan
+eksekusi kernel sepenuhnya synchronous:
+
+```bash
+CUDA_LAUNCH_BLOCKING=1 .venv/bin/python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-uniqa-local.yaml \
+  --stage evaluate \
+  --output artifacts/benchmarks/uniqa-debug
+```
+
+Setelah `CUDA_ERROR_LAUNCH_FAILED`/error 719, hentikan proses yang gagal lalu
+jalankan proses baru; CUDA context pada proses lama tidak dapat dipulihkan.
 
 ## Dataset
 

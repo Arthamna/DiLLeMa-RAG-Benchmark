@@ -6,7 +6,7 @@ import logging
 import os
 from dataclasses import asdict, dataclass
 
-from .device import cuda_available
+from .device import cuda_available, synchronize_cuda
 
 LOGGER = logging.getLogger(__name__)
 
@@ -108,5 +108,6 @@ class LocalLLM:
             **tokens, do_sample=False, max_new_tokens=self.config.max_new_tokens,
             pad_token_id=self.tokenizer.pad_token_id,
         )
+        synchronize_cuda(self.device, "huggingface-generation")
         return self._decode_new_tokens(outputs, int(tokens.input_ids.shape[1]))
 

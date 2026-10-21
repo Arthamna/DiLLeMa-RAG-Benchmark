@@ -20,5 +20,5 @@ url = "https://download.pytorch.org/whl/cu132"
 explicit = true
 
 [tool.uv.sources]
-dillema-rankify-worker = { path = "../rankify_worker" }
+dillema-rankify-worker = { path = "../src/rag_benchmark/techniques/rankify/worker" }
 torch = { index = "pytorch-cu132" }

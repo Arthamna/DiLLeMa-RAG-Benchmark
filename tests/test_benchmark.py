@@ -242,6 +242,9 @@ def test_rankify_gpu_environment_targets_blackwell():
     assert "rankify[retriever,rag]==0.1.4" in dependencies
     assert all("reranking" not in dependency for dependency in dependencies)
     assert project["tool"]["uv"]["index"][0]["url"].endswith("/cu132")
+    assert project["tool"]["uv"]["sources"]["dillema-rankify-worker"]["path"].endswith(
+        "src/rag_benchmark/techniques/rankify/worker"
+    )
     rankify_lock = tomllib.loads(
         (root / "rankify_worker_gpu" / "uv.lock").read_text(encoding="utf-8")
     )
@@ -249,6 +252,19 @@ def test_rankify_gpu_environment_targets_blackwell():
 
     for config in (root / "configs" / "experiments").glob("rankify-*.yaml"):
         assert "../../.venv-rankify-gpu/bin/python" in config.read_text(encoding="utf-8")
+
+
+def test_main_gpu_environment_targets_blackwell():
+    root = Path(__file__).resolve().parents[1]
+    project = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))
+    setup = (root / "scripts" / "setup_ubuntu.sh").read_text(encoding="utf-8")
+
+    assert "torch==2.13.0" in project["project"]["optional-dependencies"]["hf"]
+    assert "bitsandbytes==0.50.2" in project["project"]["optional-dependencies"]["quantized"]
+    assert project["tool"]["uv"]["index"][0]["url"].endswith("/cu132")
+    assert "--locked" in setup
+    assert 'startswith("13.2")' in setup
+    assert "torch.cuda.get_device_capability(0)" in setup
 
 
 def test_vllm_gpu_environment_is_isolated_and_pinned():

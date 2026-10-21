@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 from typing import Sequence
 
-from ...shared.device import resolve_torch_device
+from ...shared.device import resolve_torch_device, synchronize_cuda
 
 
 class CrossEncoderReranker:
@@ -18,9 +18,11 @@ class CrossEncoderReranker:
     def score(self, question: str, passages: Sequence[str]) -> list[float]:
         if not passages:
             return []
-        return [float(score) for score in self.model.predict(
+        scores = self.model.predict(
             [[question, text] for text in passages],
             batch_size=self.batch_size,
             show_progress_bar=False,
-        )]
+        )
+        synchronize_cuda(self.device, "bge-reranking")
+        return [float(score) for score in scores]
 

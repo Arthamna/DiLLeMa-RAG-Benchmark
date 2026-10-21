@@ -650,7 +650,7 @@ dependencies = [
 requires-dist = [
     { name = "bitsandbytes", marker = "sys_platform == 'linux'", specifier = "==0.50.2" },
     { name = "chardet", specifier = ">=5,<6" },
-    { name = "dillema-rankify-worker", directory = "../rankify_worker" },
+    { name = "dillema-rankify-worker", directory = "../src/rag_benchmark/techniques/rankify/worker" },
     { name = "pyarrow", specifier = "==17.0.0" },
     { name = "rankify", extras = ["retriever", "rag"], specifier = "==0.1.4" },
     { name = "torch", specifier = "==2.13.0", index = "https://download.pytorch.org/whl/cu132" },
@@ -659,7 +659,7 @@ requires-dist = [
 [[package]]
 name = "dillema-rankify-worker"
 version = "0.1.0"
-source = { directory = "../rankify_worker" }
+source = { directory = "../src/rag_benchmark/techniques/rankify/worker" }
 
 [package.metadata]
 requires-dist = [

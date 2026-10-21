@@ -5,7 +5,7 @@ from typing import Sequence
 
 import numpy as np
 
-from ...shared.device import resolve_torch_device
+from ...shared.device import resolve_torch_device, synchronize_cuda
 
 
 class E5Embedding:
@@ -24,18 +24,22 @@ class E5Embedding:
         return int(self.model.get_sentence_embedding_dimension())
 
     def encode_passages(self, texts: Sequence[str]) -> np.ndarray:
-        return self.model.encode(
+        embeddings = self.model.encode(
             [f"passage: {text}" for text in texts],
             batch_size=self.batch_size,
             convert_to_numpy=True,
             normalize_embeddings=True,
         )
+        synchronize_cuda(self.device, "e5-passage-embedding")
+        return embeddings
 
     def encode_query(self, text: str) -> np.ndarray:
-        return self.model.encode(
+        embedding = self.model.encode(
             f"query: {text}",
             batch_size=self.batch_size,
             convert_to_numpy=True,
             normalize_embeddings=True,
         )
+        synchronize_cuda(self.device, "e5-query-embedding")
+        return embedding
 

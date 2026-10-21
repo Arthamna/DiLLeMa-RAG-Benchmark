@@ -2,13 +2,23 @@ import logging
 import sys
 from types import SimpleNamespace
 
-from rag_benchmark.shared.device import resolve_torch_device
+import pytest
+
+from rag_benchmark.shared.device import (
+    CUDAStageError,
+    is_fatal_accelerator_error,
+    resolve_torch_device,
+    synchronize_cuda,
+)
+from rag_benchmark.shared.evaluation import evaluate_questions
+from rag_benchmark.shared.records import QARecord
 
 
 def _fake_torch(available: bool):
     return SimpleNamespace(cuda=SimpleNamespace(
         is_available=lambda: available,
         get_device_name=lambda _index: "Test GPU",
+        synchronize=lambda _device=None: None,
     ))
 
 
@@ -50,3 +60,28 @@ def test_reranker_receives_cuda_and_batch_size(monkeypatch):
     assert captured["device"] == "cuda"
     assert captured["batch_size"] == 8
     assert captured["show_progress_bar"] is False
+
+
+def test_cuda_synchronization_names_the_failed_stage(monkeypatch):
+    fake = _fake_torch(True)
+    fake.cuda.synchronize = lambda _device=None: (_ for _ in ()).throw(
+        RuntimeError("CUDA error: unspecified launch failure")
+    )
+    monkeypatch.setitem(sys.modules, "torch", fake)
+
+    with pytest.raises(CUDAStageError, match="e5-query-embedding") as captured:
+        synchronize_cuda("cuda", "e5-query-embedding")
+
+    assert is_fatal_accelerator_error(captured.value)
+    assert is_fatal_accelerator_error(RuntimeError("CUDA error: device-side assert triggered"))
+    assert not is_fatal_accelerator_error(RuntimeError("ordinary model error"))
+
+
+def test_evaluation_does_not_swallow_fatal_cuda_error():
+    runner = SimpleNamespace(answer=lambda *_args: (_ for _ in ()).throw(
+        RuntimeError("CUDA error: unspecified launch failure")
+    ))
+    question = QARecord("q1", "uniqa", "en", "question", ["answer"], "test")
+
+    with pytest.raises(RuntimeError, match="unspecified launch failure"):
+        evaluate_questions([question], runner, "uniqa", "dillema", "model")

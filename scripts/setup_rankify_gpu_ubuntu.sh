@@ -18,7 +18,8 @@ export JAVA_HOME="$(dirname "$(dirname "$(readlink -f "$(command -v javac)")")")
 
 uv python install 3.12
 export UV_PROJECT_ENVIRONMENT="$GPU_ENV"
-uv sync --project "$REPO_ROOT/rankify_worker_gpu" --python 3.12 --locked
+uv sync --project "$REPO_ROOT/rankify_worker_gpu" --python 3.12 --locked \
+  --reinstall-package dillema-rankify-worker
 
 "$GPU_ENV/bin/python" - <<'PY'
 import torch

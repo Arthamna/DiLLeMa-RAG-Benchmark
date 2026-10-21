@@ -283,7 +283,7 @@ def test_benchmark_keeps_order_outputs_and_worker_isolation(tmp_path, monkeypatc
     monkeypatch.setattr(benchmark, "run_index", baseline_index)
     monkeypatch.setattr(benchmark, "run_evaluate", baseline_evaluate)
     monkeypatch.setattr(GenerationSpec, "runtime", lambda self: object())
-    monkeypatch.setattr(benchmark, "_release_gpu", lambda: None)
+    monkeypatch.setattr(benchmark, "_release_gpu", lambda **_kwargs: None)
     output = tmp_path / "run"
     manifest = benchmark.run_benchmark(tmp_path / "experiment.yaml", "all", output)
     assert calls == ["capabilities", "index", *RANKIFY_PRESETS]

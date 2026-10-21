@@ -4,6 +4,7 @@ import time
 from pathlib import Path
 
 from .config import collection_name
+from .device import is_fatal_accelerator_error
 from .records import PredictionRecord, QARecord, RetrievedEvidence
 
 
@@ -61,6 +62,8 @@ def evaluate_questions(
                 else:
                     status = "ok" if prediction else "abstention"
             except Exception as exc:  # failures remain in the BLEU denominator
+                if is_fatal_accelerator_error(exc):
+                    raise
                 status = "error"
                 error = f"{type(exc).__name__}: {exc}"
         relevant_ranks = _relevant_ranks(evidence, question.source_ids)

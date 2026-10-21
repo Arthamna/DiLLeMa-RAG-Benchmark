@@ -4,7 +4,9 @@ import csv
 import gc
 import hashlib
 import json
+import logging
 import os
+import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
@@ -20,6 +22,8 @@ from .techniques.dillema.runner import run_evaluate, run_index
 from .techniques.rankify.client import RankifyWorkerClient
 from .techniques.rankify.config import RANKIFY_PRESETS
 from .techniques.rankify.pipeline import _evaluate_rankify, _index_rankify
+
+LOGGER = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True, slots=True)
@@ -147,15 +151,56 @@ def _dillema_index_root(spec: ExperimentSpec) -> Path:
     return spec.index_root / spec.index_fingerprint()[:16]
 
 
-def _release_gpu() -> None:
+def _release_gpu(*, suppress_errors: bool = False) -> None:
     gc.collect()
     try:
         import torch
 
         if torch.cuda.is_available():
+            torch.cuda.synchronize()
             torch.cuda.empty_cache()
     except ImportError:
         pass
+    except Exception as exc:
+        if not suppress_errors:
+            raise
+        LOGGER.warning("CUDA cleanup dilewati setelah kegagalan sebelumnya: %s", exc)
+
+
+def _log_cuda_runtime(spec: ExperimentSpec) -> None:
+    try:
+        revision = subprocess.run(
+            ["git", "-C", str(Path(__file__).resolve().parents[2]), "rev-parse", "--short", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=2,
+        ).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        revision = "unknown"
+
+    try:
+        import torch
+    except ImportError:
+        LOGGER.info("PyTorch tidak terpasang; CUDA tidak digunakan.")
+        return
+
+    if torch.cuda.is_available():
+        LOGGER.info(
+            "Runtime GPU: revision=%s source=%s torch=%s cuda=%s gpu=%s capability=%s archs=%s "
+            "generator=%s quantization=%s",
+            revision,
+            Path(__file__).resolve(),
+            torch.__version__,
+            torch.version.cuda,
+            torch.cuda.get_device_name(0),
+            torch.cuda.get_device_capability(0),
+            torch.cuda.get_arch_list(),
+            spec.generator.backend,
+            spec.generator.quantization,
+        )
+    else:
+        LOGGER.warning("PyTorch %s tidak mendeteksi CUDA.", torch.__version__)
 
 
 def _leaderboard_rows(reports: dict[str, dict]) -> list[dict[str, Any]]:
@@ -199,6 +244,7 @@ def _write_leaderboard(output: Path, reports: dict[str, dict]) -> None:
 
 def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]:
     spec = ExperimentSpec.load(config_path)
+    _log_cuda_runtime(spec)
     bundle = load_dataset(spec.dataset, spec.source)
     corpus_fingerprint = _corpus_fingerprint(bundle.documents)
     output.mkdir(parents=True, exist_ok=True)
@@ -214,15 +260,19 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
 
     if stage in {"evaluate", "all"}:
         runtime = spec.generator.runtime()
+        evaluation_failed = False
         try:
             run_evaluate(
                 "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
                 spec.source, runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
                 decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
             )
+        except BaseException:
+            evaluation_failed = True
+            raise
         finally:
             del runtime
-            _release_gpu()
+            _release_gpu(suppress_errors=evaluation_failed)
         dillema_report = summarize(read_predictions(output / "dillema" / "predictions.jsonl"))
         write_json(output / "dillema" / "metrics.json", dillema_report)
         reports = {"dillema": dillema_report}

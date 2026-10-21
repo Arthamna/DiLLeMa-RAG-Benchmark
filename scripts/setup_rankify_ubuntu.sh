@@ -17,6 +17,7 @@ export JAVA_HOME="$(dirname "$(dirname "$(readlink -f "$(command -v javac)")")")
 
 uv python install
 export UV_PROJECT_ENVIRONMENT="$REPO_ROOT/.venv-rankify"
-uv sync --project "$REPO_ROOT/rankify_worker" --python 3.12 --extra legacy --locked
+uv sync --project "$REPO_ROOT/src/rag_benchmark/techniques/rankify/worker" \
+  --python 3.12 --extra legacy --locked --reinstall-package dillema-rankify-worker
 "$JAVA_HOME/bin/javac" -version
 "$REPO_ROOT/.venv-rankify/bin/python" -m rag_benchmark_rankify.worker <<<'{"schema_version":1,"operation":"capabilities"}'
