@@ -1,9 +1,9 @@
 import pytest
 from types import SimpleNamespace
 
-from rag_benchmark.generation import (
-    APIModelConfig, HFModelConfig, OpenAICompatibleLLM, base_prompt,
-)
+from rag_benchmark.shared.api_llm import APIModelConfig, OpenAICompatibleLLM
+from rag_benchmark.shared.local_llm import HFModelConfig
+from rag_benchmark.techniques.dillema.generation import DiLLeMaGenerator, base_prompt
 
 
 def test_hf_model_configuration_is_explicit_and_deterministic(monkeypatch):
@@ -44,7 +44,10 @@ def test_openai_compatible_generator_uses_env_without_leaking_key(monkeypatch):
 
     client = SimpleNamespace(chat=SimpleNamespace(completions=Completions()))
     runtime = OpenAICompatibleLLM(config, client=client)
-    assert runtime.generate("question", "evidence") == "generated answer"
+    assert DiLLeMaGenerator(runtime).generate("question", "evidence") == "generated answer"
     assert captured["model"] == "openrouter/free"
     assert captured["temperature"] == 0
     assert captured["max_tokens"] == 321
+    assert captured["messages"] == [
+        {"role": "user", "content": base_prompt("question", "evidence")},
+    ]

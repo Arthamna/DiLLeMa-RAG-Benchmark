@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 from typing import Sequence
 
-from .shared.device import resolve_torch_device
+from ...shared.device import resolve_torch_device
 
 
 class CrossEncoderReranker:

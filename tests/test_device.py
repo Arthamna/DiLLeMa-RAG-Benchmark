@@ -43,7 +43,7 @@ def test_reranker_receives_cuda_and_batch_size(monkeypatch):
     )
     monkeypatch.setenv("RERANK_BATCH_SIZE", "8")
 
-    from rag_benchmark.rerank import CrossEncoderReranker
+    from rag_benchmark.techniques.dillema.rerank import CrossEncoderReranker
 
     reranker = CrossEncoderReranker("test/bge", device="cuda")
     assert reranker.score("q", ["a", "b"]) == [0.75, 0.75]

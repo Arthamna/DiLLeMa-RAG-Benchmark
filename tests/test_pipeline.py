@@ -1,11 +1,12 @@
 import numpy as np
 from qdrant_client import QdrantClient
 
-from rag_benchmark.config import PipelineConfig
-from rag_benchmark.models import DocumentRecord, RetrievedEvidence
-from rag_benchmark.pipeline import RAGPipeline, drop_weak_evidence, is_listing, pack_parent_pages
-from rag_benchmark.sparse import encode_sparse, tokenize
-from rag_benchmark.store import QdrantStore
+from rag_benchmark.techniques.dillema.config import PipelineConfig
+from rag_benchmark.shared.records import DocumentRecord, RetrievedEvidence
+from rag_benchmark.techniques.dillema.augmentation import pack_parent_pages
+from rag_benchmark.techniques.dillema.pipeline import RAGPipeline, drop_weak_evidence, is_listing
+from rag_benchmark.techniques.dillema.sparse import encode_sparse, tokenize
+from rag_benchmark.techniques.dillema.store import QdrantStore
 
 
 class FakeEmbedder:
