@@ -96,14 +96,16 @@ def build_parser() -> argparse.ArgumentParser:
     index.add_argument("--technique", choices=techniques, required=True)
     index.add_argument("--dataset", choices=("its", "uniqa"), required=True)
     index.add_argument("--source", type=Path, required=True)
-    index.add_argument("--index-root", type=Path, default=Path("artifacts/indexes"))
+    index.add_argument("--index-root", type=Path)
+    index.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3 techniques")
 
     evaluate = subparsers.add_parser("evaluate", help="Run technique generation and BLEU")
     evaluate.add_argument("--technique", choices=techniques, required=True)
     evaluate.add_argument("--dataset", choices=("its", "uniqa"), required=True)
-    evaluate.add_argument("--index-root", type=Path, default=Path("artifacts/indexes"))
+    evaluate.add_argument("--index-root", type=Path)
     evaluate.add_argument("--output", type=Path, required=True)
     evaluate.add_argument("--source", type=Path)
+    evaluate.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3 techniques")
 
     compare = subparsers.add_parser("compare", help="Compare completed ITS and UniQA runs")
     compare.add_argument("--its-run", type=Path, required=True)
@@ -115,7 +117,7 @@ def build_parser() -> argparse.ArgumentParser:
     techniques_compare.add_argument("--candidate-run", type=Path, required=True)
     techniques_compare.add_argument("--output", type=Path, required=True)
 
-    benchmark = subparsers.add_parser("benchmark", help="Run the controlled DiLLeMa vs Rankify matrix")
+    benchmark = subparsers.add_parser("benchmark", help="Run the controlled DiLLeMa, Rankify and Qwen3 matrix")
     benchmark.add_argument("--config", type=Path, required=True)
     benchmark.add_argument("--stage", choices=("index", "evaluate", "all"), required=True)
     benchmark.add_argument("--output", type=Path, required=True)
@@ -128,11 +130,27 @@ def main(argv: list[str] | None = None) -> None:
         level=getattr(logging, os.getenv("LOG_LEVEL", "INFO").upper(), logging.INFO),
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
-    args = build_parser().parse_args(argv)
-    if args.command == "index":
-        result = run_index(args.technique, args.dataset, args.source, args.index_root)
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if args.command in {"index", "evaluate"} and args.technique.startswith("qwen3_"):
+        from dataclasses import replace
+        from .benchmark import ExperimentSpec
+        from .shared.datasets import load_dataset
+        from .techniques.qwen3.runner import run_evaluate as evaluate_qwen3, run_index as index_qwen3
+
+        if args.config is None:
+            parser.error("Qwen3 techniques require --config with an enabled qwen3 block")
+        spec = ExperimentSpec.load(args.config)
+        if spec.qwen3 is None or args.dataset != spec.dataset:
+            parser.error("Qwen3 must be enabled and --dataset must match the experiment YAML")
+        spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
+        bundle = load_dataset(spec.dataset, spec.source)
+        result = (index_qwen3(spec, bundle) if args.command == "index" else
+                  evaluate_qwen3(spec, bundle, args.output, variants=(args.technique,)))
+    elif args.command == "index":
+        result = run_index(args.technique, args.dataset, args.source, args.index_root or Path("artifacts/indexes"))
     elif args.command == "evaluate":
-        result = run_evaluate(args.technique, args.dataset, args.index_root, args.output, args.source)
+        result = run_evaluate(args.technique, args.dataset, args.index_root or Path("artifacts/indexes"), args.output, args.source)
     elif args.command == "compare":
         result = run_compare(args.its_run, args.uniqa_run, args.output)
     elif args.command == "compare-techniques":

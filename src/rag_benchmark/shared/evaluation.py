@@ -7,13 +7,13 @@ from .config import collection_name
 from .records import PredictionRecord, QARecord, RetrievedEvidence
 
 
-def _relevant_ranks(evidence: list[RetrievedEvidence], gold: list[str]) -> list[int]:
+def _relevant_ranks(evidence: list[RetrievedEvidence], gold: list[str], limit: int = 10) -> list[int]:
     if not gold:
         return []
     normalized_gold = {str(item).casefold() for item in gold}
     ranks: list[int] = []
     matched_gold: set[str] = set()
-    for rank, item in enumerate(evidence[:10], 1):
+    for rank, item in enumerate(evidence[:limit], 1):
         retrieved = {item.source_id.casefold()}
         source_path = str(item.metadata.get("source_path") or "")
         if source_path:

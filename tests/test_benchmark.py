@@ -15,36 +15,13 @@ from rag_benchmark.shared.metrics import write_jsonl
 from rag_benchmark.shared.records import QARecord
 from rag_benchmark.techniques import TECHNIQUES, get_technique
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "rankify_worker" / "src"))
-from rag_benchmark_rankify.worker import (  # noqa: E402
-    PRESETS,
-    _capabilities,
-    _configure_java_home,
-    _custom_prompt,
-    _generation_kwargs,
-    _generator,
-    _reranker,
-    _retrievers,
-)
 from rag_benchmark.techniques.rankify.config import RANKIFY_PRESETS, _worker_common
 from rag_benchmark.techniques.rankify.pipeline import _convert_worker_rows, _question_payload
 
 from rag_benchmark_rankify.config import PRESETS, _configure_java_home
 from rag_benchmark_rankify.generation import _custom_prompt, _generation_kwargs, _generator
 from rag_benchmark_rankify.retrieval import _reranker, _retrievers
-
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "rankify_worker" / "src"))
-from rag_benchmark_rankify.worker import (  # noqa: E402
-    PRESETS,
-    _capabilities,
-    _configure_java_home,
-    _custom_prompt,
-    _generation_kwargs,
-    _generator,
-    _ensure_rankify_vllm_import,
-    _reranker,
-    _retrievers,
-)
+from rag_benchmark_rankify.worker import _capabilities
 
 
 
@@ -116,7 +93,7 @@ def _fake_rankify(monkeypatch):
 
 
 def test_rrag_is_absent_from_registry_and_cli():
-    assert tuple(TECHNIQUES) == ("dillema",)
+    assert tuple(TECHNIQUES) == ("dillema", "qwen3_embedding", "qwen3_embedding_rerank")
     with pytest.raises(ValueError, match="Unsupported"):
         get_technique("rrag")
     parser = build_parser()

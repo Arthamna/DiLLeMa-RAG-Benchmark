@@ -23,9 +23,23 @@ models:
   reranker_multilingual: BAAI/bge-reranker-v2-m3
 
 retrieval:
-  candidates: 40
+  candidates: 100
   top_k: 10
   rrf_k: 60
+
+qwen3:
+  enabled: true
+  embedding_model: Qwen/Qwen3-Embedding-0.6B
+  reranker_model: Qwen/Qwen3-Reranker-4B
+  instruction: Given a question, retrieve relevant passages that answer the question.
+  embedding_dimension: 1024
+  embedding_max_length: 2048
+  reranker_max_length: 2048
+  embedding_batch_size: 8
+  reranker_batch_size: 1
+  torch_dtype: bfloat16
+  reranker_quantization: none
+  attention_implementation: sdpa
 
 presets:
   - rankify_bm25_basic

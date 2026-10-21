@@ -89,7 +89,7 @@ def _retrieval_scores(records: list[dict]) -> dict:
         ideal_count = min(len(set(row.get("gold_source_ids") or [])), 10)
         ideal = sum(1.0 / math.log2(rank + 1) for rank in range(1, ideal_count + 1))
         ndcgs.append(dcg / ideal if ideal else 0.0)
-    return {
+    result = {
         "labeled_count": len(labeled),
         "relevance_label": labels[0] if len(labels) == 1 else labels,
         "recall_at_1": sum(recalls[1]) / len(labeled) if labeled else None,
@@ -98,6 +98,12 @@ def _retrieval_scores(records: list[dict]) -> dict:
         "mrr_at_10": sum(reciprocal_ranks) / len(labeled) if labeled else None,
         "ndcg_at_10": sum(ndcgs) / len(labeled) if labeled else None,
     }
+    if any(row.get("diagnostics", {}).get("candidate_cutoff") == 100 for row in records):
+        result["candidate_recall_at_100"] = (
+            sum(bool(row.get("diagnostics", {}).get("candidate_relevant_ranks")) for row in labeled)
+            / len(labeled) if labeled else None
+        )
+    return result
 
 
 def _reference_streams(records: list[dict], transform) -> list[list[str]]:

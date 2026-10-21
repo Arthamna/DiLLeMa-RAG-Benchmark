@@ -1,7 +1,7 @@
-# DiLLeMa–Rankify RAG Benchmark
+# DiLLeMa–Rankify–Qwen3 RAG Benchmark
 
 Benchmark terkontrol untuk membandingkan full conventional RAG DiLLeMa dengan
-tujuh pipeline Rankify pada corpus ITS dan UniQA. Indexing membangun retrieval
+tujuh pipeline Rankify dan dua varian Qwen3 pada corpus ITS dan UniQA. Indexing membangun retrieval
 index; project ini tidak melakukan fine-tuning model.
 
 Pipeline DiLLeMa:
@@ -31,7 +31,8 @@ Implementasi setiap teknik berada di `src/rag_benchmark/techniques/`:
 | `techniques/dillema/` | E5, sparse Qdrant, hybrid retrieval, reranking, filtering, parent packing, prompt, dan runner DiLLeMa |
 | `techniques/rankify/` | Preset, client subprocess, ekspor corpus, dan pengolahan hasil Rankify |
 | `techniques/rankify/worker/` | Proyek Python terpisah berisi dependency dan implementasi worker Rankify |
-| `shared/` | Records, dataset, chunking yang dipakai kedua teknik, evaluasi, metrik, dan runtime LLM |
+| `techniques/qwen3/` | Qwen3 embedding, dense cosine index, yes/no reranker, prompt, dan staged runner |
+| `shared/` | Records, dataset, chunking semua teknik, evaluasi, metrik, dan runtime LLM |
 | `cli.py` dan `benchmark.py` | Entrypoint command, konfigurasi eksperimen, penjadwalan teknik, dan leaderboard |
 
 Di dalam DiLLeMa, `pipeline.py` mengatur retrieval/filtering, `augmentation.py`
@@ -260,6 +261,112 @@ default ke `test`, yaitu test split native Inggris dan Italia.
 Nilai `all` hanya mengubah QA yang dijadwalkan untuk evaluasi; tidak ada model
 training dan index corpus yang sama dapat digunakan kembali. Reference answer
 tidak pernah dikirim ke Rankify worker, retriever, prompt, atau generator.
+
+## Qwen3 Embedding dan Reranker
+
+Keempat YAML eksperimen sekarang mengaktifkan dua varian Qwen3, sehingga satu
+command `benchmark` menghasilkan sepuluh pipeline. Model generator tetap dipilih
+oleh blok `generator`; Qwen3 retrieval tidak mengganti generator Qwen2.5 Anda.
+ITS tetap default `evaluation.split: all`, UniQA tetap native `test`.
+
+```yaml
+retrieval:
+  candidates: 100
+  top_k: 10
+  rrf_k: 60
+
+qwen3:
+  enabled: true
+  embedding_model: Qwen/Qwen3-Embedding-0.6B
+  reranker_model: Qwen/Qwen3-Reranker-4B
+  instruction: Given a question, retrieve relevant passages that answer the question.
+  embedding_dimension: 1024
+  embedding_max_length: 2048
+  reranker_max_length: 2048
+  embedding_batch_size: 8
+  reranker_batch_size: 1
+  torch_dtype: bfloat16
+  reranker_quantization: none
+  attention_implementation: sdpa
+```
+
+`qwen3_embedding` menggunakan top-10 cosine dari top-100 dense candidates.
+`qwen3_embedding_rerank` meranking ulang **pool top-100 yang sama**, lalu mengambil
+top-10 dengan probabilitas relevansi `yes/no`. Kedua varian memakai prompt dan
+context packing yang sama. `retrieval.candidates` juga mengontrol budget kandidat
+DiLLeMa dan Rankify pada benchmark; algoritme hybrid/filtering/parent packing
+DiLLeMa tetap berlaku. Ini perbandingan full pipeline, bukan isolasi seluruh
+perbedaan algoritme antarteknik. Ablation dua varian Qwen3 mengisolasi reranking.
+
+Runner menjalankan retrieval seluruh QA, melepas embedding, menjalankan
+reranking, melepas reranker, lalu baru memuat generator dari runtime bersama.
+Cache kandidat sementara tidak berisi reference answer dan dihapus
+setelah evaluasi. Prediction ditulis per QA dan log menunjukkan progres setiap
+tahap. Jika reranker 4B BF16 mengalami OOM, ubah `reranker_quantization: 4bit`;
+ukuran model, revision, precision, dan quantization dicatat pada artifact.
+CPU fallback memakai float32 tanpa quantization GPU dan dicatat di diagnostics.
+Server generator eksternal seperti vLLM tetap memakai VRAM selama server hidup;
+staged runner hanya mengelola model dalam proses benchmark.
+
+Model ID di YAML otomatis memakai cache/download Hugging Face. Untuk snapshot
+lokal, ganti `embedding_model`/`reranker_model` dengan absolute path berisi
+`config.json`; loader memakai `local_files_only=True`. Opsional, pin
+`embedding_revision` dan `reranker_revision` ke commit Hugging Face. Defaultnya
+`main`; jika resolved embedding revision berubah sejak indexing, evaluator
+meminta rebuild. Untuk error token publik kedaluwarsa, muat environment dengan
+`HF_HUB_DISABLE_IMPLICIT_TOKEN=1` sebagaimana contoh `.env.example`.
+
+Setup memakai `.venv` utama (Transformers >=4.51) dan worker Rankify terisolasi:
+
+```bash
+bash scripts/setup_ubuntu.sh
+bash scripts/setup_rankify_ubuntu.sh
+set -a
+source .env
+set +a
+
+.venv/bin/python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-uniqa-local.yaml \
+  --stage all \
+  --output artifacts/benchmarks/uniqa-qwen3
+```
+
+Gunakan preset `rankify-multilingual-local.yaml` untuk ITS atau preset tanpa
+`-local` untuk API generator. `--detach` tetap didukung. Perubahan budget kandidat
+40 menjadi 100 mengubah namespace index lama, jadi jalankan `--stage all` sekali;
+setelah itu `--stage evaluate` dapat memakai index yang sama. Index Qwen3 ada di
+`artifacts/indexes/qwen3/<dataset>/<hash>/`; mengganti generator/reranker tidak
+membangun ulang embedding index. `qwen3.enabled: false` mengembalikan matriks
+delapan pipeline; YAML lama tanpa blok ini juga tetap diterima.
+
+Output tambahan:
+
+```text
+qwen3_embedding/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+qwen3_embedding_rerank/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+qwen3-ablation.json
+```
+
+Setiap folder juga berisi `bleu-summary.json` dan `missing-context.jsonl`.
+Evaluator bersama menghitung BLEU raw/content, EM, token F1, Recall@1/5/10,
+MRR@10, nDCG@10, latency, error, dan fallback. Qwen3 menambahkan candidate
+Recall@100 (hit setidaknya satu source relevan, sesuai definisi recall evaluator
+lama); label ITS tetap `weak/category-based`. Laporan ablation memverifikasi hash
+pool kandidat dan memberikan delta per bahasa. Latency Qwen3 merupakan jumlah
+tahap per QA, tidak termasuk waktu load model dan antrean batch; biaya retrieval
+bersama diatribusikan pada kedua varian. Latency run total dapat lebih lama.
+
+Teknik Qwen3 juga tersedia lewat `index` dan `evaluate` dengan
+`--technique qwen3_embedding|qwen3_embedding_rerank --config <experiment.yaml>`.
+Untuk command ini `--dataset` wajib cocok dengan YAML; `index` tetap membutuhkan
+`--source`. `--index-root` dapat meng-override YAML. Evaluasi satu varian tetap
+mengikuti `evaluation.split`. `compare-techniques` menerima prediction Qwen3
+dengan syarat corpus, QA, generator, split, dan decoding sama.
+
+Referensi: [repo Qwen3](https://github.com/QwenLM/Qwen3-Embedding),
+[Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B), dan
+[Reranker-4B](https://huggingface.co/Qwen/Qwen3-Reranker-4B). Hasil retrieval MTEB
+resmi bukan jaminan kenaikan BLEU ITS/UniQA; ukur delta pada corpus Anda sendiri.
 
 ## Menjalankan benchmark
 

@@ -26,10 +26,13 @@ from .store import QdrantStore
 LOGGER = logging.getLogger(__name__)
 
 
-def run_index(technique: str, dataset: str, source: Path, index_root: Path) -> dict:
+def run_index(
+    technique: str, dataset: str, source: Path, index_root: Path,
+    pipeline_config: PipelineConfig | None = None,
+) -> dict:
     get_technique(technique)
     bundle = load_dataset(dataset, source)
-    pipeline_config = PipelineConfig.from_env()
+    pipeline_config = pipeline_config or PipelineConfig.from_env()
     device = resolve_torch_device("RAG indexing")
     embedder = E5Embedding(pipeline_config.embedding_model, device=device)
     target = _technique_root(index_root, technique, dataset)
@@ -106,12 +109,13 @@ def run_evaluate(
     model_fingerprint: str | None = None,
     decoding_config: dict | None = None,
     evaluation_split: str = "test",
+    pipeline_config: PipelineConfig | None = None,
 ) -> dict:
     get_technique(technique)
     index_manifest, dataset_source = _load_index_manifest(index_root, technique, dataset, source)
     bundle = load_dataset(dataset, dataset_source)
     scheduled = bundle.questions_for_split(evaluation_split)
-    pipeline_config = PipelineConfig.from_env()
+    pipeline_config = pipeline_config or PipelineConfig.from_env()
     device = resolve_torch_device("RAG evaluation")
     runtime = runtime or _evaluation_runtime()
     resolved_model_fingerprint = model_fingerprint or runtime.fingerprint
