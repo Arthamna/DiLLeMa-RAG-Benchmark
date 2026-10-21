@@ -7,7 +7,7 @@ import json
 import logging
 import os
 import subprocess
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from pathlib import Path
 from typing import Any
 
@@ -22,6 +22,8 @@ from .techniques.dillema.runner import run_evaluate, run_index
 from .techniques.rankify.client import RankifyWorkerClient
 from .techniques.rankify.config import RANKIFY_PRESETS
 from .techniques.rankify.pipeline import _evaluate_rankify, _index_rankify
+from .techniques.qwen3.config import Qwen3Config
+from .techniques.qwen3.runner import run_index as index_qwen3, run_evaluate as evaluate_qwen3
 
 LOGGER = logging.getLogger(__name__)
 
@@ -40,6 +42,7 @@ class ExperimentSpec:
     evaluation_split: str
     presets: tuple[str, ...]
     generator: GenerationSpec
+    qwen3: Qwen3Config | None = None
 
     @classmethod
     def load(cls, path: Path) -> "ExperimentSpec":
@@ -91,6 +94,7 @@ class ExperimentSpec:
             evaluation_split=str(evaluation.get("split") or "test").strip().casefold(),
             presets=presets,
             generator=GenerationSpec.from_dict(raw.get("generator") or {}),
+            qwen3=Qwen3Config.from_dict(raw.get("qwen3") or {}, base),
         ).validate()
 
     def validate(self) -> "ExperimentSpec":
@@ -113,7 +117,7 @@ class ExperimentSpec:
         return self
 
     def public_dict(self) -> dict[str, Any]:
-        return {
+        result = {
             "dataset": self.dataset,
             "source": str(self.source),
             "index_root": str(self.index_root),
@@ -124,6 +128,9 @@ class ExperimentSpec:
             "presets": list(self.presets),
             "generator": self.generator.public_dict(),
         }
+        if self.qwen3 is not None:
+            result["qwen3"] = {"enabled": True, **self.qwen3.public_dict()}
+        return result
 
     def fingerprint(self) -> str:
         payload = json.dumps(self.public_dict(), sort_keys=True, separators=(",", ":"))
@@ -254,9 +261,15 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
 
     if stage in {"index", "all"}:
         result["index"] = {
-            "dillema": run_index("dillema", spec.dataset, spec.source, _dillema_index_root(spec)),
-            "rankify": _index_rankify(spec, bundle, worker, ChunkingConfig()),
+            "dillema": run_index(
+                "dillema", spec.dataset, spec.source, _dillema_index_root(spec),
+                pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
+            ),
         }
+        _release_gpu()
+        if spec.qwen3 is not None:
+            result["index"]["qwen3"] = index_qwen3(spec, bundle)
+        result["index"]["rankify"] = _index_rankify(spec, bundle, worker, ChunkingConfig())
 
     if stage in {"evaluate", "all"}:
         runtime = spec.generator.runtime()
@@ -266,6 +279,7 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
                 "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
                 spec.source, runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
                 decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
+                pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
             )
         except BaseException:
             evaluation_failed = True
@@ -276,6 +290,8 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
         dillema_report = summarize(read_predictions(output / "dillema" / "predictions.jsonl"))
         write_json(output / "dillema" / "metrics.json", dillema_report)
         reports = {"dillema": dillema_report}
+        if spec.qwen3 is not None:
+            reports.update(evaluate_qwen3(spec, bundle, output))
         reports.update(_evaluate_rankify(spec, bundle, worker, output, corpus_fingerprint))
         _write_leaderboard(output, reports)
         result["reports"] = reports

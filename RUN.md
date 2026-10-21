@@ -1,5 +1,12 @@
 # Menjalankan benchmark
 
+Keempat preset kini juga menjalankan `qwen3_embedding` dan
+`qwen3_embedding_rerank` (sepuluh pipeline). Setelah update, jalankan
+`bash scripts/setup_ubuntu.sh` untuk constraint Transformers >=4.51; pada RTX 5080
+gunakan `bash scripts/setup_rankify_gpu_ubuntu.sh`. Jalankan `--stage all` sekali
+untuk budget baru top-100. Generator tetap mengikuti `.env` dan YAML sebelumnya.
+Detail lifecycle GPU, opsi 4-bit, dan output Qwen3 ada di README bagian Qwen3.
+
 Implementasi teknik ada di `src/rag_benchmark/techniques/dillema/` dan
 `src/rag_benchmark/techniques/rankify/`. Komponen bersama ada di
 `src/rag_benchmark/shared/`. Proyek worker beserta `pyproject.toml` dan `uv.lock`

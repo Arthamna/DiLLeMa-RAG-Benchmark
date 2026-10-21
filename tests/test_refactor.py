@@ -264,7 +264,7 @@ def test_benchmark_keeps_order_outputs_and_worker_isolation(tmp_path, monkeypatc
                 write_jsonl(request["output_path"], rows)
             return {"status": "ok", "operation": operation}
 
-    def baseline_index(*args):
+    def baseline_index(*args, **kwargs):
         return {"schema_version": 2}
 
     def baseline_evaluate(technique, dataset, index_root, output, source, **kwargs):
@@ -306,8 +306,9 @@ def test_shared_and_techniques_obey_import_boundaries():
     root = ROOT / "src/rag_benchmark"
     for subtree, forbidden in (
         ("shared", ("rag_benchmark.techniques",)),
-        ("techniques/dillema", ("rag_benchmark.techniques.rankify",)),
-        ("techniques/rankify", ("rag_benchmark.techniques.dillema",)),
+        ("techniques/dillema", ("rag_benchmark.techniques.rankify", "rag_benchmark.techniques.qwen3")),
+        ("techniques/rankify", ("rag_benchmark.techniques.dillema", "rag_benchmark.techniques.qwen3")),
+        ("techniques/qwen3", ("rag_benchmark.techniques.dillema", "rag_benchmark.techniques.rankify")),
     ):
         for path in (root / subtree).rglob("*.py"):
             if "worker" in path.relative_to(root).parts:

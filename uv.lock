@@ -388,7 +388,7 @@ requires-dist = [
     { name = "sacrebleu", specifier = ">=2.5,<3" },
     { name = "sentence-transformers", specifier = ">=3.4,<4" },
     { name = "torch", marker = "extra == 'hf'", specifier = "==2.13.0", index = "https://download.pytorch.org/whl/cu132" },
-    { name = "transformers", marker = "extra == 'hf'", specifier = ">=4.40,<5" },
+    { name = "transformers", marker = "extra == 'hf'", specifier = ">=4.51,<5" },
 ]
 provides-extras = ["dev", "api", "hf", "quantized"]
 

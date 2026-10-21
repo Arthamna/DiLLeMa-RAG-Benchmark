@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dillema-rag-benchmark"
 version = "0.1.0"
-description = "Controlled DiLLeMa and Rankify benchmark for ITS and UniQA"
+description = "Controlled DiLLeMa, Rankify and Qwen3 benchmark for ITS and UniQA"
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -21,7 +21,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8,<9"]
 api = ["openai>=1.40,<3"]
-hf = ["torch==2.13.0", "transformers>=4.40,<5", "accelerate>=0.29,<2"]
+hf = ["torch==2.13.0", "transformers>=4.51,<5", "accelerate>=0.29,<2"]
 quantized = ["bitsandbytes==0.50.2"]
 
 [project.scripts]

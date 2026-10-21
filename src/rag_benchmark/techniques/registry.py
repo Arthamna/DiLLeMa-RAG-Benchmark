@@ -11,6 +11,8 @@ class TechniqueSpec:
 
 TECHNIQUES = {
     "dillema": TechniqueSpec("dillema", "rag_benchmark.techniques.dillema.pipeline:RAGPipeline"),
+    "qwen3_embedding": TechniqueSpec("qwen3_embedding", "rag_benchmark.techniques.qwen3.pipeline:Qwen3Pipeline"),
+    "qwen3_embedding_rerank": TechniqueSpec("qwen3_embedding_rerank", "rag_benchmark.techniques.qwen3.pipeline:Qwen3Pipeline"),
 }
 
 
