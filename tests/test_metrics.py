@@ -1,4 +1,4 @@
-from rag_benchmark.metrics import bleu_variant, normalize_content, summarize
+from rag_benchmark.shared.metrics import bleu_variant, normalize_content, summarize
 
 
 def _row(prediction, references, dataset="its", language="id", available=True):

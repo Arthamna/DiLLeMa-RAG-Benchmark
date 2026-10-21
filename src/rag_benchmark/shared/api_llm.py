@@ -5,8 +5,6 @@ import json
 import os
 from dataclasses import asdict, dataclass
 
-from .local_llm import base_prompt
-
 
 @dataclass(frozen=True, slots=True)
 class APIModelConfig:
@@ -45,7 +43,7 @@ class APIModelConfig:
 
 
 class OpenAICompatibleLLM:
-    """Deterministic chat-completion generator for DiLLeMa evaluation."""
+    """Backend-neutral deterministic chat-completion runtime."""
 
     kind = "openai-compatible-api"
 
@@ -63,10 +61,10 @@ class OpenAICompatibleLLM:
     def fingerprint(self) -> str:
         return self.config.fingerprint()
 
-    def generate(self, question: str, context: str) -> str:
+    def generate_prompt(self, prompt: str) -> str:
         response = self.client.chat.completions.create(
             model=self.config.model,
-            messages=[{"role": "user", "content": base_prompt(question, context)}],
+            messages=[{"role": "user", "content": prompt}],
             temperature=0,
             max_tokens=self.config.max_tokens,
         )

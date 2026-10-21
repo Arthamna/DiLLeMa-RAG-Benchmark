@@ -10,12 +10,6 @@ from .device import cuda_available
 
 LOGGER = logging.getLogger(__name__)
 
-SYSTEM_PROMPT = (
-    "Answer using only the supplied evidence. Answer in the same language as the question. "
-    "Return only the answer, without citations, source labels, preamble, or commentary. "
-    "If the evidence is insufficient, return an empty answer."
-)
-
 
 @dataclass(frozen=True, slots=True)
 class HFModelConfig:
@@ -47,12 +41,8 @@ class HFModelConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
-def base_prompt(question: str, context: str) -> str:
-    return f"{SYSTEM_PROMPT}\n\nEvidence:\n{context}\n\nQuestion:\n{question}\n\nAnswer:"
-
-
 class LocalLLM:
-    """The only base-model loader/tokenizer/decoder used by every technique."""
+    """Backend-neutral local model loader, tokenizer, and decoder."""
 
     kind = "huggingface-local"
 
@@ -112,8 +102,8 @@ class LocalLLM:
         generated = outputs[0, start:]
         return self.tokenizer.decode(generated, skip_special_tokens=True).strip()
 
-    def generate(self, question: str, context: str) -> str:
-        tokens = self.tokenize(base_prompt(question, context)).to(self.device)
+    def generate_prompt(self, prompt: str) -> str:
+        tokens = self.tokenize(prompt).to(self.device)
         outputs = self.model.generate(
             **tokens, do_sample=False, max_new_tokens=self.config.max_new_tokens,
             pad_token_id=self.tokenizer.pad_token_id,

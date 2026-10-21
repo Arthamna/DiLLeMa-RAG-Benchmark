@@ -16,7 +16,7 @@ from qdrant_client.models import (
     VectorParams,
 )
 
-from .models import ChunkRecord
+from ...shared.records import ChunkRecord
 from .sparse import encode_sparse
 
 DENSE_VECTOR = "dense"

@@ -1,0 +1,39 @@
+{
+  "pipeline_config": {
+    "chunk_size": 800,
+    "chunk_overlap": 120,
+    "min_chunk_chars": 150,
+    "parent_window_chars": 5000,
+    "retrieval_candidates": 40,
+    "rerank_min_score": 0.05,
+    "rerank_relative_floor": 0.5,
+    "normal_top_results": 8,
+    "max_parents": 4,
+    "listing_top_results": 16,
+    "listing_relative_floor": 0.3,
+    "listing_max_parents": 8,
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "temperature": 0.0,
+    "max_tokens": 768
+  },
+  "pipeline_fingerprint": "67d25de36c1cbbc07ceb6ff6a663c44c60bd7a53fcfd35049b4761bbee230abe",
+  "index_fingerprint": "7dce29106444425768223c7c107e4c1d2b87a375706d8141a48769a8fb5a2635",
+  "chunks_digest": "0c074a5a177e6c96e069a4623b6e39653bdcd682799d79534498de4abba61daa",
+  "chunk_ids": [
+    "5300c967fd8a00c46bc08da2d28f7eb3fdb93945a245efaebe257cdcc0116054",
+    "9515ff5a59a73f90a17ba774984c812ec10b755c21039257ac93d45e1e8c4a05",
+    "ad9f315adfa3993355c4667bf55ec361b809c321a230ce7798dcd9fb8f323a9e",
+    "ed59f5fe7d140302ce53ff6b9089901aae6e4978cb78718ab11ddb67988cc2d8",
+    "8a0ba783807c98a1677739d41b8bd61464d533f11793f5a56fbb87bb7f73555f",
+    "dcab02822819c6f514675d6ef97e5cb703c5fe3fedb1cfaa4f55d74651b4cf31",
+    "f939e2a29eb12732c09bbb1ec3f3fefca51f1f83323d7111d2d28d8b734e959b",
+    "321f80580c9ce1ab7a073e46a59d893f9e4f650f69c4d7707da6783fd4f220ff"
+  ],
+  "packed_text": "Source: a\nbukti terakhir\n\nbukti pertama dan konteks",
+  "packed_chunk_ids": [
+    "1",
+    "3"
+  ],
+  "prompt": "Answer using only the supplied evidence. Answer in the same language as the question. Return only the answer, without citations, source labels, preamble, or commentary. If the evidence is insufficient, return an empty answer.\n\nEvidence:\nBukti café: wajib membawa kartu.\n\nQuestion:\nApa aturannya?\n\nAnswer:"
+}

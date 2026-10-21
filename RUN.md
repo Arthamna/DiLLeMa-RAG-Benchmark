@@ -1,3 +1,13 @@
+# Menjalankan benchmark
+
+Implementasi teknik ada di `src/rag_benchmark/techniques/dillema/` dan
+`src/rag_benchmark/techniques/rankify/`. Komponen bersama ada di
+`src/rag_benchmark/shared/`. Proyek worker beserta `pyproject.toml` dan `uv.lock`
+sekarang ada di `src/rag_benchmark/techniques/rankify/worker/`.
+Setelah menarik refactor ini, jalankan ulang setup Rankify agar instalasi
+editable menunjuk lokasi source baru. Environment tetap `.venv-rankify`;
+command worker dan konfigurasi YAML tetap sama.
+
 bash scripts/setup_ubuntu.sh
 bash scripts/setup_rankify_ubuntu.sh
 
@@ -20,7 +30,7 @@ uv sync \
 
 UV_PROJECT_ENVIRONMENT="$REPO_ROOT/.venv-rankify" \
 uv sync \
-  --project "$REPO_ROOT/rankify_worker" \
+  --project "$REPO_ROOT/src/rag_benchmark/techniques/rankify/worker" \
   --python 3.12 \
   --locked
 

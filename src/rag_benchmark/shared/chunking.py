@@ -5,7 +5,7 @@ import re
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from .models import ChunkRecord, DocumentRecord
+from .records import ChunkRecord, DocumentRecord
 
 _HEADING = re.compile(
     r"^[ \t]*(?:"

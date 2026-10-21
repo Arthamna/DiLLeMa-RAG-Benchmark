@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from rag_benchmark.datasets import load_its, load_uniqa
+from rag_benchmark.shared.datasets import load_its, load_uniqa
 
 
 def _csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:

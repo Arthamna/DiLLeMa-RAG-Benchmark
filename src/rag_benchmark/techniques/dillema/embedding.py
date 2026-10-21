@@ -5,7 +5,7 @@ from typing import Sequence
 
 import numpy as np
 
-from .shared.device import resolve_torch_device
+from ...shared.device import resolve_torch_device
 
 
 class E5Embedding:

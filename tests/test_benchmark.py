@@ -8,17 +8,12 @@ from types import ModuleType, SimpleNamespace
 
 import pytest
 
-from rag_benchmark.benchmark import (
-    RANKIFY_PRESETS,
-    ExperimentSpec,
-    GenerationSpec,
-    _convert_worker_rows,
-    _question_payload,
-    _worker_common,
-)
-from rag_benchmark.cli import _launch_detached_benchmark, build_parser, run_compare_techniques
-from rag_benchmark.metrics import write_jsonl
-from rag_benchmark.models import QARecord
+from rag_benchmark.benchmark import ExperimentSpec
+from rag_benchmark.cli import _launch_detached_benchmark, build_parser
+from rag_benchmark.shared.comparison import run_compare_techniques
+from rag_benchmark.shared.config import GenerationSpec
+from rag_benchmark.shared.metrics import write_jsonl
+from rag_benchmark.shared.records import QARecord
 from rag_benchmark.techniques import TECHNIQUES, get_technique
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "rankify_worker" / "src"))
@@ -33,6 +28,26 @@ from rag_benchmark_rankify.worker import (  # noqa: E402
     _reranker,
     _retrievers,
 )
+from rag_benchmark.techniques.rankify.config import RANKIFY_PRESETS, _worker_common
+from rag_benchmark.techniques.rankify.pipeline import _convert_worker_rows, _question_payload
+
+from rag_benchmark_rankify.config import PRESETS, _configure_java_home
+from rag_benchmark_rankify.generation import _custom_prompt, _generation_kwargs, _generator
+from rag_benchmark_rankify.retrieval import _reranker, _retrievers
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "rankify_worker" / "src"))
+from rag_benchmark_rankify.worker import (  # noqa: E402
+    PRESETS,
+    _capabilities,
+    _configure_java_home,
+    _custom_prompt,
+    _generation_kwargs,
+    _generator,
+    _ensure_rankify_vllm_import,
+    _reranker,
+    _retrievers,
+)
+
 
 
 def _fake_rankify(monkeypatch):
@@ -277,7 +292,7 @@ def test_rankify_worker_configures_java_home_from_javac(tmp_path, monkeypatch):
     javac.parent.mkdir(parents=True)
     javac.write_text("", encoding="utf-8")
     monkeypatch.delenv("JAVA_HOME", raising=False)
-    monkeypatch.setattr("rag_benchmark_rankify.worker.shutil.which", lambda name: str(javac))
+    monkeypatch.setattr("rag_benchmark_rankify.config.shutil.which", lambda name: str(javac))
 
     assert _configure_java_home() == str(javac.parent.parent.resolve())
     assert os.environ["JAVA_HOME"] == str(javac.parent.parent.resolve())
@@ -285,7 +300,7 @@ def test_rankify_worker_configures_java_home_from_javac(tmp_path, monkeypatch):
 
 def test_rankify_worker_requires_full_jdk(monkeypatch):
     monkeypatch.delenv("JAVA_HOME", raising=False)
-    monkeypatch.setattr("rag_benchmark_rankify.worker.shutil.which", lambda name: None)
+    monkeypatch.setattr("rag_benchmark_rankify.config.shutil.which", lambda name: None)
 
     with pytest.raises(RuntimeError, match="openjdk-21-jdk-headless"):
         _configure_java_home()

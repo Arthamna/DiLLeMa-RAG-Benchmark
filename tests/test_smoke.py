@@ -1,12 +1,12 @@
 import numpy as np
 from qdrant_client import QdrantClient
 
-from rag_benchmark.config import PipelineConfig
-from rag_benchmark.metrics import summarize
-from rag_benchmark.models import DocumentRecord, QARecord
-from rag_benchmark.pipeline import RAGPipeline
+from rag_benchmark.techniques.dillema.config import PipelineConfig
+from rag_benchmark.shared.metrics import summarize
+from rag_benchmark.shared.records import DocumentRecord, QARecord
+from rag_benchmark.techniques.dillema.pipeline import RAGPipeline
 from rag_benchmark.shared.evaluation import evaluate_questions
-from rag_benchmark.store import QdrantStore
+from rag_benchmark.techniques.dillema.store import QdrantStore
 
 
 class SmokeEmbedder:

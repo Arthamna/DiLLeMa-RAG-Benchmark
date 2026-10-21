@@ -22,6 +22,49 @@ parameter decoding yang sama. Preset benchmark memakai generator Rankify
 tetap dapat dibandingkan dengan greedy decoding yang sama; adapter ini direkam
 di diagnostics.
 
+## Struktur implementasi
+
+Implementasi setiap teknik berada di `src/rag_benchmark/techniques/`:
+
+| Lokasi | Tanggung jawab |
+|---|---|
+| `techniques/dillema/` | E5, sparse Qdrant, hybrid retrieval, reranking, filtering, parent packing, prompt, dan runner DiLLeMa |
+| `techniques/rankify/` | Preset, client subprocess, ekspor corpus, dan pengolahan hasil Rankify |
+| `techniques/rankify/worker/` | Proyek Python terpisah berisi dependency dan implementasi worker Rankify |
+| `shared/` | Records, dataset, chunking yang dipakai kedua teknik, evaluasi, metrik, dan runtime LLM |
+| `cli.py` dan `benchmark.py` | Entrypoint command, konfigurasi eksperimen, penjadwalan teknik, dan leaderboard |
+
+Di dalam DiLLeMa, `pipeline.py` mengatur retrieval/filtering, `augmentation.py`
+menyusun parent context, dan `generation.py` membentuk prompt. Runtime pada
+`shared/api_llm.py` dan `shared/local_llm.py` menerima prompt melalui
+`generate_prompt(prompt)`; adapter `DiLLeMaGenerator` menyediakan
+`generate(question, context)`.
+
+Worker tetap dipasang sebagai distribution `dillema-rankify-worker`, dengan
+package `rag_benchmark_rankify` di environment `.venv-rankify`. Proyek worker
+dikecualikan dari package discovery utama dan dibangun secara terpisah.
+Proses utama berkomunikasi dengan worker melalui JSONL tanpa mengimpor library
+Rankify. Import shared tidak bergantung pada implementasi teknik, dan kedua
+teknik tidak saling mengimpor.
+
+Contoh import baru:
+
+```python
+from rag_benchmark.shared.chunking import DocumentChunker
+from rag_benchmark.shared.config import ChunkingConfig
+from rag_benchmark.shared.metrics import summarize
+from rag_benchmark.shared.records import DocumentRecord
+from rag_benchmark.techniques.dillema.config import PipelineConfig
+from rag_benchmark.techniques.dillema.pipeline import RAGPipeline
+from rag_benchmark.techniques.rankify.client import RankifyWorkerClient
+```
+
+Import lama seperti `rag_benchmark.pipeline`, `rag_benchmark.store`, dan
+`rag_benchmark.metrics` sudah dihapus. Format YAML, nama command dan preset,
+fingerprint, serta lokasi indeks/output tetap. Di YAML eksperimen, bagian
+`models` dan `retrieval` mengatur Rankify; konfigurasi DiLLeMa berada pada
+`techniques/dillema/config.py` dan environment yang sudah didokumentasikan.
+
 ## Persyaratan Ubuntu
 
 - Ubuntu 22.04 atau lebih baru.
