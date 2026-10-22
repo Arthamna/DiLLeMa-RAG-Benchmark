@@ -24,6 +24,10 @@ def _generator(request: dict, method: str, device: str):
             "backend": "huggingface",
             "trust_remote_code": bool(config.get("trust_remote_code", False)),
         })
+        if config.get("torch_dtype"):
+            common["torch_dtype"] = config["torch_dtype"] if device.startswith("cuda") else "float32"
+        if config.get("attention_implementation"):
+            common["attn_implementation"] = config["attention_implementation"]
         quantization = str(config.get("quantization") or "none").casefold()
         if device == "cuda":
             common["device_map"] = "auto"

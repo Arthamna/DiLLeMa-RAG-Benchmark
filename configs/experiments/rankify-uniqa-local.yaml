@@ -14,6 +14,7 @@ generator:
   max_tokens: 768
   max_tokens_env: HF_MAX_NEW_TOKENS
   quantization: 4bit
+  quantization_env: HF_QUANTIZATION
   trust_remote_code: false
   max_input_tokens: 4096
   max_input_tokens_env: HF_MAX_INPUT_TOKENS

@@ -83,5 +83,6 @@ def test_evaluation_does_not_swallow_fatal_cuda_error():
     ))
     question = QARecord("q1", "uniqa", "en", "question", ["answer"], "test")
 
-    with pytest.raises(RuntimeError, match="unspecified launch failure"):
+    with pytest.raises(RuntimeError, match="question_id=q1") as caught:
         evaluate_questions([question], runner, "uniqa", "dillema", "model")
+    assert "unspecified launch failure" in str(caught.value.__cause__)

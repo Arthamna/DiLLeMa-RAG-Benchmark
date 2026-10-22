@@ -63,7 +63,11 @@ def evaluate_questions(
                     status = "ok" if prediction else "abstention"
             except Exception as exc:  # failures remain in the BLEU denominator
                 if is_fatal_accelerator_error(exc):
-                    raise
+                    raise RuntimeError(
+                        f"Fatal CUDA error: technique={technique}, dataset={dataset}, "
+                        f"question_id={question.id}, language={question.language}. "
+                        f"Evaluation stopped; restart in a new process. {exc}"
+                    ) from exc
                 status = "error"
                 error = f"{type(exc).__name__}: {exc}"
         relevant_ranks = _relevant_ranks(evidence, question.source_ids)

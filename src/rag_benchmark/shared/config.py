@@ -29,6 +29,8 @@ class GenerationSpec:
     quantization: str = "4bit"
     trust_remote_code: bool = False
     max_input_tokens: int = 4096
+    torch_dtype: str | None = None
+    attention_implementation: str | None = None
 
     @classmethod
     def from_dict(cls, value: dict[str, Any]) -> "GenerationSpec":
@@ -51,6 +53,10 @@ class GenerationSpec:
             raise ValueError("Controlled benchmark requires generator.temperature=0")
         max_tokens_env = str(value.get("max_tokens_env") or "").strip()
         max_input_tokens_env = str(value.get("max_input_tokens_env") or "").strip()
+        quantization_env = str(value.get("quantization_env") or "").strip()
+        quantization = str(value.get("quantization") or os.getenv("HF_QUANTIZATION", "4bit"))
+        if quantization_env:
+            quantization = os.getenv(quantization_env, quantization)
         return cls(
             backend=backend,
             model=model,
@@ -58,16 +64,25 @@ class GenerationSpec:
             max_tokens=int(os.getenv(max_tokens_env, str(value.get("max_tokens", 768)))) if max_tokens_env else int(value.get("max_tokens", 768)),
             base_url=base_url,
             api_key_env=api_key_env,
-            quantization=str(value.get("quantization") or os.getenv("HF_QUANTIZATION", "4bit")),
+            quantization=quantization,
             trust_remote_code=bool(value.get("trust_remote_code", False)),
             max_input_tokens=(
                 int(os.getenv(max_input_tokens_env, str(value.get("max_input_tokens", 4096))))
                 if max_input_tokens_env else int(value.get("max_input_tokens", 4096))
             ),
+            torch_dtype=(value.get("torch_dtype") or os.getenv("HF_TORCH_DTYPE") or None)
+            if backend == "huggingface" else None,
+            attention_implementation=(
+                value.get("attention_implementation") or os.getenv("HF_ATTENTION_IMPLEMENTATION") or None
+            ) if backend == "huggingface" else None,
         )
 
     def public_dict(self) -> dict[str, Any]:
-        return asdict(self)
+        value = asdict(self)
+        for key in ("torch_dtype", "attention_implementation"):
+            if value[key] is None:
+                del value[key]
+        return value
 
     def fingerprint(self) -> str:
         payload = json.dumps(self.public_dict(), sort_keys=True, separators=(",", ":"))
@@ -97,6 +112,8 @@ class GenerationSpec:
             trust_remote_code=self.trust_remote_code,
             max_input_tokens=self.max_input_tokens,
             max_new_tokens=self.max_tokens,
+            torch_dtype=self.torch_dtype,
+            attention_implementation=self.attention_implementation,
         ))
 
 

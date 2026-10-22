@@ -524,6 +524,20 @@ def test_worker_rows_join_references_only_after_generation():
     assert rows[0]["diagnostics"]["relevant_ranks"] == [1]
 
 
+def test_rankify_generator_honors_unquantized_bf16_eager_profile(monkeypatch):
+    from rag_benchmark_rankify.generation import _generator as modular_generator
+
+    generator_class, *_ = _fake_rankify(monkeypatch)
+    for factory in (_generator, modular_generator):
+        factory({"generator": {
+            "backend": "huggingface", "model": "snapshot", "quantization": "none",
+            "torch_dtype": "bfloat16", "attention_implementation": "eager",
+        }}, "basic-rag", "cuda")
+        assert generator_class.last_kwargs["torch_dtype"] == "bfloat16"
+        assert generator_class.last_kwargs["attn_implementation"] == "eager"
+        assert "quantization_config" not in generator_class.last_kwargs
+
+
 def test_comparison_rejects_decoding_or_corpus_mismatch(tmp_path):
     common = {
         "id": "q1", "dataset": "its", "language": "id", "split": "test",

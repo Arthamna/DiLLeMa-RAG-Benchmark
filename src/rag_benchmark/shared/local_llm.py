@@ -6,7 +6,7 @@ import logging
 import os
 from dataclasses import asdict, dataclass
 
-from .device import cuda_available, synchronize_cuda
+from .device import CUDAStageError, cuda_available, is_fatal_accelerator_error, synchronize_cuda
 
 LOGGER = logging.getLogger(__name__)
 
@@ -18,6 +18,14 @@ class HFModelConfig:
     trust_remote_code: bool = False
     max_input_tokens: int = 4096
     max_new_tokens: int = 768
+    torch_dtype: str | None = None
+    attention_implementation: str | None = None
+
+    def __post_init__(self):
+        if self.torch_dtype not in {None, "auto", "float32", "float16", "bfloat16"}:
+            raise ValueError("HF torch_dtype must be auto, float32, float16, or bfloat16")
+        if self.attention_implementation not in {None, "eager", "sdpa", "flash_attention_2"}:
+            raise ValueError("HF attention_implementation must be eager, sdpa, or flash_attention_2")
 
     @classmethod
     def from_env(cls) -> "HFModelConfig":
@@ -34,10 +42,16 @@ class HFModelConfig:
             trust_remote_code=trust,
             max_input_tokens=int(os.getenv("HF_MAX_INPUT_TOKENS", "4096")),
             max_new_tokens=int(os.getenv("HF_MAX_NEW_TOKENS", "768")),
+            torch_dtype=os.getenv("HF_TORCH_DTYPE", "").strip() or None,
+            attention_implementation=os.getenv("HF_ATTENTION_IMPLEMENTATION", "").strip() or None,
         )
 
     def fingerprint(self) -> str:
-        payload = json.dumps(asdict(self), sort_keys=True, separators=(",", ":"))
+        value = asdict(self)
+        for key in ("torch_dtype", "attention_implementation"):
+            if value[key] is None:
+                del value[key]
+        payload = json.dumps(value, sort_keys=True, separators=(",", ":"))
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
@@ -57,12 +71,23 @@ class LocalLLM:
         for parameter in self.model.parameters():
             parameter.requires_grad = False
         self.model.eval()
+        LOGGER.info(
+            "HF generator: model=%s quantization=%s dtype=%s attention=%s device=%s "
+            "max_input_tokens=%s max_new_tokens=%s",
+            config.model_name, config.quantization, getattr(model, "dtype", config.torch_dtype),
+            getattr(getattr(model, "config", None), "_attn_implementation", config.attention_implementation),
+            self.device, config.max_input_tokens, config.max_new_tokens,
+        )
 
     @staticmethod
     def _load(config: HFModelConfig):
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
         model_kwargs = {"device_map": "auto", "trust_remote_code": config.trust_remote_code}
+        if config.torch_dtype is not None:
+            model_kwargs["torch_dtype"] = config.torch_dtype if cuda_available() else "float32"
+        if config.attention_implementation is not None:
+            model_kwargs["attn_implementation"] = config.attention_implementation
         if config.quantization != "none" and not cuda_available():
             LOGGER.warning(
                 "CUDA GPU tidak terdeteksi; quantization %s dinonaktifkan dan LLM dimuat di CPU.",
@@ -103,11 +128,29 @@ class LocalLLM:
         return self.tokenizer.decode(generated, skip_special_tokens=True).strip()
 
     def generate_prompt(self, prompt: str) -> str:
-        tokens = self.tokenize(prompt).to(self.device)
-        outputs = self.model.generate(
-            **tokens, do_sample=False, max_new_tokens=self.config.max_new_tokens,
-            pad_token_id=self.tokenizer.pad_token_id,
-        )
-        synchronize_cuda(self.device, "huggingface-generation")
-        return self._decode_new_tokens(outputs, int(tokens.input_ids.shape[1]))
+        tokens = self.tokenize(prompt)
+        input_length = int(tokens.input_ids.shape[1])
+        device = self.device
+        stage = "huggingface-input-transfer"
+        try:
+            tokens = tokens.to(device)
+            synchronize_cuda(device, stage)
+            stage = "huggingface-generation"
+            outputs = self.model.generate(
+                **tokens, do_sample=False, max_new_tokens=self.config.max_new_tokens,
+                pad_token_id=self.tokenizer.pad_token_id,
+            )
+            synchronize_cuda(device, stage)
+        except Exception as exc:
+            if is_fatal_accelerator_error(exc):
+                # Read only CPU metadata here: the failed CUDA context is unusable.
+                raise CUDAStageError(
+                    f"CUDA failure during {stage}: model={self.config.model_name}, "
+                    f"input_tokens={input_length}, max_new_tokens={self.config.max_new_tokens}, "
+                    f"quantization={self.config.quantization}, dtype={self.config.torch_dtype}, "
+                    f"attention={self.config.attention_implementation}, device={device}. "
+                    "Restart the process; use CUDA_LAUNCH_BLOCKING=1 to locate the failing kernel."
+                ) from exc
+            raise
+        return self._decode_new_tokens(outputs, input_length)
 

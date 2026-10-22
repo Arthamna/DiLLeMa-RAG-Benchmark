@@ -324,6 +324,68 @@ CUDA_LAUNCH_BLOCKING=1 .venv/bin/python -m rag_benchmark benchmark \
 Setelah `CUDA_ERROR_LAUNCH_FAILED`/error 719, hentikan proses yang gagal lalu
 jalankan proses baru; CUDA context pada proses lama tidak dapat dipulihkan.
 
+Jika error terjadi pada `qwen3_embedding generation`, operasi yang gagal adalah
+generator bersama, bukan model embedding/reranker Qwen3 yang sudah dilepas.
+Untuk generator **Qwen2.5-0.5B-Instruct pada RTX 5080**, coba BF16 tanpa
+quantization dan eager attention dalam proses baru:
+
+```bash
+set -a
+source .env
+set +a
+export HF_QUANTIZATION=none
+export HF_TORCH_DTYPE=bfloat16
+export HF_ATTENTION_IMPLEMENTATION=eager
+test -f "$HF_MODEL_NAME/config.json"
+bash scripts/setup_rankify_gpu_ubuntu.sh
+```
+
+`HF_MODEL_NAME` tetap harus menunjuk snapshot berisi `config.json`, bukan parent
+`models--Qwen--Qwen2.5-0.5B-Instruct`. YAML lokal memakai
+`quantization_env: HF_QUANTIZATION`, sehingga export di atas mengalahkan default
+`quantization: 4bit`. Dtype dan attention dapat diatur juga lewat
+`generator.torch_dtype` dan `generator.attention_implementation`; nilai YAML
+eksplisit mengalahkan environment. Semua setting ini masuk fingerprint generator
+dan diteruskan juga ke worker Rankify. `qwen3.attention_implementation` hanya
+mengontrol model retrieval Qwen3.
+
+BF16 tanpa quantization dan eager attention merupakan langkah isolasi kernel,
+bukan diagnosis pasti error 719. Eager attention dapat lebih lambat dan memakai
+VRAM lebih besar. Untuk memeriksa langsung QA berikutnya setelah progres terakhir
+333/340 tanpa mengulang seluruh matriks, gunakan index yang sudah dibangun:
+
+```bash
+CUDA_LAUNCH_BLOCKING=1 .venv/bin/python - <<'PY'
+import logging
+from dataclasses import replace
+from pathlib import Path
+from rag_benchmark.benchmark import ExperimentSpec
+from rag_benchmark.shared.datasets import load_dataset
+from rag_benchmark.techniques.qwen3.runner import run_evaluate
+
+logging.basicConfig(level=logging.INFO)
+spec = ExperimentSpec.load(Path("configs/experiments/rankify-multilingual-local.yaml"))
+bundle = load_dataset(spec.dataset, spec.source)
+questions = bundle.questions_for_split(spec.evaluation_split)
+last_completed = "its-qa-44097ea6bdf7deb65b8dceaf"
+position = next(i for i, q in enumerate(questions) if q.id == last_completed)
+question = questions[position + 1]
+print("Testing next QA:", question.id, flush=True)
+run_evaluate(spec, replace(bundle, questions=[question]),
+             Path("artifacts/benchmarks/its-qwen3-cuda-probe"), variants=("qwen3_embedding",))
+PY
+```
+
+Jika probe berhasil, jalankan ulang benchmark ke direktori output baru agar
+hasil 4-bit sebelumnya tidak tertimpa atau tercampur dengan BF16. Jangan resume
+prediksi lama dengan fingerprint generator yang berbeda. Jika gagal lagi,
+traceback kini menyertakan QA ID, stage, input token count, dan setting generator.
+Periksa juga `journalctl -k -b | grep -Ei 'NVRM|Xid'` untuk diagnosis driver/GPU.
+
+Referensi: [Transformers attention/model loading](https://huggingface.co/docs/transformers/v4.57.1/main_classes/model),
+[konfigurasi resmi Qwen2.5-0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/config.json),
+dan [NVIDIA CUDA error 719](https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html).
+
 ## Dataset
 
 Edit `configs/experiments/rankify-multilingual.yaml` untuk ITS:
