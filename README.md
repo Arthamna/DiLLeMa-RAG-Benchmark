@@ -113,7 +113,10 @@ java -version
 javac -version
 
 export UV_PROJECT_ENVIRONMENT="$PWD/.venv-rankify"
-uv sync --project rankify_worker --python 3.12 --locked
+uv sync \
+  --project src/rag_benchmark/techniques/rankify/worker \
+  --python 3.12 \
+  --locked
 
 printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
   | .venv-rankify/bin/python -m rag_benchmark_rankify.worker

@@ -193,13 +193,16 @@ def test_detached_benchmark_preflights_huggingface_snapshot(tmp_path, monkeypatc
 
 def test_setup_scripts_use_uv_only():
     root = Path(__file__).resolve().parents[1]
+    rankify_script = (root / "scripts" / "setup_rankify_ubuntu.sh").read_text(encoding="utf-8")
     scripts = [
         (root / "scripts" / "setup_ubuntu.sh").read_text(encoding="utf-8"),
-        (root / "scripts" / "setup_rankify_ubuntu.sh").read_text(encoding="utf-8"),
+        rankify_script,
     ]
     assert all("uv sync" in script for script in scripts)
     assert all("pip install" not in script for script in scripts)
     assert all("python3 -m venv" not in script for script in scripts)
+    assert "src/rag_benchmark/techniques/rankify/worker" in rankify_script
+    assert '"$REPO_ROOT/rankify_worker"' not in rankify_script
 
 
 def test_rankify_worker_configures_java_home_from_javac(tmp_path, monkeypatch):
