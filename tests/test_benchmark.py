@@ -224,6 +224,25 @@ def test_rankify_worker_requires_full_jdk(monkeypatch):
         _configure_java_home()
 
 
+def test_rankify_worker_main_uses_split_java_configuration(monkeypatch, capsys):
+    import rag_benchmark_rankify.worker as worker
+
+    monkeypatch.setattr(worker, "_configure_java_home", lambda: "/opt/jdk-21")
+    monkeypatch.setattr(worker, "_capabilities", lambda: {"status": "ok"})
+    monkeypatch.setattr(
+        worker.sys,
+        "stdin",
+        SimpleNamespace(readline=lambda: '{"schema_version":1,"operation":"capabilities"}'),
+    )
+
+    worker.main()
+
+    assert json.loads(capsys.readouterr().out) == {
+        "status": "ok",
+        "java_home": "/opt/jdk-21",
+    }
+
+
 def test_generation_and_experiment_models_are_configuration_driven(tmp_path, monkeypatch):
     source = tmp_path / "dataset"
     source.mkdir()
