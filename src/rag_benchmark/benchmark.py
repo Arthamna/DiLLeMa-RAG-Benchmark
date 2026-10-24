@@ -22,6 +22,8 @@ from .techniques.rankify.config import RANKIFY_PRESETS
 from .techniques.rankify.pipeline import _evaluate_rankify, _index_rankify
 from .techniques.qwen3.config import Qwen3Config
 from .techniques.qwen3.runner import run_index as index_qwen3, run_evaluate as evaluate_qwen3
+from .techniques.bge_m3.config import BgeM3Config
+from .techniques.bge_m3.runner import run_index as index_bge_m3, run_evaluate as evaluate_bge_m3
 
 
 @dataclass(frozen=True, slots=True)
@@ -39,6 +41,7 @@ class ExperimentSpec:
     presets: tuple[str, ...]
     generator: GenerationSpec
     qwen3: Qwen3Config | None = None
+    bge_m3: BgeM3Config | None = None
 
     @classmethod
     def load(cls, path: Path) -> "ExperimentSpec":
@@ -91,6 +94,7 @@ class ExperimentSpec:
             presets=presets,
             generator=GenerationSpec.from_dict(raw.get("generator") or {}),
             qwen3=Qwen3Config.from_dict(raw.get("qwen3") or {}, base),
+            bge_m3=BgeM3Config.from_dict(raw.get("bge_m3") or {}, base),
         ).validate()
 
     def validate(self) -> "ExperimentSpec":
@@ -126,6 +130,8 @@ class ExperimentSpec:
         }
         if self.qwen3 is not None:
             result["qwen3"] = {"enabled": True, **self.qwen3.public_dict()}
+        if self.bge_m3 is not None:
+            result["bge_m3"] = {"enabled": True, **self.bge_m3.public_dict()}
         return result
 
     def fingerprint(self) -> str:
@@ -223,6 +229,9 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
         _release_gpu()
         if spec.qwen3 is not None:
             result["index"]["qwen3"] = index_qwen3(spec, bundle)
+        if spec.bge_m3 is not None:
+            # All five BGE-M3 variants share this single physical index.
+            result["index"]["bge_m3"] = index_bge_m3(spec, bundle)
         result["index"]["rankify"] = _index_rankify(spec, bundle, worker, ChunkingConfig())
 
     if stage in {"evaluate", "all"}:
@@ -242,6 +251,8 @@ def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]
         reports = {"dillema": dillema_report}
         if spec.qwen3 is not None:
             reports.update(evaluate_qwen3(spec, bundle, output))
+        if spec.bge_m3 is not None:
+            reports.update(evaluate_bge_m3(spec, bundle, output))
         reports.update(_evaluate_rankify(spec, bundle, worker, output, corpus_fingerprint))
         _write_leaderboard(output, reports)
         result["reports"] = reports

@@ -12,9 +12,9 @@ fi
 uv python install
 
 if [[ "${INSTALL_QUANTIZED:-1}" == "1" ]]; then
-  uv sync --extra api --extra dev --extra hf --extra quantized
+  uv sync --locked --extra api --extra dev --extra hf --extra quantized --extra bge-m3
 else
-  uv sync --extra api --extra dev --extra hf
+  uv sync --locked --extra api --extra dev --extra hf --extra bge-m3
 fi
 
 uv run --no-sync python -c 'import torch; print("CUDA tersedia:", torch.cuda.is_available()); print("GPU:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "tidak terdeteksi; pipeline akan memakai CPU")'
