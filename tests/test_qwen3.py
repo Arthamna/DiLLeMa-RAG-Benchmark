@@ -15,7 +15,7 @@ from rag_benchmark.benchmark import ExperimentSpec
 from rag_benchmark.shared.config import ChunkingConfig, GenerationSpec
 from rag_benchmark.shared.datasets import DatasetBundle
 from rag_benchmark.shared.device import CUDAStageError
-from rag_benchmark.shared.metrics import read_predictions, write_jsonl
+from rag_benchmark.shared.metrics import read_predictions, summarize, write_jsonl
 from rag_benchmark.shared.records import DocumentRecord, QARecord, RetrievedEvidence
 from rag_benchmark.techniques.qwen3 import runner
 from rag_benchmark.techniques.qwen3.config import Qwen3Config, VARIANTS
@@ -24,6 +24,7 @@ from rag_benchmark.techniques.qwen3.pipeline import candidate_hash, rerank_candi
 from rag_benchmark.techniques.qwen3.reranker import Qwen3Reranker, relevance_probability
 from rag_benchmark.techniques.qwen3.store import DenseStore
 from rag_benchmark.techniques.rankify.config import RANKIFY_PRESETS
+from rag_benchmark.techniques.bge_m3.config import BgeM3Config, VARIANTS as BGE_VARIANTS
 
 
 def config():
@@ -361,10 +362,12 @@ def test_four_experiment_presets_enable_qwen_without_changing_generator(monkeypa
     for path in (root / "configs/experiments").glob("rankify-*.yaml"):
         spec = ExperimentSpec.load(path)
         assert spec.qwen3 is not None
+        assert spec.bge_m3 is not None
         assert spec.candidates == 100
         assert spec.evaluation_split == ("all" if spec.dataset == "its" else "test")
         assert spec.generator.model == (str(snapshot.resolve()) if "local" in path.stem else "configured/api-model")
         assert "qwen3" in spec.public_dict()
+        assert "bge_m3" in spec.public_dict()
         assert replace(spec, qwen3=replace(spec.qwen3, reranker_quantization="4bit")).fingerprint() != spec.fingerprint()
 
 
@@ -387,9 +390,11 @@ def test_qwen_cli_routes_to_its_own_runner(tmp_path, monkeypatch, capsys, operat
 
 
 @pytest.mark.parametrize("dataset", ["its", "uniqa"])
-def test_ten_pipeline_benchmark_smoke(qwen_environment, monkeypatch, dataset):
+def test_fifteen_pipeline_benchmark_smoke(qwen_environment, monkeypatch, dataset):
     tmp_path, _, _ = qwen_environment
     spec, bundle = spec_and_bundle(tmp_path, dataset)
+    spec = replace(spec, bge_m3=BgeM3Config(revision="resolved-bge-commit"))
+    bge_index_calls = []
 
     class Worker:
         def __init__(self, *args):
@@ -419,10 +424,35 @@ def test_ten_pipeline_benchmark_smoke(qwen_environment, monkeypatch, dataset):
     monkeypatch.setattr(benchmark, "RankifyWorkerClient", Worker)
     monkeypatch.setattr(benchmark, "run_index", lambda *args, **kwargs: {})
     monkeypatch.setattr(benchmark, "run_evaluate", dillema_evaluate)
+    monkeypatch.setattr(
+        benchmark, "index_bge_m3",
+        lambda loaded, data: bge_index_calls.append((loaded, data)) or {"status": "complete"},
+    )
+
+    def bge_evaluate(loaded, data, output):
+        reports = {}
+        for variant in BGE_VARIANTS:
+            target = output / variant
+            target.mkdir(parents=True)
+            rows = [{
+                "id": q.id, "dataset": dataset, "language": q.language,
+                "question": q.question, "references": q.references,
+                "prediction": "answer", "technique": variant, "status": "ok",
+                "available": q.available, "split": q.split, "latency_ms": 1,
+                "model_fingerprint": spec.generator.fingerprint(),
+                "corpus_fingerprint": "corpus", "decoding_config": {},
+                "gold_source_ids": q.source_ids, "diagnostics": {"relevant_ranks": []},
+            } for q in bundle.questions]
+            write_jsonl(target / "predictions.jsonl", rows)
+            reports[variant] = summarize(rows)
+        return reports
+
+    monkeypatch.setattr(benchmark, "evaluate_bge_m3", bge_evaluate)
     monkeypatch.setattr(benchmark, "_release_gpu", lambda **kwargs: gc.collect())
     monkeypatch.setattr(benchmark, "_log_cuda_runtime", lambda *args: None)
     result = benchmark.run_benchmark(tmp_path / "config.yaml", "all", tmp_path / "run")
-    assert len(result["result"]["reports"]) == 10
-    assert len(json.loads((tmp_path / "run/leaderboard.json").read_text())) == (10 if dataset == "its" else 20)
+    assert len(bge_index_calls) == 1
+    assert len(result["result"]["reports"]) == 15
+    assert len(json.loads((tmp_path / "run/leaderboard.json").read_text())) == (15 if dataset == "its" else 30)
     for technique in result["result"]["reports"]:
         assert len(read_predictions(tmp_path / "run" / technique / "predictions.jsonl")) == len(bundle.questions)

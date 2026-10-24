@@ -120,7 +120,11 @@ def _fake_rankify(monkeypatch):
 
 
 def test_rrag_is_absent_from_registry_and_cli():
-    assert tuple(TECHNIQUES) == ("dillema", "qwen3_embedding", "qwen3_embedding_rerank")
+    assert tuple(TECHNIQUES) == (
+        "dillema", "qwen3_embedding", "qwen3_embedding_rerank",
+        "bge_m3_dense", "bge_m3_sparse", "bge_m3_multi_vector",
+        "bge_m3_dense_sparse", "bge_m3_all",
+    )
     with pytest.raises(ValueError, match="Unsupported"):
         get_technique("rrag")
     parser = build_parser()

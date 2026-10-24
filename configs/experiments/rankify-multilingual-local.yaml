@@ -42,6 +42,19 @@ qwen3:
   reranker_quantization: none
   attention_implementation: sdpa
 
+bge_m3:
+  enabled: true
+  model: BAAI/bge-m3
+  revision: main
+  query_max_length: 512
+  passage_max_length: 2048
+  embedding_batch_size: 4
+  use_fp16: true
+  trust_remote_code: false
+  dense_weight: 0.4
+  sparse_weight: 0.2
+  multi_vector_weight: 0.4
+
 presets:
   - rankify_bm25_basic
   - rankify_bge_basic

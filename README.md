@@ -1,8 +1,9 @@
-# DiLLeMa–Rankify–Qwen3 RAG Benchmark
+# DiLLeMa–Rankify–Qwen3–BGE-M3 RAG Benchmark
 
 Benchmark terkontrol untuk membandingkan full conventional RAG DiLLeMa dengan
-tujuh pipeline Rankify dan dua varian Qwen3 pada corpus ITS dan UniQA. Indexing membangun retrieval
-index; project ini tidak melakukan fine-tuning model.
+tujuh pipeline Rankify, dua varian Qwen3, dan lima varian BGE-M3 pada corpus ITS
+dan UniQA. Indexing membangun retrieval index; project ini tidak melakukan
+fine-tuning model.
 
 Pipeline DiLLeMa:
 
@@ -32,6 +33,7 @@ Implementasi setiap teknik berada di `src/rag_benchmark/techniques/`:
 | `techniques/rankify/` | Preset, client subprocess, ekspor corpus, dan pengolahan hasil Rankify |
 | `techniques/rankify/worker/` | Proyek Python terpisah berisi dependency dan implementasi worker Rankify |
 | `techniques/qwen3/` | Qwen3 embedding, dense cosine index, yes/no reranker, prompt, dan staged runner |
+| `techniques/bge_m3/` | Satu indeks dense/learned-sparse/ColBERT, lima scoring variant, prompt, dan staged runner BGE-M3 |
 | `shared/` | Records, dataset, chunking semua teknik, evaluasi, metrik, dan runtime LLM |
 | `cli.py` dan `benchmark.py` | Entrypoint command, konfigurasi eksperimen, penjadwalan teknik, dan leaderboard |
 
@@ -524,6 +526,90 @@ Referensi: [repo Qwen3](https://github.com/QwenLM/Qwen3-Embedding),
 [Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B), dan
 [Reranker-4B](https://huggingface.co/Qwen/Qwen3-Reranker-4B). Hasil retrieval MTEB
 resmi bukan jaminan kenaikan BLEU ITS/UniQA; ukur delta pada corpus Anda sendiri.
+
+## BGE-M3 dense, learned sparse, dan multi-vector
+
+Empat YAML eksperimen juga mengaktifkan BGE-M3. Lima teknik berikut ditulis ke
+folder output terpisah dan muncul sebagai baris leaderboard terpisah:
+
+| Teknik | Skor akhir |
+|---|---|
+| `bge_m3_dense` | dense dot product |
+| `bge_m3_sparse` | learned lexical sparse dot product |
+| `bge_m3_multi_vector` | rata-rata ColBERT MaxSim |
+| `bge_m3_dense_sparse` | weighted dense + sparse |
+| `bge_m3_all` | weighted dense + sparse + multi-vector |
+
+Kelima varian memakai **candidate pool yang identik**: union terurut dari top-N
+dense dan top-N learned-sparse. Satu forward pass BGE-M3 menghasilkan ketiga
+representasi. Satu collection Qdrant per bahasa menyimpan named vector `dense`,
+`learned_sparse`, dan `colbert`; multi-vector tidak memiliki HNSW karena hanya
+dipakai untuk exact late-interaction scoring atas candidate pool. Learned sparse
+tidak diberi modifier IDF tambahan karena bobot lexical sudah dipelajari model.
+
+```yaml
+bge_m3:
+  enabled: true
+  model: BAAI/bge-m3
+  revision: main
+  query_max_length: 512
+  passage_max_length: 2048
+  embedding_batch_size: 4
+  use_fp16: true
+  trust_remote_code: false
+  dense_weight: 0.4
+  sparse_weight: 0.2
+  multi_vector_weight: 0.4
+```
+
+Model ID diselesaikan menjadi snapshot Hugging Face sebelum model dimuat.
+Requested revision, resolved commit, index fingerprint, pipeline fingerprint,
+precision, dimensi vektor, candidate pool hash, component scores, dan fusion
+weights disimpan pada manifest/diagnostics. Perubahan model, revision, chunking,
+atau passage length membangun namespace indeks baru; perubahan fusion weights
+hanya mengubah pipeline fingerprint.
+
+Benchmark penuh memanggil indexer BGE-M3 **sekali**, lalu memakai indeks tersebut
+untuk kelima teknik. Menonaktifkan `bge_m3.enabled` menghapus kelima varian tanpa
+mengubah DiLLeMa, Rankify, atau Qwen3. Dengan semua blok default aktif, matriks
+benchmark berisi 15 pipeline.
+
+Teknik juga dapat dijalankan sendiri:
+
+```bash
+uv run --no-sync python -m rag_benchmark index \
+  --technique bge_m3_all \
+  --dataset its \
+  --source dataset/langchain-chatbot-main/dataset \
+  --config configs/experiments/rankify-multilingual.yaml
+
+uv run --no-sync python -m rag_benchmark evaluate \
+  --technique bge_m3_all \
+  --dataset its \
+  --config configs/experiments/rankify-multilingual.yaml \
+  --output artifacts/benchmarks/its-bge-m3-all
+```
+
+Satu evaluasi penuh menghasilkan:
+
+```text
+bge_m3_dense/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+bge_m3_sparse/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+bge_m3_multi_vector/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+bge_m3_dense_sparse/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+bge_m3_all/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+bge-m3-ablation.json
+```
+
+`bge-m3-ablation.json` memverifikasi kesamaan candidate pool dan melaporkan
+delta setiap varian terhadap `bge_m3_dense`, per bahasa, untuk answer quality,
+retrieval quality, error, latency, dan fallback. Angka paper MLDR, NarrativeQA,
+dan MIRACL dipakai sebagai motivasi eksperimen, bukan threshold keberhasilan
+untuk corpus ITS/UniQA yang berbeda.
+
+Referensi: [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding),
+[BGE-M3](https://huggingface.co/BAAI/bge-m3), dan
+[paper BGE-M3](https://arxiv.org/abs/2402.03216).
 
 ## Menjalankan benchmark
 

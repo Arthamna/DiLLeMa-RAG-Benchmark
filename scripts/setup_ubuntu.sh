@@ -12,9 +12,9 @@ fi
 uv python install
 
 if [[ "${INSTALL_QUANTIZED:-1}" == "1" ]]; then
-  uv sync --extra api --extra dev --extra hf --extra quantized --locked
+  uv sync --extra api --extra dev --extra hf --extra quantized --extra bge-m3 --locked
 else
-  uv sync --extra api --extra dev --extra hf --locked
+  uv sync --extra api --extra dev --extra hf --extra bge-m3 --locked
 fi
 
 uv run --no-sync python - <<'PY'
