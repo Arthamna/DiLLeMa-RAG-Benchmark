@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import inspect
+import types
+from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -7,6 +10,106 @@ import numpy as np
 from qdrant_client import models
 
 from ...shared.device import synchronize_cuda
+
+
+_MISSING = object()
+
+
+class _FlagEmbeddingBatchProbeExhausted(Exception):
+    """Stop FlagEmbedding before its buggy OOM probe reaches batch size zero."""
+
+
+class _GuardedBatchSize(int):
+    """An int that preserves FlagEmbedding's retries but rejects a zero batch."""
+
+    def __new__(cls, value: int):
+        value = int(value)
+        if value <= 0:
+            raise ValueError("BGE-M3 embedding batch size must be positive")
+        return super().__new__(cls, value)
+
+    def __mul__(self, other):
+        return type(self)(int(self) * int(other))
+
+    def __rmul__(self, other):
+        return self * other
+
+    def __floordiv__(self, other):
+        reduced = int(self) // int(other)
+        if reduced < 1:
+            raise _FlagEmbeddingBatchProbeExhausted(
+                "FlagEmbedding could not encode one item without running out of memory"
+            )
+        return type(self)(reduced)
+
+
+@contextmanager
+def _flagembedding_batch_probe_guard(model):
+    """Constrain the buggy dynamic-batch loop shipped by FlagEmbedding 1.4.2.
+
+    The upstream loop catches every RuntimeError and can retry forever after its
+    batch size becomes zero. Clone that loop for this model instance with its
+    RuntimeError handler narrowed to CUDA's OOM subtype. Non-OOM RuntimeErrors
+    then propagate immediately, while _GuardedBatchSize lets real OOM retries
+    proceed down to (but not below) one. No FlagEmbedding module globals or other
+    model instances are changed.
+    """
+
+    method = getattr(model, "encode_single_device", None)
+    if method is None:
+        yield
+        return
+
+    function = inspect.unwrap(method)
+    original_namespace = getattr(function, "__globals__", None)
+    if original_namespace is None:
+        yield
+        return
+
+    import torch
+
+    oom_error = getattr(getattr(torch, "cuda", None), "OutOfMemoryError", None)
+    if not isinstance(oom_error, type) or not issubclass(oom_error, BaseException):
+        yield
+        return
+
+    namespace = dict(original_namespace)
+    namespace["RuntimeError"] = oom_error
+    guarded_function = types.FunctionType(
+        function.__code__,
+        namespace,
+        name=function.__name__,
+        argdefs=function.__defaults__,
+        closure=function.__closure__,
+    )
+    guarded_function.__kwdefaults__ = function.__kwdefaults__
+    guarded_method = types.MethodType(guarded_function, model)
+
+    attributes = getattr(model, "__dict__", {})
+    original = attributes.get("encode_single_device", _MISSING)
+    try:
+        setattr(model, "encode_single_device", guarded_method)
+    except (AttributeError, TypeError) as exc:
+        raise RuntimeError(
+            "Unable to install the local FlagEmbedding batch-probe guard"
+        ) from exc
+    try:
+        with torch.no_grad():
+            yield
+    finally:
+        if original is _MISSING:
+            delattr(model, "encode_single_device")
+        else:
+            setattr(model, "encode_single_device", original)
+
+
+def _reraise_probe_error(error: _FlagEmbeddingBatchProbeExhausted):
+    """Restore the original OOM and its traceback from the failed retry."""
+
+    original = error.__context__
+    if isinstance(original, BaseException):
+        raise original.with_traceback(original.__traceback__) from None
+    raise error
 
 
 @dataclass(slots=True)
@@ -69,14 +172,18 @@ class BgeM3Embedding:
     def _encode(self, texts: list[str], max_length: int) -> BgeM3Batch:
         if not texts:
             return BgeM3Batch([], [], [])
-        output = self.model.encode(
-            texts,
-            batch_size=self.config.embedding_batch_size,
-            max_length=max_length,
-            return_dense=True,
-            return_sparse=True,
-            return_colbert_vecs=True,
-        )
+        try:
+            with _flagembedding_batch_probe_guard(self.model):
+                output = self.model.encode(
+                    texts,
+                    batch_size=_GuardedBatchSize(self.config.embedding_batch_size),
+                    max_length=max_length,
+                    return_dense=True,
+                    return_sparse=True,
+                    return_colbert_vecs=True,
+                )
+        except _FlagEmbeddingBatchProbeExhausted as exc:
+            _reraise_probe_error(exc)
         synchronize_cuda(self.device, "bge-m3-embedding")
         dense = [np.asarray(item, dtype=np.float32) for item in output["dense_vecs"]]
         sparse = [_sparse_vector(item) for item in output["lexical_weights"]]

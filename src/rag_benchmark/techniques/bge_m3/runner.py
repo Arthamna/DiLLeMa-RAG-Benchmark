@@ -120,6 +120,7 @@ def _retrieve(spec, questions, target: Path, manifest: dict, destination: Path, 
     config = spec.bge_m3
     LOGGER.info("BGE-M3 retrieval: loading %s at %s", config.model, config.revision)
     embedder = BgeM3Embedding(config, device)
+    LOGGER.info("BGE-M3 retrieval: model loaded; opening shared index")
     store = None
     try:
         if embedder.revision != manifest["model_revision"]:
@@ -133,6 +134,10 @@ def _retrieve(spec, questions, target: Path, manifest: dict, destination: Path, 
                     try:
                         query = embedder.encode_query(question.question)
                         candidates = store.search(question.language, query, spec.candidates)
+                    except RuntimeError:
+                        # Runtime failures are model/runtime failures, not bad
+                        # questions. Preserve their traceback in benchmark.log.
+                        raise
                     except Exception as exc:
                         _raise_if_fatal(exc)
                         error = f"{type(exc).__name__}: {exc}"
