@@ -3,7 +3,9 @@ from __future__ import annotations
 import gc
 import json
 import sys
+from contextlib import nullcontext
 from dataclasses import replace
+from functools import wraps
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -103,6 +105,118 @@ def test_embedding_wrapper_uses_raw_query_and_all_three_outputs(monkeypatch):
     assert observed["encode"][1]["return_sparse"] is True
     assert observed["encode"][1]["return_colbert_vecs"] is True
     assert encoded.sparse.indices == [7]
+
+
+def _probe_embedder(error, attempts, torch_module):
+    def no_grad_wrapper(function):
+        @wraps(function)
+        def wrapped(*args, **kwargs):
+            return function(*args, **kwargs)
+
+        return wrapped
+
+    class Model:
+        @no_grad_wrapper
+        def encode_single_device(self, texts, batch_size, **kwargs):
+            while True:
+                attempts.append(int(batch_size))
+                try:
+                    raise error
+                except RuntimeError:
+                    batch_size = batch_size * 3 // 4
+                except torch_module.cuda.OutOfMemoryError:
+                    batch_size = batch_size * 3 // 4
+
+        def encode(self, texts, batch_size, **kwargs):
+            return self.encode_single_device(texts, batch_size, **kwargs)
+
+    embedder = object.__new__(embedding_module.BgeM3Embedding)
+    embedder.config = config(embedding_batch_size=4)
+    embedder.device = "cuda"
+    embedder.model = Model()
+    return embedder
+
+
+def test_flagembedding_probe_guard_propagates_non_oom_runtime_error_immediately(monkeypatch):
+    class CudaOutOfMemoryError(RuntimeError):
+        pass
+
+    torch_module = SimpleNamespace(
+        cuda=SimpleNamespace(OutOfMemoryError=CudaOutOfMemoryError),
+        no_grad=lambda: nullcontext(),
+    )
+    monkeypatch.setitem(sys.modules, "torch", torch_module)
+    attempts = []
+    original = RuntimeError("unsupported CUDA kernel")
+    embedder = _probe_embedder(original, attempts, torch_module)
+
+    with pytest.raises(RuntimeError, match="unsupported CUDA kernel") as raised:
+        embedder.encode_query("question")
+
+    assert raised.value is original
+    assert attempts == [4]
+    assert "encode_single_device" not in embedder.model.__dict__
+
+
+def test_flagembedding_probe_guard_stops_oom_at_batch_one_with_original_traceback(monkeypatch):
+    class CudaOutOfMemoryError(RuntimeError):
+        pass
+
+    torch_module = SimpleNamespace(
+        cuda=SimpleNamespace(OutOfMemoryError=CudaOutOfMemoryError),
+        no_grad=lambda: nullcontext(),
+    )
+    monkeypatch.setitem(sys.modules, "torch", torch_module)
+    attempts = []
+    original = CudaOutOfMemoryError("CUDA out of memory")
+    embedder = _probe_embedder(original, attempts, torch_module)
+
+    with pytest.raises(CudaOutOfMemoryError, match="CUDA out of memory") as raised:
+        embedder.encode_query("question")
+
+    assert raised.value is original
+    assert attempts == [4, 3, 2, 1]
+    assert "encode_single_device" not in embedder.model.__dict__
+    frames = []
+    traceback = raised.value.__traceback__
+    while traceback is not None:
+        frames.append(traceback.tb_frame.f_code.co_name)
+        traceback = traceback.tb_next
+    assert "encode_single_device" in frames
+
+
+def test_retrieval_propagates_runtime_error_with_traceback(tmp_path, monkeypatch):
+    class Embedder:
+        revision = "resolved-commit"
+
+        def __init__(self, *args):
+            pass
+
+        def encode_query(self, text):
+            raise RuntimeError("visible inference failure")
+
+    class Store:
+        def __init__(self, *args):
+            pass
+
+        def close(self):
+            pass
+
+    monkeypatch.setattr(runner, "BgeM3Embedding", Embedder)
+    monkeypatch.setattr(runner, "BgeM3Store", Store)
+    monkeypatch.setattr(runner, "_release_gpu", lambda: None)
+    spec = SimpleNamespace(bge_m3=config(), dataset="its", candidates=1)
+    question = QARecord("q1", "its", "id", "question", ["answer"], "test")
+
+    with pytest.raises(RuntimeError, match="visible inference failure"):
+        runner._retrieve(
+            spec,
+            [question],
+            tmp_path / "index",
+            {"model_revision": "resolved-commit", "index_fingerprint": "hash"},
+            tmp_path / "candidates.jsonl",
+            "cuda",
+        )
 
 
 def test_five_variants_share_pool_but_produce_separate_rankings():
