@@ -607,6 +607,19 @@ retrieval quality, error, latency, dan fallback. Angka paper MLDR, NarrativeQA,
 dan MIRACL dipakai sebagai motivasi eksperimen, bukan threshold keberhasilan
 untuk corpus ITS/UniQA yang berbeda.
 
+Pada Qdrant local mode, vector kandidat—terutama ColBERT multi-vector—diambil
+dalam batch kecil untuk membatasi alokasi memori sementara. Default-nya 16
+kandidat per fetch dan tidak mengubah candidate pool maupun skor. Jika mesin
+masih mengalami tekanan RAM saat retrieval, ukuran ini dapat diturunkan:
+
+```bash
+export BGE_M3_VECTOR_FETCH_BATCH_SIZE=4
+```
+
+Nilai yang lebih kecil menggunakan lebih sedikit peak memory, dengan trade-off
+lebih banyak pemanggilan local store. Untuk corpus besar, gunakan Qdrant server
+melalui `QDRANT_URL` agar late-interaction tidak bergantung pada local mode.
+
 Referensi: [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding),
 [BGE-M3](https://huggingface.co/BAAI/bge-m3), dan
 [paper BGE-M3](https://arxiv.org/abs/2402.03216).

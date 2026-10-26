@@ -267,6 +267,51 @@ def test_store_has_one_collection_with_three_vector_modes(tmp_path):
     client.close()
 
 
+def test_store_fetches_large_multivectors_in_bounded_batches(tmp_path, monkeypatch):
+    monkeypatch.setenv("BGE_M3_VECTOR_FETCH_BATCH_SIZE", "7")
+    inner = QdrantClient(location=":memory:")
+
+    class TrackingClient:
+        def __init__(self, client):
+            self.client = client
+            self.retrieve_batch_sizes = []
+
+        def __getattr__(self, name):
+            return getattr(self.client, name)
+
+        def retrieve(self, collection_name, ids, **kwargs):
+            self.retrieve_batch_sizes.append(len(ids))
+            return self.client.retrieve(collection_name, ids, **kwargs)
+
+    client = TrackingClient(inner)
+    store = BgeM3Store(tmp_path, "bounded", client=client)
+    store.recreate("id", 2, 2)
+    chunks = [_chunk(f"dense-{number}", "dense") for number in range(20)]
+    chunks += [_chunk(f"sparse-{number}", "sparse") for number in range(20)]
+    store.add(
+        "id",
+        chunks,
+        BgeM3Batch(
+            [np.asarray([1., 0.])] * 20 + [np.asarray([0., 1.])] * 20,
+            [_sparse_vector({1: 1})] * 20 + [_sparse_vector({2: 1})] * 20,
+            [np.asarray([[1., 0.], [0., 1.]])] * 40,
+        ),
+    )
+
+    candidates = store.search(
+        "id",
+        BgeM3Encoding(
+            np.asarray([1., 0.]), _sparse_vector({2: 1}), np.asarray([[1., 0.]]),
+        ),
+        20,
+    )
+
+    assert len(candidates) == 40
+    assert len(client.retrieve_batch_sizes) > 1
+    assert max(client.retrieve_batch_sizes) <= 7
+    inner.close()
+
+
 @pytest.fixture
 def bge_environment(tmp_path, monkeypatch):
     client = QdrantClient(location=":memory:")

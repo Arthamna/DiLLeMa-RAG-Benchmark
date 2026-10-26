@@ -14,6 +14,7 @@ from .embedding import BgeM3Batch, BgeM3Encoding
 DENSE_VECTOR = "dense"
 SPARSE_VECTOR = "learned_sparse"
 MULTI_VECTOR = "colbert"
+DEFAULT_VECTOR_FETCH_BATCH_SIZE = 16
 
 
 @dataclass(slots=True)
@@ -43,6 +44,14 @@ class BgeM3Store:
     def __init__(self, root: Path, namespace: str, client=None):
         self.namespace = namespace
         self._owns_client = client is None
+        try:
+            self.vector_fetch_batch_size = int(os.getenv(
+                "BGE_M3_VECTOR_FETCH_BATCH_SIZE", str(DEFAULT_VECTOR_FETCH_BATCH_SIZE),
+            ))
+        except ValueError as exc:
+            raise ValueError("BGE_M3_VECTOR_FETCH_BATCH_SIZE must be a positive integer") from exc
+        if self.vector_fetch_batch_size <= 0:
+            raise ValueError("BGE_M3_VECTOR_FETCH_BATCH_SIZE must be a positive integer")
         if client is not None:
             self.client = client
         elif os.getenv("QDRANT_URL", "").strip():
@@ -107,36 +116,60 @@ class BgeM3Store:
         ordered_ids = list(dict.fromkeys([hit.id for hit in dense_hits] + [hit.id for hit in sparse_hits]))
         if not ordered_ids:
             return []
-        points = self.client.retrieve(
-            self.collection(language), ids=ordered_ids, with_payload=True, with_vectors=True,
-        )
-        by_id = {point.id: point for point in points}
-        result = []
-        for point_id in ordered_ids:
-            point = by_id[point_id]
-            payload = dict(point.payload or {})
-            vectors = point.vector or {}
-            dense_score = float(np.dot(query.dense, np.asarray(vectors[DENSE_VECTOR], dtype=np.float32)))
-            sparse_score = _sparse_dot(query.sparse, vectors[SPARSE_VECTOR])
-            multi_score = _multi_vector_score(query.multi_vector, vectors[MULTI_VECTOR])
-            metadata = {
-                **dict(payload.get("metadata") or {}),
-                "source_path": payload.get("source_path"),
-                "title": payload.get("title"),
-                "aliases": payload.get("aliases", []),
-                "dense_score": dense_score,
-                "sparse_score": sparse_score,
-                "multi_vector_score": multi_score,
-            }
-            evidence = RetrievedEvidence(
-                source_id=str(payload.get("document_id") or ""),
-                chunk_id=str(payload.get("id") or ""),
-                text=str(payload.get("text") or ""),
-                rerank_score=dense_score,
-                metadata=metadata,
+        payloads = {
+            str(hit.id): dict(hit.payload or {})
+            for hit in [*dense_hits, *sparse_hits]
+        }
+        scored = {}
+        # Qdrant local mode converts every requested multivector from NumPy to
+        # nested Python lists. Fetching the complete dense+sparse union at once
+        # can transiently allocate hundreds of MB per query and eventually
+        # crash inside native NumPy/BLAS code. Bound that conversion while
+        # preserving the exact same candidate pool and component scores.
+        for offset in range(0, len(ordered_ids), self.vector_fetch_batch_size):
+            batch_ids = ordered_ids[offset:offset + self.vector_fetch_batch_size]
+            points = self.client.retrieve(
+                self.collection(language),
+                ids=batch_ids,
+                with_payload=False,
+                with_vectors=[DENSE_VECTOR, SPARSE_VECTOR, MULTI_VECTOR],
             )
-            result.append(ScoredCandidate(evidence, dense_score, sparse_score, multi_score))
-        return result
+            for point in points:
+                point_id = str(point.id)
+                payload = payloads.get(point_id)
+                vectors = point.vector or {}
+                if payload is None or any(
+                    name not in vectors for name in (DENSE_VECTOR, SPARSE_VECTOR, MULTI_VECTOR)
+                ):
+                    raise RuntimeError(f"BGE-M3 candidate data is incomplete for point {point.id}")
+                dense_score = float(np.dot(
+                    query.dense, np.asarray(vectors[DENSE_VECTOR], dtype=np.float32),
+                ))
+                sparse_score = _sparse_dot(query.sparse, vectors[SPARSE_VECTOR])
+                multi_score = _multi_vector_score(query.multi_vector, vectors[MULTI_VECTOR])
+                metadata = {
+                    **dict(payload.get("metadata") or {}),
+                    "source_path": payload.get("source_path"),
+                    "title": payload.get("title"),
+                    "aliases": payload.get("aliases", []),
+                    "dense_score": dense_score,
+                    "sparse_score": sparse_score,
+                    "multi_vector_score": multi_score,
+                }
+                evidence = RetrievedEvidence(
+                    source_id=str(payload.get("document_id") or ""),
+                    chunk_id=str(payload.get("id") or ""),
+                    text=str(payload.get("text") or ""),
+                    rerank_score=dense_score,
+                    metadata=metadata,
+                )
+                scored[point_id] = ScoredCandidate(
+                    evidence, dense_score, sparse_score, multi_score,
+                )
+        missing = [point_id for point_id in ordered_ids if str(point_id) not in scored]
+        if missing:
+            raise RuntimeError(f"BGE-M3 failed to load {len(missing)} candidate vectors")
+        return [scored[str(point_id)] for point_id in ordered_ids]
 
     def close(self):
         if self._owns_client:
