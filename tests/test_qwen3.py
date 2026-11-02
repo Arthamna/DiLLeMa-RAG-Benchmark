@@ -376,7 +376,7 @@ def test_qwen_cli_routes_to_its_own_runner(tmp_path, monkeypatch, capsys, operat
     from rag_benchmark import cli
 
     spec, bundle = spec_and_bundle(tmp_path, "its")
-    monkeypatch.setattr(ExperimentSpec, "load", lambda path: spec)
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path, *args: spec)
     monkeypatch.setattr("rag_benchmark.shared.datasets.load_dataset", lambda *args: bundle)
     calls = []
     monkeypatch.setattr(runner, "run_index", lambda loaded, data: calls.append((loaded, data)) or {"ok": True})
@@ -419,7 +419,7 @@ def test_fifteen_pipeline_benchmark_smoke(qwen_environment, monkeypatch, dataset
             "model_fingerprint": spec.generator.fingerprint(),
         } for q in bundle.questions])
 
-    monkeypatch.setattr(ExperimentSpec, "load", lambda path: spec)
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path, *args: spec)
     monkeypatch.setattr(benchmark, "load_dataset", lambda *args: bundle)
     monkeypatch.setattr(benchmark, "RankifyWorkerClient", Worker)
     monkeypatch.setattr(benchmark, "run_index", lambda *args, **kwargs: {})

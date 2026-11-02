@@ -18,3 +18,21 @@ downloaded separately under their upstream licenses and are not redistributed.
 Zhang et al. (2025), *Qwen3 Embedding: Advancing Text Embedding and Reranking
 Through Foundation Models*, https://arxiv.org/abs/2506.05176.
 
+The Self-RAG technique reimplements the short-form inference procedure
+(prompt format, reflection-token scoring, and adaptive retrieval threshold) of
+[Self-RAG](https://github.com/AkariAsai/self-rag) by Asai et al., distributed
+under the MIT License. The
+[selfrag_llama2_7b](https://huggingface.co/selfrag/selfrag_llama2_7b) weights are
+derived from Llama 2 and downloaded separately under the Llama 2 Community
+License; they are not redistributed.
+
+Retrieval uses [mContriever-msmarco](https://huggingface.co/facebook/mcontriever-msmarco)
+from [Contriever](https://github.com/facebookresearch/contriever), released under
+CC BY-NC 4.0 (non-commercial use only). Its text normalization is adapted from
+ChemDataExtractor (MIT License, Copyright 2016 Matt Swain).
+
+Asai et al. (2024), *Self-RAG: Learning to Retrieve, Generate, and Critique
+through Self-Reflection*, https://arxiv.org/abs/2310.11511.
+
+Izacard et al. (2022), *Unsupervised Dense Information Retrieval with
+Contrastive Learning*, https://arxiv.org/abs/2112.09118.

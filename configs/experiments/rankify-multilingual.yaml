@@ -54,6 +54,32 @@ bge_m3:
   sparse_weight: 0.2
   multi_vector_weight: 0.4
 
+self_rag:
+  enabled: true
+  model: selfrag/selfrag_llama2_7b
+  revision: main
+  quantization: 4bit
+  torch_dtype: float16
+  max_input_tokens: 4096
+  max_new_tokens: 100
+  generation_batch_size: 1
+  instruction: Answer the question in the same language as the question.
+  retriever_model: facebook/mcontriever-msmarco
+  retriever_revision: main
+  query_max_length: 512
+  passage_max_length: 512
+  embedding_batch_size: 32
+  lowercase: true
+  normalize_text: true
+  ndocs: 5
+  threshold: 0.2
+  w_rel: 1.0
+  w_sup: 1.0
+  w_use: 0.5
+  use_groundness: true
+  use_utility: true
+  use_seqscore: true
+
 presets:
   - rankify_bm25_basic
   - rankify_bge_basic

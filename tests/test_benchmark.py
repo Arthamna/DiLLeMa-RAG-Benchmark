@@ -97,6 +97,7 @@ def test_rrag_is_absent_from_registry_and_cli():
         "dillema", "qwen3_embedding", "qwen3_embedding_rerank",
         "bge_m3_dense", "bge_m3_sparse", "bge_m3_multi_vector",
         "bge_m3_dense_sparse", "bge_m3_all",
+        "self_rag_adaptive", "self_rag_always",
     )
     with pytest.raises(ValueError, match="Unsupported"):
         get_technique("rrag")
@@ -124,7 +125,7 @@ def test_detached_benchmark_launches_same_cli_and_tracks_pid(tmp_path, monkeypat
     output.mkdir()
     (output / "benchmark.pid").write_text("999\n", encoding="utf-8")
     monkeypatch.setattr("rag_benchmark.cli.platform.system", lambda: "Linux")
-    monkeypatch.setattr(ExperimentSpec, "load", lambda path: SimpleNamespace())
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path, *args: SimpleNamespace())
     monkeypatch.setattr("rag_benchmark.cli._pid_is_running", lambda pid: False)
     observed = {}
 
@@ -163,7 +164,7 @@ def test_detached_benchmark_rejects_live_pid(tmp_path, monkeypatch):
     output.mkdir()
     (output / "benchmark.pid").write_text("123\n", encoding="utf-8")
     monkeypatch.setattr("rag_benchmark.cli.platform.system", lambda: "Linux")
-    monkeypatch.setattr(ExperimentSpec, "load", lambda path: SimpleNamespace())
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path, *args: SimpleNamespace())
     monkeypatch.setattr("rag_benchmark.cli._pid_is_running", lambda pid: True)
 
     with pytest.raises(RuntimeError, match="already running with PID 123"):

@@ -18,6 +18,8 @@ TECHNIQUES = {
     "bge_m3_multi_vector": TechniqueSpec("bge_m3_multi_vector", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
     "bge_m3_dense_sparse": TechniqueSpec("bge_m3_dense_sparse", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
     "bge_m3_all": TechniqueSpec("bge_m3_all", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
+    "self_rag_adaptive": TechniqueSpec("self_rag_adaptive", "rag_benchmark.techniques.self_rag.pipeline:SelfRagPipeline"),
+    "self_rag_always": TechniqueSpec("self_rag_always", "rag_benchmark.techniques.self_rag.pipeline:SelfRagPipeline"),
 }
 
 

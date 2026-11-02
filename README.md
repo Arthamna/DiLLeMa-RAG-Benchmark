@@ -1,8 +1,8 @@
-# DiLLeMa–Rankify–Qwen3–BGE-M3 RAG Benchmark
+# DiLLeMa–Rankify–Qwen3–BGE-M3–Self-RAG RAG Benchmark
 
 Benchmark terkontrol untuk membandingkan full conventional RAG DiLLeMa dengan
-tujuh pipeline Rankify, dua varian Qwen3, dan lima varian BGE-M3 pada corpus ITS
-dan UniQA. Indexing membangun retrieval index; project ini tidak melakukan
+tujuh pipeline Rankify, dua varian Qwen3, lima varian BGE-M3, dan dua varian
+Self-RAG pada corpus ITS dan UniQA. Indexing membangun retrieval index; project ini tidak melakukan
 fine-tuning model.
 
 Pipeline DiLLeMa:
@@ -34,6 +34,7 @@ Implementasi setiap teknik berada di `src/rag_benchmark/techniques/`:
 | `techniques/rankify/worker/` | Proyek Python terpisah berisi dependency dan implementasi worker Rankify |
 | `techniques/qwen3/` | Qwen3 embedding, dense cosine index, yes/no reranker, prompt, dan staged runner |
 | `techniques/bge_m3/` | Satu indeks dense/learned-sparse/ColBERT, lima scoring variant, prompt, dan staged runner BGE-M3 |
+| `techniques/self_rag/` | Retriever mContriever, generator Self-RAG dengan reflection token, scoring short-form, dan staged runner |
 | `shared/` | Records, dataset, chunking semua teknik, evaluasi, metrik, dan runtime LLM |
 | `cli.py` dan `benchmark.py` | Entrypoint command, konfigurasi eksperimen, penjadwalan teknik, dan leaderboard |
 
@@ -419,7 +420,7 @@ hanya mengubah pipeline fingerprint.
 Benchmark penuh memanggil indexer BGE-M3 **sekali**, lalu memakai indeks tersebut
 untuk kelima teknik. Menonaktifkan `bge_m3.enabled` menghapus kelima varian tanpa
 mengubah DiLLeMa, Rankify, atau Qwen3. Dengan semua blok default aktif, matriks
-benchmark berisi 15 pipeline.
+benchmark berisi 15 pipeline (17 dengan Self-RAG).
 
 Teknik juga dapat dijalankan sendiri:
 
@@ -457,6 +458,115 @@ untuk corpus ITS/UniQA yang berbeda.
 Referensi: [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding),
 [BGE-M3](https://huggingface.co/BAAI/bge-m3), dan
 [paper BGE-M3](https://arxiv.org/abs/2402.03216).
+
+## Self-RAG
+
+Implementasi inferensi short-form dari [Self-RAG](https://github.com/AkariAsai/self-rag)
+dengan generator `selfrag/selfrag_llama2_7b` dan retriever
+[mContriever-msmarco](https://github.com/facebookresearch/contriever). Self-RAG
+memakai model yang sudah di-fine-tune dengan reflection token, sehingga **tidak
+memakai blok `generator` bersama**. `model_fingerprint` dan `decoding_config`
+diambil dari blok `self_rag`, jadi `compare-techniques` terhadap teknik lain
+ditolak karena generatornya memang berbeda.
+
+| Teknik | Perilaku |
+|---|---|
+| `self_rag_adaptive` | Probe satu token; retrieval bila `lp[Retrieval] / (lp[Retrieval] + lp[No Retrieval]) > threshold`, persis rumus repo asli (logprob mentah). Jika tidak, jawaban dari prompt `[No Retrieval]` |
+| `self_rag_always` | Selalu membuat satu generasi per passage top-`ndocs` lalu memilih skor tertinggi |
+
+Skor per passage mengikuti repo asli: `w_rel·relevance + w_sup·groundness +
+w_use·utility`, ditambah `exp(rata-rata logprob)` bila `use_seqscore`. Kedua
+varian memakai generasi per passage yang sama dalam satu pass, lalu ditulis ke
+folder terpisah. Probe retrieval hanya membuat satu token karena keputusan
+hanya membaca distribusi token pertama; hasilnya identik dengan generasi
+penuh. Prompt mengikuti format `### Instruction`, dengan instruksi tambahan
+`instruction` (default: jawab dalam bahasa pertanyaan) melalui pola `## Input`
+milik repo asli. Kosongkan `instruction` untuk prompt asli tanpa instruksi.
+
+mContriever memakai mean pooling, dot product, `title text`, serta opsi
+`--lowercase --normalize_text` yang direkomendasikan untuk model multilingual.
+Index berada di `artifacts/indexes/self_rag/<dataset>/<hash>/` dan hanya
+bergantung pada corpus, chunking, serta konfigurasi retriever.
+
+```yaml
+self_rag:
+  enabled: true
+  model: selfrag/selfrag_llama2_7b
+  revision: main
+  quantization: 4bit
+  torch_dtype: float16
+  max_input_tokens: 4096
+  max_new_tokens: 100
+  generation_batch_size: 1
+  instruction: Answer the question in the same language as the question.
+  retriever_model: facebook/mcontriever-msmarco
+  retriever_revision: main
+  query_max_length: 512
+  passage_max_length: 512
+  embedding_batch_size: 32
+  lowercase: true
+  normalize_text: true
+  ndocs: 5
+  threshold: 0.2
+  w_rel: 1.0
+  w_sup: 1.0
+  w_use: 0.5
+  use_groundness: true
+  use_utility: true
+  use_seqscore: true
+```
+
+Kandidat retrieval memakai `retrieval.candidates` (candidate recall dicatat),
+lalu dipotong ke `ndocs`. Model 7B 4-bit memakai sekitar 4–5 GB VRAM; naikkan
+`generation_batch_size` hanya bila VRAM cukup. Tokenizer Llama-2 membutuhkan
+extra `self-rag` (`sentencepiece`, `protobuf`), yang sudah dipasang oleh
+`scripts/setup_ubuntu.sh`. Model ini di-fine-tune dalam bahasa Inggris, jadi
+kualitas jawaban ITS (Indonesia) dan UniQA Italia perlu diukur sendiri.
+
+Self-RAG dapat berjalan sendiri tanpa DiLLeMa, Rankify, maupun `HF_MODEL_NAME`:
+
+```bash
+uv run --no-sync python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-uniqa-local.yaml \
+  --stage all \
+  --techniques self_rag \
+  --output artifacts/benchmarks/uniqa-self-rag
+
+uv run --no-sync python -m rag_benchmark index \
+  --technique self_rag_adaptive \
+  --dataset uniqa \
+  --source dataset/UniQA-main \
+  --config configs/experiments/rankify-uniqa-local.yaml
+
+uv run --no-sync python -m rag_benchmark evaluate \
+  --technique self_rag_adaptive \
+  --dataset uniqa \
+  --config configs/experiments/rankify-uniqa-local.yaml \
+  --output artifacts/benchmarks/uniqa-self-rag-adaptive
+```
+
+`--techniques` menerima subset `dillema,qwen3,bge_m3,self_rag,rankify` untuk
+semua teknik; tanpa opsi ini semua teknik yang aktif di YAML dijalankan.
+Worker Rankify hanya dipanggil bila `rankify` dipilih. `self_rag.enabled: false`
+menghapus kedua varian tanpa mengubah teknik lain.
+
+```text
+self_rag_adaptive/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+self_rag_always/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
+self-rag-ablation.json
+```
+
+Diagnostics per QA mencakup logprob dan skor keputusan retrieval,
+`retrieval_used`, skor relevance/groundness/utility/sequence per passage,
+`raw_prediction`, dan latency per tahap. Jawaban akhir dibersihkan dari
+reflection token seperti `postprocess_answer_option_conditioned` di repo asli.
+Bila adaptive tidak melakukan retrieval, status QA menjadi `no_evidence`, namun
+jawabannya tetap dinilai. `self-rag-ablation.json` berisi tingkat retrieval
+adaptive per bahasa dan delta adaptive terhadap always.
+
+Referensi: [Self-RAG](https://arxiv.org/abs/2310.11511),
+[selfrag_llama2_7b](https://huggingface.co/selfrag/selfrag_llama2_7b), dan
+[mcontriever-msmarco](https://huggingface.co/facebook/mcontriever-msmarco).
 
 ## Menjalankan benchmark
 

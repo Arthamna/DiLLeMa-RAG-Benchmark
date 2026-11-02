@@ -28,7 +28,8 @@ uv sync \
   --extra api \
   --extra dev \
   --extra hf \
-  --extra quantized
+  --extra quantized \
+  --extra self-rag
 
 
 "$REPO_ROOT/.venv/bin/python" -c \
@@ -68,3 +69,11 @@ uv sync \
 
 -- another notes :
 - tokens and input tokens need to be adjustment
+
+# SELF-RAG SAJA
+
+"$REPO_ROOT/.venv/bin/python" -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-uniqa-local.yaml \
+  --stage all \
+  --techniques self_rag \
+  --output artifacts/benchmarks/uniqa-self-rag

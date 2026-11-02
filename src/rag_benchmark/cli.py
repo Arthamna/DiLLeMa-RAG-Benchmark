@@ -28,14 +28,14 @@ def _pid_is_running(pid: int) -> bool:
     return True
 
 
-def _launch_detached_benchmark(config: Path, stage: str, output: Path) -> dict:
+def _launch_detached_benchmark(config: Path, stage: str, output: Path, techniques: str | None = None) -> dict:
     if platform.system() != "Linux":
         raise RuntimeError("Detached benchmark execution is supported only on Linux")
 
     from .benchmark import ExperimentSpec
 
     config = config.resolve()
-    ExperimentSpec.load(config)
+    ExperimentSpec.load(config, techniques)
     output = output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     log_path = output / "benchmark.log"
@@ -64,6 +64,8 @@ def _launch_detached_benchmark(config: Path, stage: str, output: Path) -> dict:
         "--output",
         str(output),
     ]
+    if techniques:
+        command += ["--techniques", techniques]
     environment = os.environ.copy()
     environment["PYTHONUNBUFFERED"] = "1"
     with log_path.open("w", encoding="utf-8") as log:
@@ -97,7 +99,7 @@ def build_parser() -> argparse.ArgumentParser:
     index.add_argument("--dataset", choices=("its", "uniqa"), required=True)
     index.add_argument("--source", type=Path, required=True)
     index.add_argument("--index-root", type=Path)
-    index.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3 and BGE-M3 techniques")
+    index.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3, BGE-M3 and Self-RAG techniques")
 
     evaluate = subparsers.add_parser("evaluate", help="Run technique generation and BLEU")
     evaluate.add_argument("--technique", choices=techniques, required=True)
@@ -105,7 +107,7 @@ def build_parser() -> argparse.ArgumentParser:
     evaluate.add_argument("--index-root", type=Path)
     evaluate.add_argument("--output", type=Path, required=True)
     evaluate.add_argument("--source", type=Path)
-    evaluate.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3 and BGE-M3 techniques")
+    evaluate.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3, BGE-M3 and Self-RAG techniques")
 
     compare = subparsers.add_parser("compare", help="Compare completed ITS and UniQA runs")
     compare.add_argument("--its-run", type=Path, required=True)
@@ -118,11 +120,15 @@ def build_parser() -> argparse.ArgumentParser:
     techniques_compare.add_argument("--output", type=Path, required=True)
 
     benchmark = subparsers.add_parser(
-        "benchmark", help="Run the controlled DiLLeMa, Rankify, Qwen3 and BGE-M3 matrix",
+        "benchmark", help="Run the controlled DiLLeMa, Rankify, Qwen3, BGE-M3 and Self-RAG matrix",
     )
     benchmark.add_argument("--config", type=Path, required=True)
     benchmark.add_argument("--stage", choices=("index", "evaluate", "all"), required=True)
     benchmark.add_argument("--output", type=Path, required=True)
+    benchmark.add_argument(
+        "--techniques",
+        help="Comma-separated subset of dillema,qwen3,bge_m3,self_rag,rankify; default runs every enabled technique",
+    )
     benchmark.add_argument("-d", "--detach", action="store_true")
     return parser
 
@@ -164,6 +170,21 @@ def main(argv: list[str] | None = None) -> None:
         bundle = load_dataset(spec.dataset, spec.source)
         result = (index_bge_m3(spec, bundle) if args.command == "index" else
                   evaluate_bge_m3(spec, bundle, args.output, variants=(args.technique,)))
+    elif args.command in {"index", "evaluate"} and args.technique.startswith("self_rag_"):
+        from dataclasses import replace
+        from .benchmark import ExperimentSpec
+        from .shared.datasets import load_dataset
+        from .techniques.self_rag.runner import run_evaluate as evaluate_self_rag, run_index as index_self_rag
+
+        if args.config is None:
+            parser.error("Self-RAG techniques require --config with an enabled self_rag block")
+        spec = ExperimentSpec.load(args.config, "self_rag")
+        if args.dataset != spec.dataset:
+            parser.error("--dataset must match the experiment YAML")
+        spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
+        bundle = load_dataset(spec.dataset, spec.source)
+        result = (index_self_rag(spec, bundle) if args.command == "index" else
+                  evaluate_self_rag(spec, bundle, args.output, variants=(args.technique,)))
     elif args.command == "index":
         result = run_index(args.technique, args.dataset, args.source, args.index_root or Path("artifacts/indexes"))
     elif args.command == "evaluate":
@@ -176,8 +197,8 @@ def main(argv: list[str] | None = None) -> None:
         from .benchmark import run_benchmark
 
         if args.detach:
-            result = _launch_detached_benchmark(args.config, args.stage, args.output)
+            result = _launch_detached_benchmark(args.config, args.stage, args.output, args.techniques)
         else:
-            result = run_benchmark(args.config, args.stage, args.output)
+            result = run_benchmark(args.config, args.stage, args.output, args.techniques)
     json.dump(result, sys.stdout, ensure_ascii=False, indent=2)
     sys.stdout.write("\n")

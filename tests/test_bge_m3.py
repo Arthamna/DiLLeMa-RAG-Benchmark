@@ -372,7 +372,7 @@ def test_each_variant_routes_through_cli(tmp_path, monkeypatch, capsys, operatio
     from rag_benchmark import cli
 
     spec, bundle = spec_and_bundle(tmp_path)
-    monkeypatch.setattr(ExperimentSpec, "load", lambda path: spec)
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path, *args: spec)
     monkeypatch.setattr("rag_benchmark.shared.datasets.load_dataset", lambda *args: bundle)
     calls = []
     monkeypatch.setattr(runner, "run_index", lambda loaded, data: calls.append(("index", loaded, data)) or {"ok": True})
@@ -400,7 +400,7 @@ def test_full_benchmark_builds_bge_index_once(tmp_path, monkeypatch):
         def invoke(self, request):
             return {"status": "ok"}
 
-    monkeypatch.setattr(ExperimentSpec, "load", lambda path: spec)
+    monkeypatch.setattr(ExperimentSpec, "load", lambda path, *args: spec)
     monkeypatch.setattr(benchmark, "load_dataset", lambda *args: bundle)
     monkeypatch.setattr(benchmark, "RankifyWorkerClient", Worker)
     monkeypatch.setattr(benchmark, "run_index", lambda *args, **kwargs: {"status": "ok"})

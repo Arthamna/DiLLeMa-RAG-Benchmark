@@ -277,7 +277,7 @@ def test_benchmark_keeps_order_outputs_and_worker_isolation(tmp_path, monkeypatc
         output.mkdir(parents=True)
         write_jsonl(output / "predictions.jsonl", [row.to_dict() for row in rows])
 
-    monkeypatch.setattr(benchmark.ExperimentSpec, "load", lambda path: spec)
+    monkeypatch.setattr(benchmark.ExperimentSpec, "load", lambda path, *args: spec)
     monkeypatch.setattr(benchmark, "load_dataset", lambda *args: bundle)
     monkeypatch.setattr(benchmark, "RankifyWorkerClient", Worker)
     monkeypatch.setattr(benchmark, "run_index", baseline_index)
@@ -309,6 +309,14 @@ def test_shared_and_techniques_obey_import_boundaries():
         ("techniques/dillema", ("rag_benchmark.techniques.rankify", "rag_benchmark.techniques.qwen3")),
         ("techniques/rankify", ("rag_benchmark.techniques.dillema", "rag_benchmark.techniques.qwen3")),
         ("techniques/qwen3", ("rag_benchmark.techniques.dillema", "rag_benchmark.techniques.rankify")),
+        ("techniques/bge_m3", (
+            "rag_benchmark.techniques.dillema", "rag_benchmark.techniques.rankify",
+            "rag_benchmark.techniques.qwen3", "rag_benchmark.techniques.self_rag",
+        )),
+        ("techniques/self_rag", (
+            "rag_benchmark.techniques.dillema", "rag_benchmark.techniques.rankify",
+            "rag_benchmark.techniques.qwen3", "rag_benchmark.techniques.bge_m3",
+        )),
     ):
         for path in (root / subtree).rglob("*.py"):
             if "worker" in path.relative_to(root).parts:
@@ -339,6 +347,7 @@ import rag_benchmark.shared.evaluation
 import rag_benchmark.techniques.dillema.runner
 import rag_benchmark.techniques.rankify.client
 import rag_benchmark.techniques.rankify.pipeline
+import rag_benchmark.techniques.self_rag.runner
 import rag_benchmark.benchmark
 import rag_benchmark.cli
 '''

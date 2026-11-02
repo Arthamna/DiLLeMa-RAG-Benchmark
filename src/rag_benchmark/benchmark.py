@@ -24,6 +24,22 @@ from .techniques.qwen3.config import Qwen3Config
 from .techniques.qwen3.runner import run_index as index_qwen3, run_evaluate as evaluate_qwen3
 from .techniques.bge_m3.config import BgeM3Config
 from .techniques.bge_m3.runner import run_index as index_bge_m3, run_evaluate as evaluate_bge_m3
+from .techniques.self_rag.config import SelfRagConfig
+from .techniques.self_rag.runner import run_index as index_self_rag, run_evaluate as evaluate_self_rag
+
+TECHNIQUE_GROUPS = ("dillema", "qwen3", "bge_m3", "self_rag", "rankify")
+SHARED_GENERATOR_GROUPS = frozenset({"dillema", "qwen3", "bge_m3", "rankify"})
+
+
+def parse_techniques(value) -> tuple[str, ...] | None:
+    if value is None:
+        return None
+    items = value.split(",") if isinstance(value, str) else list(value)
+    requested = {str(item).strip().casefold() for item in items if str(item).strip()}
+    unknown = requested - set(TECHNIQUE_GROUPS)
+    if unknown or not requested:
+        raise ValueError(f"techniques must be a comma-separated subset of: {', '.join(TECHNIQUE_GROUPS)}")
+    return tuple(name for name in TECHNIQUE_GROUPS if name in requested)
 
 
 @dataclass(frozen=True, slots=True)
@@ -39,12 +55,15 @@ class ExperimentSpec:
     rrf_k: int
     evaluation_split: str
     presets: tuple[str, ...]
-    generator: GenerationSpec
+    generator: GenerationSpec | None
     qwen3: Qwen3Config | None = None
     bge_m3: BgeM3Config | None = None
+    self_rag: SelfRagConfig | None = None
+    techniques: tuple[str, ...] = TECHNIQUE_GROUPS
 
     @classmethod
-    def load(cls, path: Path) -> "ExperimentSpec":
+    def load(cls, path: Path, techniques=None) -> "ExperimentSpec":
+        requested = parse_techniques(techniques)
         raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
         dataset = str(raw.get("dataset") or "").casefold()
         if dataset not in {"its", "uniqa"}:
@@ -74,8 +93,26 @@ class ExperimentSpec:
         retrieval = raw.get("retrieval") or {}
         evaluation = raw.get("evaluation") or {}
         presets = tuple(raw.get("presets") or RANKIFY_PRESETS)
-        if presets != RANKIFY_PRESETS:
+        qwen3 = Qwen3Config.from_dict(raw.get("qwen3") or {}, base)
+        bge_m3 = BgeM3Config.from_dict(raw.get("bge_m3") or {}, base)
+        self_rag = SelfRagConfig.from_dict(raw.get("self_rag") or {}, base)
+        configured = {
+            "dillema": True, "rankify": True, "qwen3": qwen3 is not None,
+            "bge_m3": bge_m3 is not None, "self_rag": self_rag is not None,
+        }
+        if requested is None:
+            selected = tuple(name for name in TECHNIQUE_GROUPS if configured[name])
+        else:
+            disabled = [name for name in requested if not configured[name]]
+            if disabled:
+                raise ValueError(f"Selected techniques are not enabled in the experiment YAML: {', '.join(disabled)}")
+            selected = requested
+        if "rankify" in selected and presets != RANKIFY_PRESETS:
             raise ValueError(f"presets must contain the controlled seven in order: {', '.join(RANKIFY_PRESETS)}")
+        generator = (
+            GenerationSpec.from_dict(raw.get("generator") or {})
+            if SHARED_GENERATOR_GROUPS & set(selected) else None
+        )
         return cls(
             dataset=dataset,
             source=resolved("source"),
@@ -92,15 +129,17 @@ class ExperimentSpec:
             rrf_k=int(retrieval.get("rrf_k", 60)),
             evaluation_split=str(evaluation.get("split") or "test").strip().casefold(),
             presets=presets,
-            generator=GenerationSpec.from_dict(raw.get("generator") or {}),
-            qwen3=Qwen3Config.from_dict(raw.get("qwen3") or {}, base),
-            bge_m3=BgeM3Config.from_dict(raw.get("bge_m3") or {}, base),
+            generator=generator,
+            qwen3=qwen3 if "qwen3" in selected else None,
+            bge_m3=bge_m3 if "bge_m3" in selected else None,
+            self_rag=self_rag if "self_rag" in selected else None,
+            techniques=selected,
         ).validate()
 
     def validate(self) -> "ExperimentSpec":
         if not self.source.exists():
             raise FileNotFoundError(f"Dataset source not found: {self.source}")
-        if self.generator.backend == "huggingface":
+        if self.generator is not None and self.generator.backend == "huggingface":
             model_path = Path(self.generator.model).expanduser()
             if not model_path.is_absolute():
                 raise ValueError("Hugging Face local generator requires an absolute HF_MODEL_NAME snapshot path")
@@ -108,10 +147,12 @@ class ExperimentSpec:
                 raise FileNotFoundError(
                     f"Hugging Face snapshot config not found: {model_path / 'config.json'}"
                 )
-        if not self.dense_model or not self.reranker_model:
+        if {"dillema", "rankify"} & set(self.techniques) and (not self.dense_model or not self.reranker_model):
             raise ValueError("models.dense_multilingual and models.reranker_multilingual are required")
         if min(self.candidates, self.top_k, self.rrf_k) <= 0 or self.top_k > self.candidates:
             raise ValueError("retrieval values must be positive and top_k cannot exceed candidates")
+        if self.self_rag is not None and self.self_rag.ndocs > self.candidates:
+            raise ValueError("self_rag.ndocs cannot exceed retrieval.candidates")
         if self.evaluation_split not in {"test", "all"}:
             raise ValueError("evaluation.split must be test or all")
         return self
@@ -126,12 +167,15 @@ class ExperimentSpec:
             "retrieval": {"candidates": self.candidates, "top_k": self.top_k, "rrf_k": self.rrf_k},
             "evaluation": {"split": self.evaluation_split},
             "presets": list(self.presets),
-            "generator": self.generator.public_dict(),
+            "generator": self.generator.public_dict() if self.generator is not None else None,
+            "techniques": list(self.techniques),
         }
         if self.qwen3 is not None:
             result["qwen3"] = {"enabled": True, **self.qwen3.public_dict()}
         if self.bge_m3 is not None:
             result["bge_m3"] = {"enabled": True, **self.bge_m3.public_dict()}
+        if self.self_rag is not None:
+            result["self_rag"] = {"enabled": True, **self.self_rag.public_dict()}
         return result
 
     def fingerprint(self) -> str:
@@ -210,50 +254,60 @@ def _write_leaderboard(output: Path, reports: dict[str, dict]) -> None:
         writer.writerows(rows)
 
 
-def run_benchmark(config_path: Path, stage: str, output: Path) -> dict[str, Any]:
-    spec = ExperimentSpec.load(config_path)
+def run_benchmark(config_path: Path, stage: str, output: Path, techniques=None) -> dict[str, Any]:
+    spec = ExperimentSpec.load(config_path, techniques)
+    selected = set(spec.techniques)
     bundle = load_dataset(spec.dataset, spec.source)
     corpus_fingerprint = _corpus_fingerprint(bundle.documents)
     output.mkdir(parents=True, exist_ok=True)
-    worker = RankifyWorkerClient(spec.rankify_python)
-    capabilities = worker.invoke({"schema_version": 1, "operation": "capabilities"})
-    result: dict[str, Any] = {"stage": stage, "index": None, "reports": None}
+    worker = capabilities = None
+    if "rankify" in selected:
+        worker = RankifyWorkerClient(spec.rankify_python)
+        capabilities = worker.invoke({"schema_version": 1, "operation": "capabilities"})
+    result: dict[str, Any] = {"stage": stage, "techniques": list(spec.techniques), "index": None, "reports": None}
 
     if stage in {"index", "all"}:
-        result["index"] = {
-            "dillema": run_index(
+        result["index"] = {}
+        if "dillema" in selected:
+            result["index"]["dillema"] = run_index(
                 "dillema", spec.dataset, spec.source, _dillema_index_root(spec),
                 pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
-            ),
-        }
-        _release_gpu()
+            )
+            _release_gpu()
         if spec.qwen3 is not None:
             result["index"]["qwen3"] = index_qwen3(spec, bundle)
         if spec.bge_m3 is not None:
             # All five BGE-M3 variants share this single physical index.
             result["index"]["bge_m3"] = index_bge_m3(spec, bundle)
-        result["index"]["rankify"] = _index_rankify(spec, bundle, worker, ChunkingConfig())
+        if spec.self_rag is not None:
+            result["index"]["self_rag"] = index_self_rag(spec, bundle)
+        if worker is not None:
+            result["index"]["rankify"] = _index_rankify(spec, bundle, worker, ChunkingConfig())
 
     if stage in {"evaluate", "all"}:
-        runtime = spec.generator.runtime()
-        try:
-            run_evaluate(
-                "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
-                spec.source, runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
-                decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
-                pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
-            )
-        finally:
-            del runtime
-            _release_gpu()
-        dillema_report = summarize(read_predictions(output / "dillema" / "predictions.jsonl"))
-        write_json(output / "dillema" / "metrics.json", dillema_report)
-        reports = {"dillema": dillema_report}
+        reports = {}
+        if "dillema" in selected:
+            runtime = spec.generator.runtime()
+            try:
+                run_evaluate(
+                    "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
+                    spec.source, runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
+                    decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
+                    pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
+                )
+            finally:
+                del runtime
+                _release_gpu()
+            reports["dillema"] = summarize(read_predictions(output / "dillema" / "predictions.jsonl"))
+            write_json(output / "dillema" / "metrics.json", reports["dillema"])
         if spec.qwen3 is not None:
             reports.update(evaluate_qwen3(spec, bundle, output))
         if spec.bge_m3 is not None:
             reports.update(evaluate_bge_m3(spec, bundle, output))
-        reports.update(_evaluate_rankify(spec, bundle, worker, output, corpus_fingerprint))
+        if spec.self_rag is not None:
+            reports.update(evaluate_self_rag(spec, bundle, output))
+        if worker is not None:
+            reports.update(_evaluate_rankify(spec, bundle, worker, output, corpus_fingerprint))
         _write_leaderboard(output, reports)
         result["reports"] = reports
 
