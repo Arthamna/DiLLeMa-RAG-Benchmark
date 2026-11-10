@@ -26,9 +26,12 @@ from .techniques.bge_m3.config import BgeM3Config
 from .techniques.bge_m3.runner import run_index as index_bge_m3, run_evaluate as evaluate_bge_m3
 from .techniques.self_rag.config import SelfRagConfig
 from .techniques.self_rag.runner import run_index as index_self_rag, run_evaluate as evaluate_self_rag
+from .techniques.rank_zephyr.config import RankZephyrConfig
+from .techniques.rank_zephyr.runner import run_evaluate as evaluate_rank_zephyr, run_index as index_rank_zephyr
 
-TECHNIQUE_GROUPS = ("dillema", "qwen3", "bge_m3", "self_rag", "rankify")
-SHARED_GENERATOR_GROUPS = frozenset({"dillema", "qwen3", "bge_m3", "rankify"})
+
+TECHNIQUE_GROUPS = ("dillema", "qwen3", "bge_m3", "self_rag", "rankify", "rank_zephyr")
+SHARED_GENERATOR_GROUPS = frozenset({"dillema", "qwen3", "bge_m3", "rankify", "rank_zephyr"})
 
 
 def parse_techniques(value) -> tuple[str, ...] | None:
@@ -60,6 +63,7 @@ class ExperimentSpec:
     bge_m3: BgeM3Config | None = None
     self_rag: SelfRagConfig | None = None
     techniques: tuple[str, ...] = TECHNIQUE_GROUPS
+    rank_zephyr: RankZephyrConfig | None = None
 
     @classmethod
     def load(cls, path: Path, techniques=None) -> "ExperimentSpec":
@@ -96,9 +100,14 @@ class ExperimentSpec:
         qwen3 = Qwen3Config.from_dict(raw.get("qwen3") or {}, base)
         bge_m3 = BgeM3Config.from_dict(raw.get("bge_m3") or {}, base)
         self_rag = SelfRagConfig.from_dict(raw.get("self_rag") or {}, base)
+        rank_zephyr = (
+            RankZephyrConfig.from_dict(raw.get("rank_zephyr") or {}, base)
+            if requested is None or "rank_zephyr" in requested else None
+        )
         configured = {
             "dillema": True, "rankify": True, "qwen3": qwen3 is not None,
             "bge_m3": bge_m3 is not None, "self_rag": self_rag is not None,
+            "rank_zephyr": rank_zephyr is not None,
         }
         if requested is None:
             selected = tuple(name for name in TECHNIQUE_GROUPS if configured[name])
@@ -134,6 +143,7 @@ class ExperimentSpec:
             bge_m3=bge_m3 if "bge_m3" in selected else None,
             self_rag=self_rag if "self_rag" in selected else None,
             techniques=selected,
+            rank_zephyr=rank_zephyr,
         ).validate()
 
     def validate(self) -> "ExperimentSpec":
@@ -176,6 +186,8 @@ class ExperimentSpec:
             result["bge_m3"] = {"enabled": True, **self.bge_m3.public_dict()}
         if self.self_rag is not None:
             result["self_rag"] = {"enabled": True, **self.self_rag.public_dict()}
+        if self.rank_zephyr is not None:
+            result["rank_zephyr"] = {"enabled": True, **self.rank_zephyr.public_dict()}
         return result
 
     def fingerprint(self) -> str:
@@ -283,6 +295,8 @@ def run_benchmark(config_path: Path, stage: str, output: Path, techniques=None) 
             result["index"]["self_rag"] = index_self_rag(spec, bundle)
         if worker is not None:
             result["index"]["rankify"] = _index_rankify(spec, bundle, worker, ChunkingConfig())
+        if spec.rank_zephyr is not None:
+            result["index"]["rank_zephyr"] = index_rank_zephyr(spec, bundle)
 
     if stage in {"evaluate", "all"}:
         reports = {}
@@ -308,6 +322,8 @@ def run_benchmark(config_path: Path, stage: str, output: Path, techniques=None) 
             reports.update(evaluate_self_rag(spec, bundle, output))
         if worker is not None:
             reports.update(_evaluate_rankify(spec, bundle, worker, output, corpus_fingerprint))
+        if spec.rank_zephyr is not None:
+            reports.update(evaluate_rank_zephyr(spec, bundle, output))
         _write_leaderboard(output, reports)
         result["reports"] = reports
 

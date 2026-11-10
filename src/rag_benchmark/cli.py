@@ -120,14 +120,14 @@ def build_parser() -> argparse.ArgumentParser:
     techniques_compare.add_argument("--output", type=Path, required=True)
 
     benchmark = subparsers.add_parser(
-        "benchmark", help="Run the controlled DiLLeMa, Rankify, Qwen3, BGE-M3 and Self-RAG matrix",
+        "benchmark", help="Run the controlled RAG technique matrix",
     )
     benchmark.add_argument("--config", type=Path, required=True)
     benchmark.add_argument("--stage", choices=("index", "evaluate", "all"), required=True)
     benchmark.add_argument("--output", type=Path, required=True)
     benchmark.add_argument(
         "--techniques",
-        help="Comma-separated subset of dillema,qwen3,bge_m3,self_rag,rankify; default runs every enabled technique",
+        help="Comma-separated subset of dillema,qwen3,bge_m3,self_rag,rankify,rank_zephyr; default runs every enabled technique",
     )
     benchmark.add_argument("-d", "--detach", action="store_true")
     return parser

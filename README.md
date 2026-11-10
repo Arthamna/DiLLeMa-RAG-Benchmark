@@ -1,9 +1,10 @@
-# DiLLeMa–Rankify–Qwen3–BGE-M3–Self-RAG RAG Benchmark
+# DiLLeMa RAG Benchmark
 
 Benchmark terkontrol untuk membandingkan full conventional RAG DiLLeMa dengan
 tujuh pipeline Rankify, dua varian Qwen3, lima varian BGE-M3, dan dua varian
-Self-RAG pada corpus ITS dan UniQA. Indexing membangun retrieval index; project ini tidak melakukan
-fine-tuning model.
+Self-RAG pada corpus ITS dan UniQA. Preset opt-in RankZephyr menambahkan
+dua varian untuk mengukur efek reranking listwise. Indexing membangun retrieval
+index tanpa fine-tuning model.
 
 Pipeline DiLLeMa:
 
@@ -35,6 +36,7 @@ Implementasi setiap teknik berada di `src/rag_benchmark/techniques/`:
 | `techniques/qwen3/` | Qwen3 embedding, dense cosine index, yes/no reranker, prompt, dan staged runner |
 | `techniques/bge_m3/` | Satu indeks dense/learned-sparse/ColBERT, lima scoring variant, prompt, dan staged runner BGE-M3 |
 | `techniques/self_rag/` | Retriever mContriever, generator Self-RAG dengan reflection token, scoring short-form, dan staged runner |
+| `techniques/rank_zephyr/` | Dense retrieval, worker RankLLM 4-bit, dan evaluasi dua varian dari pool yang sama |
 | `shared/` | Records, dataset, chunking semua teknik, evaluasi, metrik, dan runtime LLM |
 | `cli.py` dan `benchmark.py` | Entrypoint command, konfigurasi eksperimen, penjadwalan teknik, dan leaderboard |
 
@@ -684,6 +686,119 @@ uv run --no-sync python -m rag_benchmark compare-techniques \
   --candidate-run artifacts/benchmarks/its-run/rankify_hybrid_bge_rerank_basic/predictions.jsonl \
   --output artifacts/benchmarks/its-run/comparison
 ```
+
+## RankZephyr dengan RankLLM
+
+RankZephyr tersedia lewat grup `rank_zephyr` pada dua preset baru. Keduanya
+menggunakan dense BGE-M3 untuk mengambil sampai 100 chunk. Varian
+`rank_zephyr_dense` langsung mengambil 10 teratas. Varian `rank_zephyr_rerank`
+mengurutkan pool yang sama dengan checkpoint resmi Castorini dan RankLLM
+(window 20, stride 10, satu pass), lalu mengambil 10 teratas. Keduanya memakai
+prompt jawaban dan generator yang sama. ITS memakai `all` (340 QA) dan UniQA
+memakai `test` (1.573 QA per bahasa).
+
+### Setup dan evaluasi di Ubuntu
+
+Jalankan dari root repo. Skrip kedua membuat `.venv-rank-llm` dan memeriksa CUDA.
+Skrip setup Rankify diperlukan jika menyertakan grup `rankify`.
+
+```bash
+bash scripts/setup_ubuntu.sh
+bash scripts/setup_rank_zephyr_ubuntu.sh
+
+set -a
+source .env
+set +a
+test -f "$HF_MODEL_NAME/config.json"
+
+uv run --no-sync python -m rag_benchmark benchmark \
+  --config configs/experiments/rank-zephyr-its-local.yaml \
+  --techniques rank_zephyr --stage all \
+  --output artifacts/benchmarks/rank-zephyr-its
+```
+
+Untuk UniQA, gunakan `configs/experiments/rank-zephyr-uniqa-local.yaml` dan
+output terpisah. Tambahkan `dillema,rankify` pada nilai `--techniques` untuk
+perbandingan pipeline. Pakai `--stage evaluate` setelah indeks terbangun.
+Mengganti embedding, revisi embedding, atau corpus membuat namespace indeks baru.
+Mengganti RankZephyr atau generator dapat memakai indeks yang sama.
+
+`HF_MODEL_NAME` adalah snapshot generator jawaban, misalnya snapshot Qwen
+lokal. Untuk generator API, ganti blok `generator` di YAML dengan blok dari
+`rankify-multilingual.yaml` dan isi `LLM_MODEL`, `LLM_BASE_URL`, serta
+`LLM_API_KEY`. Untuk checkpoint RankZephyr yang sudah ada, isi
+`RANK_ZEPHYR_SNAPSHOT` dengan direktori snapshot Castorini yang lengkap.
+Jika kosong, worker mengunduh safetensors, tokenizer, dan konfigurasi revisi
+yang dipin. Siapkan sekitar 14,5 GB ruang cache untuk checkpoint ini.
+
+Worker Linux x86-64 memakai CUDA 12.9 dan kuantisasi bitsandbytes 4-bit saat
+loading. Embedding, reranking, dan generation dijalankan berurutan. Endpoint
+vLLM hanya hidup di loopback selama reranking. Jika generator API juga
+berjalan di mesin yang sama, perhitungkan VRAM yang ditempatinya. Jika worker
+gagal saat startup, baseline dense tetap dievaluasi dan setiap QA yang
+memerlukan reranking mendapat status `error`. Periksa
+`rank_zephyr_rerank/worker-diagnostics.json` dan `rank_zephyr_rerank/vllm.log`.
+Jika memakai `--detach`, progres tahap dan QA terlihat di `benchmark.log`.
+
+### Smoke test GPU sebelum full run
+
+Untuk setiap preset, bangun indeks lengkap dengan command benchmark di atas
+menggunakan `--stage index`. Lalu jalankan evaluasi kecil dengan dua QA
+yang tersedia per bahasa. Ganti `RZ_CONFIG` untuk menguji UniQA.
+
+```bash
+RZ_CONFIG=configs/experiments/rank-zephyr-its-local.yaml \
+  uv run --no-sync python - <<'PY'
+import logging
+import os
+from dataclasses import replace
+from pathlib import Path
+
+from rag_benchmark.benchmark import ExperimentSpec
+from rag_benchmark.shared.datasets import load_dataset
+from rag_benchmark.shared.metrics import read_predictions
+from rag_benchmark.techniques.rank_zephyr.runner import run_evaluate
+
+logging.basicConfig(level=logging.INFO)
+spec = ExperimentSpec.load(Path(os.environ["RZ_CONFIG"]), "rank_zephyr")
+bundle = load_dataset(spec.dataset, spec.source)
+available = [qa for qa in bundle.questions_for_split(spec.evaluation_split) if qa.available]
+sample = []
+for lang in sorted({qa.language for qa in available}):
+    sample.extend([qa for qa in available if qa.language == lang][:2])
+output = Path(f"artifacts/runs/rz-smoke-{spec.dataset}")
+report = run_evaluate(spec, replace(bundle, questions=sample), output)
+assert report["rank_zephyr_rerank"].get("status") != "failed", report["rank_zephyr_rerank"]
+for variant in ("rank_zephyr_dense", "rank_zephyr_rerank"):
+    rows = read_predictions(output / variant / "predictions.jsonl")
+    assert len(rows) == len(sample)
+    assert all(row["status"] in {"ok", "abstention"} for row in rows)
+assert any(row["diagnostics"]["rerank_windows"] == 9 for row in rows)
+PY
+```
+
+Cek bahwa kedua `predictions.jsonl` berisi dua record per bahasa, tiap QA
+dengan 100 kandidat selesai dalam sembilan window, dan `vllm.log` menunjukkan
+`quantization=bitsandbytes`. Saat log masuk tahap generation, proses vLLM
+harus sudah berhenti dan VRAM-nya terlepas. Hasil smoke test memakai sampel
+dan tidak sebanding dengan full run.
+
+Untuk mengukur efek reranking per bahasa pada full run:
+
+```bash
+run=artifacts/benchmarks/rank-zephyr-its
+uv run --no-sync python -m rag_benchmark compare-techniques \
+  --baseline-run "$run/rank_zephyr_dense/predictions.jsonl" \
+  --candidate-run "$run/rank_zephyr_rerank/predictions.jsonl" \
+  --output "$run/comparison"
+```
+
+Paper RankZephyr melaporkan metrik ranking pada TREC dan BEIR. Benchmark ini
+mengukur ranking dan QA di ITS/UniQA dengan RankZephyr 4-bit. Checkpoint
+utamanya berbahasa Inggris, jadi baca hasil ITS, UniQA Inggris, dan UniQA
+Italia secara terpisah. [Paper RankZephyr](https://arxiv.org/abs/2312.02724),
+[RankLLM](https://github.com/castorini/rank_llm), [checkpoint Castorini](https://huggingface.co/castorini/rank_zephyr_7b_v1_full),
+[vLLM 4-bit](https://docs.vllm.ai/en/v0.19.1/features/quantization/bnb/)
 
 ## Test
 

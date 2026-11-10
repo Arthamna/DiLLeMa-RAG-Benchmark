@@ -36,3 +36,10 @@ through Self-Reflection*, https://arxiv.org/abs/2310.11511.
 
 Izacard et al. (2022), *Unsupervised Dense Information Retrieval with
 Contrastive Learning*, https://arxiv.org/abs/2112.09118.
+
+The RankZephyr worker uses [RankLLM](https://github.com/castorini/rank_llm)
+under the [Apache License 2.0](https://github.com/castorini/rank_llm/blob/0fd5678ffc43488531ba26a42f367d42480a75ec/LICENSE).
+The [RankZephyr 7B v1 full checkpoint](https://huggingface.co/castorini/rank_zephyr_7b_v1_full)
+is downloaded separately under the MIT License. Pradeep et al. (2023),
+*RankZephyr: Effective and Robust Zero-Shot Listwise Reranking is a Breeze!*
+[Paper](https://arxiv.org/abs/2312.02724).

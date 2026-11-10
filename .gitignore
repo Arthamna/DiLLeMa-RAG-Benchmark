@@ -2,8 +2,10 @@
 /artifacts/
 /.venv/
 /.venv-rankify/
+/.venv-rank-llm/
 /.validation-packages/
 /.pytest_cache/
 /__pycache__/
 *.py[cod]
 .env
+DEBUG.md

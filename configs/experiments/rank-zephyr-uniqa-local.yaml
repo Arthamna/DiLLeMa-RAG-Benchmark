@@ -1,0 +1,100 @@
+dataset: uniqa
+# Relative paths are resolved from this YAML file.
+source: ../../dataset/UniQA-main
+index_root: ../../artifacts/indexes
+rankify_python: ../../.venv-rankify/bin/python
+
+evaluation:
+  split: test
+
+generator:
+  backend: huggingface
+  model_env: HF_MODEL_NAME
+  temperature: 0
+  max_tokens: 768
+  max_tokens_env: HF_MAX_NEW_TOKENS
+  quantization: 4bit
+  trust_remote_code: false
+  max_input_tokens: 4096
+  max_input_tokens_env: HF_MAX_INPUT_TOKENS
+
+models:
+  dense_multilingual: BAAI/bge-m3
+  reranker_multilingual: BAAI/bge-reranker-v2-m3
+
+retrieval:
+  candidates: 100
+  top_k: 10
+  rrf_k: 60
+
+qwen3:
+  enabled: true
+  embedding_model: Qwen/Qwen3-Embedding-0.6B
+  reranker_model: Qwen/Qwen3-Reranker-4B
+  instruction: Given a question, retrieve relevant passages that answer the question.
+  embedding_dimension: 1024
+  embedding_max_length: 2048
+  reranker_max_length: 2048
+  embedding_batch_size: 8
+  reranker_batch_size: 1
+  torch_dtype: bfloat16
+  reranker_quantization: none
+  attention_implementation: sdpa
+
+bge_m3:
+  enabled: true
+  model: BAAI/bge-m3
+  revision: main
+  query_max_length: 512
+  passage_max_length: 2048
+  embedding_batch_size: 4
+  use_fp16: true
+  trust_remote_code: false
+  dense_weight: 0.4
+  sparse_weight: 0.2
+  multi_vector_weight: 0.4
+
+self_rag:
+  enabled: true
+  model: selfrag/selfrag_llama2_7b
+  revision: main
+  quantization: 4bit
+  torch_dtype: float16
+  max_input_tokens: 4096
+  max_new_tokens: 100
+  generation_batch_size: 1
+  instruction: Answer the question in the same language as the question.
+  retriever_model: facebook/mcontriever-msmarco
+  retriever_revision: main
+  query_max_length: 512
+  passage_max_length: 512
+  embedding_batch_size: 32
+  lowercase: true
+  normalize_text: true
+  ndocs: 5
+  threshold: 0.2
+  w_rel: 1.0
+  w_sup: 1.0
+  w_use: 0.5
+  use_groundness: true
+  use_utility: true
+  use_seqscore: true
+
+presets:
+  - rankify_bm25_basic
+  - rankify_bge_basic
+  - rankify_bm25_bge_rerank_basic
+  - rankify_bge_bge_rerank_basic
+  - rankify_hybrid_bge_rerank_basic
+  - rankify_hybrid_bge_rerank_cot
+  - rankify_hybrid_bge_rerank_incontext
+
+rank_zephyr:
+  enabled: true
+  embedding_model: BAAI/bge-m3
+  embedding_revision: main
+  embedding_max_length: 512
+  reranker_model: castorini/rank_zephyr_7b_v1_full
+  reranker_revision: aa11d9da444ec3490827656c3b961d5c5f3af0eb
+  reranker_snapshot_env: RANK_ZEPHYR_SNAPSHOT
+  worker_python: ../../.venv-rank-llm/bin/python
