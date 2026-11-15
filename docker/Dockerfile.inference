@@ -6,7 +6,8 @@ WORKDIR /app
 COPY pyproject.toml uv.lock README.md LICENSE ./
 COPY src ./src
 RUN uv export --frozen --no-dev --extra inference --no-emit-project --no-hashes -o /tmp/requirements.txt \
-    && python3 -m pip install --no-cache-dir -r /tmp/requirements.txt \
-    && python3 -m pip install --no-cache-dir --no-deps .
+    && uv pip install --system --no-cache -r /tmp/requirements.txt \
+    && uv pip install --system --no-cache --no-deps . \
+    && python3 -c "import rag_benchmark; import rag_benchmark.techniques.retro.inference_service"
 ENV PYTHONUNBUFFERED=1 RETRO_REQUIRE_CUDA=1 TOKENIZERS_PARALLELISM=false BENCHMARK_IMAGE_VERSION=0.3.0
 CMD ["python3", "-m", "rag_benchmark.techniques.retro.inference_service", "--host", "0.0.0.0", "--port", "50052"]

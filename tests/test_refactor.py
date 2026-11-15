@@ -41,3 +41,10 @@ def test_runtime_never_imports_reference_checkout_or_removed_techniques():
 def test_only_expected_technique_directories_exist():
     names = {path.name for path in (ROOT / "src" / "rag_benchmark" / "techniques").iterdir() if path.is_dir() and path.name != "__pycache__"}
     assert names == {"dillema", "retro", "piperag"}
+
+
+def test_inference_image_installs_project_with_uv_and_checks_import():
+    dockerfile = (ROOT / "docker" / "Dockerfile.inference").read_text(encoding="utf-8")
+    assert "uv pip install --system --no-cache --no-deps ." in dockerfile
+    assert "import rag_benchmark.techniques.retro.inference_service" in dockerfile
+    assert "python3 -m pip install" not in dockerfile
