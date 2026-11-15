@@ -8,12 +8,24 @@ evaluation:
 retrieval:
   candidates: 40
 generator:
-  backend: openai-compatible
-  model_env: LLM_MODEL
-  base_url_env: LLM_BASE_URL
-  api_key_env: LLM_API_KEY
-  temperature: 0
-  max_tokens: 128
+  # Toggle generator DiLLeMa: gunakan "openai" untuk API atau "qwen" untuk model HF lokal.
+  active: openai
+  profiles:
+    openai:
+      backend: openai-compatible
+      model_env: LLM_MODEL
+      base_url_env: LLM_BASE_URL
+      api_key_env: LLM_API_KEY
+      temperature: 0
+      max_tokens: 128
+    qwen:
+      backend: huggingface
+      # Harus berupa path absolut snapshot HF yang berisi config.json dan weights.
+      model_env: HF_MODEL_NAME
+      trust_remote_code: false
+      max_input_tokens: 4096
+      temperature: 0
+      max_tokens: 128
 
 services:
   retrieval_endpoint: 127.0.0.1:50051

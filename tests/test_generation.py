@@ -2,8 +2,66 @@ import pytest
 from types import SimpleNamespace
 
 from rag_benchmark.shared.api_llm import APIModelConfig, OpenAICompatibleLLM
+from rag_benchmark.shared.config import GenerationSpec
 from rag_benchmark.shared.local_llm import HFModelConfig
 from rag_benchmark.techniques.dillema.generation import DiLLeMaGenerator, base_prompt
+
+
+def _generator_profiles(active: str) -> dict:
+    return {
+        "active": active,
+        "profiles": {
+            "openai": {
+                "backend": "openai-compatible",
+                "model_env": "LLM_MODEL",
+                "base_url_env": "LLM_BASE_URL",
+                "api_key_env": "LLM_API_KEY",
+                "temperature": 0,
+                "max_tokens": 128,
+            },
+            "qwen": {
+                "backend": "huggingface",
+                "model_env": "HF_MODEL_NAME",
+                "temperature": 0,
+                "max_tokens": 128,
+            },
+        },
+    }
+
+
+def test_generator_profiles_select_openai_or_local_qwen(monkeypatch, tmp_path):
+    monkeypatch.setenv("LLM_MODEL", "openrouter/free")
+    monkeypatch.setenv("LLM_BASE_URL", "https://openrouter.ai/api/v1")
+    openai = GenerationSpec.from_dict(_generator_profiles("openai"))
+    assert (openai.profile, openai.backend, openai.model) == (
+        "openai", "openai-compatible", "openrouter/free",
+    )
+
+    snapshot = tmp_path / "qwen-snapshot"
+    snapshot.mkdir()
+    monkeypatch.setenv("HF_MODEL_NAME", str(snapshot.resolve()))
+    qwen = GenerationSpec.from_dict(_generator_profiles("qwen"))
+    assert (qwen.profile, qwen.backend, qwen.model) == (
+        "qwen", "huggingface", str(snapshot.resolve()),
+    )
+
+
+def test_generator_profiles_reject_missing_or_unknown_selection():
+    with pytest.raises(ValueError, match="generator.active must select"):
+        GenerationSpec.from_dict({"profiles": {"openai": {}}})
+    with pytest.raises(ValueError, match="available profiles: openai, qwen"):
+        GenerationSpec.from_dict(_generator_profiles("missing"))
+
+
+def test_legacy_flat_generator_configuration_remains_supported():
+    spec = GenerationSpec.from_dict({
+        "backend": "huggingface",
+        "model": "/models/local",
+        "temperature": 0,
+        "max_tokens": 128,
+    })
+    assert spec.profile == "default"
+    assert spec.model == "/models/local"
 
 
 def test_hf_model_configuration_is_explicit_and_deterministic(monkeypatch):

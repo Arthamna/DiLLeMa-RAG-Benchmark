@@ -79,6 +79,52 @@ def test_official_yaml_files_parse_for_remote_pair():
         assert spec.techniques == ("retro", "piperag")
 
 
+def test_official_yaml_files_default_to_openai_generator(monkeypatch):
+    monkeypatch.setenv("LLM_MODEL", "openrouter/free")
+    root = Path(__file__).resolve().parents[1]
+    for dataset in ("its", "uniqa"):
+        spec = ExperimentSpec.load(root / "configs" / "experiments" / f"{dataset}.yaml", "dillema")
+        assert spec.generator.profile == "openai"
+        assert spec.generator.backend == "openai-compatible"
+        assert spec.generator.model == "openrouter/free"
+
+
+def test_experiment_yaml_can_toggle_local_qwen_profile(tmp_path, monkeypatch):
+    source = tmp_path / "dataset"
+    source.mkdir()
+    snapshot = tmp_path / "qwen-snapshot"
+    snapshot.mkdir()
+    (snapshot / "config.json").write_text("{}\n", encoding="utf-8")
+    monkeypatch.setenv("HF_MODEL_NAME", str(snapshot.resolve()))
+    config = tmp_path / "qwen.yaml"
+    config.write_text(
+        """dataset: its
+source: dataset
+techniques: [dillema]
+generator:
+  active: qwen
+  profiles:
+    openai:
+      backend: openai-compatible
+      model_env: LLM_MODEL
+      temperature: 0
+      max_tokens: 128
+    qwen:
+      backend: huggingface
+      model_env: HF_MODEL_NAME
+      temperature: 0
+      max_tokens: 128
+""",
+        encoding="utf-8",
+    )
+
+    spec = ExperimentSpec.load(config)
+
+    assert spec.generator.profile == "qwen"
+    assert spec.generator.backend == "huggingface"
+    assert spec.generator.model == str(snapshot.resolve())
+
+
 def test_detached_benchmark_launches_same_cli_and_tracks_pid(tmp_path, monkeypatch):
     config = _config(tmp_path)
     output = tmp_path / "run"

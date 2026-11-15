@@ -29,9 +29,27 @@ class GenerationSpec:
     quantization: str = "4bit"
     trust_remote_code: bool = False
     max_input_tokens: int = 4096
+    profile: str = "default"
 
     @classmethod
     def from_dict(cls, value: dict[str, Any]) -> "GenerationSpec":
+        profile = "default"
+        if "active" in value or "profiles" in value:
+            profiles = value.get("profiles")
+            if not isinstance(profiles, dict) or not profiles:
+                raise ValueError("generator.profiles must be a non-empty mapping")
+            profile = str(value.get("active") or "").strip()
+            if not profile:
+                raise ValueError("generator.active must select a generator profile")
+            if profile not in profiles:
+                available = ", ".join(sorted(str(name) for name in profiles))
+                raise ValueError(
+                    f"Unknown generator.active profile {profile!r}; available profiles: {available}"
+                )
+            selected = profiles[profile]
+            if not isinstance(selected, dict):
+                raise ValueError(f"generator.profiles.{profile} must be a mapping")
+            value = selected
         backend = str(value.get("backend") or "").strip().casefold()
         if backend not in {"huggingface", "openai-compatible"}:
             raise ValueError("generator.backend must be huggingface or openai-compatible")
@@ -64,6 +82,7 @@ class GenerationSpec:
                 int(os.getenv(max_input_tokens_env, str(value.get("max_input_tokens", 4096))))
                 if max_input_tokens_env else int(value.get("max_input_tokens", 4096))
             ),
+            profile=profile,
         )
 
     def public_dict(self) -> dict[str, Any]:
