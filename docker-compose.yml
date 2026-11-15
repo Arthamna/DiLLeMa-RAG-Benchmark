@@ -1,0 +1,34 @@
+services:
+  retrieval:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.retrieval
+    ports: ["50051:50051"]
+    volumes:
+      - ${RETRO_INDEX_DIR:-./artifacts/indexes}:/data/indexes
+      - ${HF_CACHE_DIR:-./artifacts/huggingface}:/root/.cache/huggingface
+    healthcheck:
+      test: ["CMD", "python", "-m", "rag_benchmark.techniques.retro.healthcheck", "retrieval", "127.0.0.1:50051"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  inference:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.inference
+    ports: ["50052:50052"]
+    gpus: all
+    environment:
+      RETRO_REQUIRE_CUDA: "1"
+    volumes:
+      - ${RETRO_MODEL_DIR:-./models}:/models:ro
+      - ${RETRO_ONNX_DIR:-./artifacts/onnx}:/onnx
+      - ${HF_CACHE_DIR:-./artifacts/huggingface}:/root/.cache/huggingface
+    depends_on:
+      retrieval:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python3", "-m", "rag_benchmark.techniques.retro.healthcheck", "inference", "127.0.0.1:50052"]
+      interval: 10s
+      timeout: 5s
+      retries: 12

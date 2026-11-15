@@ -7,11 +7,11 @@ import os
 import platform
 import subprocess
 import sys
+from dataclasses import replace
 from pathlib import Path
 
 from .shared.comparison import run_compare, run_compare_techniques
 from .techniques import TECHNIQUES
-from .techniques.dillema.runner import run_evaluate, run_index
 
 LOGGER = logging.getLogger(__name__)
 
@@ -31,38 +31,23 @@ def _pid_is_running(pid: int) -> bool:
 def _launch_detached_benchmark(config: Path, stage: str, output: Path, techniques: str | None = None) -> dict:
     if platform.system() != "Linux":
         raise RuntimeError("Detached benchmark execution is supported only on Linux")
-
     from .benchmark import ExperimentSpec
 
     config = config.resolve()
     ExperimentSpec.load(config, techniques)
     output = output.resolve()
     output.mkdir(parents=True, exist_ok=True)
-    log_path = output / "benchmark.log"
-    pid_path = output / "benchmark.pid"
-
+    log_path, pid_path = output / "benchmark.log", output / "benchmark.pid"
     if pid_path.is_file():
         try:
             existing_pid = int(pid_path.read_text(encoding="utf-8").strip())
         except ValueError:
             existing_pid = 0
         if _pid_is_running(existing_pid):
-            raise RuntimeError(
-                f"A detached benchmark is already running with PID {existing_pid}: {pid_path}"
-            )
-
+            raise RuntimeError(f"A detached benchmark is already running with PID {existing_pid}: {pid_path}")
     command = [
-        sys.executable,
-        "-u",
-        "-m",
-        "rag_benchmark",
-        "benchmark",
-        "--config",
-        str(config),
-        "--stage",
-        stage,
-        "--output",
-        str(output),
+        sys.executable, "-u", "-m", "rag_benchmark", "benchmark", "--config", str(config),
+        "--stage", stage, "--output", str(output),
     ]
     if techniques:
         command += ["--techniques", techniques]
@@ -70,67 +55,84 @@ def _launch_detached_benchmark(config: Path, stage: str, output: Path, technique
     environment["PYTHONUNBUFFERED"] = "1"
     with log_path.open("w", encoding="utf-8") as log:
         process = subprocess.Popen(
-            command,
-            stdin=subprocess.DEVNULL,
-            stdout=log,
-            stderr=subprocess.STDOUT,
-            cwd=str(Path.cwd()),
-            env=environment,
-            start_new_session=True,
-            close_fds=True,
+            command, stdin=subprocess.DEVNULL, stdout=log, stderr=subprocess.STDOUT,
+            cwd=str(Path.cwd()), env=environment, start_new_session=True, close_fds=True,
         )
     pid_path.write_text(f"{process.pid}\n", encoding="utf-8")
-    return {
-        "status": "started",
-        "pid": process.pid,
-        "log": str(log_path),
-        "pid_file": str(pid_path),
-        "output": str(output),
-    }
+    return {"status": "started", "pid": process.pid, "log": str(log_path),
+            "pid_file": str(pid_path), "output": str(output)}
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m rag_benchmark")
     subparsers = parser.add_subparsers(dest="command", required=True)
     techniques = tuple(TECHNIQUES)
-
-    index = subparsers.add_parser("index", help="Build a technique-isolated RAG index")
+    index = subparsers.add_parser("index", help="Build a technique index")
     index.add_argument("--technique", choices=techniques, required=True)
     index.add_argument("--dataset", choices=("its", "uniqa"), required=True)
-    index.add_argument("--source", type=Path, required=True)
+    index.add_argument("--source", type=Path)
     index.add_argument("--index-root", type=Path)
-    index.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3, BGE-M3 and Self-RAG techniques")
-
-    evaluate = subparsers.add_parser("evaluate", help="Run technique generation and BLEU")
+    index.add_argument("--config", type=Path)
+    evaluate = subparsers.add_parser("evaluate", help="Evaluate one technique")
     evaluate.add_argument("--technique", choices=techniques, required=True)
     evaluate.add_argument("--dataset", choices=("its", "uniqa"), required=True)
     evaluate.add_argument("--index-root", type=Path)
     evaluate.add_argument("--output", type=Path, required=True)
     evaluate.add_argument("--source", type=Path)
-    evaluate.add_argument("--config", type=Path, help="Experiment YAML; required for Qwen3, BGE-M3 and Self-RAG techniques")
-
+    evaluate.add_argument("--config", type=Path)
     compare = subparsers.add_parser("compare", help="Compare completed ITS and UniQA runs")
     compare.add_argument("--its-run", type=Path, required=True)
     compare.add_argument("--uniqa-run", type=Path, required=True)
     compare.add_argument("--output", type=Path, required=True)
-
-    techniques_compare = subparsers.add_parser("compare-techniques", help="Compare controlled technique runs")
-    techniques_compare.add_argument("--baseline-run", type=Path, required=True)
-    techniques_compare.add_argument("--candidate-run", type=Path, required=True)
-    techniques_compare.add_argument("--output", type=Path, required=True)
-
-    benchmark = subparsers.add_parser(
-        "benchmark", help="Run the controlled RAG technique matrix",
-    )
+    technique_compare = subparsers.add_parser("compare-techniques", help="Compare two technique runs")
+    technique_compare.add_argument("--baseline-run", type=Path, required=True)
+    technique_compare.add_argument("--candidate-run", type=Path, required=True)
+    technique_compare.add_argument("--output", type=Path, required=True)
+    benchmark = subparsers.add_parser("benchmark", help="Run the DiLLeMa/RETRO/PipeRAG matrix")
     benchmark.add_argument("--config", type=Path, required=True)
     benchmark.add_argument("--stage", choices=("index", "evaluate", "all"), required=True)
     benchmark.add_argument("--output", type=Path, required=True)
-    benchmark.add_argument(
-        "--techniques",
-        help="Comma-separated subset of dillema,qwen3,bge_m3,self_rag,rankify,rank_zephyr; default runs every enabled technique",
-    )
+    benchmark.add_argument("--techniques", help="Comma-separated subset of dillema,retro,piperag")
     benchmark.add_argument("-d", "--detach", action="store_true")
+    doctor = subparsers.add_parser("doctor", help="Validate services, assets, protocol, index and GPU")
+    doctor.add_argument("--config", type=Path, required=True)
     return parser
+
+
+def _single_run(args, parser):
+    from .benchmark import ExperimentSpec, _dillema_index_root
+    from .shared.datasets import load_dataset
+    from .techniques.dillema.runner import run_evaluate as evaluate_dillema
+    from .techniques.dillema.runner import run_index as index_dillema
+    from .techniques.retro.runner import run_evaluate as evaluate_retro
+    from .techniques.retro.runner import run_index as index_retro
+
+    if args.technique == "dillema" and args.config is None:
+        if args.source is None:
+            parser.error("DiLLeMa index/evaluate without --config requires --source")
+        root = args.index_root or Path("artifacts/indexes")
+        if args.command == "index":
+            return index_dillema("dillema", args.dataset, args.source, root)
+        return evaluate_dillema("dillema", args.dataset, root, args.output, args.source)
+    if args.config is None:
+        parser.error("RETRO/PipeRAG index/evaluate requires --config")
+    spec = ExperimentSpec.load(args.config, args.technique)
+    if args.dataset != spec.dataset:
+        parser.error("--dataset must match the experiment YAML")
+    spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
+    bundle = load_dataset(spec.dataset, spec.source)
+    if args.command == "index":
+        if args.technique == "dillema":
+            return index_dillema("dillema", spec.dataset, spec.source, _dillema_index_root(spec))
+        return index_retro(spec, bundle)
+    if args.technique == "dillema":
+        runtime = spec.generator.runtime()
+        return evaluate_dillema(
+            "dillema", spec.dataset, _dillema_index_root(spec), args.output, spec.source,
+            runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
+            decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
+        )
+    return evaluate_retro(spec, bundle, args.output, (args.technique,))
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -140,65 +142,19 @@ def main(argv: list[str] | None = None) -> None:
     )
     parser = build_parser()
     args = parser.parse_args(argv)
-    if args.command in {"index", "evaluate"} and args.technique.startswith("qwen3_"):
-        from dataclasses import replace
-        from .benchmark import ExperimentSpec
-        from .shared.datasets import load_dataset
-        from .techniques.qwen3.runner import run_evaluate as evaluate_qwen3, run_index as index_qwen3
-
-        if args.config is None:
-            parser.error("Qwen3 techniques require --config with an enabled qwen3 block")
-        spec = ExperimentSpec.load(args.config)
-        if spec.qwen3 is None or args.dataset != spec.dataset:
-            parser.error("Qwen3 must be enabled and --dataset must match the experiment YAML")
-        spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
-        bundle = load_dataset(spec.dataset, spec.source)
-        result = (index_qwen3(spec, bundle) if args.command == "index" else
-                  evaluate_qwen3(spec, bundle, args.output, variants=(args.technique,)))
-    elif args.command in {"index", "evaluate"} and args.technique.startswith("bge_m3_"):
-        from dataclasses import replace
-        from .benchmark import ExperimentSpec
-        from .shared.datasets import load_dataset
-        from .techniques.bge_m3.runner import run_evaluate as evaluate_bge_m3, run_index as index_bge_m3
-
-        if args.config is None:
-            parser.error("BGE-M3 techniques require --config with an enabled bge_m3 block")
-        spec = ExperimentSpec.load(args.config)
-        if spec.bge_m3 is None or args.dataset != spec.dataset:
-            parser.error("BGE-M3 must be enabled and --dataset must match the experiment YAML")
-        spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
-        bundle = load_dataset(spec.dataset, spec.source)
-        result = (index_bge_m3(spec, bundle) if args.command == "index" else
-                  evaluate_bge_m3(spec, bundle, args.output, variants=(args.technique,)))
-    elif args.command in {"index", "evaluate"} and args.technique.startswith("self_rag_"):
-        from dataclasses import replace
-        from .benchmark import ExperimentSpec
-        from .shared.datasets import load_dataset
-        from .techniques.self_rag.runner import run_evaluate as evaluate_self_rag, run_index as index_self_rag
-
-        if args.config is None:
-            parser.error("Self-RAG techniques require --config with an enabled self_rag block")
-        spec = ExperimentSpec.load(args.config, "self_rag")
-        if args.dataset != spec.dataset:
-            parser.error("--dataset must match the experiment YAML")
-        spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
-        bundle = load_dataset(spec.dataset, spec.source)
-        result = (index_self_rag(spec, bundle) if args.command == "index" else
-                  evaluate_self_rag(spec, bundle, args.output, variants=(args.technique,)))
-    elif args.command == "index":
-        result = run_index(args.technique, args.dataset, args.source, args.index_root or Path("artifacts/indexes"))
-    elif args.command == "evaluate":
-        result = run_evaluate(args.technique, args.dataset, args.index_root or Path("artifacts/indexes"), args.output, args.source)
+    if args.command in {"index", "evaluate"}:
+        result = _single_run(args, parser)
     elif args.command == "compare":
         result = run_compare(args.its_run, args.uniqa_run, args.output)
     elif args.command == "compare-techniques":
         result = run_compare_techniques(args.baseline_run, args.candidate_run, args.output)
+    elif args.command == "doctor":
+        from .benchmark import ExperimentSpec
+        from .techniques.retro.runner import doctor
+        result = doctor(ExperimentSpec.load(args.config, "retro,piperag"))
     else:
         from .benchmark import run_benchmark
-
-        if args.detach:
-            result = _launch_detached_benchmark(args.config, args.stage, args.output, args.techniques)
-        else:
-            result = run_benchmark(args.config, args.stage, args.output, args.techniques)
+        result = (_launch_detached_benchmark(args.config, args.stage, args.output, args.techniques)
+                  if args.detach else run_benchmark(args.config, args.stage, args.output, args.techniques))
     json.dump(result, sys.stdout, ensure_ascii=False, indent=2)
     sys.stdout.write("\n")

@@ -4,18 +4,20 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dillema-rag-benchmark"
-version = "0.1.0"
-description = "Controlled DiLLeMa, Rankify, Qwen3, BGE-M3 and Self-RAG benchmark for ITS and UniQA"
+version = "0.3.0"
+description = "Controlled DiLLeMa, RETRO and PipeRAG benchmark for ITS and UniQA"
 readme = "README.md"
-license = {file = "LICENSE"}
-requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10,<3.13"
 dependencies = [
   "langchain-text-splitters>=0.3.7,<1",
-  "numpy>=1.26,<3",
+  "numpy>=1.26,<2",
   "qdrant-client>=1.15,<2",
   "PyYAML>=6,<7",
   "sacrebleu>=2.5,<3",
   "sentence-transformers>=3.4,<4",
+  "grpcio>=1.62,<2",
 ]
 
 [project.optional-dependencies]
@@ -23,8 +25,20 @@ dev = ["pytest>=8,<9"]
 api = ["openai>=1.40,<3"]
 hf = ["torch>=2.1,<3", "transformers>=4.51,<5", "accelerate>=0.29,<2"]
 quantized = ["bitsandbytes>=0.43,<1"]
-bge-m3 = ["FlagEmbedding>=1.3,<2"]
-self-rag = ["sentencepiece>=0.2,<1", "protobuf>=4,<8"]
+paper = ["matplotlib>=3.8,<4"]
+retrieval = [
+  "faiss-cpu==1.7.4",
+  "torch==2.2.2",
+  "transformers>=4.41,<5",
+]
+inference = [
+  "einops==0.7.0",
+  "onnx==1.15.0",
+  "onnxruntime-gpu==1.18.1",
+  "sentencepiece>=0.1.99,<0.3",
+  "torch==2.2.2",
+  "transformers>=4.41,<5",
+]
 
 [project.scripts]
 rag-benchmark = "rag_benchmark.cli:main"
@@ -34,7 +48,9 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-exclude = ["rag_benchmark.techniques.rankify.worker*"]
+
+[tool.setuptools.package-data]
+"rag_benchmark._vendor.piperag" = ["LICENSE", "README.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

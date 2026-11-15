@@ -1,821 +1,112 @@
-# DiLLeMa RAG Benchmark
+# DiLLeMa, RETRO, and PipeRAG Benchmark
 
-Benchmark terkontrol untuk membandingkan full conventional RAG DiLLeMa dengan
-tujuh pipeline Rankify, dua varian Qwen3, lima varian BGE-M3, dan dua varian
-Self-RAG pada corpus ITS dan UniQA. Preset opt-in RankZephyr menambahkan
-dua varian untuk mengukur efek reranking listwise. Indexing membangun retrieval
-index tanpa fine-tuning model.
+Benchmark reproduktif untuk membandingkan tiga teknik pada ITS dan UniQA:
 
-Pipeline DiLLeMa:
+- `dillema`: pipeline RAG dokumen yang sudah ada.
+- `retro`: checkpoint RETRO dengan retrieval fresh/sinkron setiap 64 token.
+- `piperag`: checkpoint RETRO yang sama dengan retrieval stale/asinkron dan
+  pemilihan `nprobe` dinamis berdasarkan profil hardware.
+
+RETRO dan PipeRAG adalah pasangan terkontrol. Perbandingan DiLLeMa dengan
+RETRO/PipeRAG tetap berguna, tetapi ditandai sebagai perbandingan lintas model.
+
+## Arsitektur
 
 ```text
-structured chunking → E5 dense + sparse Qdrant RRF
-→ BGE reranking → relative filtering → parent packing → generation
+benchmark host
+  ├─ DiLLeMa (lokal/API)
+  ├─ retrieval:50051 (CPU, MiniLM + FAISS IndexIVFFlat)
+  └─ inference:50052 (satu GPU, RETRO encoder/decoder ONNX)
 ```
 
-Matriks Rankify mencakup BM25, BGE, hybrid RRF, BGE reranking, Basic RAG,
-Chain-of-Thought RAG, dan In-Context RALM. RRAG/R²AG tidak lagi menjadi bagian
-kode atau CLI. Artifact RRAG lama tidak dibaca dan dapat dihapus manual bila
-sudah tidak diperlukan.
+Runtime tidak mengimpor `reference/`. Model inference minimum dari PipeRAG
+commit `b6eb158` di-vendor di `src/rag_benchmark/_vendor/piperag/` dengan
+Apache-2.0; lineage RETRO dikunci pada commit `6945cdd`.
 
-Rankify 0.1.4 membatasi kelas In-Context RALM ke model lokal dan tidak menerima
-parameter decoding yang sama. Preset benchmark memakai generator Rankify
-`basic-rag` dengan template native `IN_CONTEXT_RALM`, sehingga backend HF/API
-tetap dapat dibandingkan dengan greedy decoding yang sama; adapter ini direkam
-di diagnostics.
+## Prasyarat
 
-## Struktur implementasi
+- Linux, Docker Compose, NVIDIA driver, dan NVIDIA Container Toolkit.
+- Satu GPU NVIDIA untuk service inference.
+- `uv` untuk CLI benchmark host.
+- Checkpoint RETRO `model.ckpt` dan konfigurasi `retro.json`, disediakan manual.
+- Kredensial/model DiLLeMa melalui backend Hugging Face atau API kompatibel OpenAI.
 
-Implementasi setiap teknik berada di `src/rag_benchmark/techniques/`:
+Checkpoint, model weights, ONNX, index, dan hasil benchmark tidak masuk Git.
+SHA-256 checkpoint/ONNX direkam di manifest.
 
-| Lokasi | Tanggung jawab |
-|---|---|
-| `techniques/dillema/` | E5, sparse Qdrant, hybrid retrieval, reranking, filtering, parent packing, prompt, dan runner DiLLeMa |
-| `techniques/rankify/` | Preset, client subprocess, ekspor corpus, dan pengolahan hasil Rankify |
-| `techniques/rankify/worker/` | Proyek Python terpisah berisi dependency dan implementasi worker Rankify |
-| `techniques/qwen3/` | Qwen3 embedding, dense cosine index, yes/no reranker, prompt, dan staged runner |
-| `techniques/bge_m3/` | Satu indeks dense/learned-sparse/ColBERT, lima scoring variant, prompt, dan staged runner BGE-M3 |
-| `techniques/self_rag/` | Retriever mContriever, generator Self-RAG dengan reflection token, scoring short-form, dan staged runner |
-| `techniques/rank_zephyr/` | Dense retrieval, worker RankLLM 4-bit, dan evaluasi dua varian dari pool yang sama |
-| `shared/` | Records, dataset, chunking semua teknik, evaluasi, metrik, dan runtime LLM |
-| `cli.py` dan `benchmark.py` | Entrypoint command, konfigurasi eksperimen, penjadwalan teknik, dan leaderboard |
-
-Di dalam DiLLeMa, `pipeline.py` mengatur retrieval/filtering, `augmentation.py`
-menyusun parent context, dan `generation.py` membentuk prompt. Runtime pada
-`shared/api_llm.py` dan `shared/local_llm.py` menerima prompt melalui
-`generate_prompt(prompt)`; adapter `DiLLeMaGenerator` menyediakan
-`generate(question, context)`.
-
-Worker tetap dipasang sebagai distribution `dillema-rankify-worker`, dengan
-package `rag_benchmark_rankify` di environment `.venv-rankify`. Proyek worker
-dikecualikan dari package discovery utama dan dibangun secara terpisah.
-Proses utama berkomunikasi dengan worker melalui JSONL tanpa mengimpor library
-Rankify. Import shared tidak bergantung pada implementasi teknik, dan kedua
-teknik tidak saling mengimpor.
-
-Contoh import baru:
-
-```python
-from rag_benchmark.shared.chunking import DocumentChunker
-from rag_benchmark.shared.config import ChunkingConfig
-from rag_benchmark.shared.metrics import summarize
-from rag_benchmark.shared.records import DocumentRecord
-from rag_benchmark.techniques.dillema.config import PipelineConfig
-from rag_benchmark.techniques.dillema.pipeline import RAGPipeline
-from rag_benchmark.techniques.rankify.client import RankifyWorkerClient
-```
-
-Import lama seperti `rag_benchmark.pipeline`, `rag_benchmark.store`, dan
-`rag_benchmark.metrics` sudah dihapus. Format YAML, nama command dan preset,
-fingerprint, serta lokasi indeks/output tetap. Di YAML eksperimen, bagian
-`models` dan `retrieval` mengatur Rankify; konfigurasi DiLLeMa berada pada
-`techniques/dillema/config.py` dan environment yang sudah didokumentasikan.
-
-## Persyaratan Ubuntu
-
-- Ubuntu 22.04 atau lebih baru.
-- `uv` dan `curl` untuk mengelola Python serta dependency project.
-- JDK 21 lengkap (`java` dan `javac`) untuk index BM25 Rankify/Pyserini.
-- NVIDIA driver/CUDA opsional tetapi sangat disarankan.
-- Ruang disk untuk model Hugging Face dan index.
+## Setup
 
 ```bash
-sudo apt update
-sudo apt install -y curl ca-certificates openjdk-21-jdk-headless
-curl -LsSf https://astral.sh/uv/0.12.19/install.sh | sh
-exec "$SHELL" -l
-uv --version
-```
-
-## Setup environment lokal
-
-Environment utama dan Rankify sengaja dipisahkan karena Rankify mengunci versi
-beberapa dependency model.
-
-```bash
-cd /path/to/DiLLeMa-RAG-Benchmark
-bash scripts/setup_ubuntu.sh
-bash scripts/setup_rankify_ubuntu.sh
 cp .env.example .env
-```
-
-Kedua environment dibuat oleh `uv` di `.venv` dan `.venv-rankify`, tetap lokal
-di repository, dan diabaikan Git. Python mengikuti `.python-version`; worker
-dipin pada `rankify==0.1.4`. Setup utama dan worker memakai lockfile yang masuk
-version control agar dependency yang dipasang dapat direproduksi.
-
-Worker memanggil `TransformerRanker` secara langsung agar registry reranker
-Rankify tidak memuat dependency LiT5/RankLLM seperti `fastchat` yang tidak dipakai.
-Retriever BM25 dan BGE juga diimpor langsung agar registry retriever tidak
-memuat `OnlineRetriever` dan dependency web-search yang tidak digunakan.
-Compatibility worker dikunci pada PyArrow 17 dan Chardet 5.x.
-
-Jika `.venv-rankify` sudah dibuat oleh versi setup lama, cukup sinkronkan ulang:
-
-```bash
-sudo apt install -y openjdk-21-jdk-headless
-export JAVA_HOME="$(dirname "$(dirname "$(readlink -f "$(command -v javac)")")")"
-java -version
-javac -version
-
-export UV_PROJECT_ENVIRONMENT="$PWD/.venv-rankify"
-uv sync \
-  --project src/rag_benchmark/techniques/rankify/worker \
-  --python 3.12 \
-  --locked
-
-printf '%s\n' '{"schema_version":1,"operation":"capabilities"}' \
-  | .venv-rankify/bin/python -m rag_benchmark_rankify.worker
-```
-
-Worker mendeteksi JDK dari `javac` dan mengatur `JAVA_HOME` untuk subprocess-nya.
-Probe yang berhasil berakhir dengan `"status": "ok"` dan menampilkan versi
-Python, NumPy, PyArrow, Torch, lokasi Java, serta status CUDA.
-
-## Konfigurasi generator
-
-Salin `.env.example`, lalu pilih satu backend pada YAML eksperimen.
-
-Hugging Face lokal:
-
-Temukan snapshot model yang sudah diunduh. Folder `models--...` adalah root
-cache; `HF_MODEL_NAME` harus menunjuk ke folder di bawah `snapshots/`.
-
-```bash
-MODEL_ROOT="$HOME/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct"
-MODEL_REVISION="$(cat "$MODEL_ROOT/refs/main")"
-MODEL_PATH="$(readlink -f "$MODEL_ROOT/snapshots/$MODEL_REVISION")"
-test -f "$MODEL_PATH/config.json"
-echo "$MODEL_PATH"
-```
-
-```dotenv
-HF_MODEL_NAME=/home/user/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/<commit>
-HF_QUANTIZATION=4bit
-HF_TRUST_REMOTE_CODE=false
-HF_MAX_INPUT_TOKENS=4096
-HF_MAX_NEW_TOKENS=768
-```
-
-```yaml
-generator:
-  backend: huggingface
-  model_env: HF_MODEL_NAME
-  temperature: 0
-  max_tokens: 768
-  max_tokens_env: HF_MAX_NEW_TOKENS
-  quantization: 4bit
-  trust_remote_code: false
-  max_input_tokens: 4096
-  max_input_tokens_env: HF_MAX_INPUT_TOKENS
-```
-
-Preset siap pakai berada di `configs/experiments/rankify-multilingual-local.yaml`
-dan `configs/experiments/rankify-uniqa-local.yaml`. Snapshot absolut membuat
-generator lokal tidak menghubungi Hub, sedangkan dense retriever dan reranker
-tetap dapat memakai cache atau mengunduh modelnya sendiri.
-
-Preflight dan benchmark ITS penuh:
-
-```bash
-set -a
-source .env
-set +a
-test -f "$HF_MODEL_NAME/config.json"
-.venv/bin/python -c 'import os; from transformers import AutoConfig; print(AutoConfig.from_pretrained(os.environ["HF_MODEL_NAME"], local_files_only=True).model_type)'
-.venv/bin/python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual-local.yaml \
-  --stage all \
-  --output artifacts/benchmarks/its-local-qwen
-```
-
-OpenAI-compatible API, termasuk OpenRouter:
-
-```dotenv
-LLM_BASE_URL=https://openrouter.ai/api/v1
-LLM_API_KEY=isi-api-key
-LLM_MODEL=openrouter/free
-LLM_MODEL_SOURCE=openrouter/free
-LLM_MAX_TOKENS=768
-```
-
-```yaml
-generator:
-  backend: openai-compatible
-  model_env: LLM_MODEL
-  base_url_env: LLM_BASE_URL
-  api_key_env: LLM_API_KEY
-  temperature: 0
-  max_tokens: 768
-  max_tokens_env: LLM_MAX_TOKENS
-```
-
-API key hanya dibaca dari environment dan tidak dimasukkan ke manifest atau
-prediction file. Semua model dapat diganti dari YAML/environment:
-
-```yaml
-models:
-  dense_multilingual: BAAI/bge-m3
-  reranker_multilingual: BAAI/bge-reranker-v2-m3
-```
-
-Mengganti model atau konfigurasi menghasilkan fingerprint/index namespace baru.
-
-## GPU dan fallback CPU
-
-```dotenv
-RAG_DEVICE=auto
-EMBED_BATCH_SIZE=32
-RERANK_BATCH_SIZE=16
-```
-
-`auto` memakai CUDA untuk E5, BGE retrieval, dan BGE reranking bila tersedia.
-Jika GPU tidak terdeteksi, evaluasi tetap berjalan di CPU dan menulis warning
-serta `gpu_fallback` pada diagnostics. Tujuh preset Rankify dijalankan berurutan
-agar penggunaan VRAM tetap sesuai untuk GPU sekitar 6 GB.
-
-```bash
-uv run --no-sync python -c 'import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU fallback")'
-```
-
-## Dataset
-
-Edit `configs/experiments/rankify-multilingual.yaml` untuk ITS:
-
-```yaml
-dataset: its
-source: ../../../langchain-chatbot-main/dataset
-```
-
-Untuk UniQA:
-
-```yaml
-dataset: uniqa
-source: ../../../UniQA-main
-```
-
-Path relatif dihitung dari lokasi file YAML. Jumlah QA yang dievaluasi dikontrol
-oleh konfigurasi berikut:
-
-```yaml
-evaluation:
-  split: all  # all atau test
-```
-
-Kedua preset ITS default ke `all`, sehingga seluruh 340 QA unik dari semua file
-`QA Generator*.csv` dan tiga QA CSV top-level dievaluasi. Ubah menjadi `test`
-untuk memakai held-out split 20% yang berisi 69 QA. Kedua preset UniQA tetap
-default ke `test`, yaitu test split native Inggris dan Italia.
-
-Nilai `all` hanya mengubah QA yang dijadwalkan untuk evaluasi; tidak ada model
-training dan index corpus yang sama dapat digunakan kembali. Reference answer
-tidak pernah dikirim ke Rankify worker, retriever, prompt, atau generator.
-
-## Qwen3 Embedding dan Reranker
-
-Keempat YAML eksperimen sekarang mengaktifkan dua varian Qwen3, sehingga satu
-command `benchmark` menghasilkan sepuluh pipeline. Model generator tetap dipilih
-oleh blok `generator`; Qwen3 retrieval tidak mengganti generator Qwen2.5 Anda.
-ITS tetap default `evaluation.split: all`, UniQA tetap native `test`.
-
-```yaml
-retrieval:
-  candidates: 100
-  top_k: 10
-  rrf_k: 60
-
-qwen3:
-  enabled: true
-  embedding_model: Qwen/Qwen3-Embedding-0.6B
-  reranker_model: Qwen/Qwen3-Reranker-4B
-  instruction: Given a question, retrieve relevant passages that answer the question.
-  embedding_dimension: 1024
-  embedding_max_length: 2048
-  reranker_max_length: 2048
-  embedding_batch_size: 8
-  reranker_batch_size: 1
-  torch_dtype: bfloat16
-  reranker_quantization: none
-  attention_implementation: sdpa
-```
-
-`qwen3_embedding` menggunakan top-10 cosine dari top-100 dense candidates.
-`qwen3_embedding_rerank` meranking ulang **pool top-100 yang sama**, lalu mengambil
-top-10 dengan probabilitas relevansi `yes/no`. Kedua varian memakai prompt dan
-context packing yang sama. `retrieval.candidates` juga mengontrol budget kandidat
-DiLLeMa dan Rankify pada benchmark; algoritme hybrid/filtering/parent packing
-DiLLeMa tetap berlaku. Ini perbandingan full pipeline, bukan isolasi seluruh
-perbedaan algoritme antarteknik. Ablation dua varian Qwen3 mengisolasi reranking.
-
-Runner menjalankan retrieval seluruh QA, melepas embedding, menjalankan
-reranking, melepas reranker, lalu baru memuat generator dari runtime bersama.
-Cache kandidat sementara tidak berisi reference answer dan dihapus
-setelah evaluasi. Prediction ditulis per QA dan log menunjukkan progres setiap
-tahap. Jika reranker 4B BF16 mengalami OOM, ubah `reranker_quantization: 4bit`;
-ukuran model, revision, precision, dan quantization dicatat pada artifact.
-CPU fallback memakai float32 tanpa quantization GPU dan dicatat di diagnostics.
-Server generator eksternal seperti vLLM tetap memakai VRAM selama server hidup;
-staged runner hanya mengelola model dalam proses benchmark.
-
-Model ID di YAML otomatis memakai cache/download Hugging Face. Untuk snapshot
-lokal, ganti `embedding_model`/`reranker_model` dengan absolute path berisi
-`config.json`; loader memakai `local_files_only=True`. Opsional, pin
-`embedding_revision` dan `reranker_revision` ke commit Hugging Face. Defaultnya
-`main`; jika resolved embedding revision berubah sejak indexing, evaluator
-meminta rebuild. Untuk error token publik kedaluwarsa, muat environment dengan
-`HF_HUB_DISABLE_IMPLICIT_TOKEN=1` sebagaimana contoh `.env.example`.
-
-Setup memakai `.venv` utama (Transformers >=4.51) dan worker Rankify terisolasi:
-
-```bash
+mkdir -p models artifacts/onnx artifacts/indexes artifacts/huggingface
+cp /path/to/model.ckpt models/model.ckpt
+cp /path/to/retro.json models/retro.json
 bash scripts/setup_ubuntu.sh
-bash scripts/setup_rankify_ubuntu.sh
-set -a
-source .env
-set +a
-
-.venv/bin/python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-uniqa-local.yaml \
-  --stage all \
-  --output artifacts/benchmarks/uniqa-qwen3
+docker compose up --build -d
 ```
 
-Gunakan preset `rankify-multilingual-local.yaml` untuk ITS atau preset tanpa
-`-local` untuk API generator. `--detach` tetap didukung. Perubahan budget kandidat
-40 menjadi 100 mengubah namespace index lama, jadi jalankan `--stage all` sekali;
-setelah itu `--stage evaluate` dapat memakai index yang sama. Index Qwen3 ada di
-`artifacts/indexes/qwen3/<dataset>/<hash>/`; mengganti generator/reranker tidak
-membangun ulang embedding index. `qwen3.enabled: false` mengembalikan matriks
-delapan pipeline; YAML lama tanpa blok ini juga tetap diterima.
-
-Output tambahan:
-
-```text
-qwen3_embedding/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-qwen3_embedding_rerank/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-qwen3-ablation.json
-```
-
-Setiap folder juga berisi `bleu-summary.json` dan `missing-context.jsonl`.
-Evaluator bersama menghitung BLEU raw/content, EM, token F1, Recall@1/5/10,
-MRR@10, nDCG@10, latency, error, dan fallback. Qwen3 menambahkan candidate
-Recall@100 (hit setidaknya satu source relevan, sesuai definisi recall evaluator
-lama); label ITS tetap `weak/category-based`. Laporan ablation memverifikasi hash
-pool kandidat dan memberikan delta per bahasa. Latency Qwen3 merupakan jumlah
-tahap per QA, tidak termasuk waktu load model dan antrean batch; biaya retrieval
-bersama diatribusikan pada kedua varian. Latency run total dapat lebih lama.
-
-Teknik Qwen3 juga tersedia lewat `index` dan `evaluate` dengan
-`--technique qwen3_embedding|qwen3_embedding_rerank --config <experiment.yaml>`.
-Untuk command ini `--dataset` wajib cocok dengan YAML; `index` tetap membutuhkan
-`--source`. `--index-root` dapat meng-override YAML. Evaluasi satu varian tetap
-mengikuti `evaluation.split`. `compare-techniques` menerima prediction Qwen3
-dengan syarat corpus, QA, generator, split, dan decoding sama.
-
-Referensi: [repo Qwen3](https://github.com/QwenLM/Qwen3-Embedding),
-[Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B), dan
-[Reranker-4B](https://huggingface.co/Qwen/Qwen3-Reranker-4B). Hasil retrieval MTEB
-resmi bukan jaminan kenaikan BLEU ITS/UniQA; ukur delta pada corpus Anda sendiri.
-
-## BGE-M3 dense, learned sparse, dan multi-vector
-
-Empat YAML eksperimen juga mengaktifkan BGE-M3. Lima teknik berikut ditulis ke
-folder output terpisah dan muncul sebagai baris leaderboard terpisah:
-
-| Teknik | Skor akhir |
-|---|---|
-| `bge_m3_dense` | dense dot product |
-| `bge_m3_sparse` | learned lexical sparse dot product |
-| `bge_m3_multi_vector` | rata-rata ColBERT MaxSim |
-| `bge_m3_dense_sparse` | weighted dense + sparse |
-| `bge_m3_all` | weighted dense + sparse + multi-vector |
-
-Kelima varian memakai **candidate pool yang identik**: union terurut dari top-N
-dense dan top-N learned-sparse. Satu forward pass BGE-M3 menghasilkan ketiga
-representasi. Satu collection Qdrant per bahasa menyimpan named vector `dense`,
-`learned_sparse`, dan `colbert`; multi-vector tidak memiliki HNSW karena hanya
-dipakai untuk exact late-interaction scoring atas candidate pool. Learned sparse
-tidak diberi modifier IDF tambahan karena bobot lexical sudah dipelajari model.
-
-```yaml
-bge_m3:
-  enabled: true
-  model: BAAI/bge-m3
-  revision: main
-  query_max_length: 512
-  passage_max_length: 2048
-  embedding_batch_size: 4
-  use_fp16: true
-  trust_remote_code: false
-  dense_weight: 0.4
-  sparse_weight: 0.2
-  multi_vector_weight: 0.4
-```
-
-Model ID diselesaikan menjadi snapshot Hugging Face sebelum model dimuat.
-Requested revision, resolved commit, index fingerprint, pipeline fingerprint,
-precision, dimensi vektor, candidate pool hash, component scores, dan fusion
-weights disimpan pada manifest/diagnostics. Perubahan model, revision, chunking,
-atau passage length membangun namespace indeks baru; perubahan fusion weights
-hanya mengubah pipeline fingerprint.
-
-Benchmark penuh memanggil indexer BGE-M3 **sekali**, lalu memakai indeks tersebut
-untuk kelima teknik. Menonaktifkan `bge_m3.enabled` menghapus kelima varian tanpa
-mengubah DiLLeMa, Rankify, atau Qwen3. Dengan semua blok default aktif, matriks
-benchmark berisi 15 pipeline (17 dengan Self-RAG).
-
-Teknik juga dapat dijalankan sendiri:
+Isi `LLM_BASE_URL`, `LLM_API_KEY`, dan `LLM_MODEL` di `.env`, lalu:
 
 ```bash
-uv run --no-sync python -m rag_benchmark index \
-  --technique bge_m3_all \
-  --dataset its \
-  --source dataset/langchain-chatbot-main/dataset \
-  --config configs/experiments/rankify-multilingual.yaml
-
-uv run --no-sync python -m rag_benchmark evaluate \
-  --technique bge_m3_all \
-  --dataset its \
-  --config configs/experiments/rankify-multilingual.yaml \
-  --output artifacts/benchmarks/its-bge-m3-all
+set -a; source .env; set +a
+uv run --no-sync python -m rag_benchmark doctor \
+  --config configs/experiments/its.yaml
 ```
 
-Satu evaluasi penuh menghasilkan:
-
-```text
-bge_m3_dense/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-bge_m3_sparse/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-bge_m3_multi_vector/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-bge_m3_dense_sparse/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-bge_m3_all/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-bge-m3-ablation.json
-```
-
-`bge-m3-ablation.json` memverifikasi kesamaan candidate pool dan melaporkan
-delta setiap varian terhadap `bge_m3_dense`, per bahasa, untuk answer quality,
-retrieval quality, error, latency, dan fallback. Angka paper MLDR, NarrativeQA,
-dan MIRACL dipakai sebagai motivasi eksperimen, bukan threshold keberhasilan
-untuk corpus ITS/UniQA yang berbeda.
-
-Referensi: [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding),
-[BGE-M3](https://huggingface.co/BAAI/bge-m3), dan
-[paper BGE-M3](https://arxiv.org/abs/2402.03216).
-
-## Self-RAG
-
-Implementasi inferensi short-form dari [Self-RAG](https://github.com/AkariAsai/self-rag)
-dengan generator `selfrag/selfrag_llama2_7b` dan retriever
-[mContriever-msmarco](https://github.com/facebookresearch/contriever). Self-RAG
-memakai model yang sudah di-fine-tune dengan reflection token, sehingga **tidak
-memakai blok `generator` bersama**. `model_fingerprint` dan `decoding_config`
-diambil dari blok `self_rag`, jadi `compare-techniques` terhadap teknik lain
-ditolak karena generatornya memang berbeda.
-
-| Teknik | Perilaku |
-|---|---|
-| `self_rag_adaptive` | Probe satu token; retrieval bila `lp[Retrieval] / (lp[Retrieval] + lp[No Retrieval]) > threshold`, persis rumus repo asli (logprob mentah). Jika tidak, jawaban dari prompt `[No Retrieval]` |
-| `self_rag_always` | Selalu membuat satu generasi per passage top-`ndocs` lalu memilih skor tertinggi |
-
-Skor per passage mengikuti repo asli: `w_rel·relevance + w_sup·groundness +
-w_use·utility`, ditambah `exp(rata-rata logprob)` bila `use_seqscore`. Kedua
-varian memakai generasi per passage yang sama dalam satu pass, lalu ditulis ke
-folder terpisah. Probe retrieval hanya membuat satu token karena keputusan
-hanya membaca distribusi token pertama; hasilnya identik dengan generasi
-penuh. Prompt mengikuti format `### Instruction`, dengan instruksi tambahan
-`instruction` (default: jawab dalam bahasa pertanyaan) melalui pola `## Input`
-milik repo asli. Kosongkan `instruction` untuk prompt asli tanpa instruksi.
-
-mContriever memakai mean pooling, dot product, `title text`, serta opsi
-`--lowercase --normalize_text` yang direkomendasikan untuk model multilingual.
-Index berada di `artifacts/indexes/self_rag/<dataset>/<hash>/` dan hanya
-bergantung pada corpus, chunking, serta konfigurasi retriever.
-
-```yaml
-self_rag:
-  enabled: true
-  model: selfrag/selfrag_llama2_7b
-  revision: main
-  quantization: 4bit
-  torch_dtype: float16
-  max_input_tokens: 4096
-  max_new_tokens: 100
-  generation_batch_size: 1
-  instruction: Answer the question in the same language as the question.
-  retriever_model: facebook/mcontriever-msmarco
-  retriever_revision: main
-  query_max_length: 512
-  passage_max_length: 512
-  embedding_batch_size: 32
-  lowercase: true
-  normalize_text: true
-  ndocs: 5
-  threshold: 0.2
-  w_rel: 1.0
-  w_sup: 1.0
-  w_use: 0.5
-  use_groundness: true
-  use_utility: true
-  use_seqscore: true
-```
-
-Kandidat retrieval memakai `retrieval.candidates` (candidate recall dicatat),
-lalu dipotong ke `ndocs`. Model 7B 4-bit memakai sekitar 4–5 GB VRAM; naikkan
-`generation_batch_size` hanya bila VRAM cukup. Tokenizer Llama-2 membutuhkan
-extra `self-rag` (`sentencepiece`, `protobuf`), yang sudah dipasang oleh
-`scripts/setup_ubuntu.sh`. Model ini di-fine-tune dalam bahasa Inggris, jadi
-kualitas jawaban ITS (Indonesia) dan UniQA Italia perlu diukur sendiri.
-
-Self-RAG dapat berjalan sendiri tanpa DiLLeMa, Rankify, maupun `HF_MODEL_NAME`:
-
-```bash
-uv run --no-sync python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-uniqa-local.yaml \
-  --stage all \
-  --techniques self_rag \
-  --output artifacts/benchmarks/uniqa-self-rag
-
-uv run --no-sync python -m rag_benchmark index \
-  --technique self_rag_adaptive \
-  --dataset uniqa \
-  --source dataset/UniQA-main \
-  --config configs/experiments/rankify-uniqa-local.yaml
-
-uv run --no-sync python -m rag_benchmark evaluate \
-  --technique self_rag_adaptive \
-  --dataset uniqa \
-  --config configs/experiments/rankify-uniqa-local.yaml \
-  --output artifacts/benchmarks/uniqa-self-rag-adaptive
-```
-
-`--techniques` menerima subset `dillema,qwen3,bge_m3,self_rag,rankify` untuk
-semua teknik; tanpa opsi ini semua teknik yang aktif di YAML dijalankan.
-Worker Rankify hanya dipanggil bila `rankify` dipilih. `self_rag.enabled: false`
-menghapus kedua varian tanpa mengubah teknik lain.
-
-```text
-self_rag_adaptive/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-self_rag_always/{predictions.jsonl,metrics.json,manifest.json,diagnostics.json}
-self-rag-ablation.json
-```
-
-Diagnostics per QA mencakup logprob dan skor keputusan retrieval,
-`retrieval_used`, skor relevance/groundness/utility/sequence per passage,
-`raw_prediction`, dan latency per tahap. Jawaban akhir dibersihkan dari
-reflection token seperti `postprocess_answer_option_conditioned` di repo asli.
-Bila adaptive tidak melakukan retrieval, status QA menjadi `no_evidence`, namun
-jawabannya tetap dinilai. `self-rag-ablation.json` berisi tingkat retrieval
-adaptive per bahasa dan delta adaptive terhadap always.
-
-Referensi: [Self-RAG](https://arxiv.org/abs/2310.11511),
-[selfrag_llama2_7b](https://huggingface.co/selfrag/selfrag_llama2_7b), dan
-[mcontriever-msmarco](https://huggingface.co/facebook/mcontriever-msmarco).
+`doctor` memeriksa versi protokol, mount checkpoint, CUDA, provider ONNX,
+fingerprint artifact, dan kesehatan kedua service. Export ONNX hanya diulang jika
+hash checkpoint, konfigurasi, atau runtime berubah. Sebelum artifact siap,
+token argmax dan logit PyTorch-versus-ONNX harus lolos toleransi numerik.
 
 ## Menjalankan benchmark
 
 ```bash
-set -a
-source .env
-set +a
-```
-
-Index saja:
-
-```bash
 uv run --no-sync python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual.yaml \
-  --stage index \
-  --output artifacts/benchmarks/its-index
-```
-
-Evaluasi index yang sudah ada:
-
-```bash
-uv run --no-sync python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual.yaml \
-  --stage evaluate \
-  --output artifacts/benchmarks/its-run
-```
-
-Index lalu evaluasi:
-
-```bash
-uv run --no-sync python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual.yaml \
+  --config configs/experiments/its.yaml \
   --stage all \
-  --output artifacts/benchmarks/its-run
-```
-
-Di Ubuntu/Linux, tambahkan `-d` atau `--detach` agar proses tetap berjalan
-setelah terminal ditutup. Environment `.env` tetap harus di-source sebelum
-menjalankan command karena diteruskan ke child process.
-
-```bash
-set -a
-source .env
-set +a
-
-.venv/bin/python -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-uniqa-local.yaml \
-  --stage all \
-  --output artifacts/benchmarks/uniqa-run \
-  --detach
-```
-
-Command langsung mengembalikan PID serta lokasi log. Mode detached membuat
-`benchmark.log` dan `benchmark.pid` di direktori output. Run kedua dengan
-direktori output yang sama ditolak selama PID pertama masih aktif.
-
-```bash
-tail -f artifacts/benchmarks/uniqa-run/benchmark.log
-
-PID="$(cat artifacts/benchmarks/uniqa-run/benchmark.pid)"
-ps -p "$PID" -o pid,ppid,etime,%cpu,%mem,cmd
-kill "$PID"
-```
-
-Mode ini bertahan setelah terminal ditutup, tetapi tidak setelah mesin reboot.
-Output internal worker Rankify masih di-buffer per preset, sehingga log dapat
-diam sementara walaupun CPU/GPU masih bekerja.
-
-CLI DiLLeMa lama tetap tersedia:
-
-```bash
-uv run --no-sync python -m rag_benchmark index \
-  --technique dillema --dataset its \
-  --source ../langchain-chatbot-main/dataset \
-  --index-root artifacts/indexes
-
-uv run --no-sync python -m rag_benchmark evaluate \
-  --technique dillema --dataset its \
-  --index-root artifacts/indexes \
-  --output artifacts/runs/dillema-its
-```
-
-Tidak ada lagi command `train` atau opsi `--checkpoint`.
-
-## Output dan metrik
-
-```text
-artifacts/benchmarks/<run-id>/
-├── benchmark.log        # hanya mode detached
-├── benchmark.pid        # hanya mode detached
-├── manifest.json
-├── leaderboard.json
-├── leaderboard.csv
-├── dillema/
-│   ├── predictions.jsonl
-│   ├── bleu-summary.json
-│   └── metrics.json
-└── <rankify-preset>/
-    ├── predictions.jsonl
-    ├── metrics.json
-    └── worker-diagnostics.json
-```
-
-Evaluator bersama melaporkan BLEU raw/content, Unicode-aware Exact Match dan
-token F1, recall@1/5/10, MRR@10, nDCG@10, status/error, serta mean/p50/p95
-latency. ITS recall diberi label weak/category-based. Error dan abstention tetap
-berada dalam denominator dengan prediction kosong.
-
-Perbandingan dua run hanya diterima bila dataset, split, QA IDs, model/corpus
-fingerprint, dan decoding identik:
-
-```bash
-uv run --no-sync python -m rag_benchmark compare-techniques \
-  --baseline-run artifacts/benchmarks/its-run/dillema/predictions.jsonl \
-  --candidate-run artifacts/benchmarks/its-run/rankify_hybrid_bge_rerank_basic/predictions.jsonl \
-  --output artifacts/benchmarks/its-run/comparison
-```
-
-## RankZephyr dengan RankLLM
-
-RankZephyr tersedia lewat grup `rank_zephyr` pada dua preset baru. Keduanya
-menggunakan dense BGE-M3 untuk mengambil sampai 100 chunk. Varian
-`rank_zephyr_dense` langsung mengambil 10 teratas. Varian `rank_zephyr_rerank`
-mengurutkan pool yang sama dengan checkpoint resmi Castorini dan RankLLM
-(window 20, stride 10, satu pass), lalu mengambil 10 teratas. Keduanya memakai
-prompt jawaban dan generator yang sama. ITS memakai `all` (340 QA) dan UniQA
-memakai `test` (1.573 QA per bahasa).
-
-### Setup dan evaluasi di Ubuntu
-
-Jalankan dari root repo. Skrip kedua membuat `.venv-rank-llm` dan memeriksa CUDA.
-Skrip setup Rankify diperlukan jika menyertakan grup `rankify`.
-
-```bash
-bash scripts/setup_ubuntu.sh
-bash scripts/setup_rank_zephyr_ubuntu.sh
-
-set -a
-source .env
-set +a
-test -f "$HF_MODEL_NAME/config.json"
+  --output artifacts/benchmarks/its
 
 uv run --no-sync python -m rag_benchmark benchmark \
-  --config configs/experiments/rank-zephyr-its-local.yaml \
-  --techniques rank_zephyr --stage all \
-  --output artifacts/benchmarks/rank-zephyr-its
+  --config configs/experiments/uniqa.yaml \
+  --stage all \
+  --output artifacts/benchmarks/uniqa
 ```
 
-Untuk UniQA, gunakan `configs/experiments/rank-zephyr-uniqa-local.yaml` dan
-output terpisah. Tambahkan `dillema,rankify` pada nilai `--techniques` untuk
-perbandingan pipeline. Pakai `--stage evaluate` setelah indeks terbangun.
-Mengganti embedding, revisi embedding, atau corpus membuat namespace indeks baru.
-Mengganti RankZephyr atau generator dapat memakai indeks yang sama.
+`--techniques` hanya menerima `dillema,retro,piperag`. Stage `all` membangun dua
+index (QA dan paper hold-out), mengalibrasi profil, menjalankan QA, perplexity,
+dan sweep latency. Stage `index` dan `evaluate` dapat dipakai terpisah.
 
-`HF_MODEL_NAME` adalah snapshot generator jawaban, misalnya snapshot Qwen
-lokal. Untuk generator API, ganti blok `generator` di YAML dengan blok dari
-`rankify-multilingual.yaml` dan isi `LLM_MODEL`, `LLM_BASE_URL`, serta
-`LLM_API_KEY`. Untuk checkpoint RankZephyr yang sudah ada, isi
-`RANK_ZEPHYR_SNAPSHOT` dengan direktori snapshot Castorini yang lengkap.
-Jika kosong, worker mengunduh safetensors, tokenizer, dan konfigurasi revisi
-yang dipin. Siapkan sekitar 14,5 GB ruang cache untuk checkpoint ini.
+Preset resmi menetapkan greedy decoding dan maksimum 128 token jawaban untuk
+semua teknik. Prompt RETRO/PipeRAG berbentuk `Question: …\nAnswer:`, ditrunkasi
+dan di-left-pad tepat 64 token.
 
-Worker Linux x86-64 memakai CUDA 12.9 dan kuantisasi bitsandbytes 4-bit saat
-loading. Embedding, reranking, dan generation dijalankan berurutan. Endpoint
-vLLM hanya hidup di loopback selama reranking. Jika generator API juga
-berjalan di mesin yang sama, perhitungkan VRAM yang ditempatinya. Jika worker
-gagal saat startup, baseline dense tetap dievaluasi dan setiap QA yang
-memerlukan reranking mendapat status `error`. Periksa
-`rank_zephyr_rerank/worker-diagnostics.json` dan `rank_zephyr_rerank/vllm.log`.
-Jika memakai `--detach`, progres tahap dan QA terlihat di `benchmark.log`.
+## Output
 
-### Smoke test GPU sebelum full run
+Setiap teknik menghasilkan `predictions.jsonl`, `metrics.json`, `config.json`,
+dan `manifest.json`. Root run berisi leaderboard JSON/CSV. Paper evaluation
+menulis `paper/pareto.json`, `paper/pareto.csv`, `paper/pareto.png`, dan profil.
 
-Untuk setiap preset, bangun indeks lengkap dengan command benchmark di atas
-menggunakan `--stage index`. Lalu jalankan evaluasi kecil dengan dua QA
-yang tersedia per bahasa. Ganti `RZ_CONFIG` untuk menguji UniQA.
+Diagnostics per QA mencakup token prompt/generasi, token per detik, jumlah
+retrieval, interval/staleness, fixed/dynamic `nprobe`, serta latency embedding,
+search, wait, encoder, decoder, dan end-to-end.
 
-```bash
-RZ_CONFIG=configs/experiments/rank-zephyr-its-local.yaml \
-  uv run --no-sync python - <<'PY'
-import logging
-import os
-from dataclasses import replace
-from pathlib import Path
+Hold-out paper adalah 10% dokumen per bahasa berdasarkan SHA-256 seed 42,
+minimal satu dokumen, dan tidak pernah masuk index paper. Perplexity memakai
+maksimum 32 window × 1.024 token per bahasa. DiLLeMa tidak diberi perplexity
+karena backend generiknya tidak menjamin logit yang sebanding.
 
-from rag_benchmark.benchmark import ExperimentSpec
-from rag_benchmark.shared.datasets import load_dataset
-from rag_benchmark.shared.metrics import read_predictions
-from rag_benchmark.techniques.rank_zephyr.runner import run_evaluate
-
-logging.basicConfig(level=logging.INFO)
-spec = ExperimentSpec.load(Path(os.environ["RZ_CONFIG"]), "rank_zephyr")
-bundle = load_dataset(spec.dataset, spec.source)
-available = [qa for qa in bundle.questions_for_split(spec.evaluation_split) if qa.available]
-sample = []
-for lang in sorted({qa.language for qa in available}):
-    sample.extend([qa for qa in available if qa.language == lang][:2])
-output = Path(f"artifacts/runs/rz-smoke-{spec.dataset}")
-report = run_evaluate(spec, replace(bundle, questions=sample), output)
-assert report["rank_zephyr_rerank"].get("status") != "failed", report["rank_zephyr_rerank"]
-for variant in ("rank_zephyr_dense", "rank_zephyr_rerank"):
-    rows = read_predictions(output / variant / "predictions.jsonl")
-    assert len(rows) == len(sample)
-    assert all(row["status"] in {"ok", "abstention"} for row in rows)
-assert any(row["diagnostics"]["rerank_windows"] == 9 for row in rows)
-PY
-```
-
-Cek bahwa kedua `predictions.jsonl` berisi dua record per bahasa, tiap QA
-dengan 100 kandidat selesai dalam sembilan window, dan `vllm.log` menunjukkan
-`quantization=bitsandbytes`. Saat log masuk tahap generation, proses vLLM
-harus sudah berhenti dan VRAM-nya terlepas. Hasil smoke test memakai sampel
-dan tidak sebanding dengan full run.
-
-Untuk mengukur efek reranking per bahasa pada full run:
-
-```bash
-run=artifacts/benchmarks/rank-zephyr-its
-uv run --no-sync python -m rag_benchmark compare-techniques \
-  --baseline-run "$run/rank_zephyr_dense/predictions.jsonl" \
-  --candidate-run "$run/rank_zephyr_rerank/predictions.jsonl" \
-  --output "$run/comparison"
-```
-
-Paper RankZephyr melaporkan metrik ranking pada TREC dan BEIR. Benchmark ini
-mengukur ranking dan QA di ITS/UniQA dengan RankZephyr 4-bit. Checkpoint
-utamanya berbahasa Inggris, jadi baca hasil ITS, UniQA Inggris, dan UniQA
-Italia secara terpisah. [Paper RankZephyr](https://arxiv.org/abs/2312.02724),
-[RankLLM](https://github.com/castorini/rank_llm), [checkpoint Castorini](https://huggingface.co/castorini/rank_zephyr_7b_v1_full),
-[vLLM 4-bit](https://docs.vllm.ai/en/v0.19.1/features/quantization/bnb/)
-
-## Test
+## Verifikasi
 
 ```bash
 uv run --no-sync pytest
-uv run --no-sync python -m rag_benchmark --help
+docker compose ps
+docker compose logs retrieval inference
 ```
 
-Test unit tidak mengunduh model atau memerlukan Rankify. Full benchmark pertama
-memerlukan jaringan untuk dependency/model, kemudian dapat memakai cache lokal.
+Host pengembangan tanpa GPU tetap dapat menjalankan unit/contract test. Full
+acceptance, export/parity ONNX, dan angka Pareto harus dijalankan pada mesin GPU;
+angka latency adalah hasil hardware lokal, bukan klaim reproduksi absolut
+konfigurasi dua-host dari paper PipeRAG.
 
-## Referensi
-
-- [Rankify repository](https://github.com/DataScienceUIBK/Rankify)
-- [Rankify Pipeline API](https://rankify.readthedocs.io/en/latest/tutorials/pipeline/)
-- [Rankify custom indexing](https://rankify.readthedocs.io/en/latest/tutorials/retrieval/custom_datasets/)
-- [Rankify transformer reranker](https://rankify.readthedocs.io/en/latest/api/rerankings/transformer_reranker/)
-- [SacreBLEU](https://github.com/mjpost/sacreBLEU)
-- [uv installation](https://docs.astral.sh/uv/getting-started/installation/)
-- [uv locking and syncing](https://docs.astral.sh/uv/concepts/projects/sync/)
+Lihat [RUN.md](RUN.md) untuk checklist operasional dan
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) untuk atribusi.

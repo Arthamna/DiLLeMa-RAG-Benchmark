@@ -11,15 +11,8 @@ class TechniqueSpec:
 
 TECHNIQUES = {
     "dillema": TechniqueSpec("dillema", "rag_benchmark.techniques.dillema.pipeline:RAGPipeline"),
-    "qwen3_embedding": TechniqueSpec("qwen3_embedding", "rag_benchmark.techniques.qwen3.pipeline:Qwen3Pipeline"),
-    "qwen3_embedding_rerank": TechniqueSpec("qwen3_embedding_rerank", "rag_benchmark.techniques.qwen3.pipeline:Qwen3Pipeline"),
-    "bge_m3_dense": TechniqueSpec("bge_m3_dense", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
-    "bge_m3_sparse": TechniqueSpec("bge_m3_sparse", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
-    "bge_m3_multi_vector": TechniqueSpec("bge_m3_multi_vector", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
-    "bge_m3_dense_sparse": TechniqueSpec("bge_m3_dense_sparse", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
-    "bge_m3_all": TechniqueSpec("bge_m3_all", "rag_benchmark.techniques.bge_m3.pipeline:BgeM3Pipeline"),
-    "self_rag_adaptive": TechniqueSpec("self_rag_adaptive", "rag_benchmark.techniques.self_rag.pipeline:SelfRagPipeline"),
-    "self_rag_always": TechniqueSpec("self_rag_always", "rag_benchmark.techniques.self_rag.pipeline:SelfRagPipeline"),
+    "retro": TechniqueSpec("retro", "rag_benchmark.techniques.retro.pipeline:RetroPipeline"),
+    "piperag": TechniqueSpec("piperag", "rag_benchmark.techniques.piperag.pipeline:PipeRagPipeline"),
 }
 
 

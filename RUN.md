@@ -1,79 +1,171 @@
-# Menjalankan benchmark
+# Runbook
 
-Keempat preset kini juga menjalankan `qwen3_embedding` dan
-`qwen3_embedding_rerank` (sepuluh pipeline). Setelah update, jalankan
-`bash scripts/setup_ubuntu.sh` untuk constraint Transformers >=4.51 dan
-`bash scripts/setup_rankify_ubuntu.sh` untuk worker Rankify. Jalankan `--stage all` sekali
-untuk budget baru top-100. Generator tetap mengikuti `.env` dan YAML sebelumnya.
-Detail lifecycle GPU, opsi 4-bit, dan output Qwen3 ada di README bagian Qwen3.
+## 1. Menyiapkan checkpoint RETRO di VPS
 
-Implementasi teknik ada di `src/rag_benchmark/techniques/dillema/` dan
-`src/rag_benchmark/techniques/rankify/`. Komponen bersama ada di
-`src/rag_benchmark/shared/`. Proyek worker beserta `pyproject.toml` dan `uv.lock`
-sekarang ada di `src/rag_benchmark/techniques/rankify/worker/`.
-Setelah menarik refactor ini, jalankan ulang setup Rankify agar instalasi
-editable menunjuk lokasi source baru. Environment tetap `.venv-rankify`;
-command worker dan konfigurasi YAML tetap sama.
+Weights tidak diunduh otomatis oleh repository dan direktori `models/` diabaikan
+Git. RETRO dan PipeRAG harus memakai **file checkpoint yang sama**:
 
+- checkpoint: `models/model.ckpt`
+- konfigurasi: `models/retro.json`
+- sumber resmi: RETRO commit
+  [`6945cdd`](https://github.com/TobiasNorlund/retro/tree/6945cdd53f6472eaad78842c3b9a4a729f677acd)
+- Google Drive file ID: `1R53kuW_6uWDCXamQy2AghgeseaIPsAcB`
+
+Arsip upstream berukuran sekitar 6,90 GB. Siapkan sedikitnya 20 GB ruang kosong
+untuk menampung arsip dan hasil ekstraksi secara bersamaan:
+
+```bash
+df -h .
+mkdir -p models
+```
+
+### Mengunduh checkpoint
+
+Google Drive memakai halaman konfirmasi untuk file besar, sehingga `curl -L`
+langsung dapat menyimpan HTML alih-alih ZIP. Gunakan `gdown`; `uvx` menjalankannya
+tanpa menambah dependency ke project:
+
+```bash
+uvx --from gdown gdown --continue \
+  '1R53kuW_6uWDCXamQy2AghgeseaIPsAcB' \
+  --output models/retro-upstream.zip
+```
+
+Opsi `--continue` memungkinkan command yang sama dijalankan lagi setelah koneksi
+VPS terputus. Jangan lanjut ke ekstraksi sebelum ZIP lolos pemeriksaan:
+
+```bash
+unzip -t models/retro-upstream.zip
+unzip -Z1 models/retro-upstream.zip | grep -E '(^|/)model\.ckpt$'
+```
+
+Ekstrak hanya checkpoint, terlepas dari apakah ZIP menyimpannya di root atau di
+subdirektori:
+
+```bash
+set -euo pipefail
+
+CHECKPOINT_MEMBER="$(
+  unzip -Z1 models/retro-upstream.zip |
+    awk -F/ '$NF == "model.ckpt" && !found { print; found = 1 }'
+)"
+
+if [ -z "$CHECKPOINT_MEMBER" ]; then
+  echo 'model.ckpt tidak ditemukan di dalam ZIP' >&2
+  exit 1
+fi
+
+unzip -p models/retro-upstream.zip "$CHECKPOINT_MEMBER" \
+  > models/model.ckpt.partial
+mv models/model.ckpt.partial models/model.ckpt
+```
+
+Jika `uvx` tidak tersedia, instal `gdown` ke virtual environment sementara:
+
+```bash
+python3 -m venv /tmp/retro-download-venv
+/tmp/retro-download-venv/bin/pip install 'gdown>=5,<6'
+/tmp/retro-download-venv/bin/gdown --continue \
+  '1R53kuW_6uWDCXamQy2AghgeseaIPsAcB' \
+  --output models/retro-upstream.zip
+```
+
+### Mengunduh konfigurasi dengan `curl`
+
+Ambil `retro.json` langsung dari commit RETRO yang dikunci, bukan dari branch
+`main` yang dapat berubah:
+
+```bash
+curl --fail --location --show-error \
+  --retry 5 --retry-all-errors \
+  'https://raw.githubusercontent.com/TobiasNorlund/retro/6945cdd53f6472eaad78842c3b9a4a729f677acd/data/model/retro.json' \
+  --output models/retro.json.partial
+
+printf '%s  %s\n' \
+  '09e396f61b2e04d31d278d853504433a73beebac0bdcb5c7ee1626104cba3269' \
+  'models/retro.json.partial' | sha256sum --check
+
+mv models/retro.json.partial models/retro.json
+python3 -m json.tool models/retro.json >/dev/null
+```
+
+Upstream tidak menerbitkan checksum checkpoint di README-nya. Setelah unduhan
+pertama yang sukses, simpan hash lokal bersama hasil eksperimen agar file yang
+sama dapat diverifikasi pada VPS atau run berikutnya:
+
+```bash
+test -s models/model.ckpt
+test -s models/retro.json
+sha256sum models/model.ckpt models/retro.json | tee models/SHA256SUMS.local
+sha256sum --check models/SHA256SUMS.local
+```
+
+`models/SHA256SUMS.local` juga diabaikan Git karena berada di `models/`. Salin
+hash-nya ke penyimpanan hasil/metadata yang persisten. Manifest benchmark akan
+merekam SHA-256 checkpoint yang benar-benar dipakai.
+
+Setelah hash tersimpan, arsip 6,90 GB boleh dihapus untuk menghemat ruang:
+
+```bash
+rm -- models/retro-upstream.zip
+```
+
+Verifikasi nama, permission, dan mount Compose sebelum membangun service:
+
+```bash
+ls -lh models/model.ckpt models/retro.json
+docker compose config >/dev/null
+```
+
+Jika `RETRO_MODEL_DIR` di `.env` diarahkan ke lokasi lain, kedua file tersebut
+harus ada di direktori itu. Di dalam container inference keduanya tetap terlihat
+sebagai `/models/model.ckpt` dan `/models/retro.json`.
+
+## 2. Setup service dan environment
+
+1. Salin `.env.example` ke `.env`; isi model/kredensial DiLLeMa dan, bila perlu,
+   ubah direktori volume Compose.
+2. Jalankan `bash scripts/setup_ubuntu.sh`.
+3. Jalankan `docker compose up --build -d`.
+4. Jalankan `doctor` untuk preset target.
+5. Jalankan stage `all` dan simpan output ITS/UniQA di direktori berbeda.
+
+```bash
+cp .env.example .env
+mkdir -p artifacts/onnx artifacts/indexes artifacts/huggingface
 bash scripts/setup_ubuntu.sh
-bash scripts/setup_rankify_ubuntu.sh
+docker compose up --build -d
 
-sync :
+set -a; source .env; set +a
 
-REPO_ROOT="$(pwd -P)"
-UV_PROJECT_ENVIRONMENT="$REPO_ROOT/.venv" \
-uv sync \
-  --project "$REPO_ROOT" \
-  --python 3.12 \
-  --extra api \
-  --extra dev \
-  --extra hf \
-  --extra quantized \
-  --extra self-rag
+uv run --no-sync python -m rag_benchmark doctor \
+  --config configs/experiments/its.yaml
 
+uv run --no-sync python -m rag_benchmark benchmark \
+  --config configs/experiments/its.yaml --stage all \
+  --output artifacts/benchmarks/its
 
-"$REPO_ROOT/.venv/bin/python" -c \
-  'import sys, rag_benchmark; print(sys.prefix); print(rag_benchmark.__file__)'
+uv run --no-sync python -m rag_benchmark benchmark \
+  --config configs/experiments/uniqa.yaml --stage all \
+  --output artifacts/benchmarks/uniqa
+```
 
+Untuk hanya pasangan terkontrol:
 
-UV_PROJECT_ENVIRONMENT="$REPO_ROOT/.venv-rankify" \
-uv sync \
-  --project "$REPO_ROOT/src/rag_benchmark/techniques/rankify/worker" \
-  --python 3.12 \
-  --locked
+```bash
+uv run --no-sync python -m rag_benchmark benchmark \
+  --config configs/experiments/its.yaml --stage all \
+  --techniques retro,piperag \
+  --output artifacts/benchmarks/its-retro-piperag
+```
 
-"$REPO_ROOT/.venv-rankify/bin/python" -c \
-  'import sys, importlib.metadata as m, rag_benchmark_rankify, rankify; print(sys.prefix); print(rag_benchmark_rankify.__file__); print(m.version("dillema-rankify-worker")); print(m.version("rankify"))'
+## 3. Acceptance full-run
 
-"$REPO_ROOT/.venv/bin/python" -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual.yaml \
-  --stage all \
-  --output artifacts/benchmarks/its-run
+- `docker compose ps` menunjukkan dua service sehat; hanya inference memakai GPU.
+- Jumlah record prediksi sama dengan jumlah QA terjadwal dan error rate nol.
+- Dua run dengan seed/config sama menghasilkan prediksi identik.
+- RETRO fresh dan PipeRAG tanpa staleness cocok token/NLL dalam toleransi.
+- `paper/pareto.{json,csv,png}` tersedia dan manifest mencatat seluruh hash.
 
-"$REPO_ROOT/.venv/bin/python" -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-uniqa.yaml \
-  --stage all \
-  --output artifacts/benchmarks/uniqa-run
-
-# LOCAL 
-
-"$REPO_ROOT/.venv/bin/python" -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual-local.yaml \
-  --stage all \
-  --output artifacts/benchmarks/its-run
-
-"$REPO_ROOT/.venv/bin/python" -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-multilingual-local.yaml \
-  --stage all \
-  --output artifacts/benchmarks/its-run
-
--- another notes :
-- tokens and input tokens need to be adjustment
-
-# SELF-RAG SAJA
-
-"$REPO_ROOT/.venv/bin/python" -m rag_benchmark benchmark \
-  --config configs/experiments/rankify-uniqa-local.yaml \
-  --stage all \
-  --techniques self_rag \
-  --output artifacts/benchmarks/uniqa-self-rag
+Checkpoint upstream dominan Inggris dan tidak di-fine-tune pada ITS/UniQA;
+kualitas Indonesia/Italia yang rendah harus dicatat sebagai keterbatasan model.

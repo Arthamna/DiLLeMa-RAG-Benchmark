@@ -3,9 +3,12 @@
 /.venv/
 /.venv-rankify/
 /.venv-rank-llm/
+/reference/
+/models/
 /.validation-packages/
 /.pytest_cache/
 /__pycache__/
 *.py[cod]
+*.egg-info/
 .env
 DEBUG.md

@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 from .artifacts import _now
@@ -28,9 +27,7 @@ def _run_identity(records: list[dict]) -> tuple:
     return (
         {row.get("dataset") for row in records},
         {row.get("split") for row in records},
-        {row.get("model_fingerprint") for row in records},
         {row.get("corpus_fingerprint") for row in records},
-        {json.dumps(row.get("decoding_config") or {}, sort_keys=True) for row in records},
         tuple(sorted(str(row.get("id")) for row in records)),
     )
 
@@ -49,7 +46,7 @@ def run_compare_techniques(baseline_run: Path, candidate_run: Path, output: Path
     candidate = read_predictions(candidate_run)
     if _run_identity(baseline) != _run_identity(candidate):
         raise ValueError(
-            "Technique runs must have identical dataset, split, model/corpus fingerprints, decoding, and QA IDs"
+            "Technique runs must have identical dataset, corpus fingerprint, split, and QA IDs"
         )
     baseline_summary = summarize(baseline)
     candidate_summary = summarize(candidate)
@@ -66,10 +63,20 @@ def run_compare_techniques(baseline_run: Path, candidate_run: Path, output: Path
             ),
             "average_latency_ms": candidate_group["average_latency_ms"] - baseline_group["average_latency_ms"],
         }
+    baseline_technique = baseline[0].get("technique") if baseline else None
+    candidate_technique = candidate[0].get("technique") if candidate else None
+    controlled = {baseline_technique, candidate_technique} == {"retro", "piperag"}
     comparison = {
         "created_at": _now(),
-        "baseline_technique": baseline[0].get("technique") if baseline else None,
-        "candidate_technique": candidate[0].get("technique") if candidate else None,
+        "baseline_technique": baseline_technique,
+        "candidate_technique": candidate_technique,
+        "comparability": (
+            "controlled_same_checkpoint" if controlled else "cross_model"
+        ),
+        "warning": (
+            None if controlled else
+            "DiLLeMa-versus-RETRO/PipeRAG is a cross-model comparison; quality deltas are not attributable only to retrieval scheduling."
+        ),
         "baseline": baseline_summary,
         "candidate": candidate_summary,
         "candidate_minus_baseline": deltas,

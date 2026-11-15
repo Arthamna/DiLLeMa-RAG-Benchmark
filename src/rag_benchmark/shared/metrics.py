@@ -140,13 +140,21 @@ def score_group(records: list[dict]) -> dict:
     answer_scores = [_answer_scores(row) for row in records]
     latencies = [float(row.get("latency_ms", 0.0)) for row in records]
     stage_latency = {}
-    for key in ("retrieval_latency_ms", "rerank_latency_ms", "generation_latency_ms"):
+    for key in (
+        "retrieval_latency_ms", "rerank_latency_ms", "generation_latency_ms",
+        "embedding_latency_ms", "search_latency_ms", "wait_latency_ms",
+        "encoder_latency_ms", "decoder_latency_ms",
+    ):
         values = [
             float(row.get("diagnostics", {}).get(key)) for row in records
             if row.get("diagnostics", {}).get(key) is not None
         ]
         stage_latency[key.removesuffix("_latency_ms")] = _latency(values)
     statuses = Counter(str(row.get("status", "")) for row in records)
+    throughputs = [
+        float(row.get("diagnostics", {}).get("tokens_per_second")) for row in records
+        if row.get("diagnostics", {}).get("tokens_per_second") is not None
+    ]
     return {
         "count": len(records),
         "status_counts": dict(sorted(statuses.items())),
@@ -161,6 +169,7 @@ def score_group(records: list[dict]) -> dict:
         "cpu_fallback_count": sum(
             1 for row in records if row.get("diagnostics", {}).get("gpu_fallback")
         ),
+        "tokens_per_second": _latency(throughputs),
     }
 
 
@@ -203,4 +212,3 @@ def write_jsonl(path: str | Path, rows: Iterable[dict]) -> None:
     with Path(path).open("w", encoding="utf-8", newline="\n") as handle:
         for row in rows:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
-

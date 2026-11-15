@@ -1,0 +1,55 @@
+dataset: its
+source: ../../dataset/langchain-chatbot-main
+index_root: ../../artifacts/indexes
+techniques: [dillema, retro, piperag]
+
+evaluation:
+  split: test
+retrieval:
+  candidates: 40
+generator:
+  backend: openai-compatible
+  model_env: LLM_MODEL
+  base_url_env: LLM_BASE_URL
+  api_key_env: LLM_API_KEY
+  temperature: 0
+  max_tokens: 128
+
+services:
+  retrieval_endpoint: 127.0.0.1:50051
+  inference_endpoint: 127.0.0.1:50052
+  retrieval_index_root: /data/indexes
+  timeout_seconds: 120
+  protocol_version: 1
+  max_message_mb: 64
+retro:
+  checkpoint: /models/model.ckpt
+  model_config: /models/retro.json
+  onnx_encoder: /onnx/retro_encoder.onnx
+  onnx_decoder: /onnx/retro_decoder.onnx
+  tokenizer: t5-base
+  retriever_model: sentence-transformers/all-MiniLM-L6-v2
+  chunk_size: 64
+  num_neighbours: 2
+  continuation_chunks: 1
+  retrieval_interval: 64
+  nprobe: 16
+  max_new_tokens: 128
+piperag:
+  retrieval_interval: 64
+  stale_steps: 64
+  dynamic_nprobe: true
+  search_latency_budget_discount: 1.0
+  extra_overhead_ms: 10.0
+  min_nprobe: 1
+  max_nprobe: 64
+paper_evaluation:
+  enabled: true
+  holdout_fraction: 0.10
+  seed: 42
+  max_windows_per_language: 32
+  window_tokens: 1024
+  latency_warmups: 1
+  latency_repetitions: 5
+  intervals: [8, 16, 32, 64]
+  nprobes: [1, 2, 4, 8, 16, 32, 64]
