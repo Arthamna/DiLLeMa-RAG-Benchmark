@@ -159,6 +159,36 @@ uv run --no-sync python -m rag_benchmark benchmark \
   --output artifacts/benchmarks/its-retro-piperag
 ```
 
+### Menjalankan benchmark secara detach
+
+Load `.env` ke environment shell terlebih dahulu karena proses background mewarisi
+environment saat command dijalankan. Setelah itu tambahkan `--detach` (atau `-d`):
+
+```bash
+set -a; source .env; set +a
+
+uv run --no-sync python -m rag_benchmark benchmark \
+  --config configs/experiments/its.yaml --stage all \
+  --output artifacts/benchmarks/its --detach
+```
+
+Command langsung kembali dengan PID serta path log. Pantau proses dan output dengan:
+
+```bash
+cat artifacts/benchmarks/its/benchmark.pid
+ps -fp "$(cat artifacts/benchmarks/its/benchmark.pid)"
+tail -f artifacts/benchmarks/its/benchmark.log
+```
+
+Untuk menghentikan run secara normal, kirim `SIGTERM` ke PID yang tercatat:
+
+```bash
+kill -TERM "$(cat artifacts/benchmarks/its/benchmark.pid)"
+```
+
+Satu direktori output hanya boleh memiliki satu proses detach aktif. Gunakan direktori
+output lain untuk run paralel; PID yang sudah tidak aktif akan digantikan pada run baru.
+
 ## 3. Acceptance full-run
 
 - `docker compose ps` menunjukkan dua service sehat; hanya inference memakai GPU.

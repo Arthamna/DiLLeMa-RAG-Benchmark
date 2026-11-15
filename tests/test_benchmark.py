@@ -9,6 +9,7 @@ import pytest
 
 from rag_benchmark.benchmark import ExperimentSpec, parse_techniques
 from rag_benchmark.cli import _launch_detached_benchmark, build_parser
+from rag_benchmark.shared.datasets import load_dataset
 from rag_benchmark.techniques import TECHNIQUES, get_technique
 
 
@@ -55,6 +56,17 @@ def test_registry_and_cli_contain_exactly_three_techniques():
     assert parser.parse_args(["doctor", "--config", "x.yaml"]).command == "doctor"
 
 
+def test_benchmark_parser_accepts_detach_aliases():
+    parser = build_parser()
+    arguments = [
+        "benchmark", "--config", "experiment.yaml", "--stage", "all",
+        "--output", "artifacts/benchmarks/run",
+    ]
+    assert parser.parse_args(arguments).detach is False
+    assert parser.parse_args([*arguments, "-d"]).detach is True
+    assert parser.parse_args([*arguments, "--detach"]).detach is True
+
+
 def test_technique_parser_is_ordered_and_rejects_legacy_names():
     assert parse_techniques("piperag,dillema") == ("dillema", "piperag")
     with pytest.raises(ValueError, match="dillema, retro, piperag"):
@@ -77,6 +89,17 @@ def test_official_yaml_files_parse_for_remote_pair():
         spec = ExperimentSpec.load(root / "configs" / "experiments" / f"{dataset}.yaml", "retro,piperag")
         assert spec.dataset == dataset
         assert spec.techniques == ("retro", "piperag")
+
+
+def test_official_its_yaml_points_to_parseable_corpus_root():
+    root = Path(__file__).resolve().parents[1]
+    spec = ExperimentSpec.load(root / "configs" / "experiments" / "its.yaml", "retro,piperag")
+
+    bundle = load_dataset(spec.dataset, spec.source)
+
+    assert spec.source.name == "dataset"
+    assert bundle.documents
+    assert bundle.questions
 
 
 def test_official_yaml_files_default_to_openai_generator(monkeypatch):
@@ -145,3 +168,19 @@ def test_detached_benchmark_launches_same_cli_and_tracks_pid(tmp_path, monkeypat
     assert observed["kwargs"]["stdin"] == subprocess.DEVNULL
     assert observed["kwargs"]["start_new_session"] is True
     assert (output / "benchmark.pid").read_text() == "4321\n"
+
+
+def test_detached_benchmark_rejects_live_pid(tmp_path, monkeypatch):
+    config = _config(tmp_path)
+    output = tmp_path / "run"
+    output.mkdir()
+    (output / "benchmark.pid").write_text("123\n", encoding="utf-8")
+    monkeypatch.setattr("rag_benchmark.cli.platform.system", lambda: "Linux")
+    monkeypatch.setattr("rag_benchmark.cli._pid_is_running", lambda pid: pid == 123)
+    monkeypatch.setattr(
+        "rag_benchmark.cli.subprocess.Popen",
+        lambda *args, **kwargs: pytest.fail("Popen must not run while the recorded PID is alive"),
+    )
+
+    with pytest.raises(RuntimeError, match="already running with PID 123"):
+        _launch_detached_benchmark(config, "all", output, "retro,piperag")

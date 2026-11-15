@@ -1,5 +1,5 @@
 dataset: its
-source: ../../dataset/langchain-chatbot-main
+source: ../../dataset/langchain-chatbot-main/dataset
 index_root: ../../artifacts/indexes
 techniques: [dillema, retro, piperag]
 
