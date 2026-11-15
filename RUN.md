@@ -189,6 +189,23 @@ kill -TERM "$(cat artifacts/benchmarks/its/benchmark.pid)"
 Satu direktori output hanya boleh memiliki satu proses detach aktif. Gunakan direktori
 output lain untuk run paralel; PID yang sudah tidak aktif akan digantikan pada run baru.
 
+### Memulihkan permission index dari versi lama
+
+Jika index pernah dibuat oleh container sebelum host menyiapkan direktori manifest,
+direktori `artifacts/indexes/retro` dapat dimiliki `root` dan menghasilkan
+`PermissionError` saat menulis `index-manifest.json`. Pulihkan ownership—jangan gunakan
+`chmod 777`:
+
+```bash
+sudo chown -R "$(id -u):$(id -g)" artifacts/indexes/retro
+chmod -R u+rwX artifacts/indexes/retro
+```
+
+Index FAISS yang sudah selesai tidak perlu dihapus. Jalankan kembali command benchmark;
+service retrieval akan memakai cache index di disk lalu host menulis manifest yang tadi
+gagal. Versi runner saat ini membuat direktori manifest sebagai user host sebelum build
+index dimulai, sehingga ownership conflict ini tidak terulang pada direktori baru.
+
 ## 3. Acceptance full-run
 
 - `docker compose ps` menunjukkan dua service sehat; hanya inference memakai GPU.

@@ -3,6 +3,7 @@ from __future__ import annotations
 import threading
 import time
 from pathlib import Path
+from types import SimpleNamespace
 
 import numpy as np
 import pytest
@@ -20,6 +21,7 @@ from rag_benchmark.techniques.retro.onnx_runtime import parity_report, uses_stal
 from rag_benchmark.techniques.retro.prompt import build_qa_prompt_ids, extract_answer
 from rag_benchmark.techniques.retro.retrieval_service import RetrievalService
 from rag_benchmark.techniques.retro.grpc_service import create_json_server
+from rag_benchmark.techniques.retro.runner import run_index
 
 
 class Tokenizer:
@@ -63,6 +65,34 @@ def test_holdout_is_deterministic_per_language_and_never_leaks():
     assert [item.id for item in holdout_a] == [item.id for item in holdout_b]
     assert {item.id for item in train_a}.isdisjoint(item.id for item in holdout_a)
     assert {item.language for item in holdout_a} == {"en", "it"}
+
+
+def test_run_index_creates_host_manifest_directory_before_service_build(tmp_path):
+    index_root = tmp_path / "indexes"
+    spec = SimpleNamespace(
+        dataset="its",
+        index_root=index_root,
+        services=SimpleNamespace(retrieval_index_root="/data/indexes"),
+        retro=SimpleNamespace(
+            tokenizer="t5-base",
+            retriever_model="sentence-transformers/all-MiniLM-L6-v2",
+            chunk_size=64,
+            fingerprint=lambda: "retro-fingerprint",
+        ),
+        paper=SimpleNamespace(enabled=False, holdout_fraction=.10, seed=42),
+    )
+    bundle = SimpleNamespace(documents=[_document("id-1", "id")])
+
+    class Client:
+        @staticmethod
+        def build_index(request):
+            assert (index_root / "retro" / "its").is_dir()
+            return {"index": {"chunks": len(request["documents"])}}
+
+    manifest = run_index(spec, bundle, Client())
+
+    assert manifest["collections"]["its"]["chunks"] == 1
+    assert (index_root / "retro" / "its" / "index-manifest.json").is_file()
 
 
 def test_chunk_records_keep_source_and_continuation_boundaries():

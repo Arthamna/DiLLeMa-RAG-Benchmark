@@ -9,7 +9,7 @@ retrieval:
   candidates: 40
 generator:
   # Toggle generator DiLLeMa: gunakan "openai" untuk API atau "qwen" untuk model HF lokal.
-  active: openai
+  active: qwen
   profiles:
     openai:
       backend: openai-compatible

@@ -36,6 +36,10 @@ def _index_id(spec, track: str, language: str, corpus_fingerprint: str) -> str:
 
 
 def run_index(spec, bundle, client: RetrievalServiceClient | None = None) -> dict[str, Any]:
+    # Create the shared mount parent as the host user before the Docker retrieval
+    # service writes its hashed index directories beneath it.
+    path = _manifest_path(spec)
+    path.parent.mkdir(parents=True, exist_ok=True)
     owns_client = client is None
     client = client or RetrievalServiceClient(spec.services)
     corpus_fingerprint = _corpus_fingerprint(bundle.documents)
@@ -96,8 +100,6 @@ def run_index(spec, bundle, client: RetrievalServiceClient | None = None) -> dic
             "holdout_documents": len(paper_holdout),
         },
     }
-    path = _manifest_path(spec)
-    path.parent.mkdir(parents=True, exist_ok=True)
     write_json(path, manifest)
     return manifest
 

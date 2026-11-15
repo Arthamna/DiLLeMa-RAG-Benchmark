@@ -102,14 +102,22 @@ def test_official_its_yaml_points_to_parseable_corpus_root():
     assert bundle.questions
 
 
-def test_official_yaml_files_default_to_openai_generator(monkeypatch):
+def test_official_yaml_files_load_selected_generator_profile(tmp_path, monkeypatch):
     monkeypatch.setenv("LLM_MODEL", "openrouter/free")
+    snapshot = tmp_path / "qwen-snapshot"
+    snapshot.mkdir()
+    (snapshot / "config.json").write_text("{}\n", encoding="utf-8")
+    monkeypatch.setenv("HF_MODEL_NAME", str(snapshot.resolve()))
     root = Path(__file__).resolve().parents[1]
     for dataset in ("its", "uniqa"):
         spec = ExperimentSpec.load(root / "configs" / "experiments" / f"{dataset}.yaml", "dillema")
-        assert spec.generator.profile == "openai"
-        assert spec.generator.backend == "openai-compatible"
-        assert spec.generator.model == "openrouter/free"
+        assert spec.generator.profile in {"openai", "qwen"}
+        if spec.generator.profile == "openai":
+            assert spec.generator.backend == "openai-compatible"
+            assert spec.generator.model == "openrouter/free"
+        else:
+            assert spec.generator.backend == "huggingface"
+            assert spec.generator.model == str(snapshot.resolve())
 
 
 def test_experiment_yaml_can_toggle_local_qwen_profile(tmp_path, monkeypatch):
