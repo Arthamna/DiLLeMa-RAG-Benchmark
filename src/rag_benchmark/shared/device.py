@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import gc
 import logging
 import os
 
 LOGGER = logging.getLogger(__name__)
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 
 
 class CUDAStageError(RuntimeError):
@@ -31,6 +33,21 @@ def cuda_available() -> bool:
     except ImportError:
         return False
     return bool(torch.cuda.is_available())
+
+
+def release_cuda_memory(stage: str = "") -> None:
+    """Collect Python objects and return unused PyTorch CUDA blocks to the driver."""
+
+    gc.collect()
+    try:
+        import torch
+
+        if torch.cuda.is_available():
+            torch.cuda.synchronize()
+            torch.cuda.empty_cache()
+            LOGGER.info("CUDA cache released%s.", f" after {stage}" if stage else "")
+    except (ImportError, RuntimeError) as exc:
+        LOGGER.warning("Could not fully release CUDA cache%s: %s", f" after {stage}" if stage else "", exc)
 
 
 def synchronize_cuda(device: object, stage: str) -> None:

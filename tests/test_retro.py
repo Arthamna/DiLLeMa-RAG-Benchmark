@@ -18,6 +18,7 @@ from rag_benchmark.techniques.retro.client import InferenceServiceClient, JsonGr
 from rag_benchmark.techniques.retro.config import PaperEvaluationConfig, RetroConfig, ServiceConfig
 from rag_benchmark.techniques.retro.indexing import choose_nlist, clamp_nprobe, deterministic_holdout
 from rag_benchmark.techniques.retro.onnx_runtime import (
+    OnnxRetroRuntime,
     clone_past_key_values,
     parity_report,
     service_retrieval_endpoint,
@@ -69,6 +70,55 @@ def test_parity_check_isolates_mutable_past_key_values():
     isolated[0] = np.zeros((1, 3), dtype=np.float32)
     assert original[0].shape == (1, 2)
     assert original[0][0, 0] == 1
+
+
+def test_repeated_configure_reuses_loaded_model_and_onnx_sessions(tmp_path, monkeypatch):
+    checkpoint = tmp_path / "model.ckpt"
+    model_config = tmp_path / "retro.json"
+    checkpoint.write_bytes(b"checkpoint")
+    model_config.write_text("{}", encoding="utf-8")
+    runtime = OnnxRetroRuntime()
+    calls = {"model": 0, "onnx": 0}
+
+    monkeypatch.setenv("RETRO_REQUIRE_CUDA", "0")
+    monkeypatch.setattr(runtime, "environment", lambda: {"cuda": False, "onnx_providers": ["CPUExecutionProvider"]})
+    monkeypatch.setattr(
+        "rag_benchmark.techniques.retro.onnx_runtime._model_fingerprint", lambda *_: "same-model",
+    )
+
+    def load_model(*_):
+        calls["model"] += 1
+        runtime.model = object()
+
+    def load_onnx(*_):
+        calls["onnx"] += 1
+        runtime.encoder_session = object()
+        runtime.decoder_session = object()
+
+    class RetrievalClient:
+        def __init__(self, _config):
+            pass
+
+        def close(self):
+            pass
+
+    monkeypatch.setattr(runtime, "_load_torch_model", load_model)
+    monkeypatch.setattr(runtime, "_ensure_onnx", lambda *_: {"cache": "used"})
+    monkeypatch.setattr(runtime, "_load_onnx", load_onnx)
+    monkeypatch.setattr("rag_benchmark.techniques.retro.onnx_runtime.RetrievalServiceClient", RetrievalClient)
+    request = {
+        "checkpoint": str(checkpoint), "model_config": str(model_config),
+        "onnx_encoder": str(tmp_path / "encoder.onnx"),
+        "onnx_decoder": str(tmp_path / "decoder.onnx"),
+        "retrieval_endpoint": "retrieval:50051", "tokenizer": "t5-base", "retro": {},
+    }
+
+    first = runtime.configure(request)
+    second = runtime.configure(request)
+
+    assert first["model_reused"] is False
+    assert second["model_reused"] is True
+    assert calls == {"model": 1, "onnx": 1}
 
 
 @pytest.mark.parametrize("chunks,expected", [(1, 1), (3, 1), (16, 4), (100, 8), (2_000_000, 1024)])

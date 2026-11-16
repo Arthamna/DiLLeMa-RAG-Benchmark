@@ -221,6 +221,32 @@ uv run --no-sync python -m rag_benchmark benchmark \
   --output artifacts/benchmarks/its-retro-piperag
 ```
 
+### Batas memori GPU 16 GB
+
+Run resmi memakai fase GPU yang tidak saling tumpang tindih:
+
+1. service inference RETRO/PipeRAG di-unload;
+2. DiLLeMa menyelesaikan retrieval dan reranking;
+3. embedder/reranker dilepas dan cache CUDA dikosongkan;
+4. generator lokal dimuat dan menyelesaikan generasi;
+5. generator dilepas, kemudian RETRO/PipeRAG memakai checkpoint bersama;
+6. service inference di-unload lagi setelah evaluasi.
+
+Default konservatif untuk RTX 5080 16 GB adalah `EMBED_BATCH_SIZE=8`,
+`RERANK_BATCH_SIZE=4`, dan
+`PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`. Ubah di `.env`, lalu pastikan
+variabel diekspor sebelum proses detach dibuat:
+
+```bash
+set -a; source .env; set +a
+```
+
+Satu lock `artifacts/.benchmark-gpu.lock` mencegah dua benchmark dari direktori
+output berbeda memakai GPU secara bersamaan. Lock dilepas otomatis ketika proses
+selesai atau mati. Ini tidak dapat menghentikan proses lama yang dijalankan
+sebelum mekanisme lock tersedia; identifikasi proses tersebut dengan
+`nvidia-smi` dan `ps -fp <PID>` sebelum menghentikannya.
+
 ### Menjalankan benchmark secara detach
 
 Load `.env` ke environment shell terlebih dahulu karena proses background mewarisi

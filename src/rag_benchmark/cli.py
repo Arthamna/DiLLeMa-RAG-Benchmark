@@ -126,10 +126,9 @@ def _single_run(args, parser):
             return index_dillema("dillema", spec.dataset, spec.source, _dillema_index_root(spec))
         return index_retro(spec, bundle)
     if args.technique == "dillema":
-        runtime = spec.generator.runtime()
         return evaluate_dillema(
             "dillema", spec.dataset, _dillema_index_root(spec), args.output, spec.source,
-            runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
+            runtime_factory=spec.generator.runtime, model_fingerprint=spec.generator.fingerprint(),
             decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
         )
     return evaluate_retro(spec, bundle, args.output, (args.technique,))

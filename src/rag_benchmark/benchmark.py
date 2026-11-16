@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import csv
-import gc
+import fcntl
 import hashlib
 import json
+import logging
+import os
 from dataclasses import asdict, dataclass, replace
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Any
 
@@ -13,6 +16,7 @@ import yaml
 from .shared.artifacts import _corpus_fingerprint, _now
 from .shared.config import GenerationSpec
 from .shared.datasets import load_dataset
+from .shared.device import release_cuda_memory
 from .shared.metrics import read_predictions, summarize, write_json
 from .techniques.dillema.config import PipelineConfig
 from .techniques.dillema.runner import run_evaluate as evaluate_dillema
@@ -22,8 +26,10 @@ from .techniques.retro.config import PaperEvaluationConfig, RetroConfig, Service
 from .techniques.retro.runner import run_evaluate as evaluate_retro
 from .techniques.retro.runner import run_index as index_retro
 from .techniques.retro.runner import run_paper_evaluation
+from .techniques.retro.client import InferenceServiceClient
 
 TECHNIQUE_GROUPS = ("dillema", "retro", "piperag")
+LOGGER = logging.getLogger(__name__)
 
 
 def parse_techniques(value) -> tuple[str, ...] | None:
@@ -143,14 +149,43 @@ def _dillema_index_root(spec: ExperimentSpec) -> Path:
     return spec.index_root / "dillema" / spec.index_fingerprint()[:16]
 
 
-def _release_gpu() -> None:
-    gc.collect()
+@contextmanager
+def _gpu_lease(root: Path, output: Path):
+    """Prevent concurrent benchmark processes from oversubscribing one GPU."""
+
+    root.mkdir(parents=True, exist_ok=True)
+    path = root / ".benchmark-gpu.lock"
+    handle = path.open("a+", encoding="utf-8")
     try:
-        import torch
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
-    except ImportError:
-        pass
+        try:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            handle.seek(0)
+            owner = handle.read().strip() or "unknown process"
+            raise RuntimeError(f"GPU benchmark is already active ({owner}); wait for it or stop that process") from exc
+        handle.seek(0)
+        handle.truncate()
+        handle.write(f"pid={os.getpid()} output={output.resolve()}\n")
+        handle.flush()
+        yield
+    finally:
+        try:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+        finally:
+            handle.close()
+
+
+def _unload_remote_inference(spec: ExperimentSpec) -> None:
+    if spec.services is None:
+        return
+    client = InferenceServiceClient(spec.services)
+    try:
+        client.unload()
+        LOGGER.info("RETRO/PipeRAG inference GPU state unloaded.")
+    except Exception as exc:
+        LOGGER.warning("Could not unload inference service before the next GPU phase: %s", exc)
+    finally:
+        client.close()
 
 
 def _leaderboard_rows(reports: dict[str, dict]) -> list[dict[str, Any]]:
@@ -188,12 +223,19 @@ def _write_leaderboard(output: Path, reports: dict[str, dict]) -> None:
 
 def run_benchmark(config_path: Path, stage: str, output: Path, techniques=None) -> dict[str, Any]:
     spec = ExperimentSpec.load(config_path, techniques)
+    with _gpu_lease(spec.index_root.parent, output):
+        return _run_benchmark_locked(spec, stage, output)
+
+
+def _run_benchmark_locked(spec: ExperimentSpec, stage: str, output: Path) -> dict[str, Any]:
     selected = set(spec.techniques)
     remote = tuple(name for name in ("retro", "piperag") if name in selected)
     bundle = load_dataset(spec.dataset, spec.source)
     corpus_fingerprint = _corpus_fingerprint(bundle.documents)
     output.mkdir(parents=True, exist_ok=True)
     result: dict[str, Any] = {"stage": stage, "techniques": list(spec.techniques), "index": None, "reports": None}
+    if "dillema" in selected and remote:
+        _unload_remote_inference(spec)
     if stage in {"index", "all"}:
         result["index"] = {}
         if "dillema" in selected:
@@ -201,28 +243,27 @@ def run_benchmark(config_path: Path, stage: str, output: Path, techniques=None) 
                 "dillema", spec.dataset, spec.source, _dillema_index_root(spec),
                 pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
             )
-            _release_gpu()
+            release_cuda_memory("DiLLeMa indexing phase")
         if remote:
             result["index"]["retro_piperag"] = index_retro(spec, bundle)
     if stage in {"evaluate", "all"}:
         reports: dict[str, dict] = {}
         if "dillema" in selected:
-            runtime = spec.generator.runtime()
-            try:
-                evaluate_dillema(
-                    "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
-                    spec.source, runtime=runtime, model_fingerprint=spec.generator.fingerprint(),
-                    decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
-                    pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
-                )
-            finally:
-                del runtime
-                _release_gpu()
+            evaluate_dillema(
+                "dillema", spec.dataset, _dillema_index_root(spec), output / "dillema",
+                spec.source, runtime_factory=spec.generator.runtime,
+                model_fingerprint=spec.generator.fingerprint(),
+                decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
+                pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
+            )
             reports["dillema"] = summarize(read_predictions(output / "dillema" / "predictions.jsonl"))
             write_json(output / "dillema" / "metrics.json", reports["dillema"])
         if remote:
-            reports.update(evaluate_retro(spec, bundle, output, remote))
-            result["paper"] = run_paper_evaluation(spec, bundle, output, remote)
+            try:
+                reports.update(evaluate_retro(spec, bundle, output, remote))
+                result["paper"] = run_paper_evaluation(spec, bundle, output, remote)
+            finally:
+                _unload_remote_inference(spec)
         _write_leaderboard(output, reports)
         result["reports"] = reports
     manifest = {

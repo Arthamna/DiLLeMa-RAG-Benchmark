@@ -96,6 +96,11 @@ class RAGPipeline:
 
     def answer(self, collection: str, question: str) -> TechniqueResult:
         packed = self.retrieve(collection, question)
+        return self.answer_packed(question, packed)
+
+    def answer_packed(self, question: str, packed: PackedContext) -> TechniqueResult:
+        """Generate from retrieval prepared in an earlier GPU-memory phase."""
+
         generation_started = time.perf_counter()
         prediction = self.generator.generate(question, packed.text) if packed.text and self.generator else ""
         generation_ms = (time.perf_counter() - generation_started) * 1000
@@ -114,4 +119,3 @@ class RAGPipeline:
 
 
 DiLLeMaTechnique = RAGPipeline
-

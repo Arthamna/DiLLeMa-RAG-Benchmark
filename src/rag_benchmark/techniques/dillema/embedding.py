@@ -16,7 +16,7 @@ class E5Embedding:
 
         self.model_name = model_name
         self.device = resolve_torch_device("E5 embedding", device)
-        self.batch_size = int(os.getenv("EMBED_BATCH_SIZE", "32"))
+        self.batch_size = int(os.getenv("EMBED_BATCH_SIZE", "8"))
         self.model = SentenceTransformer(model_name, device=self.device)
 
     @property
@@ -38,4 +38,3 @@ class E5Embedding:
             convert_to_numpy=True,
             normalize_embeddings=True,
         )
-

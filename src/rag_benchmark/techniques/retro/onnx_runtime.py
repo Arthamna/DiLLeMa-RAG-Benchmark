@@ -6,6 +6,7 @@ import json
 import math
 import os
 import time
+import gc
 from pathlib import Path
 from typing import Any
 
@@ -156,11 +157,23 @@ class OnnxRetroRuntime:
                 f"available architectures: {environment.get('torch_architectures')}"
             )
 
+        next_fingerprint = _model_fingerprint(paths["checkpoint"], paths["model_config"])
+        stable_fields = ("checkpoint", "model_config", "onnx_encoder", "onnx_decoder", "tokenizer", "retro")
+        reuse_loaded_model = bool(
+            self.model is not None
+            and self.encoder_session is not None
+            and self.decoder_session is not None
+            and self.model_fingerprint == next_fingerprint
+            and all(self.configured.get(name) == request.get(name) for name in stable_fields)
+        )
+        if not reuse_loaded_model:
+            self.unload()
         self.configured = dict(request)
-        self.model_fingerprint = _model_fingerprint(paths["checkpoint"], paths["model_config"])
-        self._load_torch_model(paths["checkpoint"], paths["model_config"])
-        self.asset_manifest = self._ensure_onnx(paths["onnx_encoder"], paths["onnx_decoder"])
-        self._load_onnx(paths["onnx_encoder"], paths["onnx_decoder"], require_cuda)
+        self.model_fingerprint = next_fingerprint
+        if not reuse_loaded_model:
+            self._load_torch_model(paths["checkpoint"], paths["model_config"])
+            self.asset_manifest = self._ensure_onnx(paths["onnx_encoder"], paths["onnx_decoder"])
+            self._load_onnx(paths["onnx_encoder"], paths["onnx_decoder"], require_cuda)
         service_config = ServiceConfig(
             retrieval_endpoint=service_retrieval_endpoint(request),
             inference_endpoint="unused:0",
@@ -176,6 +189,7 @@ class OnnxRetroRuntime:
             "checkpoint_sha256": sha256_file(paths["checkpoint"]),
             "onnx": self.asset_manifest,
             "environment": environment,
+            "model_reused": reuse_loaded_model,
         }
 
     def _load_torch_model(self, checkpoint: Path, config_path: Path) -> None:
@@ -734,3 +748,15 @@ class OnnxRetroRuntime:
         self.model = None
         self.tokenizer = None
         self.model_config = None
+        self.configured = {}
+        self.model_fingerprint = ""
+        self.asset_manifest = {}
+        gc.collect()
+        try:
+            import torch
+
+            if torch.cuda.is_available():
+                torch.cuda.synchronize()
+                torch.cuda.empty_cache()
+        except (ImportError, RuntimeError):
+            pass

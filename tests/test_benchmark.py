@@ -7,10 +7,14 @@ from types import SimpleNamespace
 
 import pytest
 
-from rag_benchmark.benchmark import ExperimentSpec, parse_techniques
+from rag_benchmark.benchmark import ExperimentSpec, _gpu_lease, parse_techniques
 from rag_benchmark.cli import _launch_detached_benchmark, build_parser
 from rag_benchmark.shared.datasets import load_dataset
+from rag_benchmark.shared.local_llm import HFModelConfig
+from rag_benchmark.shared.records import QARecord, TechniqueResult
 from rag_benchmark.techniques import TECHNIQUES, get_technique
+from rag_benchmark.techniques.dillema.augmentation import PackedContext
+from rag_benchmark.techniques.dillema.runner import run_evaluate as evaluate_dillema
 
 
 def _config(tmp_path: Path, techniques="[retro, piperag]") -> Path:
@@ -192,3 +196,79 @@ def test_detached_benchmark_rejects_live_pid(tmp_path, monkeypatch):
 
     with pytest.raises(RuntimeError, match="already running with PID 123"):
         _launch_detached_benchmark(config, "all", output, "retro,piperag")
+
+
+def test_gpu_lease_rejects_parallel_runs_even_with_different_outputs(tmp_path):
+    root = tmp_path / "artifacts"
+    with _gpu_lease(root, tmp_path / "run-a"):
+        with pytest.raises(RuntimeError, match="GPU benchmark is already active"):
+            with _gpu_lease(root, tmp_path / "run-b"):
+                pytest.fail("second benchmark must not acquire the shared GPU lease")
+
+
+def test_dillema_stages_retrieval_before_loading_local_generator(tmp_path, monkeypatch):
+    events = []
+    question = QARecord("q1", "its", "id", "question", ["answer"], "test")
+    bundle = SimpleNamespace(documents=[], questions_for_split=lambda _split: [question])
+
+    class Store:
+        def __init__(self, _path):
+            events.append("store")
+
+        def close(self):
+            events.append("store-closed")
+
+    class Pipeline:
+        def __init__(self, _store, _embedder, _reranker, _config, generator=None):
+            self.generator = generator
+
+        def retrieve(self, _collection, _question):
+            events.append("retrieve")
+            return PackedContext("evidence", [], {
+                "retrieval_latency_ms": 1.0, "rerank_latency_ms": 2.0,
+            })
+
+        def answer_packed(self, prompt, packed):
+            events.append("generate")
+            return TechniqueResult(
+                self.generator.generate(prompt, packed.text), packed.text, packed.evidence,
+                {**packed.diagnostics, "generation_latency_ms": 3.0},
+            )
+
+    class Runtime:
+        kind = "huggingface-local"
+        fingerprint = "runtime"
+        config = HFModelConfig("local-model", max_new_tokens=128)
+
+        @staticmethod
+        def generate_prompt(_prompt):
+            return "answer"
+
+    def runtime_factory():
+        events.append("runtime-loaded")
+        assert events.index("retrieval-released") < events.index("runtime-loaded")
+        return Runtime()
+
+    monkeypatch.setattr(
+        "rag_benchmark.techniques.dillema.runner._load_index_manifest",
+        lambda *_: ({"corpus_fingerprint": "corpus"}, tmp_path / "source"),
+    )
+    monkeypatch.setattr("rag_benchmark.techniques.dillema.runner.load_dataset", lambda *_: bundle)
+    monkeypatch.setattr("rag_benchmark.techniques.dillema.runner.resolve_torch_device", lambda *_: "cuda")
+    monkeypatch.setattr("rag_benchmark.techniques.dillema.runner.QdrantStore", Store)
+    monkeypatch.setattr("rag_benchmark.techniques.dillema.runner.E5Embedding", lambda *_args, **_kwargs: object())
+    monkeypatch.setattr("rag_benchmark.techniques.dillema.runner.CrossEncoderReranker", lambda *_args, **_kwargs: object())
+    monkeypatch.setattr("rag_benchmark.techniques.dillema.runner.RAGPipeline", Pipeline)
+    monkeypatch.setattr(
+        "rag_benchmark.techniques.dillema.runner.release_cuda_memory",
+        lambda stage: events.append("retrieval-released" if "retrieval" in stage else "generation-released"),
+    )
+
+    evaluate_dillema(
+        "dillema", "its", tmp_path / "index", tmp_path / "output",
+        runtime_factory=runtime_factory, model_fingerprint="model",
+        decoding_config={"max_tokens": 128},
+    )
+
+    assert events.index("retrieve") < events.index("retrieval-released") < events.index("runtime-loaded")
+    assert events.index("runtime-loaded") < events.index("generate") < events.index("generation-released")

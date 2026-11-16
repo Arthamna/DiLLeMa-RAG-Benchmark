@@ -12,7 +12,7 @@ class CrossEncoderReranker:
 
         self.model_name = model_name
         self.device = resolve_torch_device("BGE reranker", device)
-        self.batch_size = int(os.getenv("RERANK_BATCH_SIZE", "16"))
+        self.batch_size = int(os.getenv("RERANK_BATCH_SIZE", "4"))
         self.model = CrossEncoder(model_name, device=self.device)
 
     def score(self, question: str, passages: Sequence[str]) -> list[float]:
@@ -23,4 +23,3 @@ class CrossEncoderReranker:
             batch_size=self.batch_size,
             show_progress_bar=False,
         )]
-
