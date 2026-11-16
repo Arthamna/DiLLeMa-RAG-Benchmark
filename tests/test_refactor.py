@@ -49,3 +49,8 @@ def test_inference_image_installs_project_with_uv_and_checks_import():
     assert 'uv pip install --python "$VIRTUAL_ENV/bin/python" --no-cache --no-deps .' in dockerfile
     assert "import rag_benchmark.techniques.retro.inference_service" in dockerfile
     assert "--system" not in dockerfile
+
+
+def test_host_setup_preloads_pytorch_before_onnxruntime():
+    script = (ROOT / "scripts" / "setup_ubuntu.sh").read_text(encoding="utf-8")
+    assert script.index("import torch") < script.index("import onnxruntime as ort")

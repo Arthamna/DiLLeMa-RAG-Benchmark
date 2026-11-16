@@ -307,6 +307,10 @@ class OnnxRetroRuntime:
 
     @staticmethod
     def _sessions(encoder_path: Path, decoder_path: Path, require_cuda: bool):
+        # Importing PyTorch first preloads the CUDA/cuDNN shared libraries from
+        # its wheel.  Without this, a host install can fail while importing ORT
+        # with `libcudart.so.13: cannot open shared object file`.
+        import torch  # noqa: F401
         import onnxruntime as ort
 
         options = ort.SessionOptions()

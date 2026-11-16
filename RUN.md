@@ -22,6 +22,24 @@ versi runtime ikut masuk fingerprint, sehingga artifact ONNX lama otomatis
 dibangun ulang. Export pertama dapat memakai RAM/VRAM jauh lebih besar daripada
 steady-state inference; pastikan tidak ada model lokal lain yang memakai GPU.
 
+Jika instalasi host pernah berhenti dengan `ImportError: libcudart.so.13`, uji
+environment dengan PyTorch diimpor sebelum ONNX Runtime:
+
+```bash
+uv run --no-sync python - <<'PY'
+import torch
+import onnxruntime as ort
+
+print("PyTorch:", torch.__version__, "CUDA:", torch.version.cuda)
+print("ONNX Runtime:", ort.__version__)
+print("Providers:", ort.get_available_providers())
+PY
+```
+
+Wheel PyTorch membawa library CUDA 13 yang diperlukan; tidak perlu menyalin
+`libcudart.so.13` ke `/usr/lib` atau membuat symlink manual. Urutan import di
+atas penting ketika CUDA Toolkit 13 tidak dipasang secara global pada host.
+
 ## 1. Menyiapkan checkpoint RETRO di VPS
 
 Weights tidak diunduh otomatis oleh repository dan direktori `models/` diabaikan

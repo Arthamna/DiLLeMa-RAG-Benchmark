@@ -18,8 +18,11 @@ else
 fi
 
 uv run --no-sync python - <<'PY'
-import onnxruntime as ort
 import torch
+# ONNX Runtime's CUDA wheel relies on the CUDA/cuDNN libraries bundled with
+# PyTorch when the host does not have a system-wide CUDA toolkit.  PyTorch must
+# therefore be imported first so those shared libraries are preloaded.
+import onnxruntime as ort
 
 if not torch.cuda.is_available():
     print("CUDA tidak terdeteksi; pipeline akan memakai CPU.")
