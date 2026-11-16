@@ -223,18 +223,30 @@ def run_paper_evaluation(spec, bundle, output: Path, variants: tuple[str, ...]) 
         return []
     manifest = _load_manifest(spec)
     _, holdout = deterministic_holdout(bundle.documents, spec.paper.holdout_fraction, spec.paper.seed)
+    paper_collections = dict(manifest.get("paper_collections") or {})
+    expected_collections = {
+        collection_name(spec.dataset, item.language) for item in holdout
+    }
+    missing_collections = sorted(expected_collections - set(paper_collections))
+    if missing_collections:
+        raise ValueError(
+            "Paper index manifest is incomplete for "
+            f"dataset={spec.dataset}: missing={missing_collections}, "
+            f"available={sorted(paper_collections)}. Re-run with --stage index or --stage all."
+        )
     client = InferenceServiceClient(spec.services)
     retrieval = RetrievalServiceClient(spec.services)
     try:
-        for value in manifest["paper_collections"].values():
+        for value in paper_collections.values():
             retrieval.load_index({
                 "index_id": value["index_id"], "storage_root": _service_root(spec),
                 "tokenizer": spec.retro.tokenizer, "retriever_model": spec.retro.retriever_model,
             })
         client.configure(_configure_payload(spec))
         response = client.paper_evaluate({
-            "indexes": {name: value["index_id"] for name, value in manifest["paper_collections"].items()},
-            "nlists": {name: int(value["nlist"]) for name, value in manifest["paper_collections"].items()},
+            "dataset": spec.dataset,
+            "indexes": {name: value["index_id"] for name, value in paper_collections.items()},
+            "nlists": {name: int(value["nlist"]) for name, value in paper_collections.items()},
             "documents": [document_payload(item) for item in holdout],
             "variants": list(variants),
             "retro": spec.retro.public_dict(),

@@ -117,7 +117,10 @@ def load_its(source: str | Path) -> DatasetBundle:
                 continue
             documents[content_hash] = DocumentRecord(
                 id=f"its-{content_hash[:24]}", dataset="its",
-                language=_language(row.get("language"), "id"), title=title, text=text,
+                # ITS is evaluated as one Indonesian collection.  Keep the
+                # source declaration as metadata, but do not let a stray
+                # "English" cell create a UniQA collection name downstream.
+                language="id", title=title, text=text,
                 source_path=source_path,
                 metadata={
                     "document_type": _clean_text(row.get("Jenis Dokumen")),
@@ -222,4 +225,3 @@ def load_dataset(dataset: str, source: str | Path) -> DatasetBundle:
     if dataset == "uniqa":
         return load_uniqa(source)
     raise ValueError(f"Unsupported dataset: {dataset}")
-

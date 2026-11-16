@@ -14,6 +14,7 @@ from ..piperag.schedule import StaleAsyncSchedule
 from .client import RetrievalServiceClient
 from .config import ServiceConfig
 from .prompt import build_qa_prompt_ids, extract_answer
+from ...shared.config import collection_name
 from ...shared.device import cuda_architecture, cuda_architecture_supported
 
 
@@ -664,10 +665,30 @@ class OnnxRetroRuntime:
         nlists = {key: int(value) for key, value in (request.get("nlists") or {}).items()}
         variants = set(request.get("variants") or ("retro", "piperag"))
         documents = list(request.get("documents") or [])
+        document_datasets = {str(item.get("dataset") or "") for item in documents}
+        document_datasets.discard("")
+        dataset = str(request.get("dataset") or "")
+        if not dataset and len(document_datasets) == 1:
+            dataset = next(iter(document_datasets))
+        if dataset not in {"its", "uniqa"}:
+            raise ValueError(
+                f"Paper evaluation requires dataset=its or dataset=uniqa; received {dataset!r}"
+            )
+        if document_datasets and document_datasets != {dataset}:
+            raise ValueError(
+                f"Paper documents do not match dataset={dataset}: found={sorted(document_datasets)}"
+            )
         rows: list[dict[str, Any]] = []
         profiles: dict[str, Any] = {}
         for language in sorted({str(item.get("language") or "") for item in documents}):
-            collection = "its" if language == "id" else f"uniqa_{language}"
+            collection = collection_name(dataset, language)
+            if collection not in indexes or collection not in nlists:
+                raise ValueError(
+                    "Paper index mapping is incomplete for "
+                    f"dataset={dataset}, language={language}, collection={collection}: "
+                    f"indexes={sorted(indexes)}, nlists={sorted(nlists)}. "
+                    "Rebuild the paper index with --stage index or --stage all."
+                )
             index_id = str(indexes[collection])
             valid_nprobes = [value for value in nprobes if value <= nlists.get(collection, value)]
             if not valid_nprobes:

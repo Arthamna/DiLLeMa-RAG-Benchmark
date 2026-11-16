@@ -22,7 +22,7 @@ def test_its_schema_deduplication_and_multireference(tmp_path):
         category / "Dataset IF-Tegration - akademik.csv",
         ["Judul", "Jenis Dokumen", "Konten 1", "Konten 2", "Topik", "language"],
         [
-            {"Judul": "Panduan α", "Jenis Dokumen": "Panduan", "Konten 1": "Isi Unicode café", "Konten 2": "Bagian dua", "Topik": "Uji", "language": "id"},
+            {"Judul": "Panduan α", "Jenis Dokumen": "Panduan", "Konten 1": "Isi Unicode café", "Konten 2": "Bagian dua", "Topik": "Uji", "language": "English"},
             {"Judul": "Alias", "Jenis Dokumen": "Panduan", "Konten 1": "Isi Unicode café", "Konten 2": "Bagian dua", "Topik": "Uji", "language": "id"},
         ],
     )
@@ -36,6 +36,8 @@ def test_its_schema_deduplication_and_multireference(tmp_path):
     )
     bundle = load_its(tmp_path)
     assert len(bundle.documents) == 1
+    assert bundle.documents[0].language == "id"
+    assert bundle.documents[0].metadata["declared_language"] == "English"
     assert "café" in bundle.documents[0].text
     assert "Alias" in bundle.documents[0].aliases
     assert len(bundle.questions) == 1

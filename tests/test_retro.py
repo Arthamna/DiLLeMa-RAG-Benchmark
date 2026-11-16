@@ -166,6 +166,55 @@ def test_run_index_creates_host_manifest_directory_before_service_build(tmp_path
     assert (index_root / "retro" / "its" / "index-manifest.json").is_file()
 
 
+def test_paper_evaluation_uses_dataset_not_language_to_select_its_collection(monkeypatch):
+    runtime = OnnxRetroRuntime()
+    runtime.tokenizer = Tokenizer()
+    observed = {}
+
+    def profile(request):
+        observed["profile_index"] = request["index_id"]
+        return {"decoder_latency_ms": [1.0]}
+
+    def score(index_id, tokens, settings):
+        observed["score_index"] = index_id
+        return {"nll": 1.0, "scored_tokens": len(tokens)}
+
+    monkeypatch.setattr(runtime, "profile_generation", profile)
+    monkeypatch.setattr(runtime, "score", score)
+    monkeypatch.setattr(runtime, "_run_tokens", lambda *_: {})
+    response = runtime.paper_evaluate({
+        "dataset": "its",
+        "indexes": {"its": "its-paper-index"},
+        "nlists": {"its": 1},
+        "documents": [{
+            "id": "declared-english", "dataset": "its", "language": "en", "text": "x" * 80,
+        }],
+        "variants": ["retro"],
+        "retro": {"nprobe": 1},
+        "paper": {
+            "intervals": [64], "nprobes": [1], "max_windows_per_language": 1,
+            "window_tokens": 128, "latency_warmups": 0, "latency_repetitions": 1,
+        },
+    })
+
+    assert response["rows"][0]["language"] == "en"
+    assert observed == {"profile_index": "its-paper-index", "score_index": "its-paper-index"}
+
+
+def test_paper_evaluation_reports_missing_index_mapping_before_lookup():
+    runtime = OnnxRetroRuntime()
+    runtime.tokenizer = Tokenizer()
+    with pytest.raises(ValueError, match=r"collection=uniqa_en.*indexes=\['uniqa_it'\]"):
+        runtime.paper_evaluate({
+            "dataset": "uniqa",
+            "indexes": {"uniqa_it": "it-index"},
+            "nlists": {"uniqa_it": 1},
+            "documents": [{
+                "id": "en-1", "dataset": "uniqa", "language": "en", "text": "x" * 80,
+            }],
+        })
+
+
 def test_chunk_records_keep_source_and_continuation_boundaries():
     class TinyTokenizer(Tokenizer):
         def encode(self, text, add_special_tokens=True):
