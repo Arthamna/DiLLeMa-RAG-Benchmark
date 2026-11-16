@@ -206,6 +206,12 @@ docker compose exec inference /opt/venv/bin/python -c \
 Artifact ONNX dari Configure yang gagal tidak memiliki manifest valid dan akan
 ditimpa otomatis pada percobaan berikutnya; tidak perlu menghapus checkpoint.
 
+Selisih kernel FP32 yang sangat kecil dapat berbeda antar-generasi GPU. Parity
+tetap mewajibkan token argmax yang sama, dengan batas absolut default `0.002`
+untuk encoder dan decoder. Nilainya direkam dalam manifest dan dapat diatur di
+`.env` melalui `RETRO_ONNX_ENCODER_ATOL` dan `RETRO_ONNX_DECODER_ATOL`. Jangan
+menaikkan nilai tersebut hanya untuk melewati perbedaan token (`token_equal=false`).
+
 Untuk hanya pasangan terkontrol:
 
 ```bash

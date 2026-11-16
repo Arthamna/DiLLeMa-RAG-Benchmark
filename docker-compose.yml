@@ -20,6 +20,8 @@ services:
     gpus: all
     environment:
       RETRO_REQUIRE_CUDA: "1"
+      RETRO_ONNX_ENCODER_ATOL: "${RETRO_ONNX_ENCODER_ATOL:-0.002}"
+      RETRO_ONNX_DECODER_ATOL: "${RETRO_ONNX_DECODER_ATOL:-0.002}"
       # Compose DNS for inference-to-retrieval calls; host clients keep using 127.0.0.1.
       RETRO_RETRIEVAL_ENDPOINT: retrieval:50051
     volumes:

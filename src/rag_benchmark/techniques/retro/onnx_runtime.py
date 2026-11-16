@@ -59,22 +59,29 @@ def clone_past_key_values(values):
     return [value.clone() if hasattr(value, "clone") else value.copy() for value in values]
 
 
-def parity_report(expected_encoder, actual_encoder, expected_logits, actual_logits, tolerance: float) -> dict[str, Any]:
+def parity_report(
+    expected_encoder, actual_encoder, expected_logits, actual_logits,
+    encoder_tolerance: float, decoder_tolerance: float | None = None,
+) -> dict[str, Any]:
     import numpy as np
 
+    decoder_tolerance = encoder_tolerance if decoder_tolerance is None else decoder_tolerance
     encoder_error = max(
         float(np.max(np.abs(actual_encoder[index] - expected_encoder[index]))) for index in range(2)
     )
     decoder_error = float(np.max(np.abs(actual_logits - expected_logits)))
     token_equal = int(np.argmax(actual_logits[0, -1])) == int(np.argmax(expected_logits[0, -1]))
-    if not token_equal or decoder_error > tolerance or encoder_error > tolerance:
+    if not token_equal or decoder_error > decoder_tolerance or encoder_error > encoder_tolerance:
         raise RuntimeError(
             "PyTorch/ONNX parity failed: "
-            f"token_equal={token_equal}, encoder_max_abs={encoder_error}, decoder_max_abs={decoder_error}"
+            f"token_equal={token_equal}, "
+            f"encoder_max_abs={encoder_error} (atol={encoder_tolerance}), "
+            f"decoder_max_abs={decoder_error} (atol={decoder_tolerance})"
         )
     return {
         "token_equal": token_equal, "encoder_max_abs": encoder_error,
-        "decoder_max_abs": decoder_error, "atol": tolerance,
+        "decoder_max_abs": decoder_error,
+        "encoder_atol": encoder_tolerance, "decoder_atol": decoder_tolerance,
     }
 
 
@@ -365,10 +372,12 @@ class OnnxRetroRuntime:
             )[0]
         decoded = decoder.run(None, decoder_inputs)
         expected_logits = self._to_numpy(expected_decoder)
-        tolerance = float(os.getenv("RETRO_ONNX_ATOL", "0.001"))
+        legacy_tolerance = os.getenv("RETRO_ONNX_ATOL")
+        encoder_tolerance = float(legacy_tolerance or os.getenv("RETRO_ONNX_ENCODER_ATOL", "0.002"))
+        decoder_tolerance = float(legacy_tolerance or os.getenv("RETRO_ONNX_DECODER_ATOL", "0.002"))
         return parity_report(
             [self._to_numpy(value) for value in expected_encoder], encoded,
-            expected_logits, decoded[0], tolerance,
+            expected_logits, decoded[0], encoder_tolerance, decoder_tolerance,
         )
 
     def _load_onnx(self, encoder_path: Path, decoder_path: Path, require_cuda: bool) -> None:

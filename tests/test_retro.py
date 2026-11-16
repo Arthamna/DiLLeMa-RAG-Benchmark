@@ -169,8 +169,21 @@ def test_piperag_without_staleness_uses_fresh_path_and_parity_is_enforced():
         expected_logits, expected_logits + 1e-5, 1e-3,
     )
     assert report["token_equal"] is True
+    assert report["encoder_atol"] == report["decoder_atol"] == 1e-3
     with pytest.raises(RuntimeError, match="parity failed"):
         parity_report(expected_encoder, expected_encoder, expected_logits, expected_logits[..., ::-1], 1e-3)
+
+    encoder_drift = [value + 1.5e-3 for value in expected_encoder]
+    relaxed = parity_report(
+        expected_encoder, encoder_drift, expected_logits, expected_logits + 1.5e-3,
+        encoder_tolerance=2e-3, decoder_tolerance=2e-3,
+    )
+    assert relaxed["encoder_max_abs"] < relaxed["encoder_atol"]
+    with pytest.raises(RuntimeError, match=r"encoder_max_abs=.*atol=0.001"):
+        parity_report(
+            expected_encoder, encoder_drift, expected_logits, expected_logits,
+            encoder_tolerance=1e-3, decoder_tolerance=2e-3,
+        )
 
 
 def test_typed_configuration_defaults_and_validation(tmp_path):
