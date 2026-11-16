@@ -2,7 +2,11 @@ import logging
 import sys
 from types import SimpleNamespace
 
-from rag_benchmark.shared.device import resolve_torch_device
+from rag_benchmark.shared.device import (
+    cuda_architecture,
+    cuda_architecture_supported,
+    resolve_torch_device,
+)
 
 
 def _fake_torch(available: bool):
@@ -24,6 +28,12 @@ def test_device_uses_detected_cuda(monkeypatch, caplog):
     with caplog.at_level(logging.INFO):
         assert resolve_torch_device("BGE reranker", "auto") == "cuda"
     assert "Test GPU" in caplog.text
+
+
+def test_blackwell_architecture_requires_sm_120_wheel():
+    assert cuda_architecture((12, 0)) == "sm_120"
+    assert cuda_architecture_supported((12, 0), ["sm_90", "sm_100", "sm_120"])
+    assert not cuda_architecture_supported((12, 0), ["sm_90", "sm_100"])
 
 
 def test_reranker_receives_cuda_and_batch_size(monkeypatch):

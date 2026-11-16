@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import argparse
+import logging
 import os
 import threading
 from typing import Any
 
 from .grpc_service import serve_json
 from .onnx_runtime import OnnxRetroRuntime
+
+LOGGER = logging.getLogger(__name__)
 
 
 class InferenceService:
@@ -25,12 +28,19 @@ class InferenceService:
     def health(self, request: dict[str, Any]) -> dict[str, Any]:
         self._check(request)
         environment = self.runtime.environment()
-        if os.getenv("RETRO_REQUIRE_CUDA", "1") != "0" and (
-            not environment.get("cuda") or "CUDAExecutionProvider" not in environment.get("onnx_providers", [])
-        ):
+        problems = []
+        if not environment.get("cuda"):
+            problems.append("CUDA is unavailable")
+        if environment.get("torch_error"):
+            problems.append(f"PyTorch CUDA probe failed: {environment['torch_error']}")
+        if "CUDAExecutionProvider" not in environment.get("onnx_providers", []):
+            problems.append("CUDAExecutionProvider is unavailable")
+        if environment.get("architecture_supported") is False:
+            problems.append(f"PyTorch wheel does not support {environment.get('cuda_architecture')}")
+        if os.getenv("RETRO_REQUIRE_CUDA", "1") != "0" and problems:
             return {
                 "protocol_version": self.protocol_version, "status": "error",
-                "error": "CUDA and CUDAExecutionProvider are required", "environment": environment,
+                "error": "; ".join(problems), "environment": environment,
             }
         return self._response(
             role="inference",
@@ -43,8 +53,16 @@ class InferenceService:
 
     def configure(self, request: dict[str, Any]) -> dict[str, Any]:
         self._check(request)
+        LOGGER.info(
+            "Configuring RETRO runtime checkpoint=%s onnx_encoder=%s onnx_decoder=%s",
+            request.get("checkpoint"), request.get("onnx_encoder"), request.get("onnx_decoder"),
+        )
         with self.lock:
             configured = self.runtime.configure(request)
+        LOGGER.info(
+            "RETRO runtime configured model_fingerprint=%s onnx_cache=%s",
+            configured.get("model_fingerprint"), (configured.get("onnx") or {}).get("cache"),
+        )
         return self._response(**configured)
 
     def generate(self, request: dict[str, Any]) -> dict[str, Any]:
@@ -85,7 +103,12 @@ def main(argv=None):
     parser.add_argument("--protocol-version", type=int, default=1)
     parser.add_argument("--max-message-mb", type=int, default=64)
     args = parser.parse_args(argv)
+    logging.basicConfig(
+        level=os.getenv("LOG_LEVEL", "INFO"),
+        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    )
     service = InferenceService(args.protocol_version)
+    LOGGER.info("Starting inference gRPC service on %s:%d", args.host, args.port)
     serve_json("rag.InferenceService", {
         "Health": service.health,
         "Configure": service.configure,

@@ -1,5 +1,27 @@
 # Runbook
 
+## Persyaratan RTX 5080
+
+Runtime RETRO/PipeRAG memakai stack Blackwell yang diadaptasi dari
+`feat/rankify-50`: PyTorch `2.13.0+cu132`, CUDA 13.2/cuDNN 9, ONNX Runtime GPU
+1.27, dan Python 3.11–3.12. RTX 5080 memiliki compute capability 12.0
+(`sm_120`). Driver NVIDIA minimal untuk keluarga CUDA 13.x adalah 580; driver
+R595 atau lebih baru direkomendasikan untuk toolkit CUDA 13.2.
+
+Verifikasi host sebelum build:
+
+```bash
+nvidia-smi
+docker run --rm --gpus all \
+  nvidia/cuda:13.2.1-base-ubuntu24.04 nvidia-smi
+```
+
+Sesudah `bash scripts/setup_ubuntu.sh`, script memeriksa versi runtime CUDA,
+`sm_120`, provider ONNX CUDA, dan menjalankan alokasi tensor GPU. Perubahan
+versi runtime ikut masuk fingerprint, sehingga artifact ONNX lama otomatis
+dibangun ulang. Export pertama dapat memakai RAM/VRAM jauh lebih besar daripada
+steady-state inference; pastikan tidak ada model lokal lain yang memakai GPU.
+
 ## 1. Menyiapkan checkpoint RETRO di VPS
 
 Weights tidak diunduh otomatis oleh repository dan direktori `models/` diabaikan

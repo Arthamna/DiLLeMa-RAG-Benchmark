@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.metadata
 import json
 import math
 import os
@@ -12,6 +13,7 @@ from ..piperag.schedule import StaleAsyncSchedule
 from .client import RetrievalServiceClient
 from .config import ServiceConfig
 from .prompt import build_qa_prompt_ids, extract_answer
+from ...shared.device import cuda_architecture, cuda_architecture_supported
 
 
 def sha256_file(path: Path, block_size: int = 1024 * 1024) -> str:
@@ -28,13 +30,27 @@ def _runtime_digest() -> str:
     return sha256_file(Path(modeling_retro_inference.__file__).resolve())
 
 
+def _runtime_versions() -> dict[str, str]:
+    packages = ("torch", "onnx", "onnxruntime-gpu")
+    return {name: importlib.metadata.version(name) for name in packages}
+
+
 def _model_fingerprint(checkpoint: Path, model_config: Path) -> str:
-    payload = f"{sha256_file(checkpoint)}:{sha256_file(model_config)}:{_runtime_digest()}"
+    payload = ":".join((
+        sha256_file(checkpoint), sha256_file(model_config), _runtime_digest(),
+        json.dumps(_runtime_versions(), sort_keys=True, separators=(",", ":")),
+    ))
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
 def uses_stale_schedule(mode: str, stale_steps: int) -> bool:
     return mode == "piperag" and int(stale_steps) > 0
+
+
+def service_retrieval_endpoint(request: dict[str, Any]) -> str:
+    """Prefer the Compose-internal retrieval address when one is configured."""
+
+    return str(os.getenv("RETRO_RETRIEVAL_ENDPOINT") or request["retrieval_endpoint"])
 
 
 def parity_report(expected_encoder, actual_encoder, expected_logits, actual_logits, tolerance: float) -> dict[str, Any]:
@@ -86,6 +102,13 @@ class OnnxRetroRuntime:
             result["device"] = torch.cuda.get_device_name(0) if result["cuda"] else None
             result["torch"] = torch.__version__
             result["torch_cuda"] = torch.version.cuda
+            if result["cuda"]:
+                capability = tuple(torch.cuda.get_device_capability(0))
+                architectures = list(torch.cuda.get_arch_list())
+                result["cuda_capability"] = list(capability)
+                result["cuda_architecture"] = cuda_architecture(capability)
+                result["torch_architectures"] = architectures
+                result["architecture_supported"] = cuda_architecture_supported(capability, architectures)
         except Exception as exc:
             result["torch_error"] = str(exc)
         try:
@@ -110,8 +133,15 @@ class OnnxRetroRuntime:
         require_cuda = os.getenv("RETRO_REQUIRE_CUDA", "1") != "0"
         if require_cuda and not environment.get("cuda"):
             raise RuntimeError("RETRO inference requires an NVIDIA CUDA device")
+        if require_cuda and environment.get("torch_error"):
+            raise RuntimeError(f"PyTorch CUDA probe failed: {environment['torch_error']}")
         if require_cuda and "CUDAExecutionProvider" not in environment.get("onnx_providers", []):
             raise RuntimeError("onnxruntime does not expose CUDAExecutionProvider")
+        if require_cuda and environment.get("architecture_supported") is False:
+            raise RuntimeError(
+                f"PyTorch wheel does not support {environment.get('cuda_architecture')}; "
+                f"available architectures: {environment.get('torch_architectures')}"
+            )
 
         self.configured = dict(request)
         self.model_fingerprint = _model_fingerprint(paths["checkpoint"], paths["model_config"])
@@ -119,7 +149,7 @@ class OnnxRetroRuntime:
         self.asset_manifest = self._ensure_onnx(paths["onnx_encoder"], paths["onnx_decoder"])
         self._load_onnx(paths["onnx_encoder"], paths["onnx_decoder"], require_cuda)
         service_config = ServiceConfig(
-            retrieval_endpoint=str(request["retrieval_endpoint"]),
+            retrieval_endpoint=service_retrieval_endpoint(request),
             inference_endpoint="unused:0",
             timeout_seconds=float(request.get("service_timeout_seconds", 120.0)),
             protocol_version=int(request.get("protocol_version", self.protocol_version)),
@@ -215,6 +245,7 @@ class OnnxRetroRuntime:
             "encoder_sha256": sha256_file(encoder_path),
             "decoder_sha256": sha256_file(decoder_path),
             "runtime_sha256": _runtime_digest(),
+            "runtime_versions": _runtime_versions(),
             "parity": parity,
             "cache": "rebuilt",
         }
@@ -237,6 +268,7 @@ class OnnxRetroRuntime:
             (neighbour_ids, ca_hidden, ca_mask),
             str(encoder_path),
             export_params=True,
+            dynamo=False,
             opset_version=17,
             input_names=["neighbour_ids", "past_ca_hidden_states", "past_ca_attention_mask"],
             output_names=["neighbour_hidden_states", "neighbour_attention_mask"],
@@ -266,6 +298,7 @@ class OnnxRetroRuntime:
             (input_ids, neighbour_hidden, neighbour_mask, past, ca_hidden),
             str(decoder_path),
             export_params=True,
+            dynamo=False,
             opset_version=17,
             input_names=input_names,
             output_names=output_names,

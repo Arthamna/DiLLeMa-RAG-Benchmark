@@ -20,6 +20,8 @@ services:
     gpus: all
     environment:
       RETRO_REQUIRE_CUDA: "1"
+      # Compose DNS for inference-to-retrieval calls; host clients keep using 127.0.0.1.
+      RETRO_RETRIEVAL_ENDPOINT: retrieval:50051
     volumes:
       - ${RETRO_MODEL_DIR:-./models}:/models:ro
       - ${RETRO_ONNX_DIR:-./artifacts/onnx}:/onnx
@@ -28,7 +30,7 @@ services:
       retrieval:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "python3", "-m", "rag_benchmark.techniques.retro.healthcheck", "inference", "127.0.0.1:50052"]
+      test: ["CMD", "/opt/venv/bin/python", "-m", "rag_benchmark.techniques.retro.healthcheck", "inference", "127.0.0.1:50052"]
       interval: 10s
       timeout: 5s
       retries: 12

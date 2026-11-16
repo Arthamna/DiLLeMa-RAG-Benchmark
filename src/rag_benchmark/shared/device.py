@@ -10,6 +10,21 @@ class CUDAStageError(RuntimeError):
     """CUDA failed at a named synchronous pipeline boundary."""
 
 
+def cuda_architecture(capability: tuple[int, int] | list[int]) -> str:
+    """Return the wheel architecture name for a CUDA compute capability."""
+
+    major, minor = (int(value) for value in capability)
+    return f"sm_{major}{minor}"
+
+
+def cuda_architecture_supported(
+    capability: tuple[int, int] | list[int], architectures: list[str] | tuple[str, ...],
+) -> bool:
+    """Return whether a PyTorch wheel contains kernels for the detected GPU."""
+
+    return cuda_architecture(capability) in set(architectures)
+
+
 def cuda_available() -> bool:
     try:
         import torch

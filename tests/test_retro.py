@@ -17,7 +17,11 @@ from rag_benchmark.techniques.piperag.schedule import StaleAsyncSchedule
 from rag_benchmark.techniques.retro.client import InferenceServiceClient, JsonGrpcClient, ServiceError
 from rag_benchmark.techniques.retro.config import PaperEvaluationConfig, RetroConfig, ServiceConfig
 from rag_benchmark.techniques.retro.indexing import choose_nlist, clamp_nprobe, deterministic_holdout
-from rag_benchmark.techniques.retro.onnx_runtime import parity_report, uses_stale_schedule
+from rag_benchmark.techniques.retro.onnx_runtime import (
+    parity_report,
+    service_retrieval_endpoint,
+    uses_stale_schedule,
+)
 from rag_benchmark.techniques.retro.prompt import build_qa_prompt_ids, extract_answer
 from rag_benchmark.techniques.retro.retrieval_service import RetrievalService
 from rag_benchmark.techniques.retro.grpc_service import create_json_server
@@ -48,6 +52,13 @@ def test_prompt_is_truncated_and_left_padded_to_exactly_64_tokens():
     short = build_qa_prompt_ids(tokenizer, "short", 64)
     assert len(short) == 64 and short[0] == 0
     assert extract_answer("Question: x\nAnswer: result") == "result"
+
+
+def test_inference_uses_compose_internal_retrieval_endpoint(monkeypatch):
+    request = {"retrieval_endpoint": "127.0.0.1:50051"}
+    assert service_retrieval_endpoint(request) == "127.0.0.1:50051"
+    monkeypatch.setenv("RETRO_RETRIEVAL_ENDPOINT", "retrieval:50051")
+    assert service_retrieval_endpoint(request) == "retrieval:50051"
 
 
 @pytest.mark.parametrize("chunks,expected", [(1, 1), (3, 1), (16, 4), (100, 8), (2_000_000, 1024)])
@@ -229,7 +240,7 @@ def test_real_grpc_contract_with_fake_inference_service_timeout_retry_and_profil
 
     def generate(request):
         calls["generate"] += 1
-        time.sleep(.04)
+        time.sleep(.3)
         return {"protocol_version": request["protocol_version"], "status": "ok", "prediction": "x"}
 
     def profile(request):
@@ -244,7 +255,7 @@ def test_real_grpc_contract_with_fake_inference_service_timeout_retry_and_profil
     )
     server.start()
     client = InferenceServiceClient(ServiceConfig(
-        inference_endpoint=f"127.0.0.1:{port}", timeout_seconds=.01,
+        inference_endpoint=f"127.0.0.1:{port}", timeout_seconds=.1,
     ))
     try:
         assert client.health()["role"] == "fake"

@@ -45,6 +45,7 @@ def test_only_expected_technique_directories_exist():
 
 def test_inference_image_installs_project_with_uv_and_checks_import():
     dockerfile = (ROOT / "docker" / "Dockerfile.inference").read_text(encoding="utf-8")
-    assert "uv pip install --system --no-cache --no-deps ." in dockerfile
+    assert "nvidia/cuda:13.2.1-cudnn-runtime-ubuntu24.04" in dockerfile
+    assert 'uv pip install --python "$VIRTUAL_ENV/bin/python" --no-cache --no-deps .' in dockerfile
     assert "import rag_benchmark.techniques.retro.inference_service" in dockerfile
-    assert "python3 -m pip install" not in dockerfile
+    assert "--system" not in dockerfile

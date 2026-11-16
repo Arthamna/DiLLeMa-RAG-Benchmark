@@ -25,14 +25,19 @@ Apache-2.0; lineage RETRO dikunci pada commit `6945cdd`.
 
 ## Prasyarat
 
-- Linux, Docker Compose, NVIDIA driver, dan NVIDIA Container Toolkit.
+- Linux, Docker Compose, NVIDIA driver 580 atau lebih baru, dan NVIDIA Container Toolkit.
 - Satu GPU NVIDIA untuk service inference.
-- `uv` untuk CLI benchmark host.
+- Python 3.11–3.12 dan `uv` untuk CLI benchmark host.
 - Checkpoint RETRO `model.ckpt` dan konfigurasi `retro.json`, disediakan manual.
 - Kredensial/model DiLLeMa melalui backend Hugging Face atau API kompatibel OpenAI.
 
 Checkpoint, model weights, ONNX, index, dan hasil benchmark tidak masuk Git.
 SHA-256 checkpoint/ONNX direkam di manifest.
+
+Stack GPU mengikuti patch RTX 50-series dari `feat/rankify-50`: PyTorch
+`2.13.0+cu132`, CUDA 13.2/cuDNN 9, dan ONNX Runtime GPU 1.27. RTX 5080
+terdeteksi sebagai `sm_120`; setup dan health check menolak wheel yang tidak
+memuat arsitektur tersebut. Image retrieval tetap memakai Torch CPU-only.
 
 ## Setup
 
@@ -55,7 +60,7 @@ uv run --no-sync python -m rag_benchmark doctor \
 
 `doctor` memeriksa versi protokol, mount checkpoint, CUDA, provider ONNX,
 fingerprint artifact, dan kesehatan kedua service. Export ONNX hanya diulang jika
-hash checkpoint, konfigurasi, atau runtime berubah. Sebelum artifact siap,
+hash checkpoint, konfigurasi, kode runtime, atau versi Torch/ONNX berubah. Sebelum artifact siap,
 token argmax dan logit PyTorch-versus-ONNX harus lolos toleransi numerik.
 
 ## Menjalankan benchmark

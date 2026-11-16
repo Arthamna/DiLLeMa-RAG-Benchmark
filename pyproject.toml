@@ -9,7 +9,7 @@ description = "Controlled DiLLeMa, RETRO and PipeRAG benchmark for ITS and UniQA
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.11,<3.13"
 dependencies = [
   "langchain-text-splitters>=0.3.7,<1",
   "numpy>=1.26,<2",
@@ -23,20 +23,20 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8,<9"]
 api = ["openai>=1.40,<3"]
-hf = ["torch>=2.1,<3", "transformers>=4.51,<5", "accelerate>=0.29,<2"]
-quantized = ["bitsandbytes>=0.43,<1"]
+hf = ["torch==2.13.0", "transformers>=4.51,<5", "accelerate>=0.29,<2"]
+quantized = ["bitsandbytes==0.50.2"]
 paper = ["matplotlib>=3.8,<4"]
 retrieval = [
-  "faiss-cpu==1.7.4",
-  "torch==2.2.2",
+  "faiss-cpu==1.9.0",
+  "torch==2.13.0",
   "transformers>=4.41,<5",
 ]
 inference = [
   "einops==0.7.0",
-  "onnx==1.15.0",
-  "onnxruntime-gpu==1.18.1",
+  "onnx==1.23.0",
+  "onnxruntime-gpu==1.27.0",
   "sentencepiece>=0.1.99,<0.3",
-  "torch==2.2.2",
+  "torch==2.13.0",
   "transformers>=4.41,<5",
 ]
 
@@ -55,3 +55,11 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
+[[tool.uv.index]]
+name = "pytorch-cu132"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu132" }

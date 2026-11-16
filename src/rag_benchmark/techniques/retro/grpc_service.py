@@ -1,8 +1,11 @@
 from __future__ import annotations
 
 import json
+import logging
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, Callable
+
+LOGGER = logging.getLogger(__name__)
 
 
 def json_handler(function: Callable[[dict[str, Any]], dict[str, Any]]):
@@ -12,6 +15,7 @@ def json_handler(function: Callable[[dict[str, Any]], dict[str, Any]]):
         try:
             return function(raw)
         except Exception as exc:
+            LOGGER.exception("gRPC handler failed")
             context.set_code(grpc.StatusCode.INTERNAL)
             context.set_details(f"{type(exc).__name__}: {exc}")
             return {"protocol_version": raw.get("protocol_version", 1), "status": "error", "error": str(exc)}
@@ -30,6 +34,7 @@ def json_stream_handler(function: Callable):
         try:
             return function(raw_values)
         except Exception as exc:
+            LOGGER.exception("gRPC streaming handler failed")
             context.set_code(grpc.StatusCode.INTERNAL)
             context.set_details(f"{type(exc).__name__}: {exc}")
             return {"protocol_version": 1, "status": "error", "error": str(exc)}
