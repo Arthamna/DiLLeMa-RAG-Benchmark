@@ -190,6 +190,22 @@ uv run --no-sync python -m rag_benchmark benchmark \
   --output artifacts/benchmarks/uniqa
 ```
 
+Saat `Configure` pertama, inference memuat checkpoint, mengekspor ONNX, lalu
+memeriksa parity PyTorch–ONNX sebelum QA dimulai. Error `Add ... LeftShape
+{1,1,1,64}, RightShape {1,1,65,65}` menandakan image lama yang masih memakai
+KV-cache parity check sebelum perbaikan isolasi state. Rebuild dan recreate hanya
+service inference, lalu pastikan simbol perbaikannya tersedia:
+
+```bash
+docker compose build inference
+docker compose up -d --force-recreate inference
+docker compose exec inference /opt/venv/bin/python -c \
+  'from rag_benchmark.techniques.retro.onnx_runtime import clone_past_key_values; print("KV-cache fix loaded")'
+```
+
+Artifact ONNX dari Configure yang gagal tidak memiliki manifest valid dan akan
+ditimpa otomatis pada percobaan berikutnya; tidak perlu menghapus checkpoint.
+
 Untuk hanya pasangan terkontrol:
 
 ```bash

@@ -18,6 +18,7 @@ from rag_benchmark.techniques.retro.client import InferenceServiceClient, JsonGr
 from rag_benchmark.techniques.retro.config import PaperEvaluationConfig, RetroConfig, ServiceConfig
 from rag_benchmark.techniques.retro.indexing import choose_nlist, clamp_nprobe, deterministic_holdout
 from rag_benchmark.techniques.retro.onnx_runtime import (
+    clone_past_key_values,
     parity_report,
     service_retrieval_endpoint,
     uses_stale_schedule,
@@ -59,6 +60,15 @@ def test_inference_uses_compose_internal_retrieval_endpoint(monkeypatch):
     assert service_retrieval_endpoint(request) == "127.0.0.1:50051"
     monkeypatch.setenv("RETRO_RETRIEVAL_ENDPOINT", "retrieval:50051")
     assert service_retrieval_endpoint(request) == "retrieval:50051"
+
+
+def test_parity_check_isolates_mutable_past_key_values():
+    original = [np.ones((1, 2), dtype=np.float32)]
+    isolated = clone_past_key_values(original)
+    isolated[0][0, 0] = 99
+    isolated[0] = np.zeros((1, 3), dtype=np.float32)
+    assert original[0].shape == (1, 2)
+    assert original[0][0, 0] == 1
 
 
 @pytest.mark.parametrize("chunks,expected", [(1, 1), (3, 1), (16, 4), (100, 8), (2_000_000, 1024)])

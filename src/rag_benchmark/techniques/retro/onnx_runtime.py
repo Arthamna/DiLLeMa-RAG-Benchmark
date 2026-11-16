@@ -53,6 +53,12 @@ def service_retrieval_endpoint(request: dict[str, Any]) -> str:
     return str(os.getenv("RETRO_RETRIEVAL_ENDPOINT") or request["retrieval_endpoint"])
 
 
+def clone_past_key_values(values):
+    """Isolate mutable decoder cache inputs for PyTorch/ONNX parity checks."""
+
+    return [value.clone() if hasattr(value, "clone") else value.copy() for value in values]
+
+
 def parity_report(expected_encoder, actual_encoder, expected_logits, actual_logits, tolerance: float) -> dict[str, Any]:
     import numpy as np
 
@@ -344,9 +350,6 @@ class OnnxRetroRuntime:
             "past_ca_hidden_states": self._to_numpy(ca_hidden),
             "past_ca_attention_mask": self._to_numpy(ca_mask),
         })
-        with torch.inference_mode():
-            expected_encoder = self.model.base.encoder(neighbour_ids, ca_hidden, ca_mask)
-            expected_decoder = self.model(input_ids, neighbour_hidden, neighbour_mask, past, ca_hidden)[0]
         decoder_inputs = {
             "input_ids": self._to_numpy(input_ids),
             "neighbour_hidden_states": self._to_numpy(neighbour_hidden),
@@ -354,6 +357,12 @@ class OnnxRetroRuntime:
             "past_ca_hidden_states": self._to_numpy(ca_hidden),
         }
         decoder_inputs.update({f"past_key_value.{i}": self._to_numpy(value) for i, value in enumerate(past)})
+        with torch.inference_mode():
+            expected_encoder = self.model.base.encoder(neighbour_ids, ca_hidden, ca_mask)
+            expected_decoder = self.model(
+                input_ids, neighbour_hidden, neighbour_mask,
+                clone_past_key_values(past), ca_hidden,
+            )[0]
         decoded = decoder.run(None, decoder_inputs)
         expected_logits = self._to_numpy(expected_decoder)
         tolerance = float(os.getenv("RETRO_ONNX_ATOL", "0.001"))
