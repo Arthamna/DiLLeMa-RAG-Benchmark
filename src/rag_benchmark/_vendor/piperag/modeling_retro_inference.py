@@ -4,7 +4,8 @@ This version of model is for inference, which introduces k-v cache, reduced atte
 
 Vendored from amazon-science/piperag at commit b6eb158. Copyright
 Amazon.com, Inc. or its affiliates; Apache License 2.0. Only package import
-paths were adjusted by this project.
+paths and the mathematically equivalent cached-attention memory path were
+adjusted by this project.
 """
 
 
@@ -248,10 +249,11 @@ class RelativePositionBias(nn.Module):
         ret += torch.where(is_small, n, val_if_large)
         return ret
 
-    def compute_bias(self, qlen, klen):
+    def compute_bias(self, qlen, klen, query_offset=0):
         """ Compute binned relative position bias """
         context_position = torch.arange(qlen, dtype=torch.long,
                                         device=self.relative_attention_bias.weight.device)[:, None]
+        context_position = context_position + query_offset
         memory_position = torch.arange(klen, dtype=torch.long,
                                        device=self.relative_attention_bias.weight.device)[None, :]
         relative_position = memory_position - context_position # shape (qlen, klen)
@@ -281,8 +283,10 @@ class RelativePositionBias(nn.Module):
         return values
 
     @torch.no_grad()
-    def forward(self, qlen, klen):
-        return self.compute_bias(qlen, klen)  # shape (num_heads, qlen, klen)
+    def forward(self, qlen, klen, query_offset=0):
+        return self.compute_bias(
+            qlen, klen, query_offset=query_offset,
+        )  # shape (num_heads, qlen, klen)
 
 
 class MultiHeadAttention(nn.Module):
@@ -348,10 +352,15 @@ class MultiHeadAttention(nn.Module):
                 klen=attention_scores.size(-1)
             )
         else:
+            # Cached decoding has a single query at the final sequence
+            # position.  Upstream built the complete klen x klen bias and
+            # sliced its last row, which requires O(klen^2) GPU memory.  The
+            # offset computes that same row directly in O(klen) memory.
             relative_position_bias = self.positional_bias(
-                qlen=attention_scores.size(-1), # one query at a time, but set q length to k length
-                klen=attention_scores.size(-1)
-            )[:, -1:, :]
+                qlen=1,
+                klen=attention_scores.size(-1),
+                query_offset=attention_scores.size(-1) - 1,
+            )
         attention_scores = attention_scores + relative_position_bias
 
         # Apply the attention mask (for padding etc.)
@@ -603,8 +612,14 @@ class RetroDecoderSelfAttention(nn.Module):
         # length = q.size(-2) # with k-v cache, q size is only 1, set length as k size
         length = k.size(-2)
 
-        causal_mask = (1.0 - torch.tril(torch.ones((length, length), dtype=torch.uint8, device=attention_mask.device)).view(1, 1, length, length)) * -10000.0
-        causal_mask = causal_mask.type(attention_mask.dtype)
+        if use_cache:
+            # The cached query is the newest token, so every key is in its
+            # past and no causal position needs masking.  Keep a broadcastable
+            # 1 x length zero mask instead of upstream's length x length mask.
+            causal_mask = torch.zeros((1, 1, 1, length), dtype=attention_mask.dtype, device=attention_mask.device)
+        else:
+            causal_mask = (1.0 - torch.tril(torch.ones((length, length), dtype=torch.uint8, device=attention_mask.device)).view(1, 1, length, length)) * -10000.0
+            causal_mask = causal_mask.type(attention_mask.dtype)
         attention_mask = attention_mask + causal_mask
 
         # Multi-head attention
@@ -1274,4 +1289,3 @@ if __name__ == "__main__":
         input_ids=input_ids, 
         neighbour_ids=neighbour_ids,
     )
-

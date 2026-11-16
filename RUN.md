@@ -266,6 +266,14 @@ hasil `nvidia-smi` menunjukkan ruang cukup untuk model PyTorch, dua session ONNX
 dan KV cache sekaligus. Bootstrap CPU dapat menambah sedikit latency awal; nilainya
 berlaku sama bagi RETRO dan PipeRAG sehingga pasangan evaluasinya tetap terkontrol.
 
+Runtime vendor juga memakai jalur cached-attention bounded-memory. Jalur upstream
+awalnya membangun positional bias dan causal mask penuh `L x L` pada setiap token,
+meskipun cached decoder hanya memakai baris terakhir. Runtime lokal menghitung baris
+`1 x L` tersebut secara langsung dengan nilai yang sama. Jika log lama menunjukkan
+OOM pada node `positional_bias/Transpose`, rebuild image inference. Hash runtime akan
+membuat artifact ONNX lama diekspor ulang otomatis; jangan menyalin kembali manifest
+ONNX dari image/run sebelumnya.
+
 Satu lock `artifacts/.benchmark-gpu.lock` mencegah dua benchmark dari direktori
 output berbeda memakai GPU secara bersamaan. Lock dilepas otomatis ketika proses
 selesai atau mati. Ini tidak dapat menghentikan proses lama yang dijalankan

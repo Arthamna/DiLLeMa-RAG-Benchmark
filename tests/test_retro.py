@@ -136,6 +136,16 @@ def test_cuda_provider_uses_exact_arena_growth_by_default(monkeypatch):
         cuda_provider_options()
 
 
+def test_vendored_cached_attention_avoids_quadratic_bias_and_mask():
+    source = (
+        Path(__file__).resolve().parents[1]
+        / "src/rag_benchmark/_vendor/piperag/modeling_retro_inference.py"
+    ).read_text(encoding="utf-8")
+
+    assert "query_offset=attention_scores.size(-1) - 1" in source
+    assert "torch.zeros((1, 1, 1, length)" in source
+
+
 @pytest.mark.parametrize("chunks,expected", [(1, 1), (3, 1), (16, 4), (100, 8), (2_000_000, 1024)])
 def test_nlist_is_bounded_power_of_two_and_nprobe_clamped(chunks, expected):
     assert choose_nlist(chunks) == expected
