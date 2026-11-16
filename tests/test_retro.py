@@ -20,6 +20,7 @@ from rag_benchmark.techniques.retro.indexing import choose_nlist, clamp_nprobe, 
 from rag_benchmark.techniques.retro.onnx_runtime import (
     OnnxRetroRuntime,
     clone_past_key_values,
+    cuda_provider_options,
     parity_report,
     service_retrieval_endpoint,
     uses_stale_schedule,
@@ -78,7 +79,7 @@ def test_repeated_configure_reuses_loaded_model_and_onnx_sessions(tmp_path, monk
     checkpoint.write_bytes(b"checkpoint")
     model_config.write_text("{}", encoding="utf-8")
     runtime = OnnxRetroRuntime()
-    calls = {"model": 0, "onnx": 0}
+    calls = {"model": 0, "onnx": 0, "model_devices": []}
 
     monkeypatch.setenv("RETRO_REQUIRE_CUDA", "0")
     monkeypatch.setattr(runtime, "environment", lambda: {"cuda": False, "onnx_providers": ["CPUExecutionProvider"]})
@@ -86,9 +87,14 @@ def test_repeated_configure_reuses_loaded_model_and_onnx_sessions(tmp_path, monk
         "rag_benchmark.techniques.retro.onnx_runtime._model_fingerprint", lambda *_: "same-model",
     )
 
+    class Model:
+        def to(self, device):
+            calls["model_devices"].append(device)
+            return self
+
     def load_model(*_):
         calls["model"] += 1
-        runtime.model = object()
+        runtime.model = Model()
 
     def load_onnx(*_):
         calls["onnx"] += 1
@@ -118,7 +124,16 @@ def test_repeated_configure_reuses_loaded_model_and_onnx_sessions(tmp_path, monk
 
     assert first["model_reused"] is False
     assert second["model_reused"] is True
-    assert calls == {"model": 1, "onnx": 1}
+    assert calls == {"model": 1, "onnx": 1, "model_devices": ["cpu"]}
+    assert first["bootstrap_device"] == second["bootstrap_device"] == "cpu"
+
+
+def test_cuda_provider_uses_exact_arena_growth_by_default(monkeypatch):
+    monkeypatch.delenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", raising=False)
+    assert cuda_provider_options() == {"arena_extend_strategy": "kSameAsRequested"}
+    monkeypatch.setenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", "invalid")
+    with pytest.raises(ValueError, match="kSameAsRequested or kNextPowerOfTwo"):
+        cuda_provider_options()
 
 
 @pytest.mark.parametrize("chunks,expected", [(1, 1), (3, 1), (16, 4), (100, 8), (2_000_000, 1024)])

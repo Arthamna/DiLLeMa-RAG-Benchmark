@@ -15,7 +15,7 @@ from .client import RetrievalServiceClient
 from .config import ServiceConfig
 from .prompt import build_qa_prompt_ids, extract_answer
 from ...shared.config import collection_name
-from ...shared.device import cuda_architecture, cuda_architecture_supported
+from ...shared.device import cuda_architecture, cuda_architecture_supported, release_cuda_memory
 
 
 def sha256_file(path: Path, block_size: int = 1024 * 1024) -> str:
@@ -53,6 +53,15 @@ def service_retrieval_endpoint(request: dict[str, Any]) -> str:
     """Prefer the Compose-internal retrieval address when one is configured."""
 
     return str(os.getenv("RETRO_RETRIEVAL_ENDPOINT") or request["retrieval_endpoint"])
+
+
+def cuda_provider_options() -> dict[str, str]:
+    strategy = os.getenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", "kSameAsRequested").strip()
+    if strategy not in {"kSameAsRequested", "kNextPowerOfTwo"}:
+        raise ValueError(
+            "RETRO_ORT_ARENA_EXTEND_STRATEGY must be kSameAsRequested or kNextPowerOfTwo"
+        )
+    return {"arena_extend_strategy": strategy}
 
 
 def clone_past_key_values(values):
@@ -106,6 +115,7 @@ class OnnxRetroRuntime:
         self.configured: dict[str, Any] = {}
         self.model_fingerprint = ""
         self.asset_manifest: dict[str, Any] = {}
+        self.bootstrap_device = ""
 
     @staticmethod
     def environment() -> dict[str, Any]:
@@ -157,6 +167,11 @@ class OnnxRetroRuntime:
                 f"PyTorch wheel does not support {environment.get('cuda_architecture')}; "
                 f"available architectures: {environment.get('torch_architectures')}"
             )
+        bootstrap_device = os.getenv("RETRO_BOOTSTRAP_DEVICE", "cpu").strip().casefold()
+        if bootstrap_device not in {"cpu", "cuda"}:
+            raise ValueError("RETRO_BOOTSTRAP_DEVICE must be cpu or cuda")
+        if bootstrap_device == "cuda" and not environment.get("cuda"):
+            raise RuntimeError("RETRO_BOOTSTRAP_DEVICE=cuda requires an NVIDIA CUDA device")
 
         next_fingerprint = _model_fingerprint(paths["checkpoint"], paths["model_config"])
         stable_fields = ("checkpoint", "model_config", "onnx_encoder", "onnx_decoder", "tokenizer", "retro")
@@ -165,14 +180,21 @@ class OnnxRetroRuntime:
             and self.encoder_session is not None
             and self.decoder_session is not None
             and self.model_fingerprint == next_fingerprint
+            and self.bootstrap_device == bootstrap_device
             and all(self.configured.get(name) == request.get(name) for name in stable_fields)
         )
         if not reuse_loaded_model:
             self.unload()
         self.configured = dict(request)
         self.model_fingerprint = next_fingerprint
+        self.bootstrap_device = bootstrap_device
         if not reuse_loaded_model:
             self._load_torch_model(paths["checkpoint"], paths["model_config"])
+            self.model = self.model.to(bootstrap_device)
+            if hasattr(self.model, "model_device"):
+                self.model.model_device = bootstrap_device
+            if bootstrap_device == "cpu":
+                release_cuda_memory("RETRO PyTorch bootstrap model CPU offload")
             self.asset_manifest = self._ensure_onnx(paths["onnx_encoder"], paths["onnx_decoder"])
             self._load_onnx(paths["onnx_encoder"], paths["onnx_decoder"], require_cuda)
         service_config = ServiceConfig(
@@ -191,6 +213,7 @@ class OnnxRetroRuntime:
             "onnx": self.asset_manifest,
             "environment": environment,
             "model_reused": reuse_loaded_model,
+            "bootstrap_device": self.bootstrap_device,
         }
 
     def _load_torch_model(self, checkpoint: Path, config_path: Path) -> None:
@@ -205,8 +228,10 @@ class OnnxRetroRuntime:
         num_neighbours = int((self.configured.get("retro") or {}).get("num_neighbours", 2))
         continuation = int((self.configured.get("retro") or {}).get("continuation_chunks", 1))
         retriever = DummyRetriever(num_neighbours, self.model_config.chunk_size * (1 + continuation))
-        device = "cuda" if torch.cuda.is_available() else "cpu"
-        model = RetroModelLMHeadInference(self.model_config, retriever=retriever, device=device)
+        # Keep checkpoint loading on CPU.  The ONNX CUDA sessions own the GPU;
+        # retaining a second full PyTorch copy there leaves too little room for
+        # the growing decoder KV cache during 1,024-token paper windows.
+        model = RetroModelLMHeadInference(self.model_config, retriever=retriever, device="cpu")
         checkpoint_value = torch.load(str(checkpoint), map_location="cpu")
         state = checkpoint_value.get("state_dict", checkpoint_value)
         if not isinstance(state, dict):
@@ -225,7 +250,7 @@ class OnnxRetroRuntime:
                 "Checkpoint is incompatible with the pinned PipeRAG inference model: "
                 f"missing={incompatible.missing_keys[:8]}, unexpected={unexpected[:8]}"
             )
-        self.model = model.eval().to(device)
+        self.model = model.eval()
         self.tokenizer = AutoTokenizer.from_pretrained(
             str(self.configured.get("tokenizer") or "t5-base"), use_fast=True,
         )
@@ -343,9 +368,11 @@ class OnnxRetroRuntime:
 
         options = ort.SessionOptions()
         options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
-        providers = ["CUDAExecutionProvider", "CPUExecutionProvider"] if require_cuda else [
-            name for name in ("CUDAExecutionProvider", "CPUExecutionProvider") if name in ort.get_available_providers()
-        ]
+        available = ort.get_available_providers()
+        providers = []
+        if "CUDAExecutionProvider" in available:
+            providers.append(("CUDAExecutionProvider", cuda_provider_options()))
+        providers.append("CPUExecutionProvider")
         encoder = ort.InferenceSession(str(encoder_path), options, providers=providers)
         decoder = ort.InferenceSession(str(decoder_path), options, providers=providers)
         if require_cuda and (encoder.get_providers()[0] != "CUDAExecutionProvider" or decoder.get_providers()[0] != "CUDAExecutionProvider"):
@@ -769,6 +796,7 @@ class OnnxRetroRuntime:
         self.model = None
         self.tokenizer = None
         self.model_config = None
+        self.bootstrap_device = ""
         self.configured = {}
         self.model_fingerprint = ""
         self.asset_manifest = {}

@@ -241,6 +241,31 @@ variabel diekspor sebelum proses detach dibuat:
 set -a; source .env; set +a
 ```
 
+Inference RETRO membutuhkan model PyTorch untuk membuat cache awal, sedangkan
+token berikutnya diproses oleh ONNX Runtime. Agar dua salinan bobot tidak menetap
+di GPU yang sama, default Compose adalah:
+
+```dotenv
+RETRO_BOOTSTRAP_DEVICE=cpu
+RETRO_ORT_ARENA_EXTEND_STRATEGY=kSameAsRequested
+```
+
+Pengaturan pertama menyimpan model bootstrap PyTorch di RAM CPU dan membiarkan
+ONNX Runtime menjadi satu-satunya pemilik bobot di GPU. Pengaturan kedua mencegah
+arena CUDA ONNX membulatkan setiap pertumbuhan buffer ke pangkat dua. Ini penting
+untuk evaluasi paper dengan window 1.024 token, karena KV cache decoder bertambah
+setiap token. Setelah mengubah pengaturan atau kode inference, recreate image:
+
+```bash
+docker compose build inference
+docker compose up -d --force-recreate inference
+```
+
+Jangan mengubah `RETRO_BOOTSTRAP_DEVICE` kembali ke `cuda` pada GPU 16 GB kecuali
+hasil `nvidia-smi` menunjukkan ruang cukup untuk model PyTorch, dua session ONNX,
+dan KV cache sekaligus. Bootstrap CPU dapat menambah sedikit latency awal; nilainya
+berlaku sama bagi RETRO dan PipeRAG sehingga pasangan evaluasinya tetap terkontrol.
+
 Satu lock `artifacts/.benchmark-gpu.lock` mencegah dua benchmark dari direktori
 output berbeda memakai GPU secara bersamaan. Lock dilepas otomatis ketika proses
 selesai atau mati. Ini tidak dapat menghentikan proses lama yang dijalankan
