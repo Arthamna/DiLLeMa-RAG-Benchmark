@@ -247,14 +247,17 @@ di GPU yang sama, default Compose adalah:
 
 ```dotenv
 RETRO_BOOTSTRAP_DEVICE=cpu
-RETRO_ORT_ARENA_EXTEND_STRATEGY=kSameAsRequested
+RETRO_ORT_ARENA_EXTEND_STRATEGY=kNextPowerOfTwo
+RETRO_ORT_ARENA_SHRINK_INTERVAL=64
 ```
 
 Pengaturan pertama menyimpan model bootstrap PyTorch di RAM CPU dan membiarkan
-ONNX Runtime menjadi satu-satunya pemilik bobot di GPU. Pengaturan kedua mencegah
-arena CUDA ONNX membulatkan setiap pertumbuhan buffer ke pangkat dua. Ini penting
-untuk evaluasi paper dengan window 1.024 token, karena KV cache decoder bertambah
-setiap token. Setelah mengubah pengaturan atau kode inference, recreate image:
+ONNX Runtime menjadi satu-satunya pemilik bobot di GPU. Arena geometrik memberi
+ruang yang dapat dipakai ulang saat KV cache bertambah sedikit demi sedikit;
+shrink terjadwal mengembalikan region pertumbuhan yang sudah tidak digunakan
+setiap 64 token. Kombinasi ini menghindari akumulasi region berbeda untuk hampir
+seribu bentuk KV cache pada window 1.024 token. Nilai `0` menonaktifkan shrink.
+Setelah mengubah pengaturan atau kode inference, recreate image:
 
 ```bash
 docker compose build inference
@@ -273,6 +276,11 @@ meskipun cached decoder hanya memakai baris terakhir. Runtime lokal menghitung b
 OOM pada node `positional_bias/Transpose`, rebuild image inference. Hash runtime akan
 membuat artifact ONNX lama diekspor ulang otomatis; jangan menyalin kembali manifest
 ONNX dari image/run sebelumnya.
+
+Jika decoder masih gagal, error baru mencantumkan `seq_len`, strategi arena,
+interval shrink, dan `cuda_memory.free_mb`. Periksa nilai tersebut di log service
+inference; nilai mendekati nol membuktikan capacity exhaustion, sedangkan kegagalan
+pada sequence pendek dengan ruang besar mengarah ke masalah kernel/shape.
 
 Satu lock `artifacts/.benchmark-gpu.lock` mencegah dua benchmark dari direktori
 output berbeda memakai GPU secara bersamaan. Lock dilepas otomatis ketika proses

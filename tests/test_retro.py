@@ -7,6 +7,7 @@ from types import SimpleNamespace
 
 import numpy as np
 import pytest
+import rag_benchmark.techniques.retro.onnx_runtime as onnx_runtime_module
 
 from rag_benchmark.shared.records import DocumentRecord
 from rag_benchmark.shared.comparison import run_compare_techniques
@@ -128,12 +129,43 @@ def test_repeated_configure_reuses_loaded_model_and_onnx_sessions(tmp_path, monk
     assert first["bootstrap_device"] == second["bootstrap_device"] == "cpu"
 
 
-def test_cuda_provider_uses_exact_arena_growth_by_default(monkeypatch):
+def test_cuda_provider_uses_geometric_arena_growth_by_default(monkeypatch):
     monkeypatch.delenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", raising=False)
-    assert cuda_provider_options() == {"arena_extend_strategy": "kSameAsRequested"}
+    assert cuda_provider_options() == {"arena_extend_strategy": "kNextPowerOfTwo"}
     monkeypatch.setenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", "invalid")
     with pytest.raises(ValueError, match="kSameAsRequested or kNextPowerOfTwo"):
         cuda_provider_options()
+
+
+def test_cuda_arena_shrinkage_is_periodic_and_includes_final_step():
+    selected = [
+        step for step in range(130)
+        if onnx_runtime_module.should_shrink_arena(step, 130, 64)
+    ]
+    assert selected == [63, 127, 129]
+    assert not onnx_runtime_module.should_shrink_arena(0, 130, 0)
+
+
+def test_decoder_applies_arena_shrink_run_options_only_at_selected_steps():
+    runtime = OnnxRetroRuntime()
+    marker = object()
+    calls = []
+
+    class Session:
+        @staticmethod
+        def run(_outputs, _inputs, run_options):
+            calls.append(run_options)
+            return ["logits", "past", "ca-hidden", "ca-mask"]
+
+    runtime.decoder_session = Session()
+    runtime._decoder_shrink_run_options = marker
+    input_ids = np.zeros((1, 64), dtype=np.int64)
+    args = (input_ids, "neighbours", "mask", ["past"], "ca")
+
+    runtime._decode_step(*args, shrink_arena=False)
+    runtime._decode_step(*args, shrink_arena=True)
+
+    assert calls == [None, marker]
 
 
 def test_vendored_cached_attention_avoids_quadratic_bias_and_mask():

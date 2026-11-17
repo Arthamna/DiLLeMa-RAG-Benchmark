@@ -24,7 +24,8 @@ services:
       RETRO_ONNX_DECODER_ATOL: "${RETRO_ONNX_DECODER_ATOL:-0.002}"
       # Keep the PyTorch bootstrap copy off GPU; ONNX Runtime owns CUDA inference.
       RETRO_BOOTSTRAP_DEVICE: "${RETRO_BOOTSTRAP_DEVICE:-cpu}"
-      RETRO_ORT_ARENA_EXTEND_STRATEGY: "${RETRO_ORT_ARENA_EXTEND_STRATEGY:-kSameAsRequested}"
+      RETRO_ORT_ARENA_EXTEND_STRATEGY: "${RETRO_ORT_ARENA_EXTEND_STRATEGY:-kNextPowerOfTwo}"
+      RETRO_ORT_ARENA_SHRINK_INTERVAL: "${RETRO_ORT_ARENA_SHRINK_INTERVAL:-64}"
       PYTORCH_CUDA_ALLOC_CONF: "${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
       # Compose DNS for inference-to-retrieval calls; host clients keep using 127.0.0.1.
       RETRO_RETRIEVAL_ENDPOINT: retrieval:50051

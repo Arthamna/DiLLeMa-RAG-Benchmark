@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import importlib.metadata
 import json
+import logging
 import math
 import os
 import time
@@ -16,6 +17,8 @@ from .config import ServiceConfig
 from .prompt import build_qa_prompt_ids, extract_answer
 from ...shared.config import collection_name
 from ...shared.device import cuda_architecture, cuda_architecture_supported, release_cuda_memory
+
+LOGGER = logging.getLogger(__name__)
 
 
 def sha256_file(path: Path, block_size: int = 1024 * 1024) -> str:
@@ -56,12 +59,39 @@ def service_retrieval_endpoint(request: dict[str, Any]) -> str:
 
 
 def cuda_provider_options() -> dict[str, str]:
-    strategy = os.getenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", "kSameAsRequested").strip()
+    strategy = os.getenv("RETRO_ORT_ARENA_EXTEND_STRATEGY", "kNextPowerOfTwo").strip()
     if strategy not in {"kSameAsRequested", "kNextPowerOfTwo"}:
         raise ValueError(
             "RETRO_ORT_ARENA_EXTEND_STRATEGY must be kSameAsRequested or kNextPowerOfTwo"
         )
     return {"arena_extend_strategy": strategy}
+
+
+def should_shrink_arena(step: int, total_steps: int, interval: int) -> bool:
+    if interval <= 0 or total_steps <= 0:
+        return False
+    completed = step + 1
+    return completed % interval == 0 or completed == total_steps
+
+
+def cuda_memory_snapshot() -> dict[str, float | int | bool | str]:
+    try:
+        import torch
+
+        if not torch.cuda.is_available():
+            return {"available": False}
+        free_bytes, total_bytes = torch.cuda.mem_get_info()
+        return {
+            "available": True,
+            "free_bytes": int(free_bytes),
+            "total_bytes": int(total_bytes),
+            "free_mb": round(free_bytes / (1024 * 1024), 2),
+            "total_mb": round(total_bytes / (1024 * 1024), 2),
+            "torch_allocated_mb": round(torch.cuda.memory_allocated() / (1024 * 1024), 2),
+            "torch_reserved_mb": round(torch.cuda.memory_reserved() / (1024 * 1024), 2),
+        }
+    except (ImportError, RuntimeError) as exc:
+        return {"available": False, "error": str(exc)}
 
 
 def clone_past_key_values(values):
@@ -116,6 +146,9 @@ class OnnxRetroRuntime:
         self.model_fingerprint = ""
         self.asset_manifest: dict[str, Any] = {}
         self.bootstrap_device = ""
+        self.arena_extend_strategy = ""
+        self.arena_shrink_interval = 0
+        self._decoder_shrink_run_options = None
 
     @staticmethod
     def environment() -> dict[str, Any]:
@@ -172,6 +205,10 @@ class OnnxRetroRuntime:
             raise ValueError("RETRO_BOOTSTRAP_DEVICE must be cpu or cuda")
         if bootstrap_device == "cuda" and not environment.get("cuda"):
             raise RuntimeError("RETRO_BOOTSTRAP_DEVICE=cuda requires an NVIDIA CUDA device")
+        arena_shrink_interval = int(os.getenv("RETRO_ORT_ARENA_SHRINK_INTERVAL", "64"))
+        if arena_shrink_interval < 0:
+            raise ValueError("RETRO_ORT_ARENA_SHRINK_INTERVAL must be zero or positive")
+        arena_extend_strategy = cuda_provider_options()["arena_extend_strategy"]
 
         next_fingerprint = _model_fingerprint(paths["checkpoint"], paths["model_config"])
         stable_fields = ("checkpoint", "model_config", "onnx_encoder", "onnx_decoder", "tokenizer", "retro")
@@ -181,6 +218,8 @@ class OnnxRetroRuntime:
             and self.decoder_session is not None
             and self.model_fingerprint == next_fingerprint
             and self.bootstrap_device == bootstrap_device
+            and self.arena_extend_strategy == arena_extend_strategy
+            and self.arena_shrink_interval == arena_shrink_interval
             and all(self.configured.get(name) == request.get(name) for name in stable_fields)
         )
         if not reuse_loaded_model:
@@ -188,6 +227,8 @@ class OnnxRetroRuntime:
         self.configured = dict(request)
         self.model_fingerprint = next_fingerprint
         self.bootstrap_device = bootstrap_device
+        self.arena_extend_strategy = arena_extend_strategy
+        self.arena_shrink_interval = arena_shrink_interval
         if not reuse_loaded_model:
             self._load_torch_model(paths["checkpoint"], paths["model_config"])
             self.model = self.model.to(bootstrap_device)
@@ -214,6 +255,9 @@ class OnnxRetroRuntime:
             "environment": environment,
             "model_reused": reuse_loaded_model,
             "bootstrap_device": self.bootstrap_device,
+            "arena_extend_strategy": self.arena_extend_strategy,
+            "arena_shrink_interval": self.arena_shrink_interval,
+            "cuda_memory": cuda_memory_snapshot(),
         }
 
     def _load_torch_model(self, checkpoint: Path, config_path: Path) -> None:
@@ -424,6 +468,13 @@ class OnnxRetroRuntime:
 
     def _load_onnx(self, encoder_path: Path, decoder_path: Path, require_cuda: bool) -> None:
         self.encoder_session, self.decoder_session = self._sessions(encoder_path, decoder_path, require_cuda)
+        self._decoder_shrink_run_options = None
+        if self.arena_shrink_interval > 0 and self.decoder_session.get_providers()[0] == "CUDAExecutionProvider":
+            import onnxruntime as ort
+
+            run_options = ort.RunOptions()
+            run_options.add_run_config_entry("memory.enable_memory_arena_shrinkage", "gpu:0")
+            self._decoder_shrink_run_options = run_options
 
     def _retrieve(self, index_id: str, token_ids: list[int], settings: dict[str, Any]) -> tuple[Any, dict[str, Any]]:
         import numpy as np
@@ -463,7 +514,10 @@ class OnnxRetroRuntime:
             [self._to_numpy(value) for value in past], self._to_numpy(ca_hidden), self._to_numpy(ca_mask),
         )
 
-    def _decode_step(self, input_ids, neighbour_hidden, neighbour_mask, past, ca_hidden):
+    def _decode_step(
+        self, input_ids, neighbour_hidden, neighbour_mask, past, ca_hidden,
+        *, shrink_arena: bool = False,
+    ):
         inputs = {
             "input_ids": input_ids,
             "neighbour_hidden_states": neighbour_hidden,
@@ -471,7 +525,18 @@ class OnnxRetroRuntime:
             "past_ca_hidden_states": ca_hidden,
         }
         inputs.update({f"past_key_value.{i}": value for i, value in enumerate(past)})
-        outputs = self.decoder_session.run(None, inputs)
+        run_options = self._decoder_shrink_run_options if shrink_arena else None
+        try:
+            outputs = self.decoder_session.run(None, inputs, run_options)
+        except Exception as exc:
+            memory = cuda_memory_snapshot()
+            raise RuntimeError(
+                "ONNX decoder failed with "
+                f"seq_len={input_ids.shape[-1]}, shrink_arena={shrink_arena}, "
+                f"arena_strategy={self.arena_extend_strategy}, "
+                f"arena_shrink_interval={self.arena_shrink_interval}, "
+                f"cuda_memory={memory}: {exc}"
+            ) from exc
         return outputs[0], list(outputs[1:-2]), outputs[-2], outputs[-1]
 
     def _encode(self, neighbour_ids, ca_hidden, ca_mask):
@@ -533,6 +598,7 @@ class OnnxRetroRuntime:
                 started = time.perf_counter()
                 logits, past, ca_hidden, ca_mask = self._decode_step(
                     np.asarray([token_ids], dtype=np.int64), neighbour_hidden, neighbour_mask, past, ca_hidden,
+                    shrink_arena=should_shrink_arena(step, steps, self.arena_shrink_interval),
                 )
                 decoder_ms.append((time.perf_counter() - started) * 1000)
                 scores = logits[0, -1].astype(np.float64)
@@ -580,6 +646,8 @@ class OnnxRetroRuntime:
                 "retrieval_interval": int(settings["retrieval_interval"]),
                 "stale_steps": int(settings["stale_steps"]),
                 "dynamic_nprobe": bool(settings["dynamic_nprobe"]),
+                "arena_extend_strategy": self.arena_extend_strategy,
+                "arena_shrink_interval": self.arena_shrink_interval,
                 "nprobe_values": [item.get("nprobe") for item in retrieval_calls],
                 "embedding_latency_ms": sum(float(item.get("embedding_latency_ms", 0)) for item in retrieval_calls),
                 "search_latency_ms": sum(float(item.get("search_latency_ms", 0)) for item in retrieval_calls),
@@ -707,6 +775,12 @@ class OnnxRetroRuntime:
             )
         rows: list[dict[str, Any]] = []
         profiles: dict[str, Any] = {}
+        LOGGER.info(
+            "Starting paper evaluation window_tokens=%d arena_strategy=%s "
+            "arena_shrink_interval=%d cuda_memory=%s",
+            window_tokens, self.arena_extend_strategy,
+            self.arena_shrink_interval, cuda_memory_snapshot(),
+        )
         for language in sorted({str(item.get("language") or "") for item in documents}):
             collection = collection_name(dataset, language)
             if collection not in indexes or collection not in nlists:
@@ -797,6 +871,9 @@ class OnnxRetroRuntime:
         self.tokenizer = None
         self.model_config = None
         self.bootstrap_device = ""
+        self.arena_extend_strategy = ""
+        self.arena_shrink_interval = 0
+        self._decoder_shrink_run_options = None
         self.configured = {}
         self.model_fingerprint = ""
         self.asset_manifest = {}
