@@ -31,7 +31,7 @@ services:
   retrieval_endpoint: 127.0.0.1:50051
   inference_endpoint: 127.0.0.1:50052
   retrieval_index_root: /data/indexes
-  timeout_seconds: 7200
+  timeout_seconds: 21600
   protocol_version: 1
   max_message_mb: 64
 retro:
@@ -60,7 +60,7 @@ paper_evaluation:
   holdout_fraction: 0.10
   seed: 42
   max_windows_per_language: 8
-  window_tokens: 1024
+  window_tokens: 512
   latency_warmups: 1
   latency_repetitions: 5
   intervals: [8, 32, 64]
