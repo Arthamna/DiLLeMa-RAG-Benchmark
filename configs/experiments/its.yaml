@@ -59,9 +59,9 @@ paper_evaluation:
   enabled: true
   holdout_fraction: 0.10
   seed: 42
-  max_windows_per_language: 32
+  max_windows_per_language: 8
   window_tokens: 1024
   latency_warmups: 1
   latency_repetitions: 5
-  intervals: [8, 16, 32, 64]
+  intervals: [8, 32, 64]
   nprobes: [1, 2, 4, 8, 16, 32, 64]
