@@ -88,11 +88,11 @@ def build_parser() -> argparse.ArgumentParser:
     technique_compare.add_argument("--baseline-run", type=Path, required=True)
     technique_compare.add_argument("--candidate-run", type=Path, required=True)
     technique_compare.add_argument("--output", type=Path, required=True)
-    benchmark = subparsers.add_parser("benchmark", help="Run the DiLLeMa/RETRO/PipeRAG matrix")
+    benchmark = subparsers.add_parser("benchmark", help="Run the configured technique matrix")
     benchmark.add_argument("--config", type=Path, required=True)
     benchmark.add_argument("--stage", choices=("index", "evaluate", "all"), required=True)
     benchmark.add_argument("--output", type=Path, required=True)
-    benchmark.add_argument("--techniques", help="Comma-separated subset of dillema,retro,piperag")
+    benchmark.add_argument("--techniques", help="Comma-separated subset of dillema,bge_m3,self_rag,rank_zephyr,retro,piperag")
     benchmark.add_argument("-d", "--detach", action="store_true")
     doctor = subparsers.add_parser("doctor", help="Validate services, assets, protocol, index and GPU")
     doctor.add_argument("--config", type=Path, required=True)
@@ -100,8 +100,16 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def _single_run(args, parser):
-    from .benchmark import ExperimentSpec, _dillema_index_root
+    from .benchmark import _gpu_lease, _gpu_lock_root
+
+    with _gpu_lease(_gpu_lock_root(), args.output if args.command == "evaluate" else Path.cwd()):
+        return _single_run_locked(args, parser)
+
+
+def _single_run_locked(args, parser):
+    from .benchmark import ExperimentSpec, _dillema_index_root, _local_runner
     from .shared.datasets import load_dataset
+    from .techniques.dillema.config import PipelineConfig
     from .techniques.dillema.runner import run_evaluate as evaluate_dillema
     from .techniques.dillema.runner import run_index as index_dillema
     from .techniques.retro.runner import run_evaluate as evaluate_retro
@@ -115,21 +123,32 @@ def _single_run(args, parser):
             return index_dillema("dillema", args.dataset, args.source, root)
         return evaluate_dillema("dillema", args.dataset, root, args.output, args.source)
     if args.config is None:
-        parser.error("RETRO/PipeRAG index/evaluate requires --config")
-    spec = ExperimentSpec.load(args.config, args.technique)
+        parser.error("This technique requires --config")
+    group = ("bge_m3" if args.technique.startswith("bge_m3_") else
+             "self_rag" if args.technique.startswith("self_rag_") else args.technique)
+    spec = ExperimentSpec.load(args.config, group)
     if args.dataset != spec.dataset:
         parser.error("--dataset must match the experiment YAML")
     spec = replace(spec, source=args.source or spec.source, index_root=args.index_root or spec.index_root)
     bundle = load_dataset(spec.dataset, spec.source)
+    if group in {"bge_m3", "self_rag"}:
+        runner = _local_runner(group)
+        if args.command == "index":
+            return runner.run_index(spec, bundle)
+        return runner.run_evaluate(spec, bundle, args.output, (args.technique,))
     if args.command == "index":
         if args.technique == "dillema":
-            return index_dillema("dillema", spec.dataset, spec.source, _dillema_index_root(spec))
+            return index_dillema(
+                "dillema", spec.dataset, spec.source, _dillema_index_root(spec),
+                pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
+            )
         return index_retro(spec, bundle)
     if args.technique == "dillema":
         return evaluate_dillema(
             "dillema", spec.dataset, _dillema_index_root(spec), args.output, spec.source,
             runtime_factory=spec.generator.runtime, model_fingerprint=spec.generator.fingerprint(),
             decoding_config=spec.generator.decoding_dict(), evaluation_split=spec.evaluation_split,
+            pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
         )
     return evaluate_retro(spec, bundle, args.output, (args.technique,))
 

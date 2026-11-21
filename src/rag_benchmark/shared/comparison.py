@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from .artifacts import _now
@@ -65,7 +66,18 @@ def run_compare_techniques(baseline_run: Path, candidate_run: Path, output: Path
         }
     baseline_technique = baseline[0].get("technique") if baseline else None
     candidate_technique = candidate[0].get("technique") if candidate else None
-    controlled = {baseline_technique, candidate_technique} == {"retro", "piperag"}
+    def generator_identity(rows):
+        return {
+            (row.get("model_fingerprint"), json.dumps(row.get("decoding_config"), sort_keys=True))
+            for row in rows
+        }
+
+    identities = generator_identity(baseline)
+    controlled = (
+        bool(baseline) and bool(candidate)
+        and all(row.get("model_fingerprint") and row.get("decoding_config") for row in baseline + candidate)
+        and len(identities) == 1 and identities == generator_identity(candidate)
+    )
     comparison = {
         "created_at": _now(),
         "baseline_technique": baseline_technique,
@@ -75,7 +87,7 @@ def run_compare_techniques(baseline_run: Path, candidate_run: Path, output: Path
         ),
         "warning": (
             None if controlled else
-            "DiLLeMa-versus-RETRO/PipeRAG is a cross-model comparison; quality deltas are not attributable only to retrieval scheduling."
+            "Generator identity or decoding differs or is unknown; quality deltas cannot be attributed only to retrieval."
         ),
         "baseline": baseline_summary,
         "candidate": candidate_summary,

@@ -395,6 +395,7 @@ def test_compare_allows_cross_model_runs_but_labels_controlled_pair(tmp_path):
         return {
             "id": "qa-1", "dataset": "its", "language": "id", "split": "test",
             "technique": technique, "model_fingerprint": model, "corpus_fingerprint": "corpus",
+            "decoding_config": {"max_tokens": 128, "temperature": 0},
             "prediction": "answer", "references": ["answer"], "latency_ms": 1,
             "status": "ok", "available": True, "diagnostics": {},
         }

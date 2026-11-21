@@ -47,8 +47,12 @@ paper_evaluation:
     return path
 
 
-def test_registry_and_cli_contain_exactly_three_techniques():
-    assert tuple(TECHNIQUES) == ("dillema", "retro", "piperag")
+def test_registry_and_cli_include_local_variants_and_legacy_techniques():
+    assert set(TECHNIQUES) == {
+        "dillema", "retro", "piperag", "bge_m3_dense", "bge_m3_sparse",
+        "bge_m3_multi_vector", "bge_m3_dense_sparse", "bge_m3_all",
+        "self_rag_adaptive", "self_rag_always",
+    }
     assert get_technique("retro").import_path.endswith("RetroPipeline")
     with pytest.raises(ValueError, match="Unsupported"):
         get_technique("rankify")
@@ -73,7 +77,7 @@ def test_benchmark_parser_accepts_detach_aliases():
 
 def test_technique_parser_is_ordered_and_rejects_legacy_names():
     assert parse_techniques("piperag,dillema") == ("dillema", "piperag")
-    with pytest.raises(ValueError, match="dillema, retro, piperag"):
+    with pytest.raises(ValueError, match="comma-separated subset"):
         parse_techniques("rankify")
 
 

@@ -1,0 +1,80 @@
+# Protocol from feat/pipe-retro-90; technique implementations from 74a43a5.
+# Paths are relative to this file. BGE-M3 unions 40 dense + 40 sparse candidates.
+dataset: uniqa
+source: ../../dataset/UniQA-main
+index_root: ../../artifacts/indexes/pipe-retro-90
+techniques:
+- dillema
+- bge_m3
+- self_rag
+- rank_zephyr
+evaluation:
+  split: test
+retrieval:
+  candidates: 40
+  top_k: 10
+generator:
+  active: qwen
+  profiles:
+    openai:
+      backend: openai-compatible
+      model_env: LLM_MODEL
+      base_url_env: LLM_BASE_URL
+      api_key_env: LLM_API_KEY
+      temperature: 0
+      max_tokens: 128
+    qwen:
+      backend: huggingface
+      model_env: HF_MODEL_NAME
+      trust_remote_code: false
+      max_input_tokens: 4096
+      temperature: 0
+      max_tokens: 128
+      quantization: 4bit
+bge_m3:
+  enabled: true
+  model: BAAI/bge-m3
+  revision: main
+  query_max_length: 512
+  passage_max_length: 2048
+  embedding_batch_size: 4
+  use_fp16: true
+  trust_remote_code: false
+  dense_weight: 0.4
+  sparse_weight: 0.2
+  multi_vector_weight: 0.4
+self_rag:
+  enabled: true
+  model: selfrag/selfrag_llama2_7b
+  revision: main
+  quantization: 4bit
+  torch_dtype: float16
+  max_input_tokens: 4096
+  max_new_tokens: 128
+  generation_batch_size: 1
+  instruction: Answer the question in the same language as the question.
+  retriever_model: facebook/mcontriever-msmarco
+  retriever_revision: main
+  query_max_length: 512
+  passage_max_length: 512
+  embedding_batch_size: 8
+  lowercase: true
+  normalize_text: true
+  ndocs: 5
+  threshold: 0.2
+  w_rel: 1.0
+  w_sup: 1.0
+  w_use: 0.5
+  use_groundness: true
+  use_utility: true
+  use_seqscore: true
+rank_zephyr:
+  enabled: true
+  embedding_model: BAAI/bge-m3
+  embedding_revision: main
+  embedding_max_length: 512
+  reranker_model: castorini/rank_zephyr_7b_v1_full
+  reranker_revision: aa11d9da444ec3490827656c3b961d5c5f3af0eb
+  reranker_snapshot_env: RANK_ZEPHYR_SNAPSHOT
+  worker_python: ../../.venv-rank-llm/bin/python
+  embedding_batch_size: 8

@@ -1,6 +1,12 @@
-# DiLLeMa, RETRO, and PipeRAG Benchmark
+# DiLLeMa RAG Benchmark
 
-Benchmark reproduktif untuk membandingkan tiga teknik pada ITS dan UniQA:
+Branch `feat/old-90` juga menyediakan preset **DiLLeMa, BGE-M3, Self-RAG,
+dan RankZephyr**: 10 varian, split `test`, 40 kandidat retrieval, dan output
+maksimum 128 token. Setup, smoke test GPU, full run ITS/UniQA, serta command
+per keluarga tersedia di [Runbook empat teknik](RUN.md#dillema-bge-m3-self-rag-dan-rankzephyr-pada-featold-90).
+Preset ini tidak membutuhkan Java atau layanan Docker RETRO/PipeRAG.
+
+Matriks RETRO/PipeRAG yang sudah ada tetap tersedia pada ITS dan UniQA:
 
 - `dillema`: pipeline RAG dokumen yang sudah ada.
 - `retro`: checkpoint RETRO dengan retrieval fresh/sinkron setiap 64 token.

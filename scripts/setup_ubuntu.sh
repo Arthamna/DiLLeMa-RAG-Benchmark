@@ -12,9 +12,9 @@ fi
 uv python install
 
 if [[ "${INSTALL_QUANTIZED:-1}" == "1" ]]; then
-  uv sync --locked --extra api --extra dev --extra hf --extra quantized --extra paper --extra inference
+  uv sync --locked --extra api --extra dev --extra hf --extra quantized --extra paper --extra inference --extra bge-m3 --extra self-rag
 else
-  uv sync --locked --extra api --extra dev --extra hf --extra paper --extra inference
+  uv sync --locked --extra api --extra dev --extra hf --extra paper --extra inference --extra bge-m3 --extra self-rag
 fi
 
 uv run --no-sync python - <<'PY'
@@ -51,3 +51,4 @@ print("CUDA smoke test:", torch.ones(1, device="cuda"))
 PY
 echo "Setup selesai. Jalankan command project dengan: uv run --no-sync <command>"
 echo "Jalankan service RETRO/PipeRAG dengan: docker compose up --build -d"
+echo "Untuk RankZephyr, jalankan: bash scripts/setup_rank_zephyr_ubuntu.sh (empat teknik lokal tidak memerlukan Docker/Java)."

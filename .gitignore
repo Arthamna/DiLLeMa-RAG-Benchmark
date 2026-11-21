@@ -1,6 +1,7 @@
 /ai-context/
 /artifacts/
 /.venv/
+/.venv-rank-llm/
 /.venv-rankify/
 /.venv-rank-llm/
 /reference/

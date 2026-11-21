@@ -6,6 +6,7 @@ import hashlib
 import json
 import logging
 import os
+import tempfile
 from dataclasses import asdict, dataclass, replace
 from contextlib import contextmanager
 from pathlib import Path
@@ -27,8 +28,14 @@ from .techniques.retro.runner import run_evaluate as evaluate_retro
 from .techniques.retro.runner import run_index as index_retro
 from .techniques.retro.runner import run_paper_evaluation
 from .techniques.retro.client import InferenceServiceClient
+from .techniques.bge_m3.config import BgeM3Config
+from .techniques.self_rag.config import SelfRagConfig
+from .techniques.rank_zephyr.config import RankZephyrConfig
 
-TECHNIQUE_GROUPS = ("dillema", "retro", "piperag")
+DEFAULT_TECHNIQUES = ("dillema", "retro", "piperag")
+TECHNIQUE_GROUPS = ("dillema", "bge_m3", "self_rag", "rank_zephyr", "retro", "piperag")
+SHARED_GENERATOR_GROUPS = frozenset({"dillema", "bge_m3", "rank_zephyr"})
+LOCAL_GROUPS = ("bge_m3", "self_rag", "rank_zephyr")
 LOGGER = logging.getLogger(__name__)
 
 
@@ -63,7 +70,11 @@ class ExperimentSpec:
     piperag: PipeRagConfig | None
     services: ServiceConfig | None
     paper: PaperEvaluationConfig
-    techniques: tuple[str, ...] = TECHNIQUE_GROUPS
+    techniques: tuple[str, ...] = DEFAULT_TECHNIQUES
+    top_k: int = 10
+    bge_m3: BgeM3Config | None = None
+    self_rag: SelfRagConfig | None = None
+    rank_zephyr: RankZephyrConfig | None = None
 
     @classmethod
     def load(cls, path: Path, techniques=None) -> "ExperimentSpec":
@@ -73,12 +84,19 @@ class ExperimentSpec:
         if dataset not in {"its", "uniqa"}:
             raise ValueError("dataset must be its or uniqa")
         base = path.resolve().parent
-        configured = tuple(str(value).casefold() for value in (raw.get("techniques") or TECHNIQUE_GROUPS))
-        if set(configured) - set(TECHNIQUE_GROUPS):
-            raise ValueError("experiment techniques may contain only dillema, retro, and piperag")
-        selected = requested or tuple(name for name in TECHNIQUE_GROUPS if name in configured)
+        configured = raw.get("techniques")
+        selected = requested or parse_techniques(DEFAULT_TECHNIQUES if configured is None else configured)
         remote_selected = bool({"retro", "piperag"} & set(selected))
-        generator = GenerationSpec.from_dict(raw.get("generator") or {}) if "dillema" in selected else None
+        local_configs = {}
+        for name, config_type in (("bge_m3", BgeM3Config), ("self_rag", SelfRagConfig),
+                                  ("rank_zephyr", RankZephyrConfig)):
+            if name in selected:
+                config = config_type.from_dict(raw.get(name) or {}, base)
+                if config is None:
+                    raise ValueError(f"Selected technique is not enabled in the experiment YAML: {name}")
+                local_configs[name] = config
+        generator = (GenerationSpec.from_dict(raw.get("generator") or {})
+                     if SHARED_GENERATOR_GROUPS & set(selected) else None)
         retro = RetroConfig.from_dict(raw.get("retro") or {}, base) if remote_selected else None
         piperag = PipeRagConfig.from_dict(raw.get("piperag") or {}) if "piperag" in selected else None
         services = ServiceConfig.from_dict(raw.get("services") or {}) if remote_selected else None
@@ -94,8 +112,10 @@ class ExperimentSpec:
             retro=retro,
             piperag=piperag,
             services=services,
-            paper=PaperEvaluationConfig.from_dict(raw.get("paper_evaluation") or {}),
+            paper=PaperEvaluationConfig.from_dict((raw.get("paper_evaluation") or {}) if remote_selected else {}),
             techniques=selected,
+            top_k=int(retrieval.get("top_k", 10)),
+            **local_configs,
         ).validate()
 
     def validate(self) -> "ExperimentSpec":
@@ -105,6 +125,10 @@ class ExperimentSpec:
             raise ValueError("evaluation.split must be test or all")
         if self.candidates <= 0:
             raise ValueError("retrieval.candidates must be positive")
+        if {"bge_m3", "rank_zephyr"} & set(self.techniques) and not 0 < self.top_k <= self.candidates:
+            raise ValueError("retrieval.top_k must be positive and cannot exceed candidates")
+        if self.self_rag is not None and self.self_rag.ndocs > self.candidates:
+            raise ValueError("self_rag.ndocs cannot exceed retrieval.candidates")
         if self.generator is not None:
             if self.generator.max_tokens != 128:
                 raise ValueError("Official benchmark requires generator.max_tokens=128")
@@ -119,7 +143,7 @@ class ExperimentSpec:
         return self
 
     def public_dict(self) -> dict[str, Any]:
-        return {
+        result = {
             "dataset": self.dataset, "source": str(self.source), "index_root": str(self.index_root),
             "evaluation": {"split": self.evaluation_split}, "retrieval": {"candidates": self.candidates},
             "generator": self.generator.public_dict() if self.generator else None,
@@ -128,6 +152,13 @@ class ExperimentSpec:
             "services": asdict(self.services) if self.services else None,
             "paper_evaluation": asdict(self.paper), "techniques": list(self.techniques),
         }
+        if {"bge_m3", "rank_zephyr"} & set(self.techniques):
+            result["retrieval"]["top_k"] = self.top_k
+        for name in LOCAL_GROUPS:
+            config = getattr(self, name)
+            if config is not None:
+                result[name] = {"enabled": True, **config.public_dict()}
+        return result
 
     def fingerprint(self) -> str:
         payload = json.dumps(self.public_dict(), sort_keys=True, separators=(",", ":"))
@@ -147,6 +178,20 @@ class ExperimentSpec:
 
 def _dillema_index_root(spec: ExperimentSpec) -> Path:
     return spec.index_root / "dillema" / spec.index_fingerprint()[:16]
+
+
+def _local_runner(name: str):
+    """Import only the selected technique's runtime dependencies."""
+    from importlib import import_module
+
+    if name not in LOCAL_GROUPS:
+        raise ValueError(f"Unsupported local technique group: {name}")
+    return import_module(f".techniques.{name}.runner", __package__)
+
+
+def _gpu_lock_root() -> Path:
+    # A namespace-specific index root must not create an independent GPU lease.
+    return Path(tempfile.gettempdir()) / f"rag-benchmark-{os.getuid()}"
 
 
 @contextmanager
@@ -223,7 +268,7 @@ def _write_leaderboard(output: Path, reports: dict[str, dict]) -> None:
 
 def run_benchmark(config_path: Path, stage: str, output: Path, techniques=None) -> dict[str, Any]:
     spec = ExperimentSpec.load(config_path, techniques)
-    with _gpu_lease(spec.index_root.parent, output):
+    with _gpu_lease(_gpu_lock_root(), output):
         return _run_benchmark_locked(spec, stage, output)
 
 
@@ -234,7 +279,7 @@ def _run_benchmark_locked(spec: ExperimentSpec, stage: str, output: Path) -> dic
     corpus_fingerprint = _corpus_fingerprint(bundle.documents)
     output.mkdir(parents=True, exist_ok=True)
     result: dict[str, Any] = {"stage": stage, "techniques": list(spec.techniques), "index": None, "reports": None}
-    if "dillema" in selected and remote:
+    if (SHARED_GENERATOR_GROUPS | {"self_rag"}) & selected and remote:
         _unload_remote_inference(spec)
     if stage in {"index", "all"}:
         result["index"] = {}
@@ -244,6 +289,12 @@ def _run_benchmark_locked(spec: ExperimentSpec, stage: str, output: Path) -> dic
                 pipeline_config=replace(PipelineConfig.from_env(), retrieval_candidates=spec.candidates),
             )
             release_cuda_memory("DiLLeMa indexing phase")
+        for name in LOCAL_GROUPS:
+            if name in selected:
+                try:
+                    result["index"][name] = _local_runner(name).run_index(spec, bundle)
+                finally:
+                    release_cuda_memory(f"{name} indexing phase")
         if remote:
             result["index"]["retro_piperag"] = index_retro(spec, bundle)
     if stage in {"evaluate", "all"}:
@@ -258,6 +309,12 @@ def _run_benchmark_locked(spec: ExperimentSpec, stage: str, output: Path) -> dic
             )
             reports["dillema"] = summarize(read_predictions(output / "dillema" / "predictions.jsonl"))
             write_json(output / "dillema" / "metrics.json", reports["dillema"])
+        for name in LOCAL_GROUPS:
+            if name in selected:
+                try:
+                    reports.update(_local_runner(name).run_evaluate(spec, bundle, output))
+                finally:
+                    release_cuda_memory(f"{name} evaluation phase")
         if remote:
             try:
                 reports.update(evaluate_retro(spec, bundle, output, remote))
@@ -270,7 +327,12 @@ def _run_benchmark_locked(spec: ExperimentSpec, stage: str, output: Path) -> dic
         "schema_version": 3, "created_at": _now(), "stage": stage,
         "experiment_fingerprint": spec.fingerprint(), "corpus_fingerprint": corpus_fingerprint,
         "config": spec.public_dict(),
-        "comparability": {"dillema_vs_retro": "cross-model", "retro_vs_piperag": "controlled-same-checkpoint"},
+        "comparability": {
+            **({"dillema_vs_retro": "cross-model", "retro_vs_piperag": "controlled-same-checkpoint"}
+               if remote else {}),
+            **({"self_rag_vs_shared_generator": "cross-model"}
+               if "self_rag" in selected and SHARED_GENERATOR_GROUPS & selected else {}),
+        },
         "result": result,
     }
     write_json(output / "manifest.json", manifest)

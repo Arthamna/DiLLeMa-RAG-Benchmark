@@ -25,7 +25,7 @@ def test_dillema_prompt_and_parent_packing_remain_stable():
 
 
 def test_runtime_never_imports_reference_checkout_or_removed_techniques():
-    forbidden = {"rankify", "rank_zephyr", "qwen3", "bge_m3", "self_rag", "reference"}
+    forbidden = {"rankify", "qwen3", "reference"}
     for path in (ROOT / "src" / "rag_benchmark").rglob("*.py"):
         tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
         for node in ast.walk(tree):
@@ -40,7 +40,7 @@ def test_runtime_never_imports_reference_checkout_or_removed_techniques():
 
 def test_only_expected_technique_directories_exist():
     names = {path.name for path in (ROOT / "src" / "rag_benchmark" / "techniques").iterdir() if path.is_dir() and path.name != "__pycache__"}
-    assert names == {"dillema", "retro", "piperag"}
+    assert names == {"dillema", "retro", "piperag", "bge_m3", "self_rag", "rank_zephyr"}
 
 
 def test_inference_image_installs_project_with_uv_and_checks_import():

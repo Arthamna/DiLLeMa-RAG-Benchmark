@@ -1,5 +1,177 @@
 # Runbook
 
+## DiLLeMa, BGE-M3, Self-RAG, dan RankZephyr pada `feat/old-90`
+
+Jalankan dari root repository pada branch `feat/old-90`; tidak perlu membuat
+branch baru. Preset `rankify-pipe-retro-90-its.yaml` dan
+`rankify-pipe-retro-90-uniqa.yaml` memakai konfigurasi `feat/pipe-retro-90`
+dan teknik dari commit `74a43a5` di `feat/rankify`.
+
+Empat keluarga menghasilkan 10 varian: DiLLeMa, lima BGE-M3, dua Self-RAG,
+dan dua RankZephyr. Tidak memerlukan Java, worker Rankify, atau layanan Docker
+RETRO/PipeRAG. Command dan preset RETRO/PipeRAG di bagian selanjutnya tetap
+tersedia secara terpisah.
+
+### Setup
+
+```bash
+rtk proxy bash scripts/setup_ubuntu.sh
+rtk proxy bash scripts/setup_rank_zephyr_ubuntu.sh
+rtk proxy uv run --no-sync pytest
+```
+
+Setup utama mempertahankan Torch `2.13.0` CUDA `13.2` dan bitsandbytes
+`0.50.2`, serta memasang extras BGE-M3/Self-RAG. Worker RankZephyr memakai
+environment `.venv-rank-llm` sendiri dengan lockfile dari branch sumber:
+Torch `2.10.0` CUDA `12.9`, vLLM `0.19.1`, bitsandbytes `0.49.2`, dan revision
+RankLLM yang dipin. Jangan menggabungkan dependency worker ke `.venv` utama.
+Script worker memeriksa CUDA sebelum benchmark dijalankan.
+
+Jika belum memiliki `.env`, salin `.env.example` menjadi `.env`. Isi
+`HF_MODEL_NAME` dengan path absolut snapshot Qwen yang berisi `config.json`
+dan weights. `RANK_ZEPHYR_SNAPSHOT` opsional untuk snapshot reranker Castorini;
+jika kosong, worker mengunduh checkpoint pada revision yang dipin. Model BGE-M3
+dan Self-RAG juga diunduh bila belum berada di cache.
+
+| Pengaturan | Nilai preset |
+|---|---|
+| Split QA ITS/UniQA | `test` dari loader dataset; bukan split QA 90/10 |
+| Kandidat retrieval | 40 |
+| Pool BGE-M3 | union top-40 dense dan top-40 sparse; maksimal 80 chunk |
+| Pool RankZephyr | maksimal 40 chunk; window 20, stride 10, 3 window untuk pool penuh |
+| Top-k BGE-M3/RankZephyr | 10 |
+| Generator bersama | Qwen lokal 4-bit, input maksimum 4096, temperature 0 |
+| Output generator bersama / Self-RAG | maksimum 128 token |
+| Self-RAG | `selfrag/selfrag_llama2_7b`, `ndocs: 5`, batch generation 1 |
+| Batch embedding DiLLeMa / BGE-M3 / Self-RAG / RankZephyr | 8 / 4 / 8 / 8 |
+| Batch reranking DiLLeMa | 4 |
+| Root indeks | `artifacts/indexes/pipe-retro-90` |
+
+Preset tidak memakai `max_tokens_env`; nilai `HF_MAX_NEW_TOKENS=768` atau
+`LLM_MAX_TOKENS=768` dari environment lama tidak mengubah batas 128. Untuk API,
+ubah `generator.active: qwen` menjadi `openai` di YAML dan isi `LLM_MODEL`,
+`LLM_BASE_URL`, serta `LLM_API_KEY`. Self-RAG tetap memakai generator khususnya.
+
+### Bangun indeks dan lakukan smoke test GPU
+
+Smoke test mengevaluasi dua QA tersedia per bahasa terhadap indeks corpus
+lengkap. Output diberi penanda `smoke_test` dan disimpan terpisah dari full run.
+Script memeriksa 10 varian, ID QA, error, kesamaan candidate pool, serta jumlah
+window RankZephyr. Gunakan direktori output smoke yang kosong.
+
+```bash
+rtk proxy bash -lc '
+set -euo pipefail
+set -a
+source .env
+set +a
+for dataset in its uniqa; do
+  .venv/bin/python -m rag_benchmark benchmark \
+    --config "configs/experiments/rankify-pipe-retro-90-${dataset}.yaml" \
+    --techniques dillema,bge_m3,self_rag,rank_zephyr \
+    --stage index \
+    --output "artifacts/benchmarks/pipe-retro-90-${dataset}-index"
+  .venv/bin/python scripts/smoke_four_techniques.py \
+    --config "configs/experiments/rankify-pipe-retro-90-${dataset}.yaml" \
+    --output "artifacts/benchmarks/pipe-retro-90-${dataset}-smoke"
+done
+'
+```
+
+### Full run ITS dan UniQA
+
+```bash
+rtk proxy bash -lc '
+set -euo pipefail
+set -a
+source .env
+set +a
+test -f "$HF_MODEL_NAME/config.json"
+for dataset in its uniqa; do
+  .venv/bin/python -m rag_benchmark benchmark \
+    --config "configs/experiments/rankify-pipe-retro-90-${dataset}.yaml" \
+    --techniques dillema,bge_m3,self_rag,rank_zephyr \
+    --stage all \
+    --output "artifacts/benchmarks/pipe-retro-90-${dataset}"
+done
+'
+```
+
+Gunakan `--stage evaluate` bila indeks sudah dibangun, termasuk setelah smoke
+test. `--stage all` membangun indeks lalu mengevaluasi. Jika profil API aktif,
+hapus pemeriksaan `test -f "$HF_MODEL_NAME/config.json"`.
+
+### Menjalankan keluarga secara terpisah
+
+```bash
+rtk proxy bash -lc '
+set -euo pipefail
+set -a
+source .env
+set +a
+for technique in dillema bge_m3 self_rag rank_zephyr; do
+  .venv/bin/python -m rag_benchmark benchmark \
+    --config configs/experiments/rankify-pipe-retro-90-its.yaml \
+    --techniques "$technique" --stage all \
+    --output "artifacts/benchmarks/pipe-retro-90-its-${technique}"
+done
+'
+```
+
+Untuk UniQA, ganti `its` menjadi `uniqa` pada config dan output. Untuk satu
+keluarga saja, gunakan satu nilai `--techniques`. Self-RAG mandiri tidak
+membutuhkan `HF_MODEL_NAME`. Pilihan CLI mengalahkan daftar `techniques` YAML;
+teknik yang dipilih harus memiliki blok konfigurasi aktif. Konfigurasi/model
+teknik yang tidak dipilih tidak dimuat. BGE-M3 dan Self-RAG juga mendukung
+`index`/`evaluate --technique <nama-varian> --dataset <its|uniqa> --config ...`.
+RankZephyr menggunakan `benchmark --techniques rank_zephyr`.
+
+### Background dan log
+
+```bash
+rtk proxy bash -lc '
+set -euo pipefail
+set -a
+source .env
+set +a
+.venv/bin/python -m rag_benchmark benchmark \
+  --config configs/experiments/rankify-pipe-retro-90-its.yaml \
+  --techniques dillema,bge_m3,self_rag,rank_zephyr \
+  --stage all \
+  --output artifacts/benchmarks/pipe-retro-90-its-detached \
+  --detach
+'
+rtk proxy tail -f artifacts/benchmarks/pipe-retro-90-its-detached/benchmark.log
+```
+
+Jalankan benchmark GPU berurutan. GPU lock dibagi antarproses untuk user OS
+yang sama, termasuk jika direktori indeks/output berbeda. Worker vLLM hanya
+berjalan selama reranking dan dihentikan sebelum generator jawaban dimuat.
+Jika gagal, lihat `rank_zephyr_rerank/worker-diagnostics.json`, `vllm.log`,
+dan field `error` pada predictions. Baseline dense tetap dapat menghasilkan
+hasil, sehingga selesainya proses saja bukan bukti reranking berhasil.
+
+### Output dan perbandingan
+
+Setiap full run menghasilkan `manifest.json`, `leaderboard.json`,
+`leaderboard.csv`, serta 10 folder varian berisi predictions, metrics, dan
+manifest. BGE-M3 menulis `bge-m3-ablation.json`, Self-RAG menulis
+`self-rag-ablation.json`. Untuk membandingkan dua varian RankZephyr:
+
+```bash
+rtk proxy uv run --no-sync python -m rag_benchmark compare-techniques \
+  --baseline-run artifacts/benchmarks/pipe-retro-90-its/rank_zephyr_dense/predictions.jsonl \
+  --candidate-run artifacts/benchmarks/pipe-retro-90-its/rank_zephyr_rerank/predictions.jsonl \
+  --output artifacts/benchmarks/pipe-retro-90-its/rank-zephyr-comparison
+```
+
+Perbandingan mensyaratkan dataset, corpus fingerprint, split, dan QA ID yang
+sama. Label `controlled_same_checkpoint` hanya diberikan jika fingerprint
+generator dan decoding keduanya sama dan tersedia. Perbandingan Self-RAG
+dengan generator bersama diberi label `cross_model`; delta kualitas tidak
+bisa diatribusikan hanya pada retrieval. Ini juga berlaku pada hasil lama
+yang tidak menyimpan identitas generator/decoding lengkap.
+
 ## Persyaratan RTX 5080
 
 Runtime RETRO/PipeRAG memakai stack Blackwell yang diadaptasi dari
